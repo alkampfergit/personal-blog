@@ -1,0 +1,52 @@
+name: publish-on-master
+
+on:
+  push:
+    branches:
+      - master
+      - feature/*
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.68.3'
+          extended: true
+
+      - name: Build
+        working-directory: ./codewrecks
+        run: hugo --minify
+      
+   #  - name: install ncfpt
+   #    run: sudo apt-get install ncftp
+   #    
+   #  - name: upload entire directory
+   #    run: ncftpput -R -v -u "${{ secrets.FtpUserName }}" ${{ secrets.FtpHostName }} codewrecks.com/wwwroot/Utemp codewrecks/public/*
+        
+      - name: Upload ftp
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ${{ secrets.FtpHostName }}
+          user: ${{ secrets.FtpUserName }}
+          password: ${{ secrets.ftpPassword }}
+          localDir: "codewrecks/public"
+          remoteDir: "codewrecks.com/wwwroot/Utemp"
+
+   #  - name: FTP Deploy on codewrecks site
+   #    uses: SamKirkland/FTP-Deploy-Action@3.0.0
+   #    with:
+   #      # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
+   #      ftp-server:  '${{ secrets.FtpHostName }}/codewrecks.com/wwwroot/Utemp'
+   #      # FTP account username
+   #      ftp-username: ${{ secrets.FtpUserName }}
+   #      # FTP account password
+   #      ftp-password: ${{ secrets.ftpPassword }}
+   #      # The local folder to copy, defaults to root project folder
+   #      local-dir: 'codewrecks/public'
