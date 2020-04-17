@@ -7,7 +7,9 @@ draft: false
 
 I've started blogging in XXX and clearly the choice was WordPress. I must admit that in lots of years of WordPress I always was quite satisfied by the result, lots of plugin, lots of resources on the internet and the ability to post from programs like Windows Live Writer having a WYSIWYG program.
 
-Years passed, and I've started getting a little bit tired of maintaining my WordPress site, especially because I start feeling that it is a little bit overwhelming for maintaining a simple blog.
+Years passed, and **I've started getting a little bit tired of maintaining my WordPress site**, especially because I start feeling that it is a little bit overwhelming for maintaining a simple blog.
+
+> Believe me, WordPress is great, but it requires maintenance, while having a static site generator removes most of the problems you have in upgrading, maintaining plugin, etc etc.
 
 Thanks to my friend [Giulio Vian](http://blog.casavian.eu/) I've discovered Hugo lots of time ago, but I was always reluctant to switch, especially because I do not want to spend time converting my old posts and verify that permalink are still ok after conversion.
 
@@ -41,7 +43,7 @@ catch (CryptographicException)
 }
 ```
 
-But wait, Hugo has syntax highlighting automatically included in the engine, so I can use special tags to copy C# code, add line numbering decide line starting and I even have the option to highligh some lines, in this snippet I highlighted lines 5,6 and 7
+But wait, **Hugo has syntax highlighting automatically included in the engine**, so I can use special tags to copy C# code, add line numbering decide line starting and I even have the option to highlight some lines, in this snippet I highlighted lines 5,6 and 7
 
 {{< highlight csharp "linenos=table,hl_lines=5-7,linenostart=1" >}}
 try
@@ -61,6 +63,15 @@ catch (CryptographicException)
 {{< / highlight >}}
 
 Everything is really simple, you are productive in mere minutes and the better thing is that the site is completely static, no more cache plugin to install to improve performances, just static content that can be served really quick to your reader.
+
+Moreover thanks to spell check in Visual Studio code **I can really write a blog post in VS Code as I'm doing in Windows live writer**, but with notable improvements.
+
+1. All content is now a simple Git repository hosted in GitHub, no more backup to do.
+1. Publishing is done with GitHub actions, so it is external to my device.
+1. Everything is a simple text file (code, formatting, etc..)
+1. No more external tool to author your content.
+1. I can create post from my cell phone and I do not really need more than a text editor.
+1. Everything is automated.
 
 This means that I'm able to switch away from WordPress, and if everything will be good with Hugo, probably I'll decide to convert my old blog posts and getting rid completely of WordPress.
 
