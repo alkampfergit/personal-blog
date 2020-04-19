@@ -3,8 +3,8 @@ languageCode = "en-us"
 title = "Codewrecks"
 theme = "minimo"
 
-disqusShortname = ""
-googleAnalytics = ""
+disqusShortname = "codewrecks"
+googleAnalytics = "UA-1773115-4"
 
 Paginate = 5
 preserveTaxonomyNames = true
@@ -84,7 +84,7 @@ twitter = "alkampfer"
 #youtube = "UCT-U0rNerYxItGcuoPX-WYA"
 
 [params.comments]
-enable = false
+enable = true
 
 # Isso: https://posativ.org/isso/
 [params.comments.isso]
