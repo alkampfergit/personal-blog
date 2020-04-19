@@ -28,7 +28,7 @@ jobs:
    #    run: sudo apt-get install ncftp
    #    
    #  - name: upload entire directory
-   #    run: ncftpput -R -v -u "${{ secrets.FtpUserName }}" ${{ secrets.FtpHostName }} codewrecks.com/wwwroot/Utemp codewrecks/public/*
+   #    run: ncftpput -R -v -u "${{ secrets.FtpUserName }}" ${{ secrets.FtpHostName }} codewrecks.com/wwwroot codewrecks/public/*
         
       - name: Upload ftp
         uses: sebastianpopp/ftp-action@releases/v2
@@ -37,13 +37,13 @@ jobs:
           user: ${{ secrets.FtpUserName }}
           password: ${{ secrets.ftpPassword }}
           localDir: "codewrecks/public"
-          remoteDir: "codewrecks.com/wwwroot/Utemp"
+          remoteDir: "codewrecks.com/wwwroot"
 
    #  - name: FTP Deploy on codewrecks site
    #    uses: SamKirkland/FTP-Deploy-Action@3.0.0
    #    with:
    #      # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-   #      ftp-server:  '${{ secrets.FtpHostName }}/codewrecks.com/wwwroot/Utemp'
+   #      ftp-server:  '${{ secrets.FtpHostName }}/codewrecks.com/wwwroot'
    #      # FTP account username
    #      ftp-username: ${{ secrets.FtpUserName }}
    #      # FTP account password
