@@ -5,7 +5,9 @@ date: 2020-04-13T17:17:25+02:00
 draft: false
 ---
 
-I've started blogging in XXX and clearly the choice was WordPress. I must admit that in lots of years of WordPress I always was quite satisfied by the result, lots of plugin, lots of resources on the internet and the ability to post from programs like Windows Live Writer having a WYSIWYG program.
+I've started blogging in English in 2007 and clearly the choice was WordPress. I must admit that in lots of years of WordPress I always was quite satisfied by the result, lots of plugin, lots of resources on the internet and the ability to post from programs like Windows Live Writer having a WYSIWYG program.
+
+You can also read one of the first post where I [enjoyed blogging in Word](http://www.codewrecks.com/blog/index.php/2007/05/03/the-advantage-of-word2007-blogging/), really long time passed since that really old post.
 
 Years passed, and **I've started getting a little bit tired of maintaining my WordPress site**, especially because I start feeling that it is a little bit overwhelming for maintaining a simple blog.
 
