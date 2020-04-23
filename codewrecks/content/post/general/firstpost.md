@@ -3,6 +3,8 @@ title: Moving to Hugo
 description: Why using server code and a database when all you need is a static code generator?
 date: 2020-04-13T17:17:25+02:00
 draft: false
+tags: ["blogging"]
+categories: ["general"]
 ---
 
 I've started blogging in English in 2007 and clearly the choice was WordPress. I must admit that in lots of years of WordPress I always was quite satisfied by the result, lots of plugin, lots of resources on the internet and the ability to post from programs like Windows Live Writer having a WYSIWYG program.
