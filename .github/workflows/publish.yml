@@ -22,12 +22,6 @@ jobs:
       - name: Build
         working-directory: ./codewrecks
         run: hugo --minify
-      
-   #  - name: install ncfpt
-   #    run: sudo apt-get install ncftp
-   #    
-   #  - name: upload entire directory
-   #    run: ncftpput -R -v -u "${{ secrets.FtpUserName }}" ${{ secrets.FtpHostName }} codewrecks.com/wwwroot codewrecks/public/*
         
       - name: Upload ftp
         uses: sebastianpopp/ftp-action@releases/v2
@@ -37,15 +31,8 @@ jobs:
           password: ${{ secrets.ftpPassword }}
           localDir: "codewrecks/public"
           remoteDir: "codewrecks.com/wwwroot"
-
-   #  - name: FTP Deploy on codewrecks site
-   #    uses: SamKirkland/FTP-Deploy-Action@3.0.0
-   #    with:
-   #      # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-   #      ftp-server:  '${{ secrets.FtpHostName }}/codewrecks.com/wwwroot'
-   #      # FTP account username
-   #      ftp-username: ${{ secrets.FtpUserName }}
-   #      # FTP account password
-   #      ftp-password: ${{ secrets.ftpPassword }}
-   #      # The local folder to copy, defaults to root project folder
-   #      local-dir: 'codewrecks/public'
+          
+      - name: 'Ping search engines'
+        uses: atymic/sitemap-ping-action@master
+        with:
+          sitemapUrl: 'http://www.codewrecks.com/sitemap.xml'
