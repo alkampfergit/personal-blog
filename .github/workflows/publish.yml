@@ -32,7 +32,7 @@ jobs:
           localDir: "codewrecks/public"
           remoteDir: "codewrecks.com/wwwroot"
           
-      - name: 'Ping search engines'
-        uses: atymic/sitemap-ping-action@master
-        with:
-          sitemapUrl: 'http://www.codewrecks.com/sitemap.xml'
+#      - name: 'Ping search engines'
+#        uses: atymic/sitemap-ping-action@master
+#        with:
+#          sitemapUrl: 'http://www.codewrecks.com/sitemap.xml'
