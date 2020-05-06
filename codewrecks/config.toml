@@ -6,7 +6,7 @@ theme = "minimo"
 disqusShortname = "codewrecks"
 googleAnalytics = "UA-1773115-4"
 
-Paginate = 5
+Paginate = 10
 preserveTaxonomyNames = true
 
 enableRobotsTXT = true # generate robots.txt
