@@ -1,7 +1,7 @@
 ---
 title: "How to run x86 Unit Test in a .NET core application"
 description: Strange errors happened if you try to test dotnetcore project compiled for x86 architecture
-date: 2020-05-067T21:45:18+02:00
+date: 2020-05-06T21:45:18+02:00
 draft: false
 tags: ["UnitTesting"]
 categories: ["developing"]
@@ -67,7 +67,7 @@ The only special settings is the TargetPlatform that forces running test in x86.
   </PropertyGroup>
 {{</ highlight>}}
 
-Thanks to RunSettingsFilePath we could specify that for that specific test project, we want test runner to use specified runsettings file (line 6). Using relative path respect project directory will allow using a single runsettings file for all tests project. Once test projects are modified, a simple rebuild should fix all the tests.
+Thanks to RunSettingsFilePath we could specify that for that specific test project, we want test runner to use specified runsettings file (line 6). Using relative path relative to project directory will allow using a single runsettings file for all tests project. Once test projects are modified, a simple rebuild should fix all the tests.
 
 All tests are now green again.
 
