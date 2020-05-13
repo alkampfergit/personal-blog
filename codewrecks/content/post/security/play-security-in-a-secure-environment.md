@@ -7,11 +7,13 @@ tags: ["security"]
 categories: ["security"]
 ---
 
-Security is one of my long passions, I’ve spent lots of time on C++ and Assembly (both x86 and other architectures) and even if I’m not a security expert I have a good basic knowledge.
+Security is one of my long passions, I’ve spent lots of time on C++ and Assembly (both x86 and other architectures) and in that environment I've started exploring buffer overflow and other vulnerabilities. Over the course of years security remained only a passion and not my primary skill, but I spent a good amount of time on it.
 
-When it is time to study offensive security, it is quite common to download and install test Virtual Machines, full of vulnerable software to do testing and I’m quite surprised that most of the online tutorial simply tells you to use VmWare workstation or Virtual Box.
+When it is time to study offensive security, it is quite common to **download and install test Virtual Machines, full of vulnerable software to do testing** and I’m quite surprised that most of the online tutorial simply tells you to use Virtual Box (rarely VmWare workstation) in a very basic way, and completely avoid exploring more advanced scenarios.
 
-While most of these machines are pretty secure (I’m trusting VulnHub machines as an example), when you do security testing, it is quite risky to use your production environment. So, unless you have an old laptop, that is never connected to your work network and where you do not have no sensitive data, using client virtualization is safe, otherwise, it is better to do a little bit of investment to have a more secure environment.
+While most of these machines are pretty secure (I’m trusting VulnHub machines as an example), when you do security testing, it is quite risky to use your production environment as front Gun. It could be risky also to use a Virtual Machine if it is on the very same Network of your primary machines. 
+
+> Using a Virtual Machine on the same Network Segment is not the most secure option.
 
 Using client virtualization is not the safest option because there are possibilities that a VM can interfere with the host (spectre, meltdown, …) but the real problem is that the VM usually is in a virtual network that can communicate with other machines. If you fire a VM with Virtual Box, probably that machine can see all other machines in the network.
 
