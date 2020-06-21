@@ -62,8 +62,8 @@ jobs:
           localDir: "codewrecks/public"
           remoteDir: "codewrecks.com/wwwroot"
 
-   {{< / highlight >}}
-   ***Code Snippet 1***: *GitHub action workflow that automatically publish code on my host"
+{{< / highlight >}}
+***Code Snippet 1***: *GitHub action workflow that automatically publish code on my host"
 
 As you can see with few lines of YAML and thanks again to my friend [Giulio Vian](http://blog.casavian.eu/), I was able to **automate publishing of post on my blog hosting through a simple ftp.**. I have also all git goodness to my hand, I can create post on feature branch and merge in master only when I want the post to be public, but in the meanwhile I retain the whole history of all modifications. I can easily **ask for a review because the repo is public** and a reviewer can make fix / correction to my post with a simple pull request, how cool is that.
 
