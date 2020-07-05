@@ -46,7 +46,7 @@ Once Kali is up and running, you probably need a GUI to use some programs like W
 
 {{< highlight bash "linenos=table" >}}
 sudo apt-get install xfce4
-sudo service install xrdp
+sudo apt-get install xrdp
 {{< / highlight >}}
 
 Xfce is a really light Desktop Environment it uses small disk space and has a really quick install, xrdp is the service you need to allow remote connection from another machine. **You can configure for autostart or start manually when you need with**:
