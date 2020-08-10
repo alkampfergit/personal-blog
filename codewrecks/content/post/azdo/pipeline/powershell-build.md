@@ -1,7 +1,7 @@
 ---
 title: "Continuos integration in PowerShell way"
 description: "While Azure DevOps Pipeline or GitHub actions or whatever CI engine you choose can do most of the job of building a pipeline for you, sometime going straight PowerShell can be the solution you need"
-date: 2020-05-30T15:12:42+02:00
+date: 2020-08-06T15:12:42+02:00
 draft: true
 categories: ["AzureDevops"]
 tags: ["AzDo", "Pipeline"]
@@ -9,19 +9,23 @@ tags: ["AzDo", "Pipeline"]
 
 I'm a great fan of Azure DevOps pipelines, I use them extensively, but I also a fan of simple building strategies, not relying on some specific build engine.
 
-I'm a great fan of Continuous Integration, I've started many years ago with CC.NET and explored various build engine, from Msbuild to Nant then Psake, cake etc. My overall reaction is: I want to be simple. Whenever you need to explain something to a customer / developer / IT guy, it is hard to force a particular technology, it is easy to tell them: just use NAnt because it is the best, but in the end the real thing is: Use Nant because it is the engine I know best and if you asked for my help I'll be really more good if you use the tool that I know.
+> For Continuous Integration, being too much dependant on a specific technology could be limiting.
 
-This is always true, you cannot master all CI engine out there, you had to choose, so I often decide to go straigh PowerShell and do not getting any more unneccessary tool in my toolchain.
+I'm a great fan of Continuous Integration, **I've started many years ago with CC.NET** and explored various build engine, from Msbuild to Nant then Psake, cake etc. I've also used various CI engines, from TFS to AzureDevOps to TeamCity and others. My overall reaction to those tools was usually good, but I always feel bound to some specific technology. What about a customer using something I do not know like Travis CI? Also, when you need to do CI at customer sites, it is hard to force a particular technology. It is too easy to tell to a customer: just use X because it is the best, when the reality is that you really known X so it is best.
 
-Why PowerShell? The reason is straightforward, if you are in Windows Envioronment your IT guy probably already knows PowerShell, it is simple, and it is widely used: if you search for "how to do X in PowerShell" you probably have already a solution.
+Since it is impossible to master all various build engine, I often decide to go straight with basic PowerShell not getting any other tool in my toolchain.
 
-Another nice aspect of PowerShell is [PowerShell Gallery](http://www.codewrecks.com/post/general/powershell-gallery/) where you can publish your helpers to be available everywhere in your scripts.
+Why PowerShell? The answer is simple, if you are in Windows Environment your IT people probably already knows PowerShell, it is simple, it is widely used and is available on any Windows machine (now even in Linux). It is the language of choice for scripting in Windows, if you search for "how to do X in PowerShell" you surely find some solution already ready to solve your problem.
 
-Another good aspect is that a PowerShell based build can be run from every computer, no strange prerequisites, it is easy to setup it is easy to test and it is included in your source code.
+Another nice aspect of PowerShell is [PowerShell Gallery](http://www.codewrecks.com/post/general/powershell-gallery/) where you can publish some common helper functions you usually reuse between builds.
 
-Whenever you have your PowerShell build up and running, you can simply execute in all major CI engines (Azure DevOps pipelines, GitHub actions, etc), while you are still independent of the real engine. 
+But the best aspect of doing CI in PowerShell is being able to debug and run it from every computer, no prerequisites, just include script in your source code and you are ready to go.
 
-How difficult is to create a build using only PowerShell? To answer this question I've taken a simple sample with an ASP.NET application Full framework with a database project. My goal is to have a minimum build that
+> Plain PowerShell based Continuos Integration is really flexible and can be run and debugged locally.
+
+When you have your PowerShell script, you can simply execute it in all major CI engines (Azure DevOps pipelines, GitHub actions, Travis Ci), with little effort, but you are always able to reproduce a build locally. 
+
+Now the question is how difficult is to to do Continuous Integratino using only plain PowerShell? To answer this question I've created a sample with an ASP.NET application in Full framework with a database project and my goal is to have a minimum CI script that
 
 1. Use Git Version to mark assembly with SemVer
 2. Build my solution
@@ -30,6 +34,86 @@ How difficult is to create a build using only PowerShell? To answer this questio
 5. runs some unit tests.
 6. Create a nice seven zipped file with everything needed to create a release
 
-This is the very bare minimum for a standard build, and it is quite simple once you create some utilities that can helps you in such common and mundane tasks.
+This is the very bare minimum for a standard build and it is quite simple once you create some utilities that can helps you in such common and mundane tasks. Now I usually create three distinct file: prebuild.ps1, build.ps1, postbuild.ps1. The reason is simple, pre and post build script are devoted to CI related task (semver, zipping etc) while build.ps1 uses pre and post and add standard build with MSbuild and Test with Nunit. 
 
-This is the reason why sometimes I approach a build only in PowerShell.
+The reason for this separation is that I can decide in my CI engine to use pre and post build but doing build and test with standard tasks for the specified CI engine. The reason is simple, some engines like Azure DevOps have dedicated section for test and build reporting and using included Tasks makes everything works without any problem.
+
+If you are interested you can find sample project [here in GitHub](https://github.com/alkampfergit/BasicAspNetForDeploy) and all helpers function are [published in PowerShell gallery](https://www.powershellgallery.com/packages/BuildUtils/0.1.9) while [utilities source code is as usual in GitHub](https://github.com/AlkampferOpenSource/powershell-build-utils).
+
+## PreBuild script explained
+
+Pre build script starts with parameters, then it proceed to load BuildUtils package. As I stated before, being able to publish common utilities in PowerShell Gallery makes everything simpler because you can reuse those function everywhere.
+
+{{< highlight powershell "linenos=table,linenostart=1" >}}
+param (
+    [string] $configuration = "release"
+)
+
+Install-package BuildUtils -Confirm:$false -Scope CurrentUser -Verbose -Force
+Import-Module BuildUtils
+{{< / highlight >}}
+
+When you have some nice utilities home made to perform CI the way you like it is really simple to create a build. My prebuild script can be reduced to this code
+
+{{< highlight powershell "linenos=table,hl_lines=10-11,linenostart=1" >}}
+$gitVersion = Invoke-Gitversion
+
+...
+
+$buildId = $env:BUILD_BUILDID
+if (![System.String]::IsNullOrEmpty($buildId)) 
+{
+  Write-Host "Running in an Azure Devops Build"
+
+  Write-Host "##vso[build.updatebuildnumber]BasicAspNetForDeploy - $($gitVersion.fullSemver)"
+  Write-Host "##vso[task.setvariable variable=nugetVersion;]$($gitVersion.nugetVersion)"
+}
+
+  Update-SourceVersion -SrcPath "$runningDirectory/src" `
+    -assemblyVersion $gitVersion.assemblyVersion `
+    -fileAssemblyVersion $gitVersion.assemblyFileVersion `
+    -assemblyInformationalVersion $gitVersion.assemblyInformationalVersion
+{{< / highlight >}}
+
+As you can see the script is really simple, I have an helper to run GitVersion then if I'm in an Azure Devops pipeline (my preferred CI engine) I can change the name of the build using gitversion. Finally I can change all assemblyinfo.cs and assemblyinfo.vb with semver number thans to utils Update-SourceVersion.
+
+> PowerShell based CI scripts, are easy to read and easy to debug.
+
+## Standard compile VS solution and run tests
+
+Compiling a solution with MSBuild and run test with Nunit from powershell is really simple, the tricky part is usually know [where the latest version of MSBuild was installed](http://www.codewrecks.com/post/general/find-msbuild-location-in-powershell/) and run NUNit test from console runner. 
+
+{{< highlight powershell "linenos=table,hl_lines=9-10,linenostart=1" >}}
+$nugetLocation = Get-NugetLocation
+set-alias nuget $nugetLocation 
+nuget restore .\src
+
+$msbuildLocation = Get-LatestMsbuildLocation
+set-alias msb $msbuildLocation 
+msb .\src\TestWebApp.sln /p:Configuration=release
+
+Write-Host "executing publishing of web site with msbuild with version"
+msb .\src\TestWebApp\TestWebApp.csproj /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:OutDir=".\$webSiteOutDir" /p:Configuration=$buildConfiguration
+
+Write-Host "Running nunit tests with console runner"
+$nunitConsoleRunner = GEt-NunitTestsConsoleRunner
+set-alias nunit "$nunitConsoleRunner"
+
+nunit ".\src\TestWebApp.Tests\Bin\$webSiteOutDir\TestWebApp.Tests.dll"
+{{< / highlight >}}
+
+As you can see, thanks to basic utility functions you can simply build your solution with few lines of code.
+
+## Post build script
+
+Finally my post build script package everything for the release, in this script I usually manipulate (if needed) config files to make them not environment dependent and creates zipped file for the release.
+
+###----Manipulation of configuration file
+$testWebAppPublishedLocation = "$runningDirectory\src\TestWebApp\$webSiteOutDir\_publishedWebSites\TestWebApp"
+$configFile = "$testWebAppPublishedLocation\web.config"
+$xml = [xml](Get-Content $configFile)
+Edit-XmlNodes $xml -xpath "/configuration/appSettings/add[@key='Key1']/@value" -value "__SAMPPLEASPNET_KEY1__"
+Edit-XmlNodes $xml -xpath "/configuration/appSettings/add[@key='Key2']/@value" -value "__SAMPPLEASPNET_KEY2__"
+Edit-XmlNodes $xml -xpath "/configuration/connectionStrings/add[@name='db']/@connectionString" -value "__SAMPPLEASPNET_CONNECTION__"
+
+$xml.save($configFile)
