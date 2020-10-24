@@ -3,7 +3,7 @@ title: "Continuos integration in PowerShell way"
 description: "While Azure DevOps Pipeline or GitHub actions or whatever CI engine you choose can do most of the job of building a pipeline for you, sometime going straight PowerShell can be the solution you need"
 date: 2020-05-30T15:12:42+02:00
 draft: true
-categories: ["AzureDevops"]
+categories: ["AzureDevOps"]
 tags: ["AzDo", "Pipeline"]
 ---
 
