@@ -1,6 +1,6 @@
 ---
-title: "Continuos integration in PowerShell way"
-description: "While Azure DevOps Pipeline or GitHub actions or whatever CI engine you choose can do most of the job of building a pipeline for you, sometime going straight PowerShell can be the solution you need"
+title: "Continuous integration: PowerShell way"
+description: "While Azure DevOps Pipeline or GitHub actions or whatever CI engine you choose can do most of the job with pre-made tasks, sometime going straight PowerShell can be the solution you need"
 date: 2020-08-06T15:12:42+02:00
 draft: true
 categories: ["AzureDevops"]
@@ -9,23 +9,25 @@ tags: ["AzDo", "Pipeline"]
 
 I'm a great fan of Azure DevOps pipelines, I use them extensively, but I also a fan of simple building strategies, not relying on some specific build engine.
 
-> For Continuous Integration, being too much dependant on a specific technology could be limiting.
+> For Continuous Integration, being too much dependent on a specific technology could be limiting.
 
-I'm a great fan of Continuous Integration, **I've started many years ago with CC.NET** and explored various build engine, from Msbuild to Nant then Psake, cake etc. I've also used various CI engines, from TFS to AzureDevOps to TeamCity and others. My overall reaction to those tools was usually good, but I always feel bound to some specific technology. What about a customer using something I do not know like Travis CI? Also, when you need to do CI at customer sites, it is hard to force a particular technology. It is too easy to tell to a customer: just use X because it is the best, when the reality is that you really known X so it is best.
+I've started CI with **many years ago with CC.NET** and explored various engines, from MsBuild to Nant then Psake, cake etc. I've also used various CI tools, from TFS to AzureDevOps to TeamCity and others. My overall reaction to those tools was usually good, but **I always feel bound to some specific technology**. What about a customer using something I do not know like Travis CI? Also, when you need to do CI at customer sites, it is hard to force a particular technology. It is too easy to tell to a customer: just use X because it is the best, when the reality is that your knowledge of X is really good so it is your first choice.
 
-Since it is impossible to master all various build engine, I often decide to go straight with basic PowerShell not getting any other tool in my toolchain.
+Since it is impossible to master all various build engines, **I often decide to go straight with basic PowerShell** creating a build that can entirely run on your machine.
 
-Why PowerShell? The answer is simple, if you are in Windows Environment your IT people probably already knows PowerShell, it is simple, it is widely used and is available on any Windows machine (now even in Linux). It is the language of choice for scripting in Windows, if you search for "how to do X in PowerShell" you surely find some solution already ready to solve your problem.
+Why PowerShell? The answer is simple, if you are in Windows Environment your IT people probably already knows PowerShell, **it is simple, it is widely used and is available on any Windows machine (now even in Linux)**. It is the language of choice for scripting in Windows, if you search for "how to do X in PowerShell" you surely find some pre-made solution to solve your problem. 
 
-Another nice aspect of PowerShell is [PowerShell Gallery](http://www.codewrecks.com/post/general/powershell-gallery/) where you can publish some common helper functions you usually reuse between builds.
+Another nice aspect of PowerShell is [PowerShell Gallery](http://www.codewrecks.com/post/general/powershell-gallery/) where you can **publish some common helper functions you usually reuse between builds**.
 
-But the best aspect of doing CI in PowerShell is being able to debug and run it from every computer, no prerequisites, just include script in your source code and you are ready to go.
+> PowerShell is probably the best approach in Windows to create a simple build that can run everywhere.
 
-> Plain PowerShell based Continuos Integration is really flexible and can be run and debugged locally.
+The best aspect of doing CI in PowerShell **is probably being able to debug and run almost everything from own computer**, no prerequisites, just include script in your source code and you are ready to go.
 
-When you have your PowerShell script, you can simply execute it in all major CI engines (Azure DevOps pipelines, GitHub actions, Travis Ci), with little effort, but you are always able to reproduce a build locally. 
+> Plain PowerShell based Continuous Integration is really flexible and can be run and debugged locally.
 
-Now the question is how difficult is to to do Continuous Integratino using only plain PowerShell? To answer this question I've created a sample with an ASP.NET application in Full framework with a database project and my goal is to have a minimum CI script that
+When you have your PowerShell script ready to go, **you can simply execute it in all major CI engines (Azure DevOps pipelines, GitHub actions, Travis Ci) with little effort**, you can move more easily between CI engines and you can obviously run everything manually.
+
+The usual question is: how difficult is to to do Continuous Integration using only plain PowerShell? To answer this question I've created a sample with an ASP.NET application in Full framework with a database project and my goal is to have a minimum CI script that
 
 1. Use Git Version to mark assembly with SemVer
 2. Build my solution
@@ -34,9 +36,11 @@ Now the question is how difficult is to to do Continuous Integratino using only 
 5. runs some unit tests.
 6. Create a nice seven zipped file with everything needed to create a release
 
-This is the very bare minimum for a standard build and it is quite simple once you create some utilities that can helps you in such common and mundane tasks. Now I usually create three distinct file: prebuild.ps1, build.ps1, postbuild.ps1. The reason is simple, pre and post build script are devoted to CI related task (semver, zipping etc) while build.ps1 uses pre and post and add standard build with MSbuild and Test with Nunit. 
+This is the very bare minimum for a standard build and it is quite simple once you create some utilities that can helps you in such common and mundane tasks. ** Now I usually create three distinct file: prebuild.ps1, CompileAndTest.ps1, postbuild.ps1.** The reason is simple, pre and post build script are devoted to CI related task (semver, zipping etc) and CompileAndTest.ps1 does compile and runs tests.
 
-The reason for this separation is that I can decide in my CI engine to use pre and post build but doing build and test with standard tasks for the specified CI engine. The reason is simple, some engines like Azure DevOps have dedicated section for test and build reporting and using included Tasks makes everything works without any problem.
+> Avoid a single big script file, separate your builds file in logical steps of your CI.
+
+The reason for this separation is **the ability to choose which use with your CI Engine of choice**. You can go entirely with PowerShell, or you can only use pre and post build script and doing Build and Test directly with CI specific Tasks.
 
 If you are interested you can find sample project [here in GitHub](https://github.com/alkampfergit/BasicAspNetForDeploy) and all helpers function are [published in PowerShell gallery](https://www.powershellgallery.com/packages/BuildUtils/0.1.9) while [utilities source code is as usual in GitHub](https://github.com/AlkampferOpenSource/powershell-build-utils).
 
