@@ -1,4 +1,4 @@
-baseURL = "http://www.codewrecks.com/"
+baseURL = "https://www.codewrecks.com/"
 languageCode = "en-us"
 title = "Codewrecks"
 theme = "minimo"
