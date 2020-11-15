@@ -4,7 +4,7 @@ title: "Azure DevOps pills: Avoid triggering pipelines continuous integration wi
 description: "When you push frequently you can avoid triggering continuous integration with a simple comment"
 date: 2020-10-24T10:00:42+02:00
 draft: false
-categories: ["AzureDevIOps"]
+categories: ["AzureDevOps"]
 tags: ["AzDo", "Pipeline"]
 ---
 
