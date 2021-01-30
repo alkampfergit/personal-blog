@@ -12,13 +12,13 @@ Instead of mapping 8080 port on my firewall I’ve deployed a Linux machine, ena
 
 Now when I’m on external network, I use putty to connect in SSH to that machine, and I setup tunneling as for Figure 1.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-2.png)
 
  ***Figure 1***: *Tunneling to access my TFS machine*
 
 Tunneling allows me to remap the 8080 port of the 10.0.0.116 machine (my local tfs) on my local 8080 port. Now from a machine external on my network I can login to that linux machine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-3.png)
 
  ***Figure 2***: *Login screen with verification code.*
 
@@ -26,7 +26,7 @@ This is on a raspberry linux pi, I simply use pi as username, then use verificat
 
 Once I’m connected to the raspberry machine I can simply browse [http://localhost:8080](http://localhost:8080) and everything is redirected through a secure SSH tunnel to the 10.0.0.116 machine. Et voilà I can access any machine, any port in my network just using SSH tunneling.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-4.png)
 
  ***Figure 3***: *My local TFS instance now accessible from external machine*
 

@@ -10,7 +10,7 @@ Setting up Remote Debugging is usually a simple task, you can read the [Set Up R
 
 * **First:** *you need to be aware that  **Remote Debugging Managed Code** is only available when you use the authenticated mode, if you run the remote debugger without authentication you can  **debug only Native Code** , but the main problem is that usually *the host and remote machine* * **are not** in the same Domain*. To bypass this situation you need to create what is called “Shadow Account”, this means that you need to have in * **both machines the same user with the same password.** *
 
-[![How to setup authentication if you do not have a domain](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb26.png "Setup Authentication")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image26.png)
+[![How to setup authentication if you do not have a domain](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb26.png "Setup Authentication")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image26.png)
 
  ***Figure 1***: *How to setup authentication if you do not have a domain*
 
@@ -20,7 +20,7 @@ As you can see in  **Figure 1** , I logged in the remote machine with the same u
 
 * **Third:** *please be sure that in the Attach to Process dialog you are using * **Default Transport** *and the qualifier in the form *[username@machinename](mailto:username@machinename)*, because this is required to do an authenticated connection. Finally, if you are able to see the list of remote processes and attach to them *but your breakpoints in code are not hit*you should check the type of code you are debugging, pressing *Select*Button in the Attach To Windows and choose the right type of code that is used by the remote process, as seen in  **Figure 2**.
 
-[![Choose the right type of Code Type that is running in the remote process](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb27.png "Choose the right type of Code Type that is running in the remote process")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image27.png)
+[![Choose the right type of Code Type that is running in the remote process](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb27.png "Choose the right type of Code Type that is running in the remote process")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image27.png)
 
  ***Figure 2***: *Choose the right type of Code Type that is running in the remote process*
 
@@ -28,7 +28,7 @@ Please verify also you have opened in Visual Studio the same code that is runnin
 
 If everything went good and you are able to attach to a remote process, you can also *configure Visual Studio to automatically run the program in the remote computer* as shown in  **Figure 3**. In this scenario usually you can setup a shared folder in the remote machine and configure a post build action that automatically copies the result of the build in the remote machine through the shared folder. The important fact is that the Start External Program should point to a valid executable in the remote machine and the user should be logged in the remote machine with Remote Debugger opened and working.
 
-[![Configure Visual Studio to start and debug a process in the remote machine](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb28.png "Configure Visual Studio to start and debug a process in the remote machine")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image28.png)
+[![Configure Visual Studio to start and debug a process in the remote machine](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb28.png "Configure Visual Studio to start and debug a process in the remote machine")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image28.png)
 
  ***Figure 3***: *Configure Visual Studio to start and debug a process in the remote machine*
 

@@ -10,19 +10,19 @@ A good option to customize TFS2010 build workflow is creating a Custom Activity,
 
 The overall operation was already covered [in this post](http://www.codewrecks.com/blog/index.php/2010/01/04/deploy-a-database-project-with-tfs-build-2010/), but as you can see that technique involved a MsBuild Activity and you needed to specify values with a really bad â€œcommand line parameterâ€ syntax.
 
-[![Immagine1](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine1_thumb.png "Immagine1")](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine1.png)
+[![Immagine1](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine1_thumb.png "Immagine1")](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine1.png)
 
 Specifying parameter with this technique is awkward and error prone. To solve this situation you can simply create a custom activity. Once you created it, you need to go to â€œArgumentsâ€ tab and insert all the input and output parameters you need.
 
-[![Immagine2](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine2_thumb.png "Immagine2")](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine2.png)
+[![Immagine2](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine2_thumb.png "Immagine2")](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine2.png)
 
 With this approach, you can use default value for arguments, and you can specify the exact type for arguments, so the workflow can do type checking against the input arguments. Iâ€™ve inserted all the input parameters I need: database name, server name, dbProjectname etc etc. Inside the Activity I simply drop a sequence and inside the sequence all the actions needed to deploy the database. The exact technique is described in my old post, the only remarkable difference is logging, because now I can directly drop a WriteBuildMessage activity inside the sequence to log messages. Here is the final activity
 
-[![Immagine3](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine3_thumb.png "Immagine3")](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine3.png)
+[![Immagine3](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine3_thumb.png "Immagine3")](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine3.png)
 
 Once you have compiled this, you can insert in the build workflow. The great advantage of this approach is that you are now able to specify parameters with great easy.
 
-[![Immagine4](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine4_thumb.png "Immagine4")](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine4.png)
+[![Immagine4](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine4_thumb.png "Immagine4")](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine4.png)
 
 Compare this with the original approach, where you needed to insert the string
 

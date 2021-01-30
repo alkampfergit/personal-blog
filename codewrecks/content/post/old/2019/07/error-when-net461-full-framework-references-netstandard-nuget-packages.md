@@ -10,17 +10,17 @@ After updating MongoDb driver in a C# big project **I start having a problem in 
 
 This happens because MongoDB driver &gt; 2.8 reference in the chain System.Buffer 4.4.0. If you take an empty.NET Full Framework 4.6.1 and references MongoDb 2.8.x driver you can verify that you have
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-18.png)
 
  ***Figure 1***: *System.Buffers reference for the project*
 
-This seems an innocuous reference, but  **if you look closely to what is inside System.Buffer you can verify that there is no package for full framework. Just check in the packages directory to verify that there is no.NET full framework package.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-19.png)
+This seems an innocuous reference, but  **if you look closely to what is inside System.Buffer you can verify that there is no package for full framework. Just check in the packages directory to verify that there is no.NET full framework package.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-19.png)
 
  ***Figure 2***: *There is no full framework package inside System.Buffers*
 
 This imply that, when you build the project, in the bin directory you will find all the dll of netstandard project, because actually you are referencing netstandard 2.0 dll.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-20.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-20.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-20.png)
 
  ***Figure 3***: *All netstandard dlls included in the bin directory of the project.*
 

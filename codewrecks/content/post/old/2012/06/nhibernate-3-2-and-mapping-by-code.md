@@ -46,7 +46,7 @@ public class Customer
 
 And let NHibernate generate the database, you got this table automatically generated in the database.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image7.png)
 
  ***Figure 1***: *Table generates by automapping in the database.*
 

@@ -12,13 +12,13 @@ In VS2012 we have support for basically any Unit Test Framework, because the new
 
 To create a list simply  **choose one or how many tests you like in test explorer, right click on one of them and choose Add to Playlist** ; if there is no playlist already loaded, the only option is “New Playlist”, just give the playlist a name and a location and create a new one.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/image4.png)
 
  ***Figure 1***: *Create a playlist from a test in Test Explorer*
 
 Now you can continue to add other test to the playlist if you want; once you are done you can select the playlist from the top menu of the Test Explorer.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/image5.png)
 
  ***Figure 2***: *You can now choose the playlist to use.*
 
@@ -28,7 +28,7 @@ A playlist is just an XML file that contains the list of all the test you added 
 
 As I told at the beginning of the post: the use of playlist is an alternative to use Traits to group test and run only a subset, but the main difference is that a Trait expresses a real property of the test, (ex the logical area of the software that got tested, or other attribute such Database to indicate that it needs a test database), while playlist are primarily meant to group together heterogeneous tests to simplify management, both for running test and manage them.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/image6.png)
 
  ***Figure 3***: *Group by traits.*
 

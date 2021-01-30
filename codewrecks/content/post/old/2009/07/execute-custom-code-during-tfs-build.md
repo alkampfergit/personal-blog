@@ -36,7 +36,7 @@ Now you only need to compile this class into a dll, and *make it avaliable to th
 
 This is a well known problem for everyone that works with Continuous integration machines, and the solution I like is  **inserting everything is needed for the build in a specific folder into the source control system of the project**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image6.png)
 
 As you can see I created a folder called BuildTools, inside it another folder called MsBuildCustomTasks and inside the compiled dll with my actino. Now Iâ€™m sure that the dll with my custom task is included into the source control system, and I can refer to it inside the TFSBuild.proj build file.
 
@@ -62,7 +62,7 @@ Now you can use this task wherever you want:
 
 As for the previous post, Iâ€™m asking to tweet a message to my twitter account when test phase fails during the build, I made a test fails, commit everything and after integration machine finished to build I can see this in my twitterDesk
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image7.png)
 
 WOW :D you can have your CI machine tweet whenever you want with less than 20 lines of code. You can now create a dedicated twitter account for every project you have, and you can follow status of the build in every device that supports twitter :D.
 

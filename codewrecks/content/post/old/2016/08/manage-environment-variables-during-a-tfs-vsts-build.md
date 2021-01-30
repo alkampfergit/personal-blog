@@ -10,7 +10,7 @@ To avoid creating unnecessary build definition, it is  **a best practice to allo
 
 Environment variables are not source controlled, this allows every developer to override settings in own machine without disturbing other developers. If I do not have a MongoDb in my machine I can simply choose to use some other instance in my network.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-16.png)
 
  ***Figure 1***: *Overriding settings with environment variables.*
 
@@ -18,13 +18,13 @@ Noone in the team is affected by this settings, and  **everyone has the freedom 
 
 Another interesting aspect of Environment variables, is that  **they can be set during a VSTS/TFS build directly from build definition**. This is possible because Variables defined for a build were set as environment variables when the build runs.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image.png)
 
  ***Figure 2***: *Specifing environment variables directly from Variables tab of a bulid*
 
 If you allow this value to be allowed at Queue Time, you can set the value when you manually queue a build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image-1.png)
 
  ***Figure 3***: *Specifying variables value at Queue Time*
 
@@ -36,13 +36,13 @@ It you want to be able to choose a different value for each build agent machine 
 
  **Another interesting aspect of Environment Variable is that they are included in agent capabilities, as you can see** from Figure 4.
 
-[![SNAGHTMLd39383](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTMLd39383_thumb.png "SNAGHTMLd39383")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTMLd39383.png)
+[![SNAGHTMLd39383](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTMLd39383_thumb.png "SNAGHTMLd39383")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTMLd39383.png)
 
  ***Figure 4***: *All environment variables are part of agent Capabilities*
 
 This is an important aspect because if you want that variable to be set in the agent, you can avoid to include in Variables tab, and  **you can require this build to be run on an agent that has TEST\_MONGODB environment variable specified**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-18.png)
 
  ***Figure 5***: *Add a demand for a specific Environment Variable to be defined in Agent Machine*
 

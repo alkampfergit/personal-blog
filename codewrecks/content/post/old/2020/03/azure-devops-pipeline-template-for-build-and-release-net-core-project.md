@@ -210,15 +210,15 @@ jobs:
 
 Look at how simple it is,  **just define triggers, add repository that contains the build script in the resources section, and simple populate the parameters, and, BAM, your project has a pipeline for build / test / publish.** The ref parameter of reference section allows  **you to choose which branch use to grab script template** , in this project I want the latest trunk version, so I’ve choose develop, other project can stay on master to have a better stable version.
 
-The template once uses an old version of task of mine to perform GitVersion, that is become really obsolete and it is not useful to maintain anymore. I’ve decided to upgrade the template to use dotnet-gitversion command line tool, I’ve upgraded the template in a feature branch, using a project as test, then I’ve merged in develop and  **when I’ll finally close it on master, every project that uses this template, will use the new definition, without any user intervention.** >  **Thanks to template I can upgrade the template in dedicated branch, test with actual project, then promote the upgrade through standard develop, release and master branch to automatically upgrade pipeline of all projects that uses this template.**  **How cool is that.** It is actually superfluous telling you how important  is to have an automatic build / test pipeline, **as an example it seems that yesterday night I’ve broke the test ![Smile](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/wlEmoticon-smile.png), shame on me**.
+The template once uses an old version of task of mine to perform GitVersion, that is become really obsolete and it is not useful to maintain anymore. I’ve decided to upgrade the template to use dotnet-gitversion command line tool, I’ve upgraded the template in a feature branch, using a project as test, then I’ve merged in develop and  **when I’ll finally close it on master, every project that uses this template, will use the new definition, without any user intervention.** >  **Thanks to template I can upgrade the template in dedicated branch, test with actual project, then promote the upgrade through standard develop, release and master branch to automatically upgrade pipeline of all projects that uses this template.**  **How cool is that.** It is actually superfluous telling you how important  is to have an automatic build / test pipeline, **as an example it seems that yesterday night I’ve broke the test ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/wlEmoticon-smile.png), shame on me**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-25.png)
 
  ***Figure 1***: *Build results showing me that some test fails*
 
  **The nice aspect of Azure DevOps pipeline is that they have a dedicated section to examine test failures,** that gives me immediate insight on what went wrong. It seems that I’ve messed something in exception handling.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-26.png)
 
  ***Figure 2***: *Dedicated pane to view test result.*
 

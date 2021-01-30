@@ -44,7 +44,7 @@ function SignalrTestViewModel(option) {
 
 This is a simple KnockoutJs view model, you can now bind a simple span to the property serverTime and watch everything works.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image2.png)
 
  ***Figure 1***: *Web page automatically updated from the server*
 

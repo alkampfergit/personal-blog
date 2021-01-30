@@ -239,13 +239,13 @@ jobs:
 
  **As you can see, with steps template I decide on final build how many stage I need, in this example I’m perfectly confortable with a single stage.** The cool part of this approach is that I can mix standard steps and steps template files, giving me more flexibility in how the pipeline is constructed. Clearly this pipeline is more complex than one that use a full template file, because we need to pass parameter to every template. Running the pipeline gives you a standard run.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-8.png)
 
  ***Figure 1***: *Steps are expanded during execution.*
 
 As you can verify from  **Figure 1** all steps templates are expanded in basic steps, allowing you to verify the output of every single step. Thanks to local tool feature I can simply run dotnet tool restore to have GitVersion automatically installed
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-9.png)
 
  ***Figure 2***: *Restoring tooling with dotnet tool restore automatically restore gitversion*
 

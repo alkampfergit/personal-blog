@@ -24,7 +24,7 @@ The main difference is that R# has the concept of macro, writing such a snippet 
 
 Here is the template in R#.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image7.png)
 
  **Figure 1** : *Live template in action*
 

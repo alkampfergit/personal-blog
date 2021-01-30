@@ -34,7 +34,7 @@ Usage of the T4 template is really simple, Iâ€™ve created in the test proje
 
 It is quite the same of the previous version, but now I inserted some enhancements. If you look at the property list you can see that I inserted properties like â€œCustomers.CustomerIDâ€ and â€œCustomers.ContactNameâ€, that belongs to the customers object. When you use a domain model you are working with a graph of object, but dto must be plain. My generator will generate this class:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image14.png)
 
 My dto class implements various interfaces and it has properties like Customers\_ContactName and Customers\_CustomerID, so it is a simple transfer object that contains all information we need. The assembler class is responsible to create a dto from original object and as usual can be used in this way:
 
@@ -89,7 +89,7 @@ Another interesting stuff is this one, you can link various Dto objects between 
 
 Iâ€™m asking to generate an OrdersTestDto object that contains the â€œCustomersâ€ property, but I specify that I do not want full Customers object, but simply a CustomersDto, so you will end in two dto connected together
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image15.png)
 
 This facility permits me to reuse dto but actually the ExpressionSelector of this dto cannot be directly used with LINQ, it needs still more work ;).
 

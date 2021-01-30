@@ -21,7 +21,7 @@ Error CS0400: The type or namespace name 'System' could not be found in the glob
 
 This happens because.NET Standard uses NuGet for package management, but the standard Task of NuGet restore does not work with a.NET Standard solution. The fix is simple,  **just add a.NET Core Task and ask to issue a dotnet restore command before the standard Visual Studio build**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-5.png)
 
  ***Figure 1***: *Add a dotnet restore task to restore nuget package for your.NET standard /.NET core solution*
 
@@ -29,7 +29,7 @@ This happens because.NET Standard uses NuGet for package management, but the sta
 
 >.NET Core and.NET Standard projects uses dotnet.exe tools and even if everything works as expected in Visual Studio, special care should be taken when you configure the build.
 
- **The solution to this problem is, again, using the dotnet command line utility to run the tests**. The complete configuration is shown in  **Figure 2.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-6.png)
+ **The solution to this problem is, again, using the dotnet command line utility to run the tests**. The complete configuration is shown in  **Figure 2.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-6.png)
 
  ***Figure 2***: *Configuration of dotnet command line to run the tests*
 
@@ -41,19 +41,19 @@ This simply requests that output should be created in as pecial directory $(Comm
 
 Now you only need to add an action to Publish Test Result to the build, as shown in  **Figure 3**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-7.png)
 
  ***Figure 3***: *Publishing test result with the appropriate task.*
 
 The configuration of the Publish Test Result task is really straightforward, just specify VSTest as *Test Result Format* (2) and finally specify that you want to publish all \*.trx files inside the $(Common.TestResultsDirectory). The Publish Test Results task can also understand test output of JUnit, NUnit and xUnit.
 
- **The result is a nice build that is capable of building your multitargeted project, and you can see tests result in the standard UI, even if the tests are executed directly from a command line utility (dotnet.exe).** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-8.png)
+ **The result is a nice build that is capable of building your multitargeted project, and you can see tests result in the standard UI, even if the tests are executed directly from a command line utility (dotnet.exe).** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-8.png)
 
  ***Figure 4***: *Test results are uploaded to the build as for a standard build.*
 
 Since the project is MultiTargeted, we find both the versions in the Artifacts of the build, as you can see from Artifacts Explorer in  **Figure 5**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-9.png)
 
  ***Figure 5***: *Both versions (.net 452 and.netstandard 1.6) are present in the artifacts.*
 

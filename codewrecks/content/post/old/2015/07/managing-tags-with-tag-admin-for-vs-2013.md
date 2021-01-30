@@ -12,13 +12,13 @@ As an example if the team is doing T-Shirt sizing for User Stories, we can have 
 
 An optimal solution to cope with these problem is installing an extension of Visual Studio that allows you to manage tags
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/07/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/07/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/07/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/07/image3.png)
 
  ***Figure 1***: *Tag Admin For Visual Studio 2013 in Visual Studio Gallery*
 
 This extension adds a nice link in your team explorer to manage your tags. If you open it, you are immediately  **prompted with a complete list of all of your tags** , with a counter that identify how many work items are associated with each tag.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/07/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/07/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/07/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/07/image4.png)
 
  ***Figure 2***: *List of tags of team project.*
 
@@ -26,7 +26,7 @@ If some tags are not associated to any work item and you wonder why they are lis
 
 In this example I have a misspelling problem between delighter and deligter so I can click mispelled tag, and a nice Action buttons appears in the UI allowing for some actions.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/07/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/07/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/07/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/07/image5.png)
 
  ***Figure 3***: *Available actions for tag*
 

@@ -53,13 +53,13 @@ Super Easy isn’t it?  **To know if the build of the project succeeded you can 
 
 The rest of the handler simply grab a reference to the Build OutputWindow and add a message telling that the build was stopped because the specific project failed to build. Now you can simply press F5 and debug your plugin in Visual Studio experimental Hive.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image7.png)
 
  ***Figure 1***: *New menu option created by the plugin*
 
 This plugin will create a couple of new Menu Items under Tools menu, the first one is the “Attach to IIS” discussed previously, the second one is the “Stop Build on 1st error” that is disabled by default, you can enable simply clicking on it.  **Now if you build a solution and a project failed to build you will receive a message like this one**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image8.png)
 
  ***Figure 2***: *Here is error message of the build and the subsequent info that tells you that the build was stopped*
 

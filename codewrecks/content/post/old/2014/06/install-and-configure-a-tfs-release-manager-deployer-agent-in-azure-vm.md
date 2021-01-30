@@ -55,44 +55,44 @@ Now be sure that these account satisfy these conditions:
 
 Domain user should have the standard Service User flagged
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image3.png)ù
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image3.png)ù
 
 Then the shadow account in the RM machine should be also Release Manager and not only Service User, here is the setting.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image4.png)
 
 Please note that the user is expressed in the form MACHINENAME\username, so it is TFS2013PREVIEWO\InReleaseDeployer, and it is a Release Manager and a Service User.
 
 Finally you need to add the user of the Azure VM.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image5.png)
 
 Even for this user you need to express it in the form MACHINENAME\UserName, so it is NABLA-DEP1\InReleaseDeployer. This completes the setup of the shadow account for your RM Server.
 
 Now it is the turn of the Azure VM so **connect in Remote Desktop on Azure VM, and *login with credentials NABLA-DEP1\InReleaseDeployer user, do not use other users* and finally configure the agent **. Before configuring the agent, open credential manager and specify credentials to connect to the public address of RM Server. You need to add a Windows Credential specifying the Credentials that should be used upon connection to the Remote Release Management Server. Be sure to prefix the user with domain specification, as in the following picture (CYBERPUNK\InReleaseDeployer).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image6.png)
 
 You should now see the credentials you just entered.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image7.png)
 
 Actually adding Credentials in Windows Credentials is required only if you want to use RM Client to connect to the server, but I noticed that my user had problem connecting to the server if I miss this part, so I strongly suggest you to add RM Server to Windows Credentials to avoid problem.
 
 Now the last step is configuring the agent.** You must specify Nabla-dep1\InReleaseDeployer as the user used to run the service and the public address of your Release Management Server**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image8.png)
 
 Press Apply settings and the configuration should complete with no error.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image9.png)
 
 Once the Deployer Agent is configured you should be able to find the new agent from Release Management Client, in Configure Path –&gt; Servers –&gt; New –&gt; Scan For New.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image10.png)
 
 Everything is ok, my RM Server is able to see the deployer on the VM even if the VM is outside the network and not joined to corporate domain. Now you can select the new agent and Press Register to register with the list of valid Deployer Agents.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image11.png)
 
 Gian Maria.

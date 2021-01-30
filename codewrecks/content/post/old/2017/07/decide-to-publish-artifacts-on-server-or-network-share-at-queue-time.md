@@ -18,11 +18,11 @@ The option to “where to store my artifacts” is not something that I want to 
 
 > The best solution would be to give user the ability to decide at queue time where to store artifacts. This will allow you to schedule special build that store artifacts on a network share instead that on server
 
-The obvious and simple solution is to use Two “Publish Artifacts” task, one configured to store artifacts on the server, the other configured to store artifacts on a network share.  **Then create a simple variable called PublishArtifactsOnServer and run the Publish Artifacts configure to publish on the server only when this value is true.** [![SNAGHTML7ebdcd](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML7ebdcd_thumb.png "SNAGHTML7ebdcd")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML7ebdcd.png)
+The obvious and simple solution is to use Two “Publish Artifacts” task, one configured to store artifacts on the server, the other configured to store artifacts on a network share.  **Then create a simple variable called PublishArtifactsOnServer and run the Publish Artifacts configure to publish on the server only when this value is true.** [![SNAGHTML7ebdcd](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML7ebdcd_thumb.png "SNAGHTML7ebdcd")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML7ebdcd.png)
 
  ***Figure 1***: In Figure 1 there is the standard configuration of a Publish Artifact task that stores everything on the server and it is run on the custom condition that the build is not failed and the PublishArtifactsOnServer is true. Now you should place another Publish  Artifacts task configured to store drops on a network share.
 
-[![SNAGHTML80160a](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML80160a_thumb.png "SNAGHTML80160a")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML80160a.png)
+[![SNAGHTML80160a](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML80160a_thumb.png "SNAGHTML80160a")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML80160a.png)
 
  ***Figure 2***: *Another Publish Artifacts task, configured to run if PublishArtifactsOnServer is not true*
 

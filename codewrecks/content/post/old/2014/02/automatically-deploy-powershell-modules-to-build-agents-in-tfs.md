@@ -14,13 +14,13 @@ This is a real good question, but sadly enough it has no out-of-the-box answer. 
 
 TFS Build controllers have a special Source Control Folder you can specify to store assemblies that should be available for Agents during the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb24.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image24.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image24.png)
 
  ***Figure 1***: *Version control path to custom assemblies for Build Controllers*
 
 The very first step is creating a subfolder where you store all PowerShell modules you want to be available to Build Agents during a build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image25.png)
 
  ***Figure 2***: *Store your PowerShell Modules inside a specific folder of the Path to custom assemblies*
 
@@ -58,7 +58,7 @@ The last step is determine $tempBuildDirectory combining temp folder with agent 
 I did not use this strategy really often because it can be fragile.  **If you are using TFVC the best solution usually is** - *Add the custom powershell modules directory to the workflow mapping of the build*
 - *use the Import-Module PowerShell command to import modules from a fixed location*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image26.png)
 
  ***Figure 3***: *Download your custom PowerShell modules in a know location as part of the build workspace.*
 

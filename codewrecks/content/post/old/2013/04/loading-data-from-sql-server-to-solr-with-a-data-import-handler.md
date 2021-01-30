@@ -12,7 +12,7 @@ Solr is used not as a primary data store because it is a Search Platform whose p
 
 Quite often you do not need real-time update, you can simply update your solr server nightly, or at given interval (update each X hours). In this scenario  **there is not the need to setup a mechanism that immediately replicate modification of Primary data store to Solr and you can rely on DIH:** [**Data Import Handler**](http://wiki.apache.org/solr/DataImportHandler). Suppose you have your data inside a Sql Server inside a table called tag; the first operation you need to do is locating all jar libraries that are needed to use DIH with Solr.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image14.png)
 
  ***Figure 1***: *Copy all needed library inside the lib folder of core home directory*
 
@@ -49,13 +49,13 @@ This is the minimal configuration that is used to load data from Sql Server to S
 
 Now everything is in place, you can go to the Dataimport section of the core you configured and you can execute the import handler.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image15.png)
 
  ***Figure 2***: *Import data with standard solr web interface.*
 
 You can now check that after the import solr contains data you expect.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image16.png)
 
  ***Figure 3***: *Simple \*:\* query to verify that data was really imported from the DIH*
 

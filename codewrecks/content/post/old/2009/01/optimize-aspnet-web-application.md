@@ -12,15 +12,15 @@ In web applications one of the most annoying stuff is a slow home page, and asp.
 
 Another great tool is [YSlow](http://developer.yahoo.com/yslow/), an addin for Firefox’s firebug. Yslow is really useful because it is really simple to use, just enable it and navigate to a page in firefox, then you gets results for the page.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb3.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb3.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image3.png)
 
 The good thing about YSlow is that it gives you votes (A to F) to the page in different areas related to performances. In the above image I can see that the page has an F on the area "make fewer HTTP request", if you click on the text firefox open a [page](http://developer.yahoo.com/performance/rules.html#num_http) that explain the reason for this rule. This is important because it does not tells only where the site is slow but it tells you why. If you expand the rule you find some details
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb4.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb4.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image4.png)
 
 Wow, this page makes a lots of http requests, and if you check it with windows round trip analyzer you can find that the reason for slow loading is mainly due to this problem. But YSlow can also show a clear graph that shows you the size of the page even with cache enabled
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb5.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb5.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image5.png)
 
 I see that the first request is a huge 99 http request for 500k of data, and even with cache active we have a 67k and 81 http request. It is time to reduce the number of Css and Js files on the site :D
 

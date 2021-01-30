@@ -8,7 +8,7 @@ categories: [Entity Framework]
 ---
 In [previous article](http://www.codewrecks.com/blog/index.php/2012/09/25/entity-framework-5-0-first-steps-and-impressions/?preview=true) I’ve explained how simple is starting to use EF5 to access a database and use Database-Migrations to create a database suitable to contain your entities (with a simple Update-Command from the package manager console). When you show this technique to programmers the first complain they have is “ **the structure of the generated tables is not suitable to me** ”.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image8.png)
 
  ***Figure 1***: *Database generated with previous code example*
 
@@ -57,7 +57,7 @@ protected override void OnModelCreating(DbModelBuilder modelBuilder)
 
  **By overriding OnModelCreating you can add your custom mapping to the Configurations collection** , now if you issue another Update-Database you can verify that the table is now created the way you want.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image9.png)
 
  ***Figure 2***: *New structure of the table that respect the CustomerMap class*
 

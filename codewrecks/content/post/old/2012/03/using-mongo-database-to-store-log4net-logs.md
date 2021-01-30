@@ -39,7 +39,7 @@ log4net.GlobalContext.Properties["CurrentItem"] = item;{{< / highlight >}}
 
 With this simple line of code each subsequent log will have in Mongo Database an associated object of type item, until you will not remove the object from the GlobalContext.
 
-[![Complex objects are stored inside the log](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb21.png "Complex objects are stored inside the log")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image21.png)
+[![Complex objects are stored inside the log](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb21.png "Complex objects are stored inside the log")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image21.png)
 
  ***Figure 1***: *Your log contains all data from extended properties*
 

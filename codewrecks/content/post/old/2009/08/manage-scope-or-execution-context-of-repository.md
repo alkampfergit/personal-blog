@@ -12,7 +12,7 @@ The software is structured as service, we use [Castle Nhibernate Facility](http:
 
 The problem arise because the repository use a single session per call, so when the ViewModel ask for an object, the service return a disconnected object.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image15.png)
 
 This happens because the repository does not have control over the lifetime of the session, it simply open the session, does whatever he need to does with the session, and then Dispose it. Nhibernate Castle integration helps a lot because it keeps track of session reference counting, so if you open a session, and in the same CallContext you open another session, you get a sort of a â€œweak referenceâ€ to the original session. This means that the session gets disposed only when the first created session is disposed.
 

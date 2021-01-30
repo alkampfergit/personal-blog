@@ -10,7 +10,7 @@ I usually use the [Brian Kellerâ€™s RTM Virtual Machine](http://blogs.msdn.
 
 I verified that the free space on Virtual Disk is quite low, (1.5 GB), so I added another vhd to the machine (it is a matter of seconds):
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image12.png)
 
  ***Figure 1***: *Secondary disk added to the Demo Virtual Machine*
 

@@ -8,7 +8,7 @@ categories: [WPF]
 ---
 I needed a simple way to obtain this simple result: whenever a certain component in the UI (a WebBrowser control) raises some specific event, I want a command in the VM to be executed, without the need to specify any command parameter. The only requirement I want is avoiding a single line of code in the UI :) because, having no code in the UI is one of the main benefit of the MVVM model.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image15.png)
 
 To keep everything simple I want a simple syntax that permits me to specify that when an event of type X is raised, a command of name Y should be called.
 

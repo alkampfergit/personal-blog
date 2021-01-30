@@ -31,7 +31,7 @@ If I remove credential helper (git config –global credential.helper unset) eve
 
 You can simple open credential manager on your computer,
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image17.png)
 
  **Figrue 1:** *Credential manager in your Control Panel settings*
 

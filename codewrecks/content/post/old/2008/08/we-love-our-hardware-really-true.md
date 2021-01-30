@@ -10,7 +10,7 @@ As [Jeff Atwood says](http://www.codinghorror.com/blog/archives/001157.html) “
 
 I’m one of those person that build his development machine, I want to choose every pieces of hardware, and this is mainly because I worked as a technician  during my university period, so I used to work with a lot of different hardware, and I cannot think to own a computer that is “packaged by someone else”, each part of my pc is there because I want it to be there.
 
-I use P5KL asus motherboard, I’m a [Three monitor guy](http://www.codewrecks.com/blog/wp-content/uploads/2008/04/pict2009.jpg) but I usually have a standard motherboard, one Video card on the PCI express, and another in standard PCI slot, it goes really well.
+I use P5KL asus motherboard, I’m a [Three monitor guy](https://www.codewrecks.com/blog/wp-content/uploads/2008/04/pict2009.jpg) but I usually have a standard motherboard, one Video card on the PCI express, and another in standard PCI slot, it goes really well.
 
 For CPU same of Jeff, clock speed really matters, so I have a 3.0 GHZ dual core E8400, it has 6 MB L2 cache, and this is really good for speed.
 

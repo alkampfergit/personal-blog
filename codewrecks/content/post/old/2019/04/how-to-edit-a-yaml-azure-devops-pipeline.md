@@ -14,7 +14,7 @@ If you still think that editing a YAML file is a daunting experience because you
 
 With the extension enabled, after you opened a YAML Build definition in Visual Studio Code, you can click on the YAML button in the lower right part of visual studio code editor to change language
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-5.png)
 
  ***Figure 1***: *Language mode selection of Visual Studio Code*
 
@@ -24,33 +24,33 @@ That area is the Language Mode Selection, and it is where you specify to Visual 
 
 Thanks to the Language Mode Selector, we can now specify that the file is a Azure Pipeline file and not a standard YAML file.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-6.png)
 
  ***Figure 2***: *Selecting the right language type allows VS Code to give you tremendous help in editing the file.*
 
 This is everything you need to do, from now on, VS Code will give you helps in the context of Azure DevOps pipeline syntax. Even if the file is completely empty the editor shows you possible choices for the first level nodes
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-7.png)
 
  ***Figure 3***: *Suggestions on empty file*
 
- **Since I usually start specifying the pool, I can simply choose pool, then let VS Code guide me in the compilation of all properties** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-8.png)
+ **Since I usually start specifying the pool, I can simply choose pool, then let VS Code guide me in the compilation of all properties** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-8.png)
 
  ***Figure 4***: *Intellisense in action editing the file*
 
-In real scenario you usually starts from some template file (another advantage of having build in code), you already prepared with standard build for you project, but even in that scenario  **having intellisense to refine the build will help you in choosing tasks.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-9.png)
+In real scenario you usually starts from some template file (another advantage of having build in code), you already prepared with standard build for you project, but even in that scenario  **having intellisense to refine the build will help you in choosing tasks.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-9.png)
 
  ***Figure 5***: *Help in choosing tasks*
 
 I can assure that, after some usage, it is far more powerful and quick to edit a build with VS Code than to edit a standard build made with tasks in the Web based editor. Graphical editor are powerful and are a good entry point for those who does not know the instrument, but intellisense powered editors are more productive and powerful.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-10.png)
 
  ***Figure 6***: *You do not have only intellisense to choose the task, but it will shows you also information about the task*
 
 The only drawback I found is using custom tasks that were not recognized by the intellisense, as my GitVersion Task, that was marked as wrong because VS Code does not know it.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-11.png)
 
  ***Figure 7***: *Custom tasks were not automatically recognized by VS Code*
 

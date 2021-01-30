@@ -81,7 +81,7 @@ int Save(Album album);
 
 As you can see, this declaration informs the client that in case of fault, service will return failure details in an object of type FaultDetail.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/image6.png)
 
 When an exception happens, server code should throw a very specific type of exceptions of type FaultException with the type of exception data as Type parameter, as showed with this code:
 

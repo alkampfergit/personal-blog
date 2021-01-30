@@ -32,7 +32,7 @@ if (SynchronizationContext.Current != null && SynchronizationContext.Current == 
 
 In app.xaml.cs, during the startup of the program I grab a reference to the current synchronization context, I store a reference inside a static variable called mainSyncContext and this permits to check if we are in the main UI thread of WPF verifying that the current synchronization context is the very same I got during application startup. To understand what I’m telling you, here is a snapshot of what happens during the execution of the software
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image8.png)
 
  ***Figure 1***: *As you can see I have a current Synchronization context that is not the Wpf Dispatcher one*
 

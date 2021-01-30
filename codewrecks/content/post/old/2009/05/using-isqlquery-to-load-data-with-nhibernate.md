@@ -29,7 +29,7 @@ var result = UnitOfWorkBaseDbDao<fictiousEntity>.GetByCriteria(query);{{< / high
 
 entity called  **fictiousEntity** is used only to join data from two base tables and contains relations with other three tables, then I tell to ISQlQuery that in resultset there are all the columns to rebuild other related entities with  **AddJoin.** Finally I use a DistinctResultTransformer to take only the first element of the tuple. When you use AddJoin(), NHibernate does not return an object for each row in the resultset, but instead returns one object for each join. (see this figure)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/05/image-thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/05/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image-thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image2.png)
 
 This is a snapshot of the TransformTuple of my DistinctResultTransformer object, that simply takes the object whose index was specified in constructor. So when I wrote  **SetResultTransformer(new DistinctResultTransformer(0))** Iâ€™m asking to return only the first element, that was my fictiousEntity used to aggregate the result.
 

@@ -35,13 +35,13 @@ This simple script accepts only a single parameter, the output file for the test
 
  **To have my test to be imported in VSTS build results, I’ve configured pester to output the file in NunitXml format.** Creating a build is really simple, and it is composed of only three tasks.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-12.png)
 
  ***Figure 1***: *Simple three step builds to run Pester tests on my PowerShell Scripts*
 
 As you can see I use the GitVersion task to have a nice descriptive version for my build; Pester is run a PowerShell task and finally Publish Test Results task is used to upload test result to the result of the build. Now I have a nice build results that have a GitVersion semantic name and also have the summary of the tests
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-13.png)
 
  ***Figure 2***: *Result of Pester Test run is included in build.*
 

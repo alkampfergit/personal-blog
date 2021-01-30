@@ -10,7 +10,7 @@ In previous post I demonstrated [how you can create a Team Project from Web Inte
 
 While SharePoint integration is now an uncommon requirement, reporting services are still used. After my new Team Project (named*Test Project 2* ) was created from web interface, I verified that nothing gets created in my Reporting Services instance.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image-5.png)
 
  ***Figure 1***: *No reporting was created for new Team Project*
 
@@ -18,7 +18,7 @@ While SharePoint integration is now an uncommon requirement, reporting services 
 
 You can add reporiting with the tfpt.exe power tools command line utility. As an example here is the help for the * **addprojectreports** *command, used to create reports for an already created Team Project.
 
-[![This image shows the list of options available to the addprojectreports command.](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb-3.png "Help of the addprojectreports command")](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image-3.png)
+[![This image shows the list of options available to the addprojectreports command.](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb-3.png "Help of the addprojectreports command")](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image-3.png)
 
  ***Figure 2***: *Help of the addprojectreports command*
 
@@ -36,7 +36,7 @@ tfpt addprojectreports
 
 After a little while tfpf.exe created everything as I can verify from Reporting Services Site, now I have the usual folder for the Team Project that contains all Reports.
 
-[![After tfpf addprojectreports command all reports for the team project are correctly created in Reporting Services Site](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb-6.png "Reports were created for the Team Project")](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image-6.png)
+[![After tfpf addprojectreports command all reports for the team project are correctly created in Reporting Services Site](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb-6.png "Reports were created for the Team Project")](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image-6.png)
 
  ***Figure 3***: *Reports were created for the Team Project*
 

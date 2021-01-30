@@ -6,7 +6,7 @@ draft: false
 tags: [Tfs]
 categories: [Team Foundation Server]
 ---
-Today I encountered a strange error during the configuration of a Build Controller in TFS. We installed and configured the first Build Controller for a TFS Instance, everything went good,  **but both controllers and agent are marked with stopped icon, even if status is “ready”** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/10/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/10/image3.png)
+Today I encountered a strange error during the configuration of a Build Controller in TFS. We installed and configured the first Build Controller for a TFS Instance, everything went good,  **but both controllers and agent are marked with stopped icon, even if status is “ready”** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/10/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/10/image3.png)
 
  ***Figure 1***: *Controller and agents are marked as stopped even if they are in Ready State*
 

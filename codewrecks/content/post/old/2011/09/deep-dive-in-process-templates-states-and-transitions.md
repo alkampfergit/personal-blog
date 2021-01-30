@@ -23,7 +23,7 @@ This requirements can be achieved with little work, as you can see from  **Figur
 
 Now we want to add more complexity,  **<font color="#0000ff">we need to add another field called “rejected Reason” where we want to insert a detailed description of the reason why this bug was rejected</font>** <font color="#0000ff"><strong>(moved from <em>triage</em> do <em>Closed</em>)</strong></font>. First of all we add the field and update the UI Accordingly (as seen in previous posts), The result is shown in  **Figure 2**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image2.png)
 
  **Figura 2:** *A field called RejectedReason was added to the Work Item Definition*
 
@@ -37,13 +37,13 @@ Solving this problem is really easy in TFS2010 thanks to the incredible flexibil
 
 To obtain desired result, we can insert the READONLY rule to *Rejected Reason*field in all states, excepts for the Closed state, with this configuration the Revision Note field will be editable only when the state is * **Closed**.*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image3.png)
 
  **Figura 4:** *When I’m in Triage state the field Revision Note is Readonly, but when I move to Closed State it is editable.*
 
 This is still not perfect, because now you can add a Rejected Reason when the bug has a transition from * **Fixed** *to * **Closed** ,*because the * **Closed** *state has no READONLY RULE. To obtain our goal, we need to use another cool capability of Work Item state management, adding a rule to a transition. A RULE added to a transition is applied only when the state changes using that transition. In our scenario we can simply add a READONLY rule for the *Rejected Reason*field to the transition that bring the Bug from * **Fixed** *to * **Closed** *, now we can edit Rejected Reason only when the state pass from * **Triage** *to * **Closed**.*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image4.png)
 
  **Figura 5:** *The Rejected Reason field has the READONLY rule applied when the state pass from fixed to closed.*
 
@@ -57,7 +57,7 @@ We can satisfy this requirement with the following steps: first of all you need 
 
 We should now open the  **definition of the transition** , select the “Fields” tab and add a COPY RULE to the field Resolved Reason to automatically change the value of *Resolved Reason* field during that transition.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image5.png)
 
  **Figura 7:** *Steps needed to automatically fill the value of the ResolvedReason field during the transition from  **Trieage** to  **Closed**.*
 
@@ -73,7 +73,7 @@ As you see in  **Figure 8** , the first tab is used to specify the condition, in
 
 Now you can create a new bug in *triage* status, save it and change the status in *closed;*now you can verify that if the Reason field is different from Duplicate, the Rejected Reason field become required.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image6.png)
 
  **Figura 9:** *The Reason is Duplicate, so the Work Item is valid, immediately after you change the Reason to Not Reproductble, the Work Item is not valid anymore because the Rejected Reason field is now REQUIRED.*
 

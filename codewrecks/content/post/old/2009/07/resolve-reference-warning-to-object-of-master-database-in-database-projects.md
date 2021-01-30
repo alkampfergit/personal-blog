@@ -15,11 +15,11 @@ C:\DEVELOP\myproject\TRUNK\SRC\COMMON\SQLSERVER\REPMANAGEMENT.DATABASE\SCHEMA OB
 
 This happens because I used the  **sp\_executesql** in my stored procedures, and sp\_executesql is one of the stored that resides into Master database. To avoid these warnings you must add a reference to all objects that are in master schema.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image16.png)
 
 This kind of reference is not a simple one, but is a â€œDatabase referenceâ€. You can find a reference of the master db in directory %program files%/Microsoft Visual STudio 9.0/VSTSDB/Extensions/SqlServer/SqlVersion/DBSchemas
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image17.png)
 
 The dbschema of master database is really big, almost 8 megabytes, and it can slow down your project compilation, because visual studio needs to analyze it to retrieve definition of all objects of master db. Now, since the original master.dbschema contains definition of thousands of db objects, you can create a shrinked version of it that contains only the definition of those object you really reference into your project.
 

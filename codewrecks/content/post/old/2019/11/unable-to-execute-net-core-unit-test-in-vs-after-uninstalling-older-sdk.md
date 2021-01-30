@@ -18,7 +18,7 @@ To verify this supposition, I went to the folder C:\Program Files (x86)\dotnet\s
 
 > Visual Studio test runner seems to use x86 version of.NET  core SDK, so if you uninstall it (leaving only x64 version) you are not able anymore to run tests based on that.NET core version with Test Explorer.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/11/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/11/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/11/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/11/image-10.png)
 
  ***Figure 1***: *My c:\program files\x86\dotnet\shared\Microsoft.Netcore.App folder that shows the installation of 2.2.5 x86 version of the sdk.*
 

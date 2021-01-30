@@ -10,7 +10,7 @@ I have a database with several Gigabyte of data and query performance is usually
 
 One of this view, have four left outer join from a main table to other four tables and we have a SELECT COUNT query that is quite slow, so we decide to understand how to optimize it. I started looking at the execution plan and I found this.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/10/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/10/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/10/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/10/image.png)
 
  ***Figure 1***: *Original execution plan.*
 

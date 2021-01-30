@@ -20,13 +20,13 @@ Every developer loves experimenting new libraries, new patterns etc, and in the 
 
 In TFS 2017 you have the “Search code” textbox, in the left upper part of the Web UI, and if you start typing a nice help allows you to view the syntax you can use.
 
-[![clip_image001](http://www.codewrecks.com/blog/wp-content/uploads/2017/01/clip_image001_thumb.png "clip_image001")](http://www.codewrecks.com/blog/wp-content/uploads/2017/01/clip_image001.png)
+[![clip_image001](https://www.codewrecks.com/blog/wp-content/uploads/2017/01/clip_image001_thumb.png "clip_image001")](https://www.codewrecks.com/blog/wp-content/uploads/2017/01/clip_image001.png)
 
  ***Figure 1***: *All the syntax used to search inside code with the new Search Code Functionality*
 
 As you can see  **you can search text inside name of a class, comment, constructor, etc, and you can also use AND OR NOT.** This gives you a tremendous flexibility and usually in few seconds you can can find the code you need. Results are presented in a nice way, and you can immediately jump to the code to verify if the result is really what you are searching for.
 
-[![clip_image002](http://www.codewrecks.com/blog/wp-content/uploads/2017/01/clip_image002_thumb.png "clip_image002")](http://www.codewrecks.com/blog/wp-content/uploads/2017/01/clip_image002.png)
+[![clip_image002](https://www.codewrecks.com/blog/wp-content/uploads/2017/01/clip_image002_thumb.png "clip_image002")](https://www.codewrecks.com/blog/wp-content/uploads/2017/01/clip_image002.png)
 
  ***Figure 2***: *Results allows you to immediately browse the file with the match within the Web Ui*
 

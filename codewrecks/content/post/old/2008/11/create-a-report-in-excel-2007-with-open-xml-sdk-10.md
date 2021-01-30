@@ -10,7 +10,7 @@ I need a program that send by email some reports each day to a certain number of
 
 The first step is create a master document, the master document will contain a single row of data, and you can create the graphics the way you like.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image12.png)
 
 Now we only need to modify the file adding real data and updating graphics range to accommodate the new data. My first tentative is to build an ExcelFiller class that can do this for me with simple syntax. You can find the [whole file here](http://www.codewrecks.com/blog/storage/excelfiller.txt), you can use as starting point if you need.
 
@@ -167,7 +167,7 @@ ef.Dispose();{{< / highlight >}}
 
 If you run it with the original document the result is this.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image13.png)
 
 As you can check all values are inserted correctly, and the graph is updated with the new data.
 

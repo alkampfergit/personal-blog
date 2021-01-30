@@ -8,13 +8,13 @@ categories: [Team Foundation Server]
 ---
 With TFS / VSTS Build system it is possible to configure Git to require that a  **specific branch is protected, and you need to use Pull Requests to push code into it, and the pull request can be accepted only if a specific build is green**. Here is the typical configuration you can do in admin page for your Git repositories.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-3.png)
 
  ***Figure 1***: *Branch policies in VSTS/TFS*
 
 In  **Figure 1** it is represented the configuration for branch policies; in this specific configuration I require a specific build to run whenever a member create a pull request against develop branch. The effect is:  **if a developer try to directly push to develop branch, the push is rejected**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-4.png)
 
  ***Figure 2***: *Push was rejected because Branch Policies are defined for develop branch.*
 

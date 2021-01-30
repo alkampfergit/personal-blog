@@ -10,7 +10,7 @@ My desire is to move my Italian blog located in [http://blogs.ugidotnet.org/rgm]
 
 The starting point is looking for a library that takes care of implementing Metaweblog API communication in your language of choice, I’ve find the [**Joe Blogs**](http://joeblogs.codeplex.com/) ** ** on *Codeplex* so I decided to give it a look to verify if it suits my need. I’ve started creating a minimal interface in Winform.
 
-[![A screenshot of the tool in action while it is migrating my blog](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb29.png "A screenshot of the tool in action while it is migrating my blog")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image29.png)
+[![A screenshot of the tool in action while it is migrating my blog](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb29.png "A screenshot of the tool in action while it is migrating my blog")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image29.png)
 
  ***Figure 1***: *A screenshot of the tool in action while it is migrating my blog*
 

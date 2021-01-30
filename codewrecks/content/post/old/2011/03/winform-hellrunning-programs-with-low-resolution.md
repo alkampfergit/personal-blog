@@ -8,13 +8,13 @@ categories: [NET framework]
 ---
 Iâ€™ve a problem, we developed a winform program that has a really big startup form. The height of the form is 880 pixel and is designed to work on big monitors. Clearly everything is resizable, so if you resize the form you can still work with it, with no problem.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image15.png)
 
  ***Figure 1***: *the form resized*
 
 as you can see the form is divided in: blue part (filters), yellow part (result of the query), and finally red part (detail of selected element). As you can see, even when the form is resized it is still usable. A user that work at 1027×768 send me this screenshot telling me that she could not edit details of the items
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb20.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image16.png)
 
  ***Figure 2***: *layout is completely messed, the red part (edit details) is missing*
 

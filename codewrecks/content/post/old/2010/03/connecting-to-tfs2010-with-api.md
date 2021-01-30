@@ -34,7 +34,7 @@ var collections = tpcService.GetCollections();
 
 As you can see the TfsConfigurationServer object can be queried with the familiar GetService&lt;T&gt; method asking for a ITeamProjectCollectionService, that has the method GetCollections() to have a list of all Team Project Collection present on the server.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/03/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/03/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/03/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/03/image16.png)
 
 alk.
 

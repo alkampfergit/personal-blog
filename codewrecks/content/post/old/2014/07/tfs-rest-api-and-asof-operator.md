@@ -59,7 +59,7 @@ sourceId: 270
 
 When you execute a query, the result is a series of Work Items Id, but if you need summary data for a chart, you can simply count the number of elements of the results array to obtain the number of bug in state *proposed*. In this example this number is 13. If You execute execute a separate query for each state you will end with all the data you need to create a simple chart of Bugs count divided by state. This is not a big result, because this type of graphs is available directly from your VSO account.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image4.png)
 
  ***Figure 1***: *Count of Bugs grouped by state*
 

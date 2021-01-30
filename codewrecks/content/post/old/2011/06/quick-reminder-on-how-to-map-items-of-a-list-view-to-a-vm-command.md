@@ -10,13 +10,13 @@ The problem is really simple, but sometimes I see people tend to forget a little
 
 Suppose you have a ListView bounds to a list of items called *SingleResult*, for each SingleResult I have a complex layout and the main ViewModel contains a command that expect a SingleResult parameter called â€œShowDetailsâ€ that simply shows the details of a SingleResult item. I see people do binding in this way.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image18.png)
 
  ***Figure 1***: *Code to bind a button to a command*
 
 When the program runs this is the UI.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image19.png)
 
  ***Figure 2***: *The UI in action.*
 

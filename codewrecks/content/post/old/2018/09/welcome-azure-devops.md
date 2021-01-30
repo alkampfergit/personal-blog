@@ -10,7 +10,7 @@ categories: [Visual Studio ALM]
 
 > Visual  Studio Team Services was rebranded in Azure DevOps, this will not impact your existing VSTS projects, but it is wise to start planning for a smooth transition.
 
-First of all, if you still don’t use the new navigation, I strongly suggests to enable it, because  **it will become the default navigation in the future** ,  **and it is best to gain familiarity with it, before it will become the only UI available.** [![SNAGHTML63aa86](http://www.codewrecks.com/blog/wp-content/uploads/2018/09/SNAGHTML63aa86_thumb.png "SNAGHTML63aa86")](http://www.codewrecks.com/blog/wp-content/uploads/2018/09/SNAGHTML63aa86.png)
+First of all, if you still don’t use the new navigation, I strongly suggests to enable it, because  **it will become the default navigation in the future** ,  **and it is best to gain familiarity with it, before it will become the only UI available.** [![SNAGHTML63aa86](https://www.codewrecks.com/blog/wp-content/uploads/2018/09/SNAGHTML63aa86_thumb.png "SNAGHTML63aa86")](https://www.codewrecks.com/blog/wp-content/uploads/2018/09/SNAGHTML63aa86.png)
 
  ***Figure 1***: *Enable the new navigation for the account*
 
@@ -20,7 +20,7 @@ Another suggestion is  **starting to use the new links right now** , if your acc
 
  **Another part of the service that is affected by change of uri is remote address of git repositories**. Microsoft assures that the old url will remain valid for a long time, but it is good to spend 1 minute updating remotes to never worrying that some day in the future remotes uri can break.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/09/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/09/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/09/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/09/image.png)
 
  ***Figure 2***: *Change the url of origin to adapt to the new uri of Azure DevOps Repositories.*
 

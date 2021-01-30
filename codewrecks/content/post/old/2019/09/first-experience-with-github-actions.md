@@ -12,7 +12,7 @@ Actions engine is based on a yaml definition that is stored directly in code, th
 
 Adding a new workflow is really simple, just open the Actions tab of the repository, then ask to create a new worfklow:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-26.png)
 
  ***Figure 1***: *Create new workflow for GitHub action directly from repository page.*
 
@@ -47,7 +47,7 @@ First and only job for this example is called build and it could run on differen
 
 Runs-on step define OS, for this example I’m using ubuntu-latest. Finally I give a name to the job:  **Build for.NET following the actual version of matrix.dotnet value**. When I push the code I can verify that two distinct jobs are scheduled.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-27.png)
 
  ***Figure 2***: *Two distinct job where scheduled, one for each matrix version.*
 
@@ -104,23 +104,23 @@ Another cool aspect of Actions is that Docker is available inside the machine, t
 
 Another good aspect of Actions is the ability to see real-time log of your run directly from a browser, without the need of installing anything.
 
-A final real nice aspect of Actions is that they are defined by conventions inside a special folder.github/workflows;** I’ve developed this build in a fork of the original project, then I issued a pull request and when the pull request was accepted, this new workflows appears in the original repository. **[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-28.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-28.png)** Figure 3: ***After pull request was merged, immediately the workflow is up and running on target repository..*
+A final real nice aspect of Actions is that they are defined by conventions inside a special folder.github/workflows;** I’ve developed this build in a fork of the original project, then I issued a pull request and when the pull request was accepted, this new workflows appears in the original repository. **[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-28.png)** Figure 3: ***After pull request was merged, immediately the workflow is up and running on target repository..*
 
 Clearly this is still a beta and there are still part that should be improved. First of all, if a test run fails, the build is marked as failed and you need to look at test logs to understand which tests failed.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-29.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-29.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-29.png)
 
  ***Figure 3***: *Build failed, but to understand why it failed you need to check the logs.*
 
 This is the reason why I included a distinct test step for each test assembly, instead of a simple dotnet run on the entire solution. Using this little trick I can at least understand which test run failed.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-30.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-30.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-30.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-30.png)
 
  ***Figure 4***: *Action run result, each failed step is marked with a red cross*
 
 Clicking on failed step, you can find the output log of the step, needed to understand which tests failed and why. For those of you used to Azure DevOps pipeline, you will surely miss the nice Test Result page, but I’m expecting GitHub actions to close the gap in this area.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-31.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-31.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image_thumb-31.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/09/image-31.png)
 
  ***Figure 5***: *Action step run detail.*
 

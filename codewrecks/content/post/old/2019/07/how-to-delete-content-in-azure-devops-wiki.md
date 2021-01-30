@@ -8,13 +8,13 @@ categories: [Git]
 ---
 Today I got a simple but interesting question about Azure DevOps,  **how can I completely delete the content of the wiki** ? There are not so many reason for this, but sometimes you really want to start from scratch. Now suppose you have your wiki:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-3.png)
 
  ***Figure 1***: *Wiki with a simple page*
 
 You have created some pages, you played a little bit with the wiki, you attached some cute pets photo and content to the wiki itself, maybe just to gain familiarity with the wiki itself.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-4.png)
 
  ***Figure 2***: *Wiki with some content on it.*
 
@@ -24,13 +24,13 @@ You have created some pages, you played a little bit with the wiki, you attached
 
  **To do a low level manipulation of the wiki, you should simply clone wiki repository locally** , you can simply find repository url in the UI
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-5.png)
 
  ***Figure 3***: *Clone wiki repository from the ui.*
 
 That menu option simply lets you to grab url of the repository, then you can simply clone the repository locally and verify all the commits done in the wiki. (I use command line but you can use any UI of you choiche)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-6.png)
 
  ***Figure 4***: *Content of the wiki, a simple git repository*
 
@@ -45,7 +45,7 @@ git reset --hard SHA_OF_FIRST_COMMIT
 
 Where SHA\_OF\_FIRST\_COMMIT is the address of the very first commit, the one with the comment Initializing wiki, in my example 86ec4c9. After the command was executed your local wikiMaster branch point to the very first commit of the repository, an empty wiki.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-7.png)
 
  ***Figure 5***: *Your local wikiMaster branch was reset to the very first commit, now wikiMaster point to an empty wiki*
 
@@ -82,13 +82,13 @@ git rebase 97e520e^ -i
 
  **This will actually trigger a complete rewrite of the history from the parent of the incriminated commit to the last commit of the wiki.** I’m not going to give you a complete explanation of an interactive rebase, but basically you are presented with the list of all commits, starting with the commit you want to delete to the latest commit in the branch.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-8.png)
 
  ***Figure 6***: *Delete the commit with interactive rebase.*
 
 In  **Figure 6** you are seeing an example in which I have a single commit after the one you want to remove, but nothing changes if you have tons of commits after.  **You simply need to change the command for the first commit (the commit you want to delete) from pick to d (delete). Leave all other rows unchanged.** Then simply save the script to continue (if you are not familiar with VIM simply press I to edit the file, change the file then press ESC to come back in command mode and press : then w then q then ENTER).
 
-This command actually deletes only the commit you want to delete, leaving all following commits unchanged.  **You actually scissor knife removed a single bad save from your wiki.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-9.png)
+This command actually deletes only the commit you want to delete, leaving all following commits unchanged.  **You actually scissor knife removed a single bad save from your wiki.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-9.png)
 
  ***Figure 7***: *Commit was removed, local branch has not anymore commit 97e520e*
 

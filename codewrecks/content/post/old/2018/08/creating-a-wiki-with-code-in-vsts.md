@@ -16,7 +16,7 @@ Luckily enough VSTS has a really good solution for this scenario,** Wiki that ar
 
 Yes, you could browse markdonw files directly from code repository since long time in the past, but having it converted to wiki is a major advantage, because readers does not need to know how to browse code. Here is an example how a readme.md looks like in the code repository
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image.png)** Image 1: ***Browsing of Markdown file directly in code browser*
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image.png)** Image 1: ***Browsing of Markdown file directly in code browser*
 
 As you can see, markdown files inside code repository can be rendered without problem inside VSTS Code browsing. This is ok, but the  **information is not discoverable and it is not 100% friendly**.
 
@@ -26,13 +26,13 @@ Here are the problem: first you need to go to Code Browsing, then you need to ch
 
 If you go on the Overview section of the team project and navigate in the Wiki Section you have the option of publishing code as wiki. As you can see in  **Figure 2** , it is just a matter of specifying to VSTS repository, branch, path and name of the wiki.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-1.png)
 
  ***Figure 2***: *Publish part of a repository as wiki*
 
 Once the wiki is published it is more discoverable, because it is listed in the apposite section of the menu and it has a specific name, that is not related to the repository.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-2.png)
 
  ***Figure 3***: *Code published as wiki*
 

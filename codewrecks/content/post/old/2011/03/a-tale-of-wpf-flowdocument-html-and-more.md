@@ -104,7 +104,7 @@ All conversion routine is enclosed in a try..catch, and the fallback action is t
 
 The result is quite cool. (Iâ€™ve blurred the image because it contains production data)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image14.png)
 
  ***Figure 1***: *The result of the custom control, text around the image.*
 

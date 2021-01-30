@@ -20,7 +20,7 @@ This operation should be done in every machine where you deployed Test Agents th
 
 The easiest way to automate all the process is adding Nunit Test Adapter nuget package to your test project, adding a standard Nuget Reference.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/03/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/03/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/03/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/03/image.png)
 
  ***Figure 1***: *Add Nuget Package for NUnit Test Adapter*
 
@@ -30,7 +30,7 @@ Once you’ve added the package, you should see all needed assemblies under the 
 
 Please not the use of quotes (“) and the use of the $(Build.SourceDirectory) macro to specify the location where the build is taking place.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/03/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/03/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/03/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/03/image1.png)
 
  ***Figure 2***: *Specify path of custom Test Adapter inside build definition.*
 

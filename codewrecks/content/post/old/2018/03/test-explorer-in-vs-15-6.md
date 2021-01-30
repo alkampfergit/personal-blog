@@ -6,7 +6,7 @@ draft: false
 tags: [Testing]
 categories: [Visual Studio]
 ---
-The latest version of VS introduces some new cool feature, and it is quite big (almost 1 GB of download). **If I should give you a single reason to upgrade to this new version, is the new Test Runner that now has the ability to show tests hierarchically** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/03/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/03/image.png)
+The latest version of VS introduces some new cool feature, and it is quite big (almost 1 GB of download). **If I should give you a single reason to upgrade to this new version, is the new Test Runner that now has the ability to show tests hierarchically** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/03/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/03/image.png)
 
  ***Figure 1***: *Hierarchical view in action in Test Explorer.*
 

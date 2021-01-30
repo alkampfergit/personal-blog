@@ -16,7 +16,7 @@ You can find some blog post of mine on the subject:
 
 Years are passed, but  **I still see people scared when it is time to customize the build** , especially because the Workflow can be a little bit intimidating. In TFS2013 the build is still managed by Workflow Foundation, but the new workflow basic template now supports simply customization with scripts.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image2.png)
 
  ***Figure 1***: *Pre-build script configured in the build.*
 
@@ -105,13 +105,13 @@ One of the coolest part of Powershell scripts is the ability to **define paramet
 
 Now just fire a build and verify that assemblies in drop folder contains correct numbering.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image.png)
 
  ***Figure 2***: *Verify that all the assemblies contains the correct AssemblyVersionFile Number*
 
  **If something went wrong, you can look at the diagnostic of the build to verify what is happened in the script**. All Write-Host directive are in fact intercepted and are collected inside the diagnostics of the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image1.png)
 
  ***Figure 3***: *Output of the scripts is collected inside the Diagnostic of the build.*
 

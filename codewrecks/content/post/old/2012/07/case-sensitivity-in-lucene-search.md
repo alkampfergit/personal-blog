@@ -16,13 +16,13 @@ We ended last post with a good knowledge of how to do complex searches in Lucene
 
 Here is the first result returned from the above query.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image1.png)
 
  ***Figure 1***: *Searching for +mime +format returns a document that contains MIME in uppercase.*
 
 As you can see this documents satisfy the query with the word MIME, thus suggesting that the query is Case Insensitive (you searched for mime but MIME satisfied the search), but this is not true. If you look at Lucene documentation you can find that  **all searches are always case sensitive** , and there is no way to do  **case insensitive** search. This fact usually puzzled the user because searches seems to be Case insensitive, so where is the trick?. The answer is:  **StandardAnalyzer transforms in lowercase all the tokens before storing them into the index and QueryParser lowercase all the terms during query parsing**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image2.png)
 
  ***Figure 2***: *The query resulted from the parsing of +MIME +FORMAT*
 

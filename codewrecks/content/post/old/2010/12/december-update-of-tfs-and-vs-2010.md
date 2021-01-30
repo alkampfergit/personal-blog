@@ -22,6 +22,6 @@ The machine have a 6 month expiration, and the old version expired today. If you
  · Minor fit-and-finish fixes based on customer feedback      
  · A new expiration date of June 1, 2011
 
-Grab it and have fun ![Smile](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile.png)
+Grab it and have fun ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile.png)
 
 Alk.

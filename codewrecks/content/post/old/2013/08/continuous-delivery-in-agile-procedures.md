@@ -20,11 +20,11 @@ Scrum teams usually do demo at the end of the Sprint, to demonstrate what they a
 
 This is just another aspect of [Definition of Done](http://www.scrum.org/About/All-Articles/articleType/ArticleView/articleId/548/Definition-of-Done), because doing a Demo of the sprint in a developer’s laptop can be acceptable, but it suffers from: *It works on my machine syndrome*. With modern software, the act of moving code from dev machine to production machines can be as simple as using Publish functionality of Visual Studio, or as complex as doing manual update of multiple environments (database, AT, Client code). In these days [DevOps movement](http://dev2ops.org/2010/02/what-is-devops/) gains lots of popularity, and we are aware that all barriers between Dev (engineering) and Ops (Operations) should be removed as early as possible. The risk for the team is focusing only on Engineering side, forgetting that we need works to move and maintain code in production.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image17.png)
 
 In the above picture most of the impediments that the team encounters towards the Goal of satisfying Product Owner and user are depicted. But this picture is incomplete, because  **it does not account for Operations related impediments**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image18.png)
 
 This is a more realistic situation, where another important impediment is:  **the increment produced in a Sprint does not met Operations Readiness requirements**. Such impediments derives from many disparate reason; some related to technological problem (Sql database schema updates or in general change in schema of saved data) some other arise from poor communication between Dev and Ops (software configurations spread over multiple sources: web.config, database, etc without any documentation). Quite often developers simply underestimate the cost of a change.  **A modification that can be easy done on dev machine, can be much more complex or problematic in production environments** (Ex. Big database in production, complex multi machine deployment, 99,999% uptime and so on).
 

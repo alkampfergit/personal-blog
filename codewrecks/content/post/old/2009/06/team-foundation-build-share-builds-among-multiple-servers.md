@@ -10,23 +10,23 @@ When you begin to use Team Foundation Server, you will create different builds f
 
 Team Foundation Server addresses this issue separating *[build machines](http://msdn.microsoft.com/en-us/library/ms181710.aspx)* from *Team Foundation Server*. If you find that the build machine is becoming slow, you can simply use another machine in the network to execute some of the builds. In real environment you can even avoid to install build engine in the Tfs machine, delegating builds to other servers. First of all go into another machine, fire the installer of Team Foundation Server, and choose to install a â€œTeam Foundation Buildâ€.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb35.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image35.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb35.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image35.png)
 
 * **Note:** *if you do not have Active Directory*you Must create in this machine an account with the same name/password of an account of the machine where Team Foundation Server is running and that account must have right to access tfs*. This is a standar requirement, the Build Server needs to access Team Foundation Server to get sources to build and store build result, etc, etc. so it is of vital importance that it runs with sufficient privilege to access TFS server. If you have active directory you do not need to create a specific account, but you must select one AD user that have credential to access TFS during the installation.
 
 When the installer finished, you can go to Visual Studio, Right Click on the Builds in the Team Foundation Server Explorer Tree, then choose â€œManage Build Agentsâ€
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb36.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image36.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb36.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image36.png)
 
 Now you can add additional Build Agent, and you can choose the new machine name, where you had previously installed the Team Foundation Build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb37.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image37.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb37.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image37.png)
 
 Now you can use this new machine to run Builds simply specifying this agent when you create a Build Definition, or you can use it when you manually queue new build. It is really important that the user credentials used to run the Build Service in the new Build machine has the right to access the Team Foundation Server Machine as stated before.
 
 If you had already installed the team Build engine with a wrong user donâ€™t panic, you can still manually change build machine settings to correctly access TFS. Go to Service control panel and change the credential used by the â€œVisual Studio Team Foundation Buildâ€ service to use an user that has sufficient credential for TFS. Now restart the service.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb38.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image38.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb38.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image38.png)
 
 It is highly possible that when you restart the service you get â€œ **access is Denied** â€ error, it means that the new account does not have sufficient rights to run, first of all the user needs rights to access the folder where you install the Build Agent, but this is usually not enough. *The only way to understand exactly what is wrong  **is going into the Event Viewer** *where you can find detailed errors like this one.
 

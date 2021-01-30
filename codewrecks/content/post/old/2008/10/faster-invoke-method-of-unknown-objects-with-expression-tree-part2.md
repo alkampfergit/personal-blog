@@ -6,7 +6,7 @@ draft: false
 tags: [NET framework,Experiences,LINQ]
 categories: [NET framework,Experiences,LINQ]
 ---
-In the [last post](http://www.codewrecks.com/blog/index.php/2008/10/04/expression-tree-vs-reflection/) I described a technique that uses Expression Tree to invoke dynamically methods of objects of types unknown at compile time. You can use this technique to build the [ExpressionTreeReflection](http://www.codewrecks.com/blog/wp-content/uploads/2008/10/expressiontreereflection.zip) class.
+In the [last post](http://www.codewrecks.com/blog/index.php/2008/10/04/expression-tree-vs-reflection/) I described a technique that uses Expression Tree to invoke dynamically methods of objects of types unknown at compile time. You can use this technique to build the [ExpressionTreeReflection](https://www.codewrecks.com/blog/wp-content/uploads/2008/10/expressiontreereflection.zip) class.
 
 You can now write code like this
 

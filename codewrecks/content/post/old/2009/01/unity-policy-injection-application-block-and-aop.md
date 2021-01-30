@@ -25,15 +25,15 @@ As you can see the Wrap function returns an object that implement the same inter
 
 First of all I opened configuration tool for enterprise library and add a policy injection block section and add a policy
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb6.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb6.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image6.png)
 
 This configuration have two section, the first is called *matching rules*, and is the place where you tells to the PJB where to inject some aspect, in the example I used the *member name matching rule*, that permits me to create a rule based on the name of the method. The Member Name Matching Rule has only a property called Matches, a collection of match rules. I created only one rule
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb7.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb7.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image7.png)
 
 I want this policy to be applied to every method that contains the string DoAnotherThing. The next step is configuring the handlers, the code you want to attach to the execution of all the methods that matches one of the Matching Rule. I inserted two handlers, the first is a custom handler (I’ll explain it in the next post of the series). The one I’m interested here is the *logging Handler*, an handler included into the enterprise library distribution, here is the configuration.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb8.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb8.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image8.png)
 
 The red property is related to the Enterprise application Logging block, You need to specify a list of Categories that the handler will use to log. The blue properties are the related to logging behavior. I’m asking not to include the stack trace, I want only to include the call time and the value of the parameters. Moreover I’m asking to the handler to run before and after the execution of the intercepted method.
 

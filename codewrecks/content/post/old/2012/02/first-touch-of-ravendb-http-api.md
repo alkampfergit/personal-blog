@@ -25,7 +25,7 @@ Once you configured curl the easiest command you can issue with HTTP API to Rave
 
 c:\&gt; curl [Http://localhost:8080/docs/players/1](http://localhost:8080/docs/players/1)
 
-[![SNAGHTML1f29e0d](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/SNAGHTML1f29e0d_thumb.png "SNAGHTML1f29e0d")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/SNAGHTML1f29e0d.png)
+[![SNAGHTML1f29e0d](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/SNAGHTML1f29e0d_thumb.png "SNAGHTML1f29e0d")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/SNAGHTML1f29e0d.png)
 
  ***Figure 1***: *Simple GET request to retrieve a document by Id*
 
@@ -77,7 +77,7 @@ Now you got the full request/response from curl, in this example in line 15 I se
 
 If the PUT operation was successful you can look at the RavenDb studio to verify if the document was really inserted. Everything should be ok, but the new document appears different from the old documents inserted by C# code, as shown in  **Figure 2**. As you can see the RavenDb studio does not report the name of the class ( it is called Doc) and the color is different.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image7.png)
 
  ***Figure 2***: *Document inserted with HTTP API is different from the one inserted with C# code.*
 

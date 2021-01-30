@@ -133,7 +133,7 @@ I’ve chosen to always create 7zip file with the same name (client.7z and serve
 
 In  **Figure 1** you can finally find how the artifacts are named in Action run summary page.
 
-[![Artifacts uploaded by action run, you can notice the full semver.](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-24.png "Artifacts")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-24.png)
+[![Artifacts uploaded by action run, you can notice the full semver.](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-24.png "Artifacts")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-24.png)
 
  ***Figure 1***: *Artifacts uploaded by action run, you can notice the full semver.*
 
@@ -165,17 +165,17 @@ In  **Figure 1** you can finally find how the artifacts are named in Action run 
 
 The only peculiarity of these two steps  **is the if clause, that allows me to ask Action engine to run this step only if the the ref is master**. If you look at execution steps of a branch different from master, those two steps are not executed.
 
-[![Action ran on branch different from master, upload release steps are skipped](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image3_thumb.png "ACtion ran on non master branch")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image3.png)
+[![Action ran on branch different from master, upload release steps are skipped](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image3_thumb.png "ACtion ran on non master branch")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image3.png)
 
  ***Figure 2***: *Action ran on branch different from master, upload release steps are skipped*
 
 If you instead look at logs from an execution of master branch, the two steps are executed. As usual the name of the release is taken from SemVer numbers returned by GitVersion.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image6_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image6_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image6.png)
 
  ***Figure 3***: *Publish artifacts to a standard GitHub release output*
 
-After the action ran on master, you should see a brand new release of your Repository, containing not only source code, but also published artifacts. As you can see,  **I’ve decided to upload artifacts with current name (server.7z and client.7z) because number was already present in Release Number** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image9_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image9.png)
+After the action ran on master, you should see a brand new release of your Repository, containing not only source code, but also published artifacts. As you can see,  **I’ve decided to upload artifacts with current name (server.7z and client.7z) because number was already present in Release Number** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image9_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image9.png)
 
  ***Figure 4***: *Release created by action run for branch master.*
 
@@ -183,7 +183,7 @@ After the action ran on master, you should see a brand new release of your Repos
 
 As final check you should download the release and  **verify that AssemblyVersion, FileVersion and InformationalVersion were correctly set in the assembly**. As you can see in  **Figure 5** my released software was correctly marked with the correct version.
 
-[![Versioning of the assembly is present and correct](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image12_thumb.png "Versioning check")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image12.png)
+[![Versioning of the assembly is present and correct](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image12_thumb.png "Versioning check")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image12.png)
 
  ***Figure 5***: *Versioning of the assembly is present and correct*
 

@@ -14,7 +14,7 @@ If you use the Agile process template, you have three columns related to plannin
 
 The only problem is that TFS  **only aggregates the Remaining Work in the agile boards** , as you can see in  **Figure 1** :
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image25.png)
 
  ***Figure 1***: *Board with Original Estimate and Completed Work columns visible*
 
@@ -24,7 +24,7 @@ A possible solution is  **using TFS API to load all data in a custom program and
 
 The third solution is using excel to do the calculation for you. If you load data from TFS and choose to add the three aforementioned columns, you can start adding another column after each of the three as shown in this picture.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image26.png)
 
  ***Figure 2***: *Three empty columns added to the Excel worksheet connected to TFS*
 
@@ -62,13 +62,13 @@ This is a super simple macro, it accepts a Range and it does the following opera
 
 Once you have defined such a function you can use in your new columns, the interesting part is that you can simply start typing your formula (=SumUntilNull), then you click the Remaining Work column of the cell in the left, and Excel automatically understand the field you are using, as you can see in  **Figure 2**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image27.png)
 
  ***Figure 2***: *Use your function to create the aggregation*
 
 Once you finish the formula, Excel will replicate the formula to all the rows of the area connected to TFS. The trick is: for each row where a User Story (the father item) is present, the value of the cell is null, so your function automatically iterates on all related task until it find another null cell (end of the interval or the next User Story). This will aggregate the data for you.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb28.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image28.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image28.png)
 
  ***Figure 3***: *Your formula correctly aggregates all the value from child work items (Task) to the parent (User Story)*
 
@@ -95,7 +95,7 @@ End Sub
 
 The above macro iterate in the first 100 rows of the sheet (it should be placed inside the sheet where you loaded the Work Items) and change the visibility of the row, hiding all Task Rows. A better solution is adding a  **couple of buttons to hide/show tasks** , instead of having it run for each change in the Worksheet :), but it is only to give you an idea of what you can achieve with excel.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb29.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image29.png)+
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image29.png)+
 
  ***Figure 3***: *A couple of hide / Unhide buttons to simply hide / unhide all tasks rows*
 

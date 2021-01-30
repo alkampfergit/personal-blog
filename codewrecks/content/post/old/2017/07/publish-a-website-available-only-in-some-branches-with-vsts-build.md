@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 I have several builds that publish some web projects using standard msbuild task. Here is a sample configuration.
 
-[![Simple image that shows the configuration of a Msbuild Task used to publish a web project.](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb.png "Publishing a web site with msbuild task.")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image.png)
+[![Simple image that shows the configuration of a Msbuild Task used to publish a web project.](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb.png "Publishing a web site with msbuild task.")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image.png)
 
  ***Figure 1***: *Publishing a web site with msbuild task.*
 
@@ -16,7 +16,7 @@ This is super simple thanks to MsBuild task and a bit of MSBuild arguments, but 
 
 Thanks to the conditional execution of VSTS it is simple to configure the task to execute only on specific condition, as an example  **run the task only if the build is triggered against feature/xyz branch**.
 
-[![This image shows the conditional execution for the task, everything is explained in the text of the post)](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-1.png "Conditional execution for tasks")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-1.png)
+[![This image shows the conditional execution for the task, everything is explained in the text of the post)](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-1.png "Conditional execution for tasks")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-1.png)
 
  ***Figure 2***: *Conditional execution for tasks*
 
@@ -26,7 +26,7 @@ The real solution is:  **run the task only if the project file exists on disk,**
 
 To simplify this scenario lets use the new PowerShell task, that now has the option to run a simple script defined in the build. Here is the definition of this PowerShell task, that  **should be placed before the MSBuild task that is going to build the project**.
 
-[![Simple PowerShell tasks to executing an inline script](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-2.png "Simple PowerShell tasks to executing an inline script")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-2.png)
+[![Simple PowerShell tasks to executing an inline script](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-2.png "Simple PowerShell tasks to executing an inline script")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-2.png)
 
  ***Figure 3***: *Simple PowerShell tasks to executing an inline script*
 

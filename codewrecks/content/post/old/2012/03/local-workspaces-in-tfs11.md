@@ -12,7 +12,7 @@ This choice has, (as any choice in real life :) ) good and bad point. The good p
 
 On the contrary, subversion uses a different type of mapping, based only on local version of files. A local folder mapped to a subversion repository contains a special folder called * **.svn** *, where subversion stores lots of information about the situation of the local mapping of the sources
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image14.png)
 
  ***Figure 1***: *Screenshot of a.svn folder of subversion repository*
 
@@ -24,19 +24,19 @@ This approach is good until you start to have huge repository, not only because 
 
 Luckily enough, we have now really good SSD at very low price and disk activity is not a problem anymore, so be happy to know that in TFS11 a new version of workspace was introduced, called *Local Workspace*, and this is actually the default workspace model in TFS11.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image15.png)
 
  ***Figure 2***: *Local workspace in action.*
 
 A local workspace is really similar to a subversion workspace, it has a  **$tf** hidden folder that contains information on the local workspace.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image16.png)
 
  ***Figure 3***: *The $tf folder in a local workspace*
 
 You can add a file outside Visual Studio, and during check-in operation you will find detected changes in Team Explorer
 
-[![SNAGHTML5b6623](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/SNAGHTML5b6623_thumb.png "SNAGHTML5b6623")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/SNAGHTML5b6623.png)
+[![SNAGHTML5b6623](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/SNAGHTML5b6623_thumb.png "SNAGHTML5b6623")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/SNAGHTML5b6623.png)
 
  ***Figure 4***: *Detected changes during a check-in operation*
 

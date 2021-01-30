@@ -10,13 +10,13 @@ I remember old days when Azure DevOps was still in private preview, and yet it w
 
 This means that now the product is 450 Weeks old, and finally we got a little nice feature that shows up news in the front page.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-14.png)
 
  ***Figure 1***: *Widget with new feature of newest deployed sprint*
 
 This allows users to immediately being notified of new feature in their accounts, with a nice summary with key new features. In this sprint we have the  **new Task Assistant to help editing YAML pipelines** , and many new feature, like the new agent administration ui.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-15.png)
 
  ***Figure 1***: *New administration page in action.*
 

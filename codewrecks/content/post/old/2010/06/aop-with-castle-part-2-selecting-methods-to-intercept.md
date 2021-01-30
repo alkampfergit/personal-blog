@@ -54,7 +54,7 @@ Component.For<IInterceptor>()
 
 This is really a simple solution, and you can verify from the output that only selected methods are intercepted.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image16.png)
 
 In red I highlighted the calls to regex.Match(), and since they are a little bit expensive, to speedup execution we can add caching using a dictionary, to store result of methods already scanned, just to avoid using too much regex at each call; the basic concept is always the same:
 
@@ -91,7 +91,7 @@ return _scanned[invocation.Method.MethodHandle];
 
 Now the same configuration produces this output.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image17.png)
 
 As you can see the regex are called only for the first call of a method, each subsequent calls does not requires Regex.Match anymore.
 
@@ -178,7 +178,7 @@ InterceptorReference.ForKey("LogInterceptor"))
 
 Now you can run the program and look at the output.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image18.png)
 
 With red color I highlight the calls to the SelectInterceptors method, and you can immediately see that Castle does caching internally and does not call the SelectInterceptors() method more than once for each method, so we does not need to cache stuff. As you can see from the output the result is the one I expect, dumpInterceptor is intercepting only the method DoSomething while the LogInterceptor intercepts only the Augment.
 

@@ -12,13 +12,13 @@ One of the most interesting trend of DevOps movement is continuous deployment us
 
 Thanks to Build vNext solving this problem is super easy. If you go to your visualstudio.com account, and choose the TEST hub, you can notice a submenu called machines.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image13.png)
 
  ***Figure 1***: *Machines functionality in Visualstudio.com*
 
 This new menu is related to a new feature, still in preview, used to define groups of machine that can be use for deploy and testing workflows. In  **Figure 1** you notice a group called Cyberpunk1. Creating a group is super-easy,  **you just need to give it a name, specify administrative credentials and the list of the machines that will compose the group**. You can also use different credentials for each machine, but using machine in Active Directory domain is usually the simplest scenario.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image14.png)
 
  ***Figure 1***: *Editing of machine groups*
 
@@ -32,13 +32,13 @@ Actually this feature still does not support Azure Virtual Machines, but you can
 
 I’ve tested with an environment where both machines are running Windows Server 2012 R2, with latest update and file sharing enabled. Once you defined a machine group, you can use it to automatically copy files from build agent to all machines with a simple task of build vNext.
 
-[![SNAGHTML3b78ea](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/SNAGHTML3b78ea_thumb.png "SNAGHTML3b78ea")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/SNAGHTML3b78ea.png)
+[![SNAGHTML3b78ea](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/SNAGHTML3b78ea_thumb.png "SNAGHTML3b78ea")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/SNAGHTML3b78ea.png)
 
  ***Figure 3***: *Windows machine File Copy task*
 
 Thanks to this simple task you can simply copy files from build machine to destination machine, without the need to install any agent or other components.  **All you need to do is choose the machine group, target folder and source folder.** If you get error running the build, a nice new feature of build vNext is the ability to download full log as zip, where all the logs are separated by tasks
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image15.png)
 
  ***Figure 4***: *All build logs are separated for each step, to simplify troubleshooting*
 
@@ -56,7 +56,7 @@ In this specific situation the RoboCopy tool is complaining that the network pat
 
 > <font>As a general rule, whenever a build fails, download all log and inspect the specific log for the task that failed.</font>
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image16.png)
 
  ***Figure 5***: *Sample application was correctly copied to target machines.*
 

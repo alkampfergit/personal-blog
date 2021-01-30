@@ -11,13 +11,13 @@ categories: [WPF]
 
 If you followed the suggestion of my first couple of posts *you should have a dedicated Design Time view model for each real View Model in your application so you can effectively use Design Time Data*. You should be aware that  **Design Time data can be directly manipulated by the designer**. In property windows you can see all properties of the Windows object (remember to select the windows), so you can locate the DataContext property and expand it to view its content.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image3.png)
 
  ***Figure 1***: *Visual Studio designer is able to edit the values of properties of DesignTimeData View Model*
 
 Since the designer knows the type of the DataContext it permits you to  **edit design time value properties directly in Visual Studio**. Suppose you want to verify how the UI look when the MainFilter property is a real long string, you can simply change the MainFilter design time data value, inserting a real long string.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image4.png)
 
  ***Figure 2***: *You can edit properties of Design Time View Model*
 
@@ -25,7 +25,7 @@ The designer will immediately reflect the change so you are immediately able to 
 
 Pressing the button with ellipsis on the Logs property makes you to edit the Logs property directly in the editor, thanks to the build in Collection Editor. This is really cool because you can now decide how much object you want in the collection at design time, but, Houston we have a problem,  **you can modify properties, but you are not able to create complex objects**.
 
-[!\[image\](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image5.png)
+[!\[image\](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image5.png)
 
  ***Figure 3***: *You are not able to fully construct a LogMessageViewModel with the designer*
 
@@ -57,13 +57,13 @@ public new ObservableCollection<LogMessageViewModelDesignData> Logs { get; set; 
 
 If you look at the [previous post](http://www.codewrecks.com/blog/index.php/2012/11/07/wpf-and-design-time-data-part-2use-a-concrete-class-2/) you already know that  **I hided the original Logs property because it is of ICollectionViewType, a type that is not usable at design time, and I used an ObservableCollection of LogMessageViewModel** , but nothing restrict me to declare that this collection contains different objects respect the real ViewModel,  **as long as the new class has same properties as the real one**. It turns out that I can use my new LogMessageViewModelDesignData class as the type attribute for the ObservableCollection and this improves a lot the experience for users that wants to manipulate Design Time data directly from Visual Studio.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image6.png)
 
  ***Figure 4***: *You can now edit the Log property directly from the designer.*
 
 As you can see from  **Figure 4** the designer actually render a beautiful “New” button that permits you to create new instance for a Complex property. **If you press that button a new instance of LogMessage is created and you can edit directly inside the designer**. Actually this is a simple commodity to embed design time data directly inside the windows, here is the code that this will generate
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image7.png)
 
  ***Figure 5***: *The designer is simply generating XAML code to populate the properties of the DataContext with the designData attribute*
 
@@ -71,7 +71,7 @@ As you can see,  **this is the very same approach taken on the first post, creat
 
 If you want to revert to the original design time data you can simply delete corresponding XAML part in the Window code, or you can reset the value from designer
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image8.png)
 
  ***Figure 6***: *Pressing the small black square box near the property permits you to reset design time data.*
 

@@ -18,25 +18,25 @@ The upgrade went smoothly, but we start facing a couple of problem. The first on
 
 The reason is simple, in TFS2012 the concept of *Teams* was introduced in the product. Each Team Project can have multiple Teams and when you add users from the home page of the Team, you are actually adding people to a TFS Group that correspond to that Team. For each Team Project a default Team with the same name of the Team Project is automatically created.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image2.png)
 
  ***Figure 1***: *Users added to Team through home page.*
 
 In the above picture, I’ve added two user to the BuildExperiments Team, we can verify this in the Settings page of the Team Project.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image3.png)
 
  ***Figure 2***: *User added through the home page, are added to the corresponding Tfs Security Group*
 
 To understand the permission of that users, you should use the administration section of TFS, as you can see from Figure 3, BuildExperiments team has no permission associated.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image4.png)
 
  ***Figure 3***: *Permission associated to the Team Group*
 
 The reason for this is: the Team is not part of the Contributors TFS Group, it can be verified from the  **Member Of** part of group properties
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image5.png)
 
  ***Figure 4***: *Team group belongs only to the Project Valid User*
 
@@ -44,7 +44,7 @@ The reason for this is: the Team is not part of the Contributors TFS Group, it c
 
 This behavior is the standard in TFS, if you create a new Team, the Ui suggests you to choose to add the new Team Group to an existing group to inherit permission.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image6.png)
 
  **Team 5:** *Default option for a new group is to be part of the Contributors group.*
 

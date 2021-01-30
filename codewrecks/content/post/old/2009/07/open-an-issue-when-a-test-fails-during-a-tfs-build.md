@@ -53,9 +53,9 @@ The condition property is used to create the item only if the DesktopBuild is fa
 
 It must contains a list of issue properties that you want to set when you create the new work item. Now I reset back the TreatTestFailureAsBuildFailure to false, so the build will partially succeed even when some tests fails, but for each build that fails unit testing task an issue is automatically generated, with the desidered properties.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image4.png)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image5.png)
 
 Configuring the build adding msbuild tasks is quite simple and permits you to fully configure your build.
 

@@ -10,13 +10,13 @@ In the last article of the series, I dealt with [Deploying on Azure Web Sites fr
 
  **Step 1: Configure IIS for Web Deploy** You can find a [detailed article here](http://www.iis.net/learn/install/installing-publishing-technologies/installing-and-configuring-web-deploy) with all the steps needed to configure Web Deploy Publishing, once Microsoft Web Deploy is installed, just create a site, and enable Web Publishing right-clicking on it. If the Deploy menu does not appears, some part of the Web Deploy Publishing service was not installed properly.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image.png)
 
  ***Figure 1***: *Configure Web Deploy Publishing*
 
 Configuring a Web Deploy publishing for a web site is just a matter of specifying some information and most of the time everything can be left as default value.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image1.png)
 
  ***Figure 2***: *Deploy configuration*
 
@@ -24,13 +24,13 @@ This dialog will setup the site to enable MSBuild publishing, it saves a.publish
 
  **Step 2: Configure the Publish settings file** Even if the configuration dialog shown in  **Figure 2** creates a publishSettings file, it is possible to create such file directly from Visual Studio. This is usually a  **preferable option because it is possible to customize to support Database Publishing and changing the connection string**. Actually creating a publish settings from scratch from Visual Studio is really easy, you just Right Click the web project and choose publish, then choose to create a new publishing profile.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image2.png)
 
  ***Figure 3***: *Configure the connection for publishing*
 
 The Validate connection button is really useful to verify if everything works correctly, once it is green it is possible to further customize the settings. A most common configuration, when you work with Database Projects, is the ability to  **configure automatic database schema publishing**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image3.png)
 
  ***Figure 4***: *Configure for automatic Database Update and change the connection string used in destination server*
 
@@ -38,7 +38,7 @@ Once everything is correctly configured you can close the configuration dialog, 
 
  **Step 3: Configure the build** This is the most easy step, since it is the [very same of Deploying on Azure Web Site from on-premise TFS](http://www.codewrecks.com/blog/index.php/2013/07/05/deploying-on-azure-web-sites-from-on-premise-tfs/), I’ve actually cloned a build used for that post, and simply changed the name and credentials of the publish settings file used.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image4.png)
 
  ***Figure 5***: *Configure MSBuild Arguments to deploy the site*
 
@@ -50,7 +50,7 @@ Clearly, to  **being able to publish database schema, you should manually change
 
 As a final note,  **always configure the build to index sources** [**using a Symbol Server**](http://www.codewrecks.com/blog/index.php/2013/07/04/manage-symbol-server-on-azure-or-on-premise-vm-and-tf-service/) **.** If a Symbol Server is configured and there is a bug in production site that is not reproducible dev machines, it is possible to use the [Intellitrace standalone collector](http://msdn.microsoft.com/en-us/library/vstudio/hh398365.aspx) to collect an intellitrace file, and once the itrace file is loaded in Visual Studio  **it will automatically download original source files used to compile the version of the site used to generate the trace**.
 
-[![SNAGHTML3e3488](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/SNAGHTML3e3488_thumb.png "SNAGHTML3e3488")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/SNAGHTML3e3488.png)
+[![SNAGHTML3e3488](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/SNAGHTML3e3488_thumb.png "SNAGHTML3e3488")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/SNAGHTML3e3488.png)
 
  ***Figure 6***: *Once symbol server is configured, I can browse the source from intellitrace file*
 

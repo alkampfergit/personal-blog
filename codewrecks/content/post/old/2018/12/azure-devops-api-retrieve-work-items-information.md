@@ -13,7 +13,7 @@ Now that we know how to connect to Azure DevOps services, it is time to  **under
 
 Once you connected to Azure DevOps account you start retrieving helper classes to work with the different functions of the service,  **if you need to interact with Work Items  you need a reference to the WorkItemStore class**. Since this is the most common service I need to interact I simply get a reference in the connection class
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-8.png)
 
  ***Figure 1***: *Retrieving reference to the WorkItemStore helper class*
 
@@ -65,7 +65,7 @@ foreach (var workItem in workItems)
 
 Nothing could be simpler, thanks to intellisense **I can simply dump id name and type of the work items in few lines of code** , here is a sample output of the code.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-9.png)
 
  ***Figure 2***: *Dump output of Work Items returned from the query.*
 

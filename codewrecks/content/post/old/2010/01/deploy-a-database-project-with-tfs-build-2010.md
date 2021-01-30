@@ -10,21 +10,21 @@ If you want to deploy a database project into a target sql server instance durin
 
 I decided to deploy the database, only if the tests are ok and the build is ok, so I place a condition activity under the test phase and I set the condition to pass only if the test and build status are different from Failed
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image.png)
 
 Now I need to know where the dbproj will be located in the disk during the build, and since I know the repository path, I can use a specific TFS build action to convert the source control path into physical path. The source control path is â€œ$/Experiments/NorthwindTest/NorthwindTest.Database/NorthwindTest.Database.dbprojâ€ so I can drop a â€œ **ConvertWorkspaceItem** â€ activity to convert this path to the physical one. First of all I need to declare a variable where to put the result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image1.png)
 
 I called this variable â€œdbProjectâ€ (String type). Now I can configure my  **ConvertWorkspaceItem** activity I dropped in the â€œthenâ€ part of my condition activity.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image2.png)
 
 This activity needs three variables, the first is the source control path you want to translate, the second is the name of the variable that will contain the result and the third is the Workspace to use (is stored into the global variable  **Workspace** ).
 
 Following this activity I dropped a WriteBuildMessage activity, used to write something into the build log (I wrote the exact path of the database project that is to be deployed)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image3.png)
 
 This is only informational, but it is useful to check during the build process.
 
@@ -39,11 +39,11 @@ These properties are used to specify the name of the database, the datapath, the
 
 Finally these are all the properties of the msbuild activity.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image4.png)
 
 LogFile is really important, because you want a msbuild log file of what is happened during the deploy. You can check this file in the logs\ subfolder of the drop location
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image5.png)
 
 If you open deploydatabase.log, you can find all the information you need on what is happened, here is a little extract.
 
@@ -69,7 +69,7 @@ The project to deploy is specified in the  **Project** property, and as you can 
 
 If you check build details you can find all the information you need about the build process
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image6.png)
 
 From here you can verify project directory, and all the options that are passed to the msbuild.exe. You can now schedule the build and verify that the database is deployed on target server.
 

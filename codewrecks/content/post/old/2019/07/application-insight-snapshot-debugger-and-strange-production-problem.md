@@ -12,7 +12,7 @@ Situation: we deployed new version of a web application based on ASP.NET Web API
 
 Logging into the machine we found a real strange situation, shown in  **Figure 1 we have two worker process for the application, one is running and the other one is in Suspended state, but it is using lots of RAM**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image.png)
 
  **Figure 1** : *Two worker process in the same machine, but one is suspended*
 
@@ -35,7 +35,7 @@ Performance of the application is good, we use almost all the memory of the serv
 – Suspended process continue to grow in RAM usage, until it arrives approximately to the working set of original w3wp.exe process, then it is closed  
 –  **the original w3wp.exe process was not recycled and continue worked perfectly** *
 
-The real problem is memory usage, because when this sequence of events starts, the machine starts experiencing memory pressure and everything is really slow, sometimes a  **third w3wp.exe suspended process starts and this bring down the performance of the machine** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-1.png)
+The real problem is memory usage, because when this sequence of events starts, the machine starts experiencing memory pressure and everything is really slow, sometimes a  **third w3wp.exe suspended process starts and this bring down the performance of the machine** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-1.png)
 
  ***Figure 2***: *Windows detects low memory, and w3wp.exe process is the problem*
 
@@ -54,7 +54,7 @@ Armed with this intuition we start searching for \*.dmp files in all disks, and 
 
 Now we start searching for the possible culprit and after some unsuccessful search on internet (we found tons of article related to lots of reason but noone was applicable to our situation), we were a little bit frustrated.
 
-This is the problem when your production server does not works well, you feel in an hurry and you made mistake, since we located the.dmp file **we can simply use SysInternal Process monitor to verify what process was reading or writing in the folder containing dump.** BINGO we have a process call3ed SnapshotUploader64 that was using that file, and finally  **we immediately understand what happened, for some reason the web application has Application Insight Snapshot debugger enabled.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-2.png)
+This is the problem when your production server does not works well, you feel in an hurry and you made mistake, since we located the.dmp file **we can simply use SysInternal Process monitor to verify what process was reading or writing in the folder containing dump.** BINGO we have a process call3ed SnapshotUploader64 that was using that file, and finally  **we immediately understand what happened, for some reason the web application has Application Insight Snapshot debugger enabled.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-2.png)
 
  ***Figure 3***: *SysInternal process monitor shows you what process is using file and it is an invaluable tool to understand what is happening in your machine.*
 

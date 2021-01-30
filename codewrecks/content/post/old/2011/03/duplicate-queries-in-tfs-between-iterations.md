@@ -6,13 +6,13 @@ draft: false
 tags: [Team Foundation Server]
 categories: [Team Foundation Server]
 ---
-One of the most common operation when you move to another iteration is moving queries to the new one. Here is a sample, this is the Iteration 1 of the TailSpin Toys of the Demo Tfs machine.[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image.png)
+One of the most common operation when you move to another iteration is moving queries to the new one. Here is a sample, this is the Iteration 1 of the TailSpin Toys of the Demo Tfs machine.[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image.png)
 
  ***Figure 1***: *Team project queries of the Iteration 1*
 
 As you can see you have a lot of queries under the Iteration 1 path, and if you open one of them, you can see that in definition it got a filter to grab only Iteration 1 bugs:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image1.png)
 
  ***Figure 2***: *Definition of the Active Bugs query under the Iteration 1 path.*
 
@@ -31,13 +31,13 @@ DuplicateQuery
 
 After I run this command I have all the queries duplicated in the new iteration.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image2.png)
 
  ***Figure 3***: *All the Queries were copied from the Iteration 1 to Iteration 2*
 
 The cool part is that if I open the Active Bugs query I got:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image3.png)
 
  ***Figure 4***: *The copied query automatically point to the new iteration*
 

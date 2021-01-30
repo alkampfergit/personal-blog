@@ -50,7 +50,7 @@ This property uses the FullContent original property converting from and to a By
 
 To achieve compression I simply go to directory *d:\databases\filestream\ContentFs* (where the FILESTREAM is located) and enable the standard NTFS file compression. The result is quite interesting.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image11.png)
 
 The amount of space occupied is less than an half, and existing code was not impacted by this modification, because the code can still use the *FullContent* property ignoring the fact that this property was actually persisted through the FullBinaryContent private property.
 

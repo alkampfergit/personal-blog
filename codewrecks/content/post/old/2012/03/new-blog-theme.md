@@ -10,7 +10,7 @@ I’m working on a new blog theme, but I’m surely not a good designer :), but 
 
 Here is a screenshot of the work in process.
 
-[![10-03-2012 15-23-34](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/10-03-2012-15-23-34_thumb.png "10-03-2012 15-23-34")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/10-03-2012-15-23-34.png)
+[![10-03-2012 15-23-34](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/10-03-2012-15-23-34_thumb.png "10-03-2012 15-23-34")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/10-03-2012-15-23-34.png)
 
 I think that it will improve the readability of the blog, at least I hope :).
 

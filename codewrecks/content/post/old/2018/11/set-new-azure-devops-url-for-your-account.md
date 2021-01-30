@@ -10,13 +10,13 @@ Due to switching from the old url format organization.visualstudio.com to dev.az
 
 Every user can still use both the new or old domain name, but there is a settings in the general setting page of the account that globally enable the new url.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-7.png)
 
  ***Figure 1***: *New url format enabled in global settings.*
 
 Actually there are small parts of the site that does not work perfectly if you browse Azure DevOps with the url not configured in that settings.  **This is often due to security restriction especially for Cross Site Origin**. As an example I got problem with the new url in the release page, because some of the script will be still served with organization.visualstudio.com and they got blocked due to CORS
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-8.png)
 
  ***Figure 2***: *Cross origin request blocked due to security plugin.*
 

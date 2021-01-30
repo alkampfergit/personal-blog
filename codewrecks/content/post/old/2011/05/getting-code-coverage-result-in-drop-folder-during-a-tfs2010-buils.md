@@ -12,7 +12,7 @@ In a [very old post](http://www.codewrecks.com/blog/index.php/2010/06/14/running
 
 Answering this question is a two phase process, the first one is understanding where MsTest store results of code coverage and verify that is possible to do something useful with them. The answer is simple, you can simply look at the TestResult directory after you execute tests inside visual studio, and you will find a data.coverage file.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image1.png)
 
  ***Figure 1***: *Test results does contains data.coverage file*
 
@@ -22,13 +22,13 @@ I must admit that I never tried those solutions, but the conclusion is:  **from 
 
 Now we should solve the other problem: how to have this data available on the drop folder after a TFS2010 Build is completed. A really quick and dirty way is to edit the workflow used in the build to copy the *entire* test result folder in the Drop Folder.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image2.png)
 
  ***Figure 2***: *Copy all test results folder in drop location.*
 
 This modification simply copy *the whole TestResults* directory, from the folder where the build occours (variable TestResultDirectory) to the drop folder directory (BuildDetail.DropLocation variable).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image3.png)
 
  ***Figure 3***: *Test results gets copied into the drop folder.*
 

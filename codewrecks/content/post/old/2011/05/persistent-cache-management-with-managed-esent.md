@@ -8,7 +8,7 @@ categories: [Software Architecture]
 ---
 I have a program where components could depend from cache, implemented by ICache interface.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image14.png)
 
 I have really different types of cache, for data that needs to be temporary stored in memory I use a cache component based on enterprise library, but there are components that logically needs a cache that will survive after the process will exit.
 

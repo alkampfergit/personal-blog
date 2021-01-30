@@ -6,7 +6,7 @@ draft: false
 tags: [Azure,build,VSTS]
 categories: [Azure]
 ---
-Build vNext has a  **task dedicated to uploading files in azure blob** , as you can see from  ***Figure 1***: [![Sample build vNext that has an Azure File Copy task configured.](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb2.png)](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image2.png)
+Build vNext has a  **task dedicated to uploading files in azure blob** , as you can see from  ***Figure 1***: [![Sample build vNext that has an Azure File Copy task configured.](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb2.png)](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image2.png)
 
  ***Figure 1***: *Azure File Copy task configured in a vNext build*
 
@@ -16,13 +16,13 @@ The nice parte is the Azure Subscription setting, that allows to choose one of t
 
 If you look around you find a nice blog post that explain how to [connect your VSTS account using a service principal](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx).
 
-[![SAmple of configuration of an Endpoint for Azure with Service Principal](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb3.png "configure a service principal endpoint")](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image3.png)
+[![SAmple of configuration of an Endpoint for Azure with Service Principal](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb3.png "configure a service principal endpoint")](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image3.png)
 
  ***Figure 2***: *Configure a service endpoint for Azure with Service Principal Authentication*
 
 Another really interesting aspect of Service Endpoints, is the ability to choose people that can administer the account and people that can use the endpoint, thus giving you full security on who can do what.
 
-[![Each Service endpoint has its security setting to specify people that can administer or read the endpoint](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb4.png "You can manage security for each Service Endpoint configured")](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image4.png)
+[![Each Service endpoint has its security setting to specify people that can administer or read the endpoint](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb4.png "You can manage security for each Service Endpoint configured")](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image4.png)
 
  ***Figure 3***: *You can manage security for each Service Endpoint configured*
 
@@ -62,7 +62,7 @@ The solution is simple, I could use a Blob Storage created with Azure Resource M
 
 Configure an endpoint with certificate is really simple, you should only copy data from the management certificate inside the Endpoint Configuration and you are ready to go.
 
-[![Configuration of an endpoint based on Certificate](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb5.png "Configuration of an endpoint based on Certificate")](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image5.png)** Figure 4: ***Configure an Endpoint based on Certificate*
+[![Configuration of an endpoint based on Certificate](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb5.png "Configuration of an endpoint based on Certificate")](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image5.png)** Figure 4: ***Configure an Endpoint based on Certificate*
 
 Now my build task Azure File Copy works as expected and I can choose the right Service Endpoint based on what type of resource I should access (Classic or ARM)
 

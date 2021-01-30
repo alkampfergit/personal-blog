@@ -43,7 +43,7 @@ if (clientCertificate.HasCngKey())
 
 This fixed the problem perfectly, actually the HasCngKey methods tells me if the private key is using CNG Api and then allows me to retrieve the key with a call to GetCngPrivateKey().
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-12.png)
 
  ***Figure 1***: *GetCngPrivateKey() method explanation*
 

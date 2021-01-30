@@ -10,19 +10,19 @@ In TFS 2015 / VSTS new build system **each task contains a series of requirement
 
 When you start creating more complex build, you can find that your agent does not meets requirements because it miss some of the required capabilities. As an example,  **in TFS 2015 Build I’ve added task to run Sonar Qube Analysis on my code**.
 
-[![Build definition with Sonar Qube analysis enabled](http://www.codewrecks.com/blog/wp-content/uploads/2016/05/image_thumb.png "Build definition with Sonar Qube analysis enabled")](http://www.codewrecks.com/blog/wp-content/uploads/2016/05/image.png)
+[![Build definition with Sonar Qube analysis enabled](https://www.codewrecks.com/blog/wp-content/uploads/2016/05/image_thumb.png "Build definition with Sonar Qube analysis enabled")](https://www.codewrecks.com/blog/wp-content/uploads/2016/05/image.png)
 
  ***Figure 1***: *A build with SonarQube analysis enabled*
 
 Now if I queue a build manually, TFS warned me that it is not able to find a suitable agent, and if you ignore that warning and queue the build here is the result.
 
-[![The build failed because no agent with required capabilities was found in the pool.](http://www.codewrecks.com/blog/wp-content/uploads/2016/05/image_thumb-1.png "Build failure output")](http://www.codewrecks.com/blog/wp-content/uploads/2016/05/image-1.png)
+[![The build failed because no agent with required capabilities was found in the pool.](https://www.codewrecks.com/blog/wp-content/uploads/2016/05/image_thumb-1.png "Build failure output")](https://www.codewrecks.com/blog/wp-content/uploads/2016/05/image-1.png)
 
  ***Figure 2***: *Build failed because no suitable agent was find*
 
 The build failed because there are no agent capable to run it. Now you should go to the Project Collection administration page and verify all the agents.
 
-[![Thanks to Capabilities tab in the administration page I can see a complete list of all agent capability.](http://www.codewrecks.com/blog/wp-content/uploads/2016/05/image_thumb-2.png "View agents capabilities in administration page")](http://www.codewrecks.com/blog/wp-content/uploads/2016/05/image-2.png)
+[![Thanks to Capabilities tab in the administration page I can see a complete list of all agent capability.](https://www.codewrecks.com/blog/wp-content/uploads/2016/05/image_thumb-2.png "View agents capabilities in administration page")](https://www.codewrecks.com/blog/wp-content/uploads/2016/05/image-2.png)
 
  **figure 3:** *View agents capabilities in administration page*
 

@@ -8,7 +8,7 @@ categories: [LINQ]
 ---
 Suppose you have a very simple page where user can add comments to an issue, user can enter plain text and also they can use th HTML tag &lt;b&gt; to render in bold some text. In the [example code](http://www.codewrecks.com/blog/storage/validatesample.zip) you can see a very simple implementation (default.aspx). It use a xml file for back end storage (so you can run the example without a database) and in Default.aspx all the text that was entered by the user was stored in a CData section of the XML STorage file. When the comments are rendered on the page we simply output all the content. The result is good but have some problems. First of all you can use every html tag, such as &lt;i&gt; moreover, if some hacker enter the text â€œyou were &lt;script&gt;alert(‘hacked’);&lt;/script&gt;â€ into the textbox, all the user that read the page will execute that script, this is a  simple sample of cross site scripting attack.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image8.png)
 
 Here is the content of the storage file
 
@@ -76,7 +76,7 @@ Here is a result of the page when the storage file contains this comments.
 
 You can see that the content of the file contains dangerous html code, but here is what is rendered by Default3.aspx that calls SanitizeComment function.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image9.png)
 
 As you can notice the alert(â€˜hackedâ€™) was shown without the &lt;script&gt; tag, moreover all the text between &lt;i&gt; and &lt;/i&gt; gets no removed. SanitizeComment function leaves only the tag &lt;b&gt; and remove all other unwanted tags.
 

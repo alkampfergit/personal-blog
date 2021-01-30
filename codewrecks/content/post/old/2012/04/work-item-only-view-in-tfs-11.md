@@ -14,11 +14,11 @@ TFS 2010 contains a special Group called the [**Work Item Only View Users**](htt
 
 If you open the administration console of a TFS11 beta installation and try to add a user to WIOV group, you will be surprised because  **there is not such a group anymore in TFS** , this is because user management is slightly changed in TFS11. *To enable the equivalent of WIOV in TFS11, you need to open the Web Control Panel*, located at the address [**http://machinename:8080/tfs/\_admin/\_licenses**](http://machinename:8080/tfs/_admin/_licenses)** **where machinename is the name of the machine where you installed TFS. In this tab you can see three special web access permission group and the first one, called** *Limited* **is the equivalent of WIOV, as you can see in Figure 1.
 
-[![18-04-2012 19-12-20](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-12-20_thumb.png "18-04-2012 19-12-20")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-12-20.png)** Figure 1: ***The Limited group in TFS11 is the equivalent of WIOV in TFS2010*
+[![18-04-2012 19-12-20](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-12-20_thumb.png "18-04-2012 19-12-20")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-12-20.png)** Figure 1: ***The Limited group in TFS11 is the equivalent of WIOV in TFS2010*
 
 Now that the user Guardian was added to this special group, it has limited access to the entire server and if you want him to report bug for a specific project you can simply add him in the project Team of that specific project. In my example I have a TestProject team project, and I simply add the user Guardian into the TestProject Team.
 
-[![18-04-2012 19-20-29](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-20-29_thumb.png "18-04-2012 19-20-29")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-20-29.png)
+[![18-04-2012 19-20-29](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-20-29_thumb.png "18-04-2012 19-20-29")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-20-29.png)
 
  ***Figure 2***: *The user Guardian has now access to the TestProject team project.*
 
@@ -26,7 +26,7 @@ Now that the user Guardian was added to this special group, it has limited acces
 
 When a Limited users logs to the system, it can only submit a new bug, or he can manage own previously submitted bugs as you can see in  **figure 3**.
 
-[![18-04-2012 19-24-10](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-24-10_thumb.png "18-04-2012 19-24-10")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-24-10.png)
+[![18-04-2012 19-24-10](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-24-10_thumb.png "18-04-2012 19-24-10")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/18-04-2012-19-24-10.png)
 
  ***Figure 3***: *This is the TFS11 web access opened by a Limited user*
 

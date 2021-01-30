@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 There are a lots of interesting new features in TFS / VSTS Build vNext, but surely, one of the coolest one is the  **ability to edit a build and save as a draft**. Actually available only in the online version (Visual Studio Team Services)
 
-[![Saving build as a draft](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb.png "iSaving build as a draft")](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image.png)
+[![Saving build as a draft](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb.png "iSaving build as a draft")](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image.png)
 
  ***Figure 1***: *Saving a build as a Draft*
 
@@ -20,7 +20,7 @@ Another usual technique is  **temporary disable tasks to reduce the time to fini
 
 With the ability to save as a Draft you can avoid this type of disruption.  **Once you’ve saved a build as a draft, you can queue the draft, verify the outcome, and when everything works as expected, you can publish it** , effectively updating the real build only when you’ve tested all modifications and you are sure that the new definition does what you really want.
 
-[![Build result of Drafts build have a.DRAFT suffix to distinguish from a standard build output](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb1.png "Result of queueing a draft")](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image1.png)
+[![Build result of Drafts build have a.DRAFT suffix to distinguish from a standard build output](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb1.png "Result of queueing a draft")](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image1.png)
 
  ***Figure 2***: *Build result of Drafts build have a.DRAFT suffix to distinguish from a standard build output.*
 

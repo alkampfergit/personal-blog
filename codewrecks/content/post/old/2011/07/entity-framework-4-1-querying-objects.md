@@ -29,7 +29,7 @@ Console.WriteLine("Found warrior:" + warrior.Name);
 
 Ad you can see you are expressing the query against the object model, you are in fact asking for all warriors whose name Contains the string (â€œamâ€). If you analyze the LINQ query you can notice that I used the method System.String::Contains but [Entity Framework Profiler](http://efprof.com/) shows the real query issued to the database.
 
-[![19-07-2011 16-37-29](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-16-37-29_thumb.png "19-07-2011 16-37-29")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-16-37-29.png)
+[![19-07-2011 16-37-29](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-16-37-29_thumb.png "19-07-2011 16-37-29")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-16-37-29.png)
 
  ***Figure 1***: *The query issued to the database intercepted by [Entity Framework Profiler.](http://efprof.com/)*
 
@@ -70,7 +70,7 @@ Console.WriteLine("Found warrior:" + warrior.Id);
 
 This piece of code creates a IQueryable&lt;T&gt; that filters all warrior whose name contains the â€œamâ€ string, then print the number of warriors that satisfy that criteria (line 6), and then iterate through all records to print details. This piece of code actually creates two queries to the database.
 
-[![19-07-2011 17-12-24](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-12-24_thumb.png "19-07-2011 17-12-24")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-12-24.png)
+[![19-07-2011 17-12-24](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-12-24_thumb.png "19-07-2011 17-12-24")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-12-24.png)
 
  ***Figure 2***: *The two queries issued by the previous snippet of code*
 
@@ -119,7 +119,7 @@ Being able to load object with server side pagination can tremendously increase 
 
 The above piece of code issues three queries to the database, the first one is a simple count, the other two are more complex, because they should implement server-side pagination.
 
-[![19-07-2011 17-23-29](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-23-29_thumb.png "19-07-2011 17-23-29")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-23-29.png)
+[![19-07-2011 17-23-29](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-23-29_thumb.png "19-07-2011 17-23-29")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-23-29.png)
 
  ***Figure 3***: *The query that loads the second page of the records*
 

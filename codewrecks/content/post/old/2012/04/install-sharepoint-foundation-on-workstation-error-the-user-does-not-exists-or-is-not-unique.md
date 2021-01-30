@@ -25,6 +25,6 @@ For point 3 it is really important that you use NAMEOFMACHINE\NAMEOFUSER where N
 
 It should work, or at least it worked for me.
 
-[![17-04-2012 15-56-06](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/17-04-2012-15-56-06_thumb.png "17-04-2012 15-56-06")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/17-04-2012-15-56-06.png)
+[![17-04-2012 15-56-06](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/17-04-2012-15-56-06_thumb.png "17-04-2012 15-56-06")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/17-04-2012-15-56-06.png)
 
 Gian Maria.

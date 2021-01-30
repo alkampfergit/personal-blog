@@ -25,7 +25,7 @@ With such a scenario,**if you want to have the ability to run *High Priority*bui
 
 As an example, here is a pool called Solid, that is composed only by computer capable of running the build on a Solid State Disk.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-1.png)** Figure 1: ***Create a special build for high priority builds.*
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-1.png)** Figure 1: ***Create a special build for high priority builds.*
 
 Usually build agents are configured with standard virtual machine that does not operates with SSD, and this is perfectly acceptable for standard build.
 

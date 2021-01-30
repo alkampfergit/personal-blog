@@ -8,17 +8,17 @@ categories: [Nhibernate]
 ---
 I have a domain where one of the business operation consists of analysis of some entities, for each entity we need to do complex analysis involving external servers and until now we could live with a single server that sequentially analyze those entities one after another.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image12.png)
 
 All works good, but we reach a point where the amount of work reached the capacity of the Analyzer server, so we need to change the analysis algorithm to parallelize the analysis.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image13.png)
 
 Simply launching the analyzer application on multiple server produces errors, because analyzing a single entities it is a work of several seconds, and there is high chance that both server start to analyze the very same entity. The Analyze operation is idempotent, so there is no problem in data if two server analyzes at the same data at the same moment, but we have timeout problem due to lock in database (the result of analysis was kept in ram, but when it finished it simply open a transaction, clear old result, and insert all new data). I need some way to make the two analysis independent one from each other.
 
 I introduced in the domain the concept of EntityLock and LockedEntity
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image14.png)
 
  ***Figure 1***: *Schema of EntityLock and LockedEntity*
 

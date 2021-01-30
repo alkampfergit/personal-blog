@@ -32,25 +32,25 @@ This is a real common problem and it is quite simple to fix. First of all Visual
 
 Since I know in advance that this test are slow I immediately mark the entire class with the attribute *slowtest.*If you have no idea what of your tests are slow, I suggest grouping test by Duration in Visual Studio Test Runner.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image.png)
 
  ***Figure 1***: *Group tests by Duration*
 
 The result is interesting, because Visual Studio consider every test that needs more than one second to be slow. I tend to agree with this distinction.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image1.png)
 
  ***Figure 2***: *Test are now grouped by duration*
 
 This permits you to immediately spot slow tests, so you can add the category slowtest to them. If you keep your Unit Tests organized and with a good usage of categories, you can simply ask VS Test Runner to exclude slow test with filter –* **Traits:”slowtest”** *
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image2.png)
 
  ***Figure 3***: *Thanks to filtering I can now execute continuously only test that are not slow.*
 
 I suggest you to do a periodic check to verify that every developers is using the slowtest category wisely, just group by duration, filters out the slowtest and you should not have no tests that are marked slow.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image3.png)
 
  ***Figure 4***: *Removing the slowtest category and grouping by duration should list no slow test.*
 

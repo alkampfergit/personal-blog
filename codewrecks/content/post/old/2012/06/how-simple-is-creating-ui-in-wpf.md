@@ -8,13 +8,13 @@ categories: [WPF]
 ---
 I have this UI already working, it is a simple interface where users are presented with a list of Customers object, for each customers some feature could be enabled or not, so we have nice checkboxes to immediately enable/disable a feature with One Click.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image3.png)
 
  ***Figure 1***: *Actual situation all the checkboxes are always enabled*
 
 But the very same form is used to edit customer details, so you need to select a row in the DataGrid and then started editing detailed information. Now the user want a little modification that permits to check various checkboxes only if the Customer row is selected, like shown in the following image
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image4.png)
 
  ***Figure 2***: *Desired result, only the checkboxes of selected row are enabled.*
 

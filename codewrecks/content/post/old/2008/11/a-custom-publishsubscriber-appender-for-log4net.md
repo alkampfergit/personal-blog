@@ -124,7 +124,7 @@ This appender is really simple, it host a communication foundation server for th
 
 With this simple class I can now configure an application to use this custom appender, and then you can connect to it and intercept all the log from another application, creating a live logging listener. Here is a screenshot of a running demo
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image.png)
 
 As you can see I create a simple windows form with a button to generate warn, then I can open a simple console application that connects and listen to all generated logs. You can attach how many listener program as you want.
 

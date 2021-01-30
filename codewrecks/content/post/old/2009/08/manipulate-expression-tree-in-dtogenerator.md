@@ -8,7 +8,7 @@ categories: [LINQ,Software Architecture]
 ---
 Iâ€™m writing a simple [Dto generator](http://www.codewrecks.com/blog/index.php/2009/07/31/dto-generator-and-repository-integration/), and today I found a challenging problem. I supported dto composition like this:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image19.png)
 
 I have a CustomerDto3 that have only CustomerId and ContactName properties, then I want to autogenerate a OrderTestDto that have a Customers property of type CustomerDto3. The syntax on My T4 generator is this one.
 

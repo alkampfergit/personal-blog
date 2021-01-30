@@ -97,25 +97,25 @@ Now I fire blend and open the solution, create a windows then add the design tim
 
 This will call the ProvideValue of the MarkupExtension class, so the object will be constructed with some dummy design data, then I drop a ListBox inside the window and bind its ItemsSource property with designer
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image3.png)
 
  ***Figure 1***: *Bind with designer*
 
 The cool part is that the designer correctly recognize the ViewModel inside the DataContext and shows me the list of properties that can be bound to the ItemsControl property. Now I right click the ListBox and ask blend to edit the ItemTemplate, then create a simple layout with a border and a 2×2 grid.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image4.png)
 
  ***Figure 2***: *The layout for the DataTemplate of the ListBox*
 
 Now that I created the grid with four cells, I need to bind the label of the second column to the right properties of the Customers object, so I simply select the label, then ask to DataBind the Content:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image5.png)
 
  ***Figure 3***: *Thanks to Design Time Data, blend designer can use reflection to understand the properties of the Customers Object, so we can easily choose the property to bind*
 
 The cool part is that the interface in the designer immediately reflects the result with the Design Time Data
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image6.png)
 
  ***Figure 4***: *Designer uses design time data to render the interface directly inside the designer*
 

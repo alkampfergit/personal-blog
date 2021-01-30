@@ -8,7 +8,7 @@ categories: [ASPNET]
 ---
 Yesterday I need to implement in a quick way a three style checkbox in a project based on asp.net 3.5. The requirements stated that I must not spend too much time designing an entire new control, but the solution should be usable by other people with minimum impact. Here is the result I obtained.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/02/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/image.png)
 
 The checkbox can be, selected, not selected, or not used and when it is not used it is blue, like the one in windows forms. This was needed to satisfy a requirement, I need to make possible for the user to specify complex filters, and I have boolean fields on my entities where the user can ask for: filter only the one with field==true or field==false or no filter for that field. To achieve the result you can simply use a standard checkbox.
 

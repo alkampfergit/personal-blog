@@ -10,7 +10,7 @@ SonarQube is a really nice software, but for what I experienced it does not play
 
 Today  **I was upgrading a test instance from version 5.1 to 6.0** , I’ve installed the new version, launched database upgrade procedure, and after some minutes the upgrade procedure stopped with a bad error
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image-2.png)
 
  **Figure1:** *Databse error during upgrade.*
 
@@ -50,7 +50,7 @@ GO
 
  **Clearly you should have a backup of your database before the migration** , or you will end with a corrupted database and nothing to do. So I restored the database from the backup, run the above script, restart SonarQube and try to perform the upgrade again.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image-3.png)
 
  ***Figure 2***: *Database is upgraded correctly*
 

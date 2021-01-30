@@ -20,7 +20,7 @@ If you are curious on how SVN can understand witch file are modified without the
 
 Ok! But what this has to do with everyday usage of my VCS except for performance? Suppose you delete the a file (Transaction.cs9 § from your local copy directly from Windows Explorer, after this operation just issue a SVN  **update** command, what will be the result?
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image7.png)
 
  ***Figure 1***: *Subversion update restored deleted files.*
 

@@ -8,7 +8,7 @@ categories: [security]
 ---
 After we fixed our code in [part 1](http://www.codewrecks.com/blog/index.php/2020/01/28/do-not-trust-user-input-enforce-whitelists-narrow-allowable-input/) of this serie, we continue to expand our API adding a method to select  a Customer. Northwind database Customer table has an id of type string, so we could start with this very bad, bad, bad piece of code.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-11.png)
 
  ***Figure 1***: *Another bad example of API vulnerable with Sql Injection*
 
@@ -45,19 +45,19 @@ public class CustomerIdClass
 
 This type of technique is extremely useful also for security purposes, because you can now change your API method to construct a valid CustomerId.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-22.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-22.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-22.png)
 
  ***Figure 2***: *GetCustomer method now construct a valid CustomerIdClass before issuing the query*
 
 Thanks to this code, you can still ask for customer with a simple get:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-23.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-23.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-23.png)
 
  ***Figure 3***: *Simple query for customers*
 
 Any request that deviates from the standard pattern of a customer Id (5 chars) returns an error
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-24.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-24.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-24.png)
 
  ***Figure 4***: *Error returned from wrong id*
 

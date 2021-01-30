@@ -28,7 +28,7 @@ That is not valid code, it raises the error
 Property, indexer, or event 'RowProperty' is not supported by the language; try directly calling accessor method 'Nablasoft.RTF.RTFTableGenerator.get_RowProperty(int)
 {{< / highlight >}}
 
-The quickest solution is to do a search and replace, and many thanks to visual studio that supports find and replace with regular expressions.[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/05/image17.png)
+The quickest solution is to do a search and replace, and many thanks to visual studio that supports find and replace with regular expressions.[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image17.png)
 
 This permits to me to change every occurrence of.RowProperty[index] with.get\_RowProperty(index). There are also a lot of failing call to method with default parameter, not supported in C# 3.5â€¦
 

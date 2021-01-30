@@ -8,7 +8,7 @@ categories: [WPF]
 ---
 I’ve a WPF View where with a simple  **DataGrid that shows hundreds of rows** , it all works fine until I added sorting capabilities; when I click on the header to sort content, it took almost 5 seconds to sort 500 elements, and this kind of performance is simply unacceptable. The first step was firing a profiler to understand *where*  the code is slow, and I found this result.
 
-[![SNAGHTML969d89](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML969d89_thumb.png "SNAGHTML969d89")](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML969d89.png)
+[![SNAGHTML969d89](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML969d89_thumb.png "SNAGHTML969d89")](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML969d89.png)
 
  ***Figure 1***: *Profiler shows me that almost all the time was spent in the UpdateLayout framework function*
 

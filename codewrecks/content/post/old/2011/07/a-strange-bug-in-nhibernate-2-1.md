@@ -47,7 +47,7 @@ throw new NotSupportedException("The query should start with 'SELECT' or 'SELECT
 
 Using InexOfCaseInsensitive function permits me to find the insertion point after the select clause even if some comments are present in the query. Now everything works as expected as you can verify from [NhibernateProfiler](http://nhprof.com/). I run all the NH tests and they are all green, excepts one that verify that an exception is thrown if the query begins with /\* criteria query \*/, but this is the bug I want to fix :) so I do not care about it :). Now I run the query again with my custom recompiled version of nhibernate and I got.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image8.png)
 
  ***Figure 1***: *The top 5 clause was correctly inserted in the query even if there is a comment present in the query*
 

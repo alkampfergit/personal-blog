@@ -12,7 +12,7 @@ I tend not to agree with this path, but sometimes it is easier to tell people, �
 
 If you want to use EF4.1 in your application you need to do very little steps, suppose you have this class to persist.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image.png)
 
 You need to reference the Ef4.1 assembly and then create a *Context* to be able to persist this class.
 
@@ -50,11 +50,11 @@ db.SaveChanges();
 
 Run these few lines of code, everything works, but waitâ€¦. you never created the database but no exception occurs. This happens because the current user has administrative rights on the Sql Server, so, after the connection to the database engine was opened, EF41 verified that the Battlefield database did not exists, so he created one to persist the Warrior class.
 
-[![SNAGHTML4edfe4](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/SNAGHTML4edfe4_thumb.png "SNAGHTML4edfe4")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/SNAGHTML4edfe4.png)
+[![SNAGHTML4edfe4](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/SNAGHTML4edfe4_thumb.png "SNAGHTML4edfe4")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/SNAGHTML4edfe4.png)
 
 Generation of the database is straightforward, EF41 generates a table with a column for each property of the object that needs to be persisted, and he got special care for property named Id, because it is the primary key in the table. Since the Id property is an integer, the default convention creates a primary key with Identity Specification turned on. If you read all rows in the table you can verify that the warrior Raistlin was really saved into database.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image1.png)
 
 You should admit that using EF41 in such a simple scenario is damn simple and efficient, very few lines of code and you are ready to use it.
 

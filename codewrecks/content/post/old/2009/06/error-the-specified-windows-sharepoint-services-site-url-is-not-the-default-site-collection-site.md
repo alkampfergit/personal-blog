@@ -14,15 +14,15 @@ I followed all the instruction, but when team foundation server installer asked 
 
 The missing part in the guide is that after step 19 you need to create a site collection. First of all verify that you are able to browse the root site you have created in step 18
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image4.png)
 
 Ok now verify that you can browse the site collection at site [http://tfsalkampfer/sites/base/default.aspx](http://tfsalkampfer/sites/base/default.aspx "http://tfsalkampfer/sites/base/default.aspx") where tfsalkampfer is the name of the machine, probably you get a 404 error, so goes to the administration pane of sharepoint services
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image5.png)
 
 You need to click â€œapplication managementâ€ and then â€œCreate site collectionâ€. Now you should see the page to create another site collection
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image6.png)
 
 Please be sure that you are working on the Web application you have created for Tfs, then simply use the /sites/ option in the combo and specify whathever name you want for the web site address, iâ€™ve chosen â€œBaseâ€. Now press ok and verify that the site collection is ok browsing [http://tfsalkampfer/sites/base/default.aspx](http://tfsalkampfer/sites/base/default.aspx "http://tfsalkampfer/sites/base/default.aspx"), now you can set the value [http://tfsalkampfer/sites/](http://tfsalkampfer/sites/) as share point site during Tfs installation, and now everything went ok.
 

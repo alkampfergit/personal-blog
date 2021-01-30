@@ -8,7 +8,7 @@ categories: [Domain Driven Design]
 ---
 I’m reading the exceptional [Object Thinking](http://www.amazon.com/Object-Thinking-DV-Microsoft-Professional-David/dp/0735619654) book, full of interesting considerations about thinking with an Object Oriented mind. One of the main concept of the book is that *quite often we are using objects in a procedural way so we are still in the realm of procedural programming even using inheritance, constructor, etc etc*. As an example we can have a domain where each object is only a container for data (properties) and a bunch of other classes (services) are using that domain objects to accomplish business rules.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image11.png)
 
 Is this OOP? Probably not, because we have a domain with all the  **data** and service layer with all the  **logic** , and this is what we are used to call [procedural programming](http://en.wikipedia.org/wiki/Procedural_programming).
 
@@ -18,7 +18,7 @@ In my opinion the mere distinction on *Where the methods are defined* is only pa
 
 What is different in OOP is that you should create groups of objects that solve a problem (the business logic) with *collaboration and messages exchanging.*The simple act of moving the Logic from service to Domain Objects without changing how that logic works, sometimes creates a network of objects so complicated that you gain no benefit.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image12.png)
 
 When you started with an architecture of Service + Data Classes and you simply start moving the very same logic from services to Data Classes, the risk is having the situation depicted in the above picture and when you need to change one of the object is a pain because the modification forces you to change all the objects that actually are using that object, etc etc.
 

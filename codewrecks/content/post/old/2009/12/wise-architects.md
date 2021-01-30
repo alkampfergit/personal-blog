@@ -8,9 +8,9 @@ categories: [Software Architecture]
 ---
 Software architects are similar to civil architects, both of them work to create an artifact (software or building) on paper that will be subsequent realized. If you are committed to make a project of a building, witch of them you will like more to create?
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image9.png)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image10.png)
 
 Iâ€™m sure that the first one is probably the first choice, for many reasons. It is more challenging, it will probably make you famous, it is surely more beautiful. The problem is that those two buildings are really different in use. The first can be a congress center, a museum, but the other one is a simple house for a standard family. The problem arise if a customer ask you for â€œan house for me and my familyâ€ and you will give him the project to build the first oneâ€¦. probably it is not the expected result, from the perspective of the customer.
 

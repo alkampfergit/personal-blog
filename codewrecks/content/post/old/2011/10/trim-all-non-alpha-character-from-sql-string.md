@@ -10,7 +10,7 @@ I’have a table with some dirty data, if you select it seems that everything is
 
 The symptom is that I have some strange behavior on some data, then I verify what is the content of that row, so I issue a Select \* from xxx where Name = ‘Azioni’ and got no result, so I select everything that contains Azioni and I found the record. This is the clear symptom that the field contains some strange stuff in it, so I simply to a Copy and paste in the editor to see *exactly*what is stored in the field, and I found
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/10/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/10/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/10/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/10/image3.png)
 
 Do you see the strange char at the end? So I need a trim function that removes every non alphabetic character from the beginning and the end of the string. Looking in the internet I found [this interesting article](http://stackoverflow.com/questions/1007697/how-to-strip-all-non-alphabetic-characters-from-string-in-sql-server) that lists a function that remove all non alpha char from the string, so I modified to make it remove non-alpha char only from the beginning and the end.
 

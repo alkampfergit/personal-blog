@@ -32,7 +32,7 @@ To solve this problem I’ve authored a really stupid program to manage hardenin
 
 This means that I want a rule called RDP that will listen on UDP port 23457 and when some other computer sends single UDP packet on that port with the expected secret, it will open 3389 TCP port for that IP for a couple of hours.
 
-You can find the code on the above project, but you need to pay attention, because as soon as the program starts, it will add some rules to close all ports.  **Please be sure to use this POC only on computer where you have physical access.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image.png)
+You can find the code on the above project, but you need to pay attention, because as soon as the program starts, it will add some rules to close all ports.  **Please be sure to use this POC only on computer where you have physical access.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image.png)
 
  ***Figure 1***: *All ports blocked upon program execution*
 
@@ -40,25 +40,25 @@ In  **Figure 1** you can see that the tool added two rules to deny access to eve
 
 If I try to connect to my machine from another machine in my local network with RDP, I got no response.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-1.png)
 
  ***Figure 2***: *Cannot access to my workstation with RDP*
 
  **This happens because the tool explicitly deleted all rules about port 3389 and deny access to every other port.** If I want to connect to that machine I need to fire up client and ask for port to open
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-2.png)
 
  ***Figure 3***: *Client program used to ask for port opening*
 
 Now if you got correctly both port and secret, a new rule was created.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-3.png)
 
  ***Figure 4***: *New rule created upon correctly matching port and secret*
 
 The name of the rule is unique (it ends with a GUID) and contains in the name the expiration date in form of yyyyMMddHHmm, a timer in server part of the program check firewall rules each minutes to remove all of the rules that matches this pattern and remove them when they are expired.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-4.png)
 
  ***Figure 5***: *New rule is created scoped for only the computer that sent correct UDP packet with correct secret.*
 

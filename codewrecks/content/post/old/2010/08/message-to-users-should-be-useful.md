@@ -8,7 +8,7 @@ categories: [Software Architecture]
 ---
 There are a lot of rules for usability of User Interface, and one of the most important one is not to clutter the user with strange error messages. Since the last update of skype, sometimes when Iâ€™m chatting with someone a â€œreally usefulâ€ message box appears.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/08/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/08/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image5.png)
 
 This windows does not communicate nothing to the user, moreover if you click ok nothing happensâ€¦ skype continue to work with no problem. This design violates some best practice of the UI.
 

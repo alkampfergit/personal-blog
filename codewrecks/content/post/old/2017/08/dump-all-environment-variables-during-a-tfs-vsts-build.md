@@ -33,13 +33,13 @@ This script is super simple, with the gci (Get-ChildItem) cmdlets I can grab a r
 
 Given this I create a test.md file in the artifact directory where I dump the entire content of the $out variable, and  **finally with the task.addattachment command I upload that file to the build**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image.png)
 
  ***Figure 1***: *Simple PowerShell task to execute inline script to dump Environment Variables*
 
 After the build ran, here is the detail page of the build, where you can see a nice and formatted list of all environment variables of that build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-1.png)
 
  ***Figure 2***: *Nice formatted list of environment variables in my build details.*
 

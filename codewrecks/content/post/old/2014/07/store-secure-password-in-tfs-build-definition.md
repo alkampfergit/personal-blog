@@ -14,7 +14,7 @@ With TFS 2013 a nice new Build template that allow customization with scripts is
 
 But sometimes you have services or tools that does not supports AD authentication. This is my scenario: I need to call some external service that needs username and password in querystring; credentials are validated against custom database. In this scenario AD authentication could not be used. I’ve setup a simple web service that ask for username and password, and returns a json that simply dumps parameters. This simple web service will represent my external service that needs to be invoked from a script during the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image5.png)
 
  ***Figure 1***: *Simple service that needs username and password without supporting AD Authentication.*
 
@@ -40,13 +40,13 @@ Write-Host "ReturnValueIs: "$retValue.Message
 
 Once I’ve cheked-in this script in source code, invoking it in TFS Build is a breeze, here is how I configured the build to **invoke the service after source code is built**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image6.png)
 
  ***Figure 2***: *Invoke script but password is in clear text.*
 
 This works perfectly, you can verify in the build Diagnostics that the web site was correctly called with the right username and password ( **Figure 3** ), but as you can see in  **Figure 2** password is in clear text, everyone that has access to the build now knows the password. This is something that could no be accepted in some organization, so I need to find a way to not specify password in clear text.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image7.png)
 
  ***Figure 3***: *Web site was called with the right password.*
 
@@ -76,7 +76,7 @@ PS C:\Users\Administrator.CYBERPUNK> Write-Host $encryptedSecureString
 
 Encrypted password is that long string you see in the above script and can be used in build definition instead of a clear-text password.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image8.png)
 
  ***Figure 4***: *Password is now encrypted in the build definition*
 
@@ -110,13 +110,13 @@ Write-Host "ReturnValueIs: "$retValue.Message
 
 This code simply decrypts the password and then calls the service. This is a simple piece of powershell code I’ve found on some sites, nothing complex. Then I checked in this new script and fire the build. After the build completes I verified that the script correctly decrypted the right password and that the service was invoked with the right decrypted password.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image9.png)
 
  ***Figure 5***: *Script correctly decrypted the password using TFSBuild credentials*
 
 To verify that this technique is secure I connected as Domain Administrator, edited the build and grabbed encrypted password from the definition. Once I’ve got the encrypted password I run the same PowerShell script to decrypt it, but I got an error.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image10.png)
 
  ***Figure 6***: *I’m not able to decrypt the string once encrypted by a different user*
 
@@ -124,7 +124,7 @@ Even if I’m a Domain Admin, I could not decrypt the password, because I’m a 
 
 *If you have multiple build controllers / agent machines, you can still use this technique, but you need to specify the build machine you used to generate the password in the build definition.*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image12.png)
 
  ***Figure 7***: *I specified the exact agent that should run the build, because it is on the machine where I’ve encrypted the password.*
 

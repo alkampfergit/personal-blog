@@ -10,7 +10,7 @@ If you have an MSBuild custom task that you want to reuse in a TFS 2010 build wo
 
 First of all it is clumsy, because you have to pass custom task parameters as arguments to msbuild, but the worst problem is that you lose the ability to use output properties of the custom task. Suppose you have a TinyUrl custom task, that takes an url as input and gives back the tined version, this custom task has this implementation.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image27.png)
 
 Now suppose you do not have this source code, so you really need to use the MsBuild Custom Task; if you simply use the MsBuild activity as described in the previous post, how can you grab the TinedUrl output property and pass its value to the workflow engine?
 
@@ -79,11 +79,11 @@ The first important aspect is that it inherits from CodeActivity&lt;String&gt; i
 
 If the return value of execute is false the action logs the error (so the build [partially fails](http://www.codewrecks.com/blog/index.php/2010/01/18/log-warning-and-errors-in-a-custom-action/)) and finally returns the value to the caller because output properties of MsBuild custom Tasks are simple properties, so the tined url is in the TinedUrl property of the task. The good part of this technique is that you can use this action from the graphical designer.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb28.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image28.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image28.png)
 
 If you compare with the [approach that uses MsBuild Activity](http://www.codewrecks.com/blog/index.php/2009/11/09/use-msbuild-custom-action-in-tfs2010-build-with-a-custom-project/) you have several advantages. First you can use the graphical designer, then you can edit the property with the full editor of workflow foundation and finally you can use output properties. I inserted a WriteBuildMessage after the TinyUrl Custom Activity to verify if the TinedUrl property is correctly set by the action. If you run the build you can verify that everything is good.  I placed two TinyUrl custom activity inside the workflow, the second one tiny the url [www.c.com](http://www.c.com), just to trigger the warning inside the MsBuild custom Task.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb29.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image29.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image29.png)
 
 If you look at the first picture of this post, you can verify that the warning â€œThere is no need to tiny the url because is less than 20 charsâ€ is a warning issued internally by the custom MsBuild task, and you are looking at it thanks to the WorkwlofBuildEngine class that forward MsBuild log calls to workflow environment.
 

@@ -105,11 +105,11 @@ In the second part of this series I’ve received a really good comment by Rob C
 
 Now the ChangeConnectionString resource runs always, as we saw before, because each time that the File Resource runs it updates all the file with content of the original files. Changing this web.config file at each run is not a problem, because it is a temporary directory so not Worker Process Recycle happens. The final File Resource now works correctly and copies the files only if they are modified.This is what happens during the first run.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image17.png)
 
  ***Figure 1***: *During the first run all three resources were run, the first one copies files from the share to local temp, the second one changes web.config located in temp folder and finally the third one copies all files from temp folder to the folder monitored by IIS.*If you run the configuration again without changing anything in the target node you got this result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image18.png)
 
  ***Figure 2***: *During second run, the first two resources are run, but the third one that actually copies file to the folder where the site resides was skipped, avoiding recycling the worker process.*
 

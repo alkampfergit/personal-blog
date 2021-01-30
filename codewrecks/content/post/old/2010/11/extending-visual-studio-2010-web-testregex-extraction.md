@@ -108,19 +108,19 @@ e.IsMet = false;
 
 Now I can modify the test presented in the old post to insert an inner loop that is able to interate to all customers that satisfy the filter for each request.
 
-[![SNAGHTML5672a1](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5672a1_thumb.png "SNAGHTML5672a1")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5672a1.png)
+[![SNAGHTML5672a1](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5672a1_thumb.png "SNAGHTML5672a1")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5672a1.png)
 
  ***Figure 1***: *Insert a loop based on a regular expression thanks to RegexLoop plugin*
 
 I inserted another loop inside the first one, after the search request, and insert a regular expression that is able to find all â€œselectâ€ button of the gridview, I asked the regexloop to insert the value in the CurrentCustomer context variable to use in the subsequent request
 
-[![SNAGHTML583c07](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML583c07_thumb.png "SNAGHTML583c07")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML583c07.png)
+[![SNAGHTML583c07](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML583c07_thumb.png "SNAGHTML583c07")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML583c07.png)
 
  **Fgirue 2:** *Use the CurrentCustomer context variable in the inner loop request*
 
 Now you can execute the test and verify the outcome, Iâ€™m expecting an external loop to search for all alphabet letters, then for each response an inner loop for each customer, as visible in  **Figure 3**.
 
-[![SNAGHTML5b64ad](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5b64ad_thumb.png "SNAGHTML5b64ad")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5b64ad.png)
+[![SNAGHTML5b64ad](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5b64ad_thumb.png "SNAGHTML5b64ad")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5b64ad.png)
 
  ***Figure 3***: *The result of the test, you can verify that all loops behave correctly.*
 

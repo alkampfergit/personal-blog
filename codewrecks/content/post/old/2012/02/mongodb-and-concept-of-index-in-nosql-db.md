@@ -28,7 +28,7 @@ mongod --install --logpath c:\xxxx --dbpath c:\yyyy
 
 You can find plenty of installation guide on the internet, but with the above install command you create a windows service that will Automatically start MongoDb on your machine using specified datafolder. Now you should download the C# driver to connect from.NET code, but if you like using LINQ you can install fluent mongo directly with nuget.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image8.png)
 
  ***Figure 1***: *Install fluent mongo with nuget.*
 
@@ -48,7 +48,7 @@ MongoDB stores data in JSON format and to insert data inside a collection you ca
 
 After you inserted the above documents you can use [MongoVue](http://mongovue.com/) to see what is contained inside the database.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image9.png)
 
  ***Figure 2***: *Use mongovue to see what is inside the database*
 
@@ -71,7 +71,7 @@ secondDocument.GetDocumentId(out id, out idType, out generator);
 
 Basically you are asking to your BsonDocument to return you the generated Id, as well as the type of the id and the generator that Mongo used to generate that specific Id. The result is represented into this snippet
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image10.png)
 
  ***Figure 3***: *The three object that you got with a call to GetDocumentId: Id, IdType and the generator.*
 
@@ -90,7 +90,7 @@ untyped.Save(thirdDocument);
 
 The key is using the [GuidGenerator](http://api.mongodb.org/csharp/1.0/html/bed040ae-3f13-e645-b18d-b90db061cdd5.htm) (in the MongoDb.Bson.Serialization.IdGenerators namespace) to generate a valid MongoId Guid value, then call the [SetDocumentId](http://api.mongodb.org/csharp/1.0/html/22d1ae80-7d42-6cf6-9b93-4cb904a431c0.htm) method of BsonDocument to manually set the id and not relay on automatic id generation. If you look at the db you will find that the document with Guid id has really a different id type.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image11.png)
 
  ***Figure 4***: *The document with Guid Id is represented in a different way in mongovue, but as you can verify there is no problem in having documents with different id types in the same collection.*
 

@@ -13,7 +13,7 @@ Previous Posts on the serie
 
 Everything is up and running, but now  **requirements change, documents can have multiple languages (italian and english in my scenario) and we want to do the simplest thing that could possibly work**. First of all I change the schema of the core in solr to support language specific fields with wildcards.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image12.png)
 
  ***Figure 1***: *Configuration of solr core to support multiple language field.*
 
@@ -47,13 +47,13 @@ Now I want to be able to  **do a search in this multilanguage core** , basically
 
 Since detecting language of term used in query gives a lots of false positive, the secondo technique sounds better. Suppose you want to find italian term “tipografia”, You can issue query: * **content\_it:tipografia OR content\_en:tipografia**.*Everything works as expected as you can see from the following picture.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image13.png)
 
  ***Figure 2***: *Sample search in all content fields.*
 
 Now  **if you want highlights in the result, you must specify all localized fields** , you cannot simply use Content field. As an example, if I simply ask to highlight the result of previous query using original *content* field, I got no highlight.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image14.png)
 
  ***Figure 3***: *No highlighting found if you use the original Content field.*
 
@@ -61,7 +61,7 @@ This happens because the match in the document was not an exact match, I ask for
 
  **To avoid problem, you should specify all localized fields in hl parameters** , this has no drawback because a single document have only one non-null localized field and the result is the expected one:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image15.png)
 
  ***Figure 4***: *If you specify localized content fields you can have highlighting even with a full-text match.*
 

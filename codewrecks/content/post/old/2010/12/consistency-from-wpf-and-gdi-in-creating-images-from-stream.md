@@ -8,7 +8,7 @@ categories: [WPF]
 ---
 If you have a Stream and want to create a simple GDI+ Bitmap you can write this simple code.
 
-[![SNAGHTML5424c0](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML5424c0_thumb.png "SNAGHTML5424c0")](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML5424c0.png)
+[![SNAGHTML5424c0](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML5424c0_thumb.png "SNAGHTML5424c0")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML5424c0.png)
 
  ***Figure 1***: *FromStream static method permits to easily build an Image from a Stream*
 
@@ -39,7 +39,7 @@ We have two thing to notice, the first one is that we have an instance method, n
 
 One of the annoying characteristic of GDI Bitmap can be found reading the documentation of Bitmap.FromStream() method:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image4.png)
 
 It could be difficult to keep reference of the original Stream and keeping it open until you use the Bitmap, thus the BitmapImage is in my opinion more powerful because if you see the extension method shown before, I close the stream before returning, thus the BitmapImage does not need the original stream to be keep open.
 

@@ -12,7 +12,7 @@ I remember a lot of years ago, when I bought a pc with a 1.6 GB Hard Disk, a siz
 
 Today I installed a virtual machine to experiment TFS 11 and saw that during installation of SharePoint foundation there is a warning telling me that 10GB RAM is suggested for best experience, so I go to VM setting, and gave 12 GB of RAM to the VM. :)
 
-[![seeee](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/seeee_thumb.jpg "seeee")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/seeee.jpg)
+[![seeee](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/seeee_thumb.jpg "seeee")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/seeee.jpg)
 
 Actually there is no need to have 12 GB to experiment with TFS11, a 4 GB machine will be enough to create a test environment, but having 16 GB of ram and an SSD on my machine permits me to play with a superfast test TFS 11 machine.
 

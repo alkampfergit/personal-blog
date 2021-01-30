@@ -10,7 +10,7 @@ I have an application that analyze some data and insert about 1000 objects for e
 
 When I launch the application I see this insert pattern, even if I enabled batch size in Nhibernate.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image6.png)
 
  ***Figure 1***: *Each object has his own insert instruction A then B then A then B again.*
 
@@ -26,7 +26,7 @@ Iâ€™m using NH 2.1 and I do not know exactly if bulk inserting of linked ob
 
 Since object of type A does not depend from objects of type B, when I call flush() in point 3, session contains only objects of type A, so it can use batching. Then when I insert all B objects and commit transaction, the session should only insert all B objects and it can use batching again. The result is
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image7.png)
 
  ***Figure 2***: *Batching in action, since I have 50 as batch size, inserting 500 objects requires only 10 insert query.*
 

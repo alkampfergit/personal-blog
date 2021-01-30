@@ -8,7 +8,7 @@ categories: [General]
 ---
 Probably not, until these are the prices
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/image.png)
 
 I know that with electronic version I donâ€™t spend the shipping cost (That for me in Italy are quite high respect citizen in the US) and I got my book almost istantaneously, but it seems to me ridiculous that the electronic version of the book actually costs MORE than the printed version.
 

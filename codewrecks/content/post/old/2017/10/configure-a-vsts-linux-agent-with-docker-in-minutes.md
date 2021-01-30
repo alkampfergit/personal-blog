@@ -52,13 +52,13 @@ sudo docker run \
 
  **Thanks to the –e option I can specify any environment variable I want, this allows me to specify TEST\_MSSQL and TEST\_MONGODB variables for the third docker container, the VSTS Agent**. The ip of mongodb and MSSql are on a special interface called docker0, that is a virtual network interfaces shared by docker containers.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-3.png)
 
  ***Figure 1***: *configuration of docker0 interface on the host machine*
 
  **Since I’ve configured the container to bridge mongo and SQL port on the same port of the host, I can access MongoDB and MSSQL directly using the docker0 interface ip address of the host.** You can use docker inspect to know the exact ip of the docker container on this subnet but you can just use the ip of the host.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-4.png)
 
  ***Figure 2***: *Connecting to mongodb instance*
 

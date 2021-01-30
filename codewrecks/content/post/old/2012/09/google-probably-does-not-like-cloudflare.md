@@ -20,13 +20,13 @@ After 5 months Google organic traffic to my site is 45% less comparing the same 
 
 These observation sounds really strange to me, because  **actually my site runs really faster with Cloudflare**  **and I know that Google favor faster sites over slower ones** , so I never doubted of Cloudflare, but one aspect worried me: CloudFlare manipulates your pages, because it is not only a CDN and it is probably the biggest change I’ve done during refactoring, so I decided to try to completely disable it. Now almost a month is passed, and this weeks stats are higher than the previous week. In Figure 1 you can spot when I disabled CloudFlare.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image11.png)
 
  ***Figure 1***: *The red arrow points to the moment I’ve disabled CloudFlare, this picture represents only Google organic traffic source.*
 
 A month is passed after I’ve disabled Cloudflare and Google (organic) traffic source seems to be increased. I do not really know if this is the real reason, but if I take a big picture from the day I’ve optimized my blog doing all modification until now I got this.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image12.png)
 
  ***Figure 2***: *The whole trend of Google (organic) traffic to my blog, the change in trend is when I’ve disabled Cloudflare*
 

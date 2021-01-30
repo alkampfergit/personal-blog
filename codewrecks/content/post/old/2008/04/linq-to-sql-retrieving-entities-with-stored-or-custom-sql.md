@@ -10,7 +10,7 @@ During Heroes launch in Ancona (Italy) one of my friend ask me if there is the p
 
 Let’s give an asnwer to this question. The first thing to notice is that the DataContext is able to do this, you can for example creates a stored called GetGoldCustomer on northwind database, having this stored accept an integer parameter called @ordercount, and returns all field from customer for customer that had more than @ordercount orders. now you can simply drag and drop that stored into the surface of the DBML designer, this add a method to the context that calls the stored. If you drag the stored on the surface of Customer Object you are telling the designer that the result of the stored should be converted to Customer Entity Object, or you can change the return type whenever you want.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/04/image-thumb3.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/04/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/04/image-thumb3.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/04/image3.png)
 
 But the original question is different, we want to *call the stored on a method of an entity object* and return domain entities. Suppose you have a GetBigOrdersForCustomer stored procedure that accepts a customerid and an amount, and return all the orders from that customer with order total bigger than amount passed. You can easily drop the stored into the designer, but this will create a method of the Context, not of the Customer Entity, so let’s see how we can solve this problem. Here is an example
 

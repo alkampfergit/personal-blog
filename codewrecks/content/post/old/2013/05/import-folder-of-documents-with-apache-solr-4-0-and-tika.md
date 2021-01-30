@@ -56,7 +56,7 @@ Clearly you should define all of these field accordingly inside your schema.xml 
 
 This is all you need to do, really!!. You can now toss some documents inside specified folder, then go to solr console and try to execute the import.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image10.png)
 
  ***Figure 1***: *Importing documents from Solr Web UI*
 
@@ -64,13 +64,13 @@ If you have error during the import process, please refer to solr logs to unders
 
 Now you can query and look at what is contained inside your index.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image11.png)
 
  **figure 2:** *A standard catch all query to verify what is inside your index*
 
 One of the cool feature of tika is extracting metadata and text from your files, as an example you can search for text that contains the word “rebase” with the query text:rebase
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image12.png)
 
  ***Figure 3***: *Return of a search inside the text of the document*
 

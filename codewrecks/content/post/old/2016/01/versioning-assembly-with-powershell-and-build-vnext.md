@@ -14,13 +14,13 @@ Now that the build system is changed in Visual Studio Team Services and in TFS 2
 
 You can download a zip with the script from [this address](https://onedrive.live.com/redir?resid=288FBF38C031D5F3!201986&amp;authkey=!AKmPDREJryfnwZc&amp;ithint=file%2czip), and the usage is straightforward **. Just check-in the scripts under a directory of your project, or in a common directory in TFVC. Once you’ve checked in the file, you can simply add a PowerShell script task before the actual build**.
 
-[![image_thumb\[2\]](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb2_thumb.png "image_thumb[2]")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb21.png)
+[![image_thumb\[2\]](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb2_thumb.png "image_thumb[2]")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb21.png)
 
  ***Figure 1***: *Add PowerShell script before the build stage*
 
 Then I simply specify where the script is located in my source control and specify the list of arguments it needs.
 
-[![image_thumb\[5\]](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb5_thumb.png "image_thumb[5]")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb51.png)
+[![image_thumb\[5\]](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb5_thumb.png "image_thumb[5]")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb51.png)
 
  ***Figure 2***: *Configure the script to run*
 
@@ -33,7 +33,7 @@ Version number has a special syntax where J is substituted with date expressed w
 
 There are no special operation to do in your build. Here is the output.
 
-[![image_thumb\[8\]](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb8_thumb.png "image_thumb[8]")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb81.png)
+[![image_thumb\[8\]](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb8_thumb.png "image_thumb[8]")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb81.png)
 
  ***Figure 3***: *Output of the build*
 

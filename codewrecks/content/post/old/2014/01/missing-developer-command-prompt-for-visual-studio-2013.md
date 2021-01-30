@@ -12,6 +12,6 @@ If you installed Visual Studio 2013 but you are not able to find the “develope
 
 Now right click on Developer Command Prompt for VS2013 and choose “pin to start” and the game is done.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image5.png)
 
 Gian Maria.

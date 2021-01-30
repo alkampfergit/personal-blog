@@ -8,13 +8,13 @@ categories: [General]
 ---
 Sometimes I wonder the reason of some strange error in really big application. Facebook is surely one of the biggest application on the planet, it manages millions of user, but it has strange bug. I use facebook rarely, but in the last few days I was not able to look at my profile, whenever I click on â€œPRofileâ€ I got this.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb41.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image41.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb41.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image41.png)
 
 It happens with every browser, and I wonder what is happened to my profile. Apparently, after few days, I found a link somewhere that told me how to solve this problem, simply change the language to some other languate and then come back to the original one.
 
 As an example, click on â€œEnglish (US)â€ and choose â€œEnglish (UK)â€, the problem is still there, profile does not work, but now, if you change back to â€œEnglish (US)â€ again, the problem disappeared.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb42.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image42.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb42.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image42.png)
 
 And you have to repeat this one for each browser you had, suppose you fix in IE, then you go to Chrome, and the problem is still there, you need to change language and back to the original one in each browser :).
 

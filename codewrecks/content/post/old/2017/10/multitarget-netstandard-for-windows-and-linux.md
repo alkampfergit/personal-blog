@@ -14,7 +14,7 @@ One of the most important features of  **DotNetStandard is the ability to run on
 
 Et voilà, if you run *dotnet build* command you will find in the output folder both the versions of the assembly.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-5.png)
 
  ***Figure 1***: *Multiple version of the same library, compiled for different versions of the assembly.*
 
@@ -22,11 +22,11 @@ Et voilà, if you run *dotnet build* command you will find in the output folder 
 
 **The nice aspect of MultiTargeting is that you can use *dotnet pack* command to request the creation of Nuget Packages:  **generated packages contain libraries for every version of the framework you choose.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-6.png)** Figure 2: ***Package published in MyGet contains both version of the framework.*
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-6.png)** Figure 2: ***Package published in MyGet contains both version of the framework.*
 
 The only problem of this approach is when you try to compile multitargeted project in Linux or Macintosh, because the compiler is unable to compile for the Full Framewor because full framework can be installed only on Windows machines. To solve this problem you should remember that. **csproj files of DotNetCore projects are really similar to standard MsBuild project files so you can use conditional options based on environment variables.** This is how I defined multitargeting in a project
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-7.png)
 
  **Figure 3** : *Conditional multitargeting*
 
@@ -36,13 +36,13 @@ The Condition attribute is used to instruct the compiler to consider that XML no
 
 All the people with Windows machines will define this variable to true and all projects that uses this configuration, automatically will compile for both frameworks. On the contrary, all the people that uses Linux or Macintosh can work perfectly with only netstandard2.0 version simply avoiding defining this variable.
 
-The risk of this solution is: if you always work in Linux, you can potentially introduce code that compiles for netstandard2.0 and not for net461. Even if this situation cannot happen now, working with Linux or Mac actually does not compile and test the code against the full framework. The solution to this problem is simple, just  **create a build in VSTS that is executed on a Windows agent and remember to set DOTNETCORE\_MULTITARGET to true, to be sure that the build will target all desired framework.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-8.png)
+The risk of this solution is: if you always work in Linux, you can potentially introduce code that compiles for netstandard2.0 and not for net461. Even if this situation cannot happen now, working with Linux or Mac actually does not compile and test the code against the full framework. The solution to this problem is simple, just  **create a build in VSTS that is executed on a Windows agent and remember to set DOTNETCORE\_MULTITARGET to true, to be sure that the build will target all desired framework.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-8.png)
 
  ***Figure 4***: *Use Build variables to setup environment variables during the build*
 
 Thanks to VSTS / TFS build system it is super easy to define the DOTNETCORE\_MULTITARGET at build level, and you can decide at each build if the value is true or false (and you are able to trigger a build that publish packages only for netstandard2.0). **In this build I usually automatically publish NuGet package in MyGet feed, thanks to GitVersion numbering is automatic**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/10/image-9.png)
 
  ***Figure 5***: *Package published in pre-release.*
 

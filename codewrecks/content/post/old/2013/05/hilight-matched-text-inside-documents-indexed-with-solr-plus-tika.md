@@ -24,7 +24,7 @@ Now suppose  **you want to search for the term Branch and want also to highlight
 
 This simple query  ask for document with text that contains word branch, I want to extract (fl=) only title and author fields, want xml format and with  **hl=true** I’m asking for snippet of matching text,  **hl.snippets=20** instruct solr to search for a maximum of 20 snippet and  **hl.usePhraseHighlighter=true** use a specific highlighter that try to extract a single phrase from the text. The most important parameter is the  **hl.fl=content** that specify the field of the document that contains the text used for highlight.  In the results, after all matching documents there is a new section that contains all the highlights for each document
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image13.png)
 
  ***Figure 1***: *Hilight for the TFS Branching Guid – Scenarios 2.0.pdf file*
 
@@ -44,7 +44,7 @@ I’ve just  **changed in schema.xml the type of Content and Text from general\_
 
 The key is in the search query  **text:”branch strategy”~3** that states I’m interested in documents containing both branch and strategy terms and with a relative distance of no more than three words. Since text was indexed with text\_en field type I got full-text search, and I have a confirmation looking at the highlights.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/05/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/05/image14.png)
 
  ***Figure 2***: *Highlights for a proximity query with full text, as you can see word branching matches even if I searched for branch*
 

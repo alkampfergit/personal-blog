@@ -20,7 +20,7 @@ The second problem is more critical and derives from usage of the [DacService.Re
 
 It is time to have a look to Event Viewer of the nodes where the failure occurred. Errors are located in Application And Service Logs / Microsoft / Windows / Desired State Configuration. Here is how I found the real error that xDatabase is raising on the target node.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image16.png)
 
  ***Figure 1***: *Errors in event viewer of Target Node.*
 

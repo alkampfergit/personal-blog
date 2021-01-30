@@ -8,11 +8,11 @@ categories: [Visual Studio]
 ---
 Database Tests are really a great feature of Database Edition, and, like other tests, you can create a Data Driven Test of a stored procedure with little effort. The first stuff I do is to create a database project that will contains a table for each sets of data I want to use in a test.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image14.png)
 
 In this project I create a table for each sets of data, and create a script to preload the data as post-deployment script. In this example I want to test a stored procedure, that accepts a string filter, and for each filter I want to test the number of rows returned. To achieve this I need a set of test data with two column, a filter column and a ExpectedNumberOfResult column. I create this table in the TestDatabase Database project
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image15.png)
 
 Ok, now here is the TestDataSet1 deployment script
 
@@ -48,7 +48,7 @@ RETURN 0{{< / highlight >}}
 
 Absolutely simple, and Iâ€™ve already generated a DataGenerationPlan and already verified that searching with â€˜daâ€™ will return only one column, with â€˜eâ€™ it will return 18 columns etc etc. To save Time I simply right click and â€œDeployâ€ the test database only when the test data changes, clearly this database is readonly, because tests use it only to data drive the test. Then I create a very simple Stored proceudre Test, and modify in this way
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image16.png)
 
 We need to notice a couple of stuff, first of all the @filter parameter was not declared in T-Sql code, this because we will take it from the test table, the other peculiarity is that the NumberOfRowReturned is a single condition that expects 0 rows to be returned, now it is time to dataDrive the test. The whole operation is covered in [this article](http://msdn.microsoft.com/en-us/ms243192.aspx), here is a brief summary. First of all in the test we need to modify App.Config, you need to add a section
 
@@ -124,7 +124,7 @@ ExecutionResult[] testResults = TestService.Execute(this.ExecutionContext, this.
 
 This can be achieved with an overload version of the Execute method, that accepts the array of parameter as last argument. Now you can run the test and look at the result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image17.png)
 
 As you can verify, the stored was called three time, and for each run a different assertion was run, to verify it try to change the post-deploy script of the testDAtabase project adding a row
 
@@ -139,7 +139,7 @@ INSERT [dbo].[TestDataSet1] VALUES('a', 22){{< / highlight >}}
 
 The last row tells that we expect 22 customers with an â€˜aâ€™ in the name, but I already know that my data generation plan generates only 17 records with this condition, now you can run test again and this is the output.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image18.png)
 
 Now you can verify that the test was run 4 times, and the last one it fails.
 

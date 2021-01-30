@@ -26,7 +26,7 @@ When you work with nhibernate you can use show-sql configuration parameter to in
 
 With this configuration I instruct NHibernate to log to WCFAppender all generated SQL. Now I can attach a log viewer to a running application and look in real time to the sql instruction that nhibernate generates. You can attach more than one application, whenever you want.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image1.png)
 
 Welcome to log4net live logging monitor :D
 

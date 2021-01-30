@@ -12,13 +12,13 @@ After being capable of running build and test in my GitHub action workflow, it i
 
  **This is especially annoying for me because it seems that there is no SQL Server image available for Windows Server 2019**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/image.png)
 
  ***Figure 1***: *Docker image for Sql Server does not support Windows Server 2019.*
 
 Ok, I’m forced to use Windows server 2016, when I really have preferred to use Windows 2019, that has a much better support for containers.
 
-Apart these difficulties, GitHub actions saved my day because it allows me to specify new variables depending on matrix values, thus  **allowing me to use different container commands for different operating systems** , as you can see in  **Figure 2.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/image-1.png) 
+Apart these difficulties, GitHub actions saved my day because it allows me to specify new variables depending on matrix values, thus  **allowing me to use different container commands for different operating systems** , as you can see in  **Figure 2.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/image-1.png) 
 
  ***Figure 2***: *Different mssSql and mongContainer variable values depending on operating system.*
 
@@ -30,13 +30,13 @@ This is also fundamental because I need to use two different container images fo
 
 The net result was that my action now runs in both operating systems.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/image-2.png)
 
  ***Figure 3***: *Action now runs on both operating systems, I still got error from mongo test because of problem in container in Windows, but this is a different story.*
 
 If I want to run my build and test also against.NET Core 3 Rc, I can simply add another value on dotnet matrix, et voilà, now I got 4 different runs of my workflow.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/image-3.png)
 
  ***Figure 3***: *Running actions with matrix, cross product between all variables allows me to run action in different combination of operating system and.NET  Core framework.*
 
@@ -44,7 +44,7 @@ If I want to run my build and test also against.NET Core 3 Rc, I can simply add 
 
  **I can also use Exclude to remove some combination from matrix cross product** , in  **Figure 4** I’m excluding running for.NET core 3 on windows machine
 
-[![SNAGHTML181d66](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML181d66_thumb.png "SNAGHTML181d66")](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML181d66.png)
+[![SNAGHTML181d66](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML181d66_thumb.png "SNAGHTML181d66")](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML181d66.png)
 
  ***Figure 4***: *Excluding a specific combination from matrix combination*
 
@@ -56,13 +56,13 @@ Everything is really good, but here is some problems that I encountered while us
 
 Running on Windows Machine is slower than Linux, I do not know if this is a problem of docker images, but in  **Figure 5** you can see timing of the action in Linux (red square) and in Windows (blue square). I suspect that Windows machine runs in a much slower hardware. Nevertheless, pay attention at timing, if you are building.NET core, probably linux is the best choice (better container support and faster in GitHub actions).
 
-[![SNAGHTML1d0571](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML1d0571_thumb.png "SNAGHTML1d0571")](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML1d0571.png)
+[![SNAGHTML1d0571](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML1d0571_thumb.png "SNAGHTML1d0571")](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML1d0571.png)
 
  ***Figure 5***: *Timing running the action in Linux and Windows machine*
 
  **Another area where actions need improvement is the concept of a partially failing action, like we had for Years in Azure DevOps (TFS).** The concept is: when I’m running a series of tests, I do not want the entire action job to stop if one of the test run fails, I want it to be reported failed, continue to the next step, and the entire action should be marked as “partially failing” if one of the job marked with continue-on-error failed.  **This kind of CI workflow is standard, do not stop the script, just continue and mark the single step as failed.** It is true that GitHub actions  **have a continue-on-error property** , but it simply report the step as succeded even if it fails, this is a real annoying missing feature.
 
-[![SNAGHTML41e080](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML41e080_thumb.png "SNAGHTML41e080")](http://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML41e080.png)
+[![SNAGHTML41e080](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML41e080_thumb.png "SNAGHTML41e080")](https://www.codewrecks.com/blog/wp-content/uploads/2019/10/SNAGHTML41e080.png)
 
  ***Figure 6***: *Continue-on-error actually mark the step as succeeded even if it fails.*
 

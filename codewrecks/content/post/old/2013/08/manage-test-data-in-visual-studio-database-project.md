@@ -12,7 +12,7 @@ A first solution can be:  **differentiate post deployment scripts based on activ
 
 Actually Database Projects  **does not distinguish between various configurations** so you need to resort to some hack to have it works. Basically you create one script for every configuration you want to use.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image5.png)
 
  ***Figure 1***: *Create one script for every configuration you want to support*
 
@@ -33,7 +33,7 @@ This is not a so good hack, because  **every time you change the configuration t
 
 A better solution is leaving your Database Project post deployment script free from test data, use them to only insert the real configurations, but  **create another Database Project**. This new project  **references the original Database Project and contains post build script to generate test data**. This technique keeps your original Project clean, when it is time to deploy test data, simply deploy the other database project and thanks to the reference all the original schema will be deployed, then the post deployment script of the other project will insert Test Data.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image6.png)
 
  ***Figure 2***: *Create a specific database project to deploy test data*
 

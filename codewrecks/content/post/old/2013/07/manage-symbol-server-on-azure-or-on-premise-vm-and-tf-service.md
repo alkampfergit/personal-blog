@@ -14,19 +14,19 @@ One of the coolest capabilities of  **Team Foundation Server Build is the abilit
 
 Once everything is in place you can simply  **create a local folder and share in read / write** , my machine is called TfsSymbolServer so the folder will be [\\tfssymbolserver\symbols](file://\\tfssymbolserver\symbols)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image3.png)
 
  ***Figure 1***: *Share a folder in Read / write mode*
 
 Now you should simply [configure Team Foundation Server express build server](http://www.codewrecks.com/blog/index.php/2012/04/02/installing-on-premise-component-against-tfs-service-tfs-on-azure/) to connect to your TF Service account. The express version is free and you can install on your VM with few clicks. The necessary steps are identical if you are installing the Build Server on-premise.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image4.png)
 
  ***Figure 2***: *Build controller and agent correctly configured for my TF Service account*
 
 Now you should  **create a TFS Build to release your library and automatically publish symbols on previous network share**. In the Build Defaults choose your new Build Controller you’ve installed in the VM and ask to copy the Build Output to the server
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image5.png)
 
  ***Figure 3***: *Configure the build defaults*
 
@@ -36,13 +36,13 @@ In the Build Process you can now simply choose the item you want to publish (wit
 
 Another interesting aspect of the build, is the use of a  **different build process template used to version assembly and taken from the** [**TFS Versioning library on codeplex**](http://tfsversioning.codeplex.com/). That build process is used to give to the assemblies a unique FileAssemblyVersion, where you usually specify Major and Minor, and the template will add the date as julian and the incremental number of the build. You have plenty of documentation if you download from the project site [[http://tfsversioning.codeplex.com/](http://tfsversioning.codeplex.com/)]
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image6.png)
 
  ***Figure 4***: *Build process, index the source and use TfsVersioning to version assemblies*
 
 Now that everything is in place you can fire a build an verify in the Virtual Machine that the Symbols directory have symbols file in it.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image7.png)
 
  ***Figure 5***: *Symbols files are correctly published in the local share*
 
@@ -50,41 +50,41 @@ Now that everything is in place you can fire a build an verify in the Virtual Ma
 
 To share symbols with the team, the simplest solution is creating a site in IIS that points to symbols directory ** ** and enable the directory browsing. An alternative approach is creating a Vpn from the Azure VM and your local directory, but  **IIS is simpler to setup and to manage and it is my preferred solution**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image8.png)
 
  ***Figure 6***: *Symbol server is now publishing the symbol directory to the web with IIS*
 
 I’ve chosen port 27000 to bind the site,  **so I needed to both open the local firewall in Windows Server and adding an endpoint in the Virtual Machine Endpoints from the Azure Web Portal**. You should now verify that you are able to connect to that site from your local machines of your organization
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image9.png)
 
  ***Figure 7***: *Symbol server is now exposed in Http*
 
 Now you can simply configure Visual Studio to access that symbol server and to enable symbol server support during debugging.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image10.png)
 
  ***Figure 8***: *Your symbol server is now configured in Visual Studio*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image11.png)
 
  ***Figure 9***: *General configuration for the Debugging in Visual Studio to enable source server support*
 
 Now you can simply tell to all members of your teams, interested in using this library, that it is published through standard TFS Builds. You can give to people the address of the Drop Location (it is a zip stored in Azure Blob) for stable builds and this is everything you need to do to distribute your Dll.  **You can put in place more complex scenario, Es distributing with Nuget or in Source Control,** but the important aspect is that the dll has a specific number that identifies it, and it has symbol server support.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image12.png)
 
  ***Figure 10***: *People can download the library as a zip directly from the build.*
 
 The technique used to distribute the Dll is not important, what is important is that, * **once you create a project and reference that dll, you are able to drill down with F11 in the methods of the dll, and Visual Studio will connect to the Symbol Server, check the version of the file, and will download the correct version directly from TFS** *.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image13.png)
 
  ***Figure 11***: *When you press F11 Visual Studio correctly download the correct version from TFS*
 
 If you look at the complete file location of  **Figure 11** , you can notice the number 1046 preceding file name. If you wonder what it means, it is the changeset id of the version of the file that was included in the dll you are using.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image14.png)
 
  ***Figure 12***: *MyLogLibrary.cs latest modification was done in Changeset 1046*
 
@@ -92,7 +92,7 @@ This means that Visual Studio not only downloads automatically the file from TFS
 
 Thanks to TFS Versioning tool you are also able to tell the exact version of the dll you are using, and you can find the build used to create that dll.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image15.png)
 
  ***Figure 13***: *File Version Number helps you identify date and build number used to produce the dll*
 

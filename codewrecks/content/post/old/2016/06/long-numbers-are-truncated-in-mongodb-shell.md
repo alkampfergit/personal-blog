@@ -32,7 +32,7 @@ What you expect is that mongo inserted one record and then that record is return
 
 Actually a **double precision floating point number, that uses 64 bit for representation, is not capable of having the same precision of an Int64 number,** because part of those 64 bits are used to store exponent. If you try to represent a big number like 636002954392732556 in Double Floating Point precision some rounding is going to happen. If you are not convinced, try this [online converter](http://www.exploringbinary.com/floating-point-converter/), to convert 636002954392732556, here is the result.
 
-[![In this image there is a screenshot of the online converter, that exactly demonstrate that the rounding happens due to conversion to floating point number](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTML20f24ca_thumb.png "Floating point conversion online")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTML20f24ca.png)
+[![In this image there is a screenshot of the online converter, that exactly demonstrate that the rounding happens due to conversion to floating point number](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTML20f24ca_thumb.png "Floating point conversion online")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTML20f24ca.png)
 
  ***Figure 1***: *Floating point number rounding*
 
@@ -40,7 +40,7 @@ This confirm that my problem was indeed caused by rounding because the number is
 
 The reason behind this is subtle. Lets try another example, just type NumberLong(636002954392732556) in a mongo shell (I used RoboMongo), and verify the result.
 
-[![calling NumberLong(636002954392732556) function returns a rounded number,](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb.png "Simple call to NumberLong function")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image.png)
+[![calling NumberLong(636002954392732556) function returns a rounded number,](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb.png "Simple call to NumberLong function")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image.png)
 
  ***Figure 2***: *NumberLong gots rounded directly from the shell.*
 

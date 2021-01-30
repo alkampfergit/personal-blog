@@ -10,11 +10,11 @@ R# is really useful, but sometimes, when Iâ€™m working to very big web form
 
 In R#5 the option to disable it is in the Tools-&gt;Options menu
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image19.png)
 
 Where you can easily stop and resume R# functionality. But the coolest feature is that you can simply disable and reenable R# with command Windows
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb20.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image20.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image20.png)
 
 You also have intellisense :), so you can enable/disable in seconds :)
 

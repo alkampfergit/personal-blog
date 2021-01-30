@@ -16,7 +16,7 @@ I have an asp.net site that uses asp.net routing to dynamically create some repo
 
 everything works perfectly, until I move this site to IIS7 and try to use it with integrated pipeline mode. When I browse to a valid report url I got this error.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb30.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image30.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb30.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image30.png)
 
 It seems that my request must be satisfied by UrlRouting.axd handler... very strange. If I attach a debugger to worker process I can verify that routing is ok, my IRouteHandler is called correctly, it creates the handler that will be used to satisfy the request, but the handler was never called. After a deep search on the internet I did not find anything, except [this link](http://stackoverflow.com/questions/643477/asp-mvc-routing-problem-with-iis7).
 

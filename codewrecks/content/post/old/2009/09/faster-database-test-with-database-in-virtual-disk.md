@@ -12,11 +12,11 @@ To speedup database testing the best solution is to test database in memory, but
 
 If you do not have database edition, it can be tricky, but with the Database Edition, doing this is a joke. First of all expand the properties of the project, and double click on  **database.sqlcmdvars**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image15.png)
 
 Now create a new variable that points to the virtual disk.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image16.png)
 
 Now goes to â€œSchema Objects"/Storage/Files" and for each file of the target database edit the script changing the value $(defaultDataPath) to the new variable.
 

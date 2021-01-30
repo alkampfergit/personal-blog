@@ -15,11 +15,11 @@ I’m developing a little library that basically does these steps
 
 This is a typical call
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image.png)
 
 I like very much this kind of syntax, since we chain every method we always have intellisense that suggest us what to call, if you read the code you can easily check that we add two simple cell with text, then we add a cell with complex text, then another paragraph and finally another table, here is the result on the final document.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb1.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb1.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image1.png)
 
 Fluent interfaces like these fully benefit from intellisense and are really simple to use.
 

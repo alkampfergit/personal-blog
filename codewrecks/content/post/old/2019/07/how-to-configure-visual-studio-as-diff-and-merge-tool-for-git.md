@@ -8,19 +8,19 @@ categories: [General]
 ---
 After almost six years, the post on [How to configure diff and merge tool in Visual Studio Git Tools](http://www.codewrecks.com/blog/index.php/2013/03/19/how-to-configure-diff-and-merge-tool-in-visual-studio-git-tools/) is still read by people that found it useful, but it is now really really old and needs to be updated.
 
-That post was written when Visual Studio 2012 was the latest version and the integration with Git was still really young, made with an external plugin made by Microsoft and with really basic support.  **If you use Visual Studio 2017 or greater, you can simply go to to Team Explorer and open settings of the repository.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-22.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-22.png)
+That post was written when Visual Studio 2012 was the latest version and the integration with Git was still really young, made with an external plugin made by Microsoft and with really basic support.  **If you use Visual Studio 2017 or greater, you can simply go to to Team Explorer and open settings of the repository.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-22.png)
 
  **figure 1:** *Git repository settings inside Visual Studio Team Explorer*
 
 Settings pane contains a specific section for Git, where you can configure settings for the current repository or Global settings, valid for all repository of current user.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-23.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-23.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-23.png)
 
  ***Figure 2***: *Git settings inside Visual Studio*
 
 If you open Repository Settings usually you find that no specific diff and merge tool is set.  **Merge and Diff configurations are typical settings that are made at User level and not for each single repository**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-24.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-24.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-24.png)
 
  ***Figure 3***: *Diff and Merge tool configuration inside Visual Studio.*
 
@@ -37,7 +37,7 @@ If you configured instead VS as diff and tool you can simply issue a *git merget
 
 But if you really want to configure VS as Diff and Merge tool, if you press “Use Visual Studio” button ( **Figure 3** ) you can modify your local gitconfig. The net result is similar to what I suggested on my old post, VS just adds the six sections for diff and merge in config file.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-25.png)
 
  ***Figure 4***: *Git diff and merge section as saved from Visual Studio 2019 preview*
 

@@ -10,7 +10,7 @@ In [part 2](http://www.codewrecks.com/blog/index.php/2020/01/29/do-not-trust-use
 
 First one:  **Customer object, has a composite id, serialized value is somewhat clumsy to access from client code** as you can see in  **Figure 1**. Second: if you forget to create a CustomerId from value passed from the user, you are still victim of SQL Injection.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-25.png)
 
  ***Figure 1***: *Returned object has a composite id property.*
 
@@ -43,7 +43,7 @@ public class CustomerId {
 
 This is not a perfect solution, because, as you can see, **I inserted a default constructor that allows creation of an object with null id and I moved all validation inside setter of the property**. Sadly enough, default constructor is required from ASP.NET to allow people to directly bind the id to a get parameter.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-26.png)
 
  ***Figure 2***: *Thanks to CustomerId default constructor I can bind the id directly with get parameter*
 
@@ -122,11 +122,11 @@ This is a nice Id object, it does not have default constructor, readonly id prop
 
 Now I can rewrite the API with a  different attribute
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-27.png)
 
  ***Figure 3***: *FromBody attribute allows using custom serialized in a POST call.*
 
-Call is changed to be HttpPost, I know that a get seems better and more REST oriented, but if you do not want to have default constructor and use your custom serializer, using FromBody in a HttpPost is a viable solution.  **Now you can call the method in POST, specifying id you want to get and have a nice and plain JSON object as response.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-28.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-28.png)
+Call is changed to be HttpPost, I know that a get seems better and more REST oriented, but if you do not want to have default constructor and use your custom serializer, using FromBody in a HttpPost is a viable solution.  **Now you can call the method in POST, specifying id you want to get and have a nice and plain JSON object as response.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-28.png)
 
  ***Figure 4***: *Call in Postman using custom serializer.*
 
@@ -134,7 +134,7 @@ As you can see the answer does not contains composite object, I simply have a Cu
 
  **If you really understand how the serializer is done, you can simply pass plain id as string, because a string is a valid JSON token.** The request still should be POST
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-29.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-29.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-29.png)
 
  ***Figure 5***: *You can pass a simple string as valid JSON token thanks to our custom serializer.*
 
@@ -156,13 +156,13 @@ If you do not care that, to get a single customer by id, you need to do a POST c
 
 This object has two distinct property, one is a simple Int32 the other is a CustomerId. Thanks to my serializer I can call with this code.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-30.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-30.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-30.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-30.png)
 
  ***Figure 6***: *Using CustomerId inside a complex dto class.*
 
 Maintaining the real advantage of strict validation, because if I pass something that is not a valid CustomerId, I got my request rejected.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-31.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-31.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-31.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-31.png)
 
  ***Figure 7***: *Passing wrong id trigger internal server error because an ArgumentException is raised.*
 

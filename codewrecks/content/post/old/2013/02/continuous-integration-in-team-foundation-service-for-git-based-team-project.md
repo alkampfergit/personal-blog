@@ -10,7 +10,7 @@ Some weeks are passed from the announcement of TF Service support to Git based T
 
 If you compare to a standard build (based on standard TFS Source control), Git based build is slightly different, the most important one is that **a single build can be used to build multiple branches**. This feature is available due to the fundamental difference in how source control is organized in distributed source control system, that permits you to avoid the paradigm of “branch is a special copy of a folder”. In the build definition  **you can specify a list of branches that you want to monitor with that build**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image9.png)
 
  ***Figure 1***: *You can specify more than one branch as Triggered branches*
 

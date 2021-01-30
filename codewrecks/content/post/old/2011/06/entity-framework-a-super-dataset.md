@@ -12,7 +12,7 @@ Entity Framework is quite a good product, but in my opinion still misses some po
 
 Sometimes I need to access small legacy databases to do a small amount of operations and I must admit that adding a EF Model from Visual Studio is a matter of seconds and the LINQ provider of EF is quite good so it is a valuable alternative to create a quick DAL. I have a simple database (four tables), I created an EF model, and then issue this query.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image7.png)
 
  ***Figure 1***: *A very simple piece of code that query database with EF*
 
@@ -22,7 +22,7 @@ This is a very super simple piece of code, in the first line I grab an instance 
 
 This image exceptionally capture my face the first time I ran this query.
 
-[![SNAGHTML4bb74e](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML4bb74e_thumb.png "SNAGHTML4bb74e")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML4bb74e.png)
+[![SNAGHTML4bb74e](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML4bb74e_thumb.png "SNAGHTML4bb74e")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML4bb74e.png)
 
  ***Figure 2***: *Strange error in the query.*
 
@@ -32,7 +32,7 @@ Iâ€™m really disappointed from this exception for many reasons. First of al
 
 To verify that the query is indeed ok lets modify it in this way.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image8.png)
 
  ***Figure 3***: *Modified version of the query, now it works.*
 
@@ -44,7 +44,7 @@ This error could have a good reason to exists: if the Term entity overrides the 
 
 But working with objects in DDD or Domain Model or even with Active Record pattern, the programmer in 99.99% of the situation, translate the condition * **V.Term == term** *with: â€œ*gives me all  **verbs** that are  **connected** with  **term** â€.*This because we are used to the fact that a reference from Verb entity to Term entity is part of the object graph and this can easily be translated with a comparison between identity operators. Given that, you can rewrite the above query in this way.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image9.png)
 
  ***Figure 3***: *The right way to issue the EF query*
 

@@ -29,7 +29,7 @@ private object DoWrap(object instance, Type typeToReturn)
 
 the variable container is a IUnityContainer, this means that the real work is done by Unity and PIAB is now just a way to access AOP functionality of Unity in different way. Let’s see how you can make this two interact. This is the Class Diagram of a TestB class
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb15.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb15.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image15.png)
 
 As you can see it implements the ITest interface and internally uses an ILogger object. The Logger property is defined in this way.
 
@@ -61,7 +61,7 @@ In line 2 you use the ConfigurationSourceFactory class of enterprise library to 
 
 Now unity is aware of the PIAB configuration and know that it should intercept the ILogger interface. Let’s see what is happening when you resolve the object.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb16.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb16.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image16.png)
 
 As you can see the Logger property gets assigned a TransparentProxy, et voilà.
 

@@ -30,7 +30,7 @@ The error is that the Typology object can contain (and in my situation is true) 
 
 Ok it still needs to be cleaned a little, because a lot of the parameter are optional but it does the work, it generates this object.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image27.png)
 
 It is a good DTO with the three property names I requested, now with Linq2Nhibernate and repository pattern I can write this service method.
 

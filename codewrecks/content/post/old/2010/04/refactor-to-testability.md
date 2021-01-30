@@ -12,17 +12,17 @@ The problem is that if you have no test and the code is difficult to test you av
 
 One of the worst piece of code to test is the following one.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image1.png)
 
 ResultdatabaseInserter is a  **static class** that takes a block of data and perform massive insert/update/delete operation on a database with millions of records. The problem is not what the method to, but the fact that it is static.
 
 The InsertData method has about 60 unit tests that verify that the complex massive operation are good, but it is used in some core section of the software. If the class XX uses InsertData static method to save the result of data elaboration you are in trouble, because usually you use the [four phase test](http://xunitpatterns.com/Four%20Phase%20Test.html).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image2.png)
 
 If you start writing code that makes assertion on data in DB you surely will find problems. The first operation I usually do in this scenario is making the ResultdatabaseInserter class not static,  **convert the InsertData method to a virtual one** , and change every part of the code where you call the function, because it is not static anymore. To simplify the process I create a public property in every object that uses  **InsertData** function.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image3.png)
 
 The advantage of this approach is clear: first of all I do not modify the behavior of the code, because I did not modify code in the InsertData method, and then with lazy creation Iâ€™m able to get rid of initialization problem, if no one populate the DatabaseInserter property, the object simply creates an instance of the default inserter.
 

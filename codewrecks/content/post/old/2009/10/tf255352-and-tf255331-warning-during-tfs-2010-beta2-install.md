@@ -19,15 +19,15 @@ Warning    [Project Collection] TF255331: The existence of the following folder 
 
 Ok, to solve this problem I first tried a simple solution, opened Management Studio, then deleted the two databases of Reporting Services, then started again the configuration of reporting services. [The discussion was originally done here](http://social.msdn.microsoft.com/Forums/en-US/tfsprerelease/thread/750302b5-12fb-4a92-8249-bcb64aadc23a).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image25.png)
 
 I ask to create new databases, and when the wizard showed me the form, it had the old machine name WMblablablabla, so I changed to actual machine name TFS2010B2.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image26.png)
 
 Now reporting services recreates all database he needs, and everything returns green in tfs installation.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image27.png)
 
 Alk.
 

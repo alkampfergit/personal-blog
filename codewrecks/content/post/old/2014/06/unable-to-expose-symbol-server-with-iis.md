@@ -16,11 +16,11 @@ To troubleshoot why your symbol server is not working you can simply use [Fiddle
 
 Just go to IIS management console and open MIME Types.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image.png)
 
 Then verify if.pdb is listed as a known extension, if not press add and add.pdb extension with a  MIME type of application/octet-stream.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/06/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/06/image1.png)
 
 Everything should work now.
 

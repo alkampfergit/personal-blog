@@ -105,7 +105,7 @@ As you can see you can simply specify the url of Team Foundation Server, the ope
 
 Now you can fire a build, goes to the drop location and verify the File Version attribute of the file
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image2.png)
 
 As you can see the version number is 135, my actual latest number for version control system of my test TFS server.
 

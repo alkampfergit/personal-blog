@@ -12,7 +12,7 @@ categories: [Nhibernate]
 
 If you does not know Query only properties of NHibernate you better take a look to [this post](http://ayende.com/Blog/archive/2009/06/10/nhibernate-ndash-query-only-properties.aspx), I must admit that they are really useful to make simpler query without changing the object model. Iâ€™ve this object model
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/08/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/08/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image2.png)
 
 This is how the domain was build, we decided to set a IList&lt;DomainRegistrations&gt; in the NickName class, and make this relation unidirectional. Now I need to issue a query to recover only Id and Url of all NickNameDomainRegistration object belonging to a certain NickName.
 
@@ -36,7 +36,7 @@ update="false" insert="false"  />
 
 Now all of my tests passes again, and I look at generated query with [NHProfiler](http://nhprof.com/).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/08/image3.png "image")](http://nhprof.com/)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image3.png "image")](http://nhprof.com/)
 
 Iâ€™m still having problem, because it issue a inner join on table BuzzNickName (the table that contains the NickName entity) that is unnecessary, because no field of NickName is nor needed nor used in the filter. To obtain a real good query you need to add another query only property with this definition.
 
@@ -47,7 +47,7 @@ insert="false" update="false" />
 
 Now I can use the NickName property if I need to filter for some property of NickName (ES, NickName.Name == â€œxxxâ€) but I use the NickNameId property to filter for owner NickName. This will produce the query.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/08/image4.png "image")](http://nhprof.com/)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image4.png "image")](http://nhprof.com/)
 
 That is the query I want.
 

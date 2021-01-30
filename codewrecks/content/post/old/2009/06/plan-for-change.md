@@ -8,7 +8,7 @@ categories: [Software Architecture]
 ---
 Here is a possible dialog between Customer/PM/Analyst and a programmer
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image7.png)
 
 Developers usually end with one or more of those thought
 
@@ -26,7 +26,7 @@ Then you need a lot of tests, that can spot immediately when a change in some pa
 
 But probably the most difficult step is *changing the way we manage software developement.*We must change the way we approach the software, not fearing changes and reacting differently to change in requirements.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image8.png)
 
 alk.
 

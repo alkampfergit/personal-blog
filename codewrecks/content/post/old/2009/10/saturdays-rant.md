@@ -14,7 +14,7 @@ How to create a bootable CD to flash RAID controller BIOS using AFU or IFU?
 
 OOhhh this sounds interestingâ€¦.. butâ€¦ wait a moment
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image34.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image34.png)
 
 To create the CD I need a floppy, this sounds absurd to me, if I already have a floppy I really do not need to boot from CD-Rom or USB Stick. I really understand that I can do this procedure from another pc, now it seems that the only solution is taking a floppy and a blank cd-rom and ask to a friend of mine to create a bootable CD-ROM.
 

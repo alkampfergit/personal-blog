@@ -67,6 +67,6 @@ Assert.That(result, Is.EquivalentTo(new List<Test>() {new Test("a", 11), new Tes
 }
 {{< / highlight >}}
 
-I use a simple Test class that contains two properties, and call Distinct with a  function that compare only the BlaBla property. Now you can use lambda with distinct ![Smile](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/wlEmoticon-smile.png)
+I use a simple Test class that contains two properties, and call Distinct with a  function that compare only the BlaBla property. Now you can use lambda with distinct ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/wlEmoticon-smile.png)
 
 Alk.

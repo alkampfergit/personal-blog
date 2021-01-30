@@ -10,11 +10,11 @@ With [Guardian](http://www.nablasoft.com/guardian) we were investigating about a
 
 The solution lies in a new introduction of 2008 SP1 the [BindingGroup](http://msdn.microsoft.com/en-us/library/system.windows.data.bindinggroup.aspx). In the example I simply create two controls, the first is responsible to show a list of customers, the other is responsible to edit currently selected customer. My goal is having the possibility to validate a Customers instance, showing the list of errors to the user, and change some visual appearance of the control to better signal the error. All those requirements must be satisfied without adding properties related to validation in Business Object instances. Here is the appearance of the control with everything is ok
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb20.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image20.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image20.png)
 
 Then I have some rule for properties length, if I change strings with too long values the validation fails.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb21.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image21.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image21.png)
 
 As you can see I have clear indication of all errors, and at the same time a rectangle under the labels will change the fill from lightYellow to Orange to help the user to visualize that something is wrong. Ok letâ€™s see how we can reach this solution. First of all here is the validator for the businessEntities
 

@@ -12,7 +12,7 @@ In these days I reach the point where the complexities of the documents became r
 
 We decided to create word 2007 document so I move to OpenXml format. [Microsoft have a SDK](http://www.microsoft.com/downloads/details.aspx?FamilyId=AD0B72FB-4A1D-4C52-BDB5-7DD7E816D046&amp;displaylang=en) that permits you to manage this new format, it permits you only to work with the overall structure of the document, manage the unzipping, adding part and zipping again document, so it’s up to you to manage the XML to modify the document, but thanks to LINQ 2 XML we can really do this in a simple way. Let’s start with a little example. I’ve created a simple document with this content
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb7.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb7.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image6.png)
 
 My goal is to find the **$$$substituteme(30)** in the document, *change it with another text and save the new document with another name*. I create an helper class that does this for me, here is the constructor.
 

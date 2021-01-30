@@ -125,7 +125,7 @@ Actually the Customers and SelectedCustomers are two observable collections popu
 
 The good stuff about such a control, is that is quite useful in MVVM architectures, where you want to be able to bind everything from the MV to the View. Actually you can grab [the full sample here](http://www.codewrecks.com/blog/storage/checkboxlist.zip), it needs to be fully tested but it work quite good, here is what you see when you run the above view on a EntityFramework model based on northwind.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image9.png)
 
 The code of the button is really stupid.
 

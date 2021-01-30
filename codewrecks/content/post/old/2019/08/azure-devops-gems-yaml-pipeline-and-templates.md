@@ -126,7 +126,7 @@ Job Build\_and\_test prosecute with standard build test tasks and it determines 
 
 The only difference from previous job is the declaration of variable NugetVersion with a special syntax that allows to [reference it from a previous job](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&amp;tabs=yaml%2Cbatch#set-in-script). Now I simply trigger the build from the original project and everything run just fine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/08/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/08/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/08/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/08/image.png)
 
  ***Figure 1***: *Standard build for library project, where I use the whole definition in a template file.*
 

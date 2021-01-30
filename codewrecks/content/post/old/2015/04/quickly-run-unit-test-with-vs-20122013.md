@@ -10,13 +10,13 @@ With VS 2012 and newer versions  **we can run Unit Tests from various frameworks
 
 Simply go to TOOLS-&gt;Customize menu, then choose to customize keyboard.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/04/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/04/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/04/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/04/image4.png)
 
  ***Figure 1***: *Keyboard customization in Visual Studio*
 
 Once configuration window is opened, search for TestExplorer.RunAllTests command, place cursor in the “Press shortcut keys:” textbox and press a shortcut, then press “assign” button to assign to this command. In  **my standard configuration I like to have CTRL+SHIFT+ALT+A shortcut, because it is not assigned to any other command and it is easy to press with left hand**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/04/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/04/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/04/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/04/image5.png)
 
  ***Figure 2***: *Assign CTRL+SHIFT+ALT+A to TestExplorer.RunAllTests command*
 

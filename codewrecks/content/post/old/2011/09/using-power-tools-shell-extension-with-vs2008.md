@@ -12,7 +12,7 @@ All workspaces of TFS2010 have Shell Extension enabled, but the one with TFS2008
 
 The solution is quite simple, you should open VS2010, connect to TFS2008 and verify that the mapping done in VS2008 is visible and working in Source Explorer.
 
-[![01-09-2011 13-16-57](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/01-09-2011-13-16-57_thumb.jpg "01-09-2011 13-16-57")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/01-09-2011-13-16-57.jpg)
+[![01-09-2011 13-16-57](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/01-09-2011-13-16-57_thumb.jpg "01-09-2011 13-16-57")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/01-09-2011-13-16-57.jpg)
 
  ***Figure 1***: *Connection windows from VS 2010 to TFS2008, you can verify that it recognize a single project collection with the same name of the server and the three team project.*
 
@@ -22,7 +22,7 @@ If you prefer, you can open a *Visual Studio  **2010** command prompt*, move to 
 
 command, this should show the definition of the workspace defined on that folder.
 
-[![01-09-2011 13-26-32](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/01-09-2011-13-26-32_thumb.jpg "01-09-2011 13-26-32")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/01-09-2011-13-26-32.jpg)
+[![01-09-2011 13-26-32](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/01-09-2011-13-26-32_thumb.jpg "01-09-2011 13-26-32")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/01-09-2011-13-26-32.jpg)
 
  ***Figure 2***: *Command tf workspace shows details about the workspace.*
 

@@ -18,7 +18,7 @@ WHERE   item_scan_id = 2
 
 When I press play the query is very slow because the Item table has a column that stores large BLOB data, so I want to recover all the columns except that one that contains binary data. With Sql Prompt you can simple put the cursor after the \* and press tab
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/05/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image12.png)
 
 And Sql Prompt will expand the query for you, now I can simply comment the image column
 

@@ -33,7 +33,7 @@ This will copy the script on the 10.0.0.220 server, and launch the script with t
 
 As you can verify, the beyondexec tool was able to connect to remote machine, copied the deployweb.bat script on the remote machine and launched it with the right argument, now I can verify with IIS that the new web application was created in target machine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image9.png)
 
 Et voilÃ , we deployed a web application to a remote machine with a simple command. You can use this technique in a tfs build to deploy to a remote server.
 

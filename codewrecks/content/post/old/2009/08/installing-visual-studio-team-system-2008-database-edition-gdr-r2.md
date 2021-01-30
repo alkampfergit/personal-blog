@@ -8,7 +8,7 @@ categories: [NET framework]
 ---
 Today I need to install [VSDB edition GDR](http://www.microsoft.com/downloads/details.aspx?FamilyID=bb3ad767-5f69-4db9-b1c9-8f55759846ed&amp;displaylang=en) into a older virtual machine, I just fired the installer and got this error.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image12.png)
 
 *Visual Studio Team System 2008 Database Edition GRD Does Not Apply or is blocked by another condition on your system. Please click the link below for more details.*
 
@@ -24,7 +24,7 @@ If you click the link you will be redirect to the download page, but if you look
 
 In my situation I have to uninstall previous version of GDR
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image13.png)
 
 But I need also to reinstall the SP1 even if it was already installed on that machine. After those operation all went good and the GDR R2 installs perfectly.
 

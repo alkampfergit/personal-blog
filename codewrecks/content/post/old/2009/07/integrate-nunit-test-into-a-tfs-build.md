@@ -12,7 +12,7 @@ This means that someone had already solved this problem for us :), and created a
 
 The only things you should do is to include all needed file in the source control of the project, to make them avaliable to each build. (Note: in the project site the author ask you to download the nxslt2.exe xslt command line tool, the link appear to be broken, so you can download an update version [here](http://www.xmllab.net/downloads/nxslt/)).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image18.png)
 
 Now that everything is in place we need to extend the build process including nunit tests and publish results in the team foundation server.
 
@@ -67,7 +67,7 @@ The final step is calling mstest to publish result trx file to the TFS server, a
 
 This is a simple Exec towards the  **mstest.exe** executable, that is able to take a trx file and publish to TFS. Here is the result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image19.png)
 
 As you can verify nunit tests are executed correctly, and results are correctly published in the TFS build result window. Thanks to BuildStep we created a step that states â€œRunning Nunit Testsâ€, and thanks to mstest.exe and xslt transformation we transformed the result from nunit output to mstest output, so we can publish them into the tfs build.
 

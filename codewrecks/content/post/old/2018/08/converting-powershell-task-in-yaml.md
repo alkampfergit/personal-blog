@@ -16,7 +16,7 @@ To minimize impacts,  **I tend to use PowerShell scripts stored inside code repo
 
 Now that YAML Build is available, I started converting everything to YAML build, a task that is made simple tanks to a nice feature of VSTS,  **in the UI there is a nice View YAML button that convert all of my build definition with new YAML syntax**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-3.png)
 
  ***Figure 1***: *Ui functionality to show the current standard build definition translated to new YAML build definition.*
 
@@ -38,13 +38,13 @@ To solve my problem I simply changed generated YAML build definition to use a st
 
 As usual you specify a task and the type, in this example [PowerShell@2](mailto:PowerShell@2). It is important the version after the @ character, it should be equal to the version of the task in the standard build, as shown in  **Figure 2**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-4.png)
 
  ***Figure 2***: *Pay attention to version Task when you convert to YAML build.*
 
 To know input parameter name of the tasks (Es. targetType, arguments, workingDirectory, etc),  **the most immediate solution is looking in the working directory of an agent and find the task definition**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-5.png)
 
  ***Figure 3***: *Tasks inside working folder of an agent.*
 

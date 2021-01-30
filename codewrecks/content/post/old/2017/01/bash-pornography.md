@@ -36,7 +36,7 @@ This is some sort of unreadble line, but it works. It is also not really complex
 
 This command list all the branches, then keep only lines that start with origin/ (grep origin/ ), then removes the first line (sed 1d) because it contains origin HEAD pointer, and finally remove the trailing origin/ from each line (sed “s/origin\///”). If I run this I got something like this.
 
-[![SNAGHTML16d0ce1](http://www.codewrecks.com/blog/wp-content/uploads/2017/01/SNAGHTML16d0ce1_thumb.png "SNAGHTML16d0ce1")](http://www.codewrecks.com/blog/wp-content/uploads/2017/01/SNAGHTML16d0ce1.png)
+[![SNAGHTML16d0ce1](https://www.codewrecks.com/blog/wp-content/uploads/2017/01/SNAGHTML16d0ce1_thumb.png "SNAGHTML16d0ce1")](https://www.codewrecks.com/blog/wp-content/uploads/2017/01/SNAGHTML16d0ce1.png)
 
  ***Figure 1***: *Output of the command to list all branches in a remote*
 
@@ -44,7 +44,7 @@ This command list all the branches, then keep only lines that start with origin/
 
 The output of the diff command is one line for each branch that is in VSTS and it is not in origin, so  **you can pipe this list to xargs, to issue a push –delete for each branch.** Now you can use this command simply issuing a git fetch for each remotes, then paste the instruction in your bash, press return and the game is done.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/01/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/01/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/01/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/01/image-1.png)
 
  ***Figure 2***: *Results of the command, two branches are deleted from VSTS remote because they were deleted from the origin remote*
 

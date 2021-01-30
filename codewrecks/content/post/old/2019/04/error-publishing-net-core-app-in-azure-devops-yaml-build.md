@@ -14,7 +14,7 @@ This is extremely strange, because the project is not a web project, it is a sta
 
  **Then I decided to create a standard non YAML build, and when I dropped the task on the build I immediately understood the problem.** This happens because dotnet core task with command publish is assuming by default that a web application is going to be published.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-16.png)
 
  ***Figure 1***: *Default value for the dotnet publish command is to publish Web Project*
 

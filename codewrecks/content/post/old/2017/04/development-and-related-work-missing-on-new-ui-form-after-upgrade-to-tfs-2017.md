@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 I’ve dealt on [How to enable the new work Item in TFS 2017](http://www.codewrecks.com/blog/index.php/2016/11/05/enable-new-work-item-form-in-tfs-15/), and you could have noticed some  **differences from Visual Studio Team Service Work Item layout, or even with new Team Projects created after the upgrade**. In  **Figure 1** you can see in the left the detail of a PBI on a Team Project that exists before the upgrade to TFS 2017, in the right the PBI on a Team Project created after the upgrade.
 
-[![SNAGHTML113eac](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/SNAGHTML113eac_thumb.png "SNAGHTML113eac")](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/SNAGHTML113eac.png)
+[![SNAGHTML113eac](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/SNAGHTML113eac_thumb.png "SNAGHTML113eac")](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/SNAGHTML113eac.png)
 
  ***Figure 1***: *Differencies of Work Item Form between Team Projects*
 
@@ -16,7 +16,7 @@ This difference happens because the script that upgrade the Process Template to 
 
  **First of all install the** [**Team Process Template Editor Extension**](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor) **for Visual Studio 2017** , this will easy the process because will avoid resorting to command line. Now, as you can see in  **Figure 2** , you should be able to use the menu Tools –&gt; Process Editor –&gt; Work Item Types that contains two commands: *Import WIT and Export WIT*.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/image.png)
 
  ***Figure 2***: *Commands to import and export Work Item Definition of a Team Project directly inside VS*
 
@@ -28,7 +28,7 @@ This difference happens because the script that upgrade the Process Template to 
 
 After you downloaded the Work Item Definition of the Team Project you want to fix, Export the very same Work Item Definition, from a Team Project that was created after the upgrade to TFS 2017.  **It could be simpler instead to download the entire process template definition from the server and look for the Work Item Definition you need.** Since I need to modify several Work Item Type definition, not only User Story, I decided to download the entire Process Template for the Agile definition
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/image-1.png)
 
  ***Figure 3***: *How to download an entire process template directly from Visual Studio.*
 
@@ -38,13 +38,13 @@ Now you should have two file User Story.xml, the first one of the TP that was up
 
 You can just compare them with whatever tool you prefer. The result is that the two files usually are really different, but we do not care for now about all the differences, we can just scroll to the bottom to find the definition of the layout of the new UI as you can see in  **Figure 4**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/image-2.png)
 
  ***Figure 4***: *Different UI definition section between existing and new Team Project*
 
 In the left we have Status and Planning section, while on the right we have planning and development, the two missing parts we want to see in our new Work Item Form Layout are instead on the new definition. Now you only need to adjust the layout on the left to make it include the missing two section. In  **Figure 5** is shown how I modified the file.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/04/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/04/image-3.png)
 
  ***Figure 5***: *Modified Process template*
 

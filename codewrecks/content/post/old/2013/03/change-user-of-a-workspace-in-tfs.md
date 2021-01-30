@@ -12,7 +12,7 @@ tf workspaces /updateUserName:OldUserName /s:sserverurl
 
 this should be done with your new account, and will assign all workspaces from old account to current account. If you want to change only one workspace you can go with a developer command prompt to worspace folder, digit tf worksspace to open the UI to edit workspace settings, press advanced and then change the username from there.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/image_thumb35.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/image35.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/image_thumb35.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/image35.png)
 
  ***Figure 1***: *Change workspace owner.*
 

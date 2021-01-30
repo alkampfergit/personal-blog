@@ -10,13 +10,13 @@ One of the nice feature of Azure DevOps is extendibility, thanks to REST API you
 
  **Once installed, whenever you are in query Editor, you have the ability to directly edit the query with WIQL syntax,** thanks to the “Edit Query wiql” menu entry.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image.png)
 
  ***Figure 1***: *Wiql query editor new menu entry in action*
 
 As you can see in  **Figure 2** , there are lots of nice feature in this addin, not only the ability to edit a query directly in WIQL syntax.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-1.png)
 
  ***Figure 2***: *WIQL editor in action*
 
@@ -24,7 +24,7 @@ You can clearly edit and save the query (3) but  **you can also export the query
 
 If you start editing the query, you will be amazed by intellisense support ( **Figure 3** ), that guides you in writing correct query, and it is really useful because it contains a nice list of all available fields.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-2.png)
 
  ***Figure 3***: *Intellisense in action during Query Editor.*
 
@@ -32,7 +32,7 @@ The intellisense seems to actually using API to grab a list of all the valid fie
 
 > Having intellisense, syntax checking and field suggestion, this addin is a really must to install in your Azure DevOps instance.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-3.png)
 
  ***Figure 4***: *Intellisense is available not only on default field, but also on custom fields used in custom process.*
 
@@ -40,7 +40,7 @@ If you are interested in the editor used, you can find that this [addin uses the
 
 Another super cool feature of this extension, is the Query Playground, where you can simply type your query, execute it and visualize result directly in the browser.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-4.png)
 
  ***Figure 5***: *Wiql playground in action, look at the ASOF operator used to issue query in the past.*
 

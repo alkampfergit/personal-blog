@@ -8,7 +8,7 @@ categories: [Castle,Testing]
 ---
 I use [AutoMockingContainer](http://www.codewrecks.com/blog/index.php/2010/10/18/mock-service-locator-and-automocking-container-to-the-rescue/) extensively in my test projects, and I â€˜ve build over time an automocking container that satisfy all of my needs. Thanks to Castle Windsor, using complex logic with the AutomockingContainer is a breeze. Suppose you have this ViewModel
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image8.png)
 
  ***Figure 1***: *ViewModel under test*
 

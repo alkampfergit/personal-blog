@@ -14,17 +14,17 @@ In the past I’ve struggled a lot with  **conversion tools that can convert vmW
 
 If you really want to be productive, the only solution I’ve found is installing an ESXi server on an old machine, an approach that gives me lots of satisfaction. First of all  **you can use the** [**Standalone conversion tool**](https://www.vmware.com/support/developer/ovf/) **of vmware to convert a vmWare VM to OVF standard format in few minutes, then upload the image to your ESXi** server and you are ready to go.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image.png)
 
  ***Figure 1***: *A simple command line instruction convert VM into OVF format*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-1.png)
 
  ***Figure 2***: *From the esxi interface you can choose to create a new VM from OVF file*
 
 Once you choose the ofv file and the disk file you just need to specify some basic characteristics for the VM and then you can simply let the browser do the rest, your machine will be created into your ESXi node.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-2.png)
 
  ***Figure 3***: *Your VM will be created directly from your browser.*
 

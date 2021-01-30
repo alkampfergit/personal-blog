@@ -40,7 +40,7 @@ The syntax is really simple, the IDocumentStore has a property called * **Databa
 
 This technique is useful but it does not solve our original problem, because it * **patches a single entity** *, while our need is to rename the property *Description of all saved documents of type Player*, so we need to use a different type of operation called: [set-based-operation](http://ravendb.net/docs/client-api/set-based-operations). A set-based-operation is an operation that operates on multiple documents at once, in its most basic form it request an *index*to identify the list of documents to modify and a list of Patch operation*.*The whole concept of indexes is a really fundamental concept in RavenDb and in all NoSql database, but for this specific need just think to index as a *way to create a query that identify documents in database*. To define an index by code you must create a specific class for the index, but I can easily create an index with RavenStudio. In  **Figure 1** I created an index to identify all the documents of type Players.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image4.png)
 
  ***Figure 1***: *Define an index in RavenStudio*
 
@@ -73,7 +73,7 @@ The above command basically means:
 
 This simple call updates all Player objects saved in database, renaming the property, as you can verify from RavenDb Studio.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image5.png)
 
  ***Figure 2***: *Description property was renamed to Background*
 

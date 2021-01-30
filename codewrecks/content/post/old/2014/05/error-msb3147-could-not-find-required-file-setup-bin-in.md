@@ -12,7 +12,7 @@ I got this error from a powershell script when I call MsBuild.exe to publish a C
 
 This is not the first time I encounter this error and  **it is usually caused by missing.NET SDK**. The strange fact is that I have both VS 2013 and Windows SDK already installed in the machine hosting the build agent. Then  **I manualy added the registry key where MsBuild is looking for the bootstrapper**. In the original registry, the GenericBootstrapper has only the 12.0 entry, and I added 4.0 and 4.5 for other framework version. But this is really strange because I never had to do this manually in the past.
 
-[![clip_image002](http://www.codewrecks.com/blog/wp-content/uploads/2014/05/clip_image002_thumb.jpg "clip_image002")](http://www.codewrecks.com/blog/wp-content/uploads/2014/05/clip_image002.jpg)
+[![clip_image002](https://www.codewrecks.com/blog/wp-content/uploads/2014/05/clip_image002_thumb.jpg "clip_image002")](https://www.codewrecks.com/blog/wp-content/uploads/2014/05/clip_image002.jpg)
 
  ***Figure 1***: *Adding path of the Bootstrapper directly in the registry*
 

@@ -10,19 +10,19 @@ Once you have [test and Code Coverage](http://www.codewrecks.com/blog/index.php/
 
 From original build you need only to add two steps: PrepareAnalysis onSonarCloud and Run SonarCloud analysis, in the same way you do analysis for a.NET project.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image.png)
 
  ***Figure 1***: *Python build in Azure DevOps*
 
 You do not need to configure anything for a standard analysis with default options, just follow the configuration in Figure 2.:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-1.png)
 
  ***Figure 2***: *Configuration of Sonar Cloud analysis*
 
 The only tricks I had to do is  **deleting the folder /htmlcov created by pytest for code coverage results**. Once the coverage result was uploaded to Azure Devops server I do not needs it anymore and I want to remove it from sonar analysis. Remember that if you do not configure anything special for Sonar Cloud configuration it will analyze everything in the code folder, so you will end up with errors like these:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-2.png)
 
  ***Figure 3***: *Failed Sonar Cloud analysis caused by output of code coverage.*
 
@@ -32,13 +32,13 @@ You can clearly do a better job simply configuring Sonar Cloud Analysis to skip 
 
 Another important settings is the Advances section, because you should specify the file containing code coverage result as extended sonar property.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-5.png)
 
  ***Figure 4***: *Extra property to specify location of coverage file in the build.*
 
 Now you can run the build and verify that the analysis was indeed sent to SonarCloud.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-3.png)
 
  ***Figure 5***: *After the build I can analyze code smells directly in sonar cloud.*
 
@@ -117,7 +117,7 @@ steps:
 
  **The only settings you need to adapt is the name of the SonarCloud connection (** in this example is called SonarCloud) you can add/change in Project Settings &gt; Service Connections.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-4.png)
 
  ***Figure 6***: *Service connection settings where you can add/change connection with Sonar Cloud Servers.*
 

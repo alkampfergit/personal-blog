@@ -10,7 +10,7 @@ Thanks to [Microsoft Test Manager](http://msdn.microsoft.com/en-us/library/bb385
 
 Everything starts with the definition of a Test Case in a Test suite, in this example I want to verify what happens when the user insert some specific quantity in the Chart page of TailSpin toys.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image11.png)
 
  ***Figure 1***: *Definition of a test*
 
@@ -24,7 +24,7 @@ In the video I show how the tester can use existing action recording to speedup 
 
 The developer begins working with the bug and he need first of all to be able to reproduce the bug before starting to understand how to fix it. Thanks to the recording of test execution, he can create a new CodedUI test based on MTM recording just choosing â€œuse Existing action recordingâ€  to create the CUIT; Visual Studio now opens a form to select the Test Case that contains the action recording
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image12.png)
 
  ***Figure 2***: *Choose the Test Case that contains the action recording to import in the CodedUI test*
 
@@ -51,17 +51,17 @@ The most interesting part is the DataSource attributes that makes the test conne
 
 First of all the dev executes manually all the steps of the test, until he reach the chart page. Now he can edit the UIMap, just Right Click on the UIMap.uitest file and choose*Edit Wit Coded UI Test Builder*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image13.png)
 
  ***Figure 3***: *Editing the UIMap*
 
 Now it is really easy to create an assertion. As you can see in  **Figure 4** you can simply drag and drop the Crosshair to the quantity textbox control, CUIT Builder shows all properties of the control, now find and select the *Text* property and press the â€œAdd Assertionâ€ button to create an assertion.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image14.png)
 
  ***Figure 4***: *Adding an assertion thanks to Coded UI Test Builder.*
 
-Now that the assertion is added, since this is the only condition we want to assert, we can: press the â€œGenerate Codeâ€, give a name to the assertion and press the button â€œAdd and Generateâ€, as visible in  **Figure 5.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image15.png)
+Now that the assertion is added, since this is the only condition we want to assert, we can: press the â€œGenerate Codeâ€, give a name to the assertion and press the button â€œAdd and Generateâ€, as visible in  **Figure 5.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image15.png)
 
  ***Figure 5***: *How to add the assertion to coded UI map.*
 
@@ -91,7 +91,7 @@ this.UIMap.Closebrowser();
 
 I added lines 12-15. Lines 13-14 is where I set the expected quantity of the assertion. Each time you record an  assertion, Coded UI Test Builder tools try to parametrize generated UIMap when possible. When we created the assertion, test builder parametrizes the ExpectedValue, thanks to this feature Iâ€™m able to set expected value to the value of the parameter @ExpectedQuantity (see  **Figure 1** ) of MTM, finally line 15 executes the assertion. Now if the developer runs the test he got this output.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image16.png)
 
  ***Figure 6***: *Result of CUIT execution after the assertion*
 
@@ -107,13 +107,13 @@ this.UIMap.Openhttpwings9gmujits88000Params.UIBlankPageWindowsInteWindowUrl
 
 Usually this line is removed once the bug is fixed so the test will point to the original test server. Once the bug is fixed, the developer check-in the code, opens the definition of Test Case, and automate the test with the new CUIT just created. This operation is really important, because now we does not need anymore to do a manual execution of this Test Case, but we can simply run the CUIT to obtain the same result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image17.png)
 
  ***Figure 7***: *The CUIT just created is added to the Test Case as â€œassociated automationâ€*
 
 After some time, test manager decides to test a new build.  He deployed the new build in all test environments, then testers looks at test impact or at the list of closed bug to see what is changed and what to test. When a tester verifies that the bug related to test case 45 is marked as resolved, he needs to verify that the bug is really fixed running test again and if everything is ok close it. When he opens MTM and looks at the the test case he see that now this test is automated.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image18.png)
 
  ***Figure 8***: *Test case 45 now contains a related automation*
 

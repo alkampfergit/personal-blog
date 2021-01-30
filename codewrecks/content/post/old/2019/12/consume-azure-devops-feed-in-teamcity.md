@@ -14,13 +14,13 @@ This project still have some old build in TeamCity, but when it starts consuming
 
 I must admit that this information is scattered in various resources and Azure DevOps, simply tells you to add a nuget.config in your project and you are ready to go, but this is true only if we are using Visual Studio connected to the account.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-1.png)
 
  ***Figure 1***: *Standard configuration for nuget config to point to the new feed*
 
  **Basic documentation forget to mention authentication, except from Get The Tool instruction, where you are suggested to download the Credential Provider if you do not have Visual Studio**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-2.png)
 
  ***Figure 2***: *Instruction to get NuGet and Credential Provider*
 
@@ -28,17 +28,17 @@ Credential provider is useful, but is really not the solution, because I want a 
 
  **A better alternative is to use standard NuGet authentication mechanism, where you simply add a source with both user and password.** Lets start from the basic, if I use NuGet command line to list packages for my private source I got prompted for a user.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-3.png)
 
  ***Figure 3***: *NuGet asking for credential to access a feed*
 
-Now, as for everything that involves Azure DevOps, when you are asked for credential,  **you can use anything for the username and provide an Access Token as a password.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-4.png)
+Now, as for everything that involves Azure DevOps, when you are asked for credential,  **you can use anything for the username and provide an Access Token as a password.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-4.png)
 
  ***Figure 4***: *Specifying anything for user and my accesstoken I can read the feed.*
 
 This the easiest and more secure way to login in Azure DevOps with command line tools, especially because to access the feed I’ve generated a token that have a really reduced permission.
 
-[![SNAGHTML2160fc9](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/SNAGHTML2160fc9_thumb.png "SNAGHTML2160fc9")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/SNAGHTML2160fc9.png)
+[![SNAGHTML2160fc9](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/SNAGHTML2160fc9_thumb.png "SNAGHTML2160fc9")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/SNAGHTML2160fc9.png)
 
  ***Figure 5***: *Access token with only packaging read permission*
 
@@ -64,11 +64,11 @@ This leads to the final and most secure solution, in your computer, download lat
 
 This command will add, for current user, a feed named proximo, that points to the correct source with username and password. After you added the source, you can simply go to %appdata%/nuget/ folder and open the nuget.config file.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-6.png)
 
  ***Figure 6***: *Encrypted credentials stored inside nuget.config file.*
 
-As you can see, in your user configuration nuget.exe stored an encrypted version of your token,  **if you issue again a nuget list –source xxxxx you can verify that nuget is able to automatically log without any problem because it is using credentials in config file.** The real problem of this approach is that  **credentials are encrypted only for the machine and the user that issued the command, you cannot reuse in different machine or in the same machine with a different user.** >  **Nuget password encryption cannot be shared between different users or different computers, making it works only for current user in current computer.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-7.png)
+As you can see, in your user configuration nuget.exe stored an encrypted version of your token,  **if you issue again a nuget list –source xxxxx you can verify that nuget is able to automatically log without any problem because it is using credentials in config file.** The real problem of this approach is that  **credentials are encrypted only for the machine and the user that issued the command, you cannot reuse in different machine or in the same machine with a different user.** >  **Nuget password encryption cannot be shared between different users or different computers, making it works only for current user in current computer.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-7.png)
 
  ***Figure 7***: *Include clear text password in machine nuget.config to made every user being able to access that specific feed*
 

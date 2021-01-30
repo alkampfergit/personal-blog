@@ -10,13 +10,13 @@ I have a pipeline that worked perfectly for Years, but yesterday a **build faile
 
  **Well, the error was also not telling me anything, it is a simple statement that file upload failed** and since it told me that there were a retry, definitely this is not an intermittent network error.
 
-[![SNAGHTML156bf49](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/SNAGHTML156bf49_thumb.png "SNAGHTML156bf49")](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/SNAGHTML156bf49.png)
+[![SNAGHTML156bf49](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/SNAGHTML156bf49_thumb.png "SNAGHTML156bf49")](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/SNAGHTML156bf49.png)
 
  ***Figure 1***: *Upload file error, nothing is suggesting me the real error*
 
 Digging deeper in the execution logs I found something really strange, an error after a GetTempFileName() function call.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-10.png)
 
  ***Figure 2***: *The real error reported in the detail log*
 
@@ -26,7 +26,7 @@ Digging deeper in the execution logs I found something really strange, an error 
 
  **The trick part is knowing which is the real temp directory used by the agent that runs the build** , so I’ve added an Execute Command task to simply echo “%TEMP% variable.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/04/image-11.png)
 
  ***Figure 3***: *Dumping temp variable inside a build*
 

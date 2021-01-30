@@ -12,7 +12,7 @@ The very first step is converting [all project files to new project format](http
 
 > Multitargeting allows you to target both framework with a single Visual Studio Project
 
-To enable it just edit project files, and change TargetFramework to TargetFramework **s** (mind the final s) and specify that you want that project compiled for Full Framework and.NET Standard. Including.NET Standard in the list of target framework requires removal of all code that is dependent on Full Framework, but this  **is not always obtainable in a single big bang conversion, because the amount of code could be really high.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-10.png)
+To enable it just edit project files, and change TargetFramework to TargetFramework **s** (mind the final s) and specify that you want that project compiled for Full Framework and.NET Standard. Including.NET Standard in the list of target framework requires removal of all code that is dependent on Full Framework, but this  **is not always obtainable in a single big bang conversion, because the amount of code could be really high.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-10.png)
 
  ***Figure 1***: *Multi Targeting in action*
 
@@ -31,7 +31,7 @@ To enable it just edit project files, and change TargetFramework to TargetFramew
 
 > Thanks to conditional compile we can have some of the code that is compiled only for full framework, or we can have different implementation for a given class (full or netstandard)
 
-After multitarget is enabled and netstandard is one of the target,  project usually stops compiling, because it usually contains some code that depends on full framework. There are two distinct problems: A) nuget packages that does not support netstandard, B) references to full framework assembly.  **To solve the problem you must use conditional referencing, setting the references only for specific framework version.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-11.png)
+After multitarget is enabled and netstandard is one of the target,  project usually stops compiling, because it usually contains some code that depends on full framework. There are two distinct problems: A) nuget packages that does not support netstandard, B) references to full framework assembly.  **To solve the problem you must use conditional referencing, setting the references only for specific framework version.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-11.png)
 
  ***Figure 2***: *Conditional reference in action.*
 
@@ -44,7 +44,7 @@ Now repeat the process this for every project in the solution, usually there are
 
 Point 1 is the good side, you can continue working with full framework then convert remaining code with your pace. If you find yourself in point 2, as an example if some code uses MSMQ you should  **isolate the full framework depending code in a single class, then use Inversion Of Control to inject concrete class.** As an example, instead of having lots of points in the code that uses MSMQ simply abstract all the code in a IQueue interface, create a MSMQQueue class and you have a single point of code that is not available for netstandard. You can then write code that uses Rabbit MQ and the problem is gone with a simple class rewrite.
 
-Lets do an example:  **I have a InMemoryCacheHelper to abstract the usage of MemoryCache, and since MemoryCache class from System.Runtime.Caching is not available in netstandard, I simply protect the class with #if NETFULL conditional compiling.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-13.png)
+Lets do an example:  **I have a InMemoryCacheHelper to abstract the usage of MemoryCache, and since MemoryCache class from System.Runtime.Caching is not available in netstandard, I simply protect the class with #if NETFULL conditional compiling.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-13.png)
 
  ***Figure 3***: *Conditional compilation, this is version of the class for NET Full.*
 
@@ -54,11 +54,11 @@ Looking in the documentation there is a nuget package called Microsoft.Extension
 
  **Remember that you need to reference the full framework version (1) for net461 compilation, but reference nuget package for netstandard version. This can be done manually editing references in csproj file**  **Figure 4**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-14.png)
 
  ***Figure 4***: *Reference the correct assembly or NugetPackage based on framework version.*
 
-Now you come back to the InMemoryCacheHelper class add an #else branch to the #ifdef NETFULL directive and start writing a version of the class that uses Microsoft.Extensions.Caching.Memory. One class after another you will have all of your code that is able to target both net full and netcore. **You can rewrite the entire class or you can use the same class and use #if NETFULL inside each method, I prefer the first approach but this is what happens when I’m starting editing the netstandard version of the class** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-15.png)
+Now you come back to the InMemoryCacheHelper class add an #else branch to the #ifdef NETFULL directive and start writing a version of the class that uses Microsoft.Extensions.Caching.Memory. One class after another you will have all of your code that is able to target both net full and netcore. **You can rewrite the entire class or you can use the same class and use #if NETFULL inside each method, I prefer the first approach but this is what happens when I’m starting editing the netstandard version of the class** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-15.png)
 
  ***Figure 5***: *No highlight and no intellisense because we are in a conditional compilation branch that evaluates to false.*
 
@@ -66,7 +66,7 @@ Ouch, since we are in a branch of conditional compilation that evaluate to false
 
 In this example I needed to change &lt;TargetFrameworks&gt;net461;netstandard2.0;&lt;/TargetFrameworks&gt; to &lt;TargetFrameworks&gt;netstandard2.0;net461&lt;/TargetFrameworks&gt;, save project file and unload and reload the project (sometimes you need to force a project reload) and Visual Studio will consider netstandard2.0 during code editing.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-16.png)
 
  ***Figure 6***: *Reversing the order of the frameworks, will enable intellisense for netstandard branch of the conditional compilation directive.*
 

@@ -8,7 +8,7 @@ categories: [Testing]
 ---
 Suppose you have a very simple page that permits you to search customers in northwind database and visualize orders, a classic master-detail page.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image.png)
 
 * ***Figure 1***: A classic Master-Detail page*
 
@@ -148,25 +148,25 @@ this._terminatingValue = value;
 
 This class is based on the classic for Loop with integer values, and it iterate simply from a starting char to an ending char. Now if you reference the project that contains this class into a test project, you can use this loop in your test.
 
-[![SNAGHTML171375c](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML171375c_thumb.png "SNAGHTML171375c")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML171375c.png)
+[![SNAGHTML171375c](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML171375c_thumb.png "SNAGHTML171375c")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML171375c.png)
 
 * ***Figure 2***: adding a custom rule for a loop in web test.*
 
 With this sample I want to iterate from the letter â€˜aâ€™ to letter â€˜zâ€™ incrementing each time by 2 chars, so Iâ€™ll have the sequence a,c,e,g,iâ€¦. Then I need to specify the Context parameter property, the property that will store the value of the sequence during each iteration, in Figure 3 you will see all the properties specified for our loop.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image1.png)
 
 * ***Figure 3***: full configuration for the Loop iteration.*
 
 Now you can use that ContextParameter into a POST Variable
 
-[![SNAGHTML173e8a1](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML173e8a1_thumb.png "SNAGHTML173e8a1")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML173e8a1.png)
+[![SNAGHTML173e8a1](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML173e8a1_thumb.png "SNAGHTML173e8a1")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML173e8a1.png)
 
 * ***Figure 4***: Use the variable in loop to pass parameter with post.*
 
 If you run the test you can verify that it iterates in your sequence doing a series of requests, each one for each value of the loop.
 
-[![SNAGHTML175a154](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML175a154_thumb.png "SNAGHTML175a154")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML175a154.png)
+[![SNAGHTML175a154](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML175a154_thumb.png "SNAGHTML175a154")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML175a154.png)
 
 * ***Figure 5***: During test execution, for each iteration a different request was issued.*
 

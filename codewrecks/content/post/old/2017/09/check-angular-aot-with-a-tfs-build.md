@@ -12,11 +12,11 @@ Developing with Angular is a real fun, but usually during development you serve 
 
 I do not want to made examples when a simple ng build compile just fine but the production build with aot fails, the important concept is, **when you fire your production build to generate install packages, it is really annoying to see your angular build fails because of some errors.** Since building with aot is really expensive I’ve decided not to trigger this build for each commit, but only for special situations. First of all, here is the whole build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-5.png)
 
  ***Figure 1***: *Build to check aot compilation*
 
-As you can see, with TFS Build it is really a breeze to create a build that simply trigger the ng compiler to verify that it correctly compiles with aot switch on. Thanks to the trigger panel of my build,  **I’ve decided to build automatically only master and release branches.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-6.png)
+As you can see, with TFS Build it is really a breeze to create a build that simply trigger the ng compiler to verify that it correctly compiles with aot switch on. Thanks to the trigger panel of my build,  **I’ve decided to build automatically only master and release branches.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-6.png)
 
  ***Figure 2***: *Trigger configuration for my AOT build*
 

@@ -10,11 +10,11 @@ categories: [General]
 
 To download all of them, simply install [Free Download Manager](http://www.freedownloadmanager.org/). When fdm is installed, navigate on one of the rss page in IE, as an example the High Res WMV ([http://channel9.msdn.com/Events/MIX/MIX11/RSS/wmvhigh](http://channel9.msdn.com/Events/MIX/MIX11/RSS/wmvhigh)), then Right-click and select â€œDownload all with Free Download Managerâ€.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image12.png)
 
 Now simply filter to download all file with wmv extension
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image13.png)
 
 Choose a destination folder and the game is done. FDM takes care of retry, issue multiple request for the same file if resume is supported, managing bandwidth etc etc.
 

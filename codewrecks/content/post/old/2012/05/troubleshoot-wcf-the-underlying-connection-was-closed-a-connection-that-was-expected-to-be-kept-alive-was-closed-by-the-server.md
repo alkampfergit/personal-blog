@@ -12,7 +12,7 @@ I’ve already blogged in the past on how to [easily troubleshoot WCF Exception]
 
 This problem is usually caused by some error in the communication channel, but even in such a situation, enabling the trace listener immediately gave to you an idea of the problem.
 
-[![SNAGHTML20daa9b](http://www.codewrecks.com/blog/wp-content/uploads/2012/05/SNAGHTML20daa9b_thumb.png "SNAGHTML20daa9b")](http://www.codewrecks.com/blog/wp-content/uploads/2012/05/SNAGHTML20daa9b1.png)
+[![SNAGHTML20daa9b](https://www.codewrecks.com/blog/wp-content/uploads/2012/05/SNAGHTML20daa9b_thumb.png "SNAGHTML20daa9b")](https://www.codewrecks.com/blog/wp-content/uploads/2012/05/SNAGHTML20daa9b1.png)
 
  ***Figure 1***: *How to identify the problem thanks to WCF Trace Listener*
 

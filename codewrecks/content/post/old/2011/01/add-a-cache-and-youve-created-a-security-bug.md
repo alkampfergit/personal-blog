@@ -27,7 +27,7 @@ Everything seems okâ€¦ or not?
 
 The question is: is it correct to store result in cache if we know that we can wait for one hour to see updated data?
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image19.png)
 
 The correct answer is: you cannot answer to this question if you do not know the implementation of GetAllCustomers() service function. What we need to know is that service method answers with the same result when we call it with the same parameters or the method depends from some other data of the environment.
 

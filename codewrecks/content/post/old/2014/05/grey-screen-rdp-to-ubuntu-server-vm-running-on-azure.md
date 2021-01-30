@@ -12,7 +12,7 @@ This is due to a change in Ubuntu 14, you can read details in [this blog post](h
 
 I’ve personally tried with Ubuntu 12.04 LTS, that is the one originally used by the post I’ve followed, and everything runs fine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/05/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/05/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/05/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/05/image1.png)
 
 To have a better experience, I suggest you to use 16 bit when connecting to the machine, and not use big resolution or the RDP could be a little bit slow.
 

@@ -8,7 +8,7 @@ categories: [Testing]
 ---
 I know, [service locator](http://en.wikipedia.org/wiki/Service_locator_pattern) is an antipattern, but sometimes, when you begin to refactor existing code written with no IoC in mind, service locator can help you a little bit in restructuring your code. A service locator pattern work this way: you have some static or gloablly avaliable class named: ServiceLocator or IoC, and every object can query it for service implementation.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/image6.png)
 
  ***Figure 1***: *Simple schema of Service Locator Pattern, each object can query the SL asking for service*
 
@@ -132,7 +132,7 @@ return (AutoMockingContainer.AutoMockingContainer) windsorContainer;
 
 This example shows one of the reason why Service Locator is bad, it makes your tests complex because you have to take care of all these greedy details. With some infrastructure class you can improve the test in this way.
 
-[![Untitled](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/Untitled_thumb1.png "Untitled")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/Untitled1.png)
+[![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/Untitled_thumb1.png "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/Untitled1.png)
 
  ***Figure 2***: *UseAutomockingCotnainer attribute permits you to automatically declare that this Test Fixture will use Automock in the Service Locator*
 

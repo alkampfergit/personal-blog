@@ -12,19 +12,19 @@ This happens for security, every person that has right to look at job properties
 
 First of all I connected to the analysis server where I want the SSIS to run and add a specific folder for my packages. You can see this in Figure 1, and the new folder is blured because it contains name of the product of my customer.
 
-[![03-08-2011 12-46-17](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/03-08-2011-12-46-17_thumb.jpg "03-08-2011 12-46-17")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/03-08-2011-12-46-17.jpg)
+[![03-08-2011 12-46-17](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/03-08-2011-12-46-17_thumb.jpg "03-08-2011 12-46-17")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/03-08-2011-12-46-17.jpg)
 
  ***Figure 1***: *Adding a folder to contain all my packages.*
 
 Now I open the package in business development studio and right click on an empty part of the designer, then choose properties (Figure 2).
 
-[![Untitled](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled_thumb.jpg "Untitled")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled.jpg)
+[![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled_thumb.jpg "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled.jpg)
 
  ***Figure 2***: *Changing the protection level to Server Storage*
 
 I changed the protection level to Server Storage then I go in menu * **File â€“&gt; Save copy of xxxxx.dtsx** *as to save a copy of this package to the SSIS Server. You should now see your package inside the new folder I created in Figure 1.
 
-[![Untitled2](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled2_thumb.jpg "Untitled2")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled2.jpg)
+[![Untitled2](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled2_thumb.jpg "Untitled2")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled2.jpg)
 
  ***Figure 3***: *I saved a copy of the dtsx package inside the SSIS server*
 
@@ -32,19 +32,19 @@ Now I saved the package to the server, then try to execute again with no luck :(
 
 Then I decided to store all configuration inside a table of the server.
 
-[![1](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/1_thumb.jpg "1")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/1.jpg)
+[![1](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/1_thumb.jpg "1")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/1.jpg)
 
  ***Figure 4***: *Saving configuration inside a table in a database.*
 
 I choose to save configuration inside a database table because it is much simplier to configure, everything is inside SQL server, no need of external XML or text file, or registry keys, or environment variable etc. After you choose the table used to store settings, you need to decide what to export into this configuration, I simply choose to move the two connection strings.
 
-[![2](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/2_thumb.jpg "2")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/2.jpg)
+[![2](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/2_thumb.jpg "2")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/2.jpg)
 
  ***Figure 5***: *Save all connection string properties inside the table.*
 
 You can choose to save only some of the properties of the connection string, but saving everything is not a problem, now I can open the table and modify the connections as needed.
 
-[![3](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/3_thumb.jpg "3")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/3.jpg)
+[![3](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/3_thumb.jpg "3")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/3.jpg)
 
  ***Figure 5***: *All the information about connection strings are stored inside a table.*
 

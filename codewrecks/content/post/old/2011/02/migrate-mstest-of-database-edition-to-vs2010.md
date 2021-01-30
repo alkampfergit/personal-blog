@@ -12,7 +12,7 @@ I have a VS2008 project that is being converted to VS2010. This solution has a M
 
 This is due to the fact that the test project probably references old version of the Microsoft.Data.Schema and Microsoft.Data.Schema.UnitTesting dll, just verify that you are using the correct version, simply remove the above two dll from references and add them again using the right version.
 
-[![SNAGHTML5a3573](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTML5a3573_thumb.png "SNAGHTML5a3573")](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTML5a3573.png)
+[![SNAGHTML5a3573](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTML5a3573_thumb.png "SNAGHTML5a3573")](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTML5a3573.png)
 
  ***Figure 1***: *reference rigth database testing dll for MSTest*
 

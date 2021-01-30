@@ -27,7 +27,7 @@ End Using{{< / highlight >}}
 
 As you can see the code is really simple, I create a ICSharpLib stream directly on context.Response.OutputStream, and then I simply use my rtf generator to write directly on the zipped stream, the result is.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb6.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb6.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image5.png)
 
 What???? It seems that the ICSharpLib tries to send some wrong value to the write method. After about one hour spent trying to understand what is going wrong I was really puzzled. If I redirect the zip stream to a file all works fine, I obtain a perfectly valid zip file, but if I write directly to the response.OutputStream I have the error.
 

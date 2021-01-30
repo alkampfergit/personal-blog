@@ -16,7 +16,7 @@ categories: [Team Foundation Server]
 
 You can generate Personal Access Token from security section of your user profile, and this gives you immediately idea that the token is related to a specific account.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/10/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/10/image-11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/10/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/10/image-11.png)
 
  ***Figure 1***: *Accessing security information for your profile*
 
@@ -24,7 +24,7 @@ From *Personal access tokens* section of your profile you can generate tokens to
 
 ## PAT expires in time
 
-You can see from  **point 1 of Figure 2** that the PAT has an expiration (maximum value is 1 year) and this imply that  **you have no risk of forgetting some tool authenticated somewhere during years.** [![This image shows how to create a PAT, and point out that the token expires, is bound to a specific account and you can restrict permission of the PAT to given area.](http://www.codewrecks.com/blog/wp-content/uploads/2016/10/image_thumb-12.png "PAT Creation page in VSTS")](http://www.codewrecks.com/blog/wp-content/uploads/2016/10/image-12.png)
+You can see from  **point 1 of Figure 2** that the PAT has an expiration (maximum value is 1 year) and this imply that  **you have no risk of forgetting some tool authenticated somewhere during years.** [![This image shows how to create a PAT, and point out that the token expires, is bound to a specific account and you can restrict permission of the PAT to given area.](https://www.codewrecks.com/blog/wp-content/uploads/2016/10/image_thumb-12.png "PAT Creation page in VSTS")](https://www.codewrecks.com/blog/wp-content/uploads/2016/10/image-12.png)
 
  ***Figure 2***: *PAT Creation page in VSTS*
 

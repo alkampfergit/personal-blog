@@ -20,7 +20,7 @@ This concept comes from Emergency Room in hospitals, all people that comes in ER
 
 In  **Figure 1** we can see the graph related to the Msf For Agile bug definition
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb33.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image33.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb33.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image33.png)
 
  ***Figure 1***: *State and transition of Bug definition of the MSF For agile process.*
 
@@ -50,7 +50,7 @@ Now I can close the Transition editor form, right-click on the editor and choose
 
 This happens because the default transition now points to Triage and the Active state is unreachable. You should now drag Transition objects from the toolbox to the workflow to add transition between Triage to the Active and Closed state, finally you should reach the situation of  **Figure 5**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb34.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image34.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb34.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image34.png)
 
  ***Figure 5***: *Iâ€™ve added transition from Triage to other status, now the workflow is valid again.*
 

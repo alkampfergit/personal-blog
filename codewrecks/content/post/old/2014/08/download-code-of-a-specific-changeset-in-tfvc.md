@@ -10,7 +10,7 @@ Some time ago a friend asked me the easiest way to  **get code from a specific f
 
 It turns out that  **the easiest way to accomplish this task is from Web Interface** ,  **because it has the capability of browsing and downloading code as zip**. You can simply navigate to the CODE hub in web interface, choose the folder you want to download and use the context menu of desired folder to download everything as a single zip file.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image9.png)
 
  ***Figure 1***: *Browse and download code from the Web Interface.*
 

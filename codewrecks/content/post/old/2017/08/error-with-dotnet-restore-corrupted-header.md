@@ -8,7 +8,7 @@ categories: [NET Core]
 ---
 I’m trying to compile with dotnetcore 2.0 a project on Linux, but I got this strange error when I run the dotnet restore command.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-11.png)
 
  ***Figure 1***: *Error restoring packages*
 

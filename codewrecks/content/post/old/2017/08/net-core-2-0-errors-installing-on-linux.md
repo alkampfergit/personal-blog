@@ -19,7 +19,7 @@ sudo apt list --installed | grep dotnet
 
 This is what I got after a clean installation of.NET core 2.0
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-3.png)
 
  ***Figure 1***: *List of packages that contains dotnet in the name*
 

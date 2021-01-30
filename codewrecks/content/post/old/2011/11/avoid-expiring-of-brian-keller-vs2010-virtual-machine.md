@@ -10,7 +10,7 @@ Brian Keller always does a great work releasing a [Demo Machine with all the goo
 
 If you have MSDN and all the keys of the various software you can simply insert all of your product codes to avoid expiration of the machine. Apart from inserting a valid windows 2008 key and office key, that is quite simple you need to upgrade SQL Server from the demo version to the full version. To do this, simply mount a valid Sql Server Iso downloaded from your MSDN, go to the " **Maintenance** ” section, then choose an  **Edition Upgrade** and you are done.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/11/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/11/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/11/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/11/image.png)
 
 When the machine expires your Visual Studio will ask you for a license, but since your Visual Studio Iso from MSDN are pre-pidded (they have serial number included in the iso), the common question is “where I find the Visual Studio product number in MSDN?”. The answer is [in this post](http://blogs.microsoft.co.il/blogs/shair/archive/2010/04/14/visual-studio-tfs-2010-is-pre-pidded-installation-how-to-separate-product-key-from-setup.aspx), just mount the iso in a virtual Dvd-drive, go to the setup folder, look for the setup.sdb file, open it with a text editor and search product key section. The same trick works to extract the Serial number of TFS from MSDN iso.
 

@@ -16,13 +16,13 @@ With TFS 2017 a new search component is introduced, based on ElasticSearch. ES i
 
  **First of all you need to remove the search feature, using the remove feature wizard as shown in Figure 1** (select the first node in administration console to find the Remove Feature Link)
 
-[![SNAGHTML1521f72](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/SNAGHTML1521f72_thumb.png "SNAGHTML1521f72")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/SNAGHTML1521f72.png)
+[![SNAGHTML1521f72](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/SNAGHTML1521f72_thumb.png "SNAGHTML1521f72")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/SNAGHTML1521f72.png)
 
  ***Figure 1***: *Remove feature from TFS instance*
 
 Now you should choose to remove the search feature.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image.png)
 
  ***Figure 2***: *Removing the Search Service functionality*
 
@@ -34,13 +34,13 @@ After the wizard finished, you should go to the folder C:\Program Files\Microsof
 
 Now search component is not working anymore, if you issue a search you should get a message like shown in  **Figure 3** :
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-1.png)
 
  ***Figure 3***: *Search component is not operational anymore.*
 
 At this point you open TFS administration console and start the wizard to configure the search, but this time,  **instead of configuring everything on the current machine, you will choose to use an existing Search Service**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-2.png)
 
  ***Figure 4***: *Use an existing search service instead of install locally the search service*
 
@@ -50,7 +50,7 @@ Configure-TFSSearch.ps1 -Operation install -TFSSearchInstallPath C:\ES -TFSSearc
 
 Please change the two folder if you want to change the location of ElasticSearch binary and ElasticSearch data. After the script ran without any error, it is time to verify that ElasticSearch is correctly installed and started. As usual,  **please create a DNS entry to avoid using the real name of the machine where you installed the service**. In my installation I’ve configured the name tfssearch.cyberpunk.local to point to the real machine where I configured search services. Just open a browser and issue a request to [http://tfssearch.cyberpunk.local:9200](http://tfssearch.cyberpunk.local:9200)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-3.png)
 
  ***Figure 5***: *Try to access local instance of ElasticSearch using DNS name*
 
@@ -58,7 +58,7 @@ Please change the two folder if you want to change the location of ElasticSearch
 
  **Now you should open your firewall to allow connection to port 9200 from every machine where an Application Tier is running.** In my situation the machine with TFS installation has IP number 10.0.0.116. Remember that Elastic Search has NO Authentication (it is a module that is not free, called shield), thus it is really better to allow connections only from the TFS machine. All you need to do is creating a rule to open port 9200, but allowing connection only from the IP of the TFS machines.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-5.png)
 
  ***Figure 6***: *Firewall configuration, the machine with the search service opens port 9200 only from the IP of the TFS machine.*
 
@@ -66,7 +66,7 @@ Now remote desktop to TFS machine, and verify that you are indeed able to browse
 
 Now you can proceed with the Configuration Wizard in TFS instance, specifying the address of your new Search Server
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-6.png)
 
  ***Figure 7***: *Configure new search service in TFS.*
 

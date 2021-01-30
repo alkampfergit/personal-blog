@@ -34,11 +34,11 @@ But before I close this post I want to do a consideration on BindingList&lt;T&gt
 
 This is the implementation of InsertItem() method, the list check if raiseItemChangedEvents  is true, this means that in the constructor it found that the type T implements the INotifyPropertyChanged
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image.png)
 
 But when you check the HookPropertyChanged you see this code..
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb1.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb1.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image1.png)
 
 For each object that gets added you want to handle PropertyChanged event, this method try to cast the object to INotifyPropertyChanged, if the cast is ok then the event is hooked. Now my question is, “why  is the code still trying to cast the item with the *as* operator, if we can call this method only when the raiseItemChangedEvents is true, and this means that type T implements INotifyPropertyChanged?? “
 

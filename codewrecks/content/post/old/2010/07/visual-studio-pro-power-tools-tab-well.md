@@ -10,6 +10,6 @@ One of the most exiting addin for VS2010 is the [Visual Studio 2010 Pro Power To
 
 This really boost productivity for those one having wide monitor, such as 24â€™â€™ that has a horizontal resolution of 1920 pixels, because I really loved the ability to use vertical document well, with project colored tab. I can immediately visualize the file by project with different color, and visualize a large number of opened files, instead of having them showed in the top, where very few of them are visible.
 
-[![Untitled](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled_thumb.png "Untitled")](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled.png)
+[![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled_thumb.png "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled.png)
 
 Alk.

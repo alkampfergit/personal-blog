@@ -8,7 +8,7 @@ categories: [Entity Framework]
 ---
 Usually I access data with ORM like NHibernate or Entity Framework and resort to plain T-SQL only for reporting or manipulation of massive data, but yesterday  **I had to use some plain SQL to insert data in a table that has Geograpy column**.
 
-[![SNAGHTMLe9b70](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/SNAGHTMLe9b70_thumb.png "SNAGHTMLe9b70")](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/SNAGHTMLe9b70.png)
+[![SNAGHTMLe9b70](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/SNAGHTMLe9b70_thumb.png "SNAGHTMLe9b70")](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/SNAGHTMLe9b70.png)
 
  ***Figure 1***: *A table with geography data*
 

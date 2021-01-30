@@ -14,13 +14,13 @@ I’ve encountered this error on my main workstation machine, and I’m not sure
 
 If you open a command prompt and run the program from the parent folder everything runs just fine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image9.png)
 
  ***Figure 1***: *Running from the parent folder solves the problem*
 
 * **Solution** *: *the simplest solution to avoid opening a CLI is creating a shortcut to the executable and change the Start In location*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image10.png)
 
  ***Figure 2***: *Configure the agent with Start In main folder*
 

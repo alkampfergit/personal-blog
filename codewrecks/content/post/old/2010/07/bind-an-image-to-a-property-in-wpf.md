@@ -10,7 +10,7 @@ The situation is the following: I have a class that has a Status property of typ
 
 The solution is to write a custom [IValueConverter](http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx) that convert from the enum to a valid resource file, but we need to pay specific attention. In WPF you can include images as resources in a very simple way, just include the images in the project and set the â€œbuild Actionâ€ to Resource, as shown in  **Figure 1**.
 
-[![Untitled](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled_thumb8.png "Untitled")](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled10.png)
+[![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled_thumb8.png "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled10.png)
 
  ***Figure 1***: *include an image file as resource in a WPF application*
 

@@ -10,7 +10,7 @@ I’m creating some big xml files to test performance of linq to xml to make som
 
 The trick is simple I created another table called insertHelper that contain a single column, and I filled with numbers from 1 to 100:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb1.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb1.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image1.png)
 
 Now I simply issue this query to create a very big xml file
 

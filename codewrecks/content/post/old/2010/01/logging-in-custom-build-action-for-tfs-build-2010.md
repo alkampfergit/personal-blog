@@ -37,7 +37,7 @@ LogMessage("XPoke on the file " + filePath, context);{{< / highlight >}}
 
 Thanks to this message I can find information on the build log.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/01/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image10.png)
 
 This is really useful because I can, in this example, verify witch file was changed by my action simply looking at the build log.
 

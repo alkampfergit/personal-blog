@@ -13,7 +13,7 @@ Yesterday I had to write a really simple piece of js code, I have a method in aÂ
 1. Parse the date with the locale of browser so 1/2/2008 is 2 of January for english user and 1 of February for an Italian one.
 2. Understand if the date is written in current format and pass it to the webservice.
 
-Here is my tentative list. All the code is in this [sample file](http://www.codewrecks.com/blog/wp-content/uploads/2008/10/sampleweb.zip) where I created a simple webservice method that accepts a date and return its string format to the caller. This is the first code
+Here is my tentative list. All the code is in this [sample file](https://www.codewrecks.com/blog/wp-content/uploads/2008/10/sampleweb.zip) where I created a simple webservice method that accepts a date and return its string format to the caller. This is the first code
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 function SendDate() {

@@ -10,7 +10,7 @@ When people creates a release in AzureDevOps, they  **primarily focus on how to 
 
 First of all  **Release is about auditing and understand which version of the software is released where and by whom**. In this scenario what is more important is “how I can deploy my software in production”.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-5.png)
 
  ***Figure 1***: *Simple release composed by two steps.*
 
@@ -20,17 +20,17 @@ In  **Figure 1** I created a simple release with two stages, this will clearly s
 
 As I strongly suggests,  **even if you do not have any idea on how to automate the release, you MUST have at least a release document, that contains detailed instruction on how to install the software.** When you have a release document, you can simply add that document to source control and create a release definition completely manual.
 
-If the release document is included in the source control, you can simply store as result of build artifacts, then it will be automatically downloaded and you can simply create a release like this. In  **Figure 2** you can see a typical two phase release for stages defined in  **Figure 1.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-6.png)
+If the release document is included in the source control, you can simply store as result of build artifacts, then it will be automatically downloaded and you can simply create a release like this. In  **Figure 2** you can see a typical two phase release for stages defined in  **Figure 1.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-6.png)
 
  ***Figure 2***: *A manual release uses a copy file to copy artifacts to a well known location then a manual step.*
 
 I usually have an agent based phase because I want to copy artifacts data from the agent directory to a well known directory. Agent directory is clumsy, and can be deleted by cleanup so I want my release files to be copied in a folder like c:\release ( **Figure 3** )
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-7.png)
 
  ***Figure 3***: *The only automatic task is copying all the artifacts to c:\release folder*
 
-After this copy, I have another phase, this time it is agentless, because it has only a  **Manual deploy action** ,  **that simply specify to the user where to find the instruction for manual deploy.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-8.png)
+After this copy, I have another phase, this time it is agentless, because it has only a  **Manual deploy action** ,  **that simply specify to the user where to find the instruction for manual deploy.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-8.png)
 
  ***Figure 4***: *Manual step in the release process*
 
@@ -40,11 +40,11 @@ This is important because as you can see in  **Figure 4** I can instruct the use
 
  **Since I use GitVersion to change name of the build based on GitVersion tags I prefer going to the Options tab of the release and change the name of the release**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-10.png)
 
  ***Figure 5***: *Configure release name format to include BuildNumber*
 
-Release usually have a simple increasing number $(Rev:rr),  **but having something like Release-34 as release name does not tell me anything useful**. If you are curious on what you can use in the Release Name Format field, you can simply check [official documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops). From that document you read that you can use BuildNumber, that will contain build number of first artifact of the build.  **In my opinion this is a real useful information if the build name contains GitVerison tags, it allows you to have a meaningful release name.** [![SNAGHTML25af5e9](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/SNAGHTML25af5e9_thumb.png "SNAGHTML25af5e9")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/SNAGHTML25af5e9.png)
+Release usually have a simple increasing number $(Rev:rr),  **but having something like Release-34 as release name does not tell me anything useful**. If you are curious on what you can use in the Release Name Format field, you can simply check [official documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops). From that document you read that you can use BuildNumber, that will contain build number of first artifact of the build.  **In my opinion this is a real useful information if the build name contains GitVerison tags, it allows you to have a meaningful release name.** [![SNAGHTML25af5e9](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/SNAGHTML25af5e9_thumb.png "SNAGHTML25af5e9")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/SNAGHTML25af5e9.png)
 
  ***Figure 6***: *New release naming in action.*
 
@@ -52,7 +52,7 @@ If you look at  **Figure 6** you can argue that build name is visible below rele
 
  **This is true until you do not move to the deployment group or in other UI of Release Management, because there are many places where you can see only release Name.** If you look at  **Figure 7** you can verify that with the old numbering system I see the release number for each machine, and for machine (1) I know that the latest release is Release 16, while for a machine where I release after numbering change I got Release – 34 – JarvisPackage 4.15.11
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/02/image-11.png)
 
  ***Figure 7***: *Deployment groups with release names*
 

@@ -14,7 +14,7 @@ As soon as the name will be registered, Iâ€™ll move everything to a tempora
 
 The bad stuff is that, until that time, all external links to my blog stopped working. Iâ€™m already experiencing a big drop in page view.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image13.png)
 
 :(
 

@@ -8,11 +8,11 @@ categories: [Team Foundation Server]
 ---
 Actually TFSservice only accepts live id as a login mechanism, but if you start to use it in your company probably you want it to use another email address for E-Mail communication (alert, Feedback, etc), this is possible through the My Profile link
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image1.png)
 
  ***Figure 1***: *My profile link to change your TFS Service profile*
 
-Once you got to configuration page,  **you can simply change your preferred email address to whatever mail you want** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image2.png)
+Once you got to configuration page,  **you can simply change your preferred email address to whatever mail you want** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image2.png)
 
  ***Figure 2***: *Change your preferred email to another mail*
 

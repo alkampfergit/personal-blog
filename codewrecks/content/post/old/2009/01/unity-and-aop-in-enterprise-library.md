@@ -47,15 +47,15 @@ container.Configure<Interception>().SetDefaultInterceptorFor<ILogger>(new Transp
 
 You can call Set **Default** InterceptorFor or simply SetInterceptorFor; the first one tells unity container to apply interception every time that a specific type is resolved: when the user calls  **Resolve&lt;T&gt;** or when the type is resolved for some dependency. In the [example](http://www.codewrecks.com/blog/storage/unitex2.7z) , this means that when you resolve TestB class, since is has a dependency to ILogger, the Ilogger object that will get resolved will be intercepted. (this is the configuration section for the TestB object)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb17.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb17.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image17.png)
 
 When unity resolve the object named  **OtherTest** it resolves also the dependency to the ILogger interface and creates the SuperLogger, but since I asked to set a  **default** interceptor for the ILogger interface it gets intercepted and wrapped.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb18.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb18.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image18.png)
 
 If you change the code and call SetInterceptorFor instead of Set **Default** InterceptorFor, the situation is different.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb19.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb19.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image19.png)
 
 As you can verify the logger variable contains a transparent proxy because it gets resolved directly, the Logger property of the TestB object is not intercepted because it is resolved for a dependency. Keep in mind this distinction because it is one of the most important in the unity interception structure.
 
@@ -74,13 +74,13 @@ I do not like the code+attributes approach to AOP, because if I need to intercep
 
 These aliases permits me to use shorter name in the config. Here is the first part of the config
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb20.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image20.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb20.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image20.png)
 
 Container configuration has an extension node that permits to add extensions, then you add the corresponding [extensionConfig](http://msdn.microsoft.com/en-us/library/dd139966.aspx) to configure specific extension you’ve added. For interceptors you add a series of &lt;interceptor&gt; node. Each interceptor node must have a type attribute that specify the type of interceptor to use, then you must add a series of*&lt;key&gt;* or *&lt;default&gt;* nodes to specify the types to intercept. Each &lt;key&gt; elements will call the SetInterceptorFor, each &lt;default&gt; element calls a Set **Default** ConfigurationFor.
 
 Now that interception is configured you need to specify types or methods that should be intercepted, this is done with the Policy element. Each policy element is composed by a series of matching rules that are used to identify methods to be intercepted and a list of handlers to use, here is an example.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb21.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image21.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb21.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image21.png)
 
 Unity gives you some basic matching rules, in this example I’ve used a typeMatchingRule (look to the aliases section to verify the exact type). This class permits you to specify a Name of a class that will be intercepted. To specify the name of the class in code you must pass a string to the constructor of the matching rule, in configuration file you can obtain the same result with an *&lt;injection&gt;* node.
 

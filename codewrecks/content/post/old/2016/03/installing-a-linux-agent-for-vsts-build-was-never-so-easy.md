@@ -24,7 +24,7 @@ To start configuration of the agent. The official guide suggest you to use Perso
 
  **Once everything is configured, the agent is ready to run your builds**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/03/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/03/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/03/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/03/image-2.png)
 
  ***Figure 1***: *Agents configured and running on Linux CentOS machine*
 

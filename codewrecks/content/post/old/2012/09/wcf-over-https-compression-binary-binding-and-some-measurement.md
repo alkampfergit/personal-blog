@@ -40,7 +40,7 @@ Then I modified my client program to be able to use standard or binary endpoint 
 
 Here is the sum of bytes downloaded for all the requests, first column is SOAP uncompressed, second one SOAP compressed, third column BinaryMessageEncoding uncompressed, and finally fourth column BinaryMessageEncoding compressed.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image5.png)
 
  ***Figure 1***: *Measurement over the amount of data downloaded at application startup*
 

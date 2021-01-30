@@ -19,7 +19,7 @@ This type of exception handler catch everything and log, despite the fact that i
 
 You should know that you can see current exception detail in watch windows with the special syntax $exception or @exception
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image5.png)
 
 But if you want, the same information is always displayed in the local windows. This is a basic functionality of visual studio, but many people does not know it ;)
 

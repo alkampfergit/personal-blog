@@ -6,7 +6,7 @@ draft: false
 tags: [WPF]
 categories: [WPF]
 ---
-A really cool aspect of WPF is the  **ability to use DesignTimeData,** a feature that added with MVVM pattern gives a unique DesignTime capabilities to programmer and designers. To use Design Time Data you can simply add a new xaml file and use the Build Action DesignData as visible in  **Figure 1** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image3.png)
+A really cool aspect of WPF is the  **ability to use DesignTimeData,** a feature that added with MVVM pattern gives a unique DesignTime capabilities to programmer and designers. To use Design Time Data you can simply add a new xaml file and use the Build Action DesignData as visible in  **Figure 1** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image3.png)
 
  ***Figure 1***: *A xaml file with the Build Action of type DesignData.*
 
@@ -30,7 +30,7 @@ Now you can simply instantiate your ViewModel inside the code of Design Dat; in 
 
 As you can see I have declared my RawLoggerViewModel in the namespace LogVisualizer.ViewModels, thus I can simply **reference the namespace and declare an instance of my ViewModel inside my design time data file**. This is only a section of the file but you should check that I’ve *set MainFilter Property to the value “value of the filter”, with xaml syntax* (it is a standard property of the RawLoggerViewModelClass). Since you are declaring an instance of a real class, Visual Studio has intellisense thus simplifying a lot the construction of Design Time Data.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image4.png)
 
  ***Figure 2***: *You have full intellisense to create class*
 
@@ -54,19 +54,19 @@ This will  **instruct the designer to use the instance declared in the Design Ti
 
 The very first advantage of this approach is the ability to select a control, es a TextBox, then click on the little square pointed by the arrow in Figure 3 and choose to data Bind a property to the ViewModel. In figure 3 I’m going to bind the Text Property.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image5.png)
 
  ***Figure 3***: *Bind a property (in this exampe Text) to a property of the View Model.*
 
 This will open a window that permits you to browse all properties of the View Model (Figure 4), and you can choose the property you want bind to the control property.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image6.png)
 
  ***Figure 4***: *Choose the View Model’s property to use for binding*
 
 After you choose the value, you can immediately see the result on the designer.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image7.png)
 
  ***Figure 5***: *Design time data are immediately shown in the designer*
 

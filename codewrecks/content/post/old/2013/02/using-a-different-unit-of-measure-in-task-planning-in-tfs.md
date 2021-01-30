@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 With TFS 2012 you can do work planning with the new agile board, where work is decomposed from PBI to task and  **task are usually estimated in hours**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image10.png)
 
  ***Figure 1***: *Task estimation is made in hours.*
 
@@ -22,7 +22,7 @@ If you want to show something like coc = Cup Of Coffee, you first need to import
 
 This is issued against the Brian Keller’s Virtual machine, you should only change the address of the collection to match your collection and the name of the project to match your project. Once the file is downloaded you can edit the xml file changing the*Microsoft.VSTS.Scheduling.RemainingWork* (I’ve used scrum template), and **change the format from *{0} h* to *{0} coc* **.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image11.png)
 
 Now you should update the team project with this new configuration with this command:
 
@@ -30,11 +30,11 @@ Now you should update the team project with this new configuration with this com
 
 Basically is the same command as before, just change the command from exportcommonprocessconfig to importcommonprocessconfig. If you open again the board you can now verify that** the format used to represent the amount of work is now expressed in Cup Of Coffee **.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image12.png)** Figure 2: ***Task estimation is now show as Cup Of Coffee unit of measure*
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image12.png)** Figure 2: ***Task estimation is now show as Cup Of Coffee unit of measure*
 
 The only change is the label: *coc instead of h*, all the rest is the same because it is just a change in how the RemainingWork value is formatted to the user. This changes is reflected in all the part of the agile planner, as an example the capacity of the team is now also measured in Cup Of Coffee.
 
-[![SNAGHTMLeecb1f](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/SNAGHTMLeecb1f_thumb.png "SNAGHTMLeecb1f")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/SNAGHTMLeecb1f.png)
+[![SNAGHTMLeecb1f](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/SNAGHTMLeecb1f_thumb.png "SNAGHTMLeecb1f")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/SNAGHTMLeecb1f.png)
 
  ***Figure 3***: *Capacity of the team uses the same format, so you have now capacity in Cup Of Coffee*
 

@@ -31,7 +31,7 @@ When it is time to authenticate to the service, you have several options,  **but
 
 Using a token is perfect for a tool that should run unattended and this will be my usual first choice. To make debug life simpler I allow to specify the access token in a couple of way in command line **, I can directly specify the token or I can specify the token that contains the file.** The second method is useful for debugging, because I write my token in a file, then encrypt with standard NTFS routine to allow only my user to decrypt and use it, then I can configure the debugger to launch my console application with that token file and everything is secure, I do not incur the risk of incorrectly store my token file in some commit.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-7.png)
 
  ***Figure 1***: *Project options, where I specify start options to specify token and other parameter to my application*
 

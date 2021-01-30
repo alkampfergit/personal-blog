@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 Now that Windows 8.1 preview is available, people start to think how they could compile W8.1 solutions with TFS. If you use TF Service you need only to enable a new Build Controller in preview, that is enabled to build 8.1 solutions.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image8.png)
 
  ***Figure 1***: *Enable the Windows 8.1 Preview Build controller on your TF Service account to build Windows 8.1 applications*
 

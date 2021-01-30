@@ -10,7 +10,7 @@ categories: [Entity Framework]
 
 In previous post I showed how you can persist an object to the database thanks to EF41 and few lines of code, now it is time to understand how to manage relations. First of all create another class called weapon and then create a property of type Weapon into the Warrior class.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image2.png)
 
  ***Figure 1***: *New model, the warrior has a property called ActiveWeapon of type Weapon*
 
@@ -40,13 +40,13 @@ new DropCreateDatabaseIfModelChanges<BattlefieldContext>());
 
 This single line of code tells EF to recreate the database if the model has changed and the schema of the db is outdated. This will actually Drop and recreate the database, so if you need to maintain the data you should manage the update with other tool as a DatabaseProject or some third party tool. If you intercept the queries done to the db you should see something like this.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image3.png)
 
  ***Figure 2***: *The query issued to verify if the actual database structure is good for the current model*
 
 This query simply check if the database structure is up to date. Now back to the code to add the warrior with the weapon, as you can see I create a weapon and assigned to the ActiveWeapon property of the Warrior object. This is a really important concept, I do not care about ForeignKey or Id, I simply assign an object to another object and EF takes care for me of this. The query issued to insert the object into the database is the following one.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image4.png)
 
  ***Figure 3***: *Inserting a Warrior with a Weapon into the database*
 
@@ -54,7 +54,7 @@ As you can see we have two distinct queries, the first one is used to insert the
 
 This is the advantage of using an ORM tool, you design object using standard object relations in mind, and the ORM has the duty of persisting this model into a database. As you can verify from Figure 4, the Warrior table has a column ActiveWeapon\_id to store the foreign key to the Weapon table.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/07/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/image5.png)
 
  ***Figure 4***: *Database schema generated to persist the Warrior-Weapon model*
 

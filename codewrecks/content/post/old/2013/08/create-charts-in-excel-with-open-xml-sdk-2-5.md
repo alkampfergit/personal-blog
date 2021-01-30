@@ -14,7 +14,7 @@ After some tentative, I understood that even changing the type of chart is not a
 
 Apart of being really useful to understand how the SDK works, it can be used to generate the code for you. I’ve started filling a Sheet with some test data, create a chart on it and formatted until the customer told me that it is good.  **Opening that file in the Productivity tools and selecting that sheet gives you a class that contains the complete code to regenerate that specific sheet**. Since the chart grab the data from selected cell range, you can simply use that code to recreate the test sheet, and then change the content of the cells to reflect the data you want to show.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image16.png)
 
  ***Figure 1***: *The ability to Reflect Code creates a class that generates selected part.*
 

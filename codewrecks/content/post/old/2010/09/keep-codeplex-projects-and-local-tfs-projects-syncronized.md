@@ -8,17 +8,17 @@ categories: [Team Foundation Server]
 ---
 [Codeplex](http://www.codeplex.com/) is Microsoft hosting site for open source projects, based on TFS or mercurial. Now suppose you have this scenario: an open source project, with a  core team that work actively on it, and some occasional contributors that do little work. Since Codeplex does not support every feature of tfs, (especially you lack the build machine), sharepoint integration and other stuff you loose many useful feature if you use only Codeplex for the project. You wish the core team to use an internal TFS to have the full power of TFS, while using Codeplex to make the project available to everyone. Thanks to [Integration Platform](http://tfsintegration.codeplex.com/) you can try to keep them synchronized and use the best of both of them.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/09/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/09/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/image.png)
 
 Supporting this scenario with Integration Platform is not difficult, first of all, in the server where the IP is running, you should store the credential to access tfs in order to make possible for IP to access codeplex and local TFS. In windows 2008 R2 refer to  **Figure1** for how to do this.
 
-[![Untitled](http://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled_thumb.png "Untitled")](http://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled.png)
+[![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled_thumb.png "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled.png)
 
  **Figure 1 â€“** *How to store credentials to tfs in the server where Integration Platform is running. Note: to avoid problem, use the owner of the project as the user to connect to codeplex and to local TFS.*
 
 Now you can install Integration platform, create a new project and choose â€œVersionControlâ€ as type of synchronization; then simply configure the two servers, the codeplex one and the local tfs one. In  **Figure 2** I show the configuration with two-way manual synchronization, a configuration that you should use to test if everything work ok (in the final version you should use the Custom Workflow type to use automatic synchronization.
 
-[![Untitled3](http://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled3_thumb.png "Untitled3")](http://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled3.png)
+[![Untitled3](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled3_thumb.png "Untitled3")](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled3.png)
 
  **Figure 2 –** *How to specify the two Projects to synchronize, the sync type is Two-way Sync*
 
@@ -82,7 +82,7 @@ Now under the &lt;CustomSettings /&gt; replace the UserIdentityMappings with the
 
 This is because the user AGiorgetti\_cp is not the owner of the Codeplex project (Alkampfer was the owner) is only a contributor, so he cannot do a checkin on behalf on other user. If everything is ok, you can try to do a check-in on the local TFS, wait a little bit and then go to codeplex to see what is happened.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/09/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/09/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/image1.png)
 
  **Figure 3 â€“** *The result of a check-in in the local tfs by the user AGiorgetti is correctly moved to the Codeplex project.*
 

@@ -103,7 +103,7 @@ $assemblyInformationalVersion = ($version.SemVer + "/" + $version.Sha)
 
 I’ll use the same PowerShell script I’ve described in [this post to version assemblies](http://www.codewrecks.com/blog/index.php/2014/01/11/customize-tfs-2013-build-with-powershell-scripts/), but this time all the versioning burden is taken by GitVersion. As you can see  **I’m using also the AssemblyInformationalVersion attribute that can be set as any string you want**. This will give me a nice file version visible from Windows.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image17.png)
 
  ***Figure 1***: *Versioning of the file visible in windows.*
 
@@ -149,7 +149,7 @@ The result of these two instructions is quite the same, the first one change bui
 
 My favourite result is: my build numbers now have a real meaning for me, instead of simply representing a date and an incremental build like 20150101.2.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image18.png)
 
  ***Figure 2***: *Resulting builds with SemVer script*
 
@@ -157,7 +157,7 @@ Now each build name immediately tells me the branch used to create the build, an
 
 I can verify that everything is ok on MyGet/Nuget side, packages were published with the correct numbers.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image19.png)
 
  ***Figure 3***: *SemVer is correctly applied on NuGet packages*
 

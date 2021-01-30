@@ -85,19 +85,19 @@ As you can verify it is just a matter of scanning the comment, use a regular exp
 
 To verify that everything works as expected, simply create a comment with tags association
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image3.png)
 
  ***Figure 1***: *This comment will associate the changeset to Work Items 46 and 47, the Changeset does not have any associated WI*
 
 Now run the tool and you should got something like this.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image4.png)
 
  ***Figure 2***: *The tool correctly associate Work Items to changeset based on comment content*
 
 Now you can run the tool again to verify that this second run no association will be done because the link was already in place and clearly refresh the changeset details to verify if the association was correctly done.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image5.png)
 
  ***Figure 3***: *Association is now correctly done between the Changeset and work items*
 

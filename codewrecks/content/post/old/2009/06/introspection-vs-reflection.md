@@ -10,7 +10,7 @@ As every.Net programmer know, reflection is the standard way to analyze an assem
 
 As [Oleg](http://www.olegsych.com/2008/09/t4-tutorial-debugging-code-generation-files/) states here, if you need to analyze assemblies during code generation, you should use fxcop introspection vs standard reflection. Using introspection is really simple, first of all you need to locate a couple of dll in the fxcop installation folder, and references them in the solution.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb34.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image34.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb34.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image34.png)
 
 Microsoft.Cci.dll contains a lot of classes to use Introspection. The main problem is that there is not great help on how to use these classes, but it can be quite intuitive.
 

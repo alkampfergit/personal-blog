@@ -16,6 +16,6 @@ My character is a female Monk, 19th level, and in our group we are all evil :D, 
 
 Here is my character, this sketch is made by one of my friend, he is reaaallyyy good in drawing, this one was made in no more than a few minutes while we were playing ;), I was really amazed
 
-[![Monk](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/monk-thumb.jpg)](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/monk.jpg)
+[![Monk](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/monk-thumb.jpg)](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/monk.jpg)
 
 Alk.

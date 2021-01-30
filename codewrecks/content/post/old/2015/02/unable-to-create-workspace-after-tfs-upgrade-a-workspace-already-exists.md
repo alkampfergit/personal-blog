@@ -16,7 +16,7 @@ After a brief investigation we found the reason. TFS instasnce was migrated from
 
 Whenever you have this kind of problem, the easiest solution is to download and install [TFS Sidekicks](http://www.attrice.info/downloads/index.htm#tfssidekicks2013), connect to TFS with an account that has administrative privilege, and verify all the workspaces that are configured in the system.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/02/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/02/image7.png)
 
  ***Figure 1***: *Tfs Sidekicks in action, showing all workspaces defined in a Project Collection*
 

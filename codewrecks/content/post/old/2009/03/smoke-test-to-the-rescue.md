@@ -8,7 +8,7 @@ categories: [Testing]
 ---
 A particular type of Unit Test are called [Smoke Tests](http://xunitpatterns.com/Smoke%20Test.html), and are of great importance in a project. This [term](http://en.wikipedia.org/wiki/Smoke_testing) originally derive from [Electronics](http://en.wikipedia.org/wiki/Electronics) where the smoke test means "light the board and look if you can see any smoke". In software engineering we can use the same metaphor to verify if some piece of software "smokes when used".
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image.png)
 
 The purpose of a smoke test is to verify some basilar property of a component, and can be very simple, it simply calls some functions or class methods, just to see if they exists or if they throw exceptions when called.
 
@@ -34,7 +34,7 @@ The first point is important if you make heavy use of Inversion of Control, with
 
 Even for the second point you can complain that the test does not verify the real data returned from the database, so you cannot be sure if the query issued by the ChannelFilter constructor returns correct data. This is true, but the test assures you that "* **the query can be executed** *", it is not complete but it is a lot more than having no test. In an environment where a lot of people can change database structure, it can happens that someone changes a field from not nullable to nullable. If you use Entity Framework you will end with an exception, because generated entity is not valid anymore. In such a situation the above test will fail, signaling you that some logic is broken, so you can immediately call for fireman to set off the fire.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb1.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb1.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image1.png)
 
 A smoke test is also useful to debug code, if something in ChannelFilter does not convince you, you can fire test into debugger to see what is gone wrong.
 

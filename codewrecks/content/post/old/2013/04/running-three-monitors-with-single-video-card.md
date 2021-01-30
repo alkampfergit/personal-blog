@@ -12,13 +12,13 @@ My Motherboard has two Pci Express physically 16x, but the second one is only 4x
 
 My two card are old 4600 Ati Radeon and performances are really low.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image12.png)
 
 I want to get ridded by the need of having two video card, because is a more expensive configuration, with the price you bough two stupid cards, you can have a single better card.
 
 Last week I decided to have a look at Radeon EyeFinity, and trying to run three monitor with a single card. I bought an Ati Radeon 7790 card (for about 110€), replaced both of my old Radeon HD 4600 board and connected all three monitor, thanks to a Display Port to VGA Adaptor.
 
-[![WP_001565](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/WP_001565_thumb.jpg "WP_001565")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/WP_001565.jpg)
+[![WP_001565](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/WP_001565_thumb.jpg "WP_001565")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/WP_001565.jpg)
 
 My Video Cart has four output ports, a DVI-D and a DVI-I (Both Dual Link) and a Display Port and I’ve used both a DVI to Vga adaptor and a Display Port to VGA Adaptor, because two of my three monitors works only with VGA. When I booted the system only two monitor were active, but as soon as I installed Catalyst Drivers in windows, the third monitor started to work.
 
@@ -30,7 +30,7 @@ I’m not interested in this configuration so I’m pretty fine using only stand
 
 Finally I’ve also gained a huge benefit in Desktop Graphics Performance
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image13.png)
 
 Now I’m waiting to buy a QHD Monitor :).
 

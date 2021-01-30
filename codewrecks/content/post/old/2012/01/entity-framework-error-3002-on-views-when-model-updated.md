@@ -12,7 +12,7 @@ The first obvious problem is that the designer, during the import phase from dat
 
 The problem happens if you change the definition of the view, and a column that was not null, became nullable by the modification. What it happens is usually that the designer still mark the corresponding property of the entity as primary key a situation that is not admitted if the field in the database is NULL. If this is your situation you can usually fix it going to “mapping details” of the view that raise the error.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image7.png)
 
  ***Figure 1***: *A view with error, the StartDate becomes nullable in the view, but the entity still uses it at key*
 

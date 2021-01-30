@@ -119,7 +119,7 @@ public static void PrintNoLoad(Employee employee, Int32 level)
 
 This function differs from the old Print routine because it does not check the * **employee.Childs.IsLoaded** *condition because it is evaluated to False even if the childs are already loaded. This happens because EF had not explicitly loaded all the childs for tree nodes. We are sure that all descendants are loaded because of the fullpath column, but EF could not know it, so it consider the collection "not loaded" and if you check it you still ends with the N select. As you can verify in the following image, the IsLoaded property is false, but the collection of childs contains all the elements. We are sure that this node contains only 2 nodes because we loaded all nodes whose fullpath starts with the root path, so we did not miss any node.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb8.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb8.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image8.png)
 
 Thus if you use the fullpath trick, be sure not to explicitly load again references. To make everything clearer you can create a method * **LoadSubtree** *with partial class to shield the user from a deep knowledge of the fullpath structure.
 
@@ -173,7 +173,7 @@ Alkampfer
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb9.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb9.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image9.png)
 
 As you can see, moving Daniele under the Guardian node correctly moved the whole subtree, the hierarchyLevel and the fullpath are correct thanks to the trigger.
 

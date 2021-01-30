@@ -14,7 +14,7 @@ Now after Jeffâ€™s post Iâ€™m rethinking not only on how I choose my p
 
 Jeffâ€™s post make me think that probably I need to *always choose a different password for each service where I have admin privileges or that in some way manages money*, this because you cannot even be sure that *Big companies use a good policy for password*. Now take in consideration [www.trenitalia.it](http://www.trenitalia.it) it is the site of Italian Railways,  a really big company. A month ago I go there to buy train tickets, when it is time to pay I try my standard password and it did not work. Since I know that after some wrong attempts the account would be locked, I asked for password recovery. The system asked me the security answer, and after few second I received this email.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/05/image-thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/05/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image.png)
 
 WHAT!!!!!! They send to me my password in  **CLEAR TEXT** â€¦â€¦, and this is a password I use to access other services, I immediately changed this password on all system but I was horrified because
 

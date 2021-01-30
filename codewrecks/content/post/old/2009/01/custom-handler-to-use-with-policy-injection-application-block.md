@@ -48,11 +48,11 @@ Code is really simple, the only interesting method is the  **Invoke()** that get
 
 Now we need to configure PIAB to insert this handler wherever we need it
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb9.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb9.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image9.png)
 
 I want to set a matching rule for an entire type (red), this type of matching rule has only one property called matches (Green) that will accepts a list of types to intercept, in this example I ask to add handlers only to the ITest interface (blue)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb10.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/01/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image-thumb10.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/01/image10.png)
 
 I need to specify a custom handler (red) as handler type, then configure the exact type in the type property of the handler (blue) the Order property can be left to 0 (automatic). You can use the order property to manually define the order in witch the handlers will be called.
 

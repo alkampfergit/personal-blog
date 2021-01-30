@@ -17,7 +17,7 @@ tfx login
 
 You will be prompted for the URL of the server and your Personal Access Token to access the server. In  **Figure 1** I connected to my VSTS account.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/11/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/11/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/11/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/11/image.png)
 
  ***Figure 1***: *Perform login with tfx-cli utility*
 

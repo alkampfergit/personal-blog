@@ -8,7 +8,7 @@ categories: [NET framework,General]
 ---
 In windows forms the WebBrowser control permits to include a fully funcional browser into your application. The interesting things is that you can interact with the html of the site with no problem. As an example you can load a page and highlight some words into the text, here is the result of loading [www.nablasoft.com](http://www.nablasoft.com) and I want to highlight "laureati" and "passione".
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb3.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb3.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image3.png)
 
 As you can see I’ve highlighted the two words, the code is really simple.
 

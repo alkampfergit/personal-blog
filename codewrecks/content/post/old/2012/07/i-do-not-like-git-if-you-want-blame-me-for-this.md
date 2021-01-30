@@ -10,13 +10,13 @@ I did not like Git, it is a really personal opinion, but I work a really limited
 
 Today I modified a file in my working copy, but after some code I want to revert to the original version, so I issue the revert command with tortoise Git.
 
-[![SNAGHTML25151e2](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML25151e2_thumb.png "SNAGHTML25151e2")](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML25151e2.png)
+[![SNAGHTML25151e2](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML25151e2_thumb.png "SNAGHTML25151e2")](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML25151e2.png)
 
  ***Figure 1***: *Revert screenshot from tortoise Git*
 
 Now I press Ok, I got this nice confirmation dialog
 
-[![SNAGHTML25211e6](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML25211e6_thumb.png "SNAGHTML25211e6")](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML25211e6.png)
+[![SNAGHTML25211e6](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML25211e6_thumb.png "SNAGHTML25211e6")](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML25211e6.png)
 
  ***Figure 2***: *Confirmation dialog that confirm me that the file was reverted.*
 

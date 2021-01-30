@@ -20,7 +20,7 @@ After these three parameters **it comes the part needed to select the site and t
 
 The first part is the page that will be called, the second part is the payload, with ^USER^ and ^PASS^ placeholder that will be substituted by Hydra at each tentative, finally, the last part is the text that hydra should look to understand if access is denied. Once launched it will try to bruteforce the password with tremendous speed.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/11/image_thumb-24.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/11/image-24.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/11/image_thumb-24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/11/image-24.png)
 
  ***Figure 1***: *Hydra in action*
 

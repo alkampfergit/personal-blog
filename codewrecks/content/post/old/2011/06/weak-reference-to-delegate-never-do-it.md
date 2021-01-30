@@ -10,7 +10,7 @@ In [previous post](http://www.codewrecks.com/blog/index.php/2011/04/15/o-referen
 
 When an object registers a message listener to the broker, he passes a *Action&lt;Message&lt;T&gt;&gt;* object, and this object is stored by the broker with a WeakReference. The problem is that an Action&lt;T&gt; is a class that inherits from Multicast Delegate, thus is a real object, that as shown in  **Figure 1** keeps a reference to the target object that contains the method to be called.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb28.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image28.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image28.png)
 
  ***Figure 1***: *The implementation of Delegate object taken from Reflector.*
 
@@ -25,7 +25,7 @@ broker.RegisterForMessage<String>(this, t => ExecuteMessage(t));
 
 If you think carefully, this test creates a delegate, pass that delegate to the broker and the brokers stores a WeakReference on it to send message ( **Figure 2** ).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb29.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image29.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image29.png)
 
  ***Figure 2***: *The broker stores a WeakReference to delegate in a Registration object, but this is the only reference to the Delegate object.*
 
@@ -47,7 +47,7 @@ Interlocked.Increment(ref CallCount);
 
 The only difference is that the caller stores a reference to the Registration object returned from the RegisterForMessage method, the broker creates a registration object and store a WeakReference on it ( **Figure 3** ). This reference now keeps the delegate alive.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb30.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image30.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb30.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image30.png)
 
  ***Figure 3***: *Now the object stores a reference to the registration object, and the broker a WeakReference to the same object*
 

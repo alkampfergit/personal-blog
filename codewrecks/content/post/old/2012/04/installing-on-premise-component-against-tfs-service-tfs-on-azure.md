@@ -12,19 +12,19 @@ The most important aspect is that  **TFS is not a single software, but it is an 
 
 Installing a Build environment to build solution on team project hosted on azure is really simple, and  **it is not different from configuring for an On-Premise TFS**. First of all insert DVD of TFS and start a normal installation, *after you installed TFS you are presented with a series of wizard to configure the various roles that compose a TFS environment*. To install a Build Environment you should choose “*Configure Team Foundation Build Service”*
 
-[![image_thumb2](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb2_thumb.png "image_thumb2")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb210.png)
+[![image_thumb2](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb2_thumb.png "image_thumb2")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb210.png)
 
  ***Figure 1***: *First step, choose the wizard to configure the Build Service*
 
 The very first information is the Team Project Collection to bind the Build controller to, you can choose from the standard UI “Connect to Team Project Collection”, in my example gianmariaricci.tfspreview.com, login to the service and the game is done.
 
-[![image_thumb5](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb5_thumb.png "image_thumb5")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb51.png)
+[![image_thumb5](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb5_thumb.png "image_thumb5")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb51.png)
 
  ***Figure 2***: *Specify Project Collection used by the Build Server, remember each build server can be used for only a Project Collection.*
 
 Now the wizard check the Team Project Collection to verify if there are already some Build controlled configured. In Figure 3 I got a screenshot of my installation that has already a Configured Build Controller based on Dev11 Developer preview, so you have all three option enabled.
 
-[![image_thumb8](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb8_thumb.png "image_thumb8")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb81.png)
+[![image_thumb8](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb8_thumb.png "image_thumb8")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb81.png)
 
  ***Figure 3***: *The three options you got if another Build Controller is already configured for this Project Collection*
 
@@ -34,19 +34,19 @@ The option number two basically is used to * **replace** * **an existing build m
 
 Third option permits you to only install the bits, but leaving the configuration to a further moment, it can be useful to prepare template virtual machine to be used as “fast deploy” build agents. Now I need only to specify the user that will be used to run the service, in most situation I can leave the Local Service as suggested by the wizard.
 
-[![image_thumb11](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb11_thumb.png "image_thumb11")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb111.png)
+[![image_thumb11](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb11_thumb.png "image_thumb11")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb111.png)
 
  ***Figure 4***: *Choose the user that will be used to run the Windows Service of the Build Controller, you can simply leave default Local Service*
 
 Now you should verify the configuration and proceed to the configuration. When the wizard finishes, congratulations, you have installed a build controller on-premise to build Team Project hosted in TFS Service.
 
-[![image_thumb15](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb15_thumb.png "image_thumb15")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb151.png)
+[![image_thumb15](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb15_thumb.png "image_thumb15")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb151.png)
 
  ***Figure 5***: *Congratulation, with few clicks you now have an on-premise build controller bounded to a Project Collection in Windows azure*
 
 Now you can simply manage your build controller from the standard Team Foundation Server Administration Console; the cool part is that installing a Build Server on-premise is a matter of pressing Next –&gt; Next –&gt;Next.
 
-[![image_thumb21](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb21_thumb.png "image_thumb21")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb211.png)
+[![image_thumb21](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb21_thumb.png "image_thumb21")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb211.png)
 
  ***Figure 6***: *You can monitor the status of the Build Controller directly from the Team Foundation Server administration Console.*
 
@@ -60,49 +60,49 @@ The optimal solution is using a TFS Proxt Server, because it will limit the band
 
 After installing TFS 11 on a computer in your network, open Administration console and locate Proxy Server node, then select *Configure Installed Features.*
 
-[![image_thumb2](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb2_thumb1.png "image_thumb2")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb212.png)
+[![image_thumb2](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb2_thumb1.png "image_thumb2")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb212.png)
 
  ***Figure 7***: *To configure a proxy server just press “configure installed features”*
 
 Before starting configuration phase, the wizard shows you a remind of why and when you should use a proxy server; as you can verify the main reason is reducing Bandwidth in  **download** , because each upload operation, like a Check-in, is done directly to the main TFS Server. This is not a problem because the main use of bandwidth is on downloading items.
 
-[![image_thumb8](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb8_thumb1.png "image_thumb8")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb82.png)
+[![image_thumb8](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb8_thumb1.png "image_thumb8")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb82.png)
 
  ***Figure 8***: *A simple reminder that explain the reason to use a proxy*
 
 The first question is the address of the Project Collection to proxy, you can choose your collection on TFS Service and proceed to the next step.
 
-[![image_thumb11](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb11_thumb1.png "image_thumb11")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb112.png)
+[![image_thumb11](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb11_thumb1.png "image_thumb11")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb112.png)
 
  ***Figure 9***: *The usual “Connect to Team Project Collection” windows that permits you the server to proxy*
 
 Now you should choose the user that will be used to run the proxy service, as usual you can leave the default.
 
-[![image_thumb14](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb14_thumb.png "image_thumb14")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb141.png)
+[![image_thumb14](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb14_thumb.png "image_thumb14")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb141.png)
 
  ***Figure 10***: *Specify user of the IIS Application that will run the proxy*
 
 Now you need to specify the port of the TFS proxy and the local folder where it will cache files.
 
-[![image_thumb17](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb17_thumb.png "image_thumb17")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb171.png)
+[![image_thumb17](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb17_thumb.png "image_thumb17")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb171.png)
 
  ***Figure 11***: *Specify the local folder where the proxy will store the cache.*
 
 Now you can finish the wizard and let it configure everything needed.
 
-[![image_thumb21](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb21_thumb1.png "image_thumb21")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb213.png)
+[![image_thumb21](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb21_thumb1.png "image_thumb21")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb213.png)
 
  ***Figure 12***: *Everything is ready, the wizard will install IIS (if needed) and will configure the proxy*
 
 This is really simple, because you need to specify only the project collection and you are ready to go. When configuration finished you should see a success windows likes this one.
 
-[![image_thumb25](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb25_thumb.png "image_thumb25")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb251.png)
+[![image_thumb25](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb25_thumb.png "image_thumb25")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb251.png)
 
  ***Figure 13***: *The proxy is ready to use, it even modify IIS configuration to optimize performances*
 
 As you can read from the summary, the configuration not only configured the proxy, but configure IIS to have optimum performance, like enabling dynamic compression and since this option is valid for every site, the wizard informs you on what he did. Now you can simply change Visual Studio settings to use the Proxy server to download files.
 
-[![image_thumb1](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb1_thumb.png "image_thumb1")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb110.png)
+[![image_thumb1](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb1_thumb.png "image_thumb1")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb110.png)
 
  ***Figure 14***: *Configure the use of the proxy in each machine of your organization.*
 
@@ -112,7 +112,7 @@ When the proxy is up and running you should go to every on-premise build machine
 
 If you have not installed Team Explorer on build machine, you can configure proxy with direct manipulation of the windows registry, simply open the  **HKCU\Software\Microsoft\VisualStudio\10.0\TeamFoundation\SourceControl\Proxy** and add a couple of keys called Enabled and Url and the game is done.
 
-[![image_thumb2](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb2_thumb2.png "image_thumb2")](http://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb214.png)
+[![image_thumb2](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb2_thumb2.png "image_thumb2")](https://www.codewrecks.com/blog/wp-content/uploads/2012/03/image_thumb214.png)
 
  ***Figure 15***: *Registry keys to configure TFS proxy for Build Agent machines that does not have Team Explorer Installed.*
 

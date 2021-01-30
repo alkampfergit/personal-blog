@@ -14,13 +14,13 @@ MakeCert.exe -r -pe -n “CN=www.cyberpunk.local” -sky exchange -ss my -len 20
 
 This command creates a certificate in your certificate store. To view  **it you should type certmgr to open the Certificates Manager Console**. Your newly created certificate should now appear in the list of certificates.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image3.png)
 
  ***Figure 1***: *Your newly created certificate appears in certificate store.*
 
 Double Clicking the certificate opens detail windows where you can find the value of Thumbprint property ( **Figure 2** ). This property is useful because it uniquely identifies this certificate in certificate store, and it should be used to load correct certificate in PowerShell script.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image4.png)
 
  ***Figure 2***: *Grab the Thumbprint of the certificate in detail pane.*
 
@@ -54,17 +54,17 @@ As you can see using the certificate is straightforward, you just  **grab a refe
 
 Now return to the Certificate manager, and press “Export” button to export the certificate, choose to export only the public key, choose DER format and export the certificate to a folder of your computer. Then press “Export” again but now  **choose to export the private key** , choose the PKCS format and then use a password to protect the exported file. A password is required because the private key is the information that you need to keep secure from the eyes of the public.  **Now you should have two exported files, one with.cer extension that contains only the public key, the other with.pfx extension containing also the private key**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image5.png)
 
  ***Figure 3***: *Exported certificates in my filesystem.*
 
-Now remove the certificate from Certificate Manager, and try to run again the script to encrypt and decrypt the string, you should now receive an error from Get-Item, telling you that the required path does not exists. This confirms that the certificate was removed from your certificate store. Now press the “import” button on Certificate Manager and  **import the previously exported public key, the file public.cer in my example and run the script again to verify that you are able to encrypt a string but you cannot decrypt, because you have only the public key.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image6.png)
+Now remove the certificate from Certificate Manager, and try to run again the script to encrypt and decrypt the string, you should now receive an error from Get-Item, telling you that the required path does not exists. This confirms that the certificate was removed from your certificate store. Now press the “import” button on Certificate Manager and  **import the previously exported public key, the file public.cer in my example and run the script again to verify that you are able to encrypt a string but you cannot decrypt, because you have only the public key.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image6.png)
 
  ***Figure 4***: *Now that you have only the public key, you are able only to encrypt and you could not decrypt anymore the string.*
 
 To verify that you can decrypt password using Private Key, press Import button again on the Certificate Store and import the Private.pfx certificate. You will be prompted to enter the password you use during the export, and if you look at the options you can verify that there is an  **important option called “mark this key as exportable”,** that is turned off by default.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image7.png)
 
  ***Figure 5***: *Importing a certificate with Private key in certificate store*
 
@@ -96,7 +96,7 @@ Write-Host "ReturnValueIs: "$retValue.Message
 
  **This script simply decrypt the password and call a simple REST service just to verify that the password was decrypted with success.** Here is the output of the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/08/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/08/image8.png)
 
 I want to remember again that this technique does not secure the password for people that can schedule a new build in TFS. Any person that can schedule a new build can create a PowerShell script that decrypt a password and print it in build output, grab an encrypted password from another build definition and let this script decrypt it.
 

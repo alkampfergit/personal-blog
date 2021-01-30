@@ -43,7 +43,7 @@ The key part is that the resources are defined in an external resource file (A d
 
 Nothing special, the style is empty :D, now look at the structure of the project
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb7.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb7.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image7.png)
 
 The project include some subfolder of the Themes directory, all these directory contains a file called Main.xaml, and in these files I store the style for the theme, here is an example of the Themes/Green/Main.xaml file
 
@@ -92,11 +92,11 @@ private void cmbStyle_SelectionChanged(object sender, SelectionChangedEventArgs 
 
 Really simple, I load the file in a stream, deserialize with XamlReader, and substitute to the original dictionary. Here is the result
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb8.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb8.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image8.png)
 
 The combo automatically enlists all subdirectories that contain a main.xaml file, if you change the theme
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb9.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb9.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image9.png)
 
 Et voilÃ , the theme is changed ;). If you like it, you can close visual studio, go to the debug directory and manually create another theme, run the program again  **without recompiling** and the new theme is already active (because it is selected runtime). This permits a user to change the appearance of the program once the program is deployed.
 

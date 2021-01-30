@@ -10,7 +10,7 @@ Some time ago I [blogged about a](http://www.codewrecks.com/blog/index.php/2009/
 
 Ex. if you have this mapping.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/image.png)
 
 This is a mapping for a table called EngagementView in a schema called *report* and when u try to run some test on this entity with SqLite you got an error telling that there is no report database. The solution is to use the schema element of the mapping. The right schema should be
 

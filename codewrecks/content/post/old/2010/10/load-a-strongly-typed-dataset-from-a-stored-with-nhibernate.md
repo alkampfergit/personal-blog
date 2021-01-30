@@ -10,7 +10,7 @@ Even if you work with NHibernate, sometimes you need to use Stored Procedure to 
 
 The project is simple, so I do not want to establish a structure to access database and I prefer to use nhibernate, so I create the stored procedure, create a dataset, Drag&Drop the stored into the DatasetDesigner and obtain a StronglyTyped Dataset.
 
-[![Untitled](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/Untitled_thumb.png "Untitled")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/Untitled.png)
+[![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/Untitled_thumb.png "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/Untitled.png)
 
  **Figure 1** :*The strongly typed dataset into the designer.*
 

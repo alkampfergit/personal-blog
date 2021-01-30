@@ -10,7 +10,7 @@ Each TFS Build agent uses a local directory to download source, do build, prepar
 
 To minimize this problem VSTS contains a Settings tab in pool configuration that allows scheduling of Agent Maintenance job as you can see in  **Figure 1**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image.png)
 
  ***Figure 1***: *Enabling agent schedule mainteinance*
 

@@ -32,7 +32,7 @@ Elapsed:274{{< / highlight >}}
 
 Iâ€™m quite happy, because I gain more than 70% performances with my first implementation that is the first think that comes in my mind. Now it is time again to fire [DotTrace](http://www.jetbrains.com/profiler/).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image7.png)
 
 Since IndexOf is the one that occupies all the time, there is nothing more to optimize. Thanks to DotTrace I avoid wasting more time trying to optimize a function when all the time is spent in a framework function.
 

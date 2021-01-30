@@ -16,13 +16,13 @@ Apart from these discussions on the real security of this technique,  **one of t
 
 The purpose is having a simple page running on build server with credentials of TfsBuild that simply encrypt a password using  DPAPI
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image19.png)
 
  ***Figure 1***: *Simple page to encrypt a string.*
 
 You can test locally this technique simply running the site in localhost using the same credentials of logged user, encrypting a password and then try to decrypt in powershell.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb20.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/07/image20.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image_thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/07/image20.png)
 
  ***Figure 2***: *Decrypting a password encrypted with the helper site should work correctly.*
 

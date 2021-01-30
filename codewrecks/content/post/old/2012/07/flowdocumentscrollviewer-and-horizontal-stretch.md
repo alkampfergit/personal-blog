@@ -23,7 +23,7 @@ Quite often when you use **FlowDocumentScrollViewer it does not use all horizont
 
 As you can see I’ve set both HorizontalAlignment and HorizontalContentAlignment to Stretch, the document is inside a Grid with yellow background and here is what I see during run and in designer.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image3.png)
 
  ***Figure 1***: *FlowDocumentScrollViewer does not use all horizontal spacing*
 
@@ -36,7 +36,7 @@ Width="{Binding Path=ActualWidth, RelativeSource={RelativeSource AncestorType=Gr
 
 Thanks to the RelativeSource binding I’m able to easily obtain the result I want
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image4.png)
 
  ***Figure 2***: *Now my FlowDocumentScrollViewer use all horizontal space.*
 

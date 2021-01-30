@@ -12,7 +12,7 @@ I know that there are a lot of framework out of there, but sometimes you need a 
 
 I decided to discriminate messages based on the type of data contained in the message, the message itself is a simple class with a message string and a payload.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image17.png)
 
 View Models register for a specific kind of payload, as an example I want to be able of issue this code to register whenever someone send a message with a  payload of type List&lt;ActionLogViewModel&gt;.
 
@@ -22,7 +22,7 @@ broker.RegisterForMessage<List<ActionLogViewModel>>(ReceiveLog);
 
 The result is this really simple class, that is based on delegate
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/image_thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/07/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image18.png)
 
 It maintains internally a dictionary of registered action based on type of the payload
 

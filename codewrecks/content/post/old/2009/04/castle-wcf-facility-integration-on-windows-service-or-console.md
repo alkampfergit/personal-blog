@@ -76,7 +76,7 @@ using (DefaultServiceHost host = (DefaultServiceHost)new DefaultServiceHostFacto
 
 You need to create a  **DefaultServiceHost** using the  **DefaultServiceHostFactory** class, this is the only difference from hosting services in standard way. You should pass the assembly where the Interface is defined and an empty array of uri. Then you can process to configure the host as usual, but now when you invoke the service from a client you can see that the component was resolved by castle.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image6.png)
 
 As you can see I simply used the Wcf Test Client included with visual studio, reference the service with the IMetadataExchange endpoint and when I call the test method the return value is 42, because Kernel Class was resolved with a castle container. Surely configuring endpoints in code is not the best thing to do, so it is better to use config file to setup wcf endpoint. Since Wcf Castle Integration is completely transparent, you configure services as ususal.
 

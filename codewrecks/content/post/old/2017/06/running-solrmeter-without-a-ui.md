@@ -16,13 +16,13 @@ Using the tool is straightforward: you just need to follow the [tutorial here](h
 
 In settings menu you can simply configure everything you need. The first tab allows you to specify all files that contains data to generate the query, as well as the address of the core/collection you want to test.
 
-[![SolrMeter configuration to issue queries to a SolrCore](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb9.png "A typical solMeter configuration")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image9.png)
+[![SolrMeter configuration to issue queries to a SolrCore](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb9.png "A typical solMeter configuration")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image9.png)
 
  ***Figure 1***: *A typical SolrMeter configuration*
 
 Now you can just specify how many query per second you want to issue to your server, press play and the test starts.
 
-[![How to specify number of query per seconds and then running the test pressing start button.](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb10.png "Run solr Test")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image10.png)
+[![How to specify number of query per seconds and then running the test pressing start button.](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb10.png "Run solr Test")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image10.png)
 
  ***Figure 2***: *Choose query per seconds and then run the test*
 
@@ -30,13 +30,13 @@ Now you can just specify how many query per second you want to issue to your ser
 
  **The tool gives you lots of information and graphs that can allow you to understand how well your Solr installation performs** with the set of queries you are issuing to the server. A typical Graph you can look at is the distribution of average response time of the query during the run.
 
-[![Query history graph shows you the average execution time of a query during time](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb11.png "Query History")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image11.png)
+[![Query history graph shows you the average execution time of a query during time](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb11.png "Query History")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image11.png)
 
  ***Figure 3***: *Query History*
 
 In  **Figure 3** I can see that the average query time for the first 10 seconds is about 375 ms, while for subsequent queries the average response time is under 50 ms. Another interesting graph is distribution of the queries execution time during the load.
 
-[![This graph shows the distribution of response time for queries](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb12.png "Average response time graph")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image12.png)
+[![This graph shows the distribution of response time for queries](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb12.png "Average response time graph")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image12.png)
 
  ***Figure 4***: *Average response time for queries*
 

@@ -12,7 +12,7 @@ The problem of the certificate is the simpler of the two to solve,  **you just n
 
  **The most annoying stuff is getting rid of the password**. You should start configuring the deploy user for IIS using the same user that runs TFS Build, this will give to build user the permission to execute the deploy.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/11/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/11/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/11/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/11/image1.png)
 
  ***Figure 1***: *Give to the build user publish permission.*
 
@@ -22,11 +22,11 @@ This is not enough, if you fire your bulid you probably will receive an authoriz
 
 The dreaded ERROR\_USER\_UNAUTHORIZED can frustrate you for long time, because it is not so easy to solve. First of all you should check if the Windows Authentication is enabled in IIS configuration. Just go to the Web Server and verify settings of Management Service
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/11/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/11/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/11/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/11/image2.png)
 
  ***Figure 2***: *You should configure Management Service to use Windows Authentication*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/11/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/11/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/11/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/11/image3.png)
 
  ***Figure 3***: *You should be sure that Windows Credentials is enabled.*
 

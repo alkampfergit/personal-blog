@@ -65,7 +65,7 @@ This is a real simple yaml buid definition where I’m simply requiring the usag
 
 After the build completed you can simply looks at the output, if everything is ok the build is Green.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-21.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-21.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-21.png)
 
  ***Figure 1***: *Test results in my build that shows results of my python unit tests.*
 
@@ -73,7 +73,7 @@ After the build completed you can simply looks at the output, if everything is o
 
 If code does not compile, unit test will fail and you have a failing build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-22.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-22.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-22.png)
 
  ***Figure 2***: *Not compiling code will lead to a failing build.*
 
@@ -81,11 +81,11 @@ The problem with this approach is that the build stops at the very first error, 
 
 This condition is usually too strict, for unit testing it is usually a better approach to configure the build to continue even if run test failed.**To accomplish this, just add *continueOnError: true*after each bash task used to run tests. **With continueOnError equal to true, the build will continue and if some of the test task fails, the build is marked as Partially Failed, and from the summary you can easily check the run that generates the error.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-23.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-23.png)** Figure 3: ***Continue on error true will make the build continue on test error, in the summary you can verify what failed,*
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-23.png)** Figure 3: ***Continue on error true will make the build continue on test error, in the summary you can verify what failed,*
 
 The reason why I choose to launch a different Pytest run for each folder and upload each result with a different task is to have separate run in build result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image.png)
 
  ***Figure 4***: *Test runs are distinct for each folder.*
 

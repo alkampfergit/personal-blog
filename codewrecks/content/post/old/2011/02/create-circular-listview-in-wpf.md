@@ -12,7 +12,7 @@ In my little Wpf [ListView with better touch support](http://www.codewrecks.com/
 
 As you can see in this short video the listview appears not to have an end and we can scroll how many elements we want. This is a trick or an illusion and is obtained with a  little support from the viewmodel. This KineticListView was bound to a peculiar property of the ViewModel
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/image5.png)
 
 Property is called DataToShowSingleRepetition, and here is how it is handled in the ViewModel.
 
@@ -32,7 +32,7 @@ The trick in the last three lines. We need to show five elements, but I place a 
 
 The logic behind this is: when the first logical element (the one with value 0) is shown, we should be able to scroll the list to the right, showing the last logical element (the one with value 4) to the left, and since the original ListView does not support this concept we need to repeat the logical last element as the first element. What it happens is that, when the KineticListView finish to scroll, it check if we are on the physical first element (the one with value 4). If it is true, it immediately moves to the same element at the end of the list.
 
-[![SNAGHTML1415288](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTML1415288_thumb.png "SNAGHTML1415288")](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTML1415288.png)
+[![SNAGHTML1415288](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTML1415288_thumb.png "SNAGHTML1415288")](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTML1415288.png)
 
 In this example the list shows only one element but we can use the circular option even when the list shows multiple items, we need only to repeat more elements, here is the result.
 

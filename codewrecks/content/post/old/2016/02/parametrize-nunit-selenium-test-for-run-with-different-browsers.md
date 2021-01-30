@@ -106,19 +106,19 @@ Thanks to those two classes, I can simply specify for each test the Browsers Lis
 
 Using BrowserList attribute I’m asking Nunit to create an instance of that attribute to get the list value to be bind to that specific parameter. For each value a different test is created. Now if I build my project I can verify from VS Test Runner that indeed I have three different test to run.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image8.png)
 
  ***Figure 1***: *My test running with different versions of browsers*
 
 If I run the tests, as I’m expecting, the IE based test fails because I’ve not configured my test to use IE Driver.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image9.png)
 
  ***Figure 2***: *Test output with Visual Studio Test Runner.*
 
 Now remove the IE from the list of Browsers to use in the testParameters.json and rebuild the solution. The IE version of the test now is disappeared from Test Runner.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image10.png)
 
  ***Figure 3***: *Changing test configuration parameter and rebuilding will update test list*
 

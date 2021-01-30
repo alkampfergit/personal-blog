@@ -10,13 +10,13 @@ categories: [Team Foundation Server]
 
 The answer is really simple, you should go to the test section of build definition and change the run settings from Default to another setting that includes code coverage and this is really everything you need to do.
 
-[![image_thumb2](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb2_thumb.png "image_thumb2")](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb2.png)
+[![image_thumb2](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb2_thumb.png "image_thumb2")](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb2.png)
 
  ***Figure 1***: *Change run settings to enable code coverage*
 
 Now launch the build and verify that you have your binaries instrumented and Code Coverage correctly computed.
 
-[![image_thumb5](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb5_thumb.png "image_thumb5")](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb5.png)
+[![image_thumb5](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb5_thumb.png "image_thumb5")](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb5.png)
 
 > Usually this lead to another question: *Can I decide which assembly to include in code coverage instead of having all of them instrumented?*
 
@@ -60,15 +60,15 @@ You have lots of options, but in this example I’m interested only in limiting 
 
 Once you authored this file,  **you should use it as active test setting configuration to test if everything is good** , and verify that after running all of your test locally, Code Coverage result is what you expected. Remember that once you’ve have this run settings activated, it will be used for all of your local test run.
 
-[![image_thumb\[2\]](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb2_thumb1.png "image_thumb[2]")](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb21.png)
+[![image_thumb\[2\]](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb2_thumb1.png "image_thumb[2]")](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb21.png)
 
 Once everything is ok you need  **to store this file in source control, check-in and modify Build configuration to use this customized file as a Run Settings File for the build** and the game is done.
 
-[![image_thumb\[5\]](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb5_thumb1.png "image_thumb[5]")](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb51.png)
+[![image_thumb\[5\]](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb5_thumb1.png "image_thumb[5]")](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb51.png)
 
 Now fire the build again, this time only selected assemblies will be used for code coverage.
 
-[![image_thumb\[8\]](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb8_thumb.png "image_thumb[8]")](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb8.png)
+[![image_thumb\[8\]](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb8_thumb.png "image_thumb[8]")](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb8.png)
 
 MSDN Link to test run setting file: [Customizing Code Coverage Analysis](http://msdn.microsoft.com/en-us/library/jj159530.aspx)
 

@@ -59,7 +59,7 @@ services:
 
  **To simplify everything all of my integration tests that needs a connection string to MsSql or MongoDb grab the connection string by environment variable**. This is convenient so each developer can use db instances of choice but also this technique makes super easy to configure a Docker agent specifying database connection strings as seen in  **Figure 1**. I can specify in environment variables connection string to use for testing and I can simply use other docker service names directly in connection string.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-12.png)
 
  ***Figure 1***: *Environment variable to specify connection string.*
 
@@ -73,19 +73,19 @@ Thanks to docker compose, you pay the price of downloading pulling images once, 
 
 Thanks to experimental feature of Windows Server2019, I was able to specify a docker-compose file that contains not only windows images, but also Linux images. The only problem I had is that I did not find a Windows 2019 Image for Sql Server. I started getting error using standard MsSql images (build for windows 2016); So I decided to download official Docker file, change reference image and recreate the image and everything worked like a charm.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-13.png)
 
  ***Figure 2***: *Small modification to Sql Server docker windows image file, targeting Windows Server 2019.*
 
 Since it is used only for test, I’m pretty confident that it should work and indeed my build runs just fine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-14.png)
 
  ***Figure 3***: *My build result, ran on docker agent.*
 
 Actually my agent created with Docker Compose is absolutely equal to all other agentw, from the point of view of Azure DevOps it has nothing different, but I’ve started it with a single line of Docker-Compose command
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image_thumb-15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/12/image-15.png)
 
  ***Figure 4***: *Agent running in docker it is treated as standard agents.*
 

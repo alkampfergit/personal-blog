@@ -10,7 +10,7 @@ I’m working with a class created by my colleague, this class has a function th
 
 It seems to me that the execution is quite slow and looking into fiddler I found that almost each file I pass to the function the function download some files related to xml schema.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb6.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/05/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image-thumb6.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/05/image6.png)
 
 Since most of the page I have stored are in XHTMl format, something is happening inside that function to call the dtd for validation. In the code at certain point the function try to load the file in a XMLDocument and it use this code
 

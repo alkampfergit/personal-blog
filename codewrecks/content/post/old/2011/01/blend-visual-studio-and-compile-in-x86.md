@@ -10,7 +10,7 @@ I have a WPF project where I need to compile in x86 because it uses the Gecko Br
 
 The problem is, Blend looks only in the bin\Debug folder, so when I add a Command or property to the viewmodel I compile the project, switch to blendâ€¦ and Iâ€™m not able to see the new property or command. As far as I know the only solution I found, is to change the output folder of the project.
 
-[![SNAGHTML640011](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/SNAGHTML640011_thumb.png "SNAGHTML640011")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/SNAGHTML640011.png)
+[![SNAGHTML640011](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/SNAGHTML640011_thumb.png "SNAGHTML640011")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/SNAGHTML640011.png)
 
  ***Figure 1***: *Change the output path to bin\Debug even for x86 platform*
 

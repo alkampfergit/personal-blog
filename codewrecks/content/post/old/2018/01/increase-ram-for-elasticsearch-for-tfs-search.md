@@ -16,7 +16,7 @@ Suppose I have my dedicated search machine with 4GB of RAM,  **the installation 
 
 Now suppose that the index is really big and the response time starts to be slow, so you decided to upgrade search machine to 16 GB of RAM. What happens to ES?
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-13.png)
 
  ***Figure 1***: *Statistics on ES instance with HQ plugin shows that the instance is still using 2GB of heap.*
 
@@ -26,7 +26,7 @@ From  **Figure 1 y** ou can verify that ES is still using 2 GB of memory for the
 
 The amount of HEAP memory that ES uses is ruled by the ES\_HEAP\_SIZE environment variable, so you can simply change the value to 8G if you want ES to use 8 GB of Heap memory.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-14.png)
 
  ***Figure 2***: *Elastic search uses an environment variable to set the amount of memory devoted to HEAP*
 
@@ -34,7 +34,7 @@ But this is not enough,  **if you restart ElasticSearch windows service you will
 
 To verify this assumption, just stop the ElasticSearch service, go to ES installation folder and manually starts ElasticSearch.bat. Once the engine started, check with HQ to verify that ES is really using use 8GB of ram ( **Figure 2** ).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-15.png)
 
  ***Figure 3***: *ES now uses the correct amount of RAM.*
 

@@ -80,7 +80,7 @@ I’ve lost half an hour wondering why credential are not passed to the server i
 
 When you create the proxy with  **instance method CreateChannel(EndpointAddress),** it maintains a connection with the original factory, so it was able to grab credentials when needed from the factory,  **if you create the channel with the static CreateChannel(Binding, EndpointAddress)** you are actually calling this code.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/10/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/10/image.png)
 
  ***Figure 1***: *Reflected code of CreateChannel static method*
 

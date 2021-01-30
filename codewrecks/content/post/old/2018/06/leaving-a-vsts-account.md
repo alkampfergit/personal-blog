@@ -10,7 +10,7 @@ As a VSTS trainer, it is quite common for me to made students create VSTS Accoun
 
 This is annoying because each time Visual Studio or other tools try to understand VSTS accounts I have right to access, the list is really long.  **Luckily enough few months ago, the team added the ability to leave an account directly from your profile list**.
 
-[![SNAGHTML234a2d0](http://www.codewrecks.com/blog/wp-content/uploads/2018/06/SNAGHTML234a2d0_thumb.png "SNAGHTML234a2d0")](http://www.codewrecks.com/blog/wp-content/uploads/2018/06/SNAGHTML234a2d0.png)
+[![SNAGHTML234a2d0](https://www.codewrecks.com/blog/wp-content/uploads/2018/06/SNAGHTML234a2d0_thumb.png "SNAGHTML234a2d0")](https://www.codewrecks.com/blog/wp-content/uploads/2018/06/SNAGHTML234a2d0.png)
 
  ***Figure 1***: *Profile page where you can leave all the account you are not interested into.*
 

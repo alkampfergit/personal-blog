@@ -8,7 +8,7 @@ categories: [Experiences,Software Architecture]
 ---
 In my experience it is not a good idea to put in direct communication stakeholders (customers) and programmers, here is the typical result
 
-[![drawing](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/drawing-thumb.jpg)](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/drawing.jpg)
+[![drawing](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/drawing-thumb.jpg)](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/drawing.jpg)
 
 Lets analyze this typical situation from the perspective of the stakeholder; he have all the reason to ask for new features, he does not possess strong technical skills, and since he is the one who actually *pay to build the software*, he does not understand why he cannot ask for a simple modification. Moreover the developer is speaking some obscure technical jargon, so he could not understand the reason behind these difficulties.
 
@@ -18,7 +18,7 @@ In the end both the contendants  feels that the other part is not doing his par
 
 But the ultimate question is “there is a solution?”, in my opinion the answer is “you need an analyst”.
 
-[![drawing2](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/drawing2-thumb.jpg)](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/drawing2.jpg)
+[![drawing2](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/drawing2-thumb.jpg)](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/drawing2.jpg)
 
 The analyst is capable to speak with customer in plain english, and since he possess some technical skills, he can anticipate some of the problems. Then he is capable to analyze the needs of the customer to find the way to fulfill them with alternate solution, quite often the alternate solution could be even better for the stakeholder. Then the analyst speak with the development team, he shows all the possibilities to the developers that will give to each alternative a weight. The final step is choosing the possibility that satisfy the customer but have no great impact on the system, if any.
 

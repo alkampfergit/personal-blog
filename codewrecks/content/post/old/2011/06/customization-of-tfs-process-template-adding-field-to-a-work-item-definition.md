@@ -45,7 +45,7 @@ Now that I defined a new field, I need to change the interface of the WI to make
 
 Suppose you want to insert a textbox to edit your new field in the red area of Figure 4:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb24.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image24.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image24.png)
 
  ***Figure 4***: *Correspondence between the tree representation of the layout and the graphic element in the WI edit interface.*
 

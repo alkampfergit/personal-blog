@@ -14,11 +14,11 @@ One of the major problem when you manage a task is versioning, because you can h
 
 This is not a problem in VSTS / TFS, because a nice versionig control is in place; if you open a build you can find a flag near some build tasks.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/02/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/02/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/02/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/02/image.png)
 
  ***Figure 1***: *Alerting on task that warn you about a new version of the task.*
 
-In  **Figure 1** you can find that a purple flag is telling you that you are using an old version of the task and that there are newer version available. This happens because a  **major version is available, but to preserve compatibility, existing build still uses the old version.** If you look at task detail you can choose the version to use, as shown in  **Figure 2** [![SNAGHTMLf0c767](http://www.codewrecks.com/blog/wp-content/uploads/2017/02/SNAGHTMLf0c767_thumb.png "SNAGHTMLf0c767")](http://www.codewrecks.com/blog/wp-content/uploads/2017/02/SNAGHTMLf0c767.png)
+In  **Figure 1** you can find that a purple flag is telling you that you are using an old version of the task and that there are newer version available. This happens because a  **major version is available, but to preserve compatibility, existing build still uses the old version.** If you look at task detail you can choose the version to use, as shown in  **Figure 2** [![SNAGHTMLf0c767](https://www.codewrecks.com/blog/wp-content/uploads/2017/02/SNAGHTMLf0c767_thumb.png "SNAGHTMLf0c767")](https://www.codewrecks.com/blog/wp-content/uploads/2017/02/SNAGHTMLf0c767.png)
 
  ***Figure 2***: *Choose version of task to use in the build*
 
@@ -32,13 +32,13 @@ This works not only with built-in tasks, but the same method works for any task,
 
 > Due to TFS /VSTS task versioning, I strongly suggests you to use GitFlow to develop your task, so it is easy for you to patch older version if needed.
 
- **If you include release notes in task.json you will also give the user information on what was changed.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/02/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/02/image-1.png)
+ **If you include release notes in task.json you will also give the user information on what was changed.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/02/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/02/image-1.png)
 
  ***Figure 3***: *Task.json file with release notes*
 
 Release notes are shown in the Build ui when you select specific version, and this can be used to give details on what is changed to explain why the major version is changed.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/02/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/02/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/02/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/02/image-2.png)
 
  ***Figure 4***: *Release notes for the task are shown on the UI during build edit.*
 

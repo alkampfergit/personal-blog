@@ -18,7 +18,7 @@ If you have a (script, whatever) to automatically release a new version of your 
 
 The first step is a build that prepare the package with all the files that are needed by the installation, in my situation I have a couple of.7z files: the first contains all the binaries and the other contains all updated configurations. These are the two files that I use for deployment with PowerShell script. The script is quite simple, it stops services, backup actual version, deletes everything, replace binaries with latest version, then update configuration with the new default values if any. It is not rocket science, it is a simple script that automate everything we have on our release list.
 
-Once you have prerequisites (build creating binaries and installation scripts), running UAT tests in a release is really simple,  **a simple dependency from build artifacts, a single environment and the game is done.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-4.png)
+Once you have prerequisites (build creating binaries and installation scripts), running UAT tests in a release is really simple,  **a simple dependency from build artifacts, a single environment and the game is done.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-4.png)
 
  ***Figure 1***: *General schema for the release that will run UAT tests.*
 
@@ -26,7 +26,7 @@ I’m depending by the artifact of a single build, specially crafted for UAT. To
 
 To simplify everything I’ve cloned the original build that I used to create package for new release and I’ve added a couple of tasks to package UAT test files.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-5.png)
 
  ***Figure 2***: *Package section of the build*
 
@@ -36,13 +36,13 @@ I’ve blogged a lot in the past of my love with PowerShell scripts to create pa
 
 When the build is stable, the next step is configuring a Deployment Group to run UAT.  **The concept of Deployment Group is new in VSTS and allows you to specify a set of machines, called deployment group, that will be used in a release definition**. Once you create a new Deployment Group you can simply go to the details page to copy a script that you can run on any machine to join it to that deployment group.
 
-[![SNAGHTML52853f7](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML52853f7_thumb.png "SNAGHTML52853f7")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML52853f7.png)
+[![SNAGHTML52853f7](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML52853f7_thumb.png "SNAGHTML52853f7")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML52853f7.png)
 
  ***Figure 3***: *Script to join a machine to a Deployment Group*
 
 As you can see from  **Figure 3** , you can join Windows machines or a Ubuntu or RedHat machines to that group. Once you run the script that machine will be listed as part of the Group as you can see in  **Figure 4**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-6.png)
 
  ***Figure 4***: *Deployment groups to run UAT tests.*
 
@@ -50,7 +50,7 @@ The concept of Deployment Group is really important, because it allows for *pull
 
 There are another advantages of Deployment Groups, like executing in parallel to all machines of a group. [This MSDN post](https://www.visualstudio.com/en-us/docs/build/concepts/definitions/release/deployment-groups/) is a good starting point to learn of all the goodness of DG.
 
-Once the Deployment Group is working, creating a release is really simple if you already created PowerShell scripts for deployment. The whole release definition is represented in  **Figure 5.** [![SNAGHTML52522c4](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML52522c4_thumb.png "SNAGHTML52522c4")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML52522c4.png)
+Once the Deployment Group is working, creating a release is really simple if you already created PowerShell scripts for deployment. The whole release definition is represented in  **Figure 5.** [![SNAGHTML52522c4](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML52522c4_thumb.png "SNAGHTML52522c4")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML52522c4.png)
 
  ***Figure 5***: *Release definition to run UAT testing*
 
@@ -64,7 +64,7 @@ Most of the steps are peculiar to this specific application, if your application
 
  **If you configure that release to start automatically as soon as new artifacts is present, you can simply trigger the build and everything will run automatically for you**. Just queue the build and you will end with a nice release that contains results of your UAT tests.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-7.png)
 
  ***Figure 6***: *Test result summary in release detail.*
 

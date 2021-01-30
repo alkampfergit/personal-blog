@@ -21,7 +21,7 @@ public static void IntializeAssembly(TestContext ctx)
 
 This is run first of every code in the test project, but I really have the need to run different data generation plan in different part of my code. If you look at the DatabaseTestClass with reflector you can be really surprised, it has a TestService class that is of type DatabaseTestService.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image.png)
 
 As you can see it has a GenerateData method that permits you to specify dgen file name, *but it is protected.*I really wonder why, but it seems that you cannot run database generation file programmaticallyâ€¦or not?
 

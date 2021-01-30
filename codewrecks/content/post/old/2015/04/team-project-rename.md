@@ -8,7 +8,7 @@ categories: [Visual Studio,Visual Studio ALM]
 ---
  **Renaming of Team Projects is one of the most requested feature** on Visual Studio User Voice:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/04/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/04/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/04/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/04/image.png)
 
  ***Figure 1***: *Team Project rename suggestion on User Voice*
 

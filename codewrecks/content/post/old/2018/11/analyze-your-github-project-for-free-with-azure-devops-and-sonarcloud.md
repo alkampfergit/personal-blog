@@ -8,13 +8,13 @@ categories: [Azure DevOps,Visual Studio ALM]
 ---
 I’ve blogged some weeks ago on how to [analyze OS code with SonarCloud](http://www.codewrecks.com/blog/index.php/2018/10/10/azure-devops-pipelines-and-sonar-cloud-gives-free-analysis-to-your-os-project/), but it is time to update the post, because  **if you want to use SonarCloud you have a dedicated extension in the marketplace**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-17.png)
 
  ***Figure 1***: *Official SonarCloud extension in the marketplace.*
 
 One of the great feature of Azure DevOps is its extendibility, that allows people external to Microsoft to create extensions to expand the possibility of the tool. Once you’ve added the SonarCloud extension to your account,  **you have a whole bunch new build templates you can use** :
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-18.png)
 
  ***Figure 2***: *Build template based on Sonar Cloud*
 
@@ -22,19 +22,19 @@ Having a template make super easy to create a build, you just choose.NET Desktop
 
 In  **Figure 3** there is the build created by.NET desktop project template (remember that this template can be used also for web application, and for every.NET application).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-19.png)
 
  ***Figure 3***: *.NET Sonar Cloud analysis template.*
 
  **The only task you need to configure for Sonar Cloud analysis is the Prepare analysis on Sonar Cloud**. As you can see in  **Figure 4** , you should first create an endpoint that connect Azure DevOps to your SonarCloud account.
 
-[![SNAGHTML1d1ca3](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/SNAGHTML1d1ca3_thumb.png "SNAGHTML1d1ca3")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/SNAGHTML1d1ca3.png)
+[![SNAGHTML1d1ca3](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/SNAGHTML1d1ca3_thumb.png "SNAGHTML1d1ca3")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/SNAGHTML1d1ca3.png)
 
  ***Figure 4***: *In task configuration you have a nice button to create the connection to your SonarCloud account*
 
 Configuring the connection is really simple, just give a name to the connection and specify the access token (you should first generate a token in SonarCloud). Then, as shown in  **Figure 5** , press Verify Connection to check that everything is ok.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-20.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-20.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-20.png)
 
  ***Figure 5***: *Configuration and test of the connection between Azure DevOps and SonarCloud.*
 

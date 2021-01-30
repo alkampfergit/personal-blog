@@ -139,7 +139,7 @@ You are not able to save an instance of EntityA if it has Payload property set t
 
 If you try to load EntityA with an include to Payload, you will get: *Multiplicity constraint violated. The role ‘EntityA\_Payload\_Target’ of the relationship ‘EfTableSplitting.Models.EntityA\_Payload’ has multiplicity 1 or 0..1*.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb21.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image21.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image21.png)
 
  ***Figure 1***: *Error happens if you automatically initialize \_payload in the constructor*
 

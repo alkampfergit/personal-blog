@@ -51,7 +51,7 @@ internal static object InnerCreateProxy(Type service, string endpoint, WcfProxyI
 
 The interesting part is the WcfProxyProxyInterceptor class, a castle interceptor that is used in conjunction with Castle DynamicProxy to create a proxy of the WcfProxy :). If it seems weird to create a proxy of a proxy lets look at this schema.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image7.png)
 
 The reason behind this structure is: WCF Proxy abstracts the call to the server with a channel, but if it becomes corrupted, as example when timeout occurs, we need to recreate another valid proxy to communicate with the server. The problem is that now I need to instruct all controllers to use the new proxy. If I use another proxy that wraps WCF proxy, I can simply return that proxy to the controller, and let it manage wcf proxy recreation in case of CommucationException. Letâ€™s see how the WcfProxyInterceptor works
 

@@ -8,7 +8,7 @@ categories: [Nhibernate]
 ---
 I have this piece of domain model.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/03/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/03/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/03/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/03/image.png)
 
 The LinkResult class has a property called Link that point to a AnalyzedLink class that in turn has a collection of AnalyzedLinkExtClass called ExtData. All the relation are unidirectional, this means that there is nothing that bring me from AnalyzedLink to a linkResult and nothing that bring me from AnalyzedLinkExtData to the AnalyzedLink. This is the typical situation where doing complex query can be tricky
 

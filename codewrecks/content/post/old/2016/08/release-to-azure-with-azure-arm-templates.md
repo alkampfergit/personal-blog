@@ -21,7 +21,7 @@ New-AzureRmResourceGroupDeployment -Name JarvisRm -ResourceGroupName JarvisRm-Te
 
 As you can see I need to choose the name of the resource group (JarvisRm) specify the template file (azuredeploy.json) and finally all the paramters of the template as if they are parameter of the PowerShell cmdlet.** Once the script finished verify that the resource group was created correctly and all the resources are suitable to deploy your software **.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/08/image-5.png)** Figure 1: ***Your Resource group was correctly created.*
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/08/image-5.png)** Figure 1: ***Your Resource group was correctly created.*
 
 Once everything is correct, I deleted the JarvisRm resource group and I’m ready to use the template on a release definition.
 
@@ -29,13 +29,13 @@ Once everything is correct, I deleted the JarvisRm resource group and I’m read
 
 When you have a good template file  **the best place to store it is in your source control, this allow you to version this file along with the version of the code that is supposed to use it**. If you do not need versioning you can simply store in a network share, but to avoid problem it is better to have Release Management Agent run the template from a local disk and not from a network share.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-5.png)
 
  ***Figure 2***: *Copy template file from a network share to a local folder of the agent.*
 
 First step of the release process is copying template files from a network share to $(System.DefaultWorkingDirectory)\ARM folder so PowerShell can run against script that are placed on local disk.  **The second task is Azure Resource Group Deployment that uses the template to deploy all Resources to Azure**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-6.png)
 
  ***Figure 3***: *The Azure Deployment task is used to create a Resource Group from a Template definition.*
 
@@ -49,19 +49,19 @@ Antoher aspect you need to take care of, is the version of PowerShell azure tool
 
 All of these tasks are open sourced, and you can find information directly on GitHub. As an example [at this link tjere are the information about the DeployAzureResourceGroup task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DeployAzureResourceGroup). If you go to the bottom you can verify the PowerShell tools version suggested to run that task.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-7.png)
 
  ***Figure 4***: *Supported version of AzureRM module version*
 
 Clearly you should install a compatible version in the machine where the Agent is installed. If you are unsure if the agents has a suitable version of Azure PowerShell tools, you can go to TFS Admin page and verify capabilities of the agent directly from VSTS / TFS
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-8.png)
 
  ***Figure 5***: *Agent capabilities contains the version of Azure PowerShell tools installed*
 
 Demand for Azure PS is present on Release Definition, but it does not specify the version, so it is not guarantee that your release is going to be successful.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-9.png)
 
  ***Figure 5***: *Release process has a demands for Azure PowerShell tools but not to a specific version.*
 
@@ -73,7 +73,7 @@ The Azure Resource Group Deployments takes care of everything, I’ve modified t
 
 In my example I need only a VM, and once it is configured I can simply use Copy to Azure VM task and Execute PowerShell on Azure VM Task to release my software, as I did for my on-premise environment.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-10.png)
 
  ***Figure 6***: *Configuration of the Task used to copy files to Azure VM*
 
@@ -81,13 +81,13 @@ You can specify files you want to copy (1) login to the machine (2) and thanks t
 
 Final Step is executing the release script on target machine, and it has the same option you specify to run a script on a machine on-premise.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-11.png)
 
  ***Figure 7***: *Run the installation PowerShell script on target Azure VM*
 
 Once everything is in place you only need to create a release and wait for it to be finished.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-12.png)
 
  ***Figure 8***: *Output of release definition with Azure ARM*
 
@@ -95,19 +95,19 @@ Once everything is in place you only need to create a release and wait for it to
 
 If the release succeeded you can login to portal.azure.com to verify that your new resource group was correctly created  **Figure 1** , and check that in the resource group there are all the expected resources  **Figure 9**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-13.png)
 
  ***Figure 9***: *Resources created inside the group.*
 
 To verify that everything is ok you should check the exact version of the software that is actually deployed on the environment. From  **Figure 10** I can see that the release deployed the version 1.5.2.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-14.png)
 
  ***Figure 10***: *List of all most recents releases.*
 
 Now I can login to the VM and try to use the software to verify that it is correctly installed and that the version installed is correct.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-15.png)
 
  ***Figure 11***: *Software is correctly installed and the version corresponds to the version of the release.*
 

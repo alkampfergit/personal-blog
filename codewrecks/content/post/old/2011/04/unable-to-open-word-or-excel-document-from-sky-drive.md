@@ -19,7 +19,7 @@ I created a new user on my system, login with that user, and everything was perf
 
 Then open word, create a new document, then go to File-&gt; Save and send â€“&gt; save to web menu
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image.png)
 
 You should not see your sky drive folders, but only a button to login to sky drive, I pressed it, waited for a couple of minutes and now word asked me again for credential because it was not able to login. I insert the right login information with the new password and now I could again open word documents from skydrive.
 

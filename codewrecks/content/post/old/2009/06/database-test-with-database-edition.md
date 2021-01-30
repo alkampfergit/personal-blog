@@ -20,7 +20,7 @@ If the modification is really complex you need to modify/run test more than one 
 
 Iâ€™m used to setup database test with transaction management to automatically rollback a transaction after each test, you can use [extensions project](http://www.codeplex.com/MSTestExtensions) or you can code it by yourself, because is a simple matter of using a TransactionScope object. In the end you will end with tests that do not alter the database. In such a situation I prefer to proceed this way: first of all I configure my database project to deploy to the test database, simply open property of the database project and goes into Deploy tab
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb18.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image18.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image18.png)
 
 Then I go into the test project, goes into Database Folder, locate the DatabaseSetup.cs and comment out the two lines that actually does structure deploy and data generation
 
@@ -38,7 +38,7 @@ public static void IntializeAssembly(TestContext ctx)
 
 Then I open the DataGenerationPlan I want to use and with the menu Data-&gt;DataGeneration Plan-&gt;Execute plan, I execute my plan against the test database.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image19.png)
 
 Now Iâ€™m sure that
 

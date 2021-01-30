@@ -134,7 +134,7 @@ return cookies;
 
  **Step 6:** *Grab all cookie with InternetGetCookieEx api, this is needed to retrieve HttpOnly cookie*
 
-Now the game is done. As a last warning I suggest you to clear all WebBrowser cookie before starting the login procedure, because it could lead to problems. I found this solution on StackOverflow (I do not remember the link sorry ![Smile](http://www.codewrecks.com/blog/wp-content/uploads/2011/04/wlEmoticon-smile.png) )
+Now the game is done. As a last warning I suggest you to clear all WebBrowser cookie before starting the login procedure, because it could lead to problems. I found this solution on StackOverflow (I do not remember the link sorry ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/wlEmoticon-smile.png) )
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 private const int INTERNET_OPTION_END_BROWSER_SESSION = 42;

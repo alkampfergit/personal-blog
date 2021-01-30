@@ -27,7 +27,7 @@ It executes in about 3800 milliseconds, but is it slow? is it fast? can we optim
 
 The solution is running this simple test under a profiler, like [ANT profiler](http://www.red-gate.com/products/dotnet-development/ants-performance-profiler/), just to see if there is some Hot path
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image8.png)
 
 From this image it is clear that 98% of the time is spent inside the Exists() method of the List&lt;T&gt;, and this is something we already know, but the profiler is confirming our suspects, searching elements inside a simple IList&lt;T&gt; is really slow. A simple solution is writing this helper to create an IEqualityComparer with lambda.
 

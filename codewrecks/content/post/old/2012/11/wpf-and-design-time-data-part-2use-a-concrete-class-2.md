@@ -67,7 +67,7 @@ This approach is simpler, because you are not forced to remember obscure XAML sy
 
 The other interesting aspect, is the cycle used to populate Lists collection because with simple string manipulation it creates a log for each allowable level, so it will represent all six logger level (OFF, DEBUG, WARN, INFO, ERROR, FATAL).  **This is the power of using a concrete class for Design Time Data: you can use C# to generate data and you can also use libraries as** [**NBuilder**](http://code.google.com/p/nbuilder/) **to quickly generates meaningful sample data**. Once everything is in place you can simply bind a control (Es datagrid) to the Logs property, design time experience is the very same of the previous example.
 
-![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb.png "image")
+![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb.png "image")
 
  ***Figure 1***: *Design time data experience is the very same of using XAML Design Time Data*
 
@@ -93,7 +93,7 @@ You are actually binding to the property of the Design Time View Model, but this
 
 Thanks to the fact that I’ve generated a log for each Level property, I’m able to have an immediate feedback on how my UI will looks at runtime for each level type.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image1.png)
 
  ***Figure 2***: *Immediate feedback of the UI thanks to design time data*
 

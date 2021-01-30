@@ -10,7 +10,7 @@ I have a project where I need to access tables with millions of rows, the projec
 
 Everything runs fine, but now I have a little new feature to implement; that entity needs another property called Bookmark, and the value is specific of each user. In the software the user can search the aforementioned entity with some criteria, then he bookmarks the ones he likes most, and the software must signal bookmarked ones with a different image in the web ui. The problem is that bookmark table was already present in the database and has this schema.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image5.png)
 
 This table works this way, if a user put a bookmark on an entity, a record with username and link\_id (the foreign key to other table) is inserted, if the bookmark is removed the record is removed. Now I want to avoid the N+1 select, so I decided not to issue another query for each one of the original links, moreover I used ICriteria to recover entities, since the user can set complex filter through the UI and ICriteria makes really simple to compose the query.
 

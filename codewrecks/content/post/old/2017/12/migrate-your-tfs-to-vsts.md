@@ -14,7 +14,7 @@ For those realities, adopting  **VSTS is a huge benefit, no administration costs
 
  **To perform the migration Microsoft released a dedicated tool to do a complete migration** , you can find details here [https://www.visualstudio.com/team-services/migrate-tfs-vsts/](https://www.visualstudio.com/team-services/migrate-tfs-vsts/ "https://www.visualstudio.com/team-services/migrate-tfs-vsts/") the process is well documented, with a dedicated step by step guide.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/12/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/12/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/12/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/12/image-5.png)
 
  ***Figure 1***: *Step by step migration guide download.*
 

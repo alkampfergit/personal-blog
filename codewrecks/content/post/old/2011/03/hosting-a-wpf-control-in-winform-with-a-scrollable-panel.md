@@ -8,7 +8,7 @@ categories: [NET framework]
 ---
 I have a winform project that uses a WPF control for reports. Everything went good, until we need to add more report to a form, and requirements told us to create a scrollbar to show all reports. I simply put a panel with autoscroll = true, and inside it I put a [TableLayoutPanel](http://msdn.microsoft.com/en-us/library/system.windows.forms.tablelayoutpanel.aspx) and everything seems to works, excepts that [ElementHost](http://msdn.microsoft.com/en-us/library/system.windows.forms.integration.elementhost.aspx) used to wrap the WPF controls when scrolled shows a messy interface.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image4.png)
 
  ***Figure 1***: *Messy interface with WPF report when I scroll the panel*
 

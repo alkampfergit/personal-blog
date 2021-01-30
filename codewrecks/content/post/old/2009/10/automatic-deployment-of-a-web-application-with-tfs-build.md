@@ -15,7 +15,7 @@ Point 2 is especially important, testers usually work with the site and fills da
 
 Moreover testers usually fill the database with real data useful for testing, then you need to deploy update to web application while updating database schema preserving data. The optimum solution is the one represented by this schema
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image8.png)
 
 When a developer does a check-in or at a scheduled time the build server gets latest bit of the tip, then compile it, and update the web server pointing IIS to the new version and updating schema of the database in the meanwhile, preserving all the data inside the test db.
 
@@ -53,11 +53,11 @@ The first two &lt;UsingTask directive are needed to import a couple of custom ms
 
 The second task is a simple task that uses the technique described in [this post](http://www.codewrecks.com/blog/index.php/2009/10/12/change-base-directory-of-a-site-in-iis/), I basically change the directory used by the site NorthWindtest of a machine called WS200v1. The most important stuff here, is that drop location is on WS2008V1 machine, and since I know that the physical directory is c:\drops\ I can simply know the real directory from the BuildNuber. This action permits me to point the test site on the latest build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image9.png)
 
 Finally since the database could be changed I need to follow the instruction of [this post](http://www.codewrecks.com/blog/index.php/2009/10/06/deploy-a-database-project-with-tfs-build/) to deploy the data on test database. Now each time a build is triggered after the build Test machine IIS was automatically redirected to the latest version, the web.config was changed to suite the test environment, and the database is automatically upgraded. I simply did the first checkin of the project and after the build I test the site from my dev machine
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image10.png)
 
 The site was deployed, and Iâ€™m able to insert a record in the new empty database created by the first build.
 

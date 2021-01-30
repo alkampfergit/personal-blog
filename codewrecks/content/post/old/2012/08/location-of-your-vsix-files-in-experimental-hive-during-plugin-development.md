@@ -8,7 +8,7 @@ categories: [Visual Studio]
 ---
 When you are developing Visual Studio plugin, your project is usually  **configured to launch a special instance of Visual Studio** under the Visual Studio debugger (excellent example of dogfooding), this special instance is called experimental HIVE.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image1.png)
 
  ***Figure 1***: *Configuration of a standard VSIX project to test your addin*
 
@@ -20,7 +20,7 @@ If you want to remove or look at current configuration of experimental hive you 
 
 You should see all configuration folder for the various editions of Visual Studio, those that ends with Exp are related to experimental hive.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image2.png)
 
  ***Figure 2***: *Folders related to experimental hive.*
 

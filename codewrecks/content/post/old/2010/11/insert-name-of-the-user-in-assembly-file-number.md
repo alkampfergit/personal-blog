@@ -12,11 +12,11 @@ Major and Minor number in an assembly file info are usually updated manually whe
 
 The solution is to create some sort of xml file that associate a numerical id to a user, than use that id in the assembly file number, as an example you can have a file like this one.
 
-[![SNAGHTML898b40](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML898b40_thumb.png "SNAGHTML898b40")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML898b40.png)
+[![SNAGHTML898b40](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML898b40_thumb.png "SNAGHTML898b40")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML898b40.png)
 
 that actually tells me that the user id 1 is associated to WIN.Y4â€¦â€¦.. The question is, how I can handle this during a build or during a private build issued by a user? I [blogged some time ago](http://www.codewrecks.com/blog/index.php/2010/09/13/how-to-get-tfs-server-address-from-a-local-folder-mapped-to-a-workspace/) on how to grab information on the workspace with few lines of code, and that strategy could be used to solve this problem. First of all Iâ€™ve created a XmlUtils class that takes care of xml file handling.
 
-[![SNAGHTML8c0282](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML8c0282_thumb.png "SNAGHTML8c0282")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML8c0282.png)
+[![SNAGHTML8c0282](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML8c0282_thumb.png "SNAGHTML8c0282")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML8c0282.png)
 
 This class is able to manage the numbering, verifying if the string I want to insert already exists in the original file, creates file if it was not already created, and it has a useful property called UpdateRequired that tells me if the string I want to lookup was not originally in the file and I need to call Save().
 

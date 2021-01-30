@@ -8,11 +8,11 @@ categories: [ASPNET]
 ---
 Iâ€™m modifying an ASP.NEt site to achieve better performances, Iâ€™m actually moving some operations client-side with jquery. A typical pattern is to issue requests to a webservice instead of making a postback of the whole page. Here is a typical situation, I have a lot of rows in a grid and the user must be able to change some values.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image4.png)
 
 A standard asp.net approach uses an autopostback dropDownList to do a postback when the user change a value, but this force the server to render the  **whole page again**. This is a tremendous waste of resource, because the page has a big viewstate. The obvious solution is to use JQuery or some other client side script library to invoke a webservice function. I use a simple JQuery script that hides all the dropDownList and insert a click handler on the value, in this way when the user click on a value the dropdownlist appears.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image5.png)
 
 The layout is much more clearer, beacuse all the dropdownlists disappeared, and they are shown only when the user want to change a value. When the user changes value I simply call a webservice function that does all the stuff, and update the interface accordingly. Since the response type from the webservice cannot be estimated (this operation sometime can trigger a massive update of thousands of records  ) I need to inform the user that the operation is in progress. This is a very common pattern, so I decided to create a little JQuery extension to manage this. Here is how I use it
 
@@ -41,7 +41,7 @@ $('select[id$=ddlMassiveAvgDomainContext]')
 
 Th code is really simple, I select all the dropdownlist of interest, then hide them all, then wire the change event. Inside the event I grab the div that contains the cell with $(this).parent() and use my  **setwait** extension, specify an offset of one second, this means that if the server answer before one second nothing is shown, if more than one second elapses a wait image get shown. When the webserver returns I call  **clearwait** to return the DOM to the original state. Here is what happens
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image6.png)
 
 I show two div, one with 0.5 opacity and white background, and then another div with a gif image as background. Now the user is informed that the server is working. Here is the code of the extender.
 

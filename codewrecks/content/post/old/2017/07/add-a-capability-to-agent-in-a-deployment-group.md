@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 When you deploy a Build agent in VSTS / TFS, in the administration page you have the ability to add custom Capabilities to the agent, as you can see in Figure 1.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-3.png)
 
  ***Figure 1***: *Adding capabilities to a standard build agent.*
 
@@ -28,13 +28,13 @@ As an example here is the result of a release
 
 In that specific scenario I do not have vstest capabilities, even if Test runner was installed by the build with WinRm, so I simply added the environment variable in the machine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-4.png)
 
  ***Figure 2***: *VSTest environment variable added to the machine*
 
 Then restart the service of the agent and the new capabilities is now showing up in the summary.
 
-[![SNAGHTMLc29ccd](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTMLc29ccd_thumb.png "SNAGHTMLc29ccd")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTMLc29ccd.png)
+[![SNAGHTMLc29ccd](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTMLc29ccd_thumb.png "SNAGHTMLc29ccd")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTMLc29ccd.png)
 
  ***Figure 3***: *VSTest capabilities now shows up in the agent capabilities list.*
 

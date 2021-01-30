@@ -22,7 +22,7 @@ sbc.Subscribe(subs =>
 
 The above snippet is taken from ProgramA that register itself for Message of type MessageA. Each program has a main loop that accepts input string from the user, and each string should begin with the char a b or c to decide what type of message we want to send. You do not need anything else, everything is ready to run (remember that [in MSMQ on windows you need to run the MassTransitRuntimeService](http://www.codewrecks.com/blog/index.php/2012/08/03/quick-start-on-mass-transit-and-msmq-on-windows/) that takes care of dispatching. If you fire all three programs everything works.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image9.png)
 
  ***Figure 1***: *MassTransit in action*
 
@@ -41,7 +41,7 @@ Each program can send message to each other but the key point is that **you are 
 
 This operation is needed because you cannot start two programs that listen in the same MSMQ; if you do this, message will not be dispatched anymore because multiple listener on the same MSMQ is not permitted. In the above snippet I simply configure a copied version of ProgramB to use a Programb2 queue, then I start ProgramB from the other folder and when I send MessageB messages from other programs they will get dispatched to both instance of ProgramB, as visible in Figure2.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image10.png)
 
  ***Figure 2***: *The first console is ProgramC that send two MessageB messages, the second one is sent when the other instance of ProgramB is run, and it gets dispatched to both the instances.*
 

@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
  **Many VSTS build and deploy tasks are based on Winrm to operate on a remote machine** , one of the most common is the “Deploy Test Agent on” that will install a test agent on a remote machine.
 
-[![This image shows the deploy test agent task on a standard build](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-14.png "Deploy test agent task ")](http://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-14.png)
+[![This image shows the deploy test agent task on a standard build](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image_thumb-14.png "Deploy test agent task ")](https://www.codewrecks.com/blog/wp-content/uploads/2017/05/image-14.png)
 
  ***Figure 1***: *Task to install a TestAgent on a different machine*
 
@@ -38,7 +38,7 @@ In my situation here are the set of commands I’ve run to have Winrs command to
 
 After these three steps I was able to execute the WinRs command. Now I queued another build to verify if the task is now working ok.
 
-[![The image shows the output of the step &quot;Deploy test agent&quot; and it shows that now the build agent was capable of using winrm to connect to target machine.](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb.png "Deploy test agent task is ok")](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image.png)
+[![The image shows the output of the step &quot;Deploy test agent&quot; and it shows that now the build agent was capable of using winrm to connect to target machine.](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb.png "Deploy test agent task is ok")](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image.png)
 
  ***Figure 2***: *Deploy test agent task now runs without error*
 

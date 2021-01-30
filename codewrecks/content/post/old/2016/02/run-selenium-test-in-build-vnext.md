@@ -34,7 +34,7 @@ switch (browser.ToLower())
 
 Using Phantomjs is just a matter of creating a PhantomJSDriver with Selenium WebDriver test and the game is done. Now add “phantomjs” to test config file and you should be able to run the test.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image11.png)
 
  ***Figure 1***: *Selenium test that uses Phantomjs headless browser to run test.*
 
@@ -82,19 +82,19 @@ public class BrowserList : ValueSourceAttribute
 
 The only change is that the attribute searches an envorinment variable called SELENIUM\_BROWSERSTOTEST to grab list of browser. If the variable is not present, it use json configuration file as showed in previous article. Now we can choose browser list directly from build definition.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image12.png)
 
  ***Figure 2***: *Specifying browser list with Build Variables.*
 
 Variables can be specified a Queue Time, this allow the user to change browserslist event when queueing a new build. Here is the result of a run
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image13.png)
 
  ***Figure 3***: *Outcome of the test using browsers list from build variable*
 
 Previous build outcome of  **Figure 3** is obtained  **running the test with an agent that does not run as a service, because it should be able to launch browser and access UI**. If I queue the same build with Hosted Agent, or with an Agent that is running as a service, here is the result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image14.png)
 
  ***Figure 4***: *Failure running selenium tests*
 
@@ -152,7 +152,7 @@ A couple of modification are worth of notice, the first one is that initializati
 
 To verify that everything works, I changed configuration of my Visual Studio Agent to run as a service instead that running interactively and queued a new build. Here is the result of the Tests.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/02/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/02/image15.png)
 
  ***Figure 5***: *Now only phantomjs test is run because agent is running as a service*
 

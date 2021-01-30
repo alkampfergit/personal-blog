@@ -18,19 +18,19 @@ You should clearly use the correct restore tool based from the origin of the bac
 
  **But how can you understand what was the tool that generates the backup** if someone told you something like: in share [\\backupXX\TFS\](//\\backupXX\TFS) you will find TFS Backup and you should use them to test an upgrade to new version? The answer is really simple, backup produced by the TfsBackup.exe tool are simple Sql Server backup, so you will find a bak file for each database.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image.png)
 
  ***Figure 2***: *Typical Tfs backup output of TfsBackup.exe*
 
 A really different output is produced by Scheduled Backup.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image1.png)
 
  ***Figure 3***: *Backup folder of Scheduled Backups*
 
 First of all all file have a suffix that identify the backup set, then you have the Xml File called BackupSets that identify the various Backup Sets. This kind of backup should be restored only with the Scheduled Backup Restore option, present in the Administration Console.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/07/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image2.png)
 
  ***Figure 4***: *Restore database procedure to restore backups taken from a Scheduled Backup procedure*
 

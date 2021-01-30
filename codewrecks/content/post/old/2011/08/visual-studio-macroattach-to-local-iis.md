@@ -8,7 +8,7 @@ categories: [Visual Studio]
 ---
 As I [stated previously](http://www.codewrecks.com/blog/index.php/2011/04/07/visual-studio-macro-to-the-rescue/), the capability of Visual Studio to use Macro is probably one of the less known feature and one of the coolest. Thanks to macro you can automate standard task you do in VS to speed-up your everyday coding experience. Since I work heavily with WCF services hosted in IIS and Web Application, quite often I need to attach the debugger to my local IIS instance.
 
-[![Untitled](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled_thumb1.jpg "Untitled")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled1.jpg)
+[![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled_thumb1.jpg "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled1.jpg)
 
 This requires me to navigate to Debug-&gt;Attach to process, show the list of processes, find the w3wp.exe process, attach, confirm the dialog, bla bla bla. It wouldnâ€™t be beautiful to attach to local IIS with the simple combination of keys? The solution is really simple, just select Tools-&gt;Macros-&gt;Record temporary macro, then attach to local IIS and stop macro recording. You will end up with a Macro that you can simply modify and add to some standard Macro module.
 
@@ -32,7 +32,7 @@ End Sub
 
 As you can verify, attaching to a process is really a simple task, now I can simply customize the keyboard binding using Tools-&gt;Customize.
 
-[![sdfasdfasdfasdf](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/sdfasdfasdfasdf_thumb.jpg "sdfasdfasdfasdf")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/sdfasdfasdfasdf.jpg)
+[![sdfasdfasdfasdf](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/sdfasdfasdfasdf_thumb.jpg "sdfasdfasdfasdf")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/sdfasdfasdfasdf.jpg)
 
  ***Figure 1***: *Just filter for macros, identify your new macro and assign some key binding like CTRL+SHIFT+ALT+I*
 

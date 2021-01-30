@@ -38,19 +38,19 @@ Label1.Text = "hf1=" & hf1.Value & "<br /> hf2=" & hf2.Value
 End Sub
 {{< / highlight >}}
 
-The code set values for all controls in the pageLoad, only at the first call, while in PreRender I dump the content of the hiddenfield in a label to have a visual clue of what is happening. This is the page when it is loaded for the first time.[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image11.png)
+The code set values for all controls in the pageLoad, only at the first call, while in PreRender I dump the content of the hiddenfield in a label to have a visual clue of what is happening. This is the page when it is loaded for the first time.[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image11.png)
 
 Now I cause a postback pressing the Button, and the output become
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image12.png)
 
 While the two texboxes mantain the value that I set by code in pageLoad, the  **hidden field inside the disabled panel has lost his value**. The key to understand this behavior is to have a first look with fiddler at the request issued when the button is pressed.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image13.png)
 
 Clearly the browser send the content of the HTML Web Form and *it sends only the value for enabled control*, but how can the disabled textbox retain its value if the value is not passed with Request.Form parameters? The answer is: ViewState. Thanks to [Web Developement Helper](http://projects.nikhilk.net/WebDevHelper) I can inspect viewstate
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image14.png)
 
 As you can verify the content of the Disabled textbox is placed in viewstate, so it can be restored during a postback, but for the hiddenField, the value is not present in the viewState so the value is lost between postback because it is disabled.
 
@@ -66,7 +66,7 @@ End Sub
 
 the asp.net engine need to know if the user changed the value of the textbox to raise the event and the situation is really different. If you take a look at viewstate
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image15.png)
 
 value of Text property of the first texbox is now in the viewstate because asp.net engine needs it to understand when to raise textboxchanged event. This bring me the solution for hiddenField, because I can simply handle the event.
 
@@ -79,7 +79,7 @@ End Sub
 
 Now asp.net insert the value of the Value property of HiddenField in the viewstate, because he needs to manage the ValueChanged event and the value of the HiddenField is persisted even if it is contained in a disabled Panel.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image16.png)
 
 Alk.
 

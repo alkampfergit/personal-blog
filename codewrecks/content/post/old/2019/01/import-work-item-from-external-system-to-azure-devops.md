@@ -39,7 +39,7 @@ public class MigrationItem
 
 To make this code run you need to do a couple of thing, first of all you need to create a customized process from one of the three base process and add at least one text field to store the original id.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-6.png)
 
  ***Figure 1***: *Adding a custom field to store the original id of  imported work item*
 
@@ -47,13 +47,13 @@ To make this code run you need to do a couple of thing, first of all you need to
 
 > Whenever you import or move data between systems, at least you need to have a unique identifier of data in the original system to be stored into the imported Work Item.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-7.png)
 
  ***Figure 2***: *Custom original id on a imported Work Item.*
 
 As you can see in  **Figure 2** this information is readonly, because it is used only by the importer and should never be changed by a Human, you can obtain this with a simple Work Item rule.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-8.png)
 
  ***Figure 3***: *Make OriginalId field Readonly*
 
@@ -225,13 +225,13 @@ var importResult = importer.ImportWorkItemAsync(mi).Result;
 
 Launching test program I view this output:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-9.png)
 
  ***Figure 4***: *Export output.*
 
 This is not the first run, so the logs informed me that an item bound to that original Id was already created and it was deleted, then informed me that a new Work Item is created and then updated for two times.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/01/image-10.png)
 
  ***Figure 2***: *Work Item was correctly created in Azure Devops Collection*
 

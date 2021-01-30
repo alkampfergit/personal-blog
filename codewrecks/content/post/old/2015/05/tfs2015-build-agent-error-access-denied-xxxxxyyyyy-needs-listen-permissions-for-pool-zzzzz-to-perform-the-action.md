@@ -10,13 +10,13 @@ Tfs 2015 introduces a completely new and redesigned build system and one of the 
 
 If you configure a new agent you can check that everything is ok in TFS Control panel, in the new *Agent pools* tab. The new agent should be listed and it is Red if not active, Green if up and running.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image.png)
 
  ***Figure 1***: *Management of Pool and Agent in TFS Configuration*
 
 If the agent is red even if you launched the agent, you should check logs in the \_diag folder.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image1.png)
 
  ***Figure 2***: *Logs are placed in \_diag folder*
 
@@ -26,13 +26,13 @@ You should be able to understand and fix errors looking at the log. If you run t
 
 In this situation the user Administrator is in the TFS Administrator Group and it should have any permission, but new Build System is slightly different.  **The user that runs the agent, must be part of the Agent Pool Service Account** , or it will not be able to run the agent
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image2.png)
 
  ***Figure 3***: *Permissions for Agent Pools*
 
 Simply adding the user to the AgentPoolService account should fix authorization problem
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/05/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/05/image3.png)
 
  ***Figure 4***: *Agent is up and running.*
 

@@ -8,7 +8,7 @@ categories: [Tools and library]
 ---
 Creating a build that is capable of perform a SonarQube analysis on a VSTS /  TFS is a really simple task, thanks to the two tasks that are present out-of-the box.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-9.png)
 
  ***Figure 1***: *Build that uses Sonarqube tasks to perform analysis*
 
@@ -20,7 +20,7 @@ Sometimes you get really discouraged, because the number of issue is really high
 
 To diagnostic the problem, simply login to the project, then go to Code view (something like [http://build:9000/code/?id=projectName](http://build:9000/code/?id=projectName)), then you will see a summary of all the bugs, but unfortunately you cannot order for the number of the bug, so Just scroll down to see the part of the code with the most errors.
 
-[![SNAGHTML139609](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML139609_thumb.png "SNAGHTML139609")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML139609.png)
+[![SNAGHTML139609](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML139609_thumb.png "SNAGHTML139609")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML139609.png)
 
  ***Figure 2***: *185 bugs are located in scripts folder*
 
@@ -28,7 +28,7 @@ In this situation, we have 185 bugs signaled by the javascript analyzer under th
 
  **If you do not use npm it is quite normal to have third party javascript code in your source code and if you are using SonarQube you absolutely need to configure it to exclude that directories.** Just go to the administration page of the project and in the Analysis Scope you find the Source File Exclusions section that allows you to exclude some directories from the analysis.
 
-[![SNAGHTML16d611](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML16d611_thumb.png "SNAGHTML16d611")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML16d611.png)
+[![SNAGHTML16d611](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML16d611_thumb.png "SNAGHTML16d611")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/SNAGHTML16d611.png)
 
  ***Figure 3***: *Exclude folder for analysis*
 

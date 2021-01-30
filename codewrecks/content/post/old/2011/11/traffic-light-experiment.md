@@ -14,7 +14,7 @@ A more OOP approach will *encapsulate* the state of the TrafficLight, *protectin
 
 Actually in this super trivial example I’ve found a couple of Domain Events.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/11/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/11/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/11/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/11/image1.png)
 
 One aspect I do not like of these two events, is that they have a direct reference to the TrafficLight object that raised the event, but I’ll have time to refactor in the future, for now I’m interested only in having a very first embrional working prototype.
 
@@ -31,11 +31,11 @@ These are probably the only real business rules behind this domain, then we have
 
 These three points are much more simpler rules because they are used only to initialize the system, and there is no big logic in them. The first rule states that *I need to ask other TL if I can become Green*, this means that I need some form of channel to permits object communication, so I created the static class CommunicationBus (really similar in code to the DomainEvents dispatcher class).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/11/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/11/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/11/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/11/image2.png)
 
 This is the Class Diagram of the two Aggregate Roots that I’ve in this domain.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/11/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/11/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/11/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/11/image3.png)
 
 All properties have private setter, because no one is allowed to change the status from the outside. To easy the testing and to simply the concept of time that passes, I’ve created a Tick method in the CrossRoad to signal the time that passes from the outside world. The logic behind the tick function is really trivial.
 

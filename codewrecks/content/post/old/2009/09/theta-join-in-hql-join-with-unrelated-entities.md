@@ -8,7 +8,7 @@ categories: [Nhibernate]
 ---
 NHibernate HQL language is really powerful, and work in many scenario. Suppose you have those two classes.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image.png)
 
 Action is an object capable of executing something, while ActionLog stores the result of the execution of an action. There is no direct relation between the two, so in ActionLog we have not a reference to Action, but a simple field called ActionId that stores the id of the action. The reason for this choice is that Action objects can be deleted (and there is a special form of action called SpawnedAction that gets created, executed, and finally phisically deleted from the table); ActionLog must be retained even for deleted action, so we prefer not to store a direct relation.
 
@@ -25,7 +25,7 @@ As you can see i select L and A from ActionLog and Action, then in where conditi
 
 The result of this query is an arraylist, where each element is an array of objects, an instance of ActionLog and the corresponding instance of Action. Then I proceed creating this object
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image1.png)
 
 the ActionErrorLog is a Dto that returns to the caller a couple consisting of a Log and corresponding action. Retrieving a list of ActionErrorLog is really simple.
 

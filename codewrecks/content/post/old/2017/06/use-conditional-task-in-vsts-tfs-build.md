@@ -12,13 +12,13 @@ When you start using Continuous Integration extensively,  **some builds become c
 
  **The new build system is really far superior to old XAML build, but having a simple sequence of tasks can be too simplistic for complex scenario.** The solution is really really simple, just use conditional execution.
 
-[![In the control options section of the task configuration you can specify that the task should be run only if a custom condition is met.](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-5.png "Conditional execution condition in action")](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-5.png)
+[![In the control options section of the task configuration you can specify that the task should be run only if a custom condition is met.](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-5.png "Conditional execution condition in action")](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-5.png)
 
  ***Figure 1***: *Conditional execution condition in action*
 
 In the Control Option section of any task configuration, you have various options to decide when the task should run.
 
-[![List of options that are described in the text of the post.](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-6.png "Options available to decide when the task is run")](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-6.png)
+[![List of options that are described in the text of the post.](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-6.png "Options available to decide when the task is run")](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-6.png)
 
  ***Figure 2***: *Options available to decide when the task is run*
 

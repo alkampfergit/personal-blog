@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 If you are using the TfsPreview (Tfs on azure), you can notice that the login page is drastically changed.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/image5.png)
 
 Even if this seems only a simple and stupid change, it shows one of the advantage of using TfsService over having it on-premise: the automatic update process made periodically by Microsoft. The change in the login page is only a fancy change of an update that was deployed last week on TFS Service, this actually means two distinct advantage:
 

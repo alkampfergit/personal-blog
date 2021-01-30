@@ -18,7 +18,7 @@ Assuming that the mainline contains only stable code, because all feature branch
 
 With TFS Build you can achieve this result quite simply, first of all configure a build with a trigger for each push, then in the Source Settings specify that  **this build should be triggered whenever any branch that starts with feat got any push**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/11/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/11/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/11/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/11/image3.png)
 
  ***Figure 1***: *Source code configuration, only build when a branch that starts with feat got a code increment*
 
@@ -82,7 +82,7 @@ This is really a first tentative in this direction, there probably better way to
 
 Now even if your branch compile correctly and every test is green, after you push to TFS your Build Server will try to merge and run the build, if the branch does not automatically merge with master the build will partially fail and you got this:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/11/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/11/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/11/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/11/image4.png)
 
  ***Figure 2***: *Code does not automatically merge after the latest push.*
 
@@ -90,7 +90,7 @@ This is a signal that is time to do a forward integration from mainline to your 
 
 If the merge is successfully it does not mean that the code is in good health. Suppose you rename a method in your branch, but in the mainline another one has pushed an increment with another class that uses that method. This is the perfect example of code that gave no merge conflicts, but it does not even compile. Since the script actually does the merge before the build, the rest of the build works on the code result of the merge, now the build fails.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/11/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/11/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/11/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/11/image5.png)
 
  ***Figure 3***: *Merge was successfully, but the result of the merge does not compile*
 

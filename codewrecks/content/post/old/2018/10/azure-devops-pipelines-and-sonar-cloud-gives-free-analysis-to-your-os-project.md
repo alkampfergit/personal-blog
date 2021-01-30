@@ -12,7 +12,7 @@ Once you create a default build that compile and run tests, it would be super ni
 
 > Once you have free YAML Azure DevOps pipeline, it makes sense to enable analysis with SonarCloud
 
-First of all you need to register to SonarCloud, create a project, setup key and create a token to access the account.  **Once everything is in place you can simply modify YAML build to perform the analysis.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-13.png)
+First of all you need to register to SonarCloud, create a project, setup key and create a token to access the account.  **Once everything is in place you can simply modify YAML build to perform the analysis.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-13.png)
 
  ***Figure 1***: *Task to start sonar cloud analysis.*
 
@@ -91,7 +91,7 @@ A couple of suggestion are useful at this point: first of all you can encounter 
 
 If everything is green you should start seeing analysis data on SonarCloud UI.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-14.png)
 
  ***Figure 2***: *Analysis in SonarCloud after a successful master build*
 
@@ -99,7 +99,7 @@ If everything is green you should start seeing analysis data on SonarCloud UI.
 
 A nice finishing touch is to grab the badge link for SonarCloud analysis and add it to your github readme.md.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image_thumb-15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/10/image-15.png)
 
  ***Figure 3***: *SonarCloud badge added to readme.md of the project.*
 

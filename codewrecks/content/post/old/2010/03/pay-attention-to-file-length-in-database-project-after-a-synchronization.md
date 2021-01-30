@@ -24,7 +24,7 @@ the SIZE parameter is really huge, and this can slow down deploy process during 
 
 You can always avoiding to update file definition (because they rarely change) to avoid this problem
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/03/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/03/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/03/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/03/image17.png)
 
 alk.
 

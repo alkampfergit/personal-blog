@@ -16,7 +16,7 @@ Moving to a different Process Template is mainly a matter of creating mapping be
 
 You can start with a wildcard mapping, then  **start the migration and during Analysis Phase the Integration Platform will generate Conflicts that shows you what is wrong**. You can solve the problem and update mapping until everything run smootly. In  **Figure 1** you can the most common error, a field that is present in source Process Template is not present in destination Process Template. In that picture you can verify that the Microsoft.VSTS.Common.AcceptanceCriteria is missing in CMMI Project.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image2.png)
 
  ***Figure 1***: *Conflicts occours because not all used fields are mapped in the configuration.*
 
@@ -24,13 +24,13 @@ Be sure to refer to the [Work Item Field Reference](https://msdn.microsoft.com/e
 
 You can also choose to update Mapping ignoring the field, this choose will ignore content of that field that will not be migrated. You  **can also do a manual update XML mapping configuration, if the resolution requires complex modification of the mapping**.
 
-[![Complex resolution conflicts](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb3.png "To resolve complex conflict you can also edit XML mapping configuration")](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image3.png)
+[![Complex resolution conflicts](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb3.png "To resolve complex conflict you can also edit XML mapping configuration")](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image3.png)
 
  ***Figure 2***: *Update configuration if you need to do some complex resolution*
 
 At the end of the migration you should double check what happened, because bypassing Work Item rules usually lead to Work Items in unconsistent state. As an example, in Agile Process, a Task can have *new*status, while this is invalid in CMMI.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image4.png)
 
  ***Figure 3***: *Some of migrated Work Items can have invalid state because we decided to bypass validation rules.*
 
@@ -80,13 +80,13 @@ The last useful technique is  **the ability to compose destination value using m
 
 Thanks to this configuration, I can map multiple source fields in a single fields. In  **Figure 4** is depicted a User Story that has both Description and Acceptance Criteria populated.
 
-[![Acceptance criteria and Description](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/SNAGHTML8d5b8f_thumb.png "A User Story Work Item that has both Details and Acceptance Criteria")](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/SNAGHTML8d5b8f.png)
+[![Acceptance criteria and Description](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/SNAGHTML8d5b8f_thumb.png "A User Story Work Item that has both Details and Acceptance Criteria")](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/SNAGHTML8d5b8f.png)
 
  ***Figure 4***: *A User Story Work Item that has both Details and Acceptance Criteria*
 
 Thanks to [FieldAggregationGroup](http://blogs.msdn.com/b/willy-peter_schaub/archive/2010/01/06/tfs-integration-platform-aggregated-fields-question-answer-17.aspx) I’m able to compose content of these two field in a single field of migrated work item. Here is corresponding Work Item on Destination Team Project after migration.
 
-[![Result  of composing two source fields in a single destination field](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb5.png "Both Description and AcceptanceCriteria were moved from source Work Item into the Description Field of Requirements work item")](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image5.png)
+[![Result  of composing two source fields in a single destination field](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb5.png "Both Description and AcceptanceCriteria were moved from source Work Item into the Description Field of Requirements work item")](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image5.png)
 
  ***Figure 5***: *Result  of composing two source fields in a single destination field*
 

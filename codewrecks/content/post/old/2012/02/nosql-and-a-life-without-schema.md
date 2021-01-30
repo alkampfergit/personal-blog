@@ -51,7 +51,7 @@ I liked very much this approach because
 
 What I got with this simple snippet of code? Just browse with a standard browser to the address of the server and you should see the content of the database.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image.png)
 
  ***Figure 1***: *Content of the database after insertion of a simple object*
 

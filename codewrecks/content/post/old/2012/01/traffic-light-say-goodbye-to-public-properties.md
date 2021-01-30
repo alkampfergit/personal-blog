@@ -23,7 +23,7 @@ Whenever you ask yourself “I need to search in code all part of the software t
 
 Then all these objects are bounded together by that external logic and you loose encapsulation and you are not fully OOP. Based on this considerations I took my traffic light sample and decide to try to remove all getters and thanks to DOMAIN EVENTS it was really simple, more than I tought. Here is my new domain.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image13.png)
 
 Even if this is a trivial domain, I appreciate a lot that I ended having a couple of DOMAIN EVENTS composed only by readonly properties (events are in the past and are immutable) and a couple of Domain Classes that contains only methods. Removing all properties actually does not required me to modify any test, and actually I found that each time I found some code that use a getter, that code looked really better after the access to the getter is removed.
 

@@ -41,7 +41,7 @@ In MSDN official documentation there is a nice page that explain  **how to publi
 
 First step is declaring a bunch of Build Properties in the build, to store all needed values during the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image6.png)
 
  ***Figure 1***: *Variables to add for vNext build*
 
@@ -89,7 +89,7 @@ Previous MSBuild command line produces all files needed for click-once publishin
 
 This procedure was fully described in a previous post that deal with [managing artifacts in a vNext Build](http://www.codewrecks.com/blog/index.php/2015/06/30/manage-artifacts-with-tfs-build-vnext/). I always prefer including a script to copy all files that needs to be published as result for the build inside staging directory instead of relying on publishing every file inside bin folders.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image7.png)
 
  ***Figure 2***: *Call a PowerShell script to copy all relevant files on Staging Directory*
 
@@ -101,7 +101,7 @@ At the end of this step the all click-once related files are placed inside a sub
 
 The easiest solution to copy all click-once related file on a public accessible location is creating a public Azure Blob storage, because you already have an action in build vNext to accomplish this task.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image8.png)
 
  ***Figure 3***: *Azure Blob File copy task can copy files easily in target Blob Storage*
 
@@ -115,7 +115,7 @@ At the end of the build you have your application published on a url like this o
 
 All the scripts used to create this articles are in project [https://github.com/stefanocastriotta/MDbGui.Net/tree/develop/Tools/BuildScripts](https://github.com/stefanocastriotta/MDbGui.Net/tree/develop/Tools/BuildScripts "https://github.com/stefanocastriotta/MDbGui.Net/tree/develop/Tools/BuildScripts") you can download them and use in your project if you want. Thanks to the ability to change build number here is the result
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/12/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/12/image9.png)
 
  ***Figure 4***: *you can easily find the version number in build number.*
 

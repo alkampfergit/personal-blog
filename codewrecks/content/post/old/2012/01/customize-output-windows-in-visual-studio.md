@@ -10,13 +10,13 @@ I really like WPF for showing directly in the Visual Studio Output folder all bi
 
 First of all create a new Visual Studio Package project
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image.png)
 
  ***Figure 1***: *Creating a Visual Studio Package*
 
 Now you should add a couple of classes to the project that actually does the coloring for you.
 
-[![SNAGHTML2180854](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/SNAGHTML2180854_thumb.png "SNAGHTML2180854")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/SNAGHTML2180854.png)
+[![SNAGHTML2180854](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/SNAGHTML2180854_thumb.png "SNAGHTML2180854")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/SNAGHTML2180854.png)
 
  ***Figure 2***: *The CustomClassifierProvider will provide the entry point for modifying aspect of output window*
 
@@ -24,11 +24,11 @@ The OutputClassifierProvider implements the [IClassifierProvider](http://msdn.mi
 
 Then you need to go to the source.extension.vsixmanifest file and add the project as content for MEF exporting like shown in Figure 3.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image1.png)
 
  ***Figure 3***: *Remember to add the whole assembly as MEF Component*
 
-To have this, simply press the “Add content” button and you can specify everything in the windows shown in  ***Figure 4***: [![SNAGHTML221549f](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/SNAGHTML221549f_thumb.png "SNAGHTML221549f")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/SNAGHTML221549f.png)
+To have this, simply press the “Add content” button and you can specify everything in the windows shown in  ***Figure 4***: [![SNAGHTML221549f](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/SNAGHTML221549f_thumb.png "SNAGHTML221549f")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/SNAGHTML221549f.png)
 
  ***Figure 4***: *Adding the project as MEF Component.*
 
@@ -111,7 +111,7 @@ this.IsBold = true;
 
 As you can see it is based on a simple static ClassificationTypeDefinition property then a class that inherit from ClassificationFormatDefinition and the game is done. Now you can press F5, start Visual Studio in Experimental Hive, open a wpf project with binding errors, run and look at you new colored output folder.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/01/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/01/image2.png)
 
  ***Figure 5***: *Binding errors are now hilited in the output folder.*
 

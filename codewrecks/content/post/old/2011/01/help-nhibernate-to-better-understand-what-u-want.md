@@ -8,7 +8,7 @@ categories: [Nhibernate]
 ---
 Today I have to issue a quite complex condition in HQL, I have this piece of object model
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image5.png)
 
 The main problem is the composite Id, I need to issue a query on an object that actually has a property called LinkId (an id of the analyzedLink class) but no relation with AnalyzedLink, and I want to select only those objects that are correlated to a specific SearchUnitId thanks to the above object model.
 
@@ -42,7 +42,7 @@ and L.Id.SearchUnit.Id = :suid)
 
 I simply told to NH to select only the Id of the LinkResult object, now the query works and generated SQL is correct (thanks to [NHProf](http://nhprof.com/) looking at generated sql is a breeze)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image6.png)
 
 As usual, NHibernate makes complex query really simple, because you can simply express conditions navigating the object model, and NH take cares of all the rest.
 

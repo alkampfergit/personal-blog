@@ -12,7 +12,7 @@ First of all you need to setup a build with ant or maven, and you need to instal
 
 First of all you need to create a buildfile with ant for your java project, Iâ€™m not going to explain you how to do this, but if you want to experiment, you can read [this guide](http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html) that explain how to create a â€œhelloWorldâ€ build with ant. Once you have a valid ant build file (you can simply copy that one in the tutorial) you can simply go to eclipse, go into TFS perspective and you should view the â€œbuildsâ€ node.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image5.png)
 
  ***Figure 1***: *Builds node in Eclipse.*
 
@@ -20,11 +20,11 @@ You can simply right-click and create a new build definition, just follow the wi
 
 As simple note, since we can have multiple agents on multiple build machines, and since java JDK and ANT should be installed and correctly configured on the build agent machine to successfully execute the build, it is better to use Agent Tags. Thanks to Agent tag we can configure full ANT environment only on some agents, not all of them.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image.png)
 
  **Figure 2** *: How to setup a Ant tag to an agent to indicate that this Agent is capable of issuing Ant Builds.*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image1.png)
 
  **Figure 3** : *How to ask to build system to execute this build only on an agent that has the Ant tag.*
 
@@ -32,7 +32,7 @@ Now that we instruct the build controller to run this build only on an Agent mac
 
 A gated Check-in is a special build that actually compile latest source adding a shelveset and if the build succeeded, commits the changes in the shelveset on behalf of the user. This is used to prevent people to do check-in that will break the build, in fact whenever a user want to do a check-in, such a windows appears.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image2.png)
 
  **Figure 4** :*the Gated Check In windows when you try to check in some code*
 
@@ -40,13 +40,13 @@ this means that your changes will be stored in a specific Shelveset, then the bu
 
 Suppose your code does not compile, after a little bit you got this message:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image3.png)
 
  ***Figure 5***: *The gated check-in rejected your code changes, because they does not build correctly.*
 
 Now you need to unshelve, fix your errors and try to check-in again the code. When everything went good, you will receive a notification that your check-in was accepted.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image4.png)
 
  ***Figure 7***: *Check-in was accepted, because the build went ok.*
 

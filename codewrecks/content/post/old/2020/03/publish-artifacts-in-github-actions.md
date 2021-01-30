@@ -35,13 +35,13 @@ Here it is a small piece of GH action where I publish two distinct.NET core proj
 
 {{< / highlight >}}
 
-As you can see I can use dotnet publish commanline to simple publish software written in.NET core, then  **using** [**actions/upload-artifact@v1**](mailto:actions/upload-artifact@v1) **I can publish artifact to the action result.** [![SNAGHTML4b1e49](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/SNAGHTML4b1e49_thumb.png "SNAGHTML4b1e49")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/SNAGHTML4b1e49.png)
+As you can see I can use dotnet publish commanline to simple publish software written in.NET core, then  **using** [**actions/upload-artifact@v1**](mailto:actions/upload-artifact@v1) **I can publish artifact to the action result.** [![SNAGHTML4b1e49](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/SNAGHTML4b1e49_thumb.png "SNAGHTML4b1e49")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/SNAGHTML4b1e49.png)
 
  ***Figure 1***: *Artifacts attached to execution actions, simply downloadable from the UI.*
 
 With a simple task I can simply upload folders with build/publish result as execution artifacts, and I can simply download the result from the web interface. Artifacts are downloadable also from action run summary page.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-10.png)
 
  ***Figure 2***: *Artifacts of the build in the summary page of action run.*
 

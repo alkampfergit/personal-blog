@@ -16,7 +16,7 @@ Another key factor about UI is [usability](http://www.amazon.com/Think-Common-Se
 
 For all those reason, probably it is possible to approach a problem starting with the UI, maybe side by side with Use Case approach. If you focus on the UI you need a tool that permits you to rapidly prototype a sketch of the interface, so the customer can immediately have a visual impact on the aspect of the final application. In this scenario [Balsamiq](http://www.balsamiq.com/) can save your life. Consider this mockup as example, it took me no more than 10 minutes to sketch, and it is one of the first time I use balsamiq
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/07/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image8.png)
 
 This simple sketch can be immediately shown to the customer/user for review and validation. Moreover even if this is only a sketch, it gives immediately a clue on some technical difficulties that can arise. As an example we need Google Map integration, and we need to show various graphic artifacts like icons depending on properties of object. We also need internal link, because you can see a link that states â€œGo to Orderâ€. We must show picture, use various tab like controls that shows tabs on top or on left, etc.
 

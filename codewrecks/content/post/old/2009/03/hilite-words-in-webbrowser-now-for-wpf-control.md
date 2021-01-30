@@ -58,7 +58,7 @@ In line 1 I grab the HEAD of the document, then I do a foreach (the nodes collec
 
 To do a simple test I navigate on [www.nablasoft.com](http://www.nablasoft.com) and since I asked script to hilite words: "Passione" and "Ragazzi", here is the result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb2.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb2.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image2.png)
 
 YATTA! the text gets hilited and everything works ok :).
 

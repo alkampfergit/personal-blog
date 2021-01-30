@@ -12,7 +12,7 @@ Sometimes this process just don’t work. Recently I’have a customer that had 
 
 Visual Studio has a nice option to  **cache symbols in local directory** to avoid downloading each time from the server. Here are my usual settings.
 
-[![Visual Studio options to use local folder as a symbol cache](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb18.png "Visual Studio Symbols settings")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image18.png)
+[![Visual Studio options to use local folder as a symbol cache](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb18.png "Visual Studio Symbols settings")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image18.png)
 
  ***Figure 1***: *Visual Studio symbols settings*
 

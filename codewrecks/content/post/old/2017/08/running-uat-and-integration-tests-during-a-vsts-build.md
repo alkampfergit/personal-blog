@@ -22,7 +22,7 @@ When it is time to create a solid set of such kind of tests, having them to run 
 
 Creating a build to run everything in a remote machine can be done with VSTS / TFS, and here is an example.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-2.png)
 
  ***Figure 1***: *A complete build to run integration and UAT tests.*
 

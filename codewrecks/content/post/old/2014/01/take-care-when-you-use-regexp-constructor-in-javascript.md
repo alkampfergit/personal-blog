@@ -17,7 +17,7 @@ var noMatchRegex = new RegExp("[\r\n\s;,$]+");
 
 This regex basically should match a carriage return or a space or ; char, etc, but it appears not working sometimes. After a quick test I confirmed that the problem happens when I have string that contains the character ‘s’. This sounds me strange, but a quick look in Chrome Watch Expression gave me this results
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image3.png)
 
  ***Figure 1***: *Regex view from Watch Expression of chrome.*
 
@@ -32,7 +32,7 @@ var noMatchRegex = new RegExp("[\\r\\n\\s;,$]+");
 
 *Escaping the character \ produces the expected result*, as you can verify from Watch Expression
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/01/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/01/image4.png)
 
  ***Figure 2***: *Correct declaration of the regex*
 

@@ -20,7 +20,7 @@ We have a web application written in asp.net and we experienced really strange p
 
 Now simply run this page with fiddler opened, you should see a simple broken image and a standard anchor tag. Now click on the link and look at what happened with fiddler.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image.png)
 
 Internet explorer issue the request to [www.microsoft.com](http://www.microsoft.com), but immediately after he request the original asp.ner page in POST. The order of the two requests varies, sometimes the test.aspx POST is done before requesting the link, and the user navigates to [www.microsoft.com](http://www.microsoft.com), but if the order is reversed (as appears in the above image) the user remains on the original page wondering on what is happening.
 

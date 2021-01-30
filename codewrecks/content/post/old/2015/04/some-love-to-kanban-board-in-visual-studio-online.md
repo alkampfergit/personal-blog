@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 In some of recent updates on Visual Studio Online the team  **put some love into the Kanban Board**. In January they enable [editing tiles on the Board](https://www.visualstudio.com/news/2015-jan-27-vso). In february we can [Adding and editing](https://www.visualstudio.com/news/2015-feb-18-vso) some fields directly from the Board, as well as the ability to split column.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/04/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/04/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/04/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/04/image1.png)
 
  ***Figure 1***: *Split columns in Kanban Board.*
 

@@ -12,6 +12,6 @@ The obvious solution is, take the release branch, change the string, compile and
 
 This saved me the need to redeploy the entire application (uploading stuff via ftp, etc etc), and I was able to do the hotfix directly in production server with a simple remote desktop.
 
-This is probably the dirtiest patch Iâ€™ve made in years ![Smile](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/wlEmoticon-smile.png)
+This is probably the dirtiest patch Iâ€™ve made in years ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/wlEmoticon-smile.png)
 
 alk.

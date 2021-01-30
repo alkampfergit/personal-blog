@@ -34,13 +34,13 @@ $result | Get-Member
 
 {{< / highlight >}}
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image.png)
 
  **Figure 1** :*result of the Get-Member shows all properties of returned object*
 
 In this situation we can see the id of the Work Item and the Rev property, but probably all the data we need is inside the fields property. If we simply Write-Output the $result.fields we got the full list of all the fields of the returned Work Item
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image1.png)
 
  ***Figure 2***: *content of fields property of returned Work Item*
 
@@ -56,7 +56,7 @@ Write-Output "Work Item was closed by: $closedBy"
 
 Thanks to PowerShell ISE you can also use intellisense to have all the properties convienently listed.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image2.png)
 
  ***Figure 3***: *Intellisense on returned object*
 

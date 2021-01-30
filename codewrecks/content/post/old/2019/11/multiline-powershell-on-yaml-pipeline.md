@@ -14,13 +14,13 @@ Since using standard graphical editor to put a PowerShell task and then grab the
 
 This error happens when you put multiline text inside a YAML file with bad indentation of a multiline string.  **Inline PowerShell task comes really in hand but you need to do special attention because “View YAML” button in the UI sometimes generates bad YAML.** In  **Figure 1** You can verify what happens when I copy and paste a YAML task using the “View YAML” button of standard graphical editor and paste into a YAML build.  **In this situation the editor immediately shows me that the syntax is wrong.** The real problem here is that, using Visual Studio Code with Azure Pipelines extension did not catch the error, and you have a failing build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/11/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/11/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/11/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/11/image-8.png)
 
  ***Figure 1***: *Wrong YAML syntax due to multiline PowerShell command line*
 
 It turns out that the View YAML button of classic graphical editor misses an extra tab needed to the content of PowerShell, the above task should be fixed in this way:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/11/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/11/image-9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/11/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/11/image-9.png)
 
  ***Figure 2***: *Correct syntax to include a multiline script*
 

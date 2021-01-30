@@ -10,7 +10,7 @@ Iâ€™ve blogged about this supersimple but amazing feature of NDepend some t
 
 Iâ€™ve deployed an application with click-once, but when I try to install it â€¦ I got this error
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image2.png)
 
  ***Figure 1***: *The error during the installation*
 
@@ -18,7 +18,7 @@ the error is strange, the application requires an assembly with a wrong version,
 
 The answer is: fire NDepend and let him find all error in references.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image3.png)
 
  ***Figure 2***: *With NDepend finding the project with wrong reference is outrageously simple*
 

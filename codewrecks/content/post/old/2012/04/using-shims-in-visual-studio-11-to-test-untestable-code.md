@@ -38,7 +38,7 @@ This is a simple and stupid example class that is used to execute an action no m
 
 This functionality is derived from [Pex and Moles](http://research.microsoft.com/en-us/projects/pex/) project, but now it is fully integrated in VS11, with small differences. First of all you need to right click the reference to the system assembly and choose to  **Add Fakes Assembly;** this creates a special folder called Fakes, with a single file called system.fakes.
 
-[![26-04-2012 19-40-41](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/26-04-2012-19-40-41_thumb.png "26-04-2012 19-40-41")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/26-04-2012-19-40-412.png)
+[![26-04-2012 19-40-41](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/26-04-2012-19-40-41_thumb.png "26-04-2012 19-40-41")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/26-04-2012-19-40-412.png)
 
  ***Figure 1***: *Adding a fake assembly for the System assembly.*
 

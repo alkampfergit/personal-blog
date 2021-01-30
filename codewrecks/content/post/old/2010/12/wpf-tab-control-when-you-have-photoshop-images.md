@@ -32,7 +32,7 @@ TabCurrentBackground = _tabBackground[0];
 
 The current bacground is set on a property of the ViewModel, it is initialized on the first background, and finally I need to create the view.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image3.png)
 
  ***Figure 1***: *Part of the View, I highlighted the most important part of the view.*
 

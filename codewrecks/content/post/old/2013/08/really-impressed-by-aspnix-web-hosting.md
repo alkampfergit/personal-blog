@@ -10,7 +10,7 @@ I needed to move my blog on another hosting quickly, and I was puzzled on what h
 
 Since the host was really really cheap and it is a shared hosting, I expected performances to degrade, but I was really surprised that my blog responded really fast, it seemed faster than previous hosting (a dedicated VM). After one month I was really surprised looking at Google Webmaster tools, because  **the decrease in response time was really huge and not only my impression**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb20.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image20.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image20.png)
 
 You can surely notice that the time needed to download a page decreased when I moved to aspnix. I’m so happy with it that I’ve decided not to spent time evaluating anything else, and for $2.20 month I can host multiple domains, amazing. I never expected that a cheap and shared hosting would give me better performance than a dedicated VM.
 

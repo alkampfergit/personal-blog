@@ -14,7 +14,7 @@ When it is time to upgrade your TFS production server, it is always a good pract
 
 I’ve done a post in the past on [how to create a safe clone of your TFS Environment](http://www.codewrecks.com/blog/index.php/2015/08/07/create-a-safe-clone-of-your-tfs-environment/) and I suggest you to have a read of that post, but with the new version of TFS installer, when you choose the upgrade path, you have this new screen
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image.png)
 
  ***Figure 1***: *You can choose to create a pre-production test directly from Wizard*
 
@@ -30,7 +30,7 @@ This option is not only useful for upgrades, but allows you to quickly create a 
 
 Another interesting wizard screen is the one dedicated to installing code Search capabilities.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-1.png)
 
  ***Figure 2***: *Code search installing screen*
 
@@ -38,13 +38,13 @@ Code search was introduced in VSTS lots of time ago, but now is available even o
 
 Sadly enough, you are not allowed to use an exising installation of ElasticSearch, here is the error you got if you already have ES installed on the machine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-2.png)
 
  ***Figure 3***: *You cannot re-use an existing ES installation*
 
  **You should uninstall every installation of ES you have if your machine before installing code search capabilities.** Since ES depends on Java, if you do not have Java JRE or JDK installed on the machine the wizard gives you an error during the verification process.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-3.png)
 
  ***Figure 4***: *An error is present if your machine has no Java installed*
 
@@ -56,7 +56,7 @@ You can check the box where you accept the Oracle Binary Code License Agreement 
 
 To support SSH Protocol for Git, you should tell the installer that you want to enable the SSH Service and choose the port (22 by default)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-4.png)
 
  ***Figure 5***: *SSH Support in TFS for Git*
 

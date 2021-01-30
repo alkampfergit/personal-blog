@@ -125,7 +125,7 @@ public class RandomizerFixture
 
 Now I fire nunit and look at the console output, basically it works but it has some drawbacks. Since each run the test are in different order the nunit gui have some problems, each run it randomatically add tests to the interface :(
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/12/image-thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/12/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/12/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/12/image.png)
 
 If you run inside Visual studio with TestDriven.Net you do not have any problem, but the console gui seems not to like the fact that test are always given in different order each run.
 

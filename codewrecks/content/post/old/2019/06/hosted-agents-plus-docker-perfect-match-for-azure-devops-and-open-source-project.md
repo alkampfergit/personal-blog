@@ -14,13 +14,13 @@ Lets take as use case [NStore](https://github.com/ProximoSrl/NStore), an open so
 
 Having docker preinstalled on Hosted Buil Agent gives you a tremendous power, combined with Docker Task. If I want to run a build on Linux Hosted agent of NStore, here is a possible build that runs perfectly fine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image.png)
 
  ***Figure 1***: *Simple build definition that starts a MongoDb and Sql Server instance with Docker before actually running th ebuild.*
 
 If you examine the very first task it is amazing how simple it is to start a MsSql instance running on your Linux box.  **At the end of Task execution you have a fully functional container running in Hosted Agent**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-1.png)
 
  ***Figure 2***: *Running MsSql as a container in Linux*
 
@@ -28,13 +28,13 @@ You just need to remember to redirect the port (-p 1433:1433) so that you can ac
 
 Task number 2 uses the very same technique to run a MongoDB instance inside another docker container instance then Task 3 is a simple Docker Ps command, just to verify that the two container are running correctly. As you can see from  **Figure 3** , it is quite useful to know if the container really started correctly.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-2.png)
 
  ***Figure 3***: *Ps command allows for simple dump of all containers running in the machine*
 
 You can log every container output,  **in Task number 4 I’m just running a logs command for the MsSql container, just to verify, in case MsSql test are all failing, why the container did not started** (like you forgot the ACCEPT\_EULA, or you choose a password not enough complex.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-3.png)
 
  ***Figure 4***: *Logging output of container to troubleshoot them.*
 
@@ -44,7 +44,7 @@ Remember that if the container does not start correctly your build will have ton
 
 Finally, to make everything flexible, you should grab connection strings for Tests from environment variables. NStore uses a couple of Environment Variable called NSTORE\_MONGODB and NSTORE\_MSSQL to specify connection strings used for test. I really want you to remember that all Variables of a build are copied to Environment Variables during the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-4.png)
 
  ***Figure 5***: *Configuration of test connection strings are directly stored in Build Variables.*
 

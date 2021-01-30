@@ -84,7 +84,7 @@ If you look at the attachment url you can notice a FileID=xxxx that points to th
 
 Once I have a reference to WorkItemServer, its method DownloadFile will simply download attachment by id to a temp local file, then a simple conversion to Base64 will perform the trick. The result is a src attribute that embed the image.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-11.png)
 
  ***Figure 1***: *Src attribute with image embedded*
 

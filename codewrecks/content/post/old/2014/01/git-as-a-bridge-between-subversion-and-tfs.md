@@ -16,7 +16,7 @@ First Step: Nablasoft managers can create another [team](http://blogs.ripple-roc
 
 After the backlog is created, you can simply email it to Acme developers with Email, or import in excel and send the excel.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/11/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/11/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/11/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/11/image.png)
 
  ***Figure 1***: *Send a mail to Acme company with all details on the feature we want them to work on*
 
@@ -54,25 +54,25 @@ You download all new modification from SVN repository, and when you want to move
 
 Suppose Acme did a copule of commit on SVN Repository
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/12/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/12/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/12/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/12/image4.png)
 
  **Fifure 2:** *Log of subversion repository showing the two commits with code related to a couple of features.*
 
 Now if you issue a git svn rebase you can download those two commits into local git repository. If you view log of Git repository you realize that all subversion checkins are cloned in local repository.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/12/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/12/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/12/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/12/image5.png)
 
  ***Figure 3***: *Commits cloned from subversion repository to a local Git repository*
 
 Now a  **git-tf checkin with –deep option will transfer those commits to TFVC**. The first commit (the one with comment initial directory structure) is the first one used to create the trunk directory, so it will not cause any check-in in the final repository, but the other two were transferred.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/12/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/12/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/12/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/12/image6.png)
 
  ***Figure 4***: *Check-ins created in TFVC from local Git repository thanks to git-tf tool.*
 
 The last part is running the little utility to associate Check-Ins and Work Items with hashtag in the comment. Thanks to this workflow, Nablasoft company is able to let Acme work with Subversion but they can keep all their work with history in a subfolder of Company’s TFS and maintaining association with Work Item.  **The only drawback of this approach is “Time Compression”, because all the commits that are transferred in TFS do not maintain the original date of Subversion Repository** , because all changesetId should maintain sequential order of timestamp. To minimize this problem, you can script the import process manually and run several time a day.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/12/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/12/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/12/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/12/image7.png)
 
  ***Figure 5***: *Association between check-in and Work Item based on content of Comment.*
 

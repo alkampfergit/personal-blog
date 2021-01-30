@@ -24,7 +24,7 @@ The error is due to the fact that you are running your test against a build that
 
 To solve this error: queue a build, verify that the build succeeded, then change the build associated with the test plan.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb33.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image33.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb33.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image33.png)
 
 Be sure that the build in use is one that contains the test associated with automation, then run the test again and everything should succeed.
 

@@ -16,7 +16,7 @@ To be completely honest, TfsTeamProjectCollection class is quite obsolete, it us
 
 The key to the solution of the problem is using the new HTTP REST API and the good news is that you can use old C# API based on SOAP server and new REST API in the same project without a problem. Here is the correct code for the connection
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-21.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-21.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-21.png)
 
  ***Figure 1***: *Connecting to the server.*
 

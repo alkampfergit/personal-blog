@@ -71,7 +71,7 @@ I strongly suggest you to never ever generate a certificate without a strong pas
 
 Finally, thanks to [mRemoteNg](http://www.mremoteng.org/) ability to read putty saved sessions, I can now simply double click the connection and I’m logged to my machines.
 
-[![SNAGHTML7bd599](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/SNAGHTML7bd599_thumb.png "SNAGHTML7bd599")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/SNAGHTML7bd599.png)
+[![SNAGHTML7bd599](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/SNAGHTML7bd599_thumb.png "SNAGHTML7bd599")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/SNAGHTML7bd599.png)
 
  ***Figure 1***: *mRemoteNG is able to read PuTTY saved session, now you can double click the link and you are logged.*
 

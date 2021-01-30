@@ -12,11 +12,11 @@ All you need is to override the BeforeGet target, and set the  **SkipGet** prope
 
 But the real interesting stuff you can do is getting the source code associated with a label. When a build is triggered it labels the source code with the build number, so you can always get the source code that generates that build. To obtain this you can simply to a Get Specific Version
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image10.png)
 
 Now you must select to get a specific version by label (step 1), then ask to browse all labels (step2) and finally press the find button (step3) to have a list of every build associated to this source control
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image11.png)
 
 Selecting a specific label will revert your local source to the one used during the build, so you can open the solution and do whatever you want. This is especially useful if a tester had signaled a bug in a specific build, and you want to replicate it with the exact source code used for the build.
 

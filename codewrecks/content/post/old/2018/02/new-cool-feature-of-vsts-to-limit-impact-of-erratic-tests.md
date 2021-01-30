@@ -18,7 +18,7 @@ We spent time to make test stable, but some tests tend to have erratic failure a
 
 Thanks to a cool new feature in VSTS, we can instruct our builds to re-run automatically those kind of tests. You can read everything about it in [the release notes](https://docs.microsoft.com/en-us/vsts/release-notes/2017/dec-11-vsts) for VSTS.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/02/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/02/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/02/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/02/image.png)
 
  ***Figure 1***: *Option to re-run failed tests*
 
@@ -28,7 +28,7 @@ It could seem a little feature, especially because usually your tests should not
 
 If you look at Figure 2, you can verify that all erratic tests are easily identified, because you can filter all tests that passed on rerun. This will leave your build green, but can spot erratic tests that should be investigated to make them more stable.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/02/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/02/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/02/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/02/image-1.png)
 
  ***Figure 2***: *Erratic test can be immediately discovered from build output.*
 
@@ -36,7 +36,7 @@ I think that this feature is really huge and can tremendously helps running UAT 
 
 If you do not see the option in figure 1, please be sure you are actually using the version number 2 of the test runner task as shown in Figure 3.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/02/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/02/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/02/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/02/image-2.png)
 
  ***Figure 3***: *Be sure to use version 2.\* of the test runner, or the option to re-run failed test is not present.*
 

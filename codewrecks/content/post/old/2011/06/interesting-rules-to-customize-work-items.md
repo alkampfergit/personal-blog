@@ -17,7 +17,7 @@ Since you already know the  **ALLOWEDVALUES** you should know the  **ALLOWEXISTI
 
 Another rule related to the PickingList is the  **PROHIBITEDVALUE** that lists a series of values that are not allowed to be used in a field. As you see in Figure 1 the field is edited with a normal textbox, but if â€œblablaâ€ is a prohibited value an error is shown.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb31.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image31.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb31.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image31.png)
 
  ***Figure 1***: *Error value for a field that contains a prohibited value.*
 
@@ -27,7 +27,7 @@ The rule  **CANNOTLOSEVALUE** states that a field once you set a valid value, co
 
 Another really interesting rule is called  **DEFAULT** that permits to specify the default value of a field and it is [really flexible](http://msdn.microsoft.com/en-us/library/ms194948.aspx).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb32.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image32.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb32.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image32.png)
 
  ***Figure 2***: *Specify a value taken from another field as DEFAULT.*
 

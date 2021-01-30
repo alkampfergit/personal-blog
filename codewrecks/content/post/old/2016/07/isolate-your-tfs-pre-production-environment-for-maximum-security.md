@@ -18,7 +18,7 @@ Usually the trick of changing hosts files in PreProduction TFS machines is good 
 
 Instead of placing pre-production environment in my 10.0.0.0/24 network, I use Hyper-V virtual networking capabilities to create an internal network.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-21.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-21.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-21.png)
 
  ***Figure 1***: *Virtual networks configured in Hyper-V hosts*
 
@@ -28,7 +28,7 @@ With this configuration I decided to install all machines that will be used for 
 
 Now if I try to login to the machine with domain credentials I’ve got a bad error as result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-22.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-22.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-22.png)
 
  ***Figure 2***: *I’m unable to login with domain users, because domain controller is unavailable.*
 
@@ -47,7 +47,7 @@ At this point I have an isolated environment, but since it cannot access my doma
 *1) PreProduction / Test Tfs cannot access the domain, and no domain users can access TFS  
 2) To access the PreProduction / Test TFS you can only use the Hyper-V host.*
 
-Clearly this made this approach almost impraticable, but the solution to this limitation is really really quick. Just install a Linux machine in the Hyper-V host to act as a router, in my example I have a standard Ubuntu Cloud server without UI. The important aspect is that  **you need to assign both Virtual Networks to the machine, so it can connect with both your isolated environment “Internal Network” and production environment “Rete Cablata”.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-23.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-23.png)
+Clearly this made this approach almost impraticable, but the solution to this limitation is really really quick. Just install a Linux machine in the Hyper-V host to act as a router, in my example I have a standard Ubuntu Cloud server without UI. The important aspect is that  **you need to assign both Virtual Networks to the machine, so it can connect with both your isolated environment “Internal Network” and production environment “Rete Cablata”.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-23.png)
 
  ***Figure 3***: *Create a Linux VM and be sure to assign both network interfaces.*
 
@@ -81,7 +81,7 @@ auto eth1
 
 {{< / highlight >}}
 
-The configuration is simple, this machine has 10.0.0.182 ip in my production network (eth0), and it the 10.1.0.1 ip in the internal virtual network (eth1).  **Now I configured all Windows machines in the internal virtual network to use this machine as gateway.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-24.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-24.png)
+The configuration is simple, this machine has 10.0.0.182 ip in my production network (eth0), and it the 10.1.0.1 ip in the internal virtual network (eth1).  **Now I configured all Windows machines in the internal virtual network to use this machine as gateway.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image_thumb-24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/07/image-24.png)
 
  ***Figure 4***: *Configuration for Pre-Production TFS Machine*
 

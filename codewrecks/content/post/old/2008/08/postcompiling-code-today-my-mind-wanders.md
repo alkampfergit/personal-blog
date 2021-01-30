@@ -22,11 +22,11 @@ This afternoon I was chatting with Marco, investigating possible solutions to th
 
 The option number 3 seems quite good, you can find an implementation [here](http://www.codewrecks.com/blog/storage/dtrtry1.zip). The code is really far to be a complete example, it was written in less than 2 hours, but it shows that this can be a possible solution. Here is the original content of MyDomain.dll assembly in reflector.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb2.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb2.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image2.png)
 
 When you run the example, in the DomainDecorator output folder you should see both  MyDomain.dll and a MyDomainReassembled.Dll, If you open the last one you see that reflector ask you to unload the MyDomain.dll, this because they are really the same assembly. After you reload you can find that customer class is now implementing INotifyPropertyChanged.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb4.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/08/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image-thumb4.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/08/image3.png)
 
 The code is really simple, it is only a matter of, calling ildasm to generate the IL file, then some regular expression magic to find the declaration of the class, and finally insert some standard IL code to implement the feature I need. To makes things really simple I first create a Customer class with INotifyPropertyChanged implemented and disassemble it, this permits me to cut and paste the relevant code without having to write a single row of MSIL code.
 

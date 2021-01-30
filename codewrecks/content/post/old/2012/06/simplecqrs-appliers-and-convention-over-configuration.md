@@ -8,7 +8,7 @@ categories: [Domain Driven Design]
 ---
 I was playing around with [**SimpleCQRS**](https://github.com/andreabalducci/SimpleCQRS)  **project** because my friend [Andrea](http://www.ienumerable.it/) started to work on it recently.  **We now have Mongo repository for the events** so I forked the project to have a look on it and contribute to Andrea works. I’ve opened the solution, ran the program, created some InventoryItems, then I look into mongo database to verify if snapshot of objects are correctly taken but I found this.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image5.png)
 
  ***Figure 1***: *Snapshot of objects inside mongo*
 
@@ -102,7 +102,7 @@ I’ve modified the method of AggregateRoot from Apply to** *RaiseEvent***that s
 
 Now I fired the UI again, created an InventoryItem and now I can see correct result in the Snapshot collection in Mongo database.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/06/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/06/image6.png)
 
  ***Figure 2***: *Now that I fixed the applier method the new object I created is now correctly saved in the snapshot because it correctly change the state reacting to the InventoryItemCreatedEvent DOMAIN EVENT*
 

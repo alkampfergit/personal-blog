@@ -14,13 +14,13 @@ One of the major benefit of the new build infrastructure of TFS and Visual Studi
 
 If you are customizing a build, or if you are interested in running the build on a specific agent in a specific machine (ex: local agent), the solution is super easy, Just edit build definition and in General tab add a * **demand** *named Agent.Name with the value of the name of the specified Agent.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image.png)
 
  ***Figure 1***: *Adding a demand for a specific agent*
 
 If the agent is not available, you are warned when you try to queue the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image1.png)
 
  ***Figure 2***: *Warning on build queuing when there are agents problem*
 
@@ -32,7 +32,7 @@ In this situation  **the system is warning me that there are agents compatible t
 
 The previous example is interesting because it is using Build Demands against properties of the agent. If you navigate on build agent admin page,  **for each agent you are able to see all associated properties**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image2.png)
 
  ***Figure 3***: *Agent capabilities*
 
@@ -40,13 +40,13 @@ On top there are User Capabilities that are editable. They are used to give cust
 
 This is really important, because if you examine demands for a build you can verify that some of them are  **already placed in the build definition and they could not be removed**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image3.png)
 
  ***Figure 4***: *some of the demands are read-only, you can add your demand*
 
 If you wonder why the build has some predefined, readonly demands, the answer is:  **they are taken from the build definition**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image4.png)
 
  ***Figure 5***: *Build definition*
 
@@ -74,6 +74,6 @@ To conclude this post, you should use Agent Pools if you want to achieve strong 
 
 As final notice, as of today, with the latest update of VSO, the new build engine is not anymore in preview, the tab has no Asterisk anymore and the keyword PREVIEW is gone away :), so vNext in VSO reached GA.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/06/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/06/image5.png)
 
 Gian Maria.

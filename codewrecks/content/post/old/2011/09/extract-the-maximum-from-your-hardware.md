@@ -12,15 +12,15 @@ In the last post I [show the benchmark for all of my disks units](http://www.cod
 
 It tells me to disable Superfetch/Prefetch o\_O
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/image10.png)
 
 After telling the toolbox to change all settings for optimum performance I pass from this score
 
-[![SNAGHTML811650](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/SNAGHTML811650_thumb.png "SNAGHTML811650")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/SNAGHTML811650.png)
+[![SNAGHTML811650](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/SNAGHTML811650_thumb.png "SNAGHTML811650")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/SNAGHTML811650.png)
 
 To this one
 
-[![SNAGHTML81517b](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/SNAGHTML81517b_thumb.png "SNAGHTML81517b")](http://www.codewrecks.com/blog/wp-content/uploads/2011/09/SNAGHTML81517b.png)
+[![SNAGHTML81517b](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/SNAGHTML81517b_thumb.png "SNAGHTML81517b")](https://www.codewrecks.com/blog/wp-content/uploads/2011/09/SNAGHTML81517b.png)
 
 I ran the test several times, and the result are consistent, actually I have a good improvement in sequential and 512k tests.
 

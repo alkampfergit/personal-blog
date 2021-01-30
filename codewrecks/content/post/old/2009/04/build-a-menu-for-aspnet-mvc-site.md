@@ -31,7 +31,7 @@ This xml has a really simple structure, it have root node called menu, then a se
 
 The first thing to do is creating a model capable of parsing this file and building a list of object that can be used from the view engine. I decided to create a couple of classes to represent a menu in memory
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image3.png)
 
 The MasterModel classes has the responsibility to create data for the master page. In this version it has only the CreateMenu function that can be used to parse the xml files with the menu and create a root menuitem class. The MenuItem has a method called Render that is capable to render an anchor link with the corresponding page. The good part is that the real url is created with the UrlHelper class
 

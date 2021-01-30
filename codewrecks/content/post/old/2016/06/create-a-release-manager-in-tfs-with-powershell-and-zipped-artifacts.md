@@ -94,7 +94,7 @@ if(-not(Get-Module -name jarvisUtils))
 
 This script does almost nothing, it delegates everything to the ConfigurationManagerSetup.ps1 file.  **Once the.nuspec file and this script are writenn, you can use nuget.exe to manually generate a package and verify installing in a target system.** When everything is ok and you are able to create and install a chocolatey package locally, you can schedule Chocolatey package creation with a TFS Build. The advantage is automatic publishing and SemVer version management done with Gitversion.exe.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-1.png)
 
  ***Figure 1***: *Task to generate Chocolatey Package.*
 
@@ -104,7 +104,7 @@ To generate Chocolatey Package you can use the standard NuGet Packager task, bec
 
 This technique is perfectly valid for VSTS or TFS 2015 on-premises. Once the build is finished, and the package is published, you should check on NuGet or MyGet if the package is ok.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-2.png)
 
  ***Figure 2***: *Package listing on MyGet, I can verify all published versions*
 

@@ -12,7 +12,7 @@ I was amazed because in few seconds Visual Studio scanned developement database,
 
 I was immediately amazed because VS solved a problem, I have a lot of old stored procedures in database, made by people that does not work anymore in the project, I needed a tool to verify if there are  stored that reference old tables deleted from database. When I try to build database project I got errors.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/05/image-thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/05/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image7.png)
 
 Cool, it is exactly what I needed, VS is telling me that there are database object that contains unresolved references, so I was able to delete all old garbage from the db. Then I simply did a Database Schema Compare between my project and My dev database and VS generates for me the script to sync the two. Great!!!
 

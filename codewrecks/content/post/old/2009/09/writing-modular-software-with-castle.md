@@ -10,7 +10,7 @@ Thanks to [Castle Windsor](http://www.google.it/url?sa=t&amp;source=web&amp;ct=r
 
 The key to speedup development is writing high modular software, thanks to castle this is really simple. First of all I use [guardian facility](http://www.nablasoft.com/guardian/index.php/2009/06/08/unity-wcf-service-resolution-container-extension/) to create proxy. This permits me to decide with configuration file if a service interface must be resolved with a proxy, or with a real class. This gives you immense flexibility.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image17.png)
 
 Simply changing a configuration file I can use the concrete class that have access to the database, or pass through a ws\* wcf webservice. All people inside the organization, that have vpn and access through the vpn network to the database, can use the concrete class of the service, completely bypassing wcf, while people outside the organization use a config that use wcf service.
 

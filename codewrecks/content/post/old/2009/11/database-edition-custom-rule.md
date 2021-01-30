@@ -112,15 +112,15 @@ Once you have this class ready you need to create an xml file that contains data
 
 You must sign your assembly, and specify full qualified name in the xml, then you need to copy this xml file, along with the assembly that contains the rule, into the directory  **program files** \Microsoft Visual Studio 9.0\VSTSDB\Extensions. Now you can reopen visual studio and verify that the rule gets loaded correctly
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image27.png)
 
 To verify the rule Iâ€™ve simply created one simple table with one valid column and one not valid column.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb28.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image28.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image28.png)
 
 If you build the project you will get.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb29.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image29.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image29.png)
 
 As you can see my custom rule gets executed, and the project will not compile until all columns are not named correctly.
 

@@ -14,23 +14,23 @@ The solution is quite simple, because VSTS / TFS already had all build tasks nee
 
  **The very first steps is copying all the dlls that contains tests on the target machine** , this is accomplished by the Windows Machine File Copy task.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-3.png)
 
  ***Figure 1***: *File copy task in action*
 
 This is a really simple task, the only suggestion is to never specify the password in clear format, because everyone that can edit the build can read the password. In this situation  **the password is stored in the RmTestAdminPassword variable, and that variable is setup as secret**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-4.png)
 
  ***Figure 2***: *Store sensitive information as secret variables of the build*
 
-Then we need to add a  **Visual Studio Test Agent Deployment task, to deploy Visual Studio Test Runner on target machine.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-5.png)
+Then we need to add a  **Visual Studio Test Agent Deployment task, to deploy Visual Studio Test Runner on target machine.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-5.png)
 
  ***Figure 3***: *Visual Studio Test Agent Deployment*
 
 Configuration is straightforward, you need to specify a machine group or a list of target machines (point 1), then you should specify the user that will be used to run test agent (point 2), finally I’ve specified a custom location in my network for the Test Agent Installer. If you do not specify anything, the agent is downloaded from [http://go.microsoft.com/fwlink/?LinkId=536423](http://go.microsoft.com/fwlink/?LinkId=536423) but this will download approximately 130MB of data. For faster build it would be preferrable to download the agent and move the installer in a shared network folder to instruct the Task to grab the agent from that location.
 
- **Finally you use the Run Functional Tests task to actually execute tests in the target machine.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-6.png)
+ **Finally you use the Run Functional Tests task to actually execute tests in the target machine.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-6.png)
 
  ***Figure 4***: *Running functional test from target machine configuration*
 
@@ -40,7 +40,7 @@ You specify the machine(s) you want to use (point 1), then all the dll that cont
 
  **If you are running Nunit test or whatever test framework different from MsTest, this task will fail, because the target machine has no test adapter to run the test**. The failure output tells you that the agent was not capable of finding any test to run in specified location. This happens even if you added Nuget Nunit adapter to the project. The solution is simple, first of all locates all needed dll in package location of your project.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-7.png)
 
  ***Figure 5***: *Installing Nunit TestAdapter Nuget package, downloads all required dll to your machine*
 
@@ -48,13 +48,13 @@ Once you located those four dll in your HD, you should copy them to the target m
 
 Once you copied all required dll in target folder, re-run the build, and verify that tests are indeed executed on the target machine.
 
-[![SNAGHTML3c4ad0](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTML3c4ad0_thumb.png "SNAGHTML3c4ad0")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTML3c4ad0.png)
+[![SNAGHTML3c4ad0](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTML3c4ad0_thumb.png "SNAGHTML3c4ad0")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/SNAGHTML3c4ad0.png)
 
  ***Figure 6***: *Output of running tests on remote machine*
 
 Test output is transferred to the build machine, and attached to the build result as usual, so you do not need anything else to visualize test result in the same way as if the test were executed by agent machine.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/06/image-8.png)
 
  ***Figure 7***: *Output of test is included in the build output like standard Unit Tests ran by the build agent*
 

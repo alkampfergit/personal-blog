@@ -10,7 +10,7 @@ Iâ€™m not a fanatic of Code Analysis, at least I know that it is quite impr
 
 The good stuff about VSTS Db edition is that it contains code analysis even for your DB.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image14.png)
 
 As an example of typical warning you get here is some example.
 

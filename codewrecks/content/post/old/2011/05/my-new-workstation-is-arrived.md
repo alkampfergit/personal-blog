@@ -12,7 +12,7 @@ Here is what I bought after some month of ranting against Intel, because bug in 
 
 First of all the CPU: since I do not want to waste money, I consulted the [CpuBenchmark](http://www.cpubenchmark.net/high_end_cpus.html) chart
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image4.png)
 
  ***Figure 1***: *CPU benchmark chart*
 
@@ -32,7 +32,7 @@ This is the core of the machine, then I bought a Intel X-25M 120 GB SSD disk, wh
 
 The perceived responsiveness of the system is really improved. I know that since Iâ€™ve reinstalled a clean system, this is an unfair comparison with the old computer, but installing Visual Studio 2010 from an Iso image took 5 minutes and 4 seconds (runtime of.NET 4.0 included). I also notice that most of the improvement comes from the SSD disk, that is really fast compared to a standard one, here is my windows 7 experience index.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image5.png)
 
 Iâ€™m really satisfied of this new box.
 

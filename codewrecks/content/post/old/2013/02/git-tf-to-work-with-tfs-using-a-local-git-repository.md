@@ -16,15 +16,15 @@ Distributed VCS are clearly far superior when:
 
 Thanks to git-tf you can simply use standard TFS VCS as usual, but if a developer prefer to use Git or when he is offline, he can benefit of Git locally even if the VCS used is centralized.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image6.png)
 
 With git-tf  **not every member of the team is forced to use git** , if you want you can simply map TFS source control with a standard workspace and work as usual, *while other members of the team are using git*. Each member of the team can choose the tool that best suites to him.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image7.png)
 
  **A single developer can have both of them in a single machine** , as an example when you work connected with your TFS, you can simply work with standard TFS workspaces; when it is time to go on remote site, where connection is not available, you can sync a git repository you have in another folder, and then work with the git repository while you are offline.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/02/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/02/image8.png)
 
 Thanks to the ability to manage mixed VCS and DVCS with git-tf you can really have the best of both world.
 

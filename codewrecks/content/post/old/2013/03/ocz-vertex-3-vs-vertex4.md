@@ -10,11 +10,11 @@ I own both a Vertex3 256GB and a Vertex 4 256, and people usually ask me if the 
 
 This is the Vertex 3
 
-![](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/SNAGHTML69aa9.png)
+![](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/SNAGHTML69aa9.png)
 
 And this is the Vertex 4
 
-[![SNAGHTMLa0b84](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/SNAGHTMLa0b84_thumb.png "SNAGHTMLa0b84")](http://www.codewrecks.com/blog/wp-content/uploads/2013/03/SNAGHTMLa0b84.png)
+[![SNAGHTMLa0b84](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/SNAGHTMLa0b84_thumb.png "SNAGHTMLa0b84")](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/SNAGHTMLa0b84.png)
 
 From the test I can tell you that the Vertex 4 has a  **great increase of performance in Write Speed** , and a real gain of performance in 4K QD32 tests. I had also a Vertex 2 and I was really satisfied with performance and reliability of OCZ drive, and I should admit that the Vertex 4 performances are really really huge.
 

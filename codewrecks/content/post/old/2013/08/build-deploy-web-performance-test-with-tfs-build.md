@@ -14,7 +14,7 @@ To fully understand this article you need to read previous articles of the serie
 
 In those articles I’ve explained how you can  **automatically publish your web site to a standard IIS hosted web site or to an Azure Web Site**. The cool part is that you just need to add extra MsBuild arguments to TFS Build process definition and the game is done. For Azure Web Sites you also have a dedicated template for publishing that will also manage an integration with the Azure Web site dashboard (as you can see in the following figure)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image11.png)
 
  ***Figure 1***: *Azure web site deployments tab*
 
@@ -40,13 +40,13 @@ Apart from technique used to manage test databases, you will need to exercise de
 
 I’ve started this demo creating a couple of WPT.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image12.png)
 
  ***Figure 2***: *A couple of Web Performance Tests in a integration test project*
 
 The  **SmokeCallPages is a simple test that basically click on every page of the site** , thanks to the IE recorder plugin, recording such a test is really simple. Once recorded you should add some assertion, in production configuration I have CustomErrors=”on” in the web.config file, so even if the site raise some exception, the user is redirected to a standard page with a warning “we are experiencing some mechanical problem”. This will lead to adding a rule that fail test if the HTML of the page contains this string. The rule is then applied to each response of the Test.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image13.png)
 
  ***Figure 3***: *A validation rule that makes the test fails if a certain string is contained in the HTML.*
 
@@ -54,31 +54,31 @@ You can write complex tests, you can create base web performance tests that perf
 
 Once everything is in place, I use a Build Agent inside a Virtual Machine, (where I’ve set the Test.TailspinToysTestSite environment variable to point to my Azure Test Site), then I configured a  **standard tfs build** , added right MsBuild arguments to deploy web site and finally I specified the integration tests to run.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image14.png)
 
  ***Figure 4***: *Configuring integration test to be run during the build*
 
 All you need to do is going to Automated Tests Section. He you will find a standard test run configuration that runs all tests that are in assemblies that contains the word “test” in it. If you execute the build you will find that the integration tests will not execute, this because TFS 2012 has a new agile test runner that is not capable of running Web Performance Test. The solution is  **adding another test run, specify MSTest.exe runner (VS2010 compatible) as the Test Runner and changing the Test Assmbly file specification to run everything that has an extension of.webtest** ( **Figure 4** ). Now you have two distinct test configuration.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image15.png)
 
  ***Figure 5***: *The two test runs specified in the build.*
 
 I also **set to true the Fail Build on Test Failure parameter** , because I can tolerate a standard unit test failing, but if a single integration test fails it means that something basic is broken in the deploy and I want to react immediately. Since all test results are automatically pushed to TFS it is simple to understand the reason of a failure as you can see in the following build Summary.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image7.png)
 
  ***Figure 6***: *Build summary contains all test run information*
 
 There are two distinct test runs, the first one is using the standard agile test runner and runs standard unit test, it is then followed by the results of integration testing. The nice aspect of **build summary is that it shows immediately the name of the test that is failing (SmokeCallPages )** , the whole test result can also downloaded locally to better identify the cause of the problem.
 
-[![SNAGHTML544bdf](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/SNAGHTML544bdf_thumb.png "SNAGHTML544bdf")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/SNAGHTML544bdf.png)
+[![SNAGHTML544bdf](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/SNAGHTML544bdf_thumb.png "SNAGHTML544bdf")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/SNAGHTML544bdf.png)
 
  ***Figure 7***: *Test results can be downloaded locally to examine the root cause of the problem and the exact request that is failing.*
 
 From test result you can spot immediately the request that failed and if you have some form of logging enabled, like Elmah, you can have a better clue on what is happened simply looking at log page. Test Results contains also a lot of information like full request and full response, so dev team can insert some diagnostic information in the page response visible only when the site is deployed in Test environment (like an hiddenfield with the full exception error or some internal error code). Even if you do not use such technique,  **Elmah can give at least full exception details in a dedicated web page**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image8.png)
 
  ***Figure 8***: *Elmah handler is showing the error.*
 
@@ -86,13 +86,13 @@ Thanks to this simple Build / Deploy / Integration Test workflow integration err
 
 In this example the problem was a malformed XML file that contains the “About Us” text (easy spotted by the elmah log), now the team can fix Xml file, verify the fix running the integration test that failed locally and finally check-in the code. The next build run will verify if everything is good.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image9.png)
 
  ***Figure 9***: *Check-in fixed the problem, the build is now green.*
 
 The cool part of Integration Tests with Web Performance Tests is that you can download test results even for green build to gather metrics: see page timing, response size, etc.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/08/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/08/image10.png)
 
  ***Figure 10***: *Build summary shows all test passed.*
 

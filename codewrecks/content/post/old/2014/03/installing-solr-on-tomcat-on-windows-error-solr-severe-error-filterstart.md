@@ -17,11 +17,11 @@ To troubleshoot these kind of problems, you can go to Tomcat Log directory and l
 
 The reason of this is a change in the logging subsystem done in version 4.2.1, that is explained in the installation guide: [* **Switching from Log4J back to JUL** *](https://wiki.apache.org/solr/SolrLogging#Using_the_example_logging_setup_in_containers_other_than_Jetty). I’ve blogged about this problem in the past, but it seems to still bite some person so it worth spending another post on the subject. The solution is in the above link, but essentially **you should open the folder where you unzipped solr distribution, go to the *solr/example/ext* and copy all jar files you find there inside Tomcat Lib subdirectory **.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/03/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/03/image1.png)** Figure 1: ***Jar files needed by Solr to start*
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/03/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/03/image1.png)** Figure 1: ***Jar files needed by Solr to start*
 
 After you copied these jar files into Tomcat lib directory  **you should restart Tomcat and now Solr should starts without problem**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/03/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/03/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/03/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/03/image2.png)
 
  ***Figure 2***: *Et Voilà, Solr is started.*
 

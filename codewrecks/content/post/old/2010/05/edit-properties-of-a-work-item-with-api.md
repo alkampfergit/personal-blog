@@ -10,7 +10,7 @@ If you look at the [previous post,](http://www.codewrecks.com/blog/index.php/201
 
 The answer is the * **Microsoft.TeamFoundation.WorkItemTracking.Controls.dll** *located into C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies folder. This dll contains common winform controls to edit workitem and it has everything you need to create an UI to edit a Work Item. First of all create a simple winform application, then right click into the Toolbox and choose â€œChoose Itemsâ€ option, then browse to the aforementioned dll and include it in the toolbox. Now you should be able to see the controls inside the dll
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/05/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image10.png)
 
 I highlighted the WorkItemFormControl, because you can use to edit a workitem, simply drop one instance into a simple form and write this code behind in the Form Load event.
 
@@ -27,7 +27,7 @@ End Sub
 
 The code is really simple, connect to the server, create a new Work Item with the [NewWorkItem](http://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitemtype.newworkitem%28VS.90%29.aspx) method of the WorkItemType object and assign it to the Item property of the [WorkItemFormControl](http://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.controls.workitemformcontrol%28VS.80%29.aspx) windows control. Here is the form at run-time.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/05/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image11.png)
 
 As you can see this is the standard form that you see in Visual Studio, and it is available to you with a very little effort.
 

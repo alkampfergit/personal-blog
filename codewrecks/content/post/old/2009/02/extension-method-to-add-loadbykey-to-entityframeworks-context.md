@@ -27,11 +27,11 @@ In [previous post](http://www.codewrecks.com/blog/index.php/2009/02/18/entity-fr
 
 In line 3 I begin a query to load the [EntityType](http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.entitytype.aspx) object related to the type of object I need to load. The [System.Data.Metadata.Edm](http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.aspx) namespace is a place where you can find plenty of information about how your data is structured. I simply query the MetadataWorkspace getting the items of type [DataSpace.CSpace](http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.dataspace.aspx) or the *Conceptual Model.* The Conceptual model can be tricky to use, to familiarize with it I suggest you to use [LINQPad](http://www.linqpad.net/) to run the query of line 3, you get this result (all properties collapsed)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb4.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb4.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image4.png)
 
 Now you can simply suppose that KeyMembers property of an entityType contains all the KeyProperties, if you expand it you will see this result
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb5.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb5.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image5.png)
 
 YATTA! This permits me to find name/s of key properties and I can use LINQ to create desidered EntityKey (line 8-11)
 

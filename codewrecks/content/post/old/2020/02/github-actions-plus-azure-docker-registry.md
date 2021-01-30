@@ -18,11 +18,11 @@ In my specific situation I need to run the build in Windows and sadly enough the
 
 MongoDb and SqlServer images can be put on a public repository because it does not contains anything related to my software, but  **I want to be sure to being able to publish images to private repository because not every prerequisite can be really public. For this reason I opened a private Docker Registry on Azure**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/02/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/02/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/02/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/02/image.png)
 
  ***Figure 1***: *My private registry on Azure*
 
-Thanks to azure I was able to create a private registry with few clicks, now I can access repository using standard Azure Login, but  **if I need to do a standard Docker Login with UserName and Password I can use standard access keys to be used a username / password.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/02/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/02/image-1.png)
+Thanks to azure I was able to create a private registry with few clicks, now I can access repository using standard Azure Login, but  **if I need to do a standard Docker Login with UserName and Password I can use standard access keys to be used a username / password.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/02/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/02/image-1.png)
 
  ***Figure 2***: *Access enabled to my registry thanks to standard username and Password*
 
@@ -30,7 +30,7 @@ While this is not the most secure way to access your registry, using secure User
 
 The usual question now is: where do I store UserName and Password for this registry in a secure way to be used by GitHub actions? The answer is: repo secrets.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/02/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/02/image-2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/02/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/02/image-2.png)
 
  ***Figure 3***: *Secrets settings can be added to every repository to store sensitive data to be used by GitHub actions.*
 
@@ -63,7 +63,7 @@ Actually this level of security is enough for most users, in my situation I only
 
 As you can see I can simply ask to my action to start a Sql Server container and a MongoDb container using images taken from my private repository.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/02/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/02/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/02/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/02/image-3.png)
 
  ***Figure 4***: *GitHub action running using images from my private repository*
 

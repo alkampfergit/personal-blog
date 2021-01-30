@@ -15,7 +15,7 @@ This happens because FF 4.x is still not supported, but you can download and ins
 
 Now you need to create another firefox profile as specified in [this link](http://support.mozilla.com/en-US/questions/793341), with this little trick, Now when I open firefox from the link on the menu I got my 4.1 version, but Iâ€™ve created a link to another profile created with the 3.6 version.
 
-[![SNAGHTML185460c](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/SNAGHTML185460c_thumb.png "SNAGHTML185460c")](http://www.codewrecks.com/blog/wp-content/uploads/2011/05/SNAGHTML185460c.png)
+[![SNAGHTML185460c](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/SNAGHTML185460c_thumb.png "SNAGHTML185460c")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/SNAGHTML185460c.png)
 
  ***Figure 1***: *Iâ€™ve created a link to a profile for FF3.6 so I can use firefox 3.6 when needed*
 

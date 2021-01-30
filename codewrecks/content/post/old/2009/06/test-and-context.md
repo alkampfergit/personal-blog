@@ -10,9 +10,9 @@ For a Unit Test the most important concept, and probably the most difficult to m
 
 In such a situation the fixture of the test is using different source files to test the class with different input. In a classic NUNIT unit testing you can solve this problem including the file in the project with â€œCopy if newerâ€. With such a setting Visual Studio at each build check if the file is changed, and eventually copies the file into the appropriate directory (bin/debug/pathofthefile in standard debug configuration)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image1.png)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image2.png)
 
 This approach is good, but has some problems, if you simply change the XML file, and rebuild the project, the file gets no copied in the output directory. This happens because Visual Studio correctly checks that no source file was changed, so it has no need to recompile. Another stuff I do not like is that I need to find the file *with the pat**h I used to insert it into the test project*.
 

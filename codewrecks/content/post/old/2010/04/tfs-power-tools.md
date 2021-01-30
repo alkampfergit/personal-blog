@@ -10,7 +10,7 @@ I think that [Power Tools](http://blogs.msdn.com/bharry/archive/2010/04/26/tfs-2
 
 This commands are useful for those one that starts with Tfs basic, then move to a Full version and for many other scenario.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb29.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image29.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image29.png)
 
 Alk.
 

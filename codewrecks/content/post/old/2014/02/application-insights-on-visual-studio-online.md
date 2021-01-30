@@ -16,23 +16,23 @@ Continuous deploy on Test and PreProduction server was always an argument that f
 
 Now that you are able to automatically deploy a Web Site you need a way to monitor your site to verify what is happening during testing and beta phase. Thanks to Visual Studio Online Application Insights, you can have a lot of information about your application with very little effort. This kind of information are most useful for production server, but they can be really useful even during testing phase.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image19.png)
 
  ***Figure 1***: *Application Insights in Visual Studio Online*
 
 You can have various level of instrumentation, the simplest one is using what is called  **Unobtrusive Monitoring that give you data without the need of modifying your project.** All you need to do is open the application hub and add a new application.
 
-[![SNAGHTML4ca815](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/SNAGHTML4ca815_thumb.png "SNAGHTML4ca815")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/SNAGHTML4ca815.png)
+[![SNAGHTML4ca815](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/SNAGHTML4ca815_thumb.png "SNAGHTML4ca815")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/SNAGHTML4ca815.png)
 
  ***Figure 2***: *Adding a new application to Application Insights*
 
-You should only  **download Microsoft Monitoring Agent and install on your machines where you deployed your Web Application**. The only information that the installer asks you is account id and instrumentation key ([these information are contained in VSO setting page](http://mattvsts.blogspot.it/2014/01/find-hidden-information-in-visual.html)). During the installation phase you can choose to instrument all of your applications that resides on local IIS, but  **I strongly suggest not to use that option and avoiding to start monitoring all applications.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb20.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image20.png)
+You should only  **download Microsoft Monitoring Agent and install on your machines where you deployed your Web Application**. The only information that the installer asks you is account id and instrumentation key ([these information are contained in VSO setting page](http://mattvsts.blogspot.it/2014/01/find-hidden-information-in-visual.html)). During the installation phase you can choose to instrument all of your applications that resides on local IIS, but  **I strongly suggest not to use that option and avoiding to start monitoring all applications.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image20.png)
 
  ***Figure 3***: *Avoid to automatically start monitoring all web applications.*
 
 The reason behind this is: I prefer to  **control what application to monitor and also I want to give a friendly name to monitored applications** , because once configured you cannot change the name. After Monitoring Agents are installed you can simply open *Monitoring Agent PowerShell Prompt*to configure sites you want to monitor.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb21.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image21.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image21.png)
 
  ***Figure 4***: *Open the MMA Powershell Prompt to manually configure monitoring for your applications*
 
@@ -47,7 +47,7 @@ Start-WebApplicationMonitoring "TailspinToys" -Mode Monitor -OutputChannel Cloud
 
  **Display name is the parameter that permits me to distinguish between applications and constitute the identity of the application in Visual Studio Insight hub.** When monitoring is started, you can navigate on the site to generate some data, wait for 5-10 minutes for the server to start analysis and you should be able to see you new application in the application hub.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb22.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image22.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image22.png)
 
  ***Figure 5***: *New application is now available in the list of monitored applications*
 

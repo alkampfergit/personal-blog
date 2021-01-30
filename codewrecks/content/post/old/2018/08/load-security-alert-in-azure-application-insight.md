@@ -20,19 +20,19 @@ As an example, in our web application,  **when the application logic determines 
 
 With Web API a possible solution is creating an ActionFilterAttribute that is capable of intercepting every Web API Call, it depends on a list of ISecurityAlertLogService, a custom interface that represent some component capable of logging a security alert. With such configuration we can let our Inversion of Control mechanism to scan all implementation of ISecurityAlertLog service available to the system. As an example we log security Exception in a specialized collection in Mongo Database and on Azure Application Insights.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-10.png)
 
  ***Figure 1***: *Declaration of a Web API Filter capable of intercepting every call and send security logs to a list of providers.*
 
 An Action Filter Attribut is a simple class that is capable of inspecting every WebApi call. In this scenario I’m interested in inspecting what happened when the request ends
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-11.png)
 
  ***Figure 2***: *Filter is capable of inspecting each call upon completion and can verify if the return value is 403,*
 
 Thanks to the filter we can simply verify if the return code is 403 or if the call generates an exception and that exception is a SecurityException;  **if the check is positive someone is tampering with requests or the UI has a security bug, a SecurityLogAlert is generated and it is passed to every ISecurityAlertLogService** Thanks to Azure Application Insoghts we can track the alert with very few lines of code.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-15.png)
 
  ***Figure 3***: *Traking to AI is really a few lines of codes.*
 
@@ -42,7 +42,7 @@ Then we add a Trace telemetry event, because a trace can contain much more infor
 
  **With this technique we are sure that no SecurityAlert Custom Event will be discarded due to length** (we are tracing minimum information) but we have also full information with TrackTrace. If a trace is too big to be logged we will miss it, but we will never miss an event.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-16.png)
 
  ***Figure 4***: *Telemetry information as seen from the Visual Studio Application Insight Query window.*
 
@@ -52,7 +52,7 @@ Then we add a Trace telemetry event, because a trace can contain much more infor
 
 An interesting aspect is that when the software initialize TelemetryClient it adds the name of the customer/installation, so we can have a single point where all the logs of every customer is saved. From the telemetry we can filter for customer or immediately understand where the log was generated.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image_thumb-17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/08/image-17.png)
 
  ***Figure 5***: *Customer properties allow us to send all telemetry events to a single Application Insight instance from multiple installation.*
 

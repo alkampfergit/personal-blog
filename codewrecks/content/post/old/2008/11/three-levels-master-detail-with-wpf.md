@@ -8,7 +8,7 @@ categories: [WPF]
 ---
 Binding in WPF is really more powerful respect its counterpart in windows forms. Suppose you have to show this hierarchy of classes in an interface.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image6.png)
 
 This is a simple structure where a LogGroup have a collection of LogMessages and each LogMessage has a collection of StackSteps. I have a collection of LogGroup and I need to create a *three level master detail* interface to make the user browse through all objects in hierarchy.
 
@@ -50,7 +50,7 @@ System.Windows.Data Error: 39 : BindingExpression path error: ‘StackSteps’ p
 
 the binding engine told you that he could not find a StackSteps Property in the object List&lt;Messages&gt;. In such a situation the WPF binding engine permits you to use slash â€œ/â€ character to indicate â€œThe current selected item in the viewâ€ ([read here for more details](http://msdn.microsoft.com/en-us/library/ms752347.aspx)).  Thus writing the path â€œMessages/StackStepsâ€ told the engine to take selected LogGroup from the first level, then take the Messages property, then the slash indicates to take the current selected element of Messages collection and finally bind to the StackSteps collection of that element.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image7.png)
 
 Whoa, you get three level master detail with not a single line of procedural code :D
 

@@ -18,7 +18,7 @@ In my projects I need also to build solution based on Full Framework SDK and cle
 
 The only real modification I need is excluding most of the packages I’m not using in my project; I’ve also changed base image to use.NET Framework 4.8 and not 4.7.2.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-13.png)
 
  ***Figure 1***: *RUN instruction to install build tools inside a Docker Image.*
 
@@ -47,7 +47,7 @@ RUN "C:\elasticsearch\bin\plugin.bat" install delete-by-query
 
 Wow, just two lines of code launch docker build command and I have my ElasticSearch machine ready to be used.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-14.png)
 
  ***Figure 2***: *All my images ready to be used in a Docker compose file*
 
@@ -98,7 +98,7 @@ Once the file is ready just start an agent with
 
 and your agent is up and running.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-15.png)
 
  ***Figure 3***: *All docker images up and running*
 
@@ -106,7 +106,7 @@ and your agent is up and running.
 
  **If your organization uses azure or any other container registry (you can also push to a public registry because all these images does not contains sensitive data) spinning the agent is only a matter of starting docker composer instance.** After a couple of minutes (the time needed by azure devops agent to download everything and configure itself) my builds start running.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image_thumb-16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/01/image-16.png)
 
  ***Figure 4***: *A build running a Full Framework solution with integration tests on MongoDB and Elasticsearch is running in my docker container.*
 

@@ -43,7 +43,7 @@ Now you need to configure log4net to issue all nhibernate logs to the previous a
 
 I keep the standard level of NHIbernate to INFO, but the NHibernate.SQL to DEBUG. The result is the following.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image6.png)
 
 Et voila, you get all the query that were issued to the database in the trace of your page, without the need to attach debugger or trace or whatever else. This is especially interesting if you use continuous integration and all testers usually work with latest site version running on test server. With such a facility everyone can look at what is really happening to the database.
 

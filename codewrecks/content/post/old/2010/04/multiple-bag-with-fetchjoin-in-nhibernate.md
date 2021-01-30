@@ -8,7 +8,7 @@ categories: [Nhibernate]
 ---
 Suppose you have an entity like this
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image.png)
 
 your NickName class has two bags, one containing a list of DomainRegistrations, and the other containing a series of Attachments. Now suppose you map both of these with fetch=â€joinâ€, this can cause a really really really big problem.
 

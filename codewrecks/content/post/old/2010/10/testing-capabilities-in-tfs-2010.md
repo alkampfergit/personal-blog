@@ -12,19 +12,19 @@ Iâ€™ve seen in the past team doing test plan management with Excel, and if 
 
 Thanks to MTM you can leverage the power of TFS for managing testing suites; as an example suppose you have a user story about User Management of your application.
 
-[![SNAGHTML632434](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML632434_thumb.png "SNAGHTML632434")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML632434.png)
+[![SNAGHTML632434](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML632434_thumb.png "SNAGHTML632434")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML632434.png)
 
 * ***Figure 1***: * *A simple user story.*
 
 Now the testing team begin to create test suite for this User Story, and thanks to MTM they can simply press the â€œadd requirementsâ€ button, choose that User Story and create a test suite linked to that user story.
 
-[![SNAGHTML64bbc1](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML64bbc1_thumb.png "SNAGHTML64bbc1")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML64bbc1.png)
+[![SNAGHTML64bbc1](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML64bbc1_thumb.png "SNAGHTML64bbc1")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML64bbc1.png)
 
 * **Figure 2** *: *a Test case called â€œGestione Utentiâ€ linked to the User Story â€œGestione Utentiâ€*
 
 The main advantage is that the association is managed by TFS, that automatically list each test case of this test suite as belonging to the corresponding User Story. The tester team add two Test Case to the Suite, and then all developers can look at them in Visual Studio.
 
-[![SNAGHTML660ff9](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML660ff9_thumb.png "SNAGHTML660ff9")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML660ff9.png)
+[![SNAGHTML660ff9](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML660ff9_thumb.png "SNAGHTML660ff9")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML660ff9.png)
 
 * ***Figure 3***: In visual studio you can see all test case that are â€œtestingâ€ this user story*
 
@@ -52,31 +52,31 @@ Thanks to Teast case traceability, developers can easily verify if the code is r
 
 Thanks to TFS web access, I can easily look at the test cases even from a browser and not only from Visual Studio or MTM, so everyone can easily check all test cases to spot error or just to understand if testing is progressing well.
 
-[![SNAGHTML68aac1](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML68aac1_thumb.png "SNAGHTML68aac1")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML68aac1.png)
+[![SNAGHTML68aac1](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML68aac1_thumb.png "SNAGHTML68aac1")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML68aac1.png)
 
 * ***Figure 4***: You can check a test case even online with a simple web browser.*
 
 If you are the Test Plan Manager, you should also allocate resources to the test, and especially you should assign test cases to test team members, also you should plan when each test should be run and you could have the need to tell that a specific test case should be executed after another test case. This kind of management is perfect to do in Microsoft Project.
 
-[![SNAGHTML6c144c](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6c144c_thumb.png "SNAGHTML6c144c")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6c144c.png)
+[![SNAGHTML6c144c](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6c144c_thumb.png "SNAGHTML6c144c")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6c144c.png)
 
 * ***Figure 5***: How to assign a resource to a test case, in this example Iâ€™m assigning the Administrator to the â€œEsempio test case chiusoâ€ test case*
 
 Clearly you can use your GANTT chart to plan the execution.
 
-[![SNAGHTML6d282a](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6d282a_thumb.png "SNAGHTML6d282a")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6d282a.png)
+[![SNAGHTML6d282a](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6d282a_thumb.png "SNAGHTML6d282a")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6d282a.png)
 
 * ***Figure 6***: planning execution of test in Microsoft Project.*
 
 Publishing the modifications to TFS results in reallocation of the testing resource
 
-[![SNAGHTML6e699d](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6e699d_thumb.png "SNAGHTML6e699d")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6e699d.png)
+[![SNAGHTML6e699d](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6e699d_thumb.png "SNAGHTML6e699d")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6e699d.png)
 
 * ***Figure 7***: The test case 63 was assigned to Administrator with the â€œassign resourcesâ€ of Microsoft Project and the changes are published back to TFS, so they are visible everywhere.*
 
 In Microsoft Project you can use Task Inspector to verify if some resource is overallocated because they have to work on other tasks. In Figure 8 we can see that project complains about the assignment of Administrator to a test case, because he is also assigned to other tasks. Clearly gantt planning for single test cases could be a little bit too granular, but this is only an example on how flexible is test case management thanks to TFS and MTM.
 
-[![SNAGHTML705fdd](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML705fdd_thumb.png "SNAGHTML705fdd")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML705fdd.png)
+[![SNAGHTML705fdd](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML705fdd_thumb.png "SNAGHTML705fdd")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML705fdd.png)
 
 * ***Figure 8***: the Task Inspector in Project has a warning because the resource Administrator was assigned to too many task.*
 

@@ -24,7 +24,7 @@ makecert -sk SignedByCA -iv AlkCa.pvk -n "CN=localhost" -ic AlkCa.cer -sr LocalM
 
 The  **CN=localhost** must be the address you use to expose the service. If the service will go on a server called ServerXXX you need to create the certificate with CN=ServerXXX. Just to be clear, if you will access your service with the address [http://servername:port/servicename.svc](http://servername:port/servicename.svc) you must create with CN=servername. moreover does not forget to create with â€“sky exchange. Now that you have the certificate open the mmc console, typing mmc at command prompt. The mmc opens, then goes to*File-&gt;add/remove snap in*, choose certificate, then choose computer account, then local computer. Now verify that the new certificate is in place.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image3.png)
 
 Now you need to configure web.config on the web application that will host the site. First of all configure the membership as usual, first of all the connectionstring.
 
@@ -111,23 +111,23 @@ You can see that the certificate is specified with ServiceCertificate where  **f
 
 This happens because the user used to run the application pool needs permission to access certificates. Return in mmc and give to that user needed permission
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image4.png)
 
 In my example I simply used NetworkService to run the application so I give to network service the appropriate rights.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image5.png)
 
 Now you should be able to browse the service with no problem, now it is time to configure the client. Since we are using certificates, we need to do a couple of things in all clients computer: install the certificate localhost, and install the certificate authority as trusted one. To accomplish this step you first need to export generated certificate from the server
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image6.png)
 
 Choose not to export the private key, export it in DER encoded binary X.509, and choose destination directory, you will obtain a.cer file. Now move to the client computer (usually it is a good thing to first test client on the server machine to avoid firewall problem etc etc) open mmc console and add another snap/in , choose *certificate* then *My user*. These operations must be executed for each client that will access the service. Goes to the Personal/Certificates and import the localhost.cer certificate just created.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image7.png)
 
 This is not enough, because this certificate was issued by a not trusted temporary certificate authority, it is not a trusted one. You need to add the temp CA into trusted certification authority:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image8.png)
 
 By clicking â€œImportâ€ you need to browse where you created the two pvk and cer file (the very first step of this tutorial), and you need to import the file AlkCa.cer, the certificate file for the temporary certification authority. Clearly you need to send those two files to each client computer, but keep secret the pck file. Now you should see the CA in the list of trusted root certification authorities. Now create a windows form application, set a reference to the service and goes to app.config. In the behaviors section you need to configure certificates.
 
@@ -173,7 +173,7 @@ using (HelloWorld.HelloWorldClient client = new WindowsFormsApplication1.HelloWo
 
 I created in asp.net authentication database a user named Dev, that belongs to the role â€œDevelopersâ€.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image9.png)
 
 The method HelloWorld in the concrete implementation of the service requires a specific role
 
@@ -230,7 +230,7 @@ Sometimes you can encounter the following exception.
 
 This happens when there is some error in the server, the most common one is a wrong configuration of the authentication database, or authentication. Verify with the appropriate web management that everything is ok in the web.config, verify connection string to the auth database, and verify that authentication mode=â€Formsâ€ and not â€œWindowsâ€.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/09/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image10.png)
 
 If you still are receiving this exception try to access the service through an unsecured basicHttpBinding or look at message exchange with fiddler, that usually reveals the real exception that is occurred in the server.
 

@@ -18,7 +18,7 @@ This format has no FileId to retrieve the image with the Store interface, nor is
 
 The solution is to **populate the Credentials property of WebClient with the current credentials used to connect to the TFS** , in my situation I’ve this value into an helper class called ConnectionManager.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-17.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image_thumb-17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/07/image-17.png)
 
  ***Figure 1***: *How to correctly retrieve image attached to a work item.*
 

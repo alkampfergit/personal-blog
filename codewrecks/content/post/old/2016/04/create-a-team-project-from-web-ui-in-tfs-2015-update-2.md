@@ -18,13 +18,13 @@ Thanks to TFS 2015 Update 2, finally we are able to create a Team Project direct
 
 The experience is still not complete, as an example the Web procedure is not able to create Sharepoint Site (if you connected Sharepoint with TFS) nor is able to create Reporting Services based resource. Even with this limitations, this functionality is really interesting. You can access it directly from the Team Project Collection Administration page
 
-[![New Team Project menu after installing Update 2, this picture shows how Update 2 brings in the ability to create a Team Project directly from Web site](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb.png "New Team Project menu after installing Update 2")](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image.png)
+[![New Team Project menu after installing Update 2, this picture shows how Update 2 brings in the ability to create a Team Project directly from Web site](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb.png "New Team Project menu after installing Update 2")](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image.png)
 
  ***Figure 1***: *New Team Project menu after installing Update 2*
 
 If you choose to create a new Team Project you get a dialog really similar to the one you get in VSTS.
 
-[![This image shows the dialog in web interface to create a new Team Project. In the top section there is the warning about Sharpoint and Reporting Services](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb-1.png "Dialog to create the new Team Project")](http://www.codewrecks.com/blog/wp-content/uploads/2016/04/image-1.png)
+[![This image shows the dialog in web interface to create a new Team Project. In the top section there is the warning about Sharpoint and Reporting Services](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image_thumb-1.png "Dialog to create the new Team Project")](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image-1.png)
 
  ***Figure 2***: *Dialog to create the new Team Project*
 

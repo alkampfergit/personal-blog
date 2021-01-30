@@ -16,7 +16,7 @@ If you look at documentation, you can verify that you are expected to be present
 
  **The reason is probably the inability of the system to determine the pool used by the build during authorization phase,** this happens as an example when the poll is passed as variable to the pipeline. Look at the following definition
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-8.png)
 
  ***Figure 1***: *Pool specified as variable in the definition.*
 
@@ -24,7 +24,7 @@ As you can see in  **Figure 1** pool name is specified through a standard variab
 
  **This kind of flexibility is necessary, as an example, to avoid priority problems.** We usually have a dedicated pool with fast machines and left one pipeline license free so we can schedule a build in pool fast to have it being executed immediately.
 
- **How can you solve the problem? The simplest solution is going to the administration page of the project, select the pool you want to use for the build and finally grant permission to every pipeline.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-9.png)
+ **How can you solve the problem? The simplest solution is going to the administration page of the project, select the pool you want to use for the build and finally grant permission to every pipeline.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2020/03/image-9.png)
 
  ***Figure 2***: *Giving access to all pipelines to a pool solve authorization problems*
 

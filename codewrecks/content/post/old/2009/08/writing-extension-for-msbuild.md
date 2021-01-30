@@ -12,7 +12,7 @@ Creating a Task is a simple matter of inheriting from the [Task](http://msdn.mic
 
 Some of the tasks I miss most from transition to [Nant](http://nant.sourceforge.net/) to Msbuild is the couple XmlPeek and XmlPoke, used to read and manipulate xml files with xpath. Replicate them with LINQ to XML is a breeze. To actually build the task I first included all the logic in a different class.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image.png)
 
 With such an arrangement I can easily test my XML logic
 

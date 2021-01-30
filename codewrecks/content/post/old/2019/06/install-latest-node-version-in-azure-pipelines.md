@@ -16,7 +16,7 @@ In this scenario you have two distinct way to solve the problem. The first solut
 
 > Matching Agent Capabilities with Build Demands is a standard way to have your build definition match the correct agent that have all prerequisites preinstalled
 
- **But even better is using a Task (still in preview) that is able to install and configure required node version on the agent automatically.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-5.png)
+ **But even better is using a Task (still in preview) that is able to install and configure required node version on the agent automatically.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/06/image-5.png)
 
  ***Figure 1***: *Use Node.js ecosystem Task configured*
 

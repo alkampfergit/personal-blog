@@ -27,7 +27,7 @@ In my example I filtered the results only for the database and used the Id of th
 
 An example of what you got with this query is represented in the following picture.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/02/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/image6.png)
 
 As you can see you can easily visualize percentage of completion, estimated end time and the command that is running.
 

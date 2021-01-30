@@ -12,7 +12,7 @@ Sometimes it happens that someone calls me to solve a problem in code, and quite
 
 > Iâ€™m in a hurry, I do not have time to write test, I must correct that bug as soon as possible
 > 
-> [![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb39.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image39.png)
+> [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb39.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image39.png)
 
 Iâ€™m aware that writing a test consume time, but quite often in the end a test save you time. After that people told me that he do not have time, he shows me the problem, then fire a big web site from a.NET solution with 60 projects, we have to wait about 40 seconds for the app to start, then browse to a web page, enter data, and verify if the answer is correct.
 
@@ -20,7 +20,7 @@ The problem is that we are testing a function that use some stored procedures an
 
 For big application the startup time of the whole application is just too big to think that F5 approach is a feasible solution to verify if a bug is corrected. One day, for a very difficult bug, after a couple of hours I realized that more than half of the time was spent waiting the app to start and insert data to exercise the functionâ€¦â€¦. too bad. This means that we are developing slowly, and moreover it is frustrating to: â€œdo a modification and wait for one minute to see if it corrects the problemâ€
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb40.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image40.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb40.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image40.png)
 
 Working this way lead to this pattern
 

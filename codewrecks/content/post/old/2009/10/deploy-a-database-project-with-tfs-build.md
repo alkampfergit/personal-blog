@@ -12,13 +12,13 @@ If a developer needs to change database schema, we need to automate not only the
 
 This is quite simple using TFS and Database project. The situation is this one
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image.png)
 
 When a developer does a check-in, the build server grabs the tip from TFS, then it runs the builds script and deploy the new version of the site in the test web server. At the same time test database gets updated with the latest database schema.
 
 To accomplish database deployment is necessary to modify build script by hand. If you create a build script with the wizard and ask to the build machine to build a database project, the only stuff you will get is a build of the database project, not a deploy, and all artifacts are moved in the drop location.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image1.png)
 
 What you really need is the ability to automatically deploy changes to a specific database, this task is quite simple and you can find some details [here in msdn](http://msdn.microsoft.com/en-us/library/aa833165.aspx), but we need to insert this command into the msbuild script. Here is the code
 
@@ -114,7 +114,7 @@ Creating dbo.Categories.CategoryName…
 
 This is the first time I run the script against the server, so all tables gets created, I can verify that the database was correctly created going to the test server
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image2.png)
 
 Et voila, the database was automatically deployed to the test instance of sql server thanks to TFS Build and with no effort :).
 

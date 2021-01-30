@@ -8,11 +8,11 @@ categories: [Entity Framework]
 ---
 Quite often you need to store in database Hierarchical structure that are logically represented by a tree. There are a lot of techniques around there, but one of the most common is using a simple foreign key that refers to the same table, as in the following example
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb6.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb6.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image6.png)
 
 If you map this table with entity framework you will obtain automatically a tree structure, you only need to rename the Relationship field because they are named Employee and Employee1, I renamed them in  **Parent** and  **Childs** , because the resulting in-memory structure is clearer
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb7.png)](http://www.codewrecks.com/blog/wp-content/uploads/2009/02/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image-thumb7.png)](https://www.codewrecks.com/blog/wp-content/uploads/2009/02/image7.png)
 
 Now I create a simple routine to print the tree in console, the main problem here is that for every object we need to issue a *Load()* call to the Childs EntityCollection to load the childs, thus to print the whole tree we issue N select, where N is the number of the node of the tree.
 

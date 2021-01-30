@@ -78,7 +78,7 @@ you can write this XAML.
 
 I bound textbox and simple Textblock to the dictionary, and here is the result.
 
-[![SNAGHTMLee0e56](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTMLee0e56_thumb.png "SNAGHTMLee0e56")](http://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTMLee0e56.png)
+[![SNAGHTMLee0e56](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTMLee0e56_thumb.png "SNAGHTMLee0e56")](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/SNAGHTMLee0e56.png)
 
 This is really cool, Iâ€™m able to bind to a dictionary, and if the value of the dictionary is a complex object, changing the value of a property gets immediately reflected in other controls bound to the same property, clearly, objects bound to a String value, could not benefit of this feature, and if you change the value in the textbox, Changes in data are not reflected to other control.
 

@@ -19,7 +19,7 @@ Using powershell to cusotmize build is simple and easy, once you have versioning
 
 Et voila, you have your Nuget server up and running in really no-time on an azure web site, it is simple and quick to setup.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image3.png)
 
  ***Figure 1***: *Nuget server running on Windows Azure Web Site*
 
@@ -59,7 +59,7 @@ As you can verify it is a standard nuspec file and my goal is creating a powersh
 
 The very first step is including nuget.exe inside my BuildScript folder and check-in everything. This will assure me that everything is needed for the build is contained in source control.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image4.png)
 
  ***Figure 2***: *Content of the BuildScript folder*
 
@@ -193,7 +193,7 @@ Publish-NugetPackage $scriptRoot\..\..\bin $scriptRoot $PackageVersion $NugetSer
 
 It is based mainly by convention, the script root is the folder where the script is, and the build is configured with this workspace.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image5.png)
 
  ***Figure 3***: *Workspace configuration*
 
@@ -228,31 +228,31 @@ Publish-NugetPackage $env:TF_BUILD_BINARIESDIRECTORY $scriptRoot $PackageVersion
 
 The above script does nothing except importing the module with the publishing function and invoke the Publish-NugetPackage function.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image6.png)
 
  ***Figure 4***: *Invoke the script after build*
 
 Now everything is setup correctly, just fire a build and verify that everything is done correctly looking at write-host messages that gets collected in the detailed log of the build. Thanks to log files, you can output as much information you want to diagnose problem that can arise during the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image7.png)
 
  **figure 5:** *Verify output of powershell scriptin diagnostic build informations.*
 
 If the script contains some errors, powershell will write error with write-error and this information will make the build partially fails and also all the errors will be output in build details, but not in a real nice form. Since I’ve intercepted all nuget.exe error output and dump with Write-Error, a nuget.exe error message will make the build Partially Fails and you can looks at errors list to understand what happened.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image8.png)
 
  ***Figure 6***: *How errors in powershell are displayed in build output*
 
 This has **not a nice formatting, because each error line is treated as a single and distinct error in the build**. But at least we are able to identify the root cause of the error, even if they are not really well formatted. When the build is green you will find your packages in the feed of your nuget server.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image9.png)
 
  ***Figure 7***: *Feed of my packages pushed during the build.*
 
 Each good build will produce a unique version for your package, as you can verify from package console.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/02/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/02/image10.png)
 
  ***Figure 8***: *Listing available packages in Package Manager Console.*
 

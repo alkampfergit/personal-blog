@@ -10,13 +10,13 @@ Some time ago I blogged about a [primitive Broker class](http://www.codewrecks.c
 
 To manage this problem in a single place, Iâ€™ve done a little modification to the IBrocker interface
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image9.png)
 
  ***Figure 1***: *The new interface for the IBroker*
 
 The only modification to the base Broker is the presence of another version of the RegisterForMessage method, and the UnRegisterAll() method.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/01/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image10.png)
 
  ***Figure 2***: *The new RegisterForMessage() method and corresponding UnRegisterAll*
 

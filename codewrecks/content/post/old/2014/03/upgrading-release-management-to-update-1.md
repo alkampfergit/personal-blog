@@ -10,13 +10,13 @@ If you want to upgrade Release Management for TFS 2013 to Update 1 you surely no
 
 While this does not delete any previous settings and simply upgrade the database to the new structure, it is possible that  **after upgrading when you try to connect with the Release Management Client you get and error telling you that the Release Management Server is not working**. Before starting panicking for your installation, you should check if you erroneously choose the Https protocol instead of HTTP
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/03/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/03/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/03/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/03/image3.png)
 
  ***Figure 1***: *Release configuration Manager Server Update 1 Configuration Panel*
 
 If you compare this configuration panel with the standard one of Release Configuration Manager without Update 1 you can notice that there is no Https option.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/03/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/03/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/03/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/03/image4.png)
 
  ***Figure 2***: *Release Configuration Manager Server Configuration panel (without Update 1)*
 

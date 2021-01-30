@@ -8,7 +8,7 @@ categories: [Entity Framework]
 ---
 EF [4.1 is now in RC](http://blogs.msdn.com/b/adonet/archive/2011/03/15/ef-4-1-release-candidate-available.aspx) phase and as a NHibernate user Iâ€™m curious to check the fluent API to map entities to database. One of the feature that I and [Andrea](http://blogs.ugidotnet.org/pape/Default.aspx) miss most is the possibility to map private properties with fluent interface. It seems strange to map private properties at once, but it can be useful in DDD. Suppose you have these simple classes.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image9.png)
 
  ***Figure 1***: *A really simple domain*
 
@@ -42,7 +42,7 @@ PrivateDetails = details;
 
 The idea behind this is that you should access only the AGGREGATE roots, not manipulating directly the collection of Products, this forces the user of the class to use specific methods. Now a problem arise, how we can map this class with EF 4.1 fluent interface? The problem is generated from the Fluent interface, that permits only to specify properties with Lambda.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image10.png)
 
  ***Figure 2***: *The HasMany() method accepts an Expression*
 
@@ -52,7 +52,7 @@ Property(c =&gt; c.CategoryId)
 
 this technique is known as [static reflection](http://handcraftsman.wordpress.com/2008/11/11/how-to-get-c-property-names-without-magic-strings/) and is really useful in such scenarios, but â€¦ now I could not use the HasMany() methods to map a protected property.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image11.png)
 
  ***Figure 3***: *How can I map a protected property if I could not use in a lambda?*
 
@@ -142,13 +142,13 @@ int recordsAffected = db.SaveChanges();
 
 As you can ses Iâ€™m able to add product without the need to directly access the collection, and I can set a private property through a method (not so useful technique, but just to show that mapping private properties works). Running the sample I got
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image12.png)
 
  ***Figure 4***: *The fact that three entities were saved confirmed me that the mapping of the protected collection works.*
 
 I can verify that everything is ok thanks to [EFProfiler](http://efprof.com/).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb17.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/03/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image13.png)
 
  ***Figure 5***: *Thanks to EFProf I can verify that products are correctly saved and linked to the category object*
 

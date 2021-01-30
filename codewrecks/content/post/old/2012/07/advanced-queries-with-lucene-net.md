@@ -89,7 +89,7 @@ N°141649 found in  39 ms. Press a key to look at top results
 
 The amazing stuff is the speed of the response,  **it actually took 39 milliseconds to find that there are 141649 documents in the index that satisfy our query and to return information about the top 10**. The secret of this speed is in how the index is constructed internally, and the  **TopDocs** returned object that does not contains any document data but only information about how to retrieve matching documents. In fact you need to retrieve the document inside a for cycle to show results to the user.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/image.png)
 
  ***Figure 1***: *The results can now contain the original body of the post because it is included in the index.*
 

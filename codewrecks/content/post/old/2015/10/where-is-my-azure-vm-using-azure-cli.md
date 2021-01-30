@@ -19,7 +19,7 @@ azure vm list
 
 To simply list all of your VM of your account.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image14.png)
 
  ***Figure 1***: *Output of azure vm list command*
 
@@ -48,13 +48,13 @@ But you need to use an account created in your Azure Directory, and not your pri
 
 When you login correctly into Azure from CLI, you can use the same command to list VMs, but now you will see all VMs that are created with the new Resource Manager.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image15.png)
 
  ***Figure 2***: *In arm mode you are able to list VM created with the new Resource Manager.*
 
 This happens also in standard Azure Portal GUI, because you have two distinct node for Virtual Machine, depending if they are created with Azure Service Management or Azure Resource Manager.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image16.png)
 
  ***Figure 3***: *Even in the portal you should choose which category of VM you want to manage*
 

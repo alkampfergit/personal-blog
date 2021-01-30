@@ -12,7 +12,7 @@ If you know how git works, you are perfectly aware that, even if you work in ope
 
 Luckily enough,  **Azure DevOps has an option for Git Repository where you can have the engine prevent commits that contains file names with only case differences, to avoid this problem entirely**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-10.png)
 
  ***Figure 1***: *Options for Cross platform compatibility can solve most headaches*
 

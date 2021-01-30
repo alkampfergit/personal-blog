@@ -14,19 +14,19 @@ But no tool can cover all of the need of every possible user, and VSO solves thi
 
 Possibilities are infinte, as an example I can configure VSO to create a particular card in trello whenever a PBI is created in my project
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/10/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/10/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/10/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/10/image.png)
 
  ***Figure 1***: *Automatic creation of card upon creation of PBI in VSO*
 
 If you start adding PBI in VSO
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/10/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/10/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/10/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/10/image1.png)
 
  ***Figure 2***: *Create PBI in VSO account*
 
 You will find corresponding card in Trello automatically created.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/10/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/10/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/10/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/10/image2.png)
 
  ***Figure 3***: *Card are automatically created with a Link to the corresponding PBI*
 

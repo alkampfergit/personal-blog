@@ -8,11 +8,11 @@ categories: [Office]
 ---
 In [a previous post](http://www.codewrecks.com/blog/index.php/2008/09/02/openxml-format-insert-an-image-into-a-document/) I deal with image insertion into an openXml document. Now it is time to show how to change image dimension, I want to be able to define new dimension and to choose if the image should be stretched or no. The *w:drawing*element has two distinct part to manage image dimension, the first is the *wp:extent*node, child of the wp:inline one.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb2.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb2.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image2.png)
 
 This node determines the extent of the area of the document that will contain the image, but to really change dimension of the image we should operate in a different tag:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb3.png)](http://www.codewrecks.com/blog/wp-content/uploads/2008/09/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image-thumb3.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/09/image3.png)
 
 The *spPr*node is used to determines the shape properties as described in the section 4.4.1.41 of the specification of the openXml format, it contains the *xfrm* node, that is used to apply 2D transformation to an object. This particular node is used to specify the offset of the picture into the area, and the ext is used to set the real image dimension. The code to change image width is the following
 

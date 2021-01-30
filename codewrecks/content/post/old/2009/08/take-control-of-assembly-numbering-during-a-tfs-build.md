@@ -25,7 +25,7 @@ using System.Reflection;
 
 Next I import this file as link in every project that belong to this team project
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image25.png)
 
 With this little trick to change AssemblyFileVersion attribute for every project I*need only to change one file.* Now it is time to build some custom tasks that will help us to manage the whole process, first of all the task that generates unique numbers and correlate them with build label.
 
@@ -268,7 +268,7 @@ Finally I use my AssemblyInfoVersionManager task to change the ProjectVersion.cs
 
 After a build you can verify that everything is gone ok.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image26.png)
 
 Now if you deploy this assembly into a customer computer, if you have a problem in the future, you can immediately verify that this was compiled with the build called 8, then you check the StandardBuildForCIVersion.txt
 

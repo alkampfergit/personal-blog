@@ -14,19 +14,19 @@ Another advantage of this approach, is that we can benefit from regular updates 
 
 This is really cool and is another great advantage of using Team Foundation Service. In this new release, alerts were introduced:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/12/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/12/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/12/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/12/image.png)
 
  ***Figure 1***: *The alert control panel.*
 
 The alerting system is something that is available in TFS from long time, but it was not available on the Team Foundation Service until this release, mainly because it needs a complete new Web Interface to manage alters. (Actually in TFS 2010 you can manage alerts from Visual Studio). As an example, this is the interface that permits you to add an alert whenever someone do a check-in in the project.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/12/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/12/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/12/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/12/image1.png)
 
  ***Figure 2***: *All possible check-in alert available in Team foundation Service*
 
 The cool part is that everything is done from a Web Interface that is fast, fluid and really efficient, when you select a check-in rule (in figure2 I choose to have an alert when any checkin occurs) another dialog permits me to refine the alert.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/12/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/12/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/12/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/12/image2.png)
 
  ***Figure 3***: *Check-in alert rule dialog.*
 

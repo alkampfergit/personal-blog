@@ -31,17 +31,17 @@ In this scenario I have a PowerShell scripts that kills every instance of LibreO
 
 With latest version of the tasks, I can use the prejobexecution and postjobexecution to ask the system to run scripts at the beginning and the end of the build.
 
-[![Section of task.json file showing the use of prejobexecution.](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-1.png "Relevant section of the script that uses prejobexecution to execute a script before any task runs.")](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-1.png)
+[![Section of task.json file showing the use of prejobexecution.](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-1.png "Relevant section of the script that uses prejobexecution to execute a script before any task runs.")](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-1.png)
 
  ***Figure 1***: *Relevant section of the script that uses prejobexecution to execute a script before any task runs.*
 
 **Now in Figure 1 you can verify that I’m invoking the script KillLibreoffice.ps1 not only in the *execution* node, but also with a special node called prejobexecution and postjobexecution. **These two nodes allows you to specify a script to be called before the very first task of the build is executed. To verify that everything works, here is a super simple and stupid build that uses this task.
 
-[![Simple buidl that uses a libreofficekiller task then build the solution](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-2.png "Task LibreOfficeKiller used in a sample build")](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-2.png)** Figure 2: ***Task LibreOfficeKiller used in a sample build*
+[![Simple buidl that uses a libreofficekiller task then build the solution](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-2.png "Task LibreOfficeKiller used in a sample build")](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-2.png)** Figure 2: ***Task LibreOfficeKiller used in a sample build*
 
 From the output of the build you can verify that the script that kills LibreOffice is run not only before the Get Source phase, but also after all tasks are completed.
 
-[![Output of the build shows that kill libre office script is run three times, before any task, during task execution and finally after all tasks were run](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-3.png "Build output shows correct execution of scripts")](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-3.png)
+[![Output of the build shows that kill libre office script is run three times, before any task, during task execution and finally after all tasks were run](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-3.png "Build output shows correct execution of scripts")](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-3.png)
 
  ***Figure 3***: *Build output of the build with KillLibreOffice task.*
 

@@ -75,7 +75,7 @@ You can find all type related to an export because MEF Catalog contains a proper
 
 If one of the ExportDefinition exports the type I’m searching for  **I can finally use the ReflectionModelService.GetPartType() static method to find the type of dynamically imported class**. This simple method make possible to discover the list of all concrete classes loaded by MEF that inherit from Request or Response to create the list of KnownTypes for WCF.
 
-[![08-05-2012 19-26-21](http://www.codewrecks.com/blog/wp-content/uploads/2012/05/08-05-2012-19-26-21_thumb.png "08-05-2012 19-26-21")](http://www.codewrecks.com/blog/wp-content/uploads/2012/05/08-05-2012-19-26-211.png)
+[![08-05-2012 19-26-21](https://www.codewrecks.com/blog/wp-content/uploads/2012/05/08-05-2012-19-26-21_thumb.png "08-05-2012 19-26-21")](https://www.codewrecks.com/blog/wp-content/uploads/2012/05/08-05-2012-19-26-211.png)
 
  ***Figure 1***: *From the Wcf Test Client you can choose between all the requests that were dynamically loaded by MEF*
 

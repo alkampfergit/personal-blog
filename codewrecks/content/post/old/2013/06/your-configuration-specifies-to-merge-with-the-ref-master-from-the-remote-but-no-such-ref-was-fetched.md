@@ -13,10 +13,10 @@ A couple of times I encounter this error when I issue a command line pull of a G
 
 If you go to the.git folder and open the git *config*file, I noticed the option tagopt set to –tags
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/image7.png)
 
 I do not know if that option was setup from the initial Visual Studio clone option (VS Tools for git are still in beta) but removing it should fix the problem and you should be able to do a standard command line pull again
 
-[![SNAGHTML8a18b0](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/SNAGHTML8a18b0_thumb.png "SNAGHTML8a18b0")](http://www.codewrecks.com/blog/wp-content/uploads/2013/06/SNAGHTML8a18b0.png)
+[![SNAGHTML8a18b0](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/SNAGHTML8a18b0_thumb.png "SNAGHTML8a18b0")](https://www.codewrecks.com/blog/wp-content/uploads/2013/06/SNAGHTML8a18b0.png)
 
 Gian Maria

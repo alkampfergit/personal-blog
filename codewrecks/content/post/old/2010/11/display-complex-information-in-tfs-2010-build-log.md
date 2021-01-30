@@ -10,13 +10,13 @@ If you read [this post](http://blogs.msdn.com/b/jpricket/archive/2009/12/21/tfs-
 
 This is very useful if you need to track some custom and complex information during a build from a Custom Action, and you want it to be showed with a specific interface in the log, like a superwarning :) or some information that need to be really evident in the log. First of all create a class that will contains all the data you want to show.
 
-[![SNAGHTMLb3780f](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb3780f_thumb.png "SNAGHTMLb3780f")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb3780f.png)
+[![SNAGHTMLb3780f](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb3780f_thumb.png "SNAGHTMLb3780f")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb3780f.png)
 
  ***Figure 1***: *Custom information that will be appended to the Build log during the execution of a Custom Action*
 
 Now you can write information in your Custom Action code with this code.
 
-[![SNAGHTMLb43bcb](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb43bcb_thumb.png "SNAGHTMLb43bcb")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb43bcb.png)
+[![SNAGHTMLb43bcb](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb43bcb_thumb.png "SNAGHTMLb43bcb")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb43bcb.png)
 
  ***Figure 2***: *Log a complex object from Custom Action code*
 
@@ -24,13 +24,13 @@ Now the only problem is that you need to write a Visual Studio plug-in to visual
 
 I want this log to be really visible (because it is a SuperWarning) so I write this visualizer
 
-[![SNAGHTMLb62bf3](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb62bf3_thumb.png "SNAGHTMLb62bf3")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb62bf3.png)
+[![SNAGHTMLb62bf3](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb62bf3_thumb.png "SNAGHTMLb62bf3")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb62bf3.png)
 
  ***Figure 3***: *How to visualize a complex log*
 
 The key factory here is that this code does not need to make a reference to the original object used for the log, because all property are passed as string in the *node.Fields* array. Now if you use this plugin you can see that you are able to visualize complex data.
 
-[![SNAGHTMLb792c0](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb792c0_thumb.png "SNAGHTMLb792c0")](http://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb792c0.png)
+[![SNAGHTMLb792c0](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb792c0_thumb.png "SNAGHTMLb792c0")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTMLb792c0.png)
 
  ***Figure 4***: *The plugin visualizes the comples log with the custom format*
 

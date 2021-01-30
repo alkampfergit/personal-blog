@@ -10,7 +10,7 @@ I blogged some time ago on how to [disable Javascript errors in Web Browser](htt
 
 But a problem arise when I use the browser in a 64 bit environment, because when it is time to inject script inside the HEAD element I got an error of invalid cast.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image2.png)
 
 An exception is raised because he could not cast elem to type HTMLHEadElementClass. Now I have 2 problems, the first is why in 64 it environment the MSHTML interop is changing the way it works returning me an object that implements a different set of COM interfaces, but I need also to know what kind of element I got in return asking for TagName (â€œHEADâ€).
 

@@ -16,15 +16,15 @@ During the attach process I got these warnings.
 
 This happens because the destination server has different Sharepoint configuration, now you need to configure the new loaded project collection to use the right Sharepoint Portal:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb21.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image21.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image21.png)
 
 Now that the project collection point to the right SP, I goes to visual studio, and verify the portal settings
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb22.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image22.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image22.png)
 
 Clearly it points to the old server, so I disable the team project portal for this Team Project and follow the instruction [of this blog post](http://blogs.msdn.com/greggboer/archive/2010/02/24/creating-sharepoint-portals-reports-and-upgrading-reports-for-an-existing-team-project.aspx) to recreate the project portal for my Team Project and to recreate the reports. Now I force the execution of the warehouse from the web service [http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx?op=ProcessWarehouse](http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx?op=ProcessWarehouse "http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx?op=ProcessWarehouse") and wait a little bit for the cube to build, then I opened the MOSS portal and I can verify that now the project correctly uses Excel Reports.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb23.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image23.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image23.png)
 
 In this simple test project there are not so much data, but the important stuff is that with few operations you can move and rename a project collection to another server and being able to recreate the portal on MOSS taking advantage of features like Excel Reports even if the Team Project was born in an environment without MOSS.
 

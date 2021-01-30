@@ -10,19 +10,19 @@ Custom Rule for database projects is one of my favorite extension point of Visua
 
 First of all the extension needs to specify its details with attributes. The DatabaseSchemaProviderCompatibility permits you to specify the version of the database the rule applies to, in my example a standard sqlDatabase, then the DataRuleAttirbute is used to specify name, id, description, and other attributes of the rule. Finally you need to specify a series of SupportedElementTypeAttribute to declare the kind of database objects you want to validate, for this example you simply need to specify ISqlColumn because I want only to validate column names.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image25.png)
 
 The important aspect is that all the strings passed to DataRuleAttribute needs to be included in a resource file, and the very first things to do is creating a suitable resource file.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image26.png)
 
 Then you need to populate it with name and description that you want to use in your rule.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image27.png)
 
 Now you can create a file that stores all these constants, for an easier use. As you can see the ResourceBaseName string is the name of the resource file.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb28.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image28.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image28.png)
 
 And the game is done. Now you only need to write the code that validate column names.
 
@@ -59,7 +59,7 @@ System.Diagnostic.Debugger.Break
 
 And when you build the test database project, you can debug visual studio, and you can inspect with the debugger whatever object you need.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb29.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image29.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image29.png)
 
 With the power of the debugger you can better understand data that is passed to the rule by the designer. To register the rule you need to copy into a specific Visual Studio folder, and register it in the gac. You can accomplish all with a series of post build actions.
 

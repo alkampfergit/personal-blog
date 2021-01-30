@@ -23,7 +23,7 @@ public interface IL4NServer
 
 Now I can choose the name of the logger Iâ€™m interested to filter messages log.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image2.png)
 
 But this is not the only improvement I need. Quite often it happens that developer X called you telling â€œWhen I press the button Y the application responds after 20 secondsâ€, then you see with the SQL profiler that tons of query gets issued to the database. For a layered and complex application it can be difficult to understand where that queries are issued in the code, so I need a way to get a valid stack trace from the logger. To accomplish this task I modified the LogMessage object
 
@@ -58,7 +58,7 @@ public class LogMessage
 
 First I have inserted in the message a list of stacksteps, a class that contains filename and line number, in the constructor of the message I use the StackTrace.NET class to obtain the stack trace, then I do a linq query to remove all the steps that have no source file or are part of my logging system. The result is really interesting.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image3.png)
 
 Not only Iâ€™m able to intercept NHibernate generated SQL, but I have a full stack trace that tells me where the query is generated, now the next step is to build a better client interface to present the result in a more usable and readable form.
 

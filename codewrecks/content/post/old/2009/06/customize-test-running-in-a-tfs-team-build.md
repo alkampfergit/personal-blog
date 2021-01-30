@@ -10,11 +10,11 @@ In [previous post](http://www.codewrecks.com/blog/index.php/2009/06/26/running-t
 
 This kind of option is not present in the wizard, and it is time to make your hands dirty. To unleash the full power of team builds, you need to know [msbuild](http://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx), in order to configure the build editing the msbuild file of the team build. First of all go to the team explorer, open the source control node (step 1), here you will find a folder named " **TeamBuildTypes** (step2) that contains a subfolder for each build definition, in the BuildWithTests folder there are a couple of file, the one named TFSBuild.proj (Step 3) is the one that contains all operations of the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb46.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image46.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb46.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image46.png)
 
 In order to edit that file, you first need to grab a copy from the source control to your local folder, simply right click in the teamBuildTypes folder to â€œGet the latest versionâ€
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb47.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image47.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb47.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image47.png)
 
 Ok now you can double click the tfsbuild.proj file to edit it. This is a simple msbuild file, and in the first lines you find this instruction
 
@@ -95,7 +95,7 @@ That shows you an interesting property called  **TreatTestFailureAsBuildFailure*
 
 As you can see, overriding a target is done simply redefining it in the build file. With this simple addition, the msbuild engine will call your BeforeTestConfiguration task that sets the StopOnTestFailure property to True and the  **TreatTestFailureAsBuildFailure** also to true, thus asking to msbuild to make the entire build fails when the test task fails. Now if I fire a build with a failing test I see.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb48.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/06/image48.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb48.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image48.png)
 
 As you can see the entire build is considered to be failed, because we override the BeforeTestConfiguration. If you click on the Log file you can find the Message that confirms that your override task was really called.
 

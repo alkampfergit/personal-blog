@@ -10,7 +10,7 @@ If you like [to use certificate to connect via SSH to your Linux machine](http:/
 
 This operation is really simple, because  **Azure Portal allow you to specify the public key during VM creation** and everything else is managed by VM Creation Scripts. In the same blade where you specify username and password you can opt in to use a certificate instead of a password. You should open the file with.pub extension you’ve created previously (with ssh-keygen) and paste full content in appropriate textbox.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image11.png)
 
  ***Figure 1***: *Specifying ssh public key during VM Creation*
 
@@ -44,13 +44,13 @@ reset-access
 
  **You will be prompted for Resource Group and VM Name** (you can specify those two parameter from command line), then the CLI will update your Virtual Machine for you.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image12.png)
 
  ***Figure 2***: *Result of the reset-access command*
 
  **Now you can access your VM using certificate** , and if you check your.ssh/authorized\_keys file, you can check that the public key was correctly added by the Azure CLI utility.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image13.png)
 
  ***Figure 3***: *I can now connect to my VM using certificate*
 

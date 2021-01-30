@@ -8,7 +8,7 @@ categories: [Programming]
 ---
 This technique works for IIS6 and IIS7 with the "IIS 6 WMI Compatibilityâ€ installed. The purpose is changing the directory of a web site in a remote server. The purpose of this action will be clear in a future post, for now only assume that you want to be able to create a piece of c# code that changes directory of a web site in windows server. Here is a test site.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image3.png)
 
 Now if you run this code.
 
@@ -38,7 +38,7 @@ site.Put();{{< / highlight >}}
 
 And if you look at site directory again you will get.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image4.png)
 
 So you have changed the Physical path of the application.
 

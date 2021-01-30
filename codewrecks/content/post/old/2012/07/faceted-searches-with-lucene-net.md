@@ -13,7 +13,7 @@ categories: [LuceneNET]
 
 One of the coolest feature of Lucene.NET is the  **ability to do** [**faceted searches**](http://en.wikipedia.org/wiki/Faceted_classification) **with really few lines of code**. A faceted search  **runs a query on an index and calculate the distribution of the results based on a property of the document**. Let me show a sample result and then you probably will have a better understanding of this concept. Suppose I’m indexing product from the Microsoft Sample database AdventureWorks, each product has an Id a category and a description fields and I offered this simple UI for searching.
 
-[![SNAGHTML1248f1](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML1248f1_thumb.png "SNAGHTML1248f1")](http://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML1248f1.png)
+[![SNAGHTML1248f1](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML1248f1_thumb.png "SNAGHTML1248f1")](https://www.codewrecks.com/blog/wp-content/uploads/2012/07/SNAGHTML1248f1.png)
 
  ***Figure 1***: *Result of a faceted search.*
 

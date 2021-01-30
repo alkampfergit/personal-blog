@@ -80,7 +80,7 @@ public class ADUsers : IEnumerable<ADUser>
 
 This is a real simple classes, it accepts a DirectoryEntry root used to query the Ldap, then it retrieves all the users object with a simple LDap query issued by DirectorySearcher object, for each result, it builds a wrapper ADuser. Now that we have these two simple classes we can write.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb19.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/11/image19.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image19.png)
 
 Since I loaded in memory a wrapper for each object, I can issue LINQ queries against the AdUsers, because I can rely on the support of Linq 2 Object, simply making AdUsers implementing IEnumerable. Since everything is in memory we can issue condition like u.UserName.Contains(â€œampâ€) or whatever you like.
 

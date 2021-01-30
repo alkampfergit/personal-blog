@@ -64,11 +64,11 @@ In this way Iâ€™m sure that the verification phase is run only after the ac
 
 This is one of the most common problem when testing asynchronous components, you need to be sure to begin the verification phase only when all the asynchronous operations of the sut are completed. Standard unit testing follows the [Four Phase Test pattern](http://xunitpatterns.com/Four%20Phase%20Test.html).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image.png)
 
 When the sut executes its operation asynchronously this pattern needs to be changed slightly
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image2.png)
 
 To make this possible you should structure the sut in such a way that it is possible for the test to know when all the asynchronous operations are completed. In my example this is straightforward, because the sut signals to the caller the return value of the action, when you have â€œfire and forget actionsâ€ where there is no notification sent to the caller, implementing this pattern can be a little more complicated.
 

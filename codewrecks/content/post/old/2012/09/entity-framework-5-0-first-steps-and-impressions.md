@@ -75,13 +75,13 @@ Running Seed method.
 
 Et voilà you have your database generated and ready to use. As you can see from Figure 1, the convention used is to create a table with the very same name of the DbSet properties exposed by your data context and a column for each property of the class.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image6.png)
 
  ***Figure 1***: *Newly generated database with database-migration of EF5*
 
 Everything is created by convention over configuration, as an example  **if you have a property called Id, corresponding table column will be the primary key for the table** , and if the value is an integer automatically the column is generated with Identity Set to true.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/09/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/09/image7.png)
 
  ***Figure 2***: *Id column was generated with Identity specification equal to true*
 

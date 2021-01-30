@@ -6,7 +6,7 @@ draft: false
 tags: [NET framework,Software Architecture]
 categories: [NET framework,Software Architecture]
 ---
-When you work with domain model your domain objects become more complex than a simple containers for table values. This makes somewhat problematic using these object directly with the UI, especially when you use native binding. Letâ€™s make an example, I have this object called  **Domain** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image10.png)
+When you work with domain model your domain objects become more complex than a simple containers for table values. This makes somewhat problematic using these object directly with the UI, especially when you use native binding. Letâ€™s make an example, I have this object called  **Domain** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image10.png)
 
 As you can see the Domain class has a property called ContentBlackList that is a List of String. The setter is private and in the getter the list is created lazily, then I have a [User Type](http://www.codewrecks.com/blog/index.php/2008/10/21/some-details-on-older-post-about-usertype/) to map this property into a single field of a table in a list of string separated by the charachter #. The object works well, until I want to bind this property directly to a textbox in a form.
 
@@ -52,7 +52,7 @@ Now the problem is: Binding Engine cannot set private property, so the binding i
 
 This happens because the Domain Object is not designed with Ui in mind, and this is a  good thing, because the Domain should not depend from the Ui. To solve this typical problem you can resort to the old Proxy pattern.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image11.png)
 
 As you can see the proxy wraps a real Domain object and exposes the ContentBlackList to the UI and presents both get and set methods. The Set methods simply remove all objects from the original list and then insert again thus permitting me to bind this object directly to a textbox.
 

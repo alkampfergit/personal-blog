@@ -15,7 +15,7 @@ Now we have all the prerequisites in place to connect to an Azure DevOps account
 
 To have a better look and feel of exported document,  **the best approach is using the concept of Templates created by simple Word documents**. With this technique we can use all the styles, formatting directly in Word, then use some placeholder to specify where you want to include fields of work Items.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-12.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-12.png)
 
  ***Figure 1***: *A simple example of a Word Template used to export content of a Work Item*
 
@@ -151,7 +151,7 @@ OpenXML format is really fascinating and it is a real fantastic effort made by M
 
 All the rest of the code in the example is boilerplate, and here is the result of a test export. The code relating to this example is in [GitHub with the tag 0.2.0](https://github.com/alkampfergit/AzureDevopsWordPlayground/tree/0.2.0). Here is an example of an exported document
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image_thumb-13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/12/image-13.png)
 
  ***Figure 2***: *An exported document with complex description*
 

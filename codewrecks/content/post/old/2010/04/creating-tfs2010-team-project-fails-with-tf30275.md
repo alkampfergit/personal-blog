@@ -46,23 +46,23 @@ The error happens when the script for process creation try to upload the file  *
 
 The problem is somewhat originating from NOD32 and here is how can you solve it. You need to open the Full configuration Tree from NOD32
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb24.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image24.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image24.png)
 
 Then you need to exclude the ip of the TFS from controlled ones, from Zone and Rules editor
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image25.png)
 
 Now you need to exclude the IP of TFS
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image26.png)
 
 As you can see Iâ€™ve inserted the ip of my test TFS (10.0.0.101) into the list of Addresses excluded from active protection (IDS). But this is not enough, the problem still arise because nod32 is monitoring HTTP traffic, and the communication from Visual Studio to the asmx services that constitute the tfs integration to sharepoint. Now go the WebAccessProtection/HTTP,HTTPS configuration section of nod, and insert the name of the tfs server (in my example is tfs2010test) into the list of addresses excluded from filtering.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image27.png)
 
 Just insert the string \*yourtfsservername\* with asterisks, so every address containing the name of the tfs server is excluded from filtering. Do the same with the â€œList of allowed addressesâ€
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb28.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/04/image28.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image28.png)
 
 Now save the configuration, close and restart Visual STudio, connect to tfs again and this time the creation of the team project should proceed with no problem.
 

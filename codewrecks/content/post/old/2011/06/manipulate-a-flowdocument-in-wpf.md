@@ -10,7 +10,7 @@ categories: [WPF]
 
 This is the scenario: I have a [FlowDocument](http://msdn.microsoft.com/en-us/library/ms601064.aspx) in a FlowDocumentScrollViewer as in Figure 1.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb20.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image20.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image20.png)
 
  ***Figure 1***: *Initial scenario, a simple flow document.*
 
@@ -53,7 +53,7 @@ newRun.ToolTip = tt;
 
 I created a tooltip, but the important part is in line 6 where I create another run with the word I want to highlight setting as start location the location where I found the word, I set the font size to 30 to highlight it (you can change whatever property you want) and assign the tooltip to the run. Here is the result.
 
-[![SNAGHTML1adb227](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML1adb227_thumb.png "SNAGHTML1adb227")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML1adb227.png)
+[![SNAGHTML1adb227](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML1adb227_thumb.png "SNAGHTML1adb227")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML1adb227.png)
 
  ***Figure 2***: *The code will highlight a chosen word, and we also have a cool tooltip to show advanced info*
 

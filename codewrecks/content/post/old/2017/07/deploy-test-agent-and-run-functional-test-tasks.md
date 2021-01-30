@@ -29,7 +29,7 @@ In VSTS / TFS Build there are a couple of tasks that are really useful to execut
 
 This happens because the remote test runner cannot be used to perform a second runs if a previous run just finished. The solution is simple, add another Deploy Test Agent task.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/07/image-5.png)
 
  ***Figure 1***: *Add a Deploy Test Agent before any Run Functional Tests task*
 

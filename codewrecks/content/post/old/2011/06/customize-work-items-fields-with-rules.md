@@ -14,7 +14,7 @@ In the third part of this tutorial I showed how to add a field to a Work Item De
 
 If I select the new field I just created (called Note di revisione), I can press edit to modify its definition and in the “Field Definition” form I can manage all the *Rules*applied to the field. ( **Figure 1** ).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb25.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image25.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image25.png)
 
  ***Figure 1***: *Adding a rule to a field is really simple*
 
@@ -28,7 +28,7 @@ In our example the field admit only the value “non effettuate” (not present)
 
 Each rule can have its parameters, the upper part is common (we will see shortly how it is used), and the bottom part contains the configuration parameter for the specific rule we choose. After I added the three allowed value in the list of valid values, I can simply confirm (OK Button), then save the definition to the Team Process and finally I try to create a new bug to verify if the rules configuration is ok. You can see from  **Figure 3** , that the rules is now applied to your custom field, because the interface looks different from before.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb26.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image26.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image26.png)
 
  ***Figure 3***: *Since the ALLOWEDVALUES permits only a predefinite range of values, TFS changes the UI and uses a combo to edit the value of the field.*
 
@@ -36,7 +36,7 @@ The most interesting aspect is that the UI checks all the rules of the WorkItem 
 
 To obtain this result we need to add the ALLOWEDVALUES rule two times, as shown in Figure 4.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb27.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image27.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image27.png)
 
  ***Figure 4***: *We can apply the same rule, with different configuration, to different securable objects.*
 

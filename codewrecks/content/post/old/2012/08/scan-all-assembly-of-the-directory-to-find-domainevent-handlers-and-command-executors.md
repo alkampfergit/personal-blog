@@ -55,7 +55,7 @@ Code is really simple, first of all  **I filter only for types that are non abst
 
 This convention is really good because it permits me to write a QueryModel denormalizer with good names for methods.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/08/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/08/image.png)
 
 Instead of having three classes each one with an Handle method for each of the domain event I’m interested into, or having a single class with Three method called Handle() and inherits three times the IDomainEventHandler&lt;&gt; interface (one for each type),  **I can name handlers method giving them business meaning, like CreateInventoryItem, UpdateQuantityOnPicking and UpdateQuantityOnReceived** , and  **a single class is capable of declaring how many handlers he need to do its work.** This simple convention makes code really clean without losing the basic structure of run-time binding of DOMAIN EVENT and relative handlers.
 

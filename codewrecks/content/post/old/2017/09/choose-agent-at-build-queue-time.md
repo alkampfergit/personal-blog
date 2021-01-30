@@ -10,13 +10,13 @@ This is a simple feature that is not known very well and deserve a blog post. So
 
 Demands are simple key/value pairs that allows the build engine to choose compatible agents and each agent automatically have a couple of capability to store computer name and agent name (they can be different)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image.png)
 
  ***Figure 1***: *Capability of agentes, computer name and agent name are automatically present*
 
 This allows you to use one of them if you want to run a build on a specific machine, just queue the build and use the demands tab to add agent.name or agent.computername demands.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/09/image-1.png)
 
  ***Figure 2***: *Choosing specific agent at queue time with agent.name capability*
 

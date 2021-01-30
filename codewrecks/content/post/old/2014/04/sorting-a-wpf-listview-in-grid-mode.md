@@ -172,7 +172,7 @@ Thanks to my Dependency Properties, it is really simple to enable sorting for a 
 
 Here is the result
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/04/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/04/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/04/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/04/image3.png)
 
  ***Figure 1***: *Clickable and sortable header in ListView with Grid layout*
 

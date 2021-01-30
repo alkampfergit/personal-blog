@@ -12,13 +12,13 @@ You can reuse the very same code for the previous example, because VSO uses the 
 
 To being notified when a Work Item changes, you should  **create a simple alert for Work Item changes, but instead of choosing HTML or Plain Text (used to send alert mail) you should choose SOAP**. Once you change Format to SOAP you should be able to insert the address of destination service that will receive the notification
 
-[![SNAGHTMLf286e](http://www.codewrecks.com/blog/wp-content/uploads/2014/05/SNAGHTMLf286e_thumb.png "SNAGHTMLf286e")](http://www.codewrecks.com/blog/wp-content/uploads/2014/05/SNAGHTMLf286e.png)
+[![SNAGHTMLf286e](https://www.codewrecks.com/blog/wp-content/uploads/2014/05/SNAGHTMLf286e_thumb.png "SNAGHTMLf286e")](https://www.codewrecks.com/blog/wp-content/uploads/2014/05/SNAGHTMLf286e.png)
 
  ***Figure 1***: *Sample notification alert that will send alert information to a custom WCF Service*
 
 This is everything you need to setup for notification to work. Clearly you should verify that your service is available.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2014/05/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2014/05/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2014/05/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2014/05/image.png)
 
  ***Figure 2***: *Your service hosted on a public endpoint on azure virtual machine*
 

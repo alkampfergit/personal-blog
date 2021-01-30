@@ -12,7 +12,7 @@ When installing TFS one of the most important and often most forgotten step is  
 
 Instead of accessing your favorite TFS instance with [http://machinename:8080/tfs/projectcollection](http://machinename:8080/tfs/projectcollection) you simply create an alias in your DNS to access TFS to [http://tfs.yourcompany.local:8080/tfs/defaultcollection](http://tfs.yourcompany.local:8080/tfs/defaultcollection).  **With such a simple change you can move TFS to a new machine and the client will not notice anything (at most they will need to refresh cache)**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image3.png)
 
  ***Figure 1***: *DNS alias for the Application Tier in action*
 
@@ -30,13 +30,13 @@ reports.tfs.cyberpunk.local: the machine with Sql Server Reporting services inst
 
 Thanks to these aliases I configured my  Data Tier using DNS friendly names.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image4.png)
 
  ***Figure 2***: *Configuration for Data Tier is also done with friendly DNS names*
 
 Even for the Reporting configuration I decided to use DNS aliases.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/01/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image5.png)
 
  ***Figure 3***: *Reporting configuration in TFS also uses friendly DNS names*
 

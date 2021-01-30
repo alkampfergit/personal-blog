@@ -10,7 +10,7 @@ categories: [Team Foundation Server]
 
 As you can see in  **Figure 1** the default value is to *Resolve associated Work Items on check-in* but you can easily uncheck the option to make “*Associate”*the default action for Work Items associated to a Check-in.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/09/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/09/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/09/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/09/image5.png)
 
  ***Figure 1***: *Option to resolve associated Work Items on Check-in*
 

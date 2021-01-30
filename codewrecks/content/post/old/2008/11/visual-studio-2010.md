@@ -8,7 +8,7 @@ categories: [NET framework]
 ---
 Well, in this period I have a little time to spent on this, but I could not resist,
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2008/11/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image4.png)
 
 With my new 500GB usb disk now I have enough space to work with the virtual machine of the Visual Studio 2010 CTP :D
 

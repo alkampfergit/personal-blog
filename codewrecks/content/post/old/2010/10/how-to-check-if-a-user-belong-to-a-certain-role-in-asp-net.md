@@ -32,7 +32,7 @@ if (currentPrincipal.IsInRole("xxxx")
 
 This works because in windows forms the CurrentPrincipal is a [WindowsPrincipal](http://msdn.microsoft.com/en-us/library/system.security.principal.windowsprincipal.aspx), and thus it checks if the current user belong to the group xxxx, but when it is run from a web site, with ASP.NEt membership configured, the principal is of type [RolePrincipal](http://msdn.microsoft.com/en-us/library/system.web.security.roleprincipal.aspx) as you can verify from Fgure1
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/10/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/image1.png)
 
  ***Figure 1***: *the current principal of code running in asp.net sites with roles and membership configured is of type RolePrincipal.*
 

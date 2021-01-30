@@ -10,7 +10,7 @@ Example [**can be downloaded here**](http://www.codewrecks.com/Files/requestresp
 
 Once the team is used to the basic version of the Request/response service and understand the advantage of this approach, it is time to evolve it towards a more mature implementation, and since the grounding concepts are now clear, *adding a little bit of extra complexity* is usually a simple step. This is the concept of Evolving Architecture or [Emergent Design](http://en.wikipedia.org/wiki/Emergent_Design), the goal is to introduce functionality and adding extra complexity only  **to answer a requirement need and not for the sake of having a Complete/Complex architecture**. After a little bit of usage of the basic version of the Request Response service, some new requirements lead to an improvement of the basic architecture. The very first problem of the actual basic architecture is: * **contract and implementation are contained in the same class** *.
 
-[![Class diagram of a sample Request class](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/image_thumb.png "Figure 1.")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/image.png)
+[![Class diagram of a sample Request class](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/image_thumb.png "Figure 1.")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/image.png)
 
  ***Figure 1***: *Class diagram of a sample Request class*
 
@@ -18,11 +18,11 @@ In  **Figure 1** you can see a sample request, it is called *AddTwoNumber*and it
 
 This new requirement can be solved easily with MEF, a library that will take care of everything about discovering and loading all *request / response / handler* objects that compose our service. I started **removing the Execute method from the basic Request class and moving it to another class Called Handler** , that will take care of the execution of a request.
 
-[![New version of the base Request and Response classes](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/image_thumb1.png "New version of the base Request and Response classes")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/image1.png)
+[![New version of the base Request and Response classes](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/image_thumb1.png "New version of the base Request and Response classes")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/image1.png)
 
  ***Figure 2***: *New version of the base Request and Response classes*
 
-As you can see from  **Figure 2** Request and Response class are now only just base contract classes, with no method related to execution; they contains only properties.  **To execute a request and return a Response we need another class called Handler** , that is capable of *Handling a request and returning a response.*The key concept is that  **for each request we have a separate handler that is capable of executing that request** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/image2.png)
+As you can see from  **Figure 2** Request and Response class are now only just base contract classes, with no method related to execution; they contains only properties.  **To execute a request and return a Response we need another class called Handler** , that is capable of *Handling a request and returning a response.*The key concept is that  **for each request we have a separate handler that is capable of executing that request** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/image2.png)
 
 I decided to introduce a *basic abstract class with no generic*,  **this base class is able to handle a Request object** and then I inherited another abstract class called *Handler&lt;T&gt;***** **capable of handling a specific type of request** , here is the full code.
 

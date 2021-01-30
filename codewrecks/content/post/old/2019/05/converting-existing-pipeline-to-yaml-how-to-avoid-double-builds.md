@@ -6,7 +6,7 @@ draft: false
 tags: [build,YAML]
 categories: [Azure DevOps]
 ---
-Actually YAML build is the preferred way to create Azure DevOps Build Pipeline and  **converting existing build is really simple thanks to the “View YAML” button that can simply convert every existing pipeline in a YAML definition.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-12.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-12.png)
+Actually YAML build is the preferred way to create Azure DevOps Build Pipeline and  **converting existing build is really simple thanks to the “View YAML” button that can simply convert every existing pipeline in a YAML definition.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-12.png)
 
  **figure 1:** *Converting existing Pipeline in YAML is easy with the View YAML button present in editor page.*
 
@@ -14,7 +14,7 @@ The usual process is, start a new feature branch to test pipeline conversion to 
 
 The real problem is that usually there is a transition phase where you want both the old pipeline definition to run in parallel with the YAML one, but this will create a trigger for both the build at each publish.
 
-[![SNAGHTML64e597](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/SNAGHTML64e597_thumb.png "SNAGHTML64e597")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/SNAGHTML64e597.png)
+[![SNAGHTML64e597](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/SNAGHTML64e597_thumb.png "SNAGHTML64e597")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/SNAGHTML64e597.png)
 
  ***Figure 2***: *After a push both build, the old UI Based and the new based on YAML were triggered.*
 
@@ -26,7 +26,7 @@ A viable solution is:  **abort the standard build if the corresponding YAML Buil
 
 To accomplish this, you can simple add a PowerShell Task in the original build, with a script that checks if the YAML file exists and if the test is positive aborts current build. Luckly enough I’ve found a script ready to use: [Many tanks for the original author of the script](https://blog.lextudio.com/how-to-abort-cancel-a-build-in-vsts-7a41fce5a42c). You can find the original script in [GitHub](https://github.com/lextm/vstsabort) and you can simply take the relevant part putting inside a standard PowerShell task.
 
-[![SNAGHTMLb575bc](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/SNAGHTMLb575bc_thumb.png "SNAGHTMLb575bc")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/SNAGHTMLb575bc.png)
+[![SNAGHTMLb575bc](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/SNAGHTMLb575bc_thumb.png "SNAGHTMLb575bc")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/SNAGHTMLb575bc.png)
 
  ***Figure 3***: *Powershell inline task to simply abort the build.*
 
@@ -61,7 +61,7 @@ else
 
 This is everything you need, after this script is added to the original build definition, you can try to  **queue a build for a branch that has the YAML build definition on it and wait for the execution to be automatically canceled** , as you can see in Figure 4:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-13.png)
 
  ***Figure 4***: *Build cancelled because YAML definition file is present.*
 

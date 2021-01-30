@@ -8,7 +8,7 @@ categories: [Software Architecture]
 ---
 I work often with windows services, and one of the most painfully experience is that you do not have an UI and quite often they have to do some scheduled task at certain time, so whenever you have a deploy you can find yourself in this situation.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image15.png)
 
 The question mark means that you are not sure if your new deploy is really ok, because maybe some of the scheduled tasks will fail for misconfiguration or something else. Usually production machine are different to developement ones, you can miss components, point to a wrong db, forget to update configuration, etc, etc. To avoid this situation you need a series of smoke checks, I usually proceed in this way.
 
@@ -70,7 +70,7 @@ IoC.FluentRegistration(
 
 Thanks to fluent registration it is easy to autoregister all test classes, now the test form simply call IoC.ResolveAll&lt;ITest&gt; and for each test execute it in a Try catch, and here is a typical result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/12/image16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image16.png)
 
 Some exception occurred.
 

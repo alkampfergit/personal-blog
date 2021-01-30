@@ -34,7 +34,7 @@ Be sure that the machine with temporary SQL Server installation is joined to the
 
 > In order to be 100% sure that WSUS machine is able to access database, configure the machine where WSUS is running as admin of temporary SQL Server.
 
-## [![User configuration for WSUS Server in Sql SErver.](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb1.png "Neuromancer is the computer running WSUS and is added as a login identity to SQL Server to make WSUS Service (that is running as network service) being able to reach SQL Running in another machine of the domain")](http://www.codewrecks.com/blog/wp-content/uploads/2015/08/image1.png)
+## [![User configuration for WSUS Server in Sql SErver.](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image_thumb1.png "Neuromancer is the computer running WSUS and is added as a login identity to SQL Server to make WSUS Service (that is running as network service) being able to reach SQL Running in another machine of the domain")](https://www.codewrecks.com/blog/wp-content/uploads/2015/08/image1.png)
 
  ***Figure 1***: *Neuromancer is the computer running WSUS and is added as a login identity to SQL Server to make WSUS Service (that is running as network service) being able to reach SQL Running in another machine of the domain*
 

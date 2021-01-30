@@ -10,7 +10,7 @@ Some days are passed, but it is good to remind you that  **TFS 2018 is finally o
 
 [Release note page](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes) contains all the details about the new version, from that link you have a small 13 minute video that explain what is new in this version and as usual in the page you have a detailed list of all the news with detailed information about each of the new features.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-3.png)
 
 I strongly suggest you to start [verifying system requirements](https://docs.microsoft.com/en-us/vsts/tfs-server/requirements) and planning for the upgrade, because, as usual **, it is a good habit to install the latest bit if possible, to avoid having to do a big bang upgrade after years of not upgrading**.
 

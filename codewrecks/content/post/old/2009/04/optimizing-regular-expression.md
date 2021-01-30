@@ -14,7 +14,7 @@ First of all I try to clear the cache for regular expression before the test wit
 
 I use [DotTrace](http://www.jetbrains.com/profiler/), it is a very good profiler made by [JetBrains](http://www.jetbrains.com), I build a simple form with a button that runs the test, and here is the result of the first run
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image4.png)
 
 All the time is taken from the MoveNext of the MatchEnumerator, that actually executes the regular expression. The profiler confirms me that I need to optimize the regular expression because quite all the time was spent in matching regular expressions. First of all I added the RegexOptions.Compiled option to the base option, this ones enables precompiling the regular expression and this make execution time drops from 4.5 seconds to 2.7 seconds, it was a good thing, but I decided to try to optimize a little bit more.
 
@@ -22,7 +22,7 @@ Next test is a more significant one, because I run the previous test 5 times on 
 
 Another test with dottrace confirms me that all the time is spent doing regex matching.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/04/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image5.png)
 
 I optimized total time, but still the regex is the only cause of slow routine. Iâ€™ll keep on investigating if can optimize more.
 

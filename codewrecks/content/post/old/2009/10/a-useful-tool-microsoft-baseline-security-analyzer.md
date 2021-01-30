@@ -8,11 +8,11 @@ categories: [Tools and library]
 ---
 MBSA is a great tool, today Iâ€™m configuring a new production server, after I configure everything I simply run it and immediately it found some issues
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb28.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image28.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image28.png)
 
 What I love of MBSA is that he immediately tells you how to solve the specific problem, in this situation Iâ€™ve installed a redistributable component, and mbsa tells me that he needs a critical update, and it points me immediately to the result
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb29.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/10/image29.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image29.png)
 
 It permits to immediately spot security issue with production server, and it is a simple tool to use.
 

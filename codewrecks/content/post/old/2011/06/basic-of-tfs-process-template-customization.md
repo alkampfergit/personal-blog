@@ -24,13 +24,13 @@ The WorkItem section needs a more accurate series of post, so we can move on the
 
 The MS Project Mapping tab permits you to define how Microsoft Project will map the various fields of the Work Items when connected to a Team Project. Configuration of this area is quite complex and you can find all the details in [MSDN](http://msdn.microsoft.com/en-us/library/ms404684.aspx). In Figure 3 you can see a snapshot of the configuration of the MSF for Agile..
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb21.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image21.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image21.png)
 
  **Figura 3:** *Microsoft Project Work Item mapping for MSF for Agile 5.0*
 
 Here is a brief explanation. The first column contains the reference name of a Work Item field, it is the  **unique name** of that specific field inside TFS. The second column contains a reference to a Microsoft Project Field, with the convention that all custom field are named *pjTaskText*followed by a unique number. As you can see in Figure 3, the System.Id is mapped to a custom field named pjTaskText10, while the System.Title is mapped to a well known project field called [*pjTaskName*](http://msdn.microsoft.com/en-us/library/ms404686.aspx) that represent the name of the WorkItem. The third column represent an header to visualize and the last column contains a unit of measure.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb22.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image22.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image22.png)
 
  ***Figure 4***: *Unit of measure of some standard Work Item field regarding task estimation*
 
@@ -46,7 +46,7 @@ The Lab and Build sections permit to include in Process Template custom workflow
 
 To include a new workflow you should copy the file in the appropriate sub folder of the project template called  **Build\Templates** or  **Lab\Templates** , once you added a file in one of the aforementioned folders, you can simply press the add button, navigate to those folder and add the default template to the process. (Figure 6)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb23.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image23.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image23.png)
 
  ***Figure 6***: *How to add default custom build file to Lab or Builds section.*
 
@@ -60,7 +60,7 @@ You can also add Check-in notes as shown in Figure 7, or setup source control re
 
 Finally the Portal and Reports sections include all documents and reports that will be create in Sharepoint and Reporting Server upon Team Project creation. As shown in Figure 8, you should insert documents in the appropriate folder on the local copy of process template
 
-[![SNAGHTML26dd35](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML26dd35_thumb.png "SNAGHTML26dd35")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML26dd35.png)
+[![SNAGHTML26dd35](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML26dd35_thumb.png "SNAGHTML26dd35")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/SNAGHTML26dd35.png)
 
  **Fgiure 8:** *I All the base document of Sharepoint site are simply included in the process template appropriate folder and referenced in the process template definition.*
 

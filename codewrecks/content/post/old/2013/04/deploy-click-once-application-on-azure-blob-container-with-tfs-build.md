@@ -12,13 +12,13 @@ Windows Azure Web sites has a lot of options to automatically deploy web sites, 
 
 To deploy Click Once applications on Windows azure, the simplest solution is  **using a Blob Container**. All you need to do is creating new public Blob Container and copy inside the blob the result of a Click Once publication.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image3.png)
 
  ***Figure 1***: *Create a public container to store blobs in Windows Azure.*
 
 Now you should configure everything on Visual Studio to deploy the application, the key part is using two different values for Publishing Folder Location and Installation Folder Url.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image4.png)
 
  ***Figure 2***: *Configure publishing location for your project.*
 
@@ -26,13 +26,13 @@ Now you should configure everything on Visual Studio to deploy the application, 
 
 Once publish is complete all you need to do is moving all files in blob storage, personally I use [Cerebrata Cloud Storage Studio](http://www.cerebrata.com/products/cloud-storage-studio/introduction): simply drag and drop files inside the blob, press Upload and the application is live and ready to be installed!!
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image5.png)
 
  ***Figure 3***: *Click-Once file are now uploaded in Blob Container*
 
 If you let Visual Studio generate a publish.html file for you you can simply give to people the address of the publish.html file in your Blob, if you do not want to have publish.html,  **you can simply give people the address of setup.exe** , it is enough to download it and installing everything
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image6.png)
 
  ***Figure 4***: *Click-once publish page is publicly available from your Blob Container*
 
@@ -119,7 +119,7 @@ This command line utility supports placeholder for VersionNumber; it is in fact 
 
 Now you can specify VersionNumber as * **X.X.J.B** *, where Major and Minor are fixed value (Es. 1.3.J.B), and J and B will be automatically generated to have an unique incremental Click Once number for each Build.  **The first step to create the build is storing the Command Line utility inside a folder of source control**.
 
-[![SNAGHTMLee291](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/SNAGHTMLee291_thumb.png "SNAGHTMLee291")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/SNAGHTMLee291.png)
+[![SNAGHTMLee291](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/SNAGHTMLee291_thumb.png "SNAGHTMLee291")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/SNAGHTMLee291.png)
 
  ***Figure 5***: *Command Line utility is checked in with the code*
 
@@ -131,25 +131,25 @@ The reason is simplify build customization: the build controller downloads all f
 
 Here is the sequence added to the standard build workflow.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image7.png)
 
  ***Figure 6***: *Sequence of actions needed to call TfsUtils utility*
 
 Now it is possible to choose this new Workflow, specify all the parameters needed to deploy and launch the build to have Click Once application automatically published.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image8.png)
 
  ***Figure 7***: *Definition of the build for Click Once continuous deployment.*
 
  **If the build is configured to run at each check-in Click Once continuous deployment on Windows Azure Blob Container is achieved**. If the build is configured with manual trigger the user can decide when and which check-in to deploy, all the process is automatic. We achieved continuous deployment of the click-once application in Azure. Once the build finished you can check if everything is ok looking for files in Blob Container.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image9.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image9.png)
 
  ***Figure 8***: *Files automatically deployed from TFS Build.*
 
  **The really nice part of having Continuous Deployment is enabling Click Once automatic check for update** , once tester and end users installed the application the first time, it will automatically check at each startup (or shutdown) if there are newer version available. To release update to tester or end users, you can simply check-in the code, wait for the build to finish, and Voilà!!!!!! All of your clients will be notified of the new version. Since TFS Build runs also automated test, you can configure the build to fail if tests failed, so nothing gets deployed if someone broken some Unit Test.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image10.png)
 
  ***Figure 9***: *New version were deployed automatically from TFS Build*
 
@@ -163,7 +163,7 @@ Some friends asked me  **why I’ve created a command line utility and not a** [
 
  **Simpler debug and deploy for TFS:** Check-in the command line utility in source control and you are done, build agent will download it for free during the build. If something goes wrong with the build and errors occurred,  **in workflow logs there is the exact command line that was issued.** I strongly suggest you to use [an on-premise build server, even if you have (like me) source in TF Service](http://www.codewrecks.com/blog/index.php/2012/04/02/installing-on-premise-component-against-tfs-service-tfs-on-azure/). If the build fails, it is possible to remote desktop on the build machine, verify the exact command line used to call your utility and fire the very same command line from a command line or a Visual Studio debugger to understand what went wrong.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2013/04/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/04/image11.png)
 
  ***Figure 10***: *Exact command line used by the build.*
 

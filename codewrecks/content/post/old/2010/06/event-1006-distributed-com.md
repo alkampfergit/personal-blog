@@ -12,14 +12,14 @@ In a Tfs Test machine I have I see that there are error in the System log
 
 To solve this problem simply open â€œComponent Servicesâ€ tool, expand the Computers/MyComputer/DCOMConfig, then locate the entry with the CLSID you find in the message, then right click and select property
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb13.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image13.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image13.png)
 
 This will open a property windows, you need to locate the Security Tab, and customize the â€œLaunch and Activation Permissionsâ€
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb14.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image14.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image14.png)
 
 From here add to the user the required security permission and the Error Log should not appears anymore.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb15.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/06/image15.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image15.png)
 
 alk.

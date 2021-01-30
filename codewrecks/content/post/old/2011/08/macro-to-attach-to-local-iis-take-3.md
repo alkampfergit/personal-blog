@@ -70,7 +70,7 @@ End If
 
 The code is really simple, because it is used only to create a valid Windows Forms interface to show the ListView with Processes info and an OK Button at the bottom to permit to the user to confirm the selection. Now you can start multiple IIS worker process, press the shortcut assigned to this macro and here is the result.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/08/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/image1.png)
 
  ***Figure 1***: *The list of all available IIS processes*
 

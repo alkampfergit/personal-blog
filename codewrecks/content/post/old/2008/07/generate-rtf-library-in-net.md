@@ -12,11 +12,11 @@ This rtf generator is one of my first projects in.net, it started in Visual stud
 
 It seems to be enough for the needs of my friend, and so I decided to make it public with a BSD license. Please do not blame me for the code, I was young :D. The important stuff is that It seems to work (:D :D :D), or at least it worked on my machine in the 2003 …….
 
-[![seal](http://www.codewrecks.com/blog/wp-content/uploads/2008/07/seal-thumb.gif)](http://www.codewrecks.com/blog/wp-content/uploads/2008/07/seal.gif)
+[![seal](https://www.codewrecks.com/blog/wp-content/uploads/2008/07/seal-thumb.gif)](https://www.codewrecks.com/blog/wp-content/uploads/2008/07/seal.gif)
 
 If you look at the code……..please remember that
 
-[![seal2](http://www.codewrecks.com/blog/wp-content/uploads/2008/07/seal2-thumb.gif)](http://www.codewrecks.com/blog/wp-content/uploads/2008/07/seal2.gif)
+[![seal2](https://www.codewrecks.com/blog/wp-content/uploads/2008/07/seal2-thumb.gif)](https://www.codewrecks.com/blog/wp-content/uploads/2008/07/seal2.gif)
 
 The important thing is that, you can try it, if you like it, enjoy it and use whenever you like. If you like it, please left a comment to this post, but you can also left a comment if you dislike it :D.
 

@@ -31,23 +31,23 @@ I want to solve this problem without the need to join the machine to the domain 
 
 **To solve this problem you can simply use the *net use* command line tool, that is used to map a network share with specific credentials **, but the download artifact phase of the release takes part before any task and the release will fail before any of your task has the opportunity to run.
 
-[![SNAGHTML5877fcc](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML5877fcc_thumb.png "SNAGHTML5877fcc")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML5877fcc.png)** Figure 1: ***Task used to map the network share.*
+[![SNAGHTML5877fcc](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML5877fcc_thumb.png "SNAGHTML5877fcc")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/SNAGHTML5877fcc.png)** Figure 1: ***Task used to map the network share.*
 
 A quick solution to this problem is inserting a dedicated Deployment Group phase (Figure 1) before any other phase, call this phase “mount network share” (1) , add a simple Command Line task (2) and finally be sure to select the “Skip download of artifacts” (3) option.  **Point 3 is the most important one, because downloading artifacts takes place before the execution of any task**.
 
 Then I declare a couple of release variables to store username and password of a user that have access to that share (in my domain I have a dedicated TfsBuild account).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-8.png)
 
  ***Figure 2***: *Variables to mount network share with a valid domain user*
 
-Now I only need to configure the Command Line task to use the *net use*command to mount the network share with the user specified in release variables. The configuration is straightforward and is represented in  **Figure 3.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-9.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-9.png)
+Now I only need to configure the Command Line task to use the *net use*command to mount the network share with the user specified in release variables. The configuration is straightforward and is represented in  **Figure 3.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-9.png)
 
  ***Figure 3***: *Configuration of Command Line task to use net use command*
 
  **Thanks to the net use command, the release is able to mount the network share in each machine of Deployment Group using the TfsBuild user**. You can verify from release logs, that the Command Line task correctly run and maps the network share.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image_thumb-10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/08/image-10.png)
 
  ***Figure 4***: *Net use command in action in build logs.*
 

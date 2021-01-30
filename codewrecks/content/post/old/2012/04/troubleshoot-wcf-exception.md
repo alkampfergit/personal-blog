@@ -32,7 +32,7 @@ WCF is an exceptional library but sometimes it is hard to troubleshoot problems,
 
 After adding this section to the configuration file you can fire the program and use it until you get the WCF exception you are trying to troubleshoot,  **once you had the exception you can simply double click on the client.svclog file and Microsoft Service Trace Viewer will open** , showing you detailed information of everything happened in WCF stack. The tool is really super easy to use, all exceptions are marked in red and selecting all the exception happened in WCF stack you usually are able to understand what gone wrong exactly.
 
-[![23-04-2012 14-35-31](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/23-04-2012-14-35-31_thumb.png "23-04-2012 14-35-31")](http://www.codewrecks.com/blog/wp-content/uploads/2012/04/23-04-2012-14-35-31.png)
+[![23-04-2012 14-35-31](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/23-04-2012-14-35-31_thumb.png "23-04-2012 14-35-31")](https://www.codewrecks.com/blog/wp-content/uploads/2012/04/23-04-2012-14-35-31.png)
 
  ***Figure 1***: *The detail of the exception logged by WCF*
 

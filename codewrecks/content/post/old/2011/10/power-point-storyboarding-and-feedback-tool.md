@@ -40,13 +40,13 @@ After you created your storyboards with PowerPoint, you start to implement User 
 
 The best part of Feedback Manager, is that it is deeply connected with TFS, you can simply open the tool, start using the software, and gather feedback, attaching files, capturing screenshot, even recording audio and video if you want.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/10/image_thumb1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/10/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/10/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/10/image1.png)
 
  ***Figure 4***: *Feedback Manager in action, just use the software and insert comment in the tool.*
 
 When the feedback is ok, you can simply press the Submit button, give a title to the feedback, add additional comment and the game is done.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/10/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/10/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/10/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/10/image2.png)
 
  ***Figure 5***: *A feedback is just a Work Item of type Feedback and can be managed like all other Work Items of the project*
 

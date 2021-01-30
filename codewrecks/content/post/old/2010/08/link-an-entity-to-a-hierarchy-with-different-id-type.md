@@ -10,7 +10,7 @@ In a [thread](http://www.guisa.org/forums/t/247.aspx) of Guisa (Italian language
 
 This is a situation where you need to do some custom work in the Domain Model to accomplish this:
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2010/08/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2010/08/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image.png)
 
 Foo and Bar implements the IItemContent, and Item has a property called Foo that links to a Foo element and a Property of type Bar that links to a Bar Content, and it has a property of type Content that is of type ItemContent. Inside the Item class we can assure that the requirement are maintained.
 

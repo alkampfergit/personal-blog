@@ -42,11 +42,11 @@ Then I simply call the log function of firebug console, passing a message and th
 
 As you can see I simply select all div with an id that begins with â€œphotoâ€, then I call log and since this is a plugin that does not modify the wrapped-set I can continue to use the wrapped-set as if the log call was not present, in this example Iâ€™m using some drag and drop. Here is what I see in the firebug console.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image7.png)
 
 Actually I have two log, the first is the one showed in the example. as you can see I immediatly check that the wrapped-set contains 6 elements, but I can also expand that log to obtain much more informations.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image8.png)
 
 As you can see you can view details of every object selected in the dom, *when you move the mouse over the element description the elements gets hilited in the page*. This is an invaluable extension that permits you to immediately and visually check DOM selection. I could not believe I can really develop Javascript code without firebug :)
 

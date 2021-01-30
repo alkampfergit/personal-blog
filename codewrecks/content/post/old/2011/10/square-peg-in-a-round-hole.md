@@ -30,6 +30,6 @@ This means that if you want to do OOP you should move everything to NoSql?
 
 Absolutely not, because sometimes you will probably find yourself forcing a round peg in a square hole :). I’m starting to think that in a real, big, complex OOP project, you need to have *both type of storage*: Relational and Object based. This will give you  round holes and the square holes, so you can put each peg in the right place.
 
-At least until some new technology comes to life that bring us a new Hexagonal Peg :) that will need an Hexagonal shaped data storage ![Smile](http://www.codewrecks.com/blog/wp-content/uploads/2011/10/wlEmoticon-smile.png).
+At least until some new technology comes to life that bring us a new Hexagonal Peg :) that will need an Hexagonal shaped data storage ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/10/wlEmoticon-smile.png).
 
 Gian Maria.

@@ -23,11 +23,11 @@ Both of them use a private field to store the real value of the property, the fi
 
 But we could adopt another approach to enforce the concept of * **state** *of the object, making the concept of * **state** *emerge from the implementation. We start defining a State class.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb10.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image10.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image10.png)
 
 This class is used to store values indexed by property names and will used to maintain the * **state** *of all entities. Thanks to this class we can define a *BaseEntity*class to implement some basic functionality that we want to share between all classes.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb11.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2011/06/image11.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image11.png)
 
 The most important methods are * **Get** *and * **Set** *methods, used by derived classes to manage change of state of the object. If you want to implement a simple property in a derived class, you will write this code.
 

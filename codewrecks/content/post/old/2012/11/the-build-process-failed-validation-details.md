@@ -14,7 +14,7 @@ When it is time to customize TFS build you need to deal with Workflow Foundation
 
 Such an error is  **simply due to an invalid workflow** and this is entirely my fault, because the designer correctly shows me that there is some error, but I still try to submit the new workflow to upgrade a build, and clearly… it fails :)
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2012/11/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2012/11/image2.png)
 
  **figure 1:** *Errors in the workflow are correctly shown in the designer.*
 

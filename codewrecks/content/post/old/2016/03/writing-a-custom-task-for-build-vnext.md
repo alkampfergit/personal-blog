@@ -111,7 +111,7 @@ tfx build tasks upload
 
  **This command asks for the folder where the task is located, and upload everything to VSTS account you are logged into** (you should have run tfx login to connect to your instance). It is really simple, and my new task is available to be used.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2016/03/image_thumb.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2016/03/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2016/03/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2016/03/image.png)
 
  ***Figure 1***: *Adding new custom task to a build*
 

@@ -23,7 +23,7 @@ This is the scenario: I have a complex object with a lot of properties, I create
 
 Now the problem is the following one: when I use that ListView at runtime and I click on a texbox inside that user control, the SelectedItem of the ListView does not change, it changes only if I click on a empty part of the USerControl.
 
-[![SNAGHTML262378](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML262378_thumb.png "SNAGHTML262378")](http://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML262378.png)
+[![SNAGHTML262378](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML262378_thumb.png "SNAGHTML262378")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML262378.png)
 
 * ***Figure 1***: The problem: focusing a textbox of the usercontrol does not select the item of the ListView.*
 

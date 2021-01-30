@@ -12,11 +12,11 @@ Creating a [simple build that runs Python tests written with PyTest](http://www.
 
 Instead of creating a Yaml Build, this time I’m going to demonstrate a classic build: here is the core part of the build.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-1.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-1.png)
 
  ***Figure 1***: *Core build to run tests and have code coverage uploaded to Azure DevOps*
 
-As you can see, I decided to run test with a Bash script running on Linux, here is the task configuration where  **I’ve added Pytest options to have code coverage during test run.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-2.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-2.png)
+As you can see, I decided to run test with a Bash script running on Linux, here is the task configuration where  **I’ve added Pytest options to have code coverage during test run.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-2.png)
 
  **Figure2:** *Configuration of Bash script to run Pytests*
 
@@ -26,23 +26,23 @@ The task is configured to run an inline script (1), command line (2) contains �
 
 After a build finished  **you can find in the output how Pytest generates Code Coverage reporting, it create a file called coverage.xml then an entire directory called htmlcov that contains a report for code coverage**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-3.png)
 
  ***Figure 3***: *Result of running tests with code coverage.*
 
 If you look at F **igure 1** you can see that the build final task is a Publish Code Coverage Task, whose duty is to grab output of the Pytest run and upload to the server. Configuration is really simple, you need to choose Cobertura as Code coverage tool (the format used by Pytest) and the output of test run. Looking at output of  **Figure 3**  **you can double check that the summary file is called coverage.xml and all the report directory is in htmlcov subdirectory**.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-4.png)
 
  ***Figure 4***: *Configuration for Publish Code Coverage task.*
 
-Once you run the build, you can find Code Coverage result on the summary page, as well as Code Coverage Report published as Build artifacts, **the whole configuration will take you no more than 10 minutes.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-5.png)
+Once you run the build, you can find Code Coverage result on the summary page, as well as Code Coverage Report published as Build artifacts, **the whole configuration will take you no more than 10 minutes.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-5.png)
 
  ***Figure 5***: *Artifacts containing code coverage reports as well as code coverage percentage are accessible from Build Summary page.*
 
 Finally you have also a dedicated tab for Code Coverage, showing the HTML summary of the report
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/11/image-6.png)
 
  ***Figure 6***: *Code coverage HTML report uploaded in a dedicated Code Coverage tab in build result*
 

@@ -10,7 +10,7 @@ VSO and TFS have a special group called:  **Project Collection Service Account t
 
 Sadly enough, **the UI does not allow you to directly add a user to that group** , because the add button is disabled if you select that group.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image4.png)
 
  ***Figure 1***: *You cannot add users or group to Project Collection Service Account Users directly from the ui.*
 
@@ -30,19 +30,19 @@ tfssecurity /g+ "Project Collection Service Accounts" alkampfer@nablasoft.com /c
 
 In older version of VSO / TFS you could obtain the same result without command line in the UI. You just selected the user you want to add to Service Group, then go to the  **member of** section and then, pressing plus button, add the user to the group, but this is actually disabled in actual version.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image5.png)
 
  ***Figure 2***: *You cannot add anymore a user directly to a group.*
 
 If you really want to avoid command line,  **you can still use the UI. Just create a standard TFS Group and then add the group to the Project Collection Service Accounts**. First step: create a group with a Really Explicit Name.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image6.png)
 
  ***Figure 3***: *This group has a specific name that immediately tells to the reader that it is a special group.*
 
 Once the group is created, you can simply add it to the Project Collection Service Account group with few click.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2015/10/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image7.png)
 
  ***Figure 4***: *Add new group to the Project Collection Service Accounts group*
 

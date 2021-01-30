@@ -10,7 +10,7 @@ I have a build that publishes nuget packages on MyGet, we decided to move packag
 
  **Error: An unexpected error occurred while trying to push the package with VstsNuGetPush.exe.**  **Packages failed to publish** Those two errors does not gives me real information on what went wrong, but looking in the whole log, I verified that the error happens when the task was trying to publish symbols packages (2).
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-16.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-16.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image_thumb-16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/01/image-16.png)
 
  ***Figure 1***: *Complete error log*
 

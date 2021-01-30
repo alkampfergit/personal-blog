@@ -34,7 +34,7 @@ db.system.js.save(
 
 Once the function is saved, you should see it from a GUI tool like Robo 3T.
 
-[![DeleteAllDb function stored inside the admin database.](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-11.png "DeleteAllDb function stored inside the admin database.")](http://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-11.png)
+[![DeleteAllDb function stored inside the admin database.](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image_thumb-11.png "DeleteAllDb function stored inside the admin database.")](https://www.codewrecks.com/blog/wp-content/uploads/2017/06/image-11.png)
 
  ***Figure 1***: *DeleteAllDb function stored inside the admin database.*
 

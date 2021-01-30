@@ -8,13 +8,13 @@ categories: [Azure DevOps]
 ---
 One of the most exciting feature that was recently introduced in VSTS is  **the ability to create YAML Build**. You need to enable this feature because it is still in preview and as usual you can enable for your account from the preview feature management
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-4.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-4.png)
 
  ***Figure 1***: *Enable YAML feature for the entire account*
 
 After you enable this feature, when you create a new build you can create a build based on YAML.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-5.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-5.png)
 
  ***Figure 2***: *Create a build based on YAML definition*
 
@@ -22,17 +22,17 @@ After you enable this feature, when you create a new build you can create a buil
 
 > YAML build definition greatly enhance the build system of VSTS, it allows to directly create multiple YAMLS files in code to define builds.
 
-This is a preview and if you want to experiment you need to browse source code of tasks directly from the code in GitHub. I’ll do a more detailed post on how to setup a real build looking up tasks,  **for this simple introductory post I’ll use a super simple build definition to use a custom task of mine.** [![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-6.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-6.png)
+This is a preview and if you want to experiment you need to browse source code of tasks directly from the code in GitHub. I’ll do a more detailed post on how to setup a real build looking up tasks,  **for this simple introductory post I’ll use a super simple build definition to use a custom task of mine.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-6.png)
 
  ***Figure 3***: *Simple build definition with a simple task.*
 
 This is not a real build, but it shows how simple is to create a YAML build, just write one task after another and you are ready to go. Now I can create a YAML build and the only option is the name of the script
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-7.png)
 
  ***Figure 4***: *Simple YAML build, just choose queue, name of the build and the path of YAML definition*
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image_thumb-8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2017/11/image-8.png)
 
  ***Figure 5***: *Queue a build and verify that your definition was run*
 

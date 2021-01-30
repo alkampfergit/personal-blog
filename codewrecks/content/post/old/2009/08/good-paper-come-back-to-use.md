@@ -10,11 +10,11 @@ Iâ€™ve just read another [good post of Jeff Atwood](http://www.codinghorror
 
 So I downloaded the program and did a try, I take a 140 pages pdf and print it in only 4 A4 pages. I used a samsung laser printer, really cheap one, the result were 4 pages filled with little squares very similar to datamatrix. Then I immediately scan again with the program, just to verify that the result is good. Here it is the original page.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb7.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image7.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image7.png)
 
 When I scanned them to restore the original file, I got a good summary on how good my backup is.
 
-[![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb8.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/08/image8.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image8.png)
 
 Then I proceed scanning other three pages. And the result was that the original files was restored with no problem. My scanner was an epson printer+scanner combo, so again Iâ€™m impressed that the program really works with cheap hardware.
 
