@@ -12,7 +12,7 @@ Suppose you need to give LINQ support to find user in Active Directory via LDAP,
 
 Look at this class.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class ADUser
 {
     System.DirectoryServices.DirectoryEntry userDirEntry = null;
@@ -47,7 +47,7 @@ public class ADUser
 
 As you can see, this is a simple object that wraps a DirectoryEntry related to an ActiveDirectory user, it wraps only Name and Description, but it can be updated to support all user properties. Now I create another simply class.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class ADUsers : IEnumerable<ADUser>
 {
     private IList<ADUser> Users;

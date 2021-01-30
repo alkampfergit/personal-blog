@@ -16,7 +16,7 @@ Now suppose you do not have this source code, so you really need to use the MsBu
 
 To solve this problem you can use another approach to reuse a Custom MsBuild task in a tfs 2010 build, because you can wrap the task execution in a custom activity. First of all we need to fool the Custom MsBuild Task that it is executing inside MSBuild. A first problem is, how can I intercept the inner calls to Log.LogMessage or Log.LogWarning that are inside the CustomTask and pass them to the workflow engine? The solution is this simple class.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 class WorkflowBuildEngine : IBuildEngine
 {
     public CodeActivityContext Context { get; set; }
@@ -53,7 +53,7 @@ class WorkflowBuildEngine : IBuildEngine
 
 It Implements IBuildEngine, its constructor requires a CodeActivityContext that is used inside the LogErrorEvent, LogMessageEvent and LogWarningEvent methods to forward log message issued by the custom task to the workflow engine. In this way every log that takes place inside the MsBuild custom Action gets forwarded into the workflow engine. Finally you need to create the TinyUrl custom activity that wraps the custom MsBuild task:
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public sealed class TinyUrl : CodeActivity<String>
 {
     [RequiredArgument]

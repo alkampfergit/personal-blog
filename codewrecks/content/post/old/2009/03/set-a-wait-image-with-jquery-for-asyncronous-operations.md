@@ -45,7 +45,7 @@ Th code is really simple, I select all the dropdownlist of interest, then hide t
 
 I show two div, one with 0.5 opacity and white background, and then another div with a gif image as background. Now the user is informed that the server is working. Here is the code of the extender.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight javascript "linenos=table,linenostart=1" >}}
 
 (function($) {
 

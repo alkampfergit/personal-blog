@@ -10,7 +10,7 @@ When I decided to write down a little class to manage a [menu](http://www.codewr
 
 You can surely mock controller context in asp.net mvc, and there are a lot of good articles in the net dealing with this, but sometimes I prefer a simpler approach that I used a lot in classic webform asp.net applications. Since the class that contains the logic to format the menu needs only to access the UrlHelper class, I abstracted it with a simple interface.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public interface IUrlHelper
 {
    String RouteUrl(RouteValueDictionary values);
@@ -22,7 +22,7 @@ public interface IUrlHelper
 
 This simple interface does not even contains all methods of the standard UrlHelper, but it is enough for me, Iâ€™ll add more methods when Iâ€™ll need them. Now my class can declare a dependency to this interface.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
    public class MasterLogic
    {
       public IUrlHelper Url { get; set; }
@@ -36,7 +36,7 @@ This simple interface does not even contains all methods of the standard UrlHelp
 
 then create the real object that will be used in the site. It is a simple wrapper for the real UrlHelper
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
    public class MvcRouteHelper : IUrlHelper
    {
       public UrlHelper Helper { get; set; }
@@ -77,7 +77,7 @@ masterLogic = new MasterLogic(new MvcRouteHelper(Url)){{< / highlight >}}
 
 For testing purpose I created another class that implements the IUrlHelper interface.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private class MyTestUrlHelper : IUrlHelper
 {
 

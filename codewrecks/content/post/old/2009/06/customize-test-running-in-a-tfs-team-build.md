@@ -54,7 +54,7 @@ Since its only purpose is running your own code, it contains no task. Then you c
 
 From that code you can verify that test configuration depends on  **BeforeTestconfiguration, CoreTestConfiguration, AfterTEstConfiguration**.Of these three targets, only CoreTestConfiguration contains real actions, the other two are there only to insert own task into the build process. If you look at the CoreTestConfiguration you can find this code.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     <PropertyGroup>
       <ContinueOnTestError Condition=" '$(StopOnTestFailure)' != 'true' ">true</ContinueOnTestError>
       <ContinueOnTestError Condition=" '$(StopOnTestFailure)' == 'true' ">false</ContinueOnTestError>

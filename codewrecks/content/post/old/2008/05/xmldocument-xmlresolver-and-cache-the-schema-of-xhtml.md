@@ -22,7 +22,7 @@ xml.LoadXml(page);{{< / highlight >}}
 
 It turns out that XmlDocument validate the xml against the dtd schema of the xhtml, so each time I load new content the code download again and again the same dsd files of the schema showed above, this seems to me a tremendous waste of time and bandwidth. The solution seems to be easy, create your personalized XmlResolver, a component used internally by the XmlDocument to resolve external reference made from the xml file to external entities. The task was quite difficult because the documentation is not so clear, and because the XmlResolver itself is used in a very strange way. I first try to understand data passed to the functions creating this object
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class CachedXmlResolver : XmlUrlResolver
 {
 public override object GetEntity(Uri absoluteUri, string role, Type ofObjectToReturn)
@@ -39,7 +39,7 @@ public override Uri ResolveUri(Uri baseUri, string relativeUri)
 
 As you can see I simply call function from the base class, and I want only to understand how the object work…but…surprise, the ResolveUri gives me an exception telling me that it cannot find a file called -//W3C//DTD XHTML 1.0 Strict//EN..what happens…I only transparently delegate work to the base class. After some search I come to a solution, here is the full class
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     public class CachedXmlResolver : XmlUrlResolver
     {
         public override Uri ResolveUri(Uri baseUri, string relativeUri)

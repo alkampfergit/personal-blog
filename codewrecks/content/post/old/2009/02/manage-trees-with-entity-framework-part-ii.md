@@ -88,7 +88,7 @@ Et voilà, with this simple solution you will solve a lot of problems, first of 
 
 With this new structure here is the code to load the whole subtree from a node.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 Employee root = context.Employee.Where(e => e.Parent == null).First();
 IList<Employee> childs = context.Employee
   .Where(e => e.fullPath.StartsWith(root.fullPath))
@@ -105,7 +105,7 @@ PrintNoLoad(root, 0);{{< / highlight >}}
 
 Thansk to the *fullPath* property each descendant of a given node can be find simply with the condition * **fullPath.StartsWith(root.fullPath)** *and the beautiful thing is that *you need only a single SELECT* *to find all descendant nodes* ;). To make things more interesting, Entity Framework resolves all references for you, this means that the whole tree structure is reconstructed in memory, you can verify this with the *PrintNoLoad* function that print the whole subtree recursively.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static void PrintNoLoad(Employee employee, Int32 level)
 {
    Console.WriteLine("{0}{1}", new String('-', level), employee.Name);
@@ -123,7 +123,7 @@ This function differs from the old Print routine because it does not check the *
 
 Thus if you use the fullpath trick, be sure not to explicitly load again references. To make everything clearer you can create a method * **LoadSubtree** *with partial class to shield the user from a deep knowledge of the fullpath structure.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public partial class Employee
 {
    public void LoadSubtree(TestEntities context)
@@ -145,7 +145,7 @@ using (TestEntities context = new TestEntities())
 
 Now you can simply call LoadSubtree to issue only one select that will load all descendants of a node :D. Update of nodes is a breeze thanks to the trigger, if you run this code
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 Employee daniele = context.Employee.Where(e => e.Name == "Daniele").First();
 Employee guardian = context.Employee.Where(e => e.Name == "Guardian").First();
 daniele.Parent = guardian;
@@ -190,7 +190,7 @@ public Employee GetRoot(TestEntities context)
 
 It consists of a single query ;) and immediately find the root without the need to traverse the tree. You can also find all nodes that are sons of the same father.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public List<Employee> GetSiblings(TestEntities context)
 {
    String parentPath = fullPath.Substring(0, fullPath.LastIndexOf('.', fullPath.Length - 2)); 

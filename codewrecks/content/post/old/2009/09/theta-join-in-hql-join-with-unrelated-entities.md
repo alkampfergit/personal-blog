@@ -29,7 +29,7 @@ The result of this query is an arraylist, where each element is an array of obje
 
 the ActionErrorLog is a Dto that returns to the caller a couple consisting of a Log and corresponding action. Retrieving a list of ActionErrorLog is really simple.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 IList logs = uow.Session.CreateQuery("Select L, A from ActionLog L, Action A  where L.ActionId = A.id and L.IsSuccess = 0 order by L.StartDate desc")
    .SetFirstResult(pageNum * pageSize)
    .SetMaxResults(pageSize)

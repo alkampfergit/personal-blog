@@ -12,7 +12,7 @@ Suppose you have a very simple page where user can add comments to an issue, use
 
 Here is the content of the storage file
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 <?xml version="1.0" encoding="utf-8"?>
 <Comments>
   <Comment>
@@ -55,7 +55,7 @@ If some XMLException occurs, it means that the input is not a well formed XML fr
 
 Here is a result of the page when the storage file contains this comments.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 <?xml version="1.0" encoding="utf-8"?>
 <Comments>
   <Comment>

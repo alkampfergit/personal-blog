@@ -16,7 +16,7 @@ If you map this table with entity framework you will obtain automatically a tree
 
 Now I create a simple routine to print the tree in console, the main problem here is that for every object we need to issue a *Load()* call to the Childs EntityCollection to load the childs, thus to print the whole tree we issue N select, where N is the number of the node of the tree.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static void Print(Employee employee, Int32 level)
 {
    Console.WriteLine("{0}{1}", new String('-', level), employee.Name);
@@ -34,7 +34,7 @@ public static void Print(Employee employee, Int32 level)
 
 This permits me to load the entity with Parent = null (The root) and print every object in the tree.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static void Main()
 {
    Console.WriteLine("Test");
@@ -62,7 +62,7 @@ Alkampfer
 
 The first problem is the need to issue N select, this is an overkill for performance of big trees. Updating it is really simple, you only need to change the Parent node
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 Employee Clark = context.Employee
   .Where(e => e.Name == "Clark").First();
 Employee Joe = context.Employee
@@ -73,7 +73,7 @@ Clark.Parent = Joe;{{< / highlight >}}
 
 Deleting a node is more problematic, because if you delete a node that contains childs you will gets an error, because of violation of foreign key, you need to delete nodes one by one from the node you want to delete to every child so it is better to build a simple function to visit a subtree
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static void Visit(Employee employee, Action<Employee> visitAction)
 {
    visitAction(employee);
@@ -87,7 +87,7 @@ public static void Visit(Employee employee, Action<Employee> visitAction)
 
 Then use it to find a node and all its descendants and finally issue delete statement as in the following snippet that deletes the whole tree
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 using (TestEntities context = new TestEntities())
 {
    Employee root = context.Employee

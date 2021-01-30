@@ -14,7 +14,7 @@ One of the most useful appender is the AdoNet one, that permits you to store log
 
 With this need in mind I proceed to create a Wcf [appender](http://logging.apache.org/log4net/release/sdk/log4net.Appender.html) for log4net using a publish subscribe technique, here is the two contract interfaces.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [ServiceContract(SessionMode = SessionMode.Required, CallbackContract = typeof(IL4NClient))]
 public interface IL4NServer
 {
@@ -34,7 +34,7 @@ public interface IL4NClient
 
 For those not familiar with wcf the CallbackContract is a technique for the server to obtain a callback to sent  **one way messages** to clients. Here it is a simple server that uses these two interfaces
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class AppenderService : IL4NServer
 {
     #region IL4NServer Members
@@ -79,7 +79,7 @@ thanks to the  **OperationContext.Current.GetCallbackChannel** , the server is a
 
 Now I can create a very simple appender for Log4Net
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     public class WCFAppender : AppenderSkeleton
     {
         private ServiceHost host;

@@ -30,7 +30,7 @@ public void GrabMenuWithActionUrl()
 
 The same test can be written in msTest, but this time I have the DeploymentItem attribute, that can be used to specfy to mstest engine, that my test really need the file â€œSampleFiles\MenuType1.xmlâ€.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [TestMethod()]
 [DeploymentItem(@".\SampleFiles\BaseMenu1.xml")]
 public void CreateMenuTest()

@@ -17,7 +17,7 @@ northwind2.Customers.Attach(alfki, true);{{< / highlight >}}
 
 it turns out that this does not work, at least if we have optimistic concurrency on all the field not using a timestamp column. So another try is to grab again the entity from the new context.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 NorthWindDataContext northwind = new NorthWindDataContext();
 northwind.Log = Console.Out;
 Customer alfki = (from c in northwind.Customers
@@ -40,7 +40,7 @@ As you see I first grab an object from a context, than I dispose original contex
 
 Then I stumble upon [this post](http://weblogs.asp.net/omarzabir/archive/2007/12/08/linq-to-sql-how-to-attach-object-to-a-different-data-context.aspx) that explain why this error is raised. So the solution seems to detach the Customer Object, ok I tried to write this code
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public partial class Customer
 {
     public void Detatch() {
@@ -74,7 +74,7 @@ It seems reasonably, I detatch from old DataContext, then clone the original val
 
 Now the tale is not finished, what happens if I forget to clone the entity when I disconnected from the original session, what if I do not like to store original value somewhere? The solution could be, retrieve the original value with LINQ, then detatch and clone the value returned from database and use it.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 NorthWindDataContext northwind2 = new NorthWindDataContext();
 northwind2.Log = Console.Out;
 Customer original = (from c in northwind2.Customers
@@ -100,7 +100,7 @@ public Customer Merge(Customer customer) {
 
 Armed with this tedious method I can now write this code.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 NorthWindDataContext northwind2 = new NorthWindDataContext();
 northwind2.Log = Console.Out;
 Customer original = (from c in northwind2.Customers

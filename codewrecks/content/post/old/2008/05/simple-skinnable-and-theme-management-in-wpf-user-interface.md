@@ -76,7 +76,7 @@ cmbStyle.ItemsSource =
 
 Well, a simple linq query permits me to scan all subdirectory of Themes, takes only the subdirectory that contain a Main.xaml File. All the result are stored in a simple class called ThemeData that contains the theme name (the name of the subdirectory) and the file name. Now here is the code to handle change of selection in the combobox, where I set the new theme
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void cmbStyle_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
     if (cmbStyle.SelectedIndex == -1) return;

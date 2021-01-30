@@ -8,7 +8,7 @@ categories: [General]
 ---
 After some months, I decided that Microsoft Word maybe is not the best app to blog, so I come back to Window Live Writer, but now I had to choose the plugin to insert code. I have some old plugin for the beta version, this post is a try to understand if they works again well.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
         private void DoBind() {
             Int32 count = GetCount();
             String Query =

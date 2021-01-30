@@ -8,7 +8,7 @@ categories: [LINQ]
 ---
 One of the most peculiar characteristic of Linq is Deferred execution, here is an example.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 IEnumerable<Customer> result =
    from c in context.Customers
    where c.ContactName.StartsWith("Maria")
@@ -39,7 +39,7 @@ Id = FOLKO ContactName = Maria Larsson{{< / highlight >}}
 
 I’ve shortened the Sql clause, but you can see that each time you iterate for customer in result query, linq to sql made another query to the database. This is clear from the result, the first time the query return two record, ALFKI and FOLKO, the second time the ALFKI record is not returned because data in database is changed and does not match the query anymore. But pay attention because not everything is deferred in linq to sql. Take the example and change the query in this way
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 IEnumerable<Customer> result =
    from c in context.Customers
    where c.Id.StartsWith("A")

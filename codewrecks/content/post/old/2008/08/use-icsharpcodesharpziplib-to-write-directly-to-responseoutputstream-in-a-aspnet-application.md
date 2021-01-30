@@ -33,7 +33,7 @@ What???? It seems that the ICSharpLib tries to send some wrong value to the writ
 
 To solve this mistery I creates a simple wrapper stream that does nothing than redirect all the calls to the wrapped stream
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     Public Class mystream : Inherits System.IO.Stream
 
         Private wrapped As System.IO.Stream
@@ -71,7 +71,7 @@ int num = buffer.Length - offset;
 
 So the httpResponseStream does not accepts zero bytes buffer, I wonder why. If you check the FileStream class you can verify that it accepts zero byte buffer array, this is the reason why saving the zip to a file works and saving directly to the response.outputstream gives you the error. The reason why HttpResponseStream does a similar check is a mistery, but I simply change my wrapper stream to be
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
         Public Overrides Sub Write(ByVal buffer() As Byte, ByVal offset As Integer, ByVal count As Integer)
             If buffer.Length = 0 Then Return
             wrapped.Write(buffer, offset, count)

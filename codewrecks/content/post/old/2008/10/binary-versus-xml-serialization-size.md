@@ -12,7 +12,7 @@ My first answer was â€œBinary should occupy less space because it is more co
 
 This morning I did some test with a simple class
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     [Serializable] public class Test {public String Property { get; set; }}{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->

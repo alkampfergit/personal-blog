@@ -39,7 +39,7 @@ As you can see I simply delegate to msbuild the task of publishing the applicati
 
 This task takes the original publish.htm file and replace the token VERSIONNUMBERTOKEN, with the actual version number. The ReplaceTokenInFile task is c# code in nant script
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     <script language="C#" prefix="FileOp" >
 
         <references>

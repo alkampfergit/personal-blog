@@ -18,7 +18,7 @@ Then I have some rule for properties length, if I change strings with too long v
 
 As you can see I have clear indication of all errors, and at the same time a rectangle under the labels will change the fill from lightYellow to Orange to help the user to visualize that something is wrong. Ok letâ€™s see how we can reach this solution. First of all here is the validator for the businessEntities
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class BusinessEntityValidationRule : ValidationRule
 {
     private static Validator validator;
@@ -86,7 +86,7 @@ Two things are important here, first I redefine the ErrorTemplate of the Grid, s
 
 As you can see I used the TextChanged event to call the TextBox\_TextChanged method
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void TextBox_TextChanged(object sender, RoutedEventArgs e)
 {
     TheGrid.BindingGroup.CommitEdit();

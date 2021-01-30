@@ -8,7 +8,7 @@ categories: [General]
 ---
 When you use the foreach construct to enumerate in a IEnumerable object, one of the most annoying things is that you cannot modify the IEnumerable object adding or removing component. This is a really standard way to work, since when you are enumerating a sequence, if you add or remove an element, the sequence is changed and the whole enumeration operation should be aborted. This behaviour can be frustrating, because quite often I need to iterate through a dictionary object, and I want to be able to remove some element depending on some condition, but I cannot use a foreach beacuse I cannot modify the dictionary while enumerating. A possibile solution is to create a copy of the original enumeration and enumerate on the copy, this will permits you to modify the original sequence.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
         public static IEnumerable<T> SafeEnumerate<T>(this IEnumerable<T> source)
         {
             List<T> copy = source.ToList();

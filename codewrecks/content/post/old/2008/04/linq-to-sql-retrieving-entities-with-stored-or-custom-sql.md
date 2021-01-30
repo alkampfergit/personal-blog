@@ -26,7 +26,7 @@ public IEnumerable<Order> GetOrderBiggerThan(
 
 This is a method written into the Customer class thanks to partial classes. As you can see the DataContext has a method called  **ExecuteQuery** that permits to specify a custom SQL code and have it return an IEnumerable&lt;T&gt; where T is an entity Class mapped in the context. The only bad thing is that you must pass the context object to the method, but I suggest you to create some form of management of lifecycle of DataContext, in this way it is possible to recover the current DataContext from every part of the code.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  using (Northwind1DataContext context = new Northwind1DataContext()) {
     context.Log = Console.Out;
     Customer alfki = context.Customers.Where(c => c.CustomerID == "ALFKI").First();

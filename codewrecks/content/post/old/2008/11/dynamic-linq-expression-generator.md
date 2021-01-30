@@ -8,7 +8,7 @@ categories: [LINQ]
 ---
 Some time ago I read th[is post](http://weblogs.asp.net/scottgu/archive/2008/01/07/dynamic-linq-part-1-using-the-linq-dynamic-query-library.aspx) that speaks about dynamic query library. I downloaded the code sample, it is interesting, but is bound to Linq to Sql, now I need an implementation of a Dynamic Linq Query generator. Since I already worked in the past with expression parser and I have some generic Infix to postfix converter in a three hours of work I was able to put everything in a project and now I can write
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 Func<Customer, Boolean> f = DynamicLinq.ParseToFunction<Customer, Boolean>("Name == 'Gian Maria'");
 Assert.That(f(aCustomer), Is.True);{{< / highlight >}}
 

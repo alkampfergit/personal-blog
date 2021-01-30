@@ -12,7 +12,7 @@ The user can Add and Remove element from the navigator, or directly from a DataG
 
 If you look at the events of [BindingList&lt;T&gt;](http://msdn.microsoft.com/en-us/library/ms132740.aspx) you can notice that there is no way to be informed of the exact element that gets removed. A simple solution is to inherit from the BindingList&lt;T&gt;
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class RemoveItemEventArgs : EventArgs
 {
     public Object RemovedItem

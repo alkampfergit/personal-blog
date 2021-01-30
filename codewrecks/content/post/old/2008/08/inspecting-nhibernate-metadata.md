@@ -25,7 +25,7 @@ This translator needs only the type of the root object, and a dictionary of all 
 
 Then for each dotted constraint found in the query object, I pass it to this alias translator
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public String AddAlias(String fullpath)
 {
     String[] path = fullpath.Split('.');

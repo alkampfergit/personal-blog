@@ -12,7 +12,7 @@ This technique works for IIS6 and IIS7 with the "IIS 6 WMI Compatibilityâ€ 
 
 Now if you run this code.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 ConnectionOptions connection = new ConnectionOptions();
 connection.Username = "administrator";
 connection.Password = "xxxxxx";

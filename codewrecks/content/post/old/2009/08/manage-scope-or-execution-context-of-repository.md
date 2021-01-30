@@ -20,7 +20,7 @@ To use Lazy load in the ViewModel we could simply call ISessionManager.OpenSessi
 
 Moreover it is really ugly to see a nhibernate ISession created in the ViewModel, only to keep session alive, because it vanished all benefit of shielding the ISession behind a repository. A better solution is to create a class like this one.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class RepositoryScope : IDisposable
 {
     private ISessionManager SessionManager { get; set; }

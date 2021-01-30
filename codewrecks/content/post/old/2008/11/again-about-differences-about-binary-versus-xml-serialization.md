@@ -16,7 +16,7 @@ Xml Serialization in.net, has probably a wrong name, because it does not really 
 
 A great hint that Xml serialization has little to share with binary serialization is that *XmlSerializer can serialize a class that is not marked as serializable*. This is possible because XmlSerializer does not really serialize the object it simply create a xml stream. If you have a class that simply dumps whenever the default constructor is called
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class Test3 
     {
         public Test3()
@@ -30,7 +30,7 @@ public class Test3
 
 when you deserialize an object with XmlSerializer you can see that this constructor gets called. If you deserialize an object with a BinaryFormatter the constructor is not called. This is perfectly reasonable, since serialization is meant to convert an object to a binary stream and back, so you cannot call the default constructor during deserialization because you can end in having a different object from the original one. Try this object
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class Test4
 {
     public Test4()
@@ -101,7 +101,7 @@ GetPrivateString = privatevalue{{< / highlight >}}
 
 Thus showing that the deserialized object has the same state. But XmlSerialization have other problems, letâ€™s serialize and deserialize this class
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [Serializable]
 public class Testcontainer
 {

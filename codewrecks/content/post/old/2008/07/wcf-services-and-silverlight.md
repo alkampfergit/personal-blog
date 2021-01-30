@@ -21,7 +21,7 @@ This is a standard behaviour, because a WCF service has nothing to do with the c
 
 But this only enable the compatibility mode for the site, now each service should declare if he can run in this mode, to make a service compatible you can declare its implementation in this way.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
 public class TestServer : IExtTest{{< / highlight >}}
 

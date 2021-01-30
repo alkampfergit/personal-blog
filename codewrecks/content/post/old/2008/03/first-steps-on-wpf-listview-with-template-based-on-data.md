@@ -8,7 +8,7 @@ categories: [WPF]
 ---
 I’m moving the first serious steps on WPF trying to apply in real situation, the feeling is really good, and databinding and trigger are really exceptional. Suppose you have such a class
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class DataItem {
     public String Name { get; set; }
     public Boolean IsTrue { get; set; }

@@ -38,7 +38,7 @@ It is quite the same of the previous version, but now I inserted some enhancemen
 
 My dto class implements various interfaces and it has properties like Customers\_ContactName and Customers\_CustomerID, so it is a simple transfer object that contains all information we need. The assembler class is responsible to create a dto from original object and as usual can be used in this way:
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 using (NorthwindEntities context = new NorthwindEntities())
 {
     var Query = context.Orders

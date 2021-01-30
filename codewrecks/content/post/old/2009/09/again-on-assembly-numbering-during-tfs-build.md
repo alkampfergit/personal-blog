@@ -10,7 +10,7 @@ If you read [this post](http://www.codewrecks.com/blog/index.php/2009/08/21/take
 
 To access functionality of Team Foundation Server you can also use API, and I must admit that I really like this approach instead of relying on calling an external exe tool and parse its output. Here is the full code of a custom task that accomplish the same operation with the use of tfs API.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 namespace DotNetMarche.MsBuildExtensions.TfsBuild
 {
     public class SourceControlTask : Task

@@ -31,7 +31,7 @@ public object NullSafeGet(System.Data.IDataReader rs, string[] names, object own
 
 The NullSafeGet is called to retrieve the value from database columns in a null safe way, first of all get the index of the data into resultset, then check if it is null, (if is null return null is ok) then if some data is contained into the resultset you can try to create the uri trapping the FormatException. If you prefer you can call Uri.TryCreate that probably is a better solution respect trapping the exception :D
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public void NullSafeSet(System.Data.IDbCommand cmd, object value, int index)
 {
     if (value == null || value == DBNull.Value)

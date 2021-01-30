@@ -10,7 +10,7 @@ In a [previous post](http://www.codewrecks.com/blog/index.php/2009/12/07/custom-
 
 If you want to log from a custom action you can use this simple function
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  private void LogMessage(String message, CodeActivityContext context)
         {
            BuildInformationRecord<BuildMessage> record =

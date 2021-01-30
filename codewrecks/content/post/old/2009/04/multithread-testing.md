@@ -8,7 +8,7 @@ categories: [Testing]
 ---
 Testing multithreaded objects are quite complex. I have an object that keeps care of executing some action in a different thread, monitor progress of that action, and then signal to the caller progress and return value. for testing purpose I write a simple action like this.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
    internal class TestStandard : AsyncOperationBase
    {
       protected override object InnerExecute()
@@ -25,7 +25,7 @@ Testing multithreaded objects are quite complex. I have an object that keeps car
 
 This class inherits from AsyncOperationBase, it makes a simple iteration, raises 10 progress event and returns â€œOOKâ€. What I want to test is OperationManager Object that have a similar function
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
       public static OperationData Start(
          string operationName, 
          AsyncOperationBase operationToExecute, 

@@ -10,7 +10,7 @@ Iâ€™m restructuring a portion of a site, it is well structured, and all log
 
 The solution to this problem was really simple, I created this simple class
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 Public Class IoCObjectDataSource : Inherits ObjectDataSource
    Public Shadows Property TypeName() As String
        Get
@@ -35,7 +35,7 @@ It inherits from the basic ObjectDataSource, but it shadows the TypeName propert
 
 Thanks to Castle Windsor I can easily recover the concrete type registered for a given interface.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static Type GetConcreteTypeFor(Type service)
 {
     return ActualContainer.Kernel

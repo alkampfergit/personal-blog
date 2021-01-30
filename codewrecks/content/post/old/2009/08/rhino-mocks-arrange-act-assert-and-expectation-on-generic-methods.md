@@ -8,7 +8,7 @@ categories: [Testing]
 ---
 I have a project where some actions are to be scheduled by an external library. Each action can be instantiated by a constructor or by a static factory method, and I want to verify with the test that: all action declares static factory method and inside the factory methods all objects are resolved by a call to IoC.Resolve&lt;T&gt;. Since all the actions are in a specific assembly into a specific namespace, I wrote this test.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 Assembly asm = Assembly.Load("MyProject.Analyzer");
 foreach (Type type in asm.GetTypes())
 {
@@ -27,7 +27,7 @@ This test is simple, it load the assembly with actions, then iterate trough all 
 
 This test is flawed, because if you mistype the name of the namespace as I did (typed Myproject instead of MyProject) the test will succeed because no type is inspected. This is the typical situation where the test have complex code (reflection) and the test passed, not because it verifies the correct expectations, but because the test itself is bugged :). The solution is simple.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 Int32 typeCount = 0;
 Assembly asm = Assembly.Load("RepManagement.Analyzer");
 foreach (Type type in asm.GetTypes())
@@ -48,7 +48,7 @@ In this way we are sure that at least one type is analyzed.
 
 But the test is still not so good, it not only tests the presence of the Factory Method, but it depends from the IoC engine, since all factories methods relay on method IoC.Resolve&lt;ActionType&gt;(). So I need a way to*verify that each factory method call the right IoC method and return the object created by the IoC engine*. A possible solution is this test
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 if (type.Namespace == "MyProject.Analyzer.Command" && !type.IsAbstract && !type.IsNested)
 {
     IWindsorContainer mock = MockRepository.GenerateStub<IWindsorContainer>();
@@ -69,7 +69,7 @@ if (type.Namespace == "MyProject.Analyzer.Command" && !type.IsAbstract && !type.
 
 But it does not work, because in factory method my commands does not call IoC.Resolve(typeof(xxxx)) but IoC.Resolve&lt;xxxx&gt;(), where xxxx is the type of the command, here is the typical implementation.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static SchedulableWebReview CreateCommand()
 {
    SchedulableWebReview action = BaseServices.IoC.Resolve<SchedulableWebReview>();

@@ -8,7 +8,7 @@ categories: [NET framework,Testing]
 ---
 Standard behavior of ToString is to print class or structure name. Sometimes if you never need to call tostring for class in application you will avoid to override this basic behavior. Suppose you have this simple structure.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public struct Range
 {
     public Int32 Left;
@@ -34,7 +34,7 @@ And when the test fails the output is
 
 ouch, since I call for equality with EqualTo, the output is telling me that the objects are not equal, but it does not helps me very much. The best solution is to override the ToString for the Range class making it return some meaningful description.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public override string ToString()
 {
    return String.Format("Range({0},{1})", Left, Rigth);

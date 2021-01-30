@@ -49,7 +49,7 @@ Our goal is to use less code possible and rely mainly on binding, and this was a
 
 There are some remarkable stuff. To generate checkboxes we decided to use a simple ItemsControl, acting as a template. This controls has the ItemSource property bound to the ItemSource dependency property of our control. The tricky part is generating the checkboxes, first of all you can see that we does not use standard checkbox but a customized one called MyCheckbox.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class MyCheckBox : CheckBox
 {
     public String DisplayMemberPath
@@ -77,7 +77,7 @@ It inherits from the standard checkbox but declares the DisplayMemberPath depend
 
 Then you can check that the IsChecked property of MyCheckBox is bound with a MultiValueConverter that is needed to draw the logic. The goal is having a control where I can simply bind a list of objects, and a list of selected objects, so I need a way to determine if a checkbox must be checked looking into a collection of selected objects. The MultiValueConverter was the only solution we can find to this problem.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public object Convert(object[] values, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 {
     if (values[1] == null) return false; //IF I do not have no value for selected simply return false

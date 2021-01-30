@@ -8,7 +8,7 @@ categories: [Frameworks]
 ---
 Log4Net is certainly one of the most important instrumentation library  for logging. Let’s see how to extend, writing a custom formatter for exceptions. Exceptions are important things to log, and it is important to log more information as possible, here is how can you write a simple class to log exception
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class ExceptionLayoutExtended : log4net.Layout.LayoutSkeleton {
    private PatternLayout patternLayout;
    PatternLayout PatternLayout {
@@ -26,7 +26,7 @@ As you can see the class must inherit from *LayoutSkeleton* base class, then I i
 
 This is written in C# 3.0, so I can use the short form to define properties. The core of the logging is in the Format() Method.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  1 override public void Format(TextWriter writer, LoggingEvent loggingEvent) {
  2    if (loggingEvent == null) {
  3       throw new ArgumentNullException("loggingEvent");

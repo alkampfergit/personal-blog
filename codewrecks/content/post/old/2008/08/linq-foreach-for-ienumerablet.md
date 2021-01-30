@@ -8,7 +8,7 @@ categories: [LINQ]
 ---
 It seems to me strange that LINQ does not define an extension method *ForEach* to apply some Action&lt;T&gt; on an IEnumerable&lt;T&gt;. Array and List both  have ForEach() method, and IEnumerable really miss it a lot, but fortunately implementing it is a matter of few lines of code.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static IEnumerable<T> ForEach<T>(
     this IEnumerable<T> source, 
     Action<T> act)

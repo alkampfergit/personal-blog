@@ -32,7 +32,7 @@ Now I created another file, with the same name of the single theme css file, but
 
 It is a simple text file, but now Iâ€™m able to write an handler that use this file list to compress all site.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     class YUICompressorHandler : IHttpHandler
     {
         #region IHttpHandler Members

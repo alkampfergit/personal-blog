@@ -12,7 +12,7 @@ There are a lot of situations where LINQ and Lambda expressions can make your co
 
 This is really an awkward way to pass parameters around, but these are the requirements, so we cannot question about it. I decided to write some general parameter class that permits me to deal with strongly typed parameters name and value, because I do not want monkeying  around with string that I have to parse etc, etc. In 10 minutes I write this simple class:
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class BlockParameters
 {
     private static Dictionary<string, Action<BlockParameters, String> > definedParameters 

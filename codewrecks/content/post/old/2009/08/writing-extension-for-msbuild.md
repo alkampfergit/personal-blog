@@ -29,7 +29,7 @@ public void TestXmlPeek()
 
 After you have carefully tested your logic function it is time to test logic of the task, here is the full code of the task.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class XmlPeek : Task
 {
     [Required]

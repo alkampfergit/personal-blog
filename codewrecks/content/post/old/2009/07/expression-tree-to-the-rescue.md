@@ -25,7 +25,7 @@ This is far from being usable, because the needs to specify the full name of the
 
 Now with Expression tree we can obtain more. First of all notice that when you include a.resx file into a solution visual studio creates for you a code behind file to easy the usage of resources.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "2.0.0.0")]
 [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
 [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

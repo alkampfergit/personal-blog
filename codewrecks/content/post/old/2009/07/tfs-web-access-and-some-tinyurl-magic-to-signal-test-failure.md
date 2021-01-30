@@ -26,7 +26,7 @@ This pages shows me full details about the build, now if you look closely at the
 
 This means that I need another custom msbuild action, this one is slightly different from the one used to tweet the message, because it need to returns the string with the new url (the one returned by the tiny process). Here is the full task definition.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class TinyUrlTask : Task
 {
     [Required]

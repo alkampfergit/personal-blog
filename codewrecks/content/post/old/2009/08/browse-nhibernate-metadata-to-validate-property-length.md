@@ -30,7 +30,7 @@ Iâ€™m a great fan of database generation with NHibernate, so here is a typi
 
 This is a class for unit testing a specific routine, it has a property called MyName that have length specified in the mapping, now I want to create a Validator that is able to automatically create rules from the mapping. The goal is automatically find maximum string length from mapping, thus avoiding the extra work to create attributes for each property, and moreover if you change the mapping, the rule changes accordingly. Here is a routing that does this.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static Core.Validator GetValidatorFromSession(ISessionFactory sessionFactory)
 {
     var allDefindedClasses = sessionFactory.GetAllClassMetadata();

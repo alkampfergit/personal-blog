@@ -10,7 +10,7 @@ If you want to Eager Load a relation in entity framework, you can use the Includ
 
 I started with:
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 ObjectQuery<Department> query = conn.CreateQuery<Department>(
 "Select value d from  Department AS d where d.Name = @name");
 query.Parameters.Add(new ObjectParameter("name", "Economics"));
@@ -27,7 +27,7 @@ query = query.Include("Course");{{< / highlight >}}
 
 This sound bad to me, I didn’t really expect that the Include actually creates a complete different query object. It turns out that the best way to do this is chain the Include in the original call.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 ObjectQuery<Department> query = conn.CreateQuery<Department>(
   "Select value d from Department AS d where d.Name = @name")
  .Include("Course");

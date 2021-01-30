@@ -14,7 +14,7 @@ Thanks to DTO all the work to update the real domain object is done by the servi
 
 As an example you can [download this code](http://www.codewrecks.com/blog/storage/SL2BindEnum.zip), that shows you how you can bind a property of an object of some Enum type, both to a series of radio button and to a textbox. The example is a modified version of the enum binder that you can find from [this article](http://blogs.interknowlogy.com/johnbowen/archive/2007/06/21/20463.aspx) where you can find also a lot of good example about binding. The key of everything is in the IValueConverter interface that permits you to convert from a type to another and back. Here is my enum converter.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     public class EnumConverter : IValueConverter
     {
 

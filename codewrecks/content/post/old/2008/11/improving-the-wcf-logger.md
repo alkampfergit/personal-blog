@@ -8,7 +8,7 @@ categories: [NET framework,Nhibernate]
 ---
 One of the first improvement to the WCF logger is the ability to choose the list of logger to monitor during registration. A real application can generate tons of logs, suppose you are interested only in looking at the NHibernate generated query. The solution is to add another registration method and internally use an object that keeps care of the registration and senting log progress. Here is the new interface
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [ServiceContract(SessionMode = SessionMode.Required, CallbackContract = typeof(IL4NClient))]
 public interface IL4NServer
 {
@@ -27,7 +27,7 @@ Now I can choose the name of the logger Iâ€™m interested to filter messages
 
 But this is not the only improvement I need. Quite often it happens that developer X called you telling â€œWhen I press the button Y the application responds after 20 secondsâ€, then you see with the SQL profiler that tons of query gets issued to the database. For a layered and complex application it can be difficult to understand where that queries are issued in the code, so I need a way to get a valid stack trace from the logger. To accomplish this task I modified the LogMessage object
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 [DataContract]
 public class LogMessage
 {

@@ -10,7 +10,7 @@ This morning I installed Ado.net entity framework Beta2. I begin to run some exa
 
 In Linq2Sql and in NHibernate lazy load happens automatically, and at least if I have a relation some fetch strategy is chosen to load related entities, it seems that in EF this does not happens. Here is a little example
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 ObjectQuery<Department> query = conn.CreateQuery<Department>(
    "Select value d from Department AS d where d.Name = @name");
 query.Parameters.Add(new ObjectParameter("name", "Economics"));

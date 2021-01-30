@@ -14,7 +14,7 @@ Today for a particular set of data I got
 
 This is a standard error of Xml, due to the fact that there are some character in ASCII set that cannot be included in XML content. Since I read data from a db, it happens that some strings contain char 0x0C ( **\f** ). To accomplish  this with the minimum effort I simply write such a class
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 class SanitizedXmlWriter : XmlWriter
 {
     private XmlWriter wrapped;
@@ -33,7 +33,7 @@ class SanitizedXmlWriter : XmlWriter
 
 This is a simple wrapper for an XmlWriter, since I got this error when I try to write to a XmlWriter an XElement that contains those non valid chars. All functions are simple wrappers of base class except that one that write  a string.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public override void WriteString(string text)
 {
     if (text.All(c => IsValidXmlChar(c)))

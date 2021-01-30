@@ -12,7 +12,7 @@ The model is not directly accessible, I have already a service that has function
 
 [![image](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb3.png "image")](http://www.codewrecks.com/blog/wp-content/uploads/2009/03/image3.png)  The  **LazyPartitionedList** class is used to load collection of data partitioned by some value. I need such a base class for typology, I do not want to load all typologies in a single shot, I need only to load for currently selected customer, then when the current customer changed on the WPF interface I need to load (if it was not already loaded) from the service the list of typologies for the new customer. The LazyPartitionedList does this all for me. Then I create a browser class that link all toghether
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
    public class AnalysisDefinitionBrowser
    {
       private LazyCollection<Client> customers;
@@ -40,7 +40,7 @@ if (cvCustomers != null)
 
 Customers gets immediately loaded (Reinit Method), the interesting thing is that the LazyPartitionedCollection for typology Id is initialized with a function that calls the service to load typologies for current customer, actually no typology gets loaded. Another interesting thing is that using the CollectionViewSource Iâ€™m able to retrieve the default view for the Customer list.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 void cvCustomers_CurrentChanged(object sender, EventArgs e)
 {
    CurrentClient = (Client)cvCustomers.CurrentItem;
@@ -66,7 +66,7 @@ private Client currentClient;{{< / highlight >}}
 
 The property CurrentClient have a particular Setter part, it loads the partition of the current Client object, then it copy in an ObservableCollection&lt;TypologyDto&gt; called currentTypologies only the typologies that are associated to current customer. With this trick if I already loaded that partition data are in memory and the service gets called only the first time, and only when it is needed. With this code Iâ€™ve created a class that load data only when it is needed, and keep selection in sync with the current properties. The beautiful thing of this object is that I can test it with no problem
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void TestTemplate(
    Action<ICustomerService,IKeywordService> SetupAction, 
    Action ExerciseAction)

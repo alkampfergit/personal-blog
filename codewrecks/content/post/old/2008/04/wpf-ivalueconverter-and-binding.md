@@ -10,7 +10,7 @@ People often look at WPF and XAML only for the possibility to create more appeal
 
 Suppose I have some objects with a property called StartingTime that is a DateTime and I want to visualize the elapsed time from StartingTime to Now. Please resist the temptation to create a presentation object with a suitable property, and lets dig into IValueConverter, here is an example
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public  class DateConverter :IValueConverter {
   public enum ConversionType {
      Elapsed = 0,

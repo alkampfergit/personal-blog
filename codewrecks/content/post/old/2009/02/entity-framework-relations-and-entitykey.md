@@ -8,7 +8,7 @@ categories: [NET framework,Entity Framework]
 ---
 Suppose you generate an Entity Framework model on standard northwind database, you have a customer id and you want to generate an order for that customer. A possible solution is
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 using (ModelTestBase context = new ModelTestBase())
 {
    Orders order = new Orders();
@@ -83,7 +83,7 @@ using (ModelTestBase context = new ModelTestBase())
 
 This code is really verbose,  but it is clearer than retrieving the object with a LINQ query, after all I should have a good way to load an object by key, not using a query with First(). It turns out that you could create an extension method to make your life simpler.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static class EFExtensions
 {
 

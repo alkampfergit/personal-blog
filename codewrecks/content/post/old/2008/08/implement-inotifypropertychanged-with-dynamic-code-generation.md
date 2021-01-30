@@ -12,7 +12,7 @@ Code for this post can be found [here](http://www.codewrecks.com/blog/storage/in
 
 The problem is, how to implement INotifyPropertyChanged with dynamic code generation? The answer is that is quite simple even if we do not relay on Castle.DynamicProxy, here is a simple domain class.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class Customer
 {
     public virtual String Property

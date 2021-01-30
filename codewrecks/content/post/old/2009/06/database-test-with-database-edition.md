@@ -24,7 +24,7 @@ Iâ€™m used to setup database test with transaction management to automatica
 
 Then I go into the test project, goes into Database Folder, locate the DatabaseSetup.cs and comment out the two lines that actually does structure deploy and data generation
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [AssemblyInitialize()]
 public static void IntializeAssembly(TestContext ctx)
 {

@@ -10,7 +10,7 @@ The problem is described in [this post](http://forums.asp.net/p/1402608/3040712.
 
 The above post already gives a solution, but is not a general one. I want to avoid the need to go into the user control and tweak with validators, so I came up with this little solution
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static void AssignValidationGroup(Control rootControl)
 {
     AssignValidationGroup(rootControl, rootControl.ID);

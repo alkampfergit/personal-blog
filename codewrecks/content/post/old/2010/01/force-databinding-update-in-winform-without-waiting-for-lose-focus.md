@@ -10,7 +10,7 @@ I have a winform application where the user can select an element into a grid, e
 
 The user does not like this approach, he explicitly asked me to show â€œSaveâ€ and â€œCancelâ€ button when someone change a value and keep them hidden otherwise, but he does not like the need to focus change to make them visible. The solution was really simple, you need to intercept some events to force binding update whenever you want.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void txtAction_TextChanged(object sender, EventArgs e)
 {
     txtAction.DataBindings["Text"].WriteValue();

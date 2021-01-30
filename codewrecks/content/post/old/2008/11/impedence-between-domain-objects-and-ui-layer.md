@@ -14,7 +14,7 @@ This is a common problem, if objects are not simple container for database field
 
 The first problem is, I need to convert the list&lt;String&gt; to a string to show data in textbox and back when the user change content of the textbox. This is fairly simple in windows forms thanks to Parse() and Format() methods of Binding object
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  1 private void AddFormattingForStringList(TextBox textBoxControl)
  2         {
  3             Binding b = textBoxControl.DataBindings["Text"];

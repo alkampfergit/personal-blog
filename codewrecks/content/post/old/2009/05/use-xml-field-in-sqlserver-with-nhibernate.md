@@ -10,7 +10,7 @@ Xml fields in sql server are really useful, you can use xpath or xQuery to filte
 
 I immediately think to a usertype that is able to store data using XMLSerialization, here is the class, It took to me 10 minutes to create it,
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 public class XmlFieldUserType<T> : IUserType where T : ICloneable
 {
     #region Equals member
@@ -106,7 +106,7 @@ I use a simple XmlHelper class that serialize to and from XML string, and thanks
 
 This is the standard way to specify a class with generics. Now when I save the class here is the SQL generated.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 INSERT INTO MyTable (link_url, link_sha256, link_target_id, link_details) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY(); @p0 = 'http://www.nablasoft.com', @p1 = 'BD827105DDFBEE299C04B461A322FFC21A1CC919D2FDB5A3E1CCC78B3D3BF93F', @p2 = '0', @p3 = '<DetailData
   UserName="Alkampfer"
   Title="Nablasoft HomePAge"

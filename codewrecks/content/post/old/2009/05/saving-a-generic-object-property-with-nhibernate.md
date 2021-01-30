@@ -10,7 +10,7 @@ In a [old post](http://www.codewrecks.com/blog/index.php/2009/05/14/use-xml-fiel
 
 First of all I decided that it is better to use two columns, one will store the xml serialization, while the other will contain type name of the object, so I build a simple ICompositeUserType
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class XmlSerializedObject : ICompositeUserType 
 {
     #region Equals member

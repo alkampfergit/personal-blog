@@ -47,7 +47,7 @@ private static void InitDatabaseStructureFromScripts()
 
 With this and some attribute and base class magic Iâ€™m able to write NUnit test like this.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [TestFixture, Category("ElaborateKeywordResult")]
 [UseSqlServer(ClearAtEachTest = true)]
 [DisableIntegrityCheck]

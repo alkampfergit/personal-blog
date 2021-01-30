@@ -10,7 +10,7 @@ The LoginView control is a very interesting one, it permits you to specify diffe
 
 I want to create a control similar to loginView but with only two template, the first used when the user has no access to a particular area, and another used when the user has at least read access level for that area. This is the code of the control
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     public class LoginViewForArea : WebControl, INamingContainer
     {
         private ITemplate unpermittedTemplate;
@@ -63,7 +63,7 @@ I want to create a control similar to loginView but with only two template, the 
 
 As you can see it has only a couple of properties, one of type ITemplate and the other of type LoginArea, all the game is done in the CreateChildControls, where we check the access level of current user against the name of the area, and if the user has read or write access level then we display the container of the Area, if the user has no access we show the unpermittedTemplate. To show an ITemplate object we need to create a simple control and use the function InstantiateIn of the ITemplate to instantiate all controls in the newly created control, then you simple need to add the control to the control collection. The code for the LoginArea class is the following.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     [AspNetHostingPermission(SecurityAction.LinkDemand, Level = AspNetHostingPermissionLevel.Minimal)]
     public class LoginArea
     {

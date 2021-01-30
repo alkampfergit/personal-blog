@@ -47,7 +47,7 @@ After some days I realized that using file for logging is a bad thing, first, th
 
 Sooner or later you realize that the only way to use logging effectively is to store them in a table of a database, so you can have full sql query capabilities to filter, aggregate and consult all logs. Thanks again to log4Net, the solution is really simple.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 <!--Database appender-->
 <appender name="AdoNetAppender_SqlServer" type="log4net.Appender.AdoNetAppender">
     <connectionType value="System.Data.SqlClient.SqlConnection, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />

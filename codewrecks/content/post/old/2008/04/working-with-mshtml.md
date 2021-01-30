@@ -26,7 +26,7 @@ The most important thing is that, even if the object is really a  **HTMLDocument
 
 To load an HTMLfile that was saved on disk is a more difficult tastk. For some reason that I ignore, you need to load the file on a thread different from the principal one, it seems that the load function needt to interact with the windows message pump, so you cannot invoke it on the main GUI thread. The solution is not difficult, first of all create a new function that accept an object, so you can schedule for execution in another thread with the ThreadPool
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void LoadFile(Object doc) {
     IPersistFile persistFile = (IPersistFile)doc;
     HTMLDocumentClass theDoc = (HTMLDocumentClass)doc;

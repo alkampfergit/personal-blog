@@ -16,7 +16,7 @@ In last post I showed how Policy Injection Application Block is now only a tiny 
 
 To use AOP with unity without PIAB one of the possible solution is using custom attributes, suppose you write an handler called MyLogHandler, you can just create this attribute.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class MyLogHandlerAttribute : HandlerAttribute
 {
    public override ICallHandler CreateHandler(IUnityContainer container)

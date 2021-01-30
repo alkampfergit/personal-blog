@@ -8,7 +8,7 @@ categories: [NET framework]
 ---
 Suppose you have a simple class
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [Serializable, XmlRoot("LogEntry")]
 public class LogFeeder
 {
@@ -59,7 +59,7 @@ If you serialize with XmlSerializer you got this output as default
 
 This is not very satisfying because I need to store it in database as xml fragment or appending to an existing xml node; so I do not care about the namespace or the xml declaration and I want to remove the xml declaration. The trick is to use an XmlWriter to specify format of outputted XML, and use a Blank Namespace to avoid namespace declaration, here is the code
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static String ToXml(Object obj) {
     XmlSerializer ser = new XmlSerializer(obj.GetType(), "");
     StringWriter sw = new StringWriter();

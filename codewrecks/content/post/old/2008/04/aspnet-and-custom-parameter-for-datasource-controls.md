@@ -8,7 +8,7 @@ categories: [ASPNET]
 ---
 ASp.net 2.0 introduces datasource controls, such as SqlDataSource and ObjectDataSource, these controls work quite well, expecially the objectDataSource that permits you to bind to methods of a custom object. In an application of mine there is a user control that has a datagrid with custom logic, that data should be enclosed in different pages, and the control support filtering records. The problem is that in some page we need to be able to pass a parameter to querystring to set the filter, in other pages we have a series of control used by the user to set the filter. The obvious solution is to create a custom parameter object to support this situation.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 Public Class CustomControlParameter : Inherits System.Web.UI.WebControls.ControlParameter
 
   Public Property QueryStringPath() As String

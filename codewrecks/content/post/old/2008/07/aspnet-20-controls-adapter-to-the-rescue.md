@@ -20,7 +20,7 @@ This is a real problem, whenever we need to show an image, the developer linked 
 
 Maybe for lack of communication developers in charge of the UI does not used css for images, nor they used the function in theme manager….too bad now we have to scan all the source pages to find asp:image and &lt;img&gt; tag to correct the url……no, we have a better solution :), first of all I created a couple of adapters
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 Public Class ImageForThemes : Inherits System.Web.UI.Adapters.ControlAdapter
         Private Const ThemeRex As String = "(?<themepath>.*app_themes/.*?/)"
         Private Const opt As RegexOptions = RegexOptions.IgnoreCase

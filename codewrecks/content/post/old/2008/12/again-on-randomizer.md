@@ -8,7 +8,7 @@ categories: [Testing]
 ---
 If you read [last post](http://www.codewrecks.com/blog/index.php/2008/12/06/randomizer-nunit-addin/) you saw how to write a simple randomizer for the execution of NUnit test, but it has a problem, it mess up the nunit interface. The solution is not to ovveride the Tests property, but overriding the way the test are executed. To make it simple I simply take the TestSuite.cs file from original Nunit source code, then I simply change the order in witch the test are executed.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void RunAllTests(
  TestSuiteResult suiteResult, EventListener listener, ITestFilter filter)
 {

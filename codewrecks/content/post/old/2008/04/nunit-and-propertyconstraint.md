@@ -25,7 +25,7 @@ This test will fail because the List does not have PropB property, the error fro
 
 This sounds not so interesting to me, it could be better to modify the WriteActualValueTo
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public override void WriteActualValueTo(MessageWriter writer) {
    if (this.propertyExists) {
       writer.WriteActualValue(this.propValue);

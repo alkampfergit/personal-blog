@@ -8,7 +8,7 @@ categories: [Castle]
 ---
 If you have an object that has a property of some type that is not known by windsor (as example Regex), if you try to configure it with xml the error “No converter registered to handle the type” will occurs. This happens because the container read configuration as string, and then it has to convert to a type it does not know. The solution is to write few line of code to create a converter
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class RegexConverter : AbstractTypeConverter  
 {
     public override bool CanHandleType(Type type)

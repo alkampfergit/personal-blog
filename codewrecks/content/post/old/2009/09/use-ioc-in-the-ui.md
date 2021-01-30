@@ -39,7 +39,7 @@ The need to create an interceptor here in the code, instead of configuring it wi
 
 Now we need a little bit of convention over configuration, because the interceptor swallows all exceptions, leaving to the controller the task of reacting to specific events, the controller needs to know if an operation was successful. For my project all service methods returns: a dto, or a Boolean that states if the operation succeed, or an integer or double. To make things simple I decided by convention that if a method will return null, or Int32.MinValue, or Double.MinValue or false, it means that the invocation failed. Here is a typical call
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 generatedId = CustomerService.InsertLinkResult(currentLinkData);
 if (generatedId == Int32.MinValue) return;{{< / highlight >}}
 
@@ -47,7 +47,7 @@ if (generatedId == Int32.MinValue) return;{{< / highlight >}}
 
 The Method InsertLinkResult will insert a specific object into database and return the Id of the new object, so I need only to check if generatedId is equal to Int32.MinValue. If this condition is true,  it means that some exception is occurred, so I can simply return from the method avoiding doing other operations because this failed. If there is  a validation I show a form that list errors, etc etc. The good stuff about this approach, is that I write error handling code only in one place.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static void InterceptorServiceException(object sender, ServiceExceptionEventArgs e)
 {
     if (e.Exception is System.ServiceModel.CommunicationException)

@@ -26,7 +26,7 @@ public void TestInsertACustomerDataFluent()
 
 The assertion can be read very quicly, assert that on query “Select … ” CustomerID is equal to Ricci, etc etc. The advantage is that you can easily use constraint for each field, in this way the whole assertion is really clear. The class to obtain this result is the following
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     public class DbAssert
     {
         public static DbAssert OnQuery(String query)

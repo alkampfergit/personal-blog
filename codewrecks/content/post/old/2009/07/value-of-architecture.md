@@ -12,7 +12,7 @@ Here is a typical example. I have a WCF services called from external clients, b
 
 The solution is really simple, here it is:
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [AutoscanComponent(LifestyleType.Transient, IsDefault = true, Id = "KeywordService", ServiceType = typeof(IKeywordService))]
 public class KeywordService : IKeywordService{{< / highlight >}}
 
@@ -22,7 +22,7 @@ AutoscanComponent is used by a custom Castle facility, and is used to automatica
 
 But this is not enough, I begin to notice that the program is slow, and after a simple inspection I see that there are too many calls to the database. The problem is that the user interact with a WPF UI and there are too many call to the database because the service interfaces are thought for a different usage pattern. This problem could be easily resolved with caching, so I create a simple interceptor.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class CacheInterceptor : global::Castle.Core.Interceptor.IInterceptor
 {
     private static String BuildCacheToken(IInvocation invocation)

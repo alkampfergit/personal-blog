@@ -12,7 +12,7 @@ Another annoying limitation is that BindingList does not support IBindingListVie
 
 My question is: *is it possible to inherits from BindingList&lt;T&gt; adding generic filtering support as for the DataView component*?. The answer is yes, here is a simple implementation.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public string Filter
 {
     get
@@ -31,7 +31,7 @@ public string Filter
 
 This is really simple, I implement the FIlter property with a simple check, if the filterClause changes, I call the DoFilter function.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private Func<T, Boolean> filterPredicate;
 private List<T> original = new List<T>();
 private void DoFilter()
@@ -56,7 +56,7 @@ private void DoFilter()
 
 The implementation is based on this standard trick, if a filter is applied I copy all the elements in a temp list, then clear the base.Items list and add again only the elements that satisfies the filter. The big work is done in DynamicLinq.ParseToFunction that takes a string and dynamically compiles a function with that criteria. Here is a simple test showing this class in action.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [Test]
 public void TestLogicAnd()
 {

@@ -8,7 +8,7 @@ categories: [LINQ]
 ---
 Suppose you have this simple class (has no business meaning is valid only as example)
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class MyObject
 {
     public static MyObject NullValue = new MyObject() { Value = -100, Name = String.Empty };
@@ -24,7 +24,7 @@ public class MyObject
 
 It is a simple class with two properties and a method Greet(). It use the [null object](http://en.wikipedia.org/wiki/Null_Object_pattern) pattern, because it defines an object with Value=-100 and Name=String.Empty as the NullValue. But how this object works with LINQ? Try this code:
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 IEnumerable<MyObject> samples = new MyObject[]
 {
     new MyObject() {Value = 10, Name = "alkampfer"},
@@ -39,7 +39,7 @@ Console.WriteLine(
 
 Ooopps, this raise a NullReferenceException, because the second LINQ query searches for an object called “someother”, it does not find any object that satisfy the query, then the SingleOrDefault() returns null, and here it is the exception. The question is, “is there a way to make SingleOrDefault returns my null object instead of null?”. The answer is straightforward
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static class MyLinqExtension
 {
     public static MyObject SingleOrDefault(this IEnumerable<MyObject> source)

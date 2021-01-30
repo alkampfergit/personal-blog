@@ -21,7 +21,7 @@ This is similar to the TransactionScope of.NEt, but it does not involve the MSDT
 
 I need a way to distinguish in the Dispose method if it is called because the code has exit the using block with or without an exception. Here is a possible solution I found
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static Boolean IsInException()
 {
     return Marshal.GetExceptionPointers() != IntPtr.Zero ||

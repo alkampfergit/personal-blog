@@ -8,7 +8,7 @@ categories: [Entity Framework]
 ---
 In [previous post](http://www.codewrecks.com/blog/index.php/2009/02/18/entity-framework-relations-and-entitykey/) I left to the reader the task to build a LoadByKey extension method to make it easy loading entities by key in project with entity framework, I think that is quite interesting to spent a little bit on in. First of all I suggest you to read [this post](http://www.scip.be/index.php?Page=ArticlesNET24#Metada) about metadata and Entity Framework, this post suggested me this solution.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
  1 public static T LoadByKey<T>(this ObjectContext context, params Object[] keyValue)
  2 {
  3    EntityType type = (from meta in context.MetadataWorkspace.GetItems(DataSpace.CSpace)

@@ -41,7 +41,7 @@ With this code you get the same effect, except that now you can disable listener
 
 This technique has a drawback, in this way you completely disable standard assertions, but I like that my tests fail even if a standard assertion fails, and it is good to make possible for me to choose if in a test I want that standard assertion make my test fail or not. A quick and dirty solution is the following
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class NunitTraceListener : TraceListener
 {
     public override void Fail(string message)

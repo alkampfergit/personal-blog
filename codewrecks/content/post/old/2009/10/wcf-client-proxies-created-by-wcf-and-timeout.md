@@ -12,7 +12,7 @@ The problem arise when the client spends too many time without calling the servi
 
 I decided to modify the facility to support this scenario, here is the main function that build dynamically wcf proxy
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static object CreateWcfChannelProxy(Type service, string endpoint)
 {
     var interceptor = new WcfProxyInterceptor(service, endpoint);
@@ -55,7 +55,7 @@ The interesting part is the WcfProxyProxyInterceptor class, a castle interceptor
 
 The reason behind this structure is: WCF Proxy abstracts the call to the server with a channel, but if it becomes corrupted, as example when timeout occurs, we need to recreate another valid proxy to communicate with the server. The problem is that now I need to instruct all controllers to use the new proxy. If I use another proxy that wraps WCF proxy, I can simply return that proxy to the controller, and let it manage wcf proxy recreation in case of CommucationException. Letâ€™s see how the WcfProxyInterceptor works
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 internal class WcfProxyInterceptor : IInterceptor
 {
 

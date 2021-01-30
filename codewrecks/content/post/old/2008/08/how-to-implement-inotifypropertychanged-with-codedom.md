@@ -97,7 +97,7 @@ private String GenerateCSharpFile()
 
 Really simple, isn’t it? the result with the Customer sample class is the following.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 namespace MyProxy {
     public partial class MyClass : VariousTests.Customer, System.ComponentModel.INotifyPropertyChanged {
         public override string Property {

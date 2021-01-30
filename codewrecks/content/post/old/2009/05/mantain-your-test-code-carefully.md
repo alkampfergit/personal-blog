@@ -19,7 +19,7 @@ DataAccess.ExecuteNonQuery("delete from table1");{{< / highlight >}}
 
 the reason is, now tabl1 have a new foreign key with tabl2, so I need to delete record from table2 before cleaning up table1. What I do not like is that this instruction appears in the setupfixture of 4 tests, so I need to change them all. So I decided to move some test helper classes I have in another project, now Iâ€™m able to create such a test.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     [TestFixture()]
     [ClearSqlServer(ClearAtEachTest = true)]
     [DisableIntegrityCheck]

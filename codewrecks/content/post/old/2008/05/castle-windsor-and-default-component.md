@@ -61,7 +61,7 @@ But I like to have the concept of default component explicitly set in the config
 
 Look at the default attribute, this is not an attribute that castle understands, so we need to build a facility that will use it.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class DefaultComponent : AbstractFacility 
 {
     protected override void Init()
@@ -83,7 +83,7 @@ public class DefaultComponent : AbstractFacility
 
 This is a very simple facility, it adds a subresolver to the standard resolver, then he scan all defined models (with an handler to the ComponentRegistered event), you can check for optional attributes in the Attributes property of the Configuration object of a componentModel, for each “default” component I store the service type and the model in a dictionary, and the same dictionary is passed to the *DefaultComponentResolver* that really does the work.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  1 internal class DefaultComponentResolver : ISubDependencyResolver {
  2 
  3     private Dictionary<Type, ComponentModel> defaults;

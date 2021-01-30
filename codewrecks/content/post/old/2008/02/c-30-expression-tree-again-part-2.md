@@ -12,7 +12,7 @@ In the [preceding post](http://www.nablasoft.com/Alkampfer/?p=141) I showed that
 
 As you can see the structure of the lambda is more clear, the original lambda contains an Add Expression that in turns contains two parameter expression. The lambda has a collection of parameters that can be inspected at runtime, I simply show them in a listview and permit to the user to set a value. When you set values for parameters you can press the Execute button and “voilÃ “, the expression is executed. The code to execute the function is the following.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 LambdaExpression ex = treeView1.SelectedNode.Tag as LambdaExpression;
 if (ex == null) return;
 Delegate d = ex.Compile();

@@ -10,7 +10,7 @@ Previous part: [Part1](http://www.nablasoft.com/Alkampfer/?p=141), [Part2](http:
 
 One of the most important feature of the microsoft ExpressionVisitor I’ve told you before is the ability to substitute expression. Let’s for example see how the VisitBinary is implemented.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  1 protected virtual Expression VisitBinary(BinaryExpression b)
  2 {
  3     Expression left = this.Visit(b.Left);

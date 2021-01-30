@@ -59,7 +59,7 @@ var query = context.Customers
 
 But this does not work because pagination occurs before the filtering so it does not return the result you want. A possible solution is directly using E-SQL.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
   var queryESQL = @"select VALUE Customers from Customers
                      where Customers.ContactName like '%M%'
                    order by Customers.ContactName

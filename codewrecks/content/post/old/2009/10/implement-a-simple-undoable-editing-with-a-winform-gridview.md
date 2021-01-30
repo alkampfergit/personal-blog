@@ -23,7 +23,7 @@ ChangeSelectedActionFromList((ActionDto)_bsActionList.Current);{{< / highlight >
 
 The controller simply set the list of Action to the view, then save the BindingSource (created by designer) then intercept CurrentChanged and fire the ChangeSelectedActionFromList. My view was designed in this way: when controller call SetLisOfAction it assign the list of actionDto to a bindingSource and then returns it to the caller. LEts see how to react at change of current element.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void ChangeSelectedActionFromList(ActionDto actual)
 {
     if (actual != null)

@@ -10,7 +10,7 @@ There is a good post on [Jim Lambâ€™s blog](http://blogs.msdn.com/jimlamb/a
 
 The steps to create a custom activities in tfs2010 are the following ones. First of all create an activity, like this simple TweetActivity one. Respect the example of Jim, I need to add also the BuildExtensionAttribute to make it run.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [BuildActivity(HostEnvironmentOption.All)]
 [BuildExtension(HostEnvironmentOption.Agent)]
 public sealed class TweetActivity : CodeActivity

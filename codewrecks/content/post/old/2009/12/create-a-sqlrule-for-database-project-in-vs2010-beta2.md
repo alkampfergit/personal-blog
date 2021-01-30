@@ -26,7 +26,7 @@ Now you can create a file that stores all these constants, for an easier use. As
 
 And the game is done. Now you only need to write the code that validate column names.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  public override IList<DataRuleProblem> Analyze(DataRuleSetting ruleSetting, DataRuleExecutionContext context)
         {
             List<DataRuleProblem> problems = new List<DataRuleProblem>();

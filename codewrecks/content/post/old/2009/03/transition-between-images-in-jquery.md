@@ -8,7 +8,7 @@ categories: [JQuery]
 ---
 Sometimes it is needed to change an image into another image, if possible with a smooth transiction. There are a lot of solution to the problem, but one of the simpliest approach is using the background of a containing div. Here is a possible and really raw solution
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight javascript "linenos=table,linenostart=1" >}}
 (function($) {
 
    $.fn.transictionto = function(options) {
@@ -39,7 +39,7 @@ the code is really simple, first of all if the image is not contained in a div I
 
 You can use this plugin with great easy.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight javascript "linenos=table,linenostart=1" >}}
  <script type="text/javascript">
       $(function() {
       $('input').click(function() {

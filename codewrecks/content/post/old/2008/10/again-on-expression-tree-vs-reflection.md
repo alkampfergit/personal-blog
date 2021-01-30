@@ -16,7 +16,7 @@ Assert.That(func(suInstance), Is.EqualTo(1));{{< / highlight >}}
 
 I have a type that is unknown at compile time, I know that it has a method called AMethod, and I want to create a Func&lt;Object, Int32&gt; object to dynamically invoke that method instead of invoking it with plane reflection. Here it is a possible implementation of ReflectFunction with Expression Tree:
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  1 public static Func<Object, T> ReflectFunction<T>(Type objType, String methodName)
  2 {
  3     MethodInfo minfo = objType.GetMethod(
@@ -38,7 +38,7 @@ I have a type that is unknown at compile time, I know that it has a method calle
 
 It is really straightforward to write, first of all get the MethodInfo object for the method you want to invoke, then create a parameter of type Object, then a conversion parameter to cast the object to the correct type (line 11) and finally the expression representing the call to the method. To obtain a Func&lt;Object, T&gt; object I need to create a lambda expression, cast it to the appropriate type, and finally call its Compile method. With LCG the code to obtain the same result is the following.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  1 public static Func<Object, T> ReflectFunction<T>(Type objType, String methodName)
  2 {
  3     MethodInfo minfo = objType.GetMethod(

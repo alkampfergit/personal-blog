@@ -34,7 +34,7 @@ Ok it still needs to be cleaned a little, because a lot of the parameter are opt
 
 It is a good DTO with the three property names I requested, now with Linq2Nhibernate and repository pattern I can write this service method.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public List<TypologyLinkDto> GetTipologiesLinkForCustomer(Int32 customerId)
 {
     return Repository.Typology.Query(

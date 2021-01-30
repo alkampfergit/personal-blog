@@ -36,7 +36,7 @@ public object NullSafeGet(System.Data.IDataReader rs, string[] names, object own
 
 If the data in database is null, or is an empty string I return an empty List&lt;String&gt;, but if the data is not empty I split the string with the separator, and then add each single string in the list. The set part is similar
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public void NullSafeSet(System.Data.IDbCommand cmd, object value, int index)
 {
     if (value == null || value == DBNull.Value)

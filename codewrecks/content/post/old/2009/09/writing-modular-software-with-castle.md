@@ -16,7 +16,7 @@ Simply changing a configuration file I can use the concrete class that have acce
 
 The application is structured with a light custom MVC pattern, if a controller needs to access a specific service he simply declare a dependency.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class XXXManagementController : IXXXManagementController
 {
     public IXXXManagementService XXXManagementService { get; set; }
@@ -40,7 +40,7 @@ static void Main()
 
 Thanks to an autoscan facility, all view are registered with code, in this software the Login View is always the same form, so I can register with an attribute.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [AutoscanComponent(LifestyleType.Transient, IsDefault = true, Id = "Login", ServiceType = typeof(Login))]
 public partial class Login : Form{{< / highlight >}}
 

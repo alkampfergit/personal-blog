@@ -10,7 +10,7 @@ For those used to ORM like NHibernate, the approach to Entity Framework is quite
 
 I see people that make confusion between LINQ and EF, LINQ is the Language Integrated Query, it can be used to query objects in memory, XML, NHibernate and of course EF, but is not the only way to query EF. A less known method to execute query against a EF context is [EntitySql](http://msdn.microsoft.com/en-us/library/bb387145.aspx), here is an example.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 using (NorthwindEntities context = new NorthwindEntities())
 {
     ObjectQuery query = context.CreateQuery<Customers>("Select value C from Customers as C");
@@ -88,7 +88,7 @@ using (NorthwindEntities context = new NorthwindEntities())
 
 since the query object build at the beginning is only a "query object" I can use to make subsequent queries based on the original value, in this example the query object create a constraint on the contact name and an order by City. From this base query I actually execute ii two time into two distinct enumeration, adding some more criteria each time, this is possible because all the Queryobject are composable because they support LINQ. Another important fact is that you cannot iterate the result of a query outside the scope of the context.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 IQueryable<Customers> query;
 using (NorthwindEntities context = new NorthwindEntities())
 {
@@ -103,7 +103,7 @@ foreach (Customers c in query)
 
 This code is wrong and it raise the exception "The ObjectContext instance has been disposed and can no longer be used for operations that require a connection." If the actual query gets executed at each iteration, when you iterate outside the context that creates the query, the underling SqlConnection is disposed and EF cannot issue query anymore. The obvious solution is to use a not deferred operator like ToList() to actually create a list of object that gets disconnected when the context is disposed, but they can be accessed without problem.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 1 IList<Customers> query;
 2 using (NorthwindEntities context = new NorthwindEntities())
 3 {

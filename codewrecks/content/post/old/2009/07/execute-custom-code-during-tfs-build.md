@@ -10,7 +10,7 @@ At this point I explained how to setup a build, and how to fully customize it ed
 
 Another interesting stuff to explain is how to execute custom code during the build, to demonstrate this concept Iâ€™ll show how to tweet a warning message when test phase fails. To execute custom code you simply need to create a custom msbuild task that does everything you want, then you simply need to call this custom task in the build script. The first step is creating the task.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class TweetTask : Task
 {
     [Required]

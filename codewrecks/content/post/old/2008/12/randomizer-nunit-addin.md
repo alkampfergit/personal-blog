@@ -12,7 +12,7 @@ Randomization is really an interesting stuff because it helps to find interactin
 
 Basically a Nunit addin is a class that implements IAddin, here is my addin
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     [NUnitAddin(Name ="Randomizer")]
     public class RandomizerAddIn : NUnitTestFixtureBuilder, IAddin 
     {
@@ -49,7 +49,7 @@ Basically a Nunit addin is a class that implements IAddin, here is my addin
 
 As you can see Iâ€™m inheriting from NunitTestFixtureBuilder class from NUnit framework, and simply add the IAddin interface. The CanBuildFrom is the method that tells to nunit if we can handle a class, I simply search for a custom attribute. To customize the suite you can override the MakeSuite method returning a TestSuite Object. HEre is mine
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 class RandomizerTestFixture : TestFixture
     {
         public RandomizerTestFixture(Type fixtureType)
@@ -91,7 +91,7 @@ private List<Test> RandomizeList()
 
 I simply inherits from the TestFixture standard fixture of nunit, and overriding the Tests collection with a simple LINQ trick I randomize the first time the list is accessed giving the tests in random order. Now I copy the dll into the addins directory where I installed nunit and can write tests like this.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [RandomizeTestOrderFixture]
 public class RandomizerFixture
 {

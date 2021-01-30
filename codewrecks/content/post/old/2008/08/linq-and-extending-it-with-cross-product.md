@@ -37,7 +37,7 @@ and have it output 30 60 40 80. As you can see I setup a condition for the first
 
 Here is my implementation, I did it in few minutes
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static IEnumerable<K> CrossProduct<T, U, K>(
     this IEnumerable<T> left,
     IEnumerable<U> right,
@@ -60,7 +60,7 @@ public static IEnumerable<K> CrossProduct<T, U, K>(
 
 Both the extension methods return a CrossProductImpl class, here is the full code.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class CrossProductImpl<T, U, K> : IEnumerable<K>
 {
     private Func<T, U, K> selector;

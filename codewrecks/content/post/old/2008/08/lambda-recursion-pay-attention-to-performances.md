@@ -8,7 +8,7 @@ categories: [General]
 ---
 This morning I stumble across [this old post](http://blogs.msdn.com/wesdyer/archive/2007/02/02/anonymous-recursion-in-c.aspx), that shows how to create a recursive function with lambda. The article is very interesting and has a [second part](http://blogs.msdn.com/wesdyer/archive/2007/02/05/memoization-and-anonymous-recursion.aspx) that deal with [memoization](http://en.wikipedia.org/wiki/Memoization). These two articles are really great ones, but I want to point out that you need really pay attention to performance each time you speak about recursion. This piece of code shows an interesting thing
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 class Program
 {
     private static Stopwatch sw = new Stopwatch();
@@ -100,7 +100,7 @@ Compare it with the corresponding run of the fib4 (not real recursive lambda).
 
 As you can see in the first listing, for each recursion step, we have two function calls in the stack, this is due to the Y operator used to create the real recursive lambda function.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static Func<A, R> Y<A, R>(Func<Func<A, R>, Func<A, R>> f)
 {
     Recursive<A, R> rec = r => a => f(r(r))(a);

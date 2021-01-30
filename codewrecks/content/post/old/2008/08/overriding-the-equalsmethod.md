@@ -10,7 +10,7 @@ Overriding the Equals method is not a stuff for the fainted-hearts; it could see
 
 Here is a typical implementation of Equals for a Customer entity made by [Resharper](http://www.jetbrains.com/resharper/) (R# permits you to define equals with a single click)
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
     public class Customer : IEquatable<Customer>
 {
     public String Name { get; set; }
@@ -92,7 +92,7 @@ An object that redefine equality operator should be used as key in IDictionary o
 
 A possible solution is to implement a special IEqualityComparer&lt;Customer&gt;.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class CustomerReferenceComparer : IEqualityComparer<Customer>
 {
     static System.Reflection.MethodInfo getHash =

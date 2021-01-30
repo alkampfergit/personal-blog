@@ -8,7 +8,7 @@ categories: [Testing]
 ---
 Iâ€™m quite surprised, I was simply looking for a way to run a Data Generation Plan (.dgen) file in Visual Studio Team Edition, but it seems to me that the class that does this have some internal methods. When You generate the first database test Visual Studio ask you all information to run schema sync and data generation, if you look at generated code you can see this code.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [AssemblyInitialize()]
 public static void IntializeAssembly(TestContext ctx)
 {
@@ -27,7 +27,7 @@ As you can see it has a GenerateData method that permits you to specify dgen fil
 
 Here is the solution
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static void RunDataGenerationPlan(
     String path,
     String projectFile,

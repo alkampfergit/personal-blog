@@ -39,7 +39,7 @@ Then I specify the fullname of the class, the name of the Dto object, the name o
 
 You can see that this simple template will generate a CustomerDto.cs file that contains a CustomersDto class that contains that three properties. The interesting part is how I generate the assembler of the Dto. To build a Dto the standard way to proceed is to take the original object and copy all needed properties into corresponding properties of the dto object. This is a suboptimal approach, because using such a technique, you are forced to load the entire object from the database. In My situation CustomersDto has only three properties, *why I need to load an entire Customers object into memory to build a CustomersDto object that contains only three properties*? The solution is in how my dtoFactory generates the assembler.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 
 public static Expression<Func<Customers, CustomersDto>> ExpressionSelector;
 public static Func<Customers, CustomersDto> Selector;

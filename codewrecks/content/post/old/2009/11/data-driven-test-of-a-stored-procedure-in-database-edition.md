@@ -78,7 +78,7 @@ Iâ€™m telling that I want to create a new data source to data drive my stor
 
 Now the fun part begins, because you will need to instruct the test to use this data, so you will need to â€œRight clickâ€ the database test and choose â€œView Codeâ€. For those not used to database testing, a database test is composed by a simple C# or VB *wrapper* test that permits you to use a designer, but in the background there is the usual test structure. The first step is to choose the data source
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [DataSource("SqlClientDataSource")]
 [TestMethod()]
 public void dbo_GetCustomerByNameTest(){{< / highlight >}}
@@ -101,7 +101,7 @@ p[0].Value = NameFilter;{{< / highlight >}}
 
 The code is really really simple, since it is a Data Driven test, the TestContext has the DataRow populated with the content of the TestDataSet1 table, so I take the NameFilter column value and then create an array of one DpParameter, named @filter that will be passed to the test. Now I need to modify the test condition because I need to set up the number of expected row count, this is a matter of another few lines of code.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 int ExpectedResultCount = (int)TestContext.DataRow["ExpectedResultCount"];
 DatabaseTestActions testActions = this.dbo_GetCustomerByNameTestData;
 RowCountCondition rowCountcontidion =

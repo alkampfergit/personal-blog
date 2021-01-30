@@ -8,7 +8,7 @@ categories: [Visual Studio]
 ---
 When you create database test in a [MsTest](http://en.wikipedia.org/wiki/MSTest) project, usually it configure an initialization method that deploy the database schema before test runs.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [AssemblyInitialize()]
 public static void IntializeAssembly(TestContext ctx)
 {

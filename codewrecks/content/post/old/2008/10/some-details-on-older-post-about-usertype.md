@@ -8,7 +8,7 @@ categories: [General]
 ---
 In [this old post](http://www.codewrecks.com/blog/index.php/2008/05/30/second-iusertype-of-the-day-store-a-list-of-string-in-database-with-nhibernate/) I spoke about a user type that permits you to store a IList&lt;String&gt; property with nhibernate  in a single field of a database with a # separated list of string. That example did not contain the full code of the usertype, so here it is.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  1     class StringListUserType : IUserType
  2     {
  3         private const char cStringSeparator = '#';

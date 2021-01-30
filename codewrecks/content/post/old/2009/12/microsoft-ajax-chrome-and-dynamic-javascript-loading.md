@@ -33,7 +33,7 @@ This is due to the fact that when this piece of script gets loaded, the NSRileva
 
 A quick and really dirty solution is the following one.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 <script type="text/javascript">
 
     function InitializeNSxxxx() {

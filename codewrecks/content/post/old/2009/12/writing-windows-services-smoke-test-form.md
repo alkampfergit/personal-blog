@@ -12,7 +12,7 @@ I work often with windows services, and one of the most painfully experience is 
 
 The question mark means that you are not sure if your new deploy is really ok, because maybe some of the scheduled tasks will fail for misconfiguration or something else. Usually production machine are different to developement ones, you can miss components, point to a wrong db, forget to update configuration, etc, etc. To avoid this situation you need a series of smoke checks, I usually proceed in this way.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class TestResult
 {
     public Boolean Result { get; set; }
@@ -31,7 +31,7 @@ interface ITest
 
 This is the interface of the a component that is able to do a test, I can now write stuff like this
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class ResolveIoCTest: ITest
 {
     #region ITest Members

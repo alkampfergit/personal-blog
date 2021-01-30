@@ -8,7 +8,7 @@ categories: [NET framework,Castle]
 ---
 Castle has a [great facility](http://www.castleproject.org/container/facilities/trunk/wcf/index.html) to resolve Wcf services with castle windsor. This is really useful because it helps you when your concrete service classes have dependency to be resolved. There are a lot of tutorials or blog posts on how to configure it when you want to host service in IIS, but little bit about how to do self hosting, for example in a console application or in a windows service. Here is how to accomplish this. Suppose you have this little service
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [ServiceContract]
 public interface IKernel
 {
@@ -19,7 +19,7 @@ public interface IKernel
 
 And this concrete class
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class Kernel : IKernel 
 {
    public Int32 TestValue { get; set; }

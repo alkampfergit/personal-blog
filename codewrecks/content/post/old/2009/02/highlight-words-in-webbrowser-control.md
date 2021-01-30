@@ -12,7 +12,7 @@ In windows forms the WebBrowser control permits to include a fully funcional bro
 
 As you can see I’ve highlighted the two words, the code is really simple.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void button1_Click(object sender, EventArgs e)
 {
    webBrowser1.Navigate("http://www.nablasoft.com/");

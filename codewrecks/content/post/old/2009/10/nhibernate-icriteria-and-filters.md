@@ -16,7 +16,7 @@ This table works this way, if a user put a bookmark on an entity, a record with 
 
 Thanks to nhibernate I can use a formula in the mapping, but I need to put a condition on that formula, here is how I solved the problem.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 <property 
 name="Bookmark" 
 formula="(select count(*) from Bookmark B where B.bookmark_link_id = Id and B.bookmark_user = :UserContext.UserName)" />

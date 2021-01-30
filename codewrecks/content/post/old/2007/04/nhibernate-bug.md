@@ -8,7 +8,7 @@ categories: [Nhibernate]
 ---
 I replicated a bug in nhibernate. I have a simple mapping for a simple class
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight sql "linenos=table,linenostart=1" >}}
 <?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping 
     xmlns="urn:nhibernate-mapping-2.2" 

@@ -18,7 +18,7 @@ so a possible definition is
 
 This is a regex I use to find some particular data in html page, as you can see the first part is the regex, then I specify the option *Singleline* and *IgnoreCase*. Let’s rewrite the conversion function to accept this new syntax.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private static Regex parser = new Regex(@"\{(?<rex>.*)\},{(?<opt>.*)}");
 public override object PerformConversion(string value, Type targetType)
 {

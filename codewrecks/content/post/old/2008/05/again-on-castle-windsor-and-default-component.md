@@ -18,7 +18,7 @@ IoC.Resolve<ICache>()
 
 You still get the first component defined in the configuration file. Sometimes you want that all resolution will honor the new default attribute, to accomplish this you have to change the facility.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class DefaultComponent : AbstractFacility
 {
     protected override void Init()
@@ -41,7 +41,7 @@ public class DefaultComponent : AbstractFacility
 
 The facility is quite the same as before, first of all the dictionary use type as key and IHandler as value, this permits me to store the default handler for each service that has one of the component marked with default=”true”, then I add a *SubSystem*to the Kernel. SubSystems can be of different types, so you have a *SubSystemConstants* that you can use to specify witch subsystem you want to add. In this example I add a NamingKey, a subsystem that is used by the kernel to get the right IHandler based on user request. Here is the SubSystem
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  1 internal class NamingSubsystemForDefault : DefaultNamingSubSystem
  2 {
  3     private Dictionary<Type, IHandler> defaults = new Dictionary<Type, IHandler>();

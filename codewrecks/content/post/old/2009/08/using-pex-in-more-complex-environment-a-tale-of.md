@@ -24,7 +24,7 @@ Since pex needs to do a series of steps to enable your mstest project to run Pex
 
 It even take care of adding everything is needed to run the pex test. It specifically creates a factory for the object that pex will use to test the object itself. This is needed because pex does not know how to build correctly an object, so it ask you to create a method that accepts simple parameters and creates an object. I edited the factory method in this way.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static partial class XmlPeekFactory
 {
     private static IBuildEngine engineStub = MockRepository.GenerateStub<IBuildEngine>();
@@ -55,7 +55,7 @@ Please not the Attribute PexFactoryMethod(typeof(XmlPeek)) that is used internal
 
 Well, actually pex is complaining that he found a System.Io.File.Exists call, so it cannot generate tests because accessing file from the test is not permitted. This happens because files are part of the *environment*, and you must not interact with the environment during a pex test, since pex cannot modify the environment itself. The only things that I can do is to test directly the Peek function that does XPath logic instead of testing the PeekTask class. Again you can find that pex does not xnow well the concept of Xml and XElement, but now we know the trick and we can create a very simple factory like this.
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 [PexFactoryMethod(typeof(XElement))]
 public static XElement Create(XElement other_xElement1, object annotation_o)
 {

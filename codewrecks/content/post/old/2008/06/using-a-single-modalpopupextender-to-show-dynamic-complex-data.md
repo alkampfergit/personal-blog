@@ -26,7 +26,7 @@ The tricky part of the code was actually the javascript part that needs to
 
 Here is part of the script
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
  1 NSPreview.PreviewManager.prototype.ShowPanel = function(panelId, analysisId, fullPanelUrlGenerator, waitingimage, showPopup) {
  2    if (this._panels[panelId] == null || this._panels[panelId].id != analysisId) {
  3         var reqFinished;

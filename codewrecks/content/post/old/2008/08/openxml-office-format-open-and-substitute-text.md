@@ -27,7 +27,7 @@ public Document(String originalDocumentPath, String destinationDocumentPath)
 
 The SDK does not permits me to save document with another name, so I simply copy the master file with the name I want, then open the copy; the overall effect is the same, mantaining the master unchanged and have a file with a given name. The WordprocessingDocument class is the root class that you should use to manage docx files, it is true that a docx file is simply a zip file, but this class shield you from this permitting you to browse file content. My class assign the document to a private propery called Doc that does some basic management.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private WordprocessingDocument Doc
 {
     get { return doc; }

@@ -12,7 +12,7 @@ Rules are important, Iâ€™ve seen project where there is no naming rule for 
 
 Creating a rule is really simple, first of all create a c# project strongly signed, then add a class like this one.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 using System;
 using System.Collections.Generic;
 using Microsoft.Data.Schema.Extensibility;
@@ -46,7 +46,7 @@ As you can verify is really simple to define details of the rule, just give a th
 
 A rule is a simple class that inherits from Microsoft.Data.Schema.StaticCodeAnalysis.Rule, then you simply need to specify what kind of object you want to check.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public override bool IsSupported(IModelElement element)
 {
     return element is IColumn;
@@ -56,7 +56,7 @@ public override bool IsSupported(IModelElement element)
 
 This specific rule has the purpose to enforce a specific naming of all columns of database. Each column must in fact contain 4 letters (table code) then an underscore and then the name of the column. If we have the table Customer the id column will be cust\_id. This naming scheme could not be the best one, but I want it to be enforced into the database, because I really dislike that each table has is own naming scheme. All the check is done in the Analyze method
 
-{{< highlight xml "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public override IList<Problem> Analyze(IModelElement modelElement, RuleSetting ruleSetting, RuleExecutionContext context)
 {
     List<Problem> problems = new List<Problem>();

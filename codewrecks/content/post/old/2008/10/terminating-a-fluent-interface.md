@@ -29,7 +29,7 @@ DbAssert.OnQuery("select *  from tablename")
 
 This is a perfectly valid code, it created a  **DbAssert** object but never execute it, thus the assertion always succeed and never fail because it gets never executed. A possibility is to make the object DbAssert****disposable, so you can use inside a using, but the syntax will get worse. A viable solution is a little modification
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 private static DbAssert theQuery;
 
 public static DbAssert OnQuery(String query)

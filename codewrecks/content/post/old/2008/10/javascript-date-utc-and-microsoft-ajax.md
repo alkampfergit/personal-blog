@@ -15,7 +15,7 @@ Yesterday I had to write a really simple piece of js code, I have a method in a�
 
 Here is my tentative list. All the code is in this [sample file](http://www.codewrecks.com/blog/wp-content/uploads/2008/10/sampleweb.zip) where I created a simple webservice method that accepts a date and return its string format to the caller. This is the first code
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 function SendDate() {
     var date = new Date($get('txtBox').value);
     if (date == null || date == NaN) {
@@ -29,7 +29,7 @@ function SendDate() {
 
 I create a Date object from the text in the textbox, and passed it to the service method. I face two problem, first if I write â€œ1/2/2008â€ the webservice told me that he received â€œJanuary 01 2008â€. This seems to be absurd, because how it is possible that 1/2/2008 can be transferred to the server as January 1. Then if I write â€œ1/207/2008â€ the service told me he received July 24 2008. I decided to shift to the Date.parseLocal of the Microsoft Ajax Library
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 function SendMsAj() {
     var date = Date.parseLocale($get('txtBox').value);
     if (date == null) {
@@ -45,7 +45,7 @@ The situation is better, if I write 1/207/2008 it told me invalid date, but if I
 
 After some time of test and try I found this patch to overcome this issue.
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 function SendMsAjGood() {
     var date = Date.parseLocale($get('txtBox').value);
     if (date == null) {

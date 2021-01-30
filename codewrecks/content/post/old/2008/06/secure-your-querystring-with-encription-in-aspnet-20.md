@@ -61,7 +61,7 @@ test=valoredi test
 
 The page did never known that the querystring was encrypted, the process is completely transparent. The generation of encrypted links can be made also transparent in most of the situation? The first step is creating a function that encrypt a link
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static String EncodeLink(String link)
 {
     if (link.Contains("?") && active) {
@@ -79,7 +79,7 @@ This function is static on module QueryStringSecure, it accepts a full link to a
 
 The active variable is a shared one and it is set to true on module init. With this trick, if you disable the module from the web.config, all urls will be generated without encryption. At this point Whenever you have to generate a link to a page from code, you need to call this function to encrypt the url, but it can be done automatically for web controls, thanks to the concept of “Control Adapters and adaptive rendering”. First of all I created an handler for the HyperLink standard asp.net control
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class HyperLinkControlAdapter : System.Web.UI.Adapters.ControlAdapter
 {
     protected override void Render(System.Web.UI.HtmlTextWriter writer)

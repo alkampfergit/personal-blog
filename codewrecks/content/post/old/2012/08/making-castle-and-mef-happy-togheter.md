@@ -34,7 +34,7 @@ public class CastleToMefBridge
 
 {{< / highlight >}}
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class CastleToMefBridge
 {
     [Export(typeof(IXXXService))]

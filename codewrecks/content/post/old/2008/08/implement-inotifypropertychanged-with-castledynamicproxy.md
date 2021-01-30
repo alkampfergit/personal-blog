@@ -10,7 +10,7 @@ In [previous post](http://www.codewrecks.com/blog/index.php/2008/08/04/implement
 
 Here is the whole class that generate proxy with INotifyPropertyChanged for me
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class CastleDM
 {
     public Customer CreateProxy(Type parent)
@@ -26,7 +26,7 @@ public class CastleDM
 
 As you can see this is a very simple class, I simple use the CreateClassProxy to generate a subclass of the Customer object that implements also the INotifyPropertyChanged, all the work is done by the class INotifyPropertyChangedInterceptor
 
-{{< highlight chsarp "linenos=table,linenostart=1" >}}
+{{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class INotifyPropertyChangedInterceptor : StandardInterceptor
 {
     private PropertyChangedEventHandler handler;
