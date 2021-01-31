@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Codewrecks"
 theme = "minimo"
 
+rssLimit = 50
+
 # disqusShortname = "codewrecks-1"
 googleAnalytics = "UA-1773115-4"
 
