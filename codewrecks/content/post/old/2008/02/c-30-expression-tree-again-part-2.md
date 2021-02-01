@@ -8,7 +8,7 @@ categories: [NET framework]
 ---
 In the [preceding post](http://www.nablasoft.com/Alkampfer/?p=141) I showed that a lambda expression can be converted by the compiler in an object of type Expression that actually models the expression tree. With this post we can begin to have more fun, first of all I modified the visitor to show the exact tree of the expression. Here is a screenshot
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image-thumb2.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image2.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image-thumb2.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image2.png)
 
 As you can see the structure of the lambda is more clear, the original lambda contains an Add Expression that in turns contains two parameter expression. The lambda has a collection of parameters that can be inspected at runtime, I simply show them in a listview and permit to the user to set a value. When you set values for parameters you can press the Execute button and “voilÃ “, the expression is executed. The code to execute the function is the following.
 
@@ -31,4 +31,4 @@ Welcome into the marvelous world of Expression Tree ;)
 
 Alk.
 
-[Download the Example code](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/expressiontree1.zip "Example code")
+[Download the Example code](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/expressiontree1.zip "Example code")

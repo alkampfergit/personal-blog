@@ -8,7 +8,7 @@ categories: [Nhibernate]
 ---
 Now that the Entity object works as expected the only issue remaining is the integration with NHibernate. First Step is creating mapping file to store the object in the database. Database structure is very simple, just a table for the Entity class plus another table for localized resources.
 
-![](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2007/05/052307-0636-localizable1.png)
+![](https://www.codewrecks.com/blog/wp-content/uploads/2007/05/052307-0636-localizable1.png)
 
 Against this database schema we can map the Entity class with this mapping file.
 

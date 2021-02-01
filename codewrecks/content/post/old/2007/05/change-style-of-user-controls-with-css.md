@@ -7,7 +7,7 @@ tags: [ASPNET]
 categories: [ASPNET]
 ---
 Thanks to Guardian for the suggestion on this tip, I’m not really a stylesheet guru :D.   
-The problem is this, I have an ASP.NET *user control* and I want to show it with two different styles in the same page. I looked into some asp.net forums and I found some examples of peoples that changes SkinId at runtime or did some other tricks, but a much better solution is to use css. In code [Example](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2007/05/usercontrolformatting.zip "Example") attached to this post I show how to format single instances of user control with the only support of css. First of all This is the code of my user control, a simple label with a textbox.
+The problem is this, I have an ASP.NET *user control* and I want to show it with two different styles in the same page. I looked into some asp.net forums and I found some examples of peoples that changes SkinId at runtime or did some other tricks, but a much better solution is to use css. In code [Example](https://www.codewrecks.com/blog/wp-content/uploads/2007/05/usercontrolformatting.zip "Example") attached to this post I show how to format single instances of user control with the only support of css. First of all This is the code of my user control, a simple label with a textbox.
 
 &lt;asp:LabelID=”Label1″runat=”server”Text=”Description”CssClass=”labelDefault”/&gt;  
 &lt;asp:TextBoxID=”TextBox1″runat=”server”CssClass=”textboxDefault”/&gt;

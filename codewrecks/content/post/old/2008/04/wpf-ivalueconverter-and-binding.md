@@ -43,7 +43,7 @@ public  class DateConverter :IValueConverter {
 
 This is not a good class, but is serves as example, it permits to convert from a DateTime to other object, in this example I only support elapsed that permits to me to convert DateTime values in a string representing elapsed time. Now you can use this converter without writing a single line of code, and you have full intellisense
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/04/image-thumb.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/04/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/04/image-thumb.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/04/image.png)
 
 As you can see I simply add a Binding object, sets the path to the correct property of the object bound, and I declare the converter with full intellisense power.
 

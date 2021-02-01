@@ -85,6 +85,6 @@ MyGridView1.DataBind();
 
 The GetCount() function does a *Select count(\*) from Customers*, and should cache the result, in the DoBind function we need simply to set the right number of record in the RecordCount property and the game is done, no ObjectDataSource, high performance, simple code.
 
-[Download sample code for the article](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/custompaging.zip "Example")
+[Download sample code for the article](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/custompaging.zip "Example")
 
 Alk.

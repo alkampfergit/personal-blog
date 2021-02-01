@@ -39,7 +39,7 @@ Then you have a list of such objects, you bind them to DataContext of a list vie
 
 With this really simple code you have this result.
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/03/image-thumb4.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/03/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/03/image-thumb4.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/03/image4.png)
 
 Ok, this is not so exiting, to make things really more interesting I created a directory called Images, dropped two png and included as resources into the project. Now I want to display images based on value of the IsActive property of the data. This is simple in WPF, the solution is create a static resource of the window
 
@@ -75,7 +75,7 @@ The XAML is really simple, I declare a DataTemplate object with a key of “imag
 
 As you can see I simply declare that the CellTemplate of the first column of the grid is the static resource defined in the windows. Thanks to the triggers here is the result.
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/03/image-thumb5.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/03/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/03/image-thumb5.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/03/image5.png)
 
 This is really better than before, and without writing a single line of code.
 

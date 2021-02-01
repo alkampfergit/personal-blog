@@ -58,7 +58,7 @@ publicvoid  Dispose()  {
 
 This class creates a connection when needed, it does the same thing with the Nhibernate session, using a session manager that inject code into nhibernate session. It is disposable, and when dispose is called the transaction will be committed if no one had called the *ISDirty()* method. If you want to rollback the conversation simply call *IsDirty()*  method and when the conversation will be closed, all operations will be rolled back. Now we need a static class called ConversationManager to keep track of the concept of “Current Conversation”
 
-![](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2007/08/080407-0812-manageconve1.png)
+![](https://www.codewrecks.com/blog/wp-content/uploads/2007/08/080407-0812-manageconve1.png)
 
 BeginConversation() will return a conversation object and since it is diposable you can use code like this.
 

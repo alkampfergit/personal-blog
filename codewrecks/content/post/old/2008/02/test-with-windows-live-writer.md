@@ -26,7 +26,7 @@ After some months, I decided that Microsoft Word maybe is not the best app to bl
 
 This is a sample code.
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image-thumb.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image-thumb.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image.png)
 
 This is a simple paste image
 

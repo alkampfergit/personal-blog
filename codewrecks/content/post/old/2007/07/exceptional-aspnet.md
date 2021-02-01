@@ -8,7 +8,7 @@ categories: [ASPNET]
 ---
 This afternoon I’m developing a web application, while I’m buildind the site I did a refresh on a pageâ€¦.after some seconds this is the result showed from firefox :D
 
-![](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2007/07/072707-1530-exceptional11.png)
+![](https://www.codewrecks.com/blog/wp-content/uploads/2007/07/072707-1530-exceptional11.png)
 
 Amazing.
 

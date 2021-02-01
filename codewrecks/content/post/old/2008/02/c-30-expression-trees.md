@@ -47,10 +47,10 @@ It turns out that the compiler can translate lambda expression in two different 
 
 An ExpressionTree is an object model that represent the expression, so it can be examined and traversed to dissect the expression itself. To help familiarize with the expressions i build a very simple winformprogram that dump the structure of the expression Tree. The program simply create an expression, and use a DumpVisitor to dump information of the node in a TreeView, The DumpVisitor class is based on the ExpressionVisitor class that can be found on MSDN. Here is a screenshot of a simple LambdaExpression.
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image-thumb1.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image1.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image-thumb1.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image1.png)
 
 Thanks to a simple Treeview and a propertyGrid it is simple to visualize the inner structure of the LambdaExpression. The TreeView contains the TypeName of the node visited, here we can see that for a simple constant expression the compiler creates a Lambda that contains a constant.
 
-[Download sample](http://http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/expressiontree.zip)
+[Download sample](http://https://www.codewrecks.com/blog/wp-content/uploads/2008/02/expressiontree.zip)
 
 Alk.

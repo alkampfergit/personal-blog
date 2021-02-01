@@ -106,6 +106,6 @@ Assert.AreEqual(1,  Result.Tables.Count);
 Assert.AreNotEqual(0,  Result.Tables[0].Rows.Count);  
                     });
 
-Again the caller has not the burden of dispose anything. If you like this you can access code [here](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2007/06/dataaccess.zip).
+Again the caller has not the burden of dispose anything. If you like this you can access code [here](https://www.codewrecks.com/blog/wp-content/uploads/2007/06/dataaccess.zip).
 
 Alk.

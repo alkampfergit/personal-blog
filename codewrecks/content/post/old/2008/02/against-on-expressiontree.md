@@ -10,7 +10,7 @@ Previous part: [Part1](http://www.nablasoft.com/Alkampfer/?p=141), [Part2](http:
 
 Ok, lets move on on the anatomy of an expression, let’s take as example the following screenshot.
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image-thumb3.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image3.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image-thumb3.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image3.png)
 
 The original expression is customer =&gt; customer.Property.StartsWith(“A”), and the expression is dissected in a node of type Lambda that contains a Call node. The *Call* node is a node that express the invocation of a method, and internally contains all the needed information.
 

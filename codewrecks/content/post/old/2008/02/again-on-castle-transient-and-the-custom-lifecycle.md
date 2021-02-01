@@ -8,7 +8,7 @@ categories: [Castle]
 ---
 Two days ago hammet link one of my old post, ([http://hammett.castleproject.org/?p=252)](http://hammett.castleproject.org/?p=252%29) I want now to make another considerations. The end of my old post ([http://www.nablasoft.com/Alkampfer/?p=105)](http://www.nablasoft.com/Alkampfer/?p=105%29) reported this problem, I have a class DisposableCon that implements IDisposable, this class declare a dependency from an object That implements ITest, This is the object model
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image-thumb5.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image5.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image-thumb5.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image5.png)
 
 This simple model declare a class called DisposableCon, in the constructor this class needs an instance of ITest, implemented by DisposableTest, a class that implements Disposable and ITest. Both these two classes are defined as transient in the config file.
 

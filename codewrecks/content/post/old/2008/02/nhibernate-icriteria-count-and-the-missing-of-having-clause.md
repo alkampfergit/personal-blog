@@ -8,7 +8,7 @@ categories: [Nhibernate]
 ---
 One of the most feared missing feature of the ICriteria API is the possibility to specify condition on projection with Having. Suppose you have this simple connection between a container and a contained object,
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image-thumb4.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/image4.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image-thumb4.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/02/image4.png)
 
 The EntityContainer class has a property called Test, is an IList&lt;EntityTest&gt; and EntityTest has a Container property to link back to the container. This is the classic bidirectional association. Now we want to express with ICriteria API the following query
 

@@ -47,7 +47,7 @@ As you can see I create a template with an image, and another template with a co
 
 Since we want to change the content of the GridViewColumn we simply declare the DataTemplate inside a CellTemplate of the GridViewColumn object, here we drop a single control named *cnt*and with default Template of Ct1. Then we can insert a DataTemplate trigger to simply change the Template property of the control, actually swapping the template at runtime based on property of the bound object, here is the result.
 
-[![image](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/03/image-thumb6.png)](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/03/image6.png)
+[![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/03/image-thumb6.png)](https://www.codewrecks.com/blog/wp-content/uploads/2008/03/image6.png)
 
 You can now completely change the template based on object property.
 

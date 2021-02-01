@@ -132,4 +132,4 @@ This little example shows that to really test every aspect of an application, th
 
 Alk.
 
-[sample11.zip](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2007/05/sample11.zip "sample11.zip")
+[sample11.zip](https://www.codewrecks.com/blog/wp-content/uploads/2007/05/sample11.zip "sample11.zip")
