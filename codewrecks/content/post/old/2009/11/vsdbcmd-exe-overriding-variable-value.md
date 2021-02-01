@@ -6,7 +6,7 @@ draft: false
 tags: [Visual Studio Database Edition]
 categories: [Visual Studio]
 ---
-When you deploy a database project with the command line utility [vsdbcmd.exe](http://msdn.microsoft.com/en-us/library/dd193283.aspx) you may want to change the value of some variables of the project. Suppose youâ€™ve created a variable called Path1
+When you deploy a database project with the command line utility [vsdbcmd.exe](http://msdn.microsoft.com/en-us/library/dd193283.aspx) you may want to change the value of some variables of the project. Suppose you've created a variable called Path1
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image22.png)
 

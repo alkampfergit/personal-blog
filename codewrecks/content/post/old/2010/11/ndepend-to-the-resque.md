@@ -6,9 +6,9 @@ draft: false
 tags: [NDepend]
 categories: [NET framework]
 ---
-Iâ€™ve blogged about this supersimple but amazing feature of NDepend some time ago, but I want to emphasize another time how NDepend is a tool that you must have in your toolset.
+I've blogged about this supersimple but amazing feature of NDepend some time ago, but I want to emphasize another time how NDepend is a tool that you must have in your toolset.
 
-Iâ€™ve deployed an application with click-once, but when I try to install it â€¦ I got this error
+I've deployed an application with click-once, but when I try to install it â€¦ I got this error
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image2.png)
 
@@ -22,7 +22,7 @@ The answer is: fire NDepend and let him find all error in references.
 
  ***Figure 2***: *With NDepend finding the project with wrong reference is outrageously simple*
 
-As you can see NDepend complains about the fact that there are different version of the system.runtime.serialization assembly, this even before the analysis, and it tells you where he find the different version of the assembly, so Iâ€™m able to identify the project that has the wrong version and I can fix the reference in seconds.
+As you can see NDepend complains about the fact that there are different version of the system.runtime.serialization assembly, this even before the analysis, and it tells you where he find the different version of the assembly, so I'm able to identify the project that has the wrong version and I can fix the reference in seconds.
 
 Amazing.
 

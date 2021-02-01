@@ -38,7 +38,7 @@ if (cvCustomers != null)
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Customers gets immediately loaded (Reinit Method), the interesting thing is that the LazyPartitionedCollection for typology Id is initialized with a function that calls the service to load typologies for current customer, actually no typology gets loaded. Another interesting thing is that using the CollectionViewSource Iâ€™m able to retrieve the default view for the Customer list.
+Customers gets immediately loaded (Reinit Method), the interesting thing is that the LazyPartitionedCollection for typology Id is initialized with a function that calls the service to load typologies for current customer, actually no typology gets loaded. Another interesting thing is that using the CollectionViewSource I'm able to retrieve the default view for the Customer list.
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 void cvCustomers_CurrentChanged(object sender, EventArgs e)
@@ -64,7 +64,7 @@ private Client currentClient;{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The property CurrentClient have a particular Setter part, it loads the partition of the current Client object, then it copy in an ObservableCollection&lt;TypologyDto&gt; called currentTypologies only the typologies that are associated to current customer. With this trick if I already loaded that partition data are in memory and the service gets called only the first time, and only when it is needed. With this code Iâ€™ve created a class that load data only when it is needed, and keep selection in sync with the current properties. The beautiful thing of this object is that I can test it with no problem
+The property CurrentClient have a particular Setter part, it loads the partition of the current Client object, then it copy in an ObservableCollection&lt;TypologyDto&gt; called currentTypologies only the typologies that are associated to current customer. With this trick if I already loaded that partition data are in memory and the service gets called only the first time, and only when it is needed. With this code I've created a class that load data only when it is needed, and keep selection in sync with the current properties. The beautiful thing of this object is that I can test it with no problem
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void TestTemplate(
@@ -118,7 +118,7 @@ public void VerifyLoadingOfTheSecondLevelTwoCustomer()
 
 The TestTemplate is used to create and setup mock for services, my services classes are static wrapper that permits me to override the real instance of service used, so I can use a different mock for each call of the service. Then the test simply setup some expectation and exercise the AnalysisDefinitionBrowser with direct manipulation of the ICollectionView object, thus simulating the user that changes currently selected item in the interface.
 
-This test access the cvCustomers internal ICollectionView object because the Test assembly is InternalVisibleTo the test that contains the sut. The XAML code is something like this (Iâ€™ve bound a controller as the root source of the page, the controller initialize an instance of AnalysisDefinitoinBrowser and expose it with a dependency property called AnalysisDefinition)
+This test access the cvCustomers internal ICollectionView object because the Test assembly is InternalVisibleTo the test that contains the sut. The XAML code is something like this (I've bound a controller as the root source of the page, the controller initialize an instance of AnalysisDefinitoinBrowser and expose it with a dependency property called AnalysisDefinition)
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <ComboBox DockPanel.Dock="Top" 
@@ -134,7 +134,7 @@ This test access the cvCustomers internal ICollectionView object because the Tes
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Now when I fired the application and look into the sql server profiler I can see that object gets transparently loaded while Iâ€™m browsing the objects with the two combo, each time I select a new customer I see query that load related typologies, when I select a customer that was already selected in the past data are already in memory.
+Now when I fired the application and look into the sql server profiler I can see that object gets transparently loaded while I'm browsing the objects with the two combo, each time I select a new customer I see query that load related typologies, when I select a customer that was already selected in the past data are already in memory.
 
 alk.
 

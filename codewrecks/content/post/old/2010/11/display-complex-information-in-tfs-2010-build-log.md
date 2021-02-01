@@ -34,7 +34,7 @@ The key factory here is that this code does not need to make a reference to the 
 
  ***Figure 4***: *The plugin visualizes the comples log with the custom format*
 
-Thanks to WPF flexibility in configuration Iâ€™m able to create a super warning like message that the reader could not miss in the log :). If you had logged that three info with standard call, you would have seen them as other log and it would be less visible, with custom visualizer you really create a good warning.
+Thanks to WPF flexibility in configuration I'm able to create a super warning like message that the reader could not miss in the log :). If you had logged that three info with standard call, you would have seen them as other log and it would be less visible, with custom visualizer you really create a good warning.
 
 Compared with the old TFS Build 2008 with MSBuild and text log files, you should admit that TFS build 2010 is a real step forward.
 

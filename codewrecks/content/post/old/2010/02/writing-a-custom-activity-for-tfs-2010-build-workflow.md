@@ -16,7 +16,7 @@ Specifying parameter with this technique is awkward and error prone. To solve th
 
 [![Immagine2](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine2_thumb.png "Immagine2")](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine2.png)
 
-With this approach, you can use default value for arguments, and you can specify the exact type for arguments, so the workflow can do type checking against the input arguments. Iâ€™ve inserted all the input parameters I need: database name, server name, dbProjectname etc etc. Inside the Activity I simply drop a sequence and inside the sequence all the actions needed to deploy the database. The exact technique is described in my old post, the only remarkable difference is logging, because now I can directly drop a WriteBuildMessage activity inside the sequence to log messages. Here is the final activity
+With this approach, you can use default value for arguments, and you can specify the exact type for arguments, so the workflow can do type checking against the input arguments. I've inserted all the input parameters I need: database name, server name, dbProjectname etc etc. Inside the Activity I simply drop a sequence and inside the sequence all the actions needed to deploy the database. The exact technique is described in my old post, the only remarkable difference is logging, because now I can directly drop a WriteBuildMessage activity inside the sequence to log messages. Here is the final activity
 
 [![Immagine3](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine3_thumb.png "Immagine3")](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine3.png)
 

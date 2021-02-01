@@ -44,6 +44,6 @@ where A.ActionDate >= :startdate and A.ActionDate <= :enddate
 group by date(A.ActionDate)
 {{< / highlight >}}
 
-Where Iâ€™m able to use date() function, but at the same time it gets translated in different way respect the dialect I use. If in the future I will need to use Oracle, Iâ€™ll simply create another dialect, without the need to modify any HQL query.
+Where I'm able to use date() function, but at the same time it gets translated in different way respect the dialect I use. If in the future I will need to use Oracle, I'll simply create another dialect, without the need to modify any HQL query.
 
 alk.

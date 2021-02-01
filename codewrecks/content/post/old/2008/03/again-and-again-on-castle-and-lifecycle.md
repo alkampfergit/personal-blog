@@ -34,4 +34,3 @@ The code is still experimental, but it can be a viable solution.
 
 Alk.
 
-Technorati Tags: [Castle](http://technorati.com/tags/Castle),[IoC](http://technorati.com/tags/IoC),[object Lifecycle](http://technorati.com/tags/object%20Lifecycle)

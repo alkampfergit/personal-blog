@@ -6,7 +6,7 @@ draft: false
 tags: [Testing]
 categories: [Testing]
 ---
-Iâ€™m quite surprised, I was simply looking for a way to run a Data Generation Plan (.dgen) file in Visual Studio Team Edition, but it seems to me that the class that does this have some internal methods. When You generate the first database test Visual Studio ask you all information to run schema sync and data generation, if you look at generated code you can see this code.
+I'm quite surprised, I was simply looking for a way to run a Data Generation Plan (.dgen) file in Visual Studio Team Edition, but it seems to me that the class that does this have some internal methods. When You generate the first database test Visual Studio ask you all information to run schema sync and data generation, if you look at generated code you can see this code.
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 [AssemblyInitialize()]
@@ -61,7 +61,7 @@ public static void RunDataGenerationPlan(
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The solution is really simple, it is true that I have no way to invoke that protected method (Except reflection), but msbuild can be invoked programmatically, so I create an Engine class, load the main project file, then set some properties for the project such as ConnectionString, Verbose etc. With properties  you can specify the **â€œSourceFileâ€** that is the data generation file that you want to run. Iâ€™ve found a sample [here](http://social.msdn.microsoft.com/Forums/en-US/vstsdb/thread/5e750da2-24a0-4e4e-8eae-761f56c27b2c) that explain the xml syntax for msbuild, so I simply translate it into C# code using the Engine of msbuild directly from code. You need to imports Microsoft.Build.Engine to make this code compile. Now I can use that function in this way.
+The solution is really simple, it is true that I have no way to invoke that protected method (Except reflection), but msbuild can be invoked programmatically, so I create an Engine class, load the main project file, then set some properties for the project such as ConnectionString, Verbose etc. With properties  you can specify the **â€œSourceFileâ€** that is the data generation file that you want to run. I've found a sample [here](http://social.msdn.microsoft.com/Forums/en-US/vstsdb/thread/5e750da2-24a0-4e4e-8eae-761f56c27b2c) that explain the xml syntax for msbuild, so I simply translate it into C# code using the Engine of msbuild directly from code. You need to imports Microsoft.Build.Engine to make this code compile. Now I can use that function in this way.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 [TestMethod]
@@ -78,7 +78,7 @@ public void TestMethod1()
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-And I can decide programmatically when to run a specific data generation plan. The code to regenerate the whole structure is not important, it is enough for me to run at the beginning of test. The only thing I do not like is the need to use relative path to references project file and data generation plan file, but since it is uncommon to change relative path of the projects, Iâ€™m quite satisfied of it.
+And I can decide programmatically when to run a specific data generation plan. The code to regenerate the whole structure is not important, it is enough for me to run at the beginning of test. The only thing I do not like is the need to use relative path to references project file and data generation plan file, but since it is uncommon to change relative path of the projects, I'm quite satisfied of it.
 
 Alk.
 

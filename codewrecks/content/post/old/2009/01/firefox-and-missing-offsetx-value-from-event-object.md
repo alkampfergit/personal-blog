@@ -8,7 +8,7 @@ categories: [General]
 ---
 As you can verify in various [articles](http://www.reloco.com.ar/mozilla/compat.html) the event object in javascript is really different between IE and firefox. This is one of the most annoying part of javascript programming, taking into account the various differences of avaliable browser.
 
-I have an old routing that uses event.offsetX to do some logic on an image depending on the relative position of the mouse respect to the image top-left corner, it works only for IE but now I need to make it compatible with firefox. Since now Iâ€™m a great fan of [JQuery](http://jquery.com/) I immediately try to solve this problem with JQuery. The first problem is that the event object is really different from IE and firefox, but I find this solution
+I have an old routing that uses event.offsetX to do some logic on an image depending on the relative position of the mouse respect to the image top-left corner, it works only for IE but now I need to make it compatible with firefox. Since now I'm a great fan of [JQuery](http://jquery.com/) I immediately try to solve this problem with JQuery. The first problem is that the event object is really different from IE and firefox, but I find this solution
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 1 var offX;

@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 TFS is not a tool, but a *platform/ecosystem* and if you miss to install / consider to use all of the free or commercial tools based on Tfs, you are actually missing the most part of it. Surely TFS comes with a very huge amount of features out of the box, but there are also an extremely high number of useful tools developed by third party developers.
 
-Here is a *surely incomplete list* (Iâ€™ll try to keep it updated) and in random order of a bunch of tools I know for TFS ecosystem.
+Here is a *surely incomplete list* (I'll try to keep it updated) and in random order of a bunch of tools I know for TFS ecosystem.
 
 ## Free Tools
 
@@ -54,7 +54,7 @@ Here is a *surely incomplete list* (Iâ€™ll try to keep it updated) and in r
 - [TX Looker](http://www.teamexpand.com/product/tx-looker): an addin from [TeamExpand](http://www.teamexpand.com/products/list) to make Outlook communicate with TFS.
 - [WTM](http://www.sela.co.il/alm/products_WTM.html): A really cool tool to manage and run Microsoft Test Manager plans from a Web Interface.
 - [StpSoft Requirements Definer](http://www.stpsoft.co.uk/definer/index.html):  Transform Visio diagrams into a set of structured requirements, user stories and test cases in Team Foundation Server
-- [Wimbi](http://www.sela.co.il/alm/products_Wimbi.html): Manage and Merge your productâ€™s Content Based on Work ITems instead of Changesets
+- [Wimbi](http://www.sela.co.il/alm/products_Wimbi.html): Manage and Merge your product's Content Based on Work ITems instead of Changesets
 - [Exia Process](http://www.exiaprocess.com/pages/product): The Exia Process Tracks and manages the entire Agile lifecycle, including requirements, test cases, user stories, tasks, bugs and issues. Using The Exia Process you can also manage all your software project documentation, and you can run iterations with the virtual storyboard
 
 Tags: [Tfs](http://technorati.com/tag/Tfs) [Alm](http://technorati.com/tag/Alm)

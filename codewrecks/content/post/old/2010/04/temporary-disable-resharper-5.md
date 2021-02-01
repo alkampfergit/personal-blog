@@ -6,7 +6,7 @@ draft: false
 tags: [Resharper]
 categories: [Tools and library]
 ---
-R# is really useful, but sometimes, when Iâ€™m working to very big web forms or winform projects, and I know that I do not need R# feature because Iâ€™m only designing the UI, it can be useful to temporary suspend R#, freeing memory and speeding a little bit VS.
+R# is really useful, but sometimes, when I'm working to very big web forms or winform projects, and I know that I do not need R# feature because I'm only designing the UI, it can be useful to temporary suspend R#, freeing memory and speeding a little bit VS.
 
 In R#5 the option to disable it is in the Tools-&gt;Options menu
 

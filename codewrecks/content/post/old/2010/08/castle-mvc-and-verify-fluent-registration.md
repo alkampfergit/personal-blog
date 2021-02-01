@@ -94,7 +94,7 @@ Service: Myproject.Interfaces.ILoginView
 Implementation: Myproject.Views.Login
 {{< / highlight >}}
 
-Now Views are registered for correct interface, and Iâ€™m able to resolve the ILoginView with no problem.
+Now Views are registered for correct interface, and I'm able to resolve the ILoginView with no problem.
 
 The lesson is: whenever you work with multiple type registration with castle, always dump details about each registered components, this will save you time and give you an exact view of registered types.
 

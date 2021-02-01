@@ -10,9 +10,9 @@ In some [older](http://www.codewrecks.com/blog/index.php/2009/09/08/use-aspnet-m
 
 Now I need to modify configuration, because in another project, all the site is forced over https, and the configuration I used in the other project cannot be used anymore. In older post in fact, I explained how to send credentials over http with message security, using self issued certificates. Now I have transport security, so I can avoid the need to distribute certificates to people that will use the service.
 
-I need two different configuration, the first is for unauthenticated services, Iâ€™ll use for services that must be used by everyone with no authentication, but I need also another configuration that permits me to secure the service through asp.net membership and role management.
+I need two different configuration, the first is for unauthenticated services, I'll use for services that must be used by everyone with no authentication, but I need also another configuration that permits me to secure the service through asp.net membership and role management.
 
-Letâ€™s start with the first configuration, first of all I configure IIS7 to use both https binding and http binding, and then I can configure the endpoint on the server to use https
+Let's start with the first configuration, first of all I configure IIS7 to use both https binding and http binding, and then I can configure the endpoint on the server to use https
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <service behaviorConfiguration="BasicHttpsWithoutAuthBehavior"
@@ -44,7 +44,7 @@ In this configuration there are several thing to notice, first of all the endpoi
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Iâ€™ve simply specified that the security has the mode=â€Transportâ€ and the transport does not use clientCredentialType. If you do not specify â€œnoneâ€ in this value, the service will expect that IIS site is configured to use windows credential as default.
+I've simply specified that the security has the mode=â€Transportâ€ and the transport does not use clientCredentialType. If you do not specify â€œnoneâ€ in this value, the service will expect that IIS site is configured to use windows credential as default.
 
 The client should be configured in this way.
 

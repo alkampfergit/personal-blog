@@ -6,7 +6,7 @@ draft: false
 tags: [General]
 categories: [General]
 ---
-Iâ€™m trying to use Windows Live Mesh, and I must admit that it is quite interesting. The interface is good, the speed of synchronization is really good, and all I need to do is Right Click and add a folder to Live Mesh. The space is limited to 512 mb in the beta version, but it is enough for me, because IÃ¬â€™m using to keep in Sync files Iâ€™m actively working with, between my desktop and my laptop.
+I'm trying to use Windows Live Mesh, and I must admit that it is quite interesting. The interface is good, the speed of synchronization is really good, and all I need to do is Right Click and add a folder to Live Mesh. The space is limited to 512 mb in the beta version, but it is enough for me, because IÃ¬'m using to keep in Sync files I'm actively working with, between my desktop and my laptop.
 
 In the end it seems to me a good service.
 

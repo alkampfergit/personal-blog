@@ -33,7 +33,7 @@ With a json payload of
 
 Do not forget to set Content-Type header to application/json, and you got a result similar to this one.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 {
@@ -69,7 +69,7 @@ But the most interesting aspect of using Work Item Query Language is the asOf op
 
 This indicates that the results of the query was done at that specific instant of time, and  **the interesting part is that you can use the asOf operator to query WorkItem at different point in time**. Es
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 { "wiql": "Select [System.Id] FROM WorkItems where 
@@ -83,7 +83,7 @@ asof '2014-07-04T10:00:00.000Z'
 
 As you can see I’ve added asOf and a timestamp at the end of the query. This instruct TFS to execute the query and returns me the result valid at that specific Timestamp, in fact I have different number returned.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 {

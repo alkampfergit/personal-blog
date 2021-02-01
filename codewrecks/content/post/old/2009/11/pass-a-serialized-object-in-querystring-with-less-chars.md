@@ -6,7 +6,7 @@ draft: false
 tags: [Net]
 categories: [NET framework]
 ---
-Iâ€™ve some legacy code where stuff have to be passed with querystring, because we need to issue Get request to the server, and I need to pass various set of parameters for some reporting functions, but those parameters have 20 field, and are somewhat used as a tree. I decided to serialize everything and pass the result with querystring using HttpUtility.UrlEncodingâ€¦ the result was frustrating because the url are simply too long.
+I've some legacy code where stuff have to be passed with querystring, because we need to issue Get request to the server, and I need to pass various set of parameters for some reporting functions, but those parameters have 20 field, and are somewhat used as a tree. I decided to serialize everything and pass the result with querystring using HttpUtility.UrlEncodingâ€¦ the result was frustrating because the url are simply too long.
 
 So I begin investigating on how to reduce data size of serialized object to be encoded with UrlEncode. This is the first solution
 
@@ -77,7 +77,7 @@ using (StringWriter sw = new StringWriter())
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-I use DataContractSerializer to have a xml serialized stream, then I encode in UTF8 with Gzip compression, and finally I convert to Base64 and UrlEncode it, the result is 948 chars :) quite good, because now Iâ€™m under 1000 chars, respect the first version with plain binary serialization that was 3264 chars.
+I use DataContractSerializer to have a xml serialized stream, then I encode in UTF8 with Gzip compression, and finally I convert to Base64 and UrlEncode it, the result is 948 chars :) quite good, because now I'm under 1000 chars, respect the first version with plain binary serialization that was 3264 chars.
 
 Alk.
 

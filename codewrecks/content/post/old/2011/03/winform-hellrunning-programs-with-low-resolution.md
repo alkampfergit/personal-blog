@@ -6,7 +6,7 @@ draft: false
 tags: [Winforms]
 categories: [NET framework]
 ---
-Iâ€™ve a problem, we developed a winform program that has a really big startup form. The height of the form is 880 pixel and is designed to work on big monitors. Clearly everything is resizable, so if you resize the form you can still work with it, with no problem.
+I've a problem, we developed a winform program that has a really big startup form. The height of the form is 880 pixel and is designed to work on big monitors. Clearly everything is resizable, so if you resize the form you can still work with it, with no problem.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image15.png)
 

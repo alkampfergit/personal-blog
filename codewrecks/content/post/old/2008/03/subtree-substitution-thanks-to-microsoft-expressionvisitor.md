@@ -33,5 +33,3 @@ As you can notice, in the line 6 the code is checking if the subtree returned fr
 The rule of thumb is, it is not necessary to walk the Expression Tree only one time, it is possibile to traverse it multiple times, each time modify to deal in each pass with a simplier tree.
 
 alk.
-
-Technorati Tags: [Expression Tree](http://technorati.com/tags/Expression%20Tree),[LINQ](http://technorati.com/tags/LINQ),[IQueryable](http://technorati.com/tags/IQueryable)

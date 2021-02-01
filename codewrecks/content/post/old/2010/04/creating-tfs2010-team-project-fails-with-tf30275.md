@@ -42,7 +42,7 @@ at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size
 --- end Exception entry ---
 {{< / highlight >}}
 
-The error happens when the script for process creation try to upload the file  **Document Template – Stakeholder Matrix.xltx**. Iâ€™ve verified and if you remove that process from the template the creation succeed, and clearly even the creation of CMMI team project will proceed with no problem, so it is a problem of that specific file.
+The error happens when the script for process creation try to upload the file  **Document Template – Stakeholder Matrix.xltx**. I've verified and if you remove that process from the template the creation succeed, and clearly even the creation of CMMI team project will proceed with no problem, so it is a problem of that specific file.
 
 The problem is somewhat originating from NOD32 and here is how can you solve it. You need to open the Full configuration Tree from NOD32
 
@@ -56,7 +56,7 @@ Now you need to exclude the IP of TFS
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image26.png)
 
-As you can see Iâ€™ve inserted the ip of my test TFS (10.0.0.101) into the list of Addresses excluded from active protection (IDS). But this is not enough, the problem still arise because nod32 is monitoring HTTP traffic, and the communication from Visual Studio to the asmx services that constitute the tfs integration to sharepoint. Now go the WebAccessProtection/HTTP,HTTPS configuration section of nod, and insert the name of the tfs server (in my example is tfs2010test) into the list of addresses excluded from filtering.
+As you can see I've inserted the ip of my test TFS (10.0.0.101) into the list of Addresses excluded from active protection (IDS). But this is not enough, the problem still arise because nod32 is monitoring HTTP traffic, and the communication from Visual Studio to the asmx services that constitute the tfs integration to sharepoint. Now go the WebAccessProtection/HTTP,HTTPS configuration section of nod, and insert the name of the tfs server (in my example is tfs2010test) into the list of addresses excluded from filtering.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image27.png)
 

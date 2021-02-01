@@ -99,7 +99,7 @@ GetPrivateString = privatevalue{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Thus showing that the deserialized object has the same state. But XmlSerialization have other problems, letâ€™s serialize and deserialize this class
+Thus showing that the deserialized object has the same state. But XmlSerialization have other problems, let's serialize and deserialize this class
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 [Serializable]

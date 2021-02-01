@@ -8,7 +8,7 @@ categories: [NET framework,Team Foundation Server]
 ---
 I worked for long time with NANT + CC.net as continuous integration tools. I used subversion as Source Control System and use Mantis or Redmine for issue tracking.
 
-The main disadvantage of using such a configuration is the need to make each tool communicate with others, the good part is that these tools are open source. Team Foundation Server on the other side is a Commercial tool, so you have to pay it, but it gives you a lot of features in a single unified tool, and this is Great. Letâ€™s see as an example how to set up a continuous integration server for a simple project.
+The main disadvantage of using such a configuration is the need to make each tool communicate with others, the good part is that these tools are open source. Team Foundation Server on the other side is a Commercial tool, so you have to pay it, but it gives you a lot of features in a single unified tool, and this is Great. Let's see as an example how to set up a continuous integration server for a simple project.
 
 Leveraging the power of a Continuos Integration machine with open source tool is not difficult, but you need to do some work, in CC.net you have to create a NANT or MSbuild script, configure cc.net with ccnet.config and so on. The good part of Team Foundation Server is that creating a build is a matter of a right click on the builds node
 
@@ -30,7 +30,7 @@ This is a great option, because it permits you to avoid keeping too many data, a
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image24.png)
 
-Iâ€™ve installed the Build Engine on the same machine where the Tfs runs, so I create an agent named *StandardBuildAgent,* then specify the name of the computer *TFSALKAMPFER* , when you press OK you can use that agent to run the build, now you must specify network share where to put the result
+I've installed the Build Engine on the same machine where the Tfs runs, so I create an agent named *StandardBuildAgent,* then specify the name of the computer *TFSALKAMPFER* , when you press OK you can use that agent to run the build, now you must specify network share where to put the result
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image25.png)
 

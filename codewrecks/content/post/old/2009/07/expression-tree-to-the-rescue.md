@@ -97,5 +97,3 @@ My object was designed to store all resource managers into a static hashtable, t
 With Expression tree you can quite always avoid the need for the user of you library to specify object by name if you need to use reflection.
 
 alk.
-
-Technorati Tags: [Expression Tree](http://technorati.com/tags/Expression+Tree),[.NET framework](http://technorati.com/tags/.NET+framework)

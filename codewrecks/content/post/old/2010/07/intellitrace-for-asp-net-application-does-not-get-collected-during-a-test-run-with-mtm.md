@@ -6,7 +6,7 @@ draft: false
 tags: [Microsoft Test Manager]
 categories: [Team Foundation Server]
 ---
-If you have problem collecting intellitrace during a test run with MTM for an asp.net web application, and you really checked everything but cannot find any clue, check the user you are using to run the application. I have an installation where, using the default application pool will result in intellitrace being collected, while if I use a domain user to run application pool, when I try to signal a bug from MTM, no intellitrace is in the bugâ€™s attachment.
+If you have problem collecting intellitrace during a test run with MTM for an asp.net web application, and you really checked everything but cannot find any clue, check the user you are using to run the application. I have an installation where, using the default application pool will result in intellitrace being collected, while if I use a domain user to run application pool, when I try to signal a bug from MTM, no intellitrace is in the bug's attachment.
 
 The reason of this problem could derive from missing User Profile. Intellitrace is using User Profile to inject environment variables per owner of the application pool, and since User Profile is an OS feature, if no User Profile is loaded by OS, intellitrace could not inject variables, and data gets no collected.
 

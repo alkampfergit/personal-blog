@@ -75,8 +75,3 @@ Thanks to the method GetIdOfPart() of MainDocumentPart we are able to get the id
 
 alk.
 
-Tags: [OpenXml](http://technorati.com/tag/OpenXml)
-
-Technorati Tags: [OpenXml](http://technorati.com/tags/OpenXml)
-
-<!--dotnetkickit-->

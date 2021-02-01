@@ -11,5 +11,3 @@ Teamfuze ([http://www.teamfuze.net/index.jspa](http://www.teamfuze.net/index.jsp
 If you develope with oracle you really have to try the beta ;) you will never want to come back :D
 
 Alk.
-
-Technorati Tags: [Visual Studio Database Edition](http://technorati.com/tags/Visual+Studio+Database+Edition)

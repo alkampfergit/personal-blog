@@ -96,7 +96,7 @@ Behaviours:ListViewFocusBehaviour.SelectListViewItemOnFocus="True"
 Height="Auto" HorizontalAlignment="Stretch" />
 {{< / highlight >}}
 
-With this piece of XAML Iâ€™m telling to WFP engine to attach the SelectListViewItemOnFocus property to the textbox and give it a value of true. What happens at runtime? First of all the engine attach that property to the textbox and assign the value true, thus raising the OnSelectListViewItemOnFocusPropertyChanged property, that in turn add an handler to the PreviewGotKeyboardFocus even of the textbox. My final goal is achieved, Iâ€™m able to add logic to even of a Framework Element with only XAML declaration.
+With this piece of XAML I'm telling to WFP engine to attach the SelectListViewItemOnFocus property to the textbox and give it a value of true. What happens at runtime? First of all the engine attach that property to the textbox and assign the value true, thus raising the OnSelectListViewItemOnFocusPropertyChanged property, that in turn add an handler to the PreviewGotKeyboardFocus even of the textbox. My final goal is achieved, I'm able to add logic to even of a Framework Element with only XAML declaration.
 
 The final effect is that with this technique we can add behaviors to a control declaratively with XAML, keeping MVVM pattern intact and keeping all the logic only in one class, that can be reused for multiple views.
 

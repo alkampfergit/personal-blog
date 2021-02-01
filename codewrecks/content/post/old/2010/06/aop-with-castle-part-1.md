@@ -110,7 +110,7 @@ Augment 10 returns 12
 
 This certifies a couple of interesting things, the first is that every call to the resolved ISomething object is correctly intercepted by the interceptor, the other one is that the interceptor is able to modify the return value. As you can see, the original class implements the Augment methods with a simple addition of the value one to its argument, but passing 10 as parameters returns us the value 12, because the interceptors was able to modify it transparently from the real called method.
 
-The conclusion is that Castle is able to do AOP, even if it donâ€™t support standard concepts, but this is usually not a big problem, you just need to shift a little bit the AOP paradigm to the concept of interceptor.
+The conclusion is that Castle is able to do AOP, even if it don't support standard concepts, but this is usually not a big problem, you just need to shift a little bit the AOP paradigm to the concept of interceptor.
 
 Clearly the same can be done using fluent interface, here is the code to register an object with an interceptor:
 

@@ -19,7 +19,7 @@ PropertyLink.OnObject(this, _rilevazione)
 .Link(p => p.UserEvaluation, s => s.BorderBrush);
 {{< / highlight >}}
 
-With the PropertyLink Iâ€™m able to express the fact that two object are related, and when certain property of object \_rilevazione changed, another object should raise a property changed. The first link tells my system that whenever the property Rank changed I need to raise a propertyChanged event by the current object telling that BackGroundBrush property is also changed.
+With the PropertyLink I'm able to express the fact that two object are related, and when certain property of object \_rilevazione changed, another object should raise a property changed. The first link tells my system that whenever the property Rank changed I need to raise a propertyChanged event by the current object telling that BackGroundBrush property is also changed.
 
 To make this possible I created a new interface.
 
@@ -92,7 +92,7 @@ return this;
 }
 {{< / highlight >}}
 
-The GetMemberName() extension method is this, and is taken from [Mauroâ€™s Radical](http://radical.codeplex.com/).
+The GetMemberName() extension method is this, and is taken from [Mauro's Radical](http://radical.codeplex.com/).
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public static String GetMemberName<T, TProperty>( this Expression<Func<T, TProperty>> source )

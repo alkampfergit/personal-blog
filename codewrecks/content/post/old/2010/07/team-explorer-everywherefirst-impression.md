@@ -32,7 +32,7 @@ Now you can use eclipse like Team Explorer, it is quite identical, look at  **Fi
 
  ***Figure 4***: *Source control windows to browse files into the repository*
 
-First impression is really good, Iâ€™m able to do query against Work Item, defining and editing builds, creating query etc etc. The Work Item viewer has all the functions of Team Explorer, and you can edit the query, choose column to view etc etc, as visible in  **Figure 5**.
+First impression is really good, I'm able to do query against Work Item, defining and editing builds, creating query etc etc. The Work Item viewer has all the functions of Team Explorer, and you can edit the query, choose column to view etc etc, as visible in  **Figure 5**.
 
 [![2342342342](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/2342342342_thumb.png "2342342342")](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/2342342342.png)
 

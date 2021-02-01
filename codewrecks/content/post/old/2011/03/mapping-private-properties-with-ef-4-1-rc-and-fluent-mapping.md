@@ -6,7 +6,7 @@ draft: false
 tags: [EF Code First,Entity Framework]
 categories: [Entity Framework]
 ---
-EF [4.1 is now in RC](http://blogs.msdn.com/b/adonet/archive/2011/03/15/ef-4-1-release-candidate-available.aspx) phase and as a NHibernate user Iâ€™m curious to check the fluent API to map entities to database. One of the feature that I and [Andrea](http://blogs.ugidotnet.org/pape/Default.aspx) miss most is the possibility to map private properties with fluent interface. It seems strange to map private properties at once, but it can be useful in DDD. Suppose you have these simple classes.
+EF [4.1 is now in RC](http://blogs.msdn.com/b/adonet/archive/2011/03/15/ef-4-1-release-candidate-available.aspx) phase and as a NHibernate user I'm curious to check the fluent API to map entities to database. One of the feature that I and [Andrea](http://blogs.ugidotnet.org/pape/Default.aspx) miss most is the possibility to map private properties with fluent interface. It seems strange to map private properties at once, but it can be useful in DDD. Suppose you have these simple classes.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image9.png)
 
@@ -62,7 +62,7 @@ This problem derives only from the Fluent Interface, because EF is internally ca
 this.HasMany<Category, Product>("Products");
 {{< / highlight >}}
 
-This would solve all our problems, because with this statement Iâ€™m asking EF to map a collectino called Products. Fortunately writing such an extension method is quite simple, it is just a bunch of Expressions
+This would solve all our problems, because with this statement I'm asking EF to map a collectino called Products. Fortunately writing such an extension method is quite simple, it is just a bunch of Expressions
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public static ManyNavigationPropertyConfiguration<T, U> HasMany<T, U>(
@@ -111,7 +111,7 @@ return mapper.Property(expression);
 }
 {{< / highlight >}}
 
-Thanks to those two methods now Iâ€™m able to write this mapping for the category class.
+Thanks to those two methods now I'm able to write this mapping for the category class.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public class CategoryMapping : EntityTypeConfiguration<Category>
@@ -129,7 +129,7 @@ ToTable("Category");
 }
 {{< / highlight >}}
 
-As you can see Iâ€™m able to map the PrivateDetails property and I can choose column name, and the Products property with no problem. Now I can use my model
+As you can see I'm able to map the PrivateDetails property and I can choose column name, and the Products property with no problem. Now I can use my model
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 var food = new Category { Name = "Foods" };
@@ -140,7 +140,7 @@ food.AddProduct(p);
 int recordsAffected = db.SaveChanges();
 {{< / highlight >}}
 
-As you can ses Iâ€™m able to add product without the need to directly access the collection, and I can set a private property through a method (not so useful technique, but just to show that mapping private properties works). Running the sample I got
+As you can ses I'm able to add product without the need to directly access the collection, and I can set a private property through a method (not so useful technique, but just to show that mapping private properties works). Running the sample I got
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image12.png)
 

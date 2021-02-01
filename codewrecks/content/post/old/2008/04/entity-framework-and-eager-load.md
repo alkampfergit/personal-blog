@@ -37,4 +37,3 @@ query.Parameters.Add(new ObjectParameter("name", "Economics"));{{< / highlight >
 
 Alk.
 
-Technorati Tags: [Entity Framework](http://technorati.com/tags/Entity%20Framework),[Eager Load](http://technorati.com/tags/Eager%20Load)

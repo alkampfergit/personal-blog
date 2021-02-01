@@ -34,7 +34,7 @@ IList<Domain> res = session
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This is  a simple like operator, the only problem is that the % at the begin and the end of the like will makes any index ineffective, so the query can be slow for a high number of record. Doing this with Criteria API is probably impossible because the Like Restriction accepts only strings, and we have no way to pass a sample object. Iâ€™ll keep investigating but for now Iâ€™m using the HQL version
+This is  a simple like operator, the only problem is that the % at the begin and the end of the like will makes any index ineffective, so the query can be slow for a high number of record. Doing this with Criteria API is probably impossible because the Like Restriction accepts only strings, and we have no way to pass a sample object. I'll keep investigating but for now I'm using the HQL version
 
 alk.
 

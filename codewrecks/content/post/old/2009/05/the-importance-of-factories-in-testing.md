@@ -6,11 +6,11 @@ draft: false
 tags: [Testing]
 categories: [Testing]
 ---
-One of the most frustrating stuff is refactoring code where errors gets discovered at run-time and not at compile time. These days Iâ€™m refactoring a section of a project, since some concepts are changed I needed to change also some database columns names.
+One of the most frustrating stuff is refactoring code where errors gets discovered at run-time and not at compile time. These days I'm refactoring a section of a project, since some concepts are changed I needed to change also some database columns names.
 
-Since naming of the table follows a convention that is not fully object oriented, it is easy to made mistake and mistype a column name in the mapping for nhibernate, for this reason I always create smoke test to verify that Iâ€™m able to save and reload all mapped classes in a database that is a empty copy of developing master database. This means that since I have a lot of not nullable columns, Iâ€™m forced to populate quite all properties of all object to be able to save them.
+Since naming of the table follows a convention that is not fully object oriented, it is easy to made mistake and mistype a column name in the mapping for nhibernate, for this reason I always create smoke test to verify that I'm able to save and reload all mapped classes in a database that is a empty copy of developing master database. This means that since I have a lot of not nullable columns, I'm forced to populate quite all properties of all object to be able to save them.
 
-Moreover, to save instances of class X I need also to save all related entities, suppose you are saving an order class, you must populate the Customer Property, because the foreign key is not nullable. Since the test can be run in isolation, and I use scripts to clear all table before tests, I cannot assume that at least a customer is in database. To solve such a problem you need to carefully use Factories during testing. As an example Iâ€™ve created a simple factory that thanks to reflection populates all property of base types (int, strings, datetime etc,).
+Moreover, to save instances of class X I need also to save all related entities, suppose you are saving an order class, you must populate the Customer Property, because the foreign key is not nullable. Since the test can be run in isolation, and I use scripts to clear all table before tests, I cannot assume that at least a customer is in database. To solve such a problem you need to carefully use Factories during testing. As an example I've created a simple factory that thanks to reflection populates all property of base types (int, strings, datetime etc,).
 
 Here is a simple piece of test.
 
@@ -21,7 +21,7 @@ uow.Save(data);{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The data variable contains the object under test, I only want to test if I can save it, but it have a property of type AnalyzedLink  that link this object to a LinkResult. To create a valid LinkResult object, is a pain, because it is a central object it needs data in other three tables etc etc, but thanks to the SqlServerEntityFactory Iâ€™m able to create an object and saved it to the database, so I have a valid link.
+The data variable contains the object under test, I only want to test if I can save it, but it have a property of type AnalyzedLink  that link this object to a LinkResult. To create a valid LinkResult object, is a pain, because it is a central object it needs data in other three tables etc etc, but thanks to the SqlServerEntityFactory I'm able to create an object and saved it to the database, so I have a valid link.
 
 Thanks to an helper class that populates basic properties with default values the factory have this code
 

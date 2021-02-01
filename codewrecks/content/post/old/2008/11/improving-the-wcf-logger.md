@@ -21,7 +21,7 @@ public interface IL4NServer
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Now I can choose the name of the logger Iâ€™m interested to filter messages log.
+Now I can choose the name of the logger I'm interested to filter messages log.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image2.png)
 
@@ -60,7 +60,7 @@ First I have inserted in the message a list of stacksteps, a class that contains
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image3.png)
 
-Not only Iâ€™m able to intercept NHibernate generated SQL, but I have a full stack trace that tells me where the query is generated, now the next step is to build a better client interface to present the result in a more usable and readable form.
+Not only I'm able to intercept NHibernate generated SQL, but I have a full stack trace that tells me where the query is generated, now the next step is to build a better client interface to present the result in a more usable and readable form.
 
 alk.
 

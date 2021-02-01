@@ -60,9 +60,9 @@ return base.OnPrepareStatement(sql);
 }
 {{< / highlight >}}
 
-As you can see the code is really simple, the interceptor inherits from EmptyInterceptor and override the OnPrepareStatement(),** adding the right Query Hint to the end of the query **. This is probably not 100% production ready code, because Iâ€™m not 100% sure that for complex query, inserting the hint at the end of the query is the right choice, but for my specific problem is enough and it is a good starting point.
+As you can see the code is really simple, the interceptor inherits from EmptyInterceptor and override the OnPrepareStatement(),** adding the right Query Hint to the end of the query **. This is probably not 100% production ready code, because I'm not 100% sure that for complex query, inserting the hint at the end of the query is the right choice, but for my specific problem is enough and it is a good starting point.
 
-If you look at the code you can verify that Iâ€™m checking for certain string in query text to add the appropriate hint, but how can you add these strings to the query to enable query hint to be generated? The answer is â€œcommentsâ€. First of all I add this interceptor to NH configuration, so it got attached to every session.
+If you look at the code you can verify that I'm checking for certain string in query text to add the appropriate hint, but how can you add these strings to the query to enable query hint to be generated? The answer is â€œcommentsâ€. First of all I add this interceptor to NH configuration, so it got attached to every session.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 cfg.SetInterceptor(new QueryHintInterceptor());

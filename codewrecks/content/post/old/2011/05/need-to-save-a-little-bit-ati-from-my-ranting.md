@@ -8,7 +8,7 @@ categories: [General]
 ---
 In [previous post](http://www.codewrecks.com/blog/index.php/2011/05/21/new-video-card-are-only-for-gamers-maybe/) I did a lot of ranting against my new video cards, ATI Radeon HD 4600. Now I need to save ATI a little bit from my ranting, because after one hour of investigation I finally managed to understand the reason behind such crappy desktop performances.
 
-I need two video card because I have three monitors, I used to keep my central and primary monitor attached to primary video card, while the other two (24â€™â€™ and, 17â€™â€™ on the secondary video card). I always have Motherboard with two PCI express 16x (physically) slots, and in my old system everything is ok.
+I need two video card because I have three monitors, I used to keep my central and primary monitor attached to primary video card, while the other two (24'' and, 17'' on the secondary video card). I always have Motherboard with two PCI express 16x (physically) slots, and in my old system everything is ok.
 
 ![](http://www.dirtymouse.co.uk/wp-content/uploads/ok_regular.jpg)
 
@@ -22,7 +22,7 @@ You should know, that even if your motherboard has two 16X PCI express slot, usu
 
 I did not read carefully the \* part, I only read (max at 4x mode) but I did not read two important fact, by default the secondary PCI express runs at 1x, but the worst fact is that â€œshares bandwidth with the PCIEX1\_1 â€¦. Since I have a RAID card on PCI Express 1x, it does means that if you enable 4x for secondary video card, the USB3\_34 connector and both the PCI Express slot are disabled.
 
-This is one of the major differences with P8P67 Pro, that has Three PCI Express slots, the first two are true 16x and does not suffer from this problem. But even if my secondary card runs at 1x speed my primary monitor that is connected to a 16x video card should not suffer from this loss of performance, so it seems to me that Video Driver of ATI suffers from having 2 monitors connected to secondary video card. Iâ€™ve moved the other 24â€™â€™ monitor on the primary card, and now performance are little bit better, but if I disable the secondary video card, everything is really good and fast. I suspect that ATI Drivers does not handle well the situation where the two video cards have different bandwidth.
+This is one of the major differences with P8P67 Pro, that has Three PCI Express slots, the first two are true 16x and does not suffer from this problem. But even if my secondary card runs at 1x speed my primary monitor that is connected to a 16x video card should not suffer from this loss of performance, so it seems to me that Video Driver of ATI suffers from having 2 monitors connected to secondary video card. I've moved the other 24'' monitor on the primary card, and now performance are little bit better, but if I disable the secondary video card, everything is really good and fast. I suspect that ATI Drivers does not handle well the situation where the two video cards have different bandwidth.
 
 Ok, at least now performances with aero enable are â€œacceptableâ€, next problem is how to disable Hyper Memory on ATI Card because ATI catalyst driver is telling me that each video card uses potentially 8 GB of system memoryâ€¦.and seems that it is not possible to disable this or change this valueâ€¦.sigh.
 

@@ -8,9 +8,9 @@ categories: [Programming,Software Architecture]
 ---
 I have a project where I use repository pattern, interface code access domain object through a service, and the service return Dto. One of the bad side of the dto is that they are boring to write and to maintain. The main risk is that developers does this error
 
-Mmmm I had to show a combo with all the typologies of the current customer, let me seee, I have already a service that return Typlogy object given the customer Id, ok Iâ€™ll use it. Can you spot the error???
+Mmmm I had to show a combo with all the typologies of the current customer, let me seee, I have already a service that return Typlogy object given the customer Id, ok I'll use it. Can you spot the error???
 
-The error is that the Typology object can contain (and in my situation is true) a lot of properties, some of them are long string, so the developer is retrieving a lot of unnecessary data from the service. The obvious solution is Dto, but noone wants to write them, so it is time to use code generation. With a T4 template Iâ€™m able to write stuff like this.
+The error is that the Typology object can contain (and in my situation is true) a lot of properties, some of them are long string, so the developer is retrieving a lot of unnecessary data from the service. The obvious solution is Dto, but noone wants to write them, so it is time to use code generation. With a T4 template I'm able to write stuff like this.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
     template = new DtoFactoryTemplate (  

@@ -6,7 +6,7 @@ draft: false
 tags: [log4net]
 categories: [Tools and library]
 ---
-Iâ€™m currently profiling a web application, and I noticed that for some combination of input, a specific search into the database is really really slow. After verifying that the query is not responsible for this problem I fire a profiler, load the page, issue the search and then verify with ant profiler the method that need more time to be executed. The result was that the method that needs more time to be executed is one called Send Alert, that simply logs with log4net to a specific logger called Alert.
+I'm currently profiling a web application, and I noticed that for some combination of input, a specific search into the database is really really slow. After verifying that the query is not responsible for this problem I fire a profiler, load the page, issue the search and then verify with ant profiler the method that need more time to be executed. The result was that the method that needs more time to be executed is one called Send Alert, that simply logs with log4net to a specific logger called Alert.
 
 I noticed a lot of SocketException, so I verify the configuration, and find that the Alert logger has a reference to a SmtpAppender that points to a wrong smtp server. The page was slow because it is waiting to send an alert with a wrong mailserver, then it waits for timeout before proceeding on.
 

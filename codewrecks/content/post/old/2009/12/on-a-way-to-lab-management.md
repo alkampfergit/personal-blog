@@ -6,7 +6,7 @@ draft: false
 tags: [Lab Management]
 categories: [Visual Studio]
 ---
-Iâ€™m installing Lab Management, and since it is a complex environment some problems can arise. Iâ€™m following the four part tutorial that [you can find here](http://blogs.msdn.com/lab_management/archive/2009/11/18/Getting-started-with-Lab-Management-_2800_Part-1_2900_.aspx), and this morning I face the first problem.
+I'm installing Lab Management, and since it is a complex environment some problems can arise. I'm following the four part tutorial that [you can find here](http://blogs.msdn.com/lab_management/archive/2009/11/18/Getting-started-with-Lab-Management-_2800_Part-1_2900_.aspx), and this morning I face the first problem.
 
 When I try to add my Hyper-V host to the Vitual Machine Manager (SCVMM) I have this problem.
 
@@ -21,5 +21,3 @@ To address such problem, you need to install a couple of programs, the first one
 I installed IIS, but this does not solve my problem, So I checked event log, and I see some strange errors related to hper-V (14050), and [I found some information he](http://www.aspdeveloper.net/tiki-index.php?page=VirtualServerEvents_14050)re. I check my network settings, correct a little problem and then trying again to add the machine. The error was still there, the machine has â€œUnknownâ€ virtualization software. My only possibility was to continue the installation, asking to SCVMM to enable hyper-v role. When I finish the operation the script runs fine, it enabled instantaneously the Hyper-V role (it was already up and running) and the installation went good.
 
 alk.
-
-Technorati Tags: [Lab Management](http://technorati.com/tags/Lab+Management)

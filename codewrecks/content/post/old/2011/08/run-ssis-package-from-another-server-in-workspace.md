@@ -6,7 +6,7 @@ draft: false
 tags: [Sql Server,SSIS]
 categories: [Sql Server]
 ---
-Today I needed to move some SSIS packages that actually runs on the same server where the database resides, to another server dedicated to run SSIS packages. I do not have a domain and the second server is simply in the same network as the first server. I simply reconfigured a Job to run the Package from File system (as originally configured in the original server), but now I could not use Integrated Security because Iâ€™m running the SSIS package from another PC. So I changed the connection string to include user and pwd (SQL authentication), but when I saved the job step the password simply disappeared from the connection string.
+Today I needed to move some SSIS packages that actually runs on the same server where the database resides, to another server dedicated to run SSIS packages. I do not have a domain and the second server is simply in the same network as the first server. I simply reconfigured a Job to run the Package from File system (as originally configured in the original server), but now I could not use Integrated Security because I'm running the SSIS package from another PC. So I changed the connection string to include user and pwd (SQL authentication), but when I saved the job step the password simply disappeared from the connection string.
 
 This happens for security, every person that has right to look at job properties can see the password to connect to the other database server, thus password are not saved to job properties. [An answer can be found here](http://support.microsoft.com/kb/918760) and I decided to save the package to database server to store everything in the server.
 
@@ -48,7 +48,7 @@ You can choose to save only some of the properties of the connection string, but
 
  ***Figure 5***: *All the information about connection strings are stored inside a table.*
 
-Now I can schedule execution of SSIS package with SQL Server Agent with no problem. I must admit that Iâ€™m not SSIS Guru, but deploying SSIS package is not the most easy task to accomplish, especially if you do not use domain.
+Now I can schedule execution of SSIS package with SQL Server Agent with no problem. I must admit that I'm not SSIS Guru, but deploying SSIS package is not the most easy task to accomplish, especially if you do not use domain.
 
 Alk.
 

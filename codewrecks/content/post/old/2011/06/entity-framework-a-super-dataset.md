@@ -26,7 +26,7 @@ This image exceptionally capture my face the first time I ran this query.
 
  ***Figure 2***: *Strange error in the query.*
 
-Iâ€™m really disappointed from this exception for many reasons. First of all I do not know why it does not work, because this is a perfectly and reasonable query to issue.
+I'm really disappointed from this exception for many reasons. First of all I do not know why it does not work, because this is a perfectly and reasonable query to issue.
 
 ### Fix the query to make it works 
 

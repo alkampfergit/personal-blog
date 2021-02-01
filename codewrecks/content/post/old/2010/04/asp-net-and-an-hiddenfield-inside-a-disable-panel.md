@@ -6,7 +6,7 @@ draft: false
 tags: [ASPNET]
 categories: [ASPNET]
 ---
-Iâ€™ve hit a strange behavior of Hidden Field inside a disable asp.net panel, here is a simplified scenario that can reproduce my problem:
+I've hit a strange behavior of Hidden Field inside a disable asp.net panel, here is a simplified scenario that can reproduce my problem:
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 <form id="form1" runat="server">
@@ -54,7 +54,7 @@ Clearly the browser send the content of the HTML Web Form and *it sends only the
 
 As you can verify the content of the Disabled textbox is placed in viewstate, so it can be restored during a postback, but for the hiddenField, the value is not present in the viewState so the value is lost between postback because it is disabled.
 
-This is the problem I have in a control that Iâ€™ve developed, I use hidden field to communicate value to jQuery script, but when the user control is disabled, if I set a value by code in the hiddenField, value is null at the next postback, because the value is not passed with request.form nor it is inserted in the viewstate.
+This is the problem I have in a control that I've developed, I use hidden field to communicate value to jQuery script, but when the user control is disabled, if I set a value by code in the hiddenField, value is null at the next postback, because the value is not passed with request.form nor it is inserted in the viewstate.
 
 A solution to this problem can be found if you notice that even the first textbox does not have the text value stored in ViewState. This happens because the asp.net engine does not need it, because the value of the textbox can be retrieved from post parameters. Now if you add this handler to the code behind
 

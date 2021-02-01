@@ -16,7 +16,7 @@ The page stops to receive server calls and if I call some Hub function from java
 
 The reason is described in [this StackOverflow post](http://stackoverflow.com/questions/15501493/signalr-the-connection-id-is-in-the-incorrect-format-when-using-windows-and-an), basically the solution consist on a simple *stop/restart* of the connection, but in my scenario, when the code calls a function from javascript, nor the done() or fail() method gets called, so I have no way to react. Luckily enough, I’ve structured my code to *centralize all function calls in an api.js file*. Es.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 self.api.Myfunction(self.parama(), self.paramb())
@@ -27,7 +27,7 @@ self.api.Myfunction(self.parama(), self.paramb())
 
  **The caller simply calls functions on an api object that returns a promise** , caller can use done() and fail() to take appropriate decision based on the result of the call and caller code completely ignore how the call is done to the server. As an example this is how Myfunction is defined in the api.js file:
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 self.Myfunction = function (parama, paramb)
@@ -41,7 +41,7 @@ self.Myfunction = function (parama, paramb)
 
 Actually it simply delegates to a callMessageHub internal function that is used to wrap all calls to the Signalr Hub, here is the full definition of the function.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 self.callMessageHub = function (functionToCall) {
@@ -63,7 +63,7 @@ self.callMessageHub = function (functionToCall) {
 
 {{< / highlight >}}
 
-* **This code assumes that Hub functions are not called concurrently** *, and this is not a problem in my scenario. First of all this method stores the actual function call in a global object called lastFunctionToCall, then it declare a deferred with *$.Deferred()*call and store it inside a global variable called lastDeferred; finally the code calls the original function. The key factor is: if the user opened another tabs and login to the system, the call to the Hub will fails and nor the.done() nor the.fail() function will be called,  **but we can handle with $.connection.hub.error** {{< highlight jscript "linenos=table,linenostart=1" >}}
+* **This code assumes that Hub functions are not called concurrently** *, and this is not a problem in my scenario. First of all this method stores the actual function call in a global object called lastFunctionToCall, then it declare a deferred with *$.Deferred()*call and store it inside a global variable called lastDeferred; finally the code calls the original function. The key factor is: if the user opened another tabs and login to the system, the call to the Hub will fails and nor the.done() nor the.fail() function will be called,  **but we can handle with $.connection.hub.error** {{< highlight js "linenos=table,linenostart=1" >}}
 
 
 $.connection.hub.error(function (error) {

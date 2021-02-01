@@ -32,7 +32,7 @@ sut.Quantity.Should().Be.EqualTo(600);
 }
 {{< / highlight >}}
 
-What Iâ€™m testing here is that, creating a new empty TimeGrowingResource that increase its value 10 units each second, after 60 seconds the Quantity should be equal to 600. A possible implementation could be.
+What I'm testing here is that, creating a new empty TimeGrowingResource that increase its value 10 units each second, after 60 seconds the Quantity should be equal to 600. A possible implementation could be.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public Int64 Quantity

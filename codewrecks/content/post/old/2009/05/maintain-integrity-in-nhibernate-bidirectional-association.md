@@ -18,7 +18,7 @@ Bart.Parent = Mark;{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-With such a code Bartâ€™s parent is Mark, but Bart is in John Child collection, this is WRONG. To avoid this problem you should maintain integrity in the domain model, managing the consistency of the relationship. Suppose you have the same situation with two objects, a StockKeepingUnit and a StockContainer, here it is the code for StockKeepingUnit
+With such a code Bart's parent is Mark, but Bart is in John Child collection, this is WRONG. To avoid this problem you should maintain integrity in the domain model, managing the consistency of the relationship. Suppose you have the same situation with two objects, a StockKeepingUnit and a StockContainer, here it is the code for StockKeepingUnit
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
  public virtual StockContainer Parent
@@ -40,7 +40,7 @@ With such a code Bartâ€™s parent is Mark, but Bart is in John Child collect
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-As you can see in the setter part I first check if this object has a parent, if yes we need to remove it from the \_Content collection of the parent object (because actually Iâ€™m detatching from it); then if the value is different from null it means that we have a new parent, so the object assign itself to the \_Content collection of the new father to mantain integrity. Surely you now need to map this property in directly on the field to avoid problem
+As you can see in the setter part I first check if this object has a parent, if yes we need to remove it from the \_Content collection of the parent object (because actually I'm detatching from it); then if the value is different from null it means that we have a new parent, so the object assign itself to the \_Content collection of the new father to mantain integrity. Surely you now need to map this property in directly on the field to avoid problem
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <many-to-one name="parent" access="field" class="StockKeepingUnit"... />{{< / highlight >}}

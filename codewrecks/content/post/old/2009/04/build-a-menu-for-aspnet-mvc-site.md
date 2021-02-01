@@ -47,7 +47,7 @@ The MasterModel classes has the responsibility to create data for the master pag
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Since Iâ€™m doing partial rendering, I do not want each action in the controller to render the menu, so I create a base controller with this property
+Since I'm doing partial rendering, I do not want each action in the controller to render the menu, so I create a base controller with this property
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
       public MenuItem RootMenu

@@ -44,7 +44,7 @@ Assigning a template is just a matter of selecting a wrapped-set and then assign
 
 This is not the only way to set a template, the other one is using setTemplateURL and processTemplateURL that actually gets the template from an URL and render it with a json object returned from the url passed to processTemplateURL. If this sounds you interesting, think to asp.net mvc, where you can create a controller that manages templates, and other controllers that returns data with JsonResult. If you structure the site in this way, you can maximize performance passing only json data with the server. You only need to render the page with empty divs, assign template to the div, and finally gets data to be rendered from the server.
 
-Actually Iâ€™m experimenting with the PhotoAlbum application I did for the jQuery workshop of our usergroup DotNetMarche, as soon as possible Iâ€™ll begin to post some concrete code that works with client-side rendering, showing you pratical example that uses this technique.
+Actually I'm experimenting with the PhotoAlbum application I did for the jQuery workshop of our usergroup DotNetMarche, as soon as possible I'll begin to post some concrete code that works with client-side rendering, showing you pratical example that uses this technique.
 
 alk.
 

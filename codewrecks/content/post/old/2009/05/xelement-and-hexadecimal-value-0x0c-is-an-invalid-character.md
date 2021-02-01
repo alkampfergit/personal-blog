@@ -6,7 +6,7 @@ draft: false
 tags: [NET framework]
 categories: [NET framework]
 ---
-Iâ€™ve a little library that build excel files in openXml format. It is based on LINQ to XML, and permits you to open an excel file with open xml sdk, then manipulate the content and showing it to the user.
+I've a little library that build excel files in openXml format. It is based on LINQ to XML, and permits you to open an excel file with open xml sdk, then manipulate the content and showing it to the user.
 
 Today for a particular set of data I got
 

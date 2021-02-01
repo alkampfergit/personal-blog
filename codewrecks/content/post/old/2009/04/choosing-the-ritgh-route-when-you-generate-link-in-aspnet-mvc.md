@@ -6,7 +6,7 @@ draft: false
 tags: [AspNet MVC]
 categories: [AspNet MVC]
 ---
-Iâ€™m moving my first steps on asp.net mvc, and in my test project I added a route after the default one in this way.
+I'm moving my first steps on asp.net mvc, and in my test project I added a route after the default one in this way.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
  RouteTable.Routes.MapRoute(

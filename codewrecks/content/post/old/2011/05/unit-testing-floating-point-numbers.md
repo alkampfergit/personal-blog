@@ -18,7 +18,7 @@ A second and better scenario is when you the test is expressed with a tolerance,
 result.Should().Be.EqualTo(expectedresult, 0.00001)
 {{< / highlight >}}
 
-This is a better assertion, Iâ€™m asking if the result is different from the expected value with a 0.00001 tolerance. This is possible with a simple extension of SharpTestEx.
+This is a better assertion, I'm asking if the result is different from the expected value with a 0.00001 tolerance. This is possible with a simple extension of SharpTestEx.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public static IComparableBeConstraints<Double> EqualTo(

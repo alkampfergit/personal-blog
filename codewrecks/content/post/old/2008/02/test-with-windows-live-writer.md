@@ -30,6 +30,4 @@ This is a sample code.
 
 This is a simple paste image
 
-Technorati Tags: [Live Writer](http://technorati.com/tags/Live%20Writer),[Blogging](http://technorati.com/tags/Blogging)
-
 alk.

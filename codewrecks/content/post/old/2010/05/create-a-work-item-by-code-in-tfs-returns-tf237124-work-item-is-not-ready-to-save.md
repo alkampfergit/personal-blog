@@ -27,7 +27,7 @@ He is having problem because the Save throws exception.
 
 TF237124: Work Item is not ready to save
 
-And he was wondering what the cause is. Whenever you want to save a Work Item you need to know that there are a lot of rules that can be violated, as an example the team project Iâ€™m trying to save the WIT into, has a customized workflow for the item *Task.*The right path to do is to **validate the WorkItem prior to save** , and looking at errors you can simply understand what prevents the WIT from saving, the code is really simple.
+And he was wondering what the cause is. Whenever you want to save a Work Item you need to know that there are a lot of rules that can be violated, as an example the team project I'm trying to save the WIT into, has a customized workflow for the item *Task.*The right path to do is to **validate the WorkItem prior to save** , and looking at errors you can simply understand what prevents the WIT from saving, the code is really simple.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 Dim result = wi.Validate()
@@ -36,7 +36,7 @@ Console.WriteLine(item)
 Next
 {{< / highlight >}}
 
-Just call [Validate()](http://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem.validate%28VS.90%29.aspx) method of the WIT and verify each errors returned in an ArrayList object. Letâ€™s look at what is returned in my situation inside the Arraylist returned by validate.
+Just call [Validate()](http://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem.validate%28VS.90%29.aspx) method of the WIT and verify each errors returned in an ArrayList object. Let's look at what is returned in my situation inside the Arraylist returned by validate.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image9.png)
 

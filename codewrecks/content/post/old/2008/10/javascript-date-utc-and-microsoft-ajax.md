@@ -6,7 +6,7 @@ draft: false
 tags: [ASPNET]
 categories: [ASPNET]
 ---
-Since Iâ€™m a noob javascript programmer I tend not to write javascript code if possible, [JQuery](http://jquery.com/) helped me a lot because it permits me to do complex thing in a very simple way, but quite often javascript continues to surprise me.
+Since I'm a noob javascript programmer I tend not to write javascript code if possible, [JQuery](http://jquery.com/) helped me a lot because it permits me to do complex thing in a very simple way, but quite often javascript continues to surprise me.
 
 Yesterday I had to write a really simple piece of js code, I have a method in a .net webservice that accepts a complex object, and one of the property of the object is of type Date. I need to do 2 simple things
 
@@ -41,7 +41,7 @@ function SendMsAj() {
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The situation is better, if I write 1/207/2008 it told me invalid date, but if I write â€œ1/2/2008â€ the service returned me â€œ 31 january 2008, with Date.parseLocale I was able to detect invalid date, to parse with the locale of the user, but the date that arrived at the server method is wrong. Then I changed server code to return me date and time and I saw that the date passed to the server function was 31/01/2008 23.00.00, since I live in Italy (GMT +1) I begin to realize that I have a GMT problem. The problem arise from the fact that the json serializer used by the ajax.net library pass date as the number of millisecond elapsed since an initial time, since Iâ€™m in GMT+1 this value is adjusted to the GMT+0 so an hour is subtracted. When this value arrives at the server, the JSON deserializer does not know that the original request originated from a GTM+1 time zone, so the value is deserialized as GMT+0 and I have a nasty difference of one hour.
+The situation is better, if I write 1/207/2008 it told me invalid date, but if I write â€œ1/2/2008â€ the service returned me â€œ 31 january 2008, with Date.parseLocale I was able to detect invalid date, to parse with the locale of the user, but the date that arrived at the server method is wrong. Then I changed server code to return me date and time and I saw that the date passed to the server function was 31/01/2008 23.00.00, since I live in Italy (GMT +1) I begin to realize that I have a GMT problem. The problem arise from the fact that the json serializer used by the ajax.net library pass date as the number of millisecond elapsed since an initial time, since I'm in GMT+1 this value is adjusted to the GMT+0 so an hour is subtracted. When this value arrives at the server, the JSON deserializer does not know that the original request originated from a GTM+1 time zone, so the value is deserialized as GMT+0 and I have a nasty difference of one hour.
 
 After some time of test and try I found this patch to overcome this issue.
 

@@ -6,7 +6,7 @@ draft: false
 tags: [Software Architecture]
 categories: [Software Architecture]
 ---
-Today I was reading [this post](http://www.codemetropolis.com/archive/2008/07/22/domain-model-amp-aggregates-when-do-master-detail-associations-happen.aspx) from my friend [Marco](http://www.codemetropolis.com/), where he points out one of the most frequent problem in the design of domain Model: *too much use of relations*. The problem arises from the fact that an ORM like NHibernate, seems to solve all the problems because it handles all the complexities, but there are a lot of considerations to be done before establish a relation between entities. Letâ€™s have a brief look at the classical example of Customer-Orders
+Today I was reading [this post](http://www.codemetropolis.com/archive/2008/07/22/domain-model-amp-aggregates-when-do-master-detail-associations-happen.aspx) from my friend [Marco](http://www.codemetropolis.com/), where he points out one of the most frequent problem in the design of domain Model: *too much use of relations*. The problem arises from the fact that an ORM like NHibernate, seems to solve all the problems because it handles all the complexities, but there are a lot of considerations to be done before establish a relation between entities. Let's have a brief look at the classical example of Customer-Orders
 
 Since an order is related to a Customer, it is good to have relation from Order to Customer, it has business meaning since an order can live only when a customer places it with E-commerce site or in some other way. Lazy load minimize the hit to the database, issuing the select only when you access the data. If you want to associate an order with a Customer, you can avoid loading Customer data if you have CustomerId stored somewhere
 
@@ -61,7 +61,7 @@ NHibernate: UPDATE Orders SET CustomerId = @p0 WHERE id = @p1; @p0 = '4', @p1 = 
 
 First of all, *even if you have the Id of the customer you need to load it entirely from db*, but the worst thing happens when you add the order to the orders collection, because nhibernate does lazy load, loading * **all the orders of the customer in memory** *, finally he generate the insert and update as before.
 
-Think again to it â€œ*To add an order you have to load in memory  **all customer orders** *â€. What happens if the Customer have hundreds of orders??? Sounds bad, isnâ€™t it? Moreover you are wasting memory for nothingâ€¦.you never access all the orders, you only want add new one.
+Think again to it â€œ*To add an order you have to load in memory  **all customer orders** *â€. What happens if the Customer have hundreds of orders??? Sounds bad, isn't it? Moreover you are wasting memory for nothingâ€¦.you never access all the orders, you only want add new one.
 
 Similar thing happens whenever you access Orders collection, if you access the first element *all the orders are loaded*, if you call Count *all orders gets loaded*. To avoid this you need to use ISession.CreateFilter() that permits you to issue a Count(\*) query without loading the elements or scan orders with pagination, but you can agree that this is not a good situation.
 

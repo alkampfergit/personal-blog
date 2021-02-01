@@ -6,7 +6,7 @@ draft: false
 tags: [General]
 categories: [General]
 ---
-Actually Iâ€™m working on a project that have a windows service that does a lot of calculation, invokes external servers, and stuff like these. Since we have no user interface, how can you know when error occurred and how can you be informed on the detail of the error? The solution is to create a good infrastructure of logging.
+Actually I'm working on a project that have a windows service that does a lot of calculation, invokes external servers, and stuff like these. Since we have no user interface, how can you know when error occurred and how can you be informed on the detail of the error? The solution is to create a good infrastructure of logging.
 
 Thanks to [Log4Net](http://logging.apache.org/log4net/index.html) writing such a layer is incredible simple. I build a static class called GeneralLogger, then create a series of method to log information such as AnalyzerError, AnalyzerVerbose, WebError, WebVerbose etc etc. Other programmers find very easy to use this logging infrastructure, they simply call the appropriate function and the game is done. If you have to log some information from the service you call AnalyzerXXX if you want to log from the asp.net front end application you call WebXXX
 
@@ -35,9 +35,8 @@ My first config file used file listener, and I create a specific configuration t
         <levelMin value="INFO" />
         <levelMax value="INFO" />
     </filter>
-</appender>{{< / highlight >}}
-
-<!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
+</appender>
+{{< / highlight >}}
 
 And so on, I create for each combination of logger and level a different file, this makes my life easier, I constantly check the xxx.error.log and sometimes I look also info and warning to understand what is wrong.
 

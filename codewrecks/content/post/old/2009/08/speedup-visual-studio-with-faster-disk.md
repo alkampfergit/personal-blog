@@ -8,7 +8,7 @@ categories: [Experiences,General]
 ---
 We always know that to speedup visual studio a [fast disk is quite always a good choice](http://weblogs.asp.net/scottgu/archive/2007/11/01/tip-trick-hard-drive-speed-and-visual-studio-performance.aspx), but what is best configuration?
 
-Iâ€™ve done some little benchmark on the compilation of a project with a msbuild script and here is the result.
+I've done some little benchmark on the compilation of a project with a msbuild script and here is the result.
 
 When all sources are stored in C:\ drive (A velociraptor 10k disk) it compiles in 58 sec the first time, and 44 sec the second time and subsequent ones.
 
@@ -27,7 +27,7 @@ RAMDisk is still interesting to store asp.net temporary directory, because it is
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-In this way all temporary asp.net files are stored in my virtual disk. For My next machine Iâ€™ll need to evaluate faster CPU :), probably an I7 will be my next choice.
+In this way all temporary asp.net files are stored in my virtual disk. For My next machine I'll need to evaluate faster CPU :), probably an I7 will be my next choice.
 
 Alk.
 

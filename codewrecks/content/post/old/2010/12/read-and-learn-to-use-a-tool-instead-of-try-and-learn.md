@@ -6,7 +6,7 @@ draft: false
 tags: [Experiences]
 categories: [WPF]
 ---
-Iâ€™m a very noob Blend user ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile1.png) and I learn it without reading or seeing any tutorial, just opened blend and begin to use itâ€¦ this is no good ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile1.png) because I missed some basic features like for example that the grid can be put in Canvas or Grid modeâ€¦.
+I'm a very noob Blend user ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile1.png) and I learn it without reading or seeing any tutorial, just opened blend and begin to use itâ€¦ this is no good ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile1.png) because I missed some basic features like for example that the grid can be put in Canvas or Grid modeâ€¦.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image1.png)
 

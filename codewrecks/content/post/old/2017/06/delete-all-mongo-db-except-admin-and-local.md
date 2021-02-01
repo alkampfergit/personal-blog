@@ -8,7 +8,7 @@ categories: [NoSql]
 ---
 When you develop with mongo, sometimes  **you simply need to delete all database quickly because you need to start from scratch**. Using shell is really simple, because [this gist](https://gist.github.com/alkampfergit/f9fe4f38c85e04f899fe4e4c20f6979a)  does exactly what you need.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 var dbs = db.getMongo().getDBNames()
@@ -31,7 +31,7 @@ The script is super simple, you can use the getDBNames() function to grab a list
 
 The very same script can be used to delete all collection named logs from all databases, or you can simply decide to  **delete all database with a name that starts with a specific string**.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 var dbs = db.getMongo().getDBNames()

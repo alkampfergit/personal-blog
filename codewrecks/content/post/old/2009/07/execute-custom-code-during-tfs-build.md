@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 At this point I explained how to setup a build, and how to fully customize it editing the msbuild file to execute some tasks, like open an issue when one or more test fail.
 
-Another interesting stuff to explain is how to execute custom code during the build, to demonstrate this concept Iâ€™ll show how to tweet a warning message when test phase fails. To execute custom code you simply need to create a custom msbuild task that does everything you want, then you simply need to call this custom task in the build script. The first step is creating the task.
+Another interesting stuff to explain is how to execute custom code during the build, to demonstrate this concept I'll show how to tweet a warning message when test phase fails. To execute custom code you simply need to create a custom msbuild task that does everything you want, then you simply need to call this custom task in the build script. The first step is creating the task.
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class TweetTask : Task
@@ -38,7 +38,7 @@ This is a well known problem for everyone that works with Continuous integration
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image6.png)
 
-As you can see I created a folder called BuildTools, inside it another folder called MsBuildCustomTasks and inside the compiled dll with my actino. Now Iâ€™m sure that the dll with my custom task is included into the source control system, and I can refer to it inside the TFSBuild.proj build file.
+As you can see I created a folder called BuildTools, inside it another folder called MsBuildCustomTasks and inside the compiled dll with my actino. Now I'm sure that the dll with my custom task is included into the source control system, and I can refer to it inside the TFSBuild.proj build file.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <UsingTask
@@ -60,7 +60,7 @@ Now you can use this task wherever you want:
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-As for the previous post, Iâ€™m asking to tweet a message to my twitter account when test phase fails during the build, I made a test fails, commit everything and after integration machine finished to build I can see this in my twitterDesk
+As for the previous post, I'm asking to tweet a message to my twitter account when test phase fails during the build, I made a test fails, commit everything and after integration machine finished to build I can see this in my twitterDesk
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image7.png)
 

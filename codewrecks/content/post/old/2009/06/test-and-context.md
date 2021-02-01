@@ -48,5 +48,3 @@ public void CreateMenuTest()
 This is a cleaner way to express the fixture, thanks to the DeploymentItem attribute it is clear that the test needs the file SampleFiles\BaseMenu.xml, and most important, the file was copied automatically before each test runs and it is located in the same dir of the test assembly, so i can simply refer to it with the BaseMenu1.xml name without any path.
 
 alk.
-
-Technorati Tags: [msTest](http://technorati.com/tags/msTest),[Unit Testing](http://technorati.com/tags/Unit+Testing)

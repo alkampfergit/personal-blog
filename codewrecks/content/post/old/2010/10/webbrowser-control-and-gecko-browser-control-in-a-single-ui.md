@@ -16,6 +16,6 @@ Pressing the button we see that the page is reloaded
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/image8.png)
 
-And Iâ€™m able to make the user choose witch browser to use to surf with the program :). It was funny work to manage it to works, but the result is really cool.
+And I'm able to make the user choose witch browser to use to surf with the program :). It was funny work to manage it to works, but the result is really cool.
 
 alk.

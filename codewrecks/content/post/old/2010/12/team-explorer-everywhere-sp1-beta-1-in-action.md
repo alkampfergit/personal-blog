@@ -10,7 +10,7 @@ You can download [Team Explorer Everywhere SP1 Beta](http://blogs.msdn.com/b/bha
 
 First of all you need to setup a build with ant or maven, and you need to install [Team Foundation Server Build Extensions Power Tool](http://visualstudiogallery.msdn.microsoft.com/en-us/2d7c8577-54b8-47ce-82a5-8649f579dcb6) on the build server in order to be able to run a build based on Ant. Carefully read all requisite in the download page (Java SDK, some environment variables, etc) and now you are able to create a build from eclipse.
 
-First of all you need to create a buildfile with ant for your java project, Iâ€™m not going to explain you how to do this, but if you want to experiment, you can read [this guide](http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html) that explain how to create a â€œhelloWorldâ€ build with ant. Once you have a valid ant build file (you can simply copy that one in the tutorial) you can simply go to eclipse, go into TFS perspective and you should view the â€œbuildsâ€ node.
+First of all you need to create a buildfile with ant for your java project, I'm not going to explain you how to do this, but if you want to experiment, you can read [this guide](http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html) that explain how to create a â€œhelloWorldâ€ build with ant. Once you have a valid ant build file (you can simply copy that one in the tutorial) you can simply go to eclipse, go into TFS perspective and you should view the â€œbuildsâ€ node.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image5.png)
 
@@ -36,7 +36,7 @@ A gated Check-in is a special build that actually compile latest source adding a
 
  **Figure 4** :*the Gated Check In windows when you try to check in some code*
 
-this means that your changes will be stored in a specific Shelveset, then the build machine will try to compile latest code with your shelveset applied, and only if the build succeeds the check-in will succeed, if the build will fail, the check-in will be rejected, so youâ€™ll need to get the shelveset code back again and fix whatever error is preventing the build from succeed.
+this means that your changes will be stored in a specific Shelveset, then the build machine will try to compile latest code with your shelveset applied, and only if the build succeeds the check-in will succeed, if the build will fail, the check-in will be rejected, so you'll need to get the shelveset code back again and fix whatever error is preventing the build from succeed.
 
 Suppose your code does not compile, after a little bit you got this message:
 

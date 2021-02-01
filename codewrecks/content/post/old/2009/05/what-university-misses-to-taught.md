@@ -14,7 +14,7 @@ Most of the projects in university are really interesting, but quite often the f
 
 This means that when you begin to work in a real company , the perspective of â€œmaking softwareâ€ changes a lot, now you are writing software for real users, while you are used to write software for noone or at least for your teacher or colleagues.. Writing software for programmers or teachers can lead to some problems, I suggest you to read[this book](http://www.whysoftwaresucks.com/). Software must be written for real users, not for other programmers.
 
-If there is only one thing I could suggest to a university teacher, Iâ€™ll suggest him/her to *force students to write real software*, put it in production, letting real users to work with it; in the meanwhile students must correct blocking bugs, planning next release, maintain database, doing backup, etc etc. I strongly thing that only software in production is Real software, maybe this can sound harsh, but I think that is really true.
+If there is only one thing I could suggest to a university teacher, I'll suggest him/her to *force students to write real software*, put it in production, letting real users to work with it; in the meanwhile students must correct blocking bugs, planning next release, maintain database, doing backup, etc etc. I strongly thing that only software in production is Real software, maybe this can sound harsh, but I think that is really true.
 
 Having some software in production makes you change the perspective you have on software.
 

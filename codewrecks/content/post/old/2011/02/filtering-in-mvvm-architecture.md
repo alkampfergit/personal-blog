@@ -69,9 +69,9 @@ CvsLinks.View.Refresh();
 }
 {{< / highlight >}}
 
-The function ApplyFilter filters object based on another property of the VM called StatusFilter, of the same type of the enum property used in the bound object. In the setter part of the StatusFilter property simply call a function that refresh the view. Now I can simply add a combo in the View, bind the SelecteValue property to the StatusFilter VM property and without any other change Iâ€™ve added filtering capabilities to the View.
+The function ApplyFilter filters object based on another property of the VM called StatusFilter, of the same type of the enum property used in the bound object. In the setter part of the StatusFilter property simply call a function that refresh the view. Now I can simply add a combo in the View, bind the SelecteValue property to the StatusFilter VM property and without any other change I've added filtering capabilities to the View.
 
-The cool part is that Iâ€™m able to write unit test that verify filtering capabilities.
+The cool part is that I'm able to write unit test that verify filtering capabilities.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 ...
@@ -84,6 +84,6 @@ sut.Links.OfType<SingleAnalysisLink>()
 .Count().Should().Be.EqualTo(1);
 {{< / highlight >}}
 
-Iâ€™ve added two SingleAnalysisLink to the VM, then change the status of only one of them to Match, set a filter to show only item with status == Match and assert that the count of items of the view is Equal To 1.
+I've added two SingleAnalysisLink to the VM, then change the status of only one of them to Match, set a filter to show only item with status == Match and assert that the count of items of the view is Equal To 1.
 
 alk.

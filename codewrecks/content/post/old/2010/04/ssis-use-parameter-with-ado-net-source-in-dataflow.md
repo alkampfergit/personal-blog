@@ -21,7 +21,7 @@ To simplify the process I created a SSIS package, represented in this figure.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image7.png)
 
-In this approach I can take advantage to the fact that Execute Sql Task support the specification of SQL syntax with parameter, so Iâ€™m able to use parameter in the query, and use SSIS variables to populate those parameters.
+In this approach I can take advantage to the fact that Execute Sql Task support the specification of SQL syntax with parameter, so I'm able to use parameter in the query, and use SSIS variables to populate those parameters.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image8.png)
 

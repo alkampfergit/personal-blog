@@ -51,7 +51,7 @@ Pex is really good to find input pattern that makes your code fail:
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image17.png)
 
-Iâ€™m sure I never think to pass 1\*\*\*\*\0 to my routine :D. After some correction you usually find that inputs that makes your code fail are really strange, and you can tell â€œOk, it is enoughâ€, if someone passes â€œ1\*\*\*\*\*\0â€ he should really got an exception as result, but in the end Pex is exceptional in finding obvious failing path in your code.
+I'm sure I never think to pass 1\*\*\*\*\0 to my routine :D. After some correction you usually find that inputs that makes your code fail are really strange, and you can tell â€œOk, it is enoughâ€, if someone passes â€œ1\*\*\*\*\*\0â€ he should really got an exception as result, but in the end Pex is exceptional in finding obvious failing path in your code.
 
 alk.
 

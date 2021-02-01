@@ -6,7 +6,7 @@ draft: false
 tags: [WPF]
 categories: [WPF]
 ---
-One of most missing control of Wpf is in my opinion a Checkbox list. Since in a project Iâ€™m working into, I really need such a control I worked with my fellow [Guardian](http://www.nablasoft.com/guardian) to create one that will satisfies our needs.
+One of most missing control of Wpf is in my opinion a Checkbox list. Since in a project I'm working into, I really need such a control I worked with my fellow [Guardian](http://www.nablasoft.com/guardian) to create one that will satisfies our needs.
 
 Our goal is to use less code possible and rely mainly on binding, and this was a little difficult to accomplish because of various problems, here is the XAML of the final control.
 
@@ -111,7 +111,7 @@ public object Convert(object[] values, Type targetType, object parameter, System
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The trick is simply looking for each object into the selected collection, extract the property and verify if one object have the same property of the actual checkbox, if yes it must be selected. With this basic arrange Iâ€™m able to write code like this.
+The trick is simply looking for each object into the selected collection, extract the property and verify if one object have the same property of the actual checkbox, if yes it must be selected. With this basic arrange I'm able to write code like this.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
     <Control:CheckBoxList Height="200"
@@ -121,7 +121,7 @@ The trick is simply looking for each object into the selected collection, extrac
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Actually the Customers and SelectedCustomers are two observable collections populated with entityFramework entities based on database northwind. As you can verify Iâ€™m able to select the property used to show content, and I can directly bind two collection for the list of all objects and selected ones.
+Actually the Customers and SelectedCustomers are two observable collections populated with entityFramework entities based on database northwind. As you can verify I'm able to select the property used to show content, and I can directly bind two collection for the list of all objects and selected ones.
 
 The good stuff about such a control, is that is quite useful in MVVM architectures, where you want to be able to bind everything from the MV to the View. Actually you can grab [the full sample here](http://www.codewrecks.com/blog/storage/checkboxlist.zip), it needs to be fully tested but it work quite good, here is what you see when you run the above view on a EntityFramework model based on northwind.
 

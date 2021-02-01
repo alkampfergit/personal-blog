@@ -71,4 +71,3 @@ As you can see after the context goes out of scope in line 8, all the objects cr
 
 Alk.
 
-Technorati Tags: [Castle](http://technorati.com/tags/Castle),[IoC](http://technorati.com/tags/IoC),[Lifecycle](http://technorati.com/tags/Lifecycle)

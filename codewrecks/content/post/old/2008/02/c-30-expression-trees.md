@@ -6,7 +6,6 @@ draft: false
 tags: [Uncategorized]
 categories: [General]
 ---
-Technorati Tags: [LINQ](http://technorati.com/tags/LINQ),[Expression Tree](http://technorati.com/tags/Expression%20Tree)
 
 One of the most impressing features of C# 3.0 are Lamba expression, because they are *not only syntactic sugar.*If you are not convinced try to run the following two pieces of codes in LINQ to SQL
 

@@ -80,5 +80,3 @@ As you can see I simply declare that the CellTemplate of the first column of the
 This is really better than before, and without writing a single line of code.
 
 Alk.
-
-Technorati Tags: [WPF](http://technorati.com/tags/WPF),[Dynamic Binding](http://technorati.com/tags/Dynamic%20Binding)

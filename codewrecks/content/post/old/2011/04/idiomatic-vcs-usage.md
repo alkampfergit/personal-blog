@@ -16,7 +16,7 @@ Take as example moving from SVN to TFS, both of them are quite similar on the su
 
 This is needed because SVN was originally created to support open source communities, where working with offline server is the standard thus offline experience should be good. TFS was born to serve large amount of users in corporate environment, and explicit check-out help people to understand who is working on a specific file.
 
-If you are curious on how SVN can understand witch file are modified without the need to communicate to the server, you should know that SVN stores information in hidden.svn folder in the clients. This has a cost, a complex project Iâ€™m working to has the trunk that occupies 5.44 GB with 53.710 files, deleting all.svn folders I got a 5.02 GB of space and 33.663 files. For very large project, this could impact performances and if you do not have fast disks, working with such big solution could be slow.
+If you are curious on how SVN can understand witch file are modified without the need to communicate to the server, you should know that SVN stores information in hidden.svn folder in the clients. This has a cost, a complex project I'm working to has the trunk that occupies 5.44 GB with 53.710 files, deleting all.svn folders I got a 5.02 GB of space and 33.663 files. For very large project, this could impact performances and if you do not have fast disks, working with such big solution could be slow.
 
 Ok! But what this has to do with everyday usage of my VCS except for performance? Suppose you delete the a file (Transaction.cs9 § from your local copy directly from Windows Explorer, after this operation just issue a SVN  **update** command, what will be the result?
 

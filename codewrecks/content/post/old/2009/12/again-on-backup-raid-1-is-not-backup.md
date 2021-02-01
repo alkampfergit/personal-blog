@@ -6,7 +6,7 @@ draft: false
 tags: [Backup]
 categories: [General]
 ---
-Recently Iâ€™ve posted about [backup](http://www.codewrecks.com/blog/index.php/2009/12/17/have-you-backup-your-data-today/), and I want to make another little tough, [RAID 1](http://en.wikipedia.org/wiki/RAID) is not meant to replace backup. During the past Iâ€™ve heard people saying, â€œHey Iâ€™ve this RAID 1 array, so I do not need backup, because if a disk will fail I have data in the other one.
+Recently I've posted about [backup](http://www.codewrecks.com/blog/index.php/2009/12/17/have-you-backup-your-data-today/), and I want to make another little tough, [RAID 1](http://en.wikipedia.org/wiki/RAID) is not meant to replace backup. During the past I've heard people saying, â€œHey I've this RAID 1 array, so I do not need backup, because if a disk will fail I have data in the other one.
 
 This is WRONG!!!
 
@@ -23,5 +23,3 @@ Hardware failure 2: RAM of the machine is corrupted, the system begin to write r
 All these examples are meant to convince you that RAID system are not meant to substitute backup, but they are meant for high avaliability in case of hardware failure of one of the disk. The raid 1 is useful when one of the disk stop to work, you can still work with the good disk while rebuilding the array with a new disk.
 
 Alk.
-
-Technorati Tags: [Backup](http://technorati.com/tags/Backup)

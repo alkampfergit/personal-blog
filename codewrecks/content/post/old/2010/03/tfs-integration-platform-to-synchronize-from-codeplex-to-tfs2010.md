@@ -28,7 +28,7 @@ Then I fire the play button and it start doing stuff :), it begins to find chang
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/03/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/03/image15.png)
 
-Now Iâ€™m waiting to see if everything is ok, because I think that syncing from codeplex is still not a supported scenario, but at least it started :). Iâ€™ll keep you in touch on the result.
+Now I'm waiting to see if everything is ok, because I think that syncing from codeplex is still not a supported scenario, but at least it started :). I'll keep you in touch on the result.
 
 alk.
 

@@ -8,7 +8,7 @@ categories: [ASPNET]
 ---
 Some times ago [I spoke](http://www.codewrecks.com/blog/index.php/2009/01/24/optimization-of-javascript-and-css-files/) about using [YUICompressor](http://www.codeplex.com/YUICompressor) to reduce number and size of your css files. That solution was based on the original msbuild action included in youicompressor library. That solution has a major drawback, css files gets compressed only during the deploy phase, so during testing the site was tested only with the original css set. I like to test in an environment similar to production one, so I decided to develop a simple IHttpHandler to handle css compression.
 
-Moreover asp.net has a not so good handling of themes, and all css that are in theme folder are included in final pages (if I compress files into 1 with youicompressor Iâ€™ll end with a lot of 404 request), I want to insert only a single css in the theme. Here is the solution, place in theme folder a single css files and include all original css files with include directive
+Moreover asp.net has a not so good handling of themes, and all css that are in theme folder are included in final pages (if I compress files into 1 with youicompressor I'll end with a lot of 404 request), I want to insert only a single css in the theme. Here is the solution, place in theme folder a single css files and include all original css files with include directive
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 @import url("../../ThemesCss/v2/BackOffice.css");
@@ -30,7 +30,7 @@ Now I created another file, with the same name of the single theme css file, but
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-It is a simple text file, but now Iâ€™m able to write an handler that use this file list to compress all site.
+It is a simple text file, but now I'm able to write an handler that use this file list to compress all site.
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
     class YUICompressorHandler : IHttpHandler
@@ -120,9 +120,9 @@ It is a simple text file, but now Iâ€™m able to write an handler that use t
 
 This is the very first version of the handler, it basically compress all original files into one, it checks if the previously compressed file is out-of-date because one of the original css is changed. If nothing is changed it returns the compressed file to the caller. It has even a simple check, if the site has debug=â€falseâ€ and is in release mode, I honor cache of the browser, using appropriate headers.
 
-It works really well, now even in test site deployed by CC.net I can have compression and I can enable/disable simply from the IIS control panel, if I send css request to asp.net engine Iâ€™ll have compression, if I do not map css extension to asp.net I have standard IIS behaviour.
+It works really well, now even in test site deployed by CC.net I can have compression and I can enable/disable simply from the IIS control panel, if I send css request to asp.net engine I'll have compression, if I do not map css extension to asp.net I have standard IIS behaviour.
 
-In a site Iâ€™m working in I moved from 25 css files and 45Kb of uncompressed css, to a 1 css and a 28k of uncompressed css, that became 5.5k when gzipped.
+In a site I'm working in I moved from 25 css files and 45Kb of uncompressed css, to a 1 css and a 28k of uncompressed css, that became 5.5k when gzipped.
 
 alk.
 

@@ -52,7 +52,7 @@ public class ResolveIoCTest: ITest
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Just to verify that Iâ€™m able to resolve a specific interface or a specific component, but you can actually verify every stuff you like, then I write a simple form with a button and a ritch text box.
+Just to verify that I'm able to resolve a specific interface or a specific component, but you can actually verify every stuff you like, then I write a simple form with a button and a ritch text box.
 
 The next step is finding in the assembly all test classes
 

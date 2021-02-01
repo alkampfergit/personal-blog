@@ -12,6 +12,6 @@ After everything is done you can verify that the server is really running with S
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/image.png)
 
-As you can see, after configuration the Version tells me that Iâ€™m running with SP1 installed ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/wlEmoticon-smile.png)
+As you can see, after configuration the Version tells me that I'm running with SP1 installed ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/05/wlEmoticon-smile.png)
 
 alk.

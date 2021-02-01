@@ -6,7 +6,7 @@ draft: false
 tags: [Microsoft Test Manager]
 categories: [Team Foundation Server,Testing]
 ---
-Thanks to [Microsoft Test Manager](http://msdn.microsoft.com/en-us/library/bb385901.aspx), testing teams have a complete tool to manage every part of testing, but since it is a new tool we need to understand how to use at its best, so Iâ€™ll try to explain a typical cycle of a test-bug-fix-test with MTM.
+Thanks to [Microsoft Test Manager](http://msdn.microsoft.com/en-us/library/bb385901.aspx), testing teams have a complete tool to manage every part of testing, but since it is a new tool we need to understand how to use at its best, so I'll try to explain a typical cycle of a test-bug-fix-test with MTM.
 
 Everything starts with the definition of a Test Case in a Test suite, in this example I want to verify what happens when the user insert some specific quantity in the Chart page of TailSpin toys.
 
@@ -14,7 +14,7 @@ Everything starts with the definition of a Test Case in a Test suite, in this ex
 
  ***Figure 1***: *Definition of a test*
 
-In this test Iâ€™m requesting the tester to: add an item to the chart, change the quantity to @NewQuantity value, and finally verify that the system update the charts showing the value: @ExpectedQuantity. Thanks to parameters, testers can specify more set of data to use in the test to verify boundary values etc etc. In this specific situation the stakeholder requests that a non numeric or negative value should not update the value of the chart, while a quantity of zero should change the quantity to zero, leaving the object in the chart.
+In this test I'm requesting the tester to: add an item to the chart, change the quantity to @NewQuantity value, and finally verify that the system update the charts showing the value: @ExpectedQuantity. Thanks to parameters, testers can specify more set of data to use in the test to verify boundary values etc etc. In this specific situation the stakeholder requests that a non numeric or negative value should not update the value of the chart, while a quantity of zero should change the quantity to zero, leaving the object in the chart.
 
 A tester now executes the test, the first time he enables the recording asking MTM to record all his actions. This is useful because the recording can be used to do a fast forward during test execution, actually reducing time needed to execute the test.
 
@@ -89,7 +89,7 @@ this.UIMap.Closebrowser();
 }
 {{< / highlight >}}
 
-I added lines 12-15. Lines 13-14 is where I set the expected quantity of the assertion. Each time you record an  assertion, Coded UI Test Builder tools try to parametrize generated UIMap when possible. When we created the assertion, test builder parametrizes the ExpectedValue, thanks to this feature Iâ€™m able to set expected value to the value of the parameter @ExpectedQuantity (see  **Figure 1** ) of MTM, finally line 15 executes the assertion. Now if the developer runs the test he got this output.
+I added lines 12-15. Lines 13-14 is where I set the expected quantity of the assertion. Each time you record an  assertion, Coded UI Test Builder tools try to parametrize generated UIMap when possible. When we created the assertion, test builder parametrizes the ExpectedValue, thanks to this feature I'm able to set expected value to the value of the parameter @ExpectedQuantity (see  **Figure 1** ) of MTM, finally line 15 executes the assertion. Now if the developer runs the test he got this output.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image16.png)
 

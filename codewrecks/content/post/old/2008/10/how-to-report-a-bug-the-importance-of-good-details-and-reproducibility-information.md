@@ -6,7 +6,7 @@ draft: false
 tags: [Testing]
 categories: [Testing]
 ---
-During applicationâ€™s lifecycle, the activity of bug tracking is a really important one. You should use some software ([Team foundation server](http://en.wikipedia.org/wiki/Team_Foundation_Server) or some free tools like [mantis](http://www.mantisbt.org/)) to keep track of applicationâ€™s bugs. Usually, even if you use Test Driven Approach, you cannot intercept all bugs with unit tests, so you should be prepared to receive some issues in the Bug Tracker.
+During application's lifecycle, the activity of bug tracking is a really important one. You should use some software ([Team foundation server](http://en.wikipedia.org/wiki/Team_Foundation_Server) or some free tools like [mantis](http://www.mantisbt.org/)) to keep track of application's bugs. Usually, even if you use Test Driven Approach, you cannot intercept all bugs with unit tests, so you should be prepared to receive some issues in the Bug Tracker.
 
 Issues are inserted by *testers, users*or *developer* or whoever person that uses the software during development,  and it is really important that bugs are reported correctly. Using a [Bug Tracking System](http://en.wikipedia.org/wiki/Bug_tracker) helps you a lot, but there is always the need of some rules that everyone should follow to report a bug. One of the most important rule is â€œalways add [reproducibility](http://en.wikipedia.org/wiki/Reproducibility) informationâ€. Here is a story happened to me some time ago.
 

@@ -8,7 +8,7 @@ categories: [Nhibernate]
 ---
 One of the most basic validation rule for Entities that are stored in databases, is to be sure that String Properties are not too long for the corresponding field in database. There are a lot of validation framework over there, most of them using attributes to specify constraints on properties or fields, but what happens if someone changes a mapping setting a different length for a field?
 
-Iâ€™m a great fan of database generation with NHibernate, so here is a typical mapping of mine.
+I'm a great fan of database generation with NHibernate, so here is a typical mapping of mine.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"

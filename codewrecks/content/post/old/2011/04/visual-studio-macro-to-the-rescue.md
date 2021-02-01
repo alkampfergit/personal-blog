@@ -12,7 +12,7 @@ If you heavily work with branches, one of the most frustrating error you can do 
 
  ***Figure 1***: *A branching strategy taken from the [branchingguidance](http://tfsbranchingguideiii.codeplex.com/)*
 
-With this scenario Iâ€™m prone to this error:
+With this scenario I'm prone to this error:
 
 Someone call me telling to create an hotfix for the UI XYZ, I open the solution from Branch\Releases\XYZ\R3\_0 to open the third (is the latest) release of the XYZ UI, I do the hotfix, test it, run all the test etc etc, then other people of the team call me asking for modification in other part, so I open the same solution from a different branch (say the trunk or the Feature BLABLA) and do some modification. Now I have two Visual Studio opened, with the very same solution, sometimes I got confused and I modify the wrong line of codeâ€¦ too bad, because this can cause a really bad problem. The problem arise from having more than one instance of Visual Studio opened with solutions of same name, just from different branch ![Sad smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/wlEmoticon-sadsmile.png) and you can become confused.
 
@@ -60,17 +60,17 @@ From the opened editor you just double click on MyMacros, expand the Environment
 
  ***Figure 3***: *You can handle standard events from the IDE, such as when a solution is opened.*
 
-If you look at the code, Iâ€™ve simply put a regex that permits me to parse the typical branch path structure I have on my projects, where I have Branch\someothertext\nameoftheproject\branchnumber\solutionfile.sln. When I open the trunk version I got only the solution name on the title bar.
+If you look at the code, I've simply put a regex that permits me to parse the typical branch path structure I have on my projects, where I have Branch\someothertext\nameoftheproject\branchnumber\solutionfile.sln. When I open the trunk version I got only the solution name on the title bar.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image1.png)
 
  **Figure 4** : *the solution is opened from the trunk (main) because only the name of the solution is shown in title bar*
 
-Iâ€™ve opened the same solution from a release of a specific UI and I got
+I've opened the same solution from a release of a specific UI and I got
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image2.png)
 
- ***Figure 5***: *The same solution is opened from a branch folder, now title bar shows me that Iâ€™m working on branch*
+ ***Figure 5***: *The same solution is opened from a branch folder, now title bar shows me that I'm working on branch*
 
 I immediately visualize that this solution is a branch, the version number is R3\_0 (Release three point zero), the project released is ZZZZManager that resides on the XXXXXWeb-Vs2010 solution ;) now it is really difficult for me and other people to write code on a wrong branch, because all the informations I need are on the title bar.
 

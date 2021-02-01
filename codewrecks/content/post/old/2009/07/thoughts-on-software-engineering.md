@@ -13,7 +13,7 @@ I was reading [this post](http://www.codinghorror.com/blog/archives/001288.html)
 
 And the conclusion is that *control is more important in project A and not in project B,*and another astonishing sentence in the article was
 
-> the question thatâ€™s much more important than how to control a software project is, why on earth are we doing so many projects that deliver such marginal value?
+> the question that's much more important than how to control a software project is, why on earth are we doing so many projects that deliver such marginal value?
 
 The problem is that we always wish to work in B-like project, but the reality is that sometimes the only project to work on is A-like, and this is outside our control. If there would be a choice, A-like project never existed because no one would ever want to work in a project with such high risk of loss.
 

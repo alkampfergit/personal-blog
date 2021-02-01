@@ -130,5 +130,3 @@ It turns out that the DataContext has a Refresh method that can be used to tell 
 Maybe this concludes this tale :D
 
 Alk.
-
-Technorati Tags: [Linq to Sql](http://technorati.com/tags/Linq%20to%20Sql),[Detached object](http://technorati.com/tags/Detached%20object),[DataContext](http://technorati.com/tags/DataContext)

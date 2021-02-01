@@ -225,7 +225,7 @@ public enum TfTaskOperation
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This is a simple wrapper to the tf.exe tool, and since I invoke it with the System.Diagnostic.Process class, *Iâ€™m able to intercept the output*. There are a lot of possibilities on how to get latest changeset, but the simplest is to invoke tf.exe with a command line like this:  **tf.exe history /s:http://tfsalkampfer:8080 /stopafter:1 /noprompt /recursive /version:T $/MsBuildExtension** This This command gives a result like this one.
+This is a simple wrapper to the tf.exe tool, and since I invoke it with the System.Diagnostic.Process class, *I'm able to intercept the output*. There are a lot of possibilities on how to get latest changeset, but the simplest is to invoke tf.exe with a command line like this:  **tf.exe history /s:http://tfsalkampfer:8080 /stopafter:1 /noprompt /recursive /version:T $/MsBuildExtension** This This command gives a result like this one.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 Changeset User          Date       Comment

@@ -222,7 +222,7 @@ using (HelloWorld.HelloWorldClient client = new WindowsFormsApplication1.HelloWo
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Iâ€™ve created a valid user Test, that belongs only to role â€œTestersâ€, and when you try to call the HelloWorld method you will get an exception â€œaccess deniedâ€ because the user does not belongs to requested role.
+I've created a valid user Test, that belongs only to role â€œTestersâ€, and when you try to call the HelloWorld method you will get an exception â€œaccess deniedâ€ because the user does not belongs to requested role.
 
 Sometimes you can encounter the following exception.
 

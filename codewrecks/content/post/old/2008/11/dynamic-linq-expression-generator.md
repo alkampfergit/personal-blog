@@ -14,7 +14,7 @@ Assert.That(f(aCustomer), Is.True);{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This example shows that I can build a simple function that accepts an entity (Customer) and a string representing some conditions, then Iâ€™m able to dynamically parse the string, create an expression tree and call Compile on it to obtain a function that I can use in code. As soon as possible Iâ€™ll show a complete example if you are interested in.
+This example shows that I can build a simple function that accepts an entity (Customer) and a string representing some conditions, then I'm able to dynamically parse the string, create an expression tree and call Compile on it to obtain a function that I can use in code. As soon as possible I'll show a complete example if you are interested in.
 
 alk.
 

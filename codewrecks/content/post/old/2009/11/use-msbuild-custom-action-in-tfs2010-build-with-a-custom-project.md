@@ -24,7 +24,7 @@ As you can verify I simply created a BuildTools directory, that contains a Msbui
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image8.png)
 
-As you can see Iâ€™ve simply created a subdirectory of the â€œBuildProcessTemplatesâ€ called CustomBuild where I put my TweetResult.proj file. Now what I need to write into my project file? Here is a possible example
+As you can see I've simply created a subdirectory of the â€œBuildProcessTemplatesâ€ called CustomBuild where I put my TweetResult.proj file. Now what I need to write into my project file? Here is a possible example
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <Project

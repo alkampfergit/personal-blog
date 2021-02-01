@@ -6,7 +6,7 @@ draft: false
 tags: [Nunit,Testing]
 categories: [Testing]
 ---
-Iâ€™ve build during years a test helper infrastructure that permits me to decorate a test fixture with some custom attributes that are capable to execute code before and after fixture setup/teardown or test setup/teardown. Now my dear friend Ugo needs for [Dexter](http://dexterblogengine.codeplex.com/) a modified version of this framework to be able to apply attributes directly to tests.
+I've build during years a test helper infrastructure that permits me to decorate a test fixture with some custom attributes that are capable to execute code before and after fixture setup/teardown or test setup/teardown. Now my dear friend Ugo needs for [Dexter](http://dexterblogengine.codeplex.com/) a modified version of this framework to be able to apply attributes directly to tests.
 
 Basically Ugo needs to change the principal during each test, and he want to be able to write code like this one.
 
@@ -99,7 +99,7 @@ helpers.Add(attribute.Create());
 }
 {{< / highlight >}}
 
-Basically Iâ€™m creating all the test helpers for each method, now during test setup Iâ€™m able to verify the name of the test that is going to be executed, and call the appropriate helpers if they are present.
+Basically I'm creating all the test helpers for each method, now during test setup I'm able to verify the name of the test that is going to be executed, and call the appropriate helpers if they are present.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 protected override void OnSetUp ( )
@@ -118,7 +118,7 @@ base.OnSetUp ( );
 }
 {{< / highlight >}}
 
-In the first foreach Iâ€™m calling SetUp() method for every helper associated with the fixture (it should be executed for each test) and then I verify if the MethodHelpers dictionary contains some test helpers for the current test. The key here is that Iâ€™m able to know the test method name from TestContext.CurrentContext.Test.Name thanks to new Nunitâ€™s functionality.
+In the first foreach I'm calling SetUp() method for every helper associated with the fixture (it should be executed for each test) and then I verify if the MethodHelpers dictionary contains some test helpers for the current test. The key here is that I'm able to know the test method name from TestContext.CurrentContext.Test.Name thanks to new Nunit's functionality.
 
 In order for this to work with TestDriven.Net you need to copy latest nunit testrunner in the appropriate Testdriven.net Folder (C:\Program Files (x86)\TestDriven.NET 3\NUnit\2.5)
 

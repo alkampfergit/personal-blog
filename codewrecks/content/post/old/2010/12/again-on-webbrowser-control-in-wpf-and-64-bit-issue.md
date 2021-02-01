@@ -240,7 +240,7 @@ Support interface mshtml.DispIHTMLInputImage
 Support interface mshtml.htmlInputImage
 {{< / highlight >}}
 
-There are a lot of interfaces here, but one is interesting, HTMLBody and clearly I got no HTMLHEadElementClass :(. Since HTMLBody really have an appendChild method I can use that interface in 64 bit environment, but I really does not know why MSHTML has such a different behavior under 32 bit or 64 bit environments, but Iâ€™m now able to put a patch on my browser wrapper control.
+There are a lot of interfaces here, but one is interesting, HTMLBody and clearly I got no HTMLHEadElementClass :(. Since HTMLBody really have an appendChild method I can use that interface in 64 bit environment, but I really does not know why MSHTML has such a different behavior under 32 bit or 64 bit environments, but I'm now able to put a patch on my browser wrapper control.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 if (Is64BitMode())

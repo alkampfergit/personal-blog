@@ -6,7 +6,7 @@ draft: false
 tags: [Team Foundation Server]
 categories: [Team Foundation Server]
 ---
-This can happen when you change machine name after you installed and configured sql server. Iâ€™m trying various type of installation of tfs2010 just to verify the various options, my virtual machine had the default name, so I changed after I installed sql server 2008. I already know that this could cause problems, so I started a fresh installation of TFS just to verify if I guess correctly.
+This can happen when you change machine name after you installed and configured sql server. I'm trying various type of installation of tfs2010 just to verify the various options, my virtual machine had the default name, so I changed after I installed sql server 2008. I already know that this could cause problems, so I started a fresh installation of TFS just to verify if I guess correctly.
 
 Here is the two warnings I got during installation
 

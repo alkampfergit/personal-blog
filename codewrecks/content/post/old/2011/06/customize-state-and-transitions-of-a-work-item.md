@@ -52,7 +52,7 @@ This happens because the default transition now points to Triage and the Active 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb34.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image34.png)
 
- ***Figure 5***: *Iâ€™ve added transition from Triage to other status, now the workflow is valid again.*
+ ***Figure 5***: *I've added transition from Triage to other status, now the workflow is valid again.*
 
 After this new workflow is saved, when we create a new bug we can only specify the Triage state and one of the Three allowed reason for the default Transition ( **Figure 6** ). As you can verify the default reason is “signaled by tester”
 

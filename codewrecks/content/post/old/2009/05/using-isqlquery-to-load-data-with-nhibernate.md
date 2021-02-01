@@ -12,7 +12,7 @@ I decided to create a new class that stores some basic data taken from two of th
 
 Thanks to [SQlQuery](https://www.hibernate.org/hib_docs/nhibernate/1.2/reference/en/html/querysql.html) I created a stored that accepts three parameters, it paginates record server-side with temp tables, and it is superfast. Then I begin to think how to map it into nhibernate. Moreover in client code I do not access directly the ISession, because the NHibernate layer was based on a previous query modelâ€¦ (that sooner or later will be dropped to permits direct access to ISession=, but for now all legacy nhibernate layer uses this custom query model, so I have no way to remove it.
 
-Moreover, since I need to join tables, if I ask for 10 records, actually the stored returns higher number of records, because it returns 10 records from the base table, but after joins with other tables the number of returned records is greater than 10. I made the stored so it returns rows from all five tables, and I create all foreign key directly in the stored, now Iâ€™m able to write code like.
+Moreover, since I need to join tables, if I ask for 10 records, actually the stored returns higher number of records, because it returns 10 records from the base table, but after joins with other tables the number of returned records is greater than 10. I made the stored so it returns rows from all five tables, and I create all foreign key directly in the stored, now I'm able to write code like.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 DirectSqlQuery query = DirectSqlQuery.Create("fictiousEntity", "root")
@@ -31,9 +31,9 @@ entity called  **fictiousEntity** is used only to join data from two base tables
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image-thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image2.png)
 
-This is a snapshot of the TransformTuple of my DistinctResultTransformer object, that simply takes the object whose index was specified in constructor. So when I wrote  **SetResultTransformer(new DistinctResultTransformer(0))** Iâ€™m asking to return only the first element, that was my fictiousEntity used to aggregate the result.
+This is a snapshot of the TransformTuple of my DistinctResultTransformer object, that simply takes the object whose index was specified in constructor. So when I wrote  **SetResultTransformer(new DistinctResultTransformer(0))** I'm asking to return only the first element, that was my fictiousEntity used to aggregate the result.
 
-Since I specified to NH that all data is included in the original recordset, entities are fully hydrated without N+1 Select problem. With this simple trick Iâ€™m able to retrieve data from a stored in a really high efficient way, while maintaining full power of NHibernate, because except the fictiousEntity that is mutable=â€falseâ€, and is used only for aggregation, all related classes can be used as usual with full persistence power.
+Since I specified to NH that all data is included in the original recordset, entities are fully hydrated without N+1 Select problem. With this simple trick I'm able to retrieve data from a stored in a really high efficient way, while maintaining full power of NHibernate, because except the fictiousEntity that is mutable=â€falseâ€, and is used only for aggregation, all related classes can be used as usual with full persistence power.
 
 alk.
 

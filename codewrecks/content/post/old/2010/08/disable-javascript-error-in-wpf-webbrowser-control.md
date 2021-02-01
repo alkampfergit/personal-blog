@@ -35,7 +35,7 @@ void browser_Navigated(object sender, System.Windows.Navigation.NavigationEventA
 InjectDisableScript();
 {{< / highlight >}}
 
-Actually Iâ€™m doing a lot of other things inside the Navigated event handler, but the very first one is injecting into the page the script that disable javascript error.
+Actually I'm doing a lot of other things inside the Navigated event handler, but the very first one is injecting into the page the script that disable javascript error.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 private void InjectDisableScript()
@@ -61,7 +61,7 @@ head.appendChild((IHTMLDOMNode)scriptErrorSuppressed);
 }
 {{< / highlight >}}
 
-This is the code that really solves the problem, the key is creating a IHTMLScriptElement with the script and injecting into the Head of the page, this effectively disables the javascript errors. Iâ€™ve not fully tested with a lot of sites to verify that is able to intercept all errors, but it seems to work very well with a lot of links that gave us a lot of problems in the past.
+This is the code that really solves the problem, the key is creating a IHTMLScriptElement with the script and injecting into the Head of the page, this effectively disables the javascript errors. I've not fully tested with a lot of sites to verify that is able to intercept all errors, but it seems to work very well with a lot of links that gave us a lot of problems in the past.
 
 Alk.
 

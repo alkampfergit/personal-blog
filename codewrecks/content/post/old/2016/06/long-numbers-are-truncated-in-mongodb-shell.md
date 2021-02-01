@@ -8,7 +8,7 @@ categories: [NoSql]
 ---
 Let’s try this simple code in a mongo shell:
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 db.TestCollection.insert({"_id" : 1, "Value" : NumberLong(636002954392732556) })
@@ -18,7 +18,7 @@ db.TestCollection.find()
 
 What you expect is that mongo inserted one record and then that record is returned. Actually a record is inserted, but  **the return value can surprise you**. Here is the output I got from RoboMongo
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 {

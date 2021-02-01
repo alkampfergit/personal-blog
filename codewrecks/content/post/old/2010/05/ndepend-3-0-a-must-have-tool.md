@@ -6,7 +6,7 @@ draft: false
 tags: [NDepend]
 categories: [Tools and library]
 ---
-Iâ€™m exploring the new capabilities of NDepend 3.0, and the very first interesting stuff is that Iâ€™m now able in VS2010 to add a NDepend project to the solution, so Iâ€™m able to manage ndepend project properties inside from VS.
+I'm exploring the new capabilities of NDepend 3.0, and the very first interesting stuff is that I'm now able in VS2010 to add a NDepend project to the solution, so I'm able to manage ndepend project properties inside from VS.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image13.png)
 

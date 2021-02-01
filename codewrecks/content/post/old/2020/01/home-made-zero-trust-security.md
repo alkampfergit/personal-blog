@@ -14,7 +14,7 @@ The alternative is to left RDP port opened always for all local machines, or for
 
 To solve this problem I’ve authored a really stupid program to manage hardening of my machine: [https://github.com/alkampfergit/StupidFirewallManager](https://github.com/alkampfergit/StupidFirewallManager "https://github.com/alkampfergit/StupidFirewallManager") This is a proof of concept, but basically it works with a simple concept:  **if I want to conditionally open TCP port based on a secret, I created a program that is listening on some UDP ports and if it receives a message with a specific secret it will open related TCP port, only for caller IP and only for a certain amount of time.** Here is a configuration:
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 {

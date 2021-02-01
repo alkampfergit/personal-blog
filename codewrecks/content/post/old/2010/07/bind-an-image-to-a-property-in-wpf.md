@@ -36,7 +36,7 @@ Source="{Binding Status, Converter={StaticResource statusconverter}}"
 VerticalAlignment="Bottom" Width="24" Stretch="Fill" />
 {{< / highlight >}}
 
-In this snippet of code Iâ€™m showing how to bind the Source property of an Image to the Status property of the underling ViewModel, and thanks to the SingleAnalysisStatusConverter object Iâ€™m able to convert the status to a valid [BitmapImage](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapimage.aspx) object. This is the full code of the IValueConverter object.
+In this snippet of code I'm showing how to bind the Source property of an Image to the Status property of the underling ViewModel, and thanks to the SingleAnalysisStatusConverter object I'm able to convert the status to a valid [BitmapImage](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapimage.aspx) object. This is the full code of the IValueConverter object.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 class SingleAnalysisStatusConverter: IValueConverter
@@ -86,6 +86,6 @@ The key part is the line
 
 *return new BitmapImage(new Uri("/AssemblyName;component/" + path, UriKind.Relative));*
 
-that creates the BitmapImage passing an uri composed by the: assemblyname + semicolon + component/ + imagepath. With this simple converter Iâ€™m able to show different images based on content of a specific property.
+that creates the BitmapImage passing an uri composed by the: assemblyname + semicolon + component/ + imagepath. With this simple converter I'm able to show different images based on content of a specific property.
 
 Alk.

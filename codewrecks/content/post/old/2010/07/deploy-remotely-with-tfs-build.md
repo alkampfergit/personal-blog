@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 It is time to connect together a couple of posts of mine, [in the first](http://www.codewrecks.com/blog/index.php/2010/07/06/deploy-on-remote-machine-during-builds/) I simply explained how to deploy a web application to a remote machine with the use of Beyondexec2, [in another one](http://www.codewrecks.com/blog/index.php/2010/07/07/use-tfs-2010-build-to-execute-arbitrary-task/) I explained how to create a simple tfs build, that actually does not build anything, but execute a simple workflow.
 
-In this post Iâ€™ll cover a primitive build workflow to deploy the result of another build. The starting point is having a build called â€œDemoâ€ that builds a web site and create the installer package, plus the script described [here](http://www.codewrecks.com/blog/index.php/2010/07/06/deploy-on-remote-machine-during-builds/). You need to insert the scripts and the PsExec utility in the source code of your team project, to be available from the build agent during the build, as shown in  **Figure 1**. Note: in this example Iâ€™ll use the [PsExec](http://technet.microsoft.com/en-us/sysinternals/bb897553.aspx) tools instead of beyondexecv2, but they are exactly equivalent, PsExex is more maintained tool and works better when execute in services.
+In this post I'll cover a primitive build workflow to deploy the result of another build. The starting point is having a build called â€œDemoâ€ that builds a web site and create the installer package, plus the script described [here](http://www.codewrecks.com/blog/index.php/2010/07/06/deploy-on-remote-machine-during-builds/). You need to insert the scripts and the PsExec utility in the source code of your team project, to be available from the build agent during the build, as shown in  **Figure 1**. Note: in this example I'll use the [PsExec](http://technet.microsoft.com/en-us/sysinternals/bb897553.aspx) tools instead of beyondexecv2, but they are exactly equivalent, PsExex is more maintained tool and works better when execute in services.
 
 [![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled_thumb2.png "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitled4.png)
 
@@ -61,7 +61,7 @@ The only drawback is that you only see output of the psexec program and does not
 
 alk.
 
-P.S. this is the first post following Adam Coganâ€™s SSW Rules (thanks Adam, you rock)
+P.S. this is the first post following Adam Cogan's SSW Rules (thanks Adam, you rock)
 
 – the balloon rule, instead of walls of text
 

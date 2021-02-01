@@ -8,7 +8,7 @@ categories: [Visual Studio]
 ---
 One of the coolest feature of Visual Studio Database Edition is the ability to run Rules against a database project, like fxcop against a c# project. And the coolest part about this feature is that is really simple to write a custom rule.
 
-Rules are important, Iâ€™ve seen project where there is no naming rule for objects in database, and so you will end with tables with column like, ablr\_xxxx or xxxxx\_xxx\_Authorname etc etc, and the whole database looses consistency over time. Thanks to database edition I can create a custom rule that  **force** all developers to use for example a standard naming scheme for the column.
+Rules are important, I've seen project where there is no naming rule for objects in database, and so you will end with tables with column like, ablr\_xxxx or xxxxx\_xxx\_Authorname etc etc, and the whole database looses consistency over time. Thanks to database edition I can create a custom rule that  **force** all developers to use for example a standard naming scheme for the column.
 
 Creating a rule is really simple, first of all create a c# project strongly signed, then add a class like this one.
 
@@ -114,7 +114,7 @@ You must sign your assembly, and specify full qualified name in the xml, then yo
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image27.png)
 
-To verify the rule Iâ€™ve simply created one simple table with one valid column and one not valid column.
+To verify the rule I've simply created one simple table with one valid column and one not valid column.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image28.png)
 

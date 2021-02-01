@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 In last post I show how to configure test run in a team foundation build, simply editing the msbuild file. The aim of the post was showing how to make the entire build fail when a single test fails. To achieve this result I simply override a target and set some properties values.
 
-In this post Iâ€™ll show how to automatically open an issue in TFS when a test fails. This is a standard requirement, because in such a way you are immediately aware when some test are failing.
+In this post I'll show how to automatically open an issue in TFS when a test fails. This is a standard requirement, because in such a way you are immediately aware when some test are failing.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <Target Name="AfterTest">

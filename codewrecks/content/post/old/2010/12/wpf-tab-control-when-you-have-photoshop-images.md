@@ -6,9 +6,9 @@ draft: false
 tags: [WPF]
 categories: [WPF]
 ---
-Iâ€™m working on a project in WPF where there are a lot of skinning done in photoshop and in particular I have some Tab control with a really complex skinning of the tab part.
+I'm working on a project in WPF where there are a lot of skinning done in photoshop and in particular I have some Tab control with a really complex skinning of the tab part.
 
-Since Iâ€™m not a Blend guru, and since it could be really complex to reproduce with high fidelity in wpf all complex photoshop effects that are on the original files, and since we already have the photoshop work done, we decided to use the tab in more creative way.
+Since I'm not a Blend guru, and since it could be really complex to reproduce with high fidelity in wpf all complex photoshop effects that are on the original files, and since we already have the photoshop work done, we decided to use the tab in more creative way.
 
 First: we extracted from photoshop all the five images of the tab control, one representing each selected tab.
 

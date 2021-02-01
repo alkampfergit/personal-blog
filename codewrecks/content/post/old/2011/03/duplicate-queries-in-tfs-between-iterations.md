@@ -41,6 +41,6 @@ The cool part is that if I open the Active Bugs query I got:
 
  ***Figure 4***: *The copied query automatically point to the new iteration*
 
-As soon as possible Iâ€™ll release those few lines of codes. Actually Iâ€™ve not tested it extensively, and only tried with the sample data of the sample Virtual Machine.
+As soon as possible I'll release those few lines of codes. Actually I've not tested it extensively, and only tried with the sample data of the sample Virtual Machine.
 
 alk.

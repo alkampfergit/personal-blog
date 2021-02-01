@@ -6,7 +6,7 @@ draft: false
 tags: [Nhibernate]
 categories: [Nhibernate]
 ---
-Iâ€™m optimizing a little bit an application, it is a windows form client that communicates with a WCF service. A specific form is really slow to open, so I decided to measure with a profiler to understand if something could be optimized with a little effort.
+I'm optimizing a little bit an application, it is a windows form client that communicates with a WCF service. A specific form is really slow to open, so I decided to measure with a profiler to understand if something could be optimized with a little effort.
 
 It turns out to me that 99% of form starting time is spent in waiting communication with services. First of all I see 8 calls to 8 method of the service, and this could lead to a too fine grained interface for the service, but the real problem is due to a couple of calls. After a brief inspection I found that this process is returning a list of objects bound to a combobox. The service correctly returns a dto with only the Id and Name properties, so the amount of data transmitted is really low, but the query used to retrieve data does not contains a projection.
 

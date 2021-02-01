@@ -6,7 +6,7 @@ draft: false
 tags: [NET framework]
 categories: [NET framework]
 ---
-Today Iâ€™m converting a project written in VB to C#, since it is composed by simple classes that manages reporting in RTF, I supposed that this will be a simple process. This project uses a RTF library I wrote in Visual Basic in 2002, that was simply compiled for.NET 2.0 some times ago.
+Today I'm converting a project written in VB to C#, since it is composed by simple classes that manages reporting in RTF, I supposed that this will be a simple process. This project uses a RTF library I wrote in Visual Basic in 2002, that was simply compiled for.NET 2.0 some times ago.
 
 The problem is that the library is really not [CLS](http://blogs.msdn.com/brada/archive/2004/03/20/93341.aspx) compliant and when I converted this project, (that contains 54 classes) I got ~ 2000 compilation errors. This because the library uses a lot of not CLS features, and converting library to C# caused me a lot of troubles.
 

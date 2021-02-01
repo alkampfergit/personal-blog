@@ -8,7 +8,7 @@ categories: [Experiences]
 ---
 Some days ago I did a post that generates a lot of comments, it is called [Java Versus.Net Programmers](http://www.codewrecks.com/blog/index.php/2009/04/28/java-versus-net-programmers/), and it made me think that there are a lot of ideas out of there on â€œ*what are the characteristics that makes a good programmer*â€
 
-Most of the time I hear people claiming that â€œthis is better than thatâ€, â€œprogrammers that does not knows concepts A B and C are not good onesâ€, etc. The problem is that the question remains not answered: â€œWhat are the characteristics that make a programmer a good one?â€. I think we could eventually speak for decades to search the answer for this question, and maybe after a long time weâ€™ll find that the answer is 42, but we completely forget the question.
+Most of the time I hear people claiming that â€œthis is better than thatâ€, â€œprogrammers that does not knows concepts A B and C are not good onesâ€, etc. The problem is that the question remains not answered: â€œWhat are the characteristics that make a programmer a good one?â€. I think we could eventually speak for decades to search the answer for this question, and maybe after a long time we'll find that the answer is 42, but we completely forget the question.
 
 This morning I started to think, â€œif I absolutely need to express *one single reason* that identify a good programmer, what can I say??â€
 

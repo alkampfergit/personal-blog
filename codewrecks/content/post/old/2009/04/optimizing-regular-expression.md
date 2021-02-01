@@ -8,7 +8,7 @@ categories: [NET framework]
 ---
 I have an application where I do a lot of search for pattern in text and I use a lot of regular expression. The program runs well, until the amount of text it has to search into is grown tremendously. It reaches a point where the standard daily task that was completed in a couple of hours now span for more than one day, and I need to run it each day, so I need to optimize.
 
-I created a little test that uses actual data, and it tooks 4.5 seconds to execute, this is really wrong, because Iâ€™m actually doing about 30 of this searches and for each of these I search in a pool of 10.000 strings, so Iâ€™m doing a 300.000 searches and with 4 seconds for each search I reach a  stunning grand total of time of about 300 hoursâ€¦this is clearly unacceptable. This happens because the number of searches is grown of about two orders of magnitude in few days.
+I created a little test that uses actual data, and it tooks 4.5 seconds to execute, this is really wrong, because I'm actually doing about 30 of this searches and for each of these I search in a pool of 10.000 strings, so I'm doing a 300.000 searches and with 4 seconds for each search I reach a  stunning grand total of time of about 300 hoursâ€¦this is clearly unacceptable. This happens because the number of searches is grown of about two orders of magnitude in few days.
 
 First of all I try to clear the cache for regular expression before the test with * **Regex.CacheSize = 0** *, the total time does not change. Then I try to raise this value with* **Regex.CacheSize = 200** *,  nothing changed, so it is not problem of cache. Then it is time to fire a profiler to see what is happening.
 
@@ -24,7 +24,7 @@ Another test with dottrace confirms me that all the time is spent doing regex ma
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image5.png)
 
-I optimized total time, but still the regex is the only cause of slow routine. Iâ€™ll keep on investigating if can optimize more.
+I optimized total time, but still the regex is the only cause of slow routine. I'll keep on investigating if can optimize more.
 
 alk.
 

@@ -25,7 +25,7 @@ categories: [NET framework]
 
 Now you can simply reference the hub on a page, register for the setTime method and watch the page dynamically update each second.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 function SignalrTestViewModel(option) {
@@ -54,7 +54,7 @@ The only drawback is that the server had lost every volatile information it has 
 
 The simplest solution to this problem is  **letting the client javascript code detect when a re-connection occurs** , whenever there is a reconnect, the client can call registration function again. Registration call is idempotent so there is no problem if the reconnection happens because of connectivity problem and not for a restart of the server. To detect in signalr a re-connection you can use this piece of code.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
  $.connection.hub.stateChanged(function (change)

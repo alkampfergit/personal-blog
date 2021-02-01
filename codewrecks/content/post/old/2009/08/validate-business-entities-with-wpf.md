@@ -16,7 +16,7 @@ Then I have some rule for properties length, if I change strings with too long v
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image21.png)
 
-As you can see I have clear indication of all errors, and at the same time a rectangle under the labels will change the fill from lightYellow to Orange to help the user to visualize that something is wrong. Ok letâ€™s see how we can reach this solution. First of all here is the validator for the businessEntities
+As you can see I have clear indication of all errors, and at the same time a rectangle under the labels will change the fill from lightYellow to Orange to help the user to visualize that something is wrong. Ok let's see how we can reach this solution. First of all here is the validator for the businessEntities
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 public class BusinessEntityValidationRule : ValidationRule
@@ -75,7 +75,7 @@ As you can see I use a custom validation library, in this example I simply set a
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Two things are important here, first I redefine the ErrorTemplate of the Grid, so I get rid of annoying default red border used for controls that fails validation. Then I create a simple BindingGroup, set the [ValidationStep](http://msdn.microsoft.com/en-us/library/system.windows.controls.validationrule.validationstep.aspx) to UpdateValue, this means that Iâ€™m asking to validate the object after the properties are update with the binding. Then I simply declare the rest of the controls as usual, the only important stuff is that with BindingGroup, validation must be done explicitly, so I need to react to some event of the textbox, the TextChanged is quite good.
+Two things are important here, first I redefine the ErrorTemplate of the Grid, so I get rid of annoying default red border used for controls that fails validation. Then I create a simple BindingGroup, set the [ValidationStep](http://msdn.microsoft.com/en-us/library/system.windows.controls.validationrule.validationstep.aspx) to UpdateValue, this means that I'm asking to validate the object after the properties are update with the binding. Then I simply declare the rest of the controls as usual, the only important stuff is that with BindingGroup, validation must be done explicitly, so I need to react to some event of the textbox, the TextChanged is quite good.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <TextBox x:Name="ContactName" Grid.Row="1" Grid.Column="1" Text="{Binding ContactName}"
@@ -132,7 +132,7 @@ I used a simple list view, I bind the ItemsSource to the ErrorContent of the Gri
 
 This is equally simple, because I use a simple DataTrigger to change the fill from LightYellow to Orange when the property (validation.HasError) of the main grid is True. Remember that Validation.HasError is an AttachedProperty and to use it in a binding you need to surround with parenthesis.
 
-The final result is that I can validate the whole object as once, I do not need to insert anything related to validation in the business objects, but everything is done into the validator. Thanks to BindingGroup Iâ€™m able to trigger validation whenever I need (textchanged, lostfocus, etc), and I can react to validation error showing details for each error, and changing visual appearance of the control.
+The final result is that I can validate the whole object as once, I do not need to insert anything related to validation in the business objects, but everything is done into the validator. Thanks to BindingGroup I'm able to trigger validation whenever I need (textchanged, lostfocus, etc), and I can react to validation error showing details for each error, and changing visual appearance of the control.
 
 Alk.
 

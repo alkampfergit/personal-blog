@@ -30,7 +30,7 @@ public void BaseAssertFluentWithSyntaxHelperLtOrGtR()
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-I find it really clearer than the first form. The advantage of a fluent syntax is that you can read the assertion as if were English text. Iâ€™m actually writing an helper assembly to support fluent syntax with msTest, if someone is interested in I can publish in source form. For now Iâ€™m able to support basic syntax with operator precedence and parenthesis
+I find it really clearer than the first form. The advantage of a fluent syntax is that you can read the assertion as if were English text. I'm actually writing an helper assembly to support fluent syntax with msTest, if someone is interested in I can publish in source form. For now I'm able to support basic syntax with operator precedence and parenthesis
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 [TestMethod]
@@ -52,5 +52,3 @@ public void TestBasicParenthesis()
 As you can see the first test pass because the And operator ( expressed by & because you cannot overload &&) has higher precedence over the or operator. The second test pass because you can alter precedence with parenthesis.
 
 Alk.
-
-Technorati Tags: [Unit Testing](http://technorati.com/tags/Unit+Testing),[MsTest](http://technorati.com/tags/MsTest)

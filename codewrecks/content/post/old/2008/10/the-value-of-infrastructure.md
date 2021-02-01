@@ -24,7 +24,7 @@ DataAccess.OnDb("main")
 
 Here it is, the OnDb() method permits me to choose the db I want to issue the query against. Since in many projects of mine I deal with multiple database, I simply abstract the configuration with a IConfigurationRepository interface, I simply build a concrete class that look into application configuration file, and when I write DataAccess.OnDb(â€œDbnameâ€) I mean that I want to issue a query on the database identified by the connection string named DbName. With this approach I can set multiple connection string in app.config and I can choose between them with great easy. After the OnDb I can call CreateQuery method, used to specify the SQL query I want to execute, all the parameters are in the form {parametername} so the query can work with oracle that want :parametername or Sql Server that needs @parametername. Then some methods to populate the parameters, and finally a call to ExecuteNonQuery actually executes the query and returns the result.
 
-With this approach I centralized the execution of all queries, Iâ€™m database vendor independent, it is not possible that I forget to call dispose on anything. This type of infrastructure permits to write simple code, minimizing the chances of errors.
+With this approach I centralized the execution of all queries, I'm database vendor independent, it is not possible that I forget to call dispose on anything. This type of infrastructure permits to write simple code, minimizing the chances of errors.
 
 Alk.
 

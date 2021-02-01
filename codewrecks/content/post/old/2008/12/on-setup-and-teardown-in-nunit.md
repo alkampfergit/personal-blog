@@ -25,7 +25,7 @@ public void TearDown()
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-With these two attributes you can automate the creation and verification of MockRepository, but it is so good? Letâ€™s run a couple of tests.
+With these two attributes you can automate the creation and verification of MockRepository, but it is so good? Let's run a couple of tests.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 [Test]
@@ -114,7 +114,7 @@ TearDown : System.Reflection.TargetInvocationException : Exception has been thro
 
 The problem is that in teardown the code is still trying to verify the repository, but this should be avoided because the test exited with an exception.
 
-I must admit that I write such a test quite often, but recently I gets very annoyed when a test fail and Iâ€™m not immediatly able to understand what is gone wrong. As a rule of thumb you should use the SetUp and TearDown attribute only to setup and clean per text fixture and you should not insert any test logic.
+I must admit that I write such a test quite often, but recently I gets very annoyed when a test fail and I'm not immediatly able to understand what is gone wrong. As a rule of thumb you should use the SetUp and TearDown attribute only to setup and clean per text fixture and you should not insert any test logic.
 
 Alk.
 

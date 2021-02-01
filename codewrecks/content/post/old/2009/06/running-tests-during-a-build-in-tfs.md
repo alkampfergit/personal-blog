@@ -27,7 +27,7 @@ SBUILD : warning : Visual Studio Team System for Software Testers or Visual Stud
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Ok, it seems that I forgot to install Visual Studio Team System for Software Tester in the Tfs test machine (Iâ€™m doing posts using a test virtual machine installed ex novo). Visual studio is needed, because the build is done with msbuild tool, and if visual studio is not present the build machine does not have the correct tasks to use with msbuild. Another interesting stuff is that this error states that build can continue, because the ContinueOnError of â€œTestToolsTaskâ€ is set to true. This is the default setting, when something goes wrong with running tests, the build does not fail, and we have a   **â€œpartially succeededâ€** build.
+Ok, it seems that I forgot to install Visual Studio Team System for Software Tester in the Tfs test machine (I'm doing posts using a test virtual machine installed ex novo). Visual studio is needed, because the build is done with msbuild tool, and if visual studio is not present the build machine does not have the correct tasks to use with msbuild. Another interesting stuff is that this error states that build can continue, because the ContinueOnError of â€œTestToolsTaskâ€ is set to true. This is the default setting, when something goes wrong with running tests, the build does not fail, and we have a   **â€œpartially succeededâ€** build.
 
 Now when you install Visual Studio Team System for Software Testers on the build machine, you will finally see test result.
 
@@ -37,7 +37,7 @@ The interesting stuff here is that if you click on the hilighted link, you can d
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb45.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image45.png)
 
-Once again we can see that setting Tfs to run unit tests during the build is a simple process, and can be simply done with the wizard. In the next post of the series Iâ€™ll deal on more advanced configuration for test run during a build.
+Once again we can see that setting Tfs to run unit tests during the build is a simple process, and can be simply done with the wizard. In the next post of the series I'll deal on more advanced configuration for test run during a build.
 
 alk.
 

@@ -75,9 +75,3 @@ BlockParameters p1 = new BlockParameters("MyName[BoolProp=true;Int64Prop=0xFFFFF
 Now you can use the variable p1 with full intellisense, moreover if you specify a parameter that is not permitted it throws an exception, and you have the ability to pass Int64 value both in normal formal and hexadecimal format.
 
 Alk.
-
-Tags: [LINQ](http://technorati.com/tag/LINQ)
-
-Technorati Tags: [LINQ](http://technorati.com/tags/LINQ)
-
-<!--dotnetkickit-->

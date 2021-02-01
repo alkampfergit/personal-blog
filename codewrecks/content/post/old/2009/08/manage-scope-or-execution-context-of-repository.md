@@ -6,7 +6,7 @@ draft: false
 tags: [Castle,Nhibernate]
 categories: [Castle,Nhibernate]
 ---
-In a project Iâ€™m working with [Guardian](http://www.nablasoft.com/guardian), we are using [NHibernate](https://www.hibernate.org/343.html) behind a Repository Pattern. Despite the question if is good or not good to shield the session behind a Repository,we encountered a classic problem.
+In a project I'm working with [Guardian](http://www.nablasoft.com/guardian), we are using [NHibernate](https://www.hibernate.org/343.html) behind a Repository Pattern. Despite the question if is good or not good to shield the session behind a Repository,we encountered a classic problem.
 
 The software is structured as service, we use [Castle Nhibernate Facility](http://www.castleproject.org/container/facilities/trunk/nhibernate/index.html) and [Wcf Integration Facility](http://www.castleproject.org/container/facilities/trunk/wcf/index.html) plus a simple interceptor that manages the concept of â€œSingle session per service callâ€. Now we are developing some interface in WPF, and this program can dialogate directly with database, without the need to access the db through wcf service. Since we are using MVVM, we makes heavy use of binding, and we like to use lazy load, to keep the logic simple. Instead of returning Dto, a special service class is used to directly return NHibernate persistent object, and if the user want to browse some internal collection of this object we can simply bind the view to entity collection property, and the collection will be fetched when needed with lazy load. Since we have a tree structure this solution is really simple and works really well.
 

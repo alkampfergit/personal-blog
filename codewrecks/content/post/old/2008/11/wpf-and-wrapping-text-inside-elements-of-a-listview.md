@@ -63,7 +63,7 @@ Finally I got what I wanted.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image5.png)
 
-Iâ€™m doing this post because this morning I woke up early, and wrote again the same wrong XAML (errare umanum est â€¦), when I launch the application I though â€œmmm I solved this long time agoâ€¦â€ and begin crawling in my projects, then I preferred to do a post, so the next time I can search in my blog. :D
+I'm doing this post because this morning I woke up early, and wrote again the same wrong XAML (errare umanum est â€¦), when I launch the application I though â€œmmm I solved this long time agoâ€¦â€ and begin crawling in my projects, then I preferred to do a post, so the next time I can search in my blog. :D
 
 Alk.
 

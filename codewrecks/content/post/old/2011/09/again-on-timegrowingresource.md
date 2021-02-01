@@ -26,7 +26,7 @@ sut.Quantity.Should().Be.EqualTo(600 + 60 * 20);
 }
 {{< / highlight >}}
 
-Even if you usually do not use full TDD approach, writing the test first helps me to understand how we want to use the new feature and at the same time states *how this new feature should behave*. With this test Iâ€™m telling this
+Even if you usually do not use full TDD approach, writing the test first helps me to understand how we want to use the new feature and at the same time states *how this new feature should behave*. With this test I'm telling this
 
  **Given** a resource that increase 10 units per second
 

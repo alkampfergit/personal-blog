@@ -9,5 +9,3 @@ categories: [Frameworks]
 I’ve stumbled onto [Autofac](http://code.google.com/p/autofac/), this seems to be a new IOC container, that promise good thing….maybe it’s worth to take a look at.
 
 Alk.
-
-Technorati Tags: [IOC](http://technorati.com/tags/IOC),[Autofac](http://technorati.com/tags/Autofac)

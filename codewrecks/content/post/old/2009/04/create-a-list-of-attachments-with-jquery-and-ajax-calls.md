@@ -6,7 +6,7 @@ draft: false
 tags: [JQuery]
 categories: [JQuery]
 ---
-Iâ€™ve found [this exceptional component](http://valums.com/ajax-upload/) to do file upload with jQuery and ajax call. I have a page where I need to edit a domain entity that have a property of type List&lt;FileAttach&gt;, and I need to permit to the user to easily add and remove attachments. The asp.net webform where this control resides is quite complex, so I really want to avoid a full page postback each time the user want to Add, remove or download an attachment.
+I've found [this exceptional component](http://valums.com/ajax-upload/) to do file upload with jQuery and ajax call. I have a page where I need to edit a domain entity that have a property of type List&lt;FileAttach&gt;, and I need to permit to the user to easily add and remove attachments. The asp.net webform where this control resides is quite complex, so I really want to avoid a full page postback each time the user want to Add, remove or download an attachment.
 
 My technique is quite simple, I created a page called AttachmentAjaxAction.aspx, this pages have two main functions, the first is to render a grid with all the attachments of related entity, the other is to add or remove an attach from the list. It accepts some parameter in post, and it does all the work in the load event.
 
@@ -84,9 +84,9 @@ $(document).ready(function() {
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Thanks to the [ajax-upload](http://valums.com/ajax-upload/) plugin, uploading a file is a breeze, first of all in the onSubmit I call one of my extension named setwait, that greys out the div containing the list of attachment, command is â€˜addâ€™ and when the calls succeded the funcion onComplete clear the waiting gif, parse the result of the page (remember that my AttachAjaxAction.aspx renders the grid after it performed desidered action.), filter to find the div with id â€˜the contentâ€™ and substitute all html into the div that shows the grid. The rewire function is used to wire up some events. The last line calls a funcion named loadAttachmentAjax to load the grid the first time.
+Thanks to the [ajax-upload](http://valums.com/ajax-upload/) plugin, uploading a file is a breeze, first of all in the onSubmit I call one of my extension named setwait, that greys out the div containing the list of attachment, command is â€˜add' and when the calls succeded the funcion onComplete clear the waiting gif, parse the result of the page (remember that my AttachAjaxAction.aspx renders the grid after it performed desidered action.), filter to find the div with id â€˜the content' and substitute all html into the div that shows the grid. The rewire function is used to wire up some events. The last line calls a funcion named loadAttachmentAjax to load the grid the first time.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 function loadAttachmentAjax(cmd, atid) {
    $('#attachmentgrid')

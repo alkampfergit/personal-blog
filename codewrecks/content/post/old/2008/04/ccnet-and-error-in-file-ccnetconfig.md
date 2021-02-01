@@ -11,5 +11,3 @@ Sometimes it happens that editing xml file ccnet.config you can made some mistak
 As a rule of thumb, when I make modification in ccnet.config file I stopped the server, modify the file and then launch ccnet.exe from commandline, in this way I can easily find any error in the config. When the config is ok I start the service again.
 
 Alk.
-
-Technorati Tags: [cc.net](http://technorati.com/tags/cc.net)

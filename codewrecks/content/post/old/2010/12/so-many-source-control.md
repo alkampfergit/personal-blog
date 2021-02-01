@@ -6,7 +6,7 @@ draft: false
 tags: [General]
 categories: [General]
 ---
-I realize this morning that I need to install tortoise Git to have a better Git Experience (Iâ€™m not a Git fan) and after the installation now I have three version of Tortoise
+I realize this morning that I need to install tortoise Git to have a better Git Experience (I'm not a Git fan) and after the installation now I have three version of Tortoise
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image.png)
 

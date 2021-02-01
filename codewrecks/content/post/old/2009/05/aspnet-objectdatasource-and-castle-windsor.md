@@ -6,7 +6,7 @@ draft: false
 tags: [ASPNET,Castle]
 categories: [ASPNET,Castle]
 ---
-Iâ€™m restructuring a portion of a site, it is well structured, and all logic is inside business classes in another assembly, and they are accessed with ObjectDataSources. My problem is that with the new structure I cannot refer to the concrete classes anymore, but I need to resolve them with an IoC container, like Castle Windsor.
+I'm restructuring a portion of a site, it is well structured, and all logic is inside business classes in another assembly, and they are accessed with ObjectDataSources. My problem is that with the new structure I cannot refer to the concrete classes anymore, but I need to resolve them with an IoC container, like Castle Windsor.
 
 The solution to this problem was really simple, I created this simple class
 

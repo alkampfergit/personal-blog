@@ -57,6 +57,6 @@ minfo.Invoke(wbBrowser, new object[] { eh });
 
 The code is similar to the previous one, but it takes a different path, first of all we create the delegate using the EventInfo.EventHandlerType, passing the MethodInfo of the method that will handle the event. This permits me to create the right type of event handler, one that accepts a EventHandler&lt;BrowserFlexiblexxxEventArgs&gt;. Then instead of calling the AddEventHAndler() method of EventInfo I need to grab a reference to the AddMethod of the EventInfo and call it through reflection.
 
-Now everything is ok, and Iâ€™m able to handle an event knowing only its name and using a generic handler function.
+Now everything is ok, and I'm able to handle an event knowing only its name and using a generic handler function.
 
 alk.

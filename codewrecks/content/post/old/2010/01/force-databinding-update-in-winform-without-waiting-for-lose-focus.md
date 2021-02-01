@@ -23,7 +23,7 @@ private void cmbActionStatus_SelectedValueChanged(object sender, EventArgs e)
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-With this code Iâ€™m simply intercepting the change in the texbox and the change in selected value of the combo, then I can simply use the DataBindings array that each control has, to find the Binding object related to the bound property (Text for textbox, and SelectedValue for combo), and simply call WriteValue() method.
+With this code I'm simply intercepting the change in the texbox and the change in selected value of the combo, then I can simply use the DataBindings array that each control has, to find the Binding object related to the bound property (Text for textbox, and SelectedValue for combo), and simply call WriteValue() method.
 
 With this code, all my binding logic is aware of change as soon as the user type some char into the textbox or change the value of a combo.
 

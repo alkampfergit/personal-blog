@@ -12,7 +12,7 @@ I opened an aspx file, then click the â€œDesignerâ€ button, and Visual 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image17.png)
 
-The problem should be related to office, because the only difference from yesterday is that Iâ€™ve uninstalled and reinstalled office. Moreover when the VS hangs, it does not use processor time, and seems that it is waiting form another external componentâ€¦. guess whatâ€¦
+The problem should be related to office, because the only difference from yesterday is that I've uninstalled and reinstalled office. Moreover when the VS hangs, it does not use processor time, and seems that it is waiting form another external componentâ€¦. guess whatâ€¦
 
 I begin investigating to see if some other person has the same problem, and I found [this link](http://forums.asp.net/t/1231941.aspx). In the end odlouhy tells that he see a setup.exe program running whenever he tried to opened the designer, so I fired again VS and task manager, goes to CSS Styling menu and I verified that a setup.exe process immediately opens up. This confirms my suspicions, probably VS is launching that setup.exe program and waits for it to finish doing something.
 

@@ -6,7 +6,7 @@ draft: false
 tags: [Castle,Wcf]
 categories: [Castle]
 ---
-Since Iâ€™m using extensively the [Wcf castle proxy generator](http://www.codewrecks.com/blog/index.php/2009/10/21/wcf-client-proxies-created-by-wcf-and-timeout/) today I needed to add a new feature, I need to be able to specify via code the base address of the various services. I know that my service are usually in [https://www.mysite.com/services/](https://www.mysite.com/services/) but I want to be able to specify via code the base address, especially to target different environment, like production and test.
+Since I'm using extensively the [Wcf castle proxy generator](http://www.codewrecks.com/blog/index.php/2009/10/21/wcf-client-proxies-created-by-wcf-and-timeout/) today I needed to add a new feature, I need to be able to specify via code the base address of the various services. I know that my service are usually in [https://www.mysite.com/services/](https://www.mysite.com/services/) but I want to be able to specify via code the base address, especially to target different environment, like production and test.
 
 To keep everything simple, I created a simple static property on the proxy creator
 
@@ -22,7 +22,7 @@ _hostAddress = value;
 }
 {{< / highlight >}}
 
-This property is usually set by the facility, so Iâ€™m able to configure the base address directly from facility configuration.
+This property is usually set by the facility, so I'm able to configure the base address directly from facility configuration.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 <facility id="wcfproxycreation"
@@ -30,7 +30,7 @@ type="MyProject.WcfProxyCreationFacility, MyProject.BaseServices"
 serviceBaseAddress="https://www.mybaseaddress.com/ServicesPreProd/">
 {{< / highlight >}}
 
-But Iâ€™m also able to change it by code, this permits me to change it at runtime. All the dirty work is made by the WcfProxyActivator, that needs to use a little bit of reflection to create the service.
+But I'm also able to change it by code, this permits me to change it at runtime. All the dirty work is made by the WcfProxyActivator, that needs to use a little bit of reflection to create the service.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 Type channelFactoryBaseType = typeof(ChannelFactory<>);

@@ -43,7 +43,7 @@ This is really trivial, and for this example I’m going to support only chrome 
 
 This is a simple configuration file that contains only the list of the browsers I want to use. Remember to ask Visual Studio to copy this file in output folder when it changes.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 {

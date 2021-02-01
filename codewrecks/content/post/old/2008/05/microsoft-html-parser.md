@@ -35,7 +35,3 @@ First of all, you need to invoke this method in another thread, the same of situ
 It seems to me that this object will cause really a great confusion, maybe it is time to give some managed interface to do the same thing (or maybe I do not know :D :D :D please someone tells me that a simplier way to parse html actually exists :D )
 
 Alk.
-
-Technorati Tags: [mshtml](http://technorati.com/tags/mshtml)
-
-<!--dotnetkickit-->

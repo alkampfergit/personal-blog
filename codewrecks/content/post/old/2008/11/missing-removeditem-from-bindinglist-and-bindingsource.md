@@ -62,7 +62,7 @@ domainBindingSource.DataSource = source;{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-I gets all the element from the repository, then I wrap then in a UIProxy (Iâ€™ll explain this in a future post), then I intercept the addingNew and RemovingItem events simply calling Save and Delete methods from the repository. Finally I set the BindingList as the source of the BindingSource created by the designer.
+I gets all the element from the repository, then I wrap then in a UIProxy (I'll explain this in a future post), then I intercept the addingNew and RemovingItem events simply calling Save and Delete methods from the repository. Finally I set the BindingList as the source of the BindingSource created by the designer.
 
 I wonder why this event is missing from the basic BindingList&lt;T&gt; implementation.
 

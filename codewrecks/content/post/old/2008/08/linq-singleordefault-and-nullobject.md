@@ -62,8 +62,3 @@ And you can see that now the null object Greet() function is called.
 
 alk.
 
-Tags: [Null Object](http://technorati.com/tag/Null%20Object) [Linq](http://technorati.com/tag/Linq) [SingleOrDefault](http://technorati.com/tag/SingleOrDefault)
-
-Technorati Tags: [Null Object](http://technorati.com/tags/Null%20Object),[LiNQ](http://technorati.com/tags/LiNQ),[SingleOrDefault](http://technorati.com/tags/SingleOrDefault)
-
-<!--dotnetkickit-->

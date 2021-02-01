@@ -13,5 +13,3 @@ In the first version I have a user control with a property that accept a IList&l
 The rule is…..always take a look at how big your viewstate is when you store object into it.
 
 alk.
-
-Technorati Tags: [ASP.NET](http://technorati.com/tags/ASP.NET),[ViewState](http://technorati.com/tags/ViewState)

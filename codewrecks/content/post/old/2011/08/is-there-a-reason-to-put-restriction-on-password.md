@@ -6,7 +6,7 @@ draft: false
 tags: [Security]
 categories: [Software Architecture]
 ---
-Iâ€™ve stumbled upon [this funny comic](http://xkcd.com/936/)
+I've stumbled upon [this funny comic](http://xkcd.com/936/)
 
 ![](http://imgs.xkcd.com/comics/password_strength.png)
 
@@ -20,7 +20,7 @@ Having such restrictions is quite annoying, because if you have a mental scheme 
 
 ![](http://islamic-creed.com/New%20wallpaper/Blue%20Sky%20With%20Mountain.jpg)
 
-Iâ€™m not a cryptography expert, but usually password are stored in [HASHED](http://en.wikipedia.org/wiki/Cryptographic_hash_function) format with a [SALT](http://en.wikipedia.org/wiki/Salt_%28cryptography%29) (beware of Italian Railway system, last year I clicked â€œlost my passwordâ€ and they sent me the password in CLEAR format on my e-mail O\_o), this means that the user could choose an arbitrary sequence of [Unicode](http://en.wikipedia.org/wiki/Unicode) chars, because it is simply a stream of bytes that will be hashed producing another stream of bytes of Fixed Length that can be stored in a database without problems, even if the user choose a 100 character password, the hash length is always the same.
+I'm not a cryptography expert, but usually password are stored in [HASHED](http://en.wikipedia.org/wiki/Cryptographic_hash_function) format with a [SALT](http://en.wikipedia.org/wiki/Salt_%28cryptography%29) (beware of Italian Railway system, last year I clicked â€œlost my passwordâ€ and they sent me the password in CLEAR format on my e-mail O\_o), this means that the user could choose an arbitrary sequence of [Unicode](http://en.wikipedia.org/wiki/Unicode) chars, because it is simply a stream of bytes that will be hashed producing another stream of bytes of Fixed Length that can be stored in a database without problems, even if the user choose a 100 character password, the hash length is always the same.
 
 Given this, is there really a reason to impose restrictions on password complexity? In my opinion the only restriction should be in the length, prohibiting really short password to avoid really easy-to-guess password, but every Unicode charachter should be acceptable and there should be no maximum password length, no specific char requirements (es. at least one digit, at least one Uppercase char), if I trust my KeePass program to generate a cryptography random sequence of 32 chars, or if I want to use an [Haiku](http://it.wikipedia.org/wiki/Haiku) I like, why you should limit my freedom in choosing my password?
 

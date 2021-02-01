@@ -6,7 +6,7 @@ draft: false
 tags: [Castle,log4net]
 categories: [Castle]
 ---
-Iâ€™ve applications that can work in two distinct configuration, they are based on WPF and MVVM, where the VM communicates with the Domain / Business Logic through services like *IXxxxService*. All View Models depends from one or more services and thanks to Castle I can decide with configuration file which concrete class to use for each service.
+I've applications that can work in two distinct configuration, they are based on WPF and MVVM, where the VM communicates with the Domain / Business Logic through services like *IXxxxService*. All View Models depends from one or more services and thanks to Castle I can decide with configuration file which concrete class to use for each service.
 
 When the software is used internally, it has direct access to the Database, so I configure castle to use the concrete class of the various services, but when the software is deployed to external users,  who have no access to the intranet, all communication is done through WCF. This is done transparently because I have a facility that resolve the various IXxxxService with WCF Proxy classes.
 

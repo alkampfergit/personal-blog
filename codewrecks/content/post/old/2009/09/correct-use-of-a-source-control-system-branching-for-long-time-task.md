@@ -6,7 +6,7 @@ draft: false
 tags: [Branch,Tfs]
 categories: [Team Foundation Server,Visual Studio]
 ---
-Source control system is probably developerâ€™s best friend, but quite often people use only a small percentage of its functionalities. One of the most missed feature is a correct use of a branch. Letâ€™s make a concrete example. Suppose that developer A needs to implement a big feature, it estimates a week to complete it, and while he is working at this feature he needs also to modify some basic part of the system. The problem is: *until the developer has finished the new feature the code is in not in stable condition, and it can even not compile correctly.*
+Source control system is probably developer's best friend, but quite often people use only a small percentage of its functionalities. One of the most missed feature is a correct use of a branch. Let's make a concrete example. Suppose that developer A needs to implement a big feature, it estimates a week to complete it, and while he is working at this feature he needs also to modify some basic part of the system. The problem is: *until the developer has finished the new feature the code is in not in stable condition, and it can even not compile correctly.*
 
 A standard way to proceed is the following one.
 
@@ -25,19 +25,19 @@ This situation can be solved with a branch in a more efficient way. A branch is 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image18.png)
 
-In this example Iâ€™m branching the entire src folder to a folder called Branches/TestBranch, and Iâ€™m branching from the latest version. After you commit the branch, you will find that a complete copy of the src folder is now present in the branch folder
+In this example I'm branching the entire src folder to a folder called Branches/TestBranch, and I'm branching from the latest version. After you commit the branch, you will find that a complete copy of the src folder is now present in the branch folder
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image19.png)
 
-Ok, you can now open the solution in the branch and begin working to the new feature, even if the code is not compiling, you can check-in with no problem. In my example Iâ€™ve modified a file to make solution not compile, then I look at the pending changes.
+Ok, you can now open the solution in the branch and begin working to the new feature, even if the code is not compiling, you can check-in with no problem. In my example I've modified a file to make solution not compile, then I look at the pending changes.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image20.png)
 
-I can commit with no problem because modified file will be checked-in only to the branch. Other developers can continue to work in the trunk without being disturbed by my modification. Now suppose that another developer modify the same file Iâ€™ve modified in the branch. Periodically you need to verify if someone has modified the trunk to keep your branch in sync. Remember that you need to merge quite often, because in this way you always merge a little bit of code, if you wait for your work to be finished you will have to do a Huge merge, and it can become a pain. Now I simply click on the src folder and choose compare
+I can commit with no problem because modified file will be checked-in only to the branch. Other developers can continue to work in the trunk without being disturbed by my modification. Now suppose that another developer modify the same file I've modified in the branch. Periodically you need to verify if someone has modified the trunk to keep your branch in sync. Remember that you need to merge quite often, because in this way you always merge a little bit of code, if you wait for your work to be finished you will have to do a Huge merge, and it can become a pain. Now I simply click on the src folder and choose compare
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image21.png)
 
-And I decided to compare it with the server version that Iâ€™ve commited to the branch version of the project.
+And I decided to compare it with the server version that I've commited to the branch version of the project.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image22.png)
 
@@ -45,7 +45,7 @@ This shows me all differences between the two folders.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image23.png)
 
-Ok two files are different, now you need to understand what to merge, since I know that Iâ€™ve modified AssertBaseTest it is normal that is different, but the ConstraintBaseTest is surely being modified by someone else. If you need information you can right click the file and view history, you have the possibility to look for history in the source (left side) or the target (right side). In this situation the source is the trunk, while target is my branch. Letâ€™s see the history of the AssertBaseTest.
+Ok two files are different, now you need to understand what to merge, since I know that I've modified AssertBaseTest it is normal that is different, but the ConstraintBaseTest is surely being modified by someone else. If you need information you can right click the file and view history, you have the possibility to look for history in the source (left side) or the target (right side). In this situation the source is the trunk, while target is my branch. Let's see the history of the AssertBaseTest.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image24.png)
 

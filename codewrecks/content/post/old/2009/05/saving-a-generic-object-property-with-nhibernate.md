@@ -118,7 +118,7 @@ public class XmlSerializedObject : ICompositeUserType
 
 It works quite well, but it has some drawbacks. First of all since this property is mutable, the object must implement ICLoneable to create a copy of it. This fact has another implication, when the session flushes, NHibernate calls Equals to verify if actual instance is changed from the time it was loaded, now since the copy used to keep the original value is created with Clone, if the object does not implement equals, it would be always considered different from the copy in the cache, and it will be saved at each flush. To avoid this, all objects used in this property must implement equals.
 
-The rest of the code is quite simple. This userType gives me great flexibility, moreover, since the database have mixed access stored+nhibernate, I used a Xml column in sql server, so Iâ€™m able to do XPath query in my stored.
+The rest of the code is quite simple. This userType gives me great flexibility, moreover, since the database have mixed access stored+nhibernate, I used a Xml column in sql server, so I'm able to do XPath query in my stored.
 
 Alk.
 

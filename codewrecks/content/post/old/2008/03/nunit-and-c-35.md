@@ -25,5 +25,3 @@ I like it, it is small and very readable, but there is one thing I do not like, 
 Now the assertion can be less readable, but the lambda expression are really short, the code does not use reflection to access property value, and we have full intellisense power inside the assertion. If you are interested in the code, you can find in this subversion repository [[http://nablasoft.googlecode.com/svn/trunk/UnitTest/SomeNunitHelpers](http://nablasoft.googlecode.com/svn/trunk/UnitTest/SomeNunitHelpers "http://nablasoft.googlecode.com/svn/trunk/UnitTest/SomeNunitHelpers")]. All the code is in very early stage, but it could be interesting.
 
 Alk.
-
-Technorati Tags: [Nunit](http://technorati.com/tags/Nunit),[Extension Methods](http://technorati.com/tags/Extension%20Methods),[Fluent Assertion](http://technorati.com/tags/Fluent%20Assertion)

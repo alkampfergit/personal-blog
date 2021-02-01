@@ -6,7 +6,7 @@ draft: false
 tags: [Tfs,Tfs Power Tools]
 categories: [Team Foundation Server]
 ---
-Iâ€™m a great fan of TFS power tools, and working as a consultant it is normal for me to use TFS2010 as well TFS2008 servers, because some of my customers still uses TFS2008. In my laptop Iâ€™ve installed VS2008, team explorer and the latest power tools ([August 2011](http://visualstudiogallery.msdn.microsoft.com/c255a1e4-04ba-4f68-8f4e-cd473d6b971f)), then I mapped a workspace from VS2008, but when I right click on mapped folder, no â€œTeam Foundation Serverâ€ menu appears in contextual menu.
+I'm a great fan of TFS power tools, and working as a consultant it is normal for me to use TFS2010 as well TFS2008 servers, because some of my customers still uses TFS2008. In my laptop I've installed VS2008, team explorer and the latest power tools ([August 2011](http://visualstudiogallery.msdn.microsoft.com/c255a1e4-04ba-4f68-8f4e-cd473d6b971f)), then I mapped a workspace from VS2008, but when I right click on mapped folder, no â€œTeam Foundation Serverâ€ menu appears in contextual menu.
 
 All workspaces of TFS2010 have Shell Extension enabled, but the one with TFS2008 was not recognized by the Shell Extension. This happens because Power Tools use the VS2010 Object Model and when you connect to TFS2008 with VS2008, the Team Explorer of VS2010 knows nothing about that workspace. This means that the extension does not recognize the folder as belonging to a workspace, thus no Team Foundation Server menu appears.
 

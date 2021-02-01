@@ -126,7 +126,7 @@ The solution was to recreate with ExpressionTree the real lambda that you cannot
 4. Create a MethodCallExpression that represents a call to this method.
 5. Create the lambdaExpression
 
-Now I create an instance of the Command type with Activator.CreateInstance, and finally thanks to the Compile() method of lambda expression Iâ€™m able to set the expectation :). Finally I invoke the factory method, and set an assertion that verifies that return value of the factory method is the object set as return in the expectation.
+Now I create an instance of the Command type with Activator.CreateInstance, and finally thanks to the Compile() method of lambda expression I'm able to set the expectation :). Finally I invoke the factory method, and set an assertion that verifies that return value of the factory method is the object set as return in the expectation.
 
 I do not know if this method is really good but it works. It has the drawback of using the Compile() method of the LambdaExpression, that is really slow at runtime, and can slow down your unit test suite. In my computer the whole test (with 18 commands to test, thus 18 calls to Compile()) runs in 1.50 secs, but most of the time is spent initializing the test. If I run the whole test fixture class (10 tests) it runs in 1.60 secs, and if I remove this test and run the 9 remaining test execution time is 1.50 approx, and this is fine.
 

@@ -8,7 +8,7 @@ categories: [General]
 ---
 In a site I need to dynamically load a javascript from javascript code, and I used this function.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 function AddScriptTag(src) {
 var node = document.getElementsByTagName("head")[0] || document.body;
 if (node) {var script = document.createElement("script");script.type = "text/javascript";script.src = srcnode.appendChild(script);

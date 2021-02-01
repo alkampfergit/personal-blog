@@ -104,7 +104,7 @@ In [this old post](http://www.codewrecks.com/blog/index.php/2008/05/30/second-iu
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-There are a couple of notes in this code, first of all the type IList&lt;String&gt; is a reference type, so the property IsMutable should return false. Then the IUserType.Equals method should  compare the two lists element by element. Iâ€™m really not interested about the order of the elements in the list, if I have a list (â€œOneâ€ , â€œTwoâ€) in my domain it is equal to (â€œTwoâ€, â€œOneâ€), so I can use a linq *Except* operator to compare the values. If the order of the string really matters, you can do a compare element by element with a for loop. Remember also that the DeepClone method should return a new list identical to the original one, this because we are working with a reference type.
+There are a couple of notes in this code, first of all the type IList&lt;String&gt; is a reference type, so the property IsMutable should return false. Then the IUserType.Equals method should  compare the two lists element by element. I'm really not interested about the order of the elements in the list, if I have a list (â€œOneâ€ , â€œTwoâ€) in my domain it is equal to (â€œTwoâ€, â€œOneâ€), so I can use a linq *Except* operator to compare the values. If the order of the string really matters, you can do a compare element by element with a for loop. Remember also that the DeepClone method should return a new list identical to the original one, this because we are working with a reference type.
 
 alk.
 

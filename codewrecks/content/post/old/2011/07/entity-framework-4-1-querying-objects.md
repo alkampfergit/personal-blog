@@ -49,7 +49,7 @@ Console.WriteLine("Found warrior:" + warrior.Id);
 }
 {{< / highlight >}}
 
-This code is really similar to the previous one, but with the only difference that Iâ€™m not using ToList() method in the query, instead the result is stored into a IQueryable&lt;Warrior&gt; object. Once the query is created I iterate two times the IQueryable object and the result is that *the  **same query is issued two times to the database** *. To understand why you need to understand the difference from a Deferred and Non-Deferred operator in LINQ.
+This code is really similar to the previous one, but with the only difference that I'm not using ToList() method in the query, instead the result is stored into a IQueryable&lt;Warrior&gt; object. Once the query is created I iterate two times the IQueryable object and the result is that *the  **same query is issued two times to the database** *. To understand why you need to understand the difference from a Deferred and Non-Deferred operator in LINQ.
 
 In the above example the *Where* operator, used to specify the criteria for object retrieval is a * **Deferred Operator** *, this means that the operator gets executed only when we iterate through its content. This is why each time you iterate the IQueryable&lt;T&gt; object another query gets issued to the database. To avoid this you can call *ToList()* * **non-deferred operator** *, that executes immediately the LINQ query, returning all objects inside a List&lt;T&gt; object; now objects are in memory and you can iterate the list how many time you want without issuing further queries to the database.
 

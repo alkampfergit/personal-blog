@@ -33,5 +33,3 @@ In the end you will have imported successfully your videos in your pc.
 Have fun
 
 Alk.
-
-Technorati Tags: [Windows 7 RC](http://technorati.com/tags/Windows+7+RC)

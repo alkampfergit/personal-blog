@@ -6,7 +6,7 @@ draft: false
 tags: [Testing,Visual Studio,Web Test]
 categories: [Testing]
 ---
-In a [previous post](http://www.codewrecks.com/blog/index.php/2010/11/02/extending-visual-studio-2010-web-testcustom-loop/) I showed how to create a custom loop that permits you to create a loop in a web performance test to iterate from the char â€˜aâ€™ to char â€˜zâ€™, now I want to be able to create an inner loop that
+In a [previous post](http://www.codewrecks.com/blog/index.php/2010/11/02/extending-visual-studio-2010-web-testcustom-loop/) I showed how to create a custom loop that permits you to create a loop in a web performance test to iterate from the char â€˜a' to char â€˜z', now I want to be able to create an inner loop that
 
 1. for each loop extract all the names of the customers that satisfy the search
 2. for each name ask for detail
@@ -84,7 +84,7 @@ RegexOptions.IgnoreCase);
 
  **Listing 2:** *The initialization function*
 
-Thanks to the e.WebTest.LastReponse.BodyString Iâ€™m able to access the body of the last response and execute the regex against it. The main loop is now straightforward to write
+Thanks to the e.WebTest.LastReponse.BodyString I'm able to access the body of the last response and execute the regex against it. The main loop is now straightforward to write
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public override void CheckCondition(object sender, ConditionalEventArgs e)
@@ -118,12 +118,12 @@ I inserted another loop inside the first one, after the search request, and inse
 
  **Fgirue 2:** *Use the CurrentCustomer context variable in the inner loop request*
 
-Now you can execute the test and verify the outcome, Iâ€™m expecting an external loop to search for all alphabet letters, then for each response an inner loop for each customer, as visible in  **Figure 3**.
+Now you can execute the test and verify the outcome, I'm expecting an external loop to search for all alphabet letters, then for each response an inner loop for each customer, as visible in  **Figure 3**.
 
 [![SNAGHTML5b64ad](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5b64ad_thumb.png "SNAGHTML5b64ad")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML5b64ad.png)
 
  ***Figure 3***: *The result of the test, you can verify that all loops behave correctly.*
 
-Thanks to few lines of code now Iâ€™m able to execute loops based on content of a web response, that can be used to create complex web performance test in Visual Studio 2010.
+Thanks to few lines of code now I'm able to execute loops based on content of a web response, that can be used to create complex web performance test in Visual Studio 2010.
 
 alk.

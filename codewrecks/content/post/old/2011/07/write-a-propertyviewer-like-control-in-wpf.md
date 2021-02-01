@@ -71,7 +71,7 @@ The code is straightforward, the converter accepts an object and return an Obser
 </ListView>
 {{< / highlight >}}
 
-In the above code I used a Listview bound to a property of the viewmodel called SearchParam that is a complex object with many properties, and thanks to the Converter Iâ€™m able to obtain a list of propertyname-propertyvalue that I can show simply with two labels.
+In the above code I used a Listview bound to a property of the viewmodel called SearchParam that is a complex object with many properties, and thanks to the Converter I'm able to obtain a list of propertyname-propertyvalue that I can show simply with two labels.
 
 Clearly if you need a real property editor you can check [Wpf Property Grid control](http://wpfpropertygrid.codeplex.com/), or [WPF property grid](http://wpg.codeplex.com/), both of them are open source.
 

@@ -106,8 +106,3 @@ Thanks to the fluent interface I can use simple syntax to change various part of
 
 alk.
 
-Technorati Tags: [OpenXml](http://technorati.com/tags/OpenXml)
-
-Tags: [OpenXml](http://technorati.com/tag/OpenXml)
-
-<!--dotnetkickit-->

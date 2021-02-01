@@ -6,7 +6,7 @@ draft: false
 tags: [Sql Server]
 categories: [Sql Server]
 ---
-I began using Visual Studio Database Edition today, I did not used it before because Iâ€™m the only one in the team that have this edition, others developers used VS professional, but Iâ€™m the one who cares of database in this project, quite all modifications are done by myself, so I decided to create a DataBase Project.
+I began using Visual Studio Database Edition today, I did not used it before because I'm the only one in the team that have this edition, others developers used VS professional, but I'm the one who cares of database in this project, quite all modifications are done by myself, so I decided to create a DataBase Project.
 
 I was amazed because in few seconds Visual Studio scanned developement database, and creates a database project where each database object is represented by a single.sql Files. I was ready to work in 5 minutes.
 

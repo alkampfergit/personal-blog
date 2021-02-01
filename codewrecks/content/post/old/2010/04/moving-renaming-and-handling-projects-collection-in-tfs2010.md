@@ -6,7 +6,7 @@ draft: false
 tags: [Team Foundation Server]
 categories: [Team Foundation Server]
 ---
-Iâ€™ve installed a little test tfs with full MOSS 2007 integration in a virtual machine, now I want to move and rename a project collection from another test tfs (RC) to this new one (RTM), and recreate the project portal on MOSS for one of the team project.
+I've installed a little test tfs with full MOSS 2007 integration in a virtual machine, now I want to move and rename a project collection from another test tfs (RC) to this new one (RTM), and recreate the project portal on MOSS for one of the team project.
 
 This operation can seem complex, but it is instead really simple. First of all log to the source TFS (it was an RC), uninstall everything related to TFS RC, then install TFS RTM and choose upgrade. *Everything is automatic :)*. Then I simply detatched the DefaultCollection, backup the database of the collection, restore it to the destination server, and reattach Project Collection with a new name, like *RcUpgradedDefaultCollection*.
 

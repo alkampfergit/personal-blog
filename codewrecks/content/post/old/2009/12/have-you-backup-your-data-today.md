@@ -20,7 +20,7 @@ You will find that your backup is not so good, and you lost data or you are not 
 
 Another important consideration is that you cannot rely on others making backup of your data. Data are YOURS and it is YOURS duty to backup them, especially if they are stored in some internet provider that gives you 5 GB of spaces for 50$ years.
 
-For My blog I do regular database backup, I download via ftp the whole site periodically so I do not lose images, and I restore everything on a virtual machine of mine, and verify that the restored blog is ok, this gives me good confidence that if my provider completely lost all my data, Iâ€™m able to restore everything from the latest backup. Data of my blog, for each backup, are stored in multiple places.
+For My blog I do regular database backup, I download via ftp the whole site periodically so I do not lose images, and I restore everything on a virtual machine of mine, and verify that the restored blog is ok, this gives me good confidence that if my provider completely lost all my data, I'm able to restore everything from the latest backup. Data of my blog, for each backup, are stored in multiple places.
 
 1) on my host
 

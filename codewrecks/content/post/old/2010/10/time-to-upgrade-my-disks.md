@@ -12,6 +12,6 @@ This morning I was reading an [old post of Jeff](http://www.codinghorror.com/blo
 
 Basically I believe that probably, before six month I will decide to take an SSD even for my desktop (to keep the OS, moving the three velociraptor to RAID to store projects and other stuff).
 
-I still remember when I was young and a friend of mine bought a 40 MegaBytes HD, and it seems to me some fantastic piece of hardware :), and when I bought my first 1.2 GB disk, people told me that such amount of space would be absolutely not useful (but I have several partition with linux and windows to work with). Now having a 500GB hd is the standard, and not so many years have passed, so in a few years Iâ€™m expecting that an SSD disk will be the standard.
+I still remember when I was young and a friend of mine bought a 40 MegaBytes HD, and it seems to me some fantastic piece of hardware :), and when I bought my first 1.2 GB disk, people told me that such amount of space would be absolutely not useful (but I have several partition with linux and windows to work with). Now having a 500GB hd is the standard, and not so many years have passed, so in a few years I'm expecting that an SSD disk will be the standard.
 
 Alk.

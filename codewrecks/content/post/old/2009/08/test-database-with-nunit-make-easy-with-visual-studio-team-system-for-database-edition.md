@@ -45,7 +45,7 @@ private static void InitDatabaseStructureFromScripts()
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-With this and some attribute and base class magic Iâ€™m able to write NUnit test like this.
+With this and some attribute and base class magic I'm able to write NUnit test like this.
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 [TestFixture, Category("ElaborateKeywordResult")]
@@ -55,7 +55,7 @@ public class TestStoredProceduresForSearchUnitLink : BaseDatabaseTest{{< / highl
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-My UseSqlServer attribute calls the function seen before, and impose transactional test, so Iâ€™m sure that each test does not modify the content of the database. Thanks To Visual Studio Database Edition the process of database sincronization is automatic even in NUnit.
+My UseSqlServer attribute calls the function seen before, and impose transactional test, so I'm sure that each test does not modify the content of the database. Thanks To Visual Studio Database Edition the process of database sincronization is automatic even in NUnit.
 
 Alk.
 

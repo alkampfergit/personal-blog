@@ -45,7 +45,7 @@ Clearly you can specify a constant for DEFAULT, you should choose *value*for the
 
 You can use *currentuser*and *clock* as source of the default value.
 
-Very similar to  **DEFAULT** is the rule  **COPY** , it is used to copy a value from a field to another during transition (Iâ€™ll speak about transition in subsequent posts).
+Very similar to  **DEFAULT** is the rule  **COPY** , it is used to copy a value from a field to another during transition (I'll speak about transition in subsequent posts).
 
 Finally another useful rule is the  **MATCH** , used to specify a pattern to check the validity of the content of the field..
 

@@ -6,7 +6,7 @@ draft: false
 tags: [MVVM,WPF]
 categories: [WPF]
 ---
-Iâ€™ve a WPF project composed of multiple Views, especially targeted to use multi monitor; the user should be able to position each view around multiple monitors. One of the key requirements is that the software should be able to keep track of the position of all the views to automatically position them in the very same position on opening.
+I've a WPF project composed of multiple Views, especially targeted to use multi monitor; the user should be able to position each view around multiple monitors. One of the key requirements is that the software should be able to keep track of the position of all the views to automatically position them in the very same position on opening.
 
 Thanks to MVVM architecture obtaining this result is really simple because we can handle and test the whole logic inside a base viewmodel. I started with the creation of an object that could contain all values to reposition a windows
 

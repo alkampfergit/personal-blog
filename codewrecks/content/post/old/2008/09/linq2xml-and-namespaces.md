@@ -105,8 +105,3 @@ This is cleaner than the previous one, because it declare namespace alias only i
 
 alk.
 
-<!--dotnetkickit-->
-
-Technorati Tags: [Linq2XML](http://technorati.com/tags/Linq2XML),[Xml Namespaces](http://technorati.com/tags/Xml%20Namespaces)
-
-Tags: [Linq2XML](http://technorati.com/tag/Linq2XML) [Xml Namespaces](http://technorati.com/tag/Xml%20Namespaces)

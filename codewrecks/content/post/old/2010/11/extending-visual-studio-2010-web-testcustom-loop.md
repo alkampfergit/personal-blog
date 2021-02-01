@@ -152,7 +152,7 @@ This class is based on the classic for Loop with integer values, and it iterate 
 
 * ***Figure 2***: adding a custom rule for a loop in web test.*
 
-With this sample I want to iterate from the letter â€˜aâ€™ to letter â€˜zâ€™ incrementing each time by 2 chars, so Iâ€™ll have the sequence a,c,e,g,iâ€¦. Then I need to specify the Context parameter property, the property that will store the value of the sequence during each iteration, in Figure 3 you will see all the properties specified for our loop.
+With this sample I want to iterate from the letter â€˜a' to letter â€˜z' incrementing each time by 2 chars, so I'll have the sequence a,c,e,g,iâ€¦. Then I need to specify the Context parameter property, the property that will store the value of the sequence during each iteration, in Figure 3 you will see all the properties specified for our loop.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image1.png)
 
@@ -170,6 +170,6 @@ If you run the test you can verify that it iterates in your sequence doing a ser
 
 * ***Figure 5***: During test execution, for each iteration a different request was issued.*
 
-Thanks to this new feature of Visual Studio 2010 web test and very few lines of code, we are able to create, with little effort, an interesting test that can be used in load testing to simulate a series of search. In a subsequent post Iâ€™ll explain how to add another custom loop to select the detail page of each customer that satisfies the filter.
+Thanks to this new feature of Visual Studio 2010 web test and very few lines of code, we are able to create, with little effort, an interesting test that can be used in load testing to simulate a series of search. In a subsequent post I'll explain how to add another custom loop to select the detail page of each customer that satisfies the filter.
 
 alk.

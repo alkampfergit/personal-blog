@@ -34,7 +34,7 @@ The problem is quite subtle, since the main control of the window (a grid) is sm
 
  ***Figure 4***: *Turning transparency on and moving the windows against a dark background now I see the marker*
 
-The marker was correctly rendered, but since the real dimension of the window is bigger than the visible content, I do not see him where Iâ€™m expecting it to be, and this makes me think that it was not correctly rendered.
+The marker was correctly rendered, but since the real dimension of the window is bigger than the visible content, I do not see him where I'm expecting it to be, and this makes me think that it was not correctly rendered.
 
 Alk.
 

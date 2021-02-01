@@ -31,5 +31,3 @@ When you verified those two security settings, simply restart both the service i
 Now everything should work as expected
 
 Alk.
-
-Technorati Tags: [Lab Management](http://technorati.com/tags/Lab+Management)

@@ -87,6 +87,4 @@ The GetCount() function does a *Select count(\*) from Customers*, and should cac
 
 [Download sample code for the article](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/custompaging.zip "Example")
 
-Technorati tags: [ASP.NET](http://technorati.com/tag/ASP.NET) [GridView](http://technorati.com/tag/GridView)
-
 Alk.

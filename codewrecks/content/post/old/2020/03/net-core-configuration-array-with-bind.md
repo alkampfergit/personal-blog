@@ -43,7 +43,7 @@ public class FirewallRule
 
 {{< / highlight >}}
 
-Ok, nothing complex, now  **I’m expecting to being able to write this json configuration file to configure a single rule.** {{< highlight jscript "linenos=table,linenostart=1" >}}
+Ok, nothing complex, now  **I’m expecting to being able to write this json configuration file to configure a single rule.** {{< highlight js "linenos=table,linenostart=1" >}}
 
 
 {

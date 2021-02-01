@@ -63,7 +63,7 @@ $(txtControl).parents('.hierarchicmaindiv').find('#txtSearch').focus();
 
 This is the function I want to register with the  **add\_shown** method, it simply get the textbox control with the \_parentElement field of the pce object, then it is time of some magical jQuery selector. *Each of my usercontrol instance is rendered inside a div with the class hierarchicmaindiv*, now I want to find the textbox wiht â€œtxtSearchâ€ id, but I want only the one related to the specific popup.
 
-To reach this goal we need to find the containing div with the parents jQuery function, then with find() function we look for a textbox with the â€œtxtSearchâ€ id but that is also contained in the div. With this little trick Iâ€™m sure that you can drop multiple instance of the control in the page without any problem because when the popup opens, I can find the txtSearch textbox inside the popup even when there are multiple txtSearch textbox in the whole page.
+To reach this goal we need to find the containing div with the parents jQuery function, then with find() function we look for a textbox with the â€œtxtSearchâ€ id but that is also contained in the div. With this little trick I'm sure that you can drop multiple instance of the control in the page without any problem because when the popup opens, I can find the txtSearch textbox inside the popup even when there are multiple txtSearch textbox in the whole page.
 
 Now I need to wireup this function to the  **add\_shown** method of the popupcontrolextender, and this can be obtained with this little snippet on the PreRender server events of the UserControl
 

@@ -31,6 +31,4 @@ Welcome into the marvelous world of Expression Tree ;)
 
 Alk.
 
-Technorati Tags: [Expression Tree](http://technorati.com/tags/Expression%20Tree),[C# 3.0](http://technorati.com/tags/C#%203.0)
-
 [Download the Example code](http://www.nablasoft.com/Alkampfer/wp-content/uploads/2008/02/expressiontree1.zip "Example code")

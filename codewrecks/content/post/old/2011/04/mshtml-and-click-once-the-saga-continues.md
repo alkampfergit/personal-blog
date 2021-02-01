@@ -12,7 +12,7 @@ I must admit that I really do not like deploying Click-Once application that use
 
  ***Figure 1***: *The Mshtml.dll is missing from the list of assemblies that can be included in the click-once setup.*
 
-I tried to recreate the reference, but it seems that Iâ€™m not be able anymore to include the MSHTML.dll in the click-once deploy after the project was migrated to VS2010. Iâ€™ve tried to deploy the application without it, but as I suspected, if you try to install in a pc without.NET SDK, the installation fails because the computer misses the mshtml.dll prerequisite.
+I tried to recreate the reference, but it seems that I'm not be able anymore to include the MSHTML.dll in the click-once deploy after the project was migrated to VS2010. I've tried to deploy the application without it, but as I suspected, if you try to install in a pc without.NET SDK, the installation fails because the computer misses the mshtml.dll prerequisite.
 
 The only solution I found to this problem is to edit the visual studio project file directly (it is a simple XML file), just locate the part where the project references the mshtml.dll file.
 

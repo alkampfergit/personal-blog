@@ -86,7 +86,7 @@ return process.ExitCode;
 }
 {{< / highlight >}}
 
-This is a really simple activity, and probably it needs more work to go in production, but it can be used as starting point. It simply uses System.Diagnostic.Process to invoke MsTest.exe with TMockRunner.exe wrapper, and thanks to output redirection Iâ€™m able to read all the output of the run and log it in the build.
+This is a really simple activity, and probably it needs more work to go in production, but it can be used as starting point. It simply uses System.Diagnostic.Process to invoke MsTest.exe with TMockRunner.exe wrapper, and thanks to output redirection I'm able to read all the output of the run and log it in the build.
 
 The important aspect is that I return the MsTest exit code from the custom activity, and this is needed to verify test outcome. This is really important because the caller can assign the return value to a variable and check the real Mstest return value, to understand if the tests succeeded.
 

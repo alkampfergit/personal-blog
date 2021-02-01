@@ -50,7 +50,7 @@ HorizontalAlignment="Right"/>
 </Controls:HtmlComposableFlowDocument>
 {{< / highlight >}}
 
-As you can see Iâ€™m using my control exactly like a FlowDocumentScrollViewer, but Iâ€™ve added the HtmlText using HtmlDocument property. To make html text wraps the image I need to do some work with the flowdocument
+As you can see I'm using my control exactly like a FlowDocumentScrollViewer, but I've added the HtmlText using HtmlDocument property. To make html text wraps the image I need to do some work with the flowdocument
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 private List<Inline> _addedElements = new List<Inline>();
@@ -102,7 +102,7 @@ Lines 19-26 are used to convert the html text into a new flowDocument, then in l
 
 All conversion routine is enclosed in a try..catch, and the fallback action is to show all HTML content.
 
-The result is quite cool. (Iâ€™ve blurred the image because it contains production data)
+The result is quite cool. (I've blurred the image because it contains production data)
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image14.png)
 

@@ -6,7 +6,7 @@ draft: false
 tags: [LINQ]
 categories: [NET framework]
 ---
-Iâ€™ve a simple class that contains Properties metadata and I need to pass instances of that class with WCF. Since it contains Dictionary of objects I decided to implement IXmlSerializable to decide the exact format of serialization and make it usable with WCF. Since I really hate reading XML stream with [XmlReader](http://msdn.microsoft.com/en-us/library/b8a5e1s5%28v=VS.90%29.aspx), I decided to implement the ReadXml method using an XElement, thanks to the fact that I can create an XElement from a XmlReader thanks to the Load method.
+I've a simple class that contains Properties metadata and I need to pass instances of that class with WCF. Since it contains Dictionary of objects I decided to implement IXmlSerializable to decide the exact format of serialization and make it usable with WCF. Since I really hate reading XML stream with [XmlReader](http://msdn.microsoft.com/en-us/library/b8a5e1s5%28v=VS.90%29.aspx), I decided to implement the ReadXml method using an XElement, thanks to the fact that I can create an XElement from a XmlReader thanks to the Load method.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public void ReadXml(System.Xml.XmlReader reader)
@@ -22,6 +22,6 @@ String wholeContent = reader.ReadInnerXml();
 XElement element = XElement.Parse(wholeContent);
 {{< / highlight >}}
 
-Iâ€™ve changed the ReadXml function only a little, I read all the content of the XmlReader in a String thanks to the [ReadInnerXml](http://msdn.microsoft.com/en-us/library/system.xml.xmlreader.readouterxml%28v=VS.90%29.aspx)() method, then I use the standard XElement.Parse() method to create an XElement from a string. Everything works as expected, but I still wonder why the XmlReader that comes from a WCF serialization cannot be read directly in an XElement. o\_O
+I've changed the ReadXml function only a little, I read all the content of the XmlReader in a String thanks to the [ReadInnerXml](http://msdn.microsoft.com/en-us/library/system.xml.xmlreader.readouterxml%28v=VS.90%29.aspx)() method, then I use the standard XElement.Parse() method to create an XElement from a string. Everything works as expected, but I still wonder why the XmlReader that comes from a WCF serialization cannot be read directly in an XElement. o\_O
 
 Gian Maria.

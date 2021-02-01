@@ -78,7 +78,7 @@ You can see that the content of the file contains dangerous html code, but here 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image9.png)
 
-As you can notice the alert(â€˜hackedâ€™) was shown without the &lt;script&gt; tag, moreover all the text between &lt;i&gt; and &lt;/i&gt; gets no removed. SanitizeComment function leaves only the tag &lt;b&gt; and remove all other unwanted tags.
+As you can notice the alert(â€˜hacked') was shown without the &lt;script&gt; tag, moreover all the text between &lt;i&gt; and &lt;/i&gt; gets no removed. SanitizeComment function leaves only the tag &lt;b&gt; and remove all other unwanted tags.
 
 [sample code here.](http://www.codewrecks.com/blog/storage/validatesample.zip)
 

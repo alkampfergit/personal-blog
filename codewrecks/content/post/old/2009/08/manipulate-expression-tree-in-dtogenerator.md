@@ -6,7 +6,7 @@ draft: false
 tags: [LINQ,T4 Generator]
 categories: [LINQ,Software Architecture]
 ---
-Iâ€™m writing a simple [Dto generator](http://www.codewrecks.com/blog/index.php/2009/07/31/dto-generator-and-repository-integration/), and today I found a challenging problem. I supported dto composition like this:
+I'm writing a simple [Dto generator](http://www.codewrecks.com/blog/index.php/2009/07/31/dto-generator-and-repository-integration/), and today I found a challenging problem. I supported dto composition like this:
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image19.png)
 
@@ -24,7 +24,7 @@ syntax.Render(
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Iâ€™ve simplified dto creation, and supported generation of each dto in a different file. The main problem supporting this scenario is *how to write the assembler of the container class*. Iâ€™ve started generating this code.
+I've simplified dto creation, and supported generation of each dto in a different file. The main problem supporting this scenario is *how to write the assembler of the container class*. I've started generating this code.
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 public static Expression<Func<Orders, OrdersTestDto>> ExpressionSelector;
@@ -74,7 +74,7 @@ public static Expression<Func<Orders, OrdersTestDto>> Expression2Selector
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-With such an expression the EF provider is able to do the projection, but now a big problem arise. Iâ€™m working with T4 code generation, when the generator of OrdersTestDto has to generate the Expression, he does not know how the CustomerDto3 was generated, so he cannot generate such an expression. I really want to avoid the need to find a way to make different generators to share data.
+With such an expression the EF provider is able to do the projection, but now a big problem arise. I'm working with T4 code generation, when the generator of OrdersTestDto has to generate the Expression, he does not know how the CustomerDto3 was generated, so he cannot generate such an expression. I really want to avoid the need to find a way to make different generators to share data.
 
 After a brief thinking I realize that I already have the right expression built in CustomerDto3, so the only stuff I need is to compose the two expression, but this can be more complex than you can think. After lot of experiments, I came to this little trick.
 
@@ -105,7 +105,7 @@ This is quite complicated code, and it works by replacing part of the original e
 
 The first step is to regenerate all MemberBinding expression part, with the original parameter (line 34-38) and storing them into a collection (line 39). The operation is the following, I need a MemberExpression that extract from the parameter the object needed to generate the Dto. In the above example accessing the Customers property of Orders to gets a Customer object. Then another MemberExpression to take the corresponding field from the Customers object, and finally a MemberBinding.
 
-Then I need to recreate the BindingExpression (line 41-43) and returning in place of the original one. All the code is based on the [original Tree Visitor by microsoft](class%20DtoExpressionVisitor%20:%20ExpressionVisitor). With this quite complex trick Iâ€™m able to change the expression at runtime, thus keeping the generator simple.
+Then I need to recreate the BindingExpression (line 41-43) and returning in place of the original one. All the code is based on the [original Tree Visitor by microsoft](class%20DtoExpressionVisitor%20:%20ExpressionVisitor). With this quite complex trick I'm able to change the expression at runtime, thus keeping the generator simple.
 
 alk.
 

@@ -6,7 +6,7 @@ draft: false
 tags: [General]
 categories: [General]
 ---
-I used to blog in English, but sometimes I wrote something for my Italian Blog. I got disappointed by the fact that Windows Live Writer permits me to use only English spelling language, because Iâ€™ve installed the english version of Live Tools.
+I used to blog in English, but sometimes I wrote something for my Italian Blog. I got disappointed by the fact that Windows Live Writer permits me to use only English spelling language, because I've installed the english version of Live Tools.
 
 Then I read in the internet that language dictionary files used by WLW are the same of office, so I go to C:\Program Files (x86)\Microsoft Office\Office14\PROOF and look for any file that suggest me of Italian dictionaries.[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image20.png)
 

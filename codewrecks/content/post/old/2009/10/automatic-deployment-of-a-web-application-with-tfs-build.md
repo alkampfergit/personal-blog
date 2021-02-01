@@ -59,7 +59,7 @@ Finally since the database could be changed I need to follow the instruction of 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image10.png)
 
-The site was deployed, and Iâ€™m able to insert a record in the new empty database created by the first build.
+The site was deployed, and I'm able to insert a record in the new empty database created by the first build.
 
 Alk.
 

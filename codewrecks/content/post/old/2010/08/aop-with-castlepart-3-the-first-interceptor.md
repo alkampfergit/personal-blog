@@ -54,7 +54,7 @@ return sb.ToString();
 }
 {{< / highlight >}}
 
-Since parameters of the service could be complex objects Iâ€™m dumping information with an helper function that is able to include every detail of a class.
+Since parameters of the service could be complex objects I'm dumping information with an helper function that is able to include every detail of a class.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 private static string DumpObject(object argument)
@@ -86,7 +86,7 @@ throw;
 
 Before each call to the logger object I first check if the appropriate level of logging is enabled. This technique is useful to avoid loss of performance when log is not enabled; if the debug level is set to warn, the Logger.Debug will not log anything and the CreateInvocationLogString will build the log string for nothing, losing processor time with no benefit. To avoid this loss you can issue a call to Logger.IsDebugEnabled to avoid entirely the call to logging function.
 
-Now suppose that the caller pass an invalid object to method Save() of MusicStoreService, the user will see a message telling that a service error is occurred, but now Iâ€™m able to check the log to understand exactly what is happened. Here is the log of a call that raise an exception.
+Now suppose that the caller pass an invalid object to method Save() of MusicStoreService, the user will see a message telling that a service error is occurred, but now I'm able to check the log to understand exactly what is happened. Here is the log of a call that raise an exception.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 2010-07-24 10:12:28,320 ERROR MusicStore.Aspects.Log.LogAspect - Called: MusicStoreService.Save(<Album xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/MusicStore.Entities">
@@ -114,7 +114,7 @@ at NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity,
 at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
 {{< / highlight >}}
 
-From this log I understand that an invalid object is passed to the service, the property Album.Title is required in the database, but the user passed a property with null value. Since log4net is really flexible Iâ€™m able to dump this information to a file, to a database, to network or with mail. You can as example send a mail each time an exception occurs, so you are immediately notified if something in the service is not going well.
+From this log I understand that an invalid object is passed to the service, the property Album.Title is required in the database, but the user passed a property with null value. Since log4net is really flexible I'm able to dump this information to a file, to a database, to network or with mail. You can as example send a mail each time an exception occurs, so you are immediately notified if something in the service is not going well.
 
 This logger can be improved a little bit because the name of the logger is always MusicStore.Aspects.Log.LogAspect for each wrapped service. This is not really a problem, but I prefer to have the ability to configure logging differently for each service; in real product with a lot of services, this is a key requiremente. The interceptor can be changed in this way:
 

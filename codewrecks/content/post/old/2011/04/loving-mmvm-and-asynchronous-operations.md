@@ -6,7 +6,7 @@ draft: false
 tags: [MVVM]
 categories: [WPF]
 ---
-Iâ€™m using in a project a modified version of MVVM in WPF originally made by my dear friend [Mauro](http://www.topics.it/) (check his project [Radical](http://radical.codeplex.com/), it is really cool). Actually I use a custom DelegateCommand to handle communication between View and the View Model. Here is a sample snippet on how I initialize a command in View Model.
+I'm using in a project a modified version of MVVM in WPF originally made by my dear friend [Mauro](http://www.topics.it/) (check his project [Radical](http://radical.codeplex.com/), it is really cool). Actually I use a custom DelegateCommand to handle communication between View and the View Model. Here is a sample snippet on how I initialize a command in View Model.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 SaveCurrent = DelegateCommand.Create()
@@ -43,6 +43,6 @@ UiThread.RunSync(() => PrepareNewPageOfData(result));
 }
 {{< / highlight >}}
 
-This is done thanks to UiThread helper function. In future post Iâ€™ll show you some implementation Details.
+This is done thanks to UiThread helper function. In future post I'll show you some implementation Details.
 
 alk.

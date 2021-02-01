@@ -52,7 +52,7 @@ This sounds absurd to me, but the real solution is another, putting  runAllMana
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-You can check some other details [here](http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx) in ScottGuâ€™s blog.
+You can check some other details [here](http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx) in ScottGu's blog.
 
 Alk.
 

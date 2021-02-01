@@ -10,7 +10,7 @@ I like the [AjaxControlToolkit](http://www.asp.net/ajax/ajaxcontroltoolkit/sampl
 
 ![](http://t0.gstatic.com/images?q=tbn:ANd9GcQibTJAPeCu_zm5Joz_TOvY7ahk9uPQMqeTVC06u63QXTNJ5UsZ)
 
-The page was cool, thanks to updatepanel and partial rendering the user does not see page to flicker and thanks to [modalPopupExtender](http://www.codeproject.com/KB/ajax/ModalPopupExtender.aspx) all the logic is reduced to very few lines of code. This experience makes programmers loving those kind of controls, until the number of users grow and people start to complain about slow performance. Letâ€™s examine only the bandwidth consumed by this page and do not check other possible performance issue.
+The page was cool, thanks to updatepanel and partial rendering the user does not see page to flicker and thanks to [modalPopupExtender](http://www.codeproject.com/KB/ajax/ModalPopupExtender.aspx) all the logic is reduced to very few lines of code. This experience makes programmers loving those kind of controls, until the number of users grow and people start to complain about slow performance. Let's examine only the bandwidth consumed by this page and do not check other possible performance issue.
 
 |  **Request** |  **Bytes uploaded** |  **Bytes downloaded** |
 | --- | --- | --- |

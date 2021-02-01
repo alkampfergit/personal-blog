@@ -12,7 +12,7 @@ I’m a strong fan of Azure DevOps templates for pipelines because it is a reall
 
  **Today my dear friend** [**Giulio Vian**](http://blog.casavian.eu/) **told me that he was investigating the use of a cool feature of.NET core 3.0, called** [**Local Tools**](https://andrewlock.net/new-in-net-core-3-local-tools/) **.** Basically with Local Tools you are able to create a special file called dotnet-tools.json that contains all the tools you need for your project. Since I’m an heavy fan of GitVersion, it seems to me standard to include in every project such file with the actual version of GitVersion used in my project. Here is an example of the file.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 {

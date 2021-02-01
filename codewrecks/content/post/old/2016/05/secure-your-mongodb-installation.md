@@ -12,7 +12,7 @@ The root of the problem is probably a bad default for MongoDb that actually star
 
 While this can be tolerable for MongoDb instances that lives in intranets, it is always not a good strategy to leave MongoDb completely unauthenticated.  It turns out that  **enabling a really basic authentication is really simple even in the community edition.** Once you started your MongoDb instance without authentication just connect with your tool of choice (ex robomongo) and  **create a user admin in the admin database**.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 use admin

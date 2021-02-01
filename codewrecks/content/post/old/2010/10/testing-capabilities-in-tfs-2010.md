@@ -6,9 +6,9 @@ draft: false
 tags: [Microsoft Test Manager,Testing]
 categories: [Testing]
 ---
-In TFS 2010 testing capabilities are really exceptional, and Iâ€™m not referring to testing tools that actually permits to record and replay web pages, CUIT etc, but Iâ€™m referring to the possibility to do a serious management of test plans for your projects.
+In TFS 2010 testing capabilities are really exceptional, and I'm not referring to testing tools that actually permits to record and replay web pages, CUIT etc, but I'm referring to the possibility to do a serious management of test plans for your projects.
 
-Iâ€™ve seen in the past team doing test plan management with Excel, and if you are managing your test plan with Excelâ€¦you have a problem. The reason is that Excel is not a tool designed to manage Test Cases, you can clearly use it to write down your test, but it is difficult to integrate it into your ALM process and really difficult to read. The main problem is that Test plans in excel are completely dethatched from all other artifacts of your process, even if you manage to put all of them into team project SharePoint site. Moreover Excel does not helps you to run test or does not help testers to write down the results, usually resulting in Excel Test Spreasheet that are not aligned with the real testing run results.
+I've seen in the past team doing test plan management with Excel, and if you are managing your test plan with Excelâ€¦you have a problem. The reason is that Excel is not a tool designed to manage Test Cases, you can clearly use it to write down your test, but it is difficult to integrate it into your ALM process and really difficult to read. The main problem is that Test plans in excel are completely dethatched from all other artifacts of your process, even if you manage to put all of them into team project SharePoint site. Moreover Excel does not helps you to run test or does not help testers to write down the results, usually resulting in Excel Test Spreasheet that are not aligned with the real testing run results.
 
 Thanks to MTM you can leverage the power of TFS for managing testing suites; as an example suppose you have a user story about User Management of your application.
 
@@ -60,7 +60,7 @@ If you are the Test Plan Manager, you should also allocate resources to the test
 
 [![SNAGHTML6c144c](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6c144c_thumb.png "SNAGHTML6c144c")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6c144c.png)
 
-* ***Figure 5***: How to assign a resource to a test case, in this example Iâ€™m assigning the Administrator to the â€œEsempio test case chiusoâ€ test case*
+* ***Figure 5***: How to assign a resource to a test case, in this example I'm assigning the Administrator to the â€œEsempio test case chiusoâ€ test case*
 
 Clearly you can use your GANTT chart to plan the execution.
 

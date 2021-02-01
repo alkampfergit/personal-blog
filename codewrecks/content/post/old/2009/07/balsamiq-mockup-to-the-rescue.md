@@ -20,7 +20,7 @@ Then I simply group the two object together and I have a good approximation of w
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image22.png)
 
-Now Iâ€™m able to redraw the part of the interface I need to redesign, first of all I show how the interface will appear when it is first opened, when all the collapsible panels are collapsed.
+Now I'm able to redraw the part of the interface I need to redesign, first of all I show how the interface will appear when it is first opened, when all the collapsible panels are collapsed.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image23.png)
 

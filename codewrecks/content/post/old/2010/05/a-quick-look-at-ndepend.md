@@ -18,7 +18,7 @@ Another killer feature of NDepend is the ability to do query against code. In CQ
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image1.png)
 
-In this picture Iâ€™ve highlighted the CodeQuality/Type Metrics queries and Iâ€™ve selected Types with too many field. This opens the following query
+In this picture I've highlighted the CodeQuality/Type Metrics queries and I've selected Types with too many field. This opens the following query
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 WARN IF Count > 0 IN SELECT TOP 10 TYPES
@@ -43,7 +43,7 @@ Code in upper right part is code that is very abstract, very extensible but no c
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image4.png)
 
-In project Iâ€™ve analyzed I have a couple of assemblies in the zone of pain (I do not worry about them, because they are the Entities of my project and I know that they are there :). All the other projects are going quite well because Iâ€™ve used DI and IOC extensively, so I have loose coupling between types.
+In project I've analyzed I have a couple of assemblies in the zone of pain (I do not worry about them, because they are the Entities of my project and I know that they are there :). All the other projects are going quite well because I've used DI and IOC extensively, so I have loose coupling between types.
 
 After this graph NDepends lists for each one of the assembly the list of dependencies, both Depends on and Is referenced by. Then you can find the resul of all CQL queries that contains warning of code.
 

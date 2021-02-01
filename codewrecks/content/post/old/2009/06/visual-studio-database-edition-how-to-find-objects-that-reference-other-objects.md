@@ -14,7 +14,7 @@ This command will open a menu that shows all objects that references this specif
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb31.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image31.png)
 
-In this specific situation I removed some old features from the code, and I want also to remove all objects in database that are related to those features. Since I know that these feature are related to three tables, I can simply check all dependencies of those tables, that and verify that Iâ€™m not breaking anything. When Iâ€™m sure I can remove tables files from the solution.
+In this specific situation I removed some old features from the code, and I want also to remove all objects in database that are related to those features. Since I know that these feature are related to three tables, I can simply check all dependencies of those tables, that and verify that I'm not breaking anything. When I'm sure I can remove tables files from the solution.
 
 After table files are deleted, I return in the Schema view. Now I can open the â€œOrphaned Objectsâ€ to view all object that are orphan.
 

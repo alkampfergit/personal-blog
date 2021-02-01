@@ -14,7 +14,7 @@ I have a function that does these steps
 
 Now I want only to test that the class calls the algorithm to transform P in P1. All other functions of that sut are already verified, I first begun with a skeleton test I used previously to test the sut, this skeleton makes heavy use of Mocks and stubs objects to FULLY simulate the database.
 
-In the end I have a test that works, but it was too complex, mainly because it is full of stub expectation. Moreover it is Fragile, because if Iâ€™ll change the way how this test interact with the DB, Iâ€™ll need also to change expectations. So I changed the test in this way.
+In the end I have a test that works, but it was too complex, mainly because it is full of stub expectation. Moreover it is Fragile, because if I'll change the way how this test interact with the DB, I'll need also to change expectations. So I changed the test in this way.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 [Test]
@@ -46,5 +46,3 @@ This test is less than half length respect to the first version that fully mimic
 A still better solution could be a refactoring of the original class, making it more testable, but I think that this is enough.
 
 Alk.
-
-Technorati Tags: [Unit Testing](http://technorati.com/tags/Unit+Testing)

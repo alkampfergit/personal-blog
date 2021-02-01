@@ -6,7 +6,7 @@ draft: false
 tags: [Security]
 categories: [NET framework]
 ---
-Today I was working a little bit on [Dexter](http://dexterblogengine.codeplex.com/), and Iâ€™m trying to update the security system, the actual login system is based on a membership provider quite old, but Iâ€™d like to update it to be [CryptoAgile](http://msdn.microsoft.com/en-us/magazine/ee321570.aspx). First of all here is the class UserDto (the name Dto should be changed because it is really a domain class but we are in the middle of a reorganization ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/wlEmoticonsmile.png) so do not mind the name ) that has some methods to manage authentication.
+Today I was working a little bit on [Dexter](http://dexterblogengine.codeplex.com/), and I'm trying to update the security system, the actual login system is based on a membership provider quite old, but I'd like to update it to be [CryptoAgile](http://msdn.microsoft.com/en-us/magazine/ee321570.aspx). First of all here is the class UserDto (the name Dto should be changed because it is really a domain class but we are in the middle of a reorganization ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/wlEmoticonsmile.png) so do not mind the name ) that has some methods to manage authentication.
 
 To be flexible the class should support storing of the password in clear form (strongly discouraged) and in hashed form with salt (the default one). Here is the code of the ChangePassword function
 

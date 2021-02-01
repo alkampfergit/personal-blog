@@ -8,7 +8,7 @@ categories: [NoSql]
 ---
 If you need to do an *aggregation in MongoDb on a DateTime property and you want to aggregate only by Date part*, you can use a simple trick and use a filter to compose the date part before the grouping. Here is the code
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 db.mycollection.aggregate(

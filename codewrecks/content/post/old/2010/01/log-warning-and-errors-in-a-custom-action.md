@@ -14,7 +14,7 @@ You can do the same with errors.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image23.png)
 
-These two methods permit you to log warnings and errors during a custom build action execution, letâ€™s see how they affect the output. First of all you can verify that when you log an error the build partially succeeds
+These two methods permit you to log warnings and errors during a custom build action execution, let's see how they affect the output. First of all you can verify that when you log an error the build partially succeeds
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image24.png)
 
@@ -26,7 +26,7 @@ And they are also reported in the â€œView Summaryâ€ of the build
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image26.png)
 
-Next time Iâ€™ll explain you how to wrap a msbuild Custom Task in a custom action.
+Next time I'll explain you how to wrap a msbuild Custom Task in a custom action.
 
 Alk.
 

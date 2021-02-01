@@ -6,7 +6,7 @@ draft: false
 tags: [Software Architecture,Team Foundation Server]
 categories: [Software Architecture,Team Foundation Server]
 ---
-When you begin to use Team Foundation Server, you will create different builds for all of your companyâ€™s projects. Since building complex products can be resource intensive, it is likely that your Team Foundation Server machine starts to perform slowly. This is a typical issue of Continuous integration servers, since they compile projects at each check-in you will end with a lot of builds and a lot of work to do.
+When you begin to use Team Foundation Server, you will create different builds for all of your company's projects. Since building complex products can be resource intensive, it is likely that your Team Foundation Server machine starts to perform slowly. This is a typical issue of Continuous integration servers, since they compile projects at each check-in you will end with a lot of builds and a lot of work to do.
 
 Team Foundation Server addresses this issue separating *[build machines](http://msdn.microsoft.com/en-us/library/ms181710.aspx)* from *Team Foundation Server*. If you find that the build machine is becoming slow, you can simply use another machine in the network to execute some of the builds. In real environment you can even avoid to install build engine in the Tfs machine, delegating builds to other servers. First of all go into another machine, fire the installer of Team Foundation Server, and choose to install a â€œTeam Foundation Buildâ€.
 
@@ -24,7 +24,7 @@ Now you can add additional Build Agent, and you can choose the new machine name,
 
 Now you can use this new machine to run Builds simply specifying this agent when you create a Build Definition, or you can use it when you manually queue new build. It is really important that the user credentials used to run the Build Service in the new Build machine has the right to access the Team Foundation Server Machine as stated before.
 
-If you had already installed the team Build engine with a wrong user donâ€™t panic, you can still manually change build machine settings to correctly access TFS. Go to Service control panel and change the credential used by the â€œVisual Studio Team Foundation Buildâ€ service to use an user that has sufficient credential for TFS. Now restart the service.
+If you had already installed the team Build engine with a wrong user don't panic, you can still manually change build machine settings to correctly access TFS. Go to Service control panel and change the credential used by the â€œVisual Studio Team Foundation Buildâ€ service to use an user that has sufficient credential for TFS. Now restart the service.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb38.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image38.png)
 

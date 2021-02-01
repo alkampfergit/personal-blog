@@ -60,7 +60,7 @@ First of all I have some base code that keeps track of creating the [Rhino repos
 4. Exercise the sut (call start method)
 5. wait for a certain number of seconds for the event to be signaled
 
-In this way Iâ€™m sure that the verification phase is run only after the action completed the execution.
+In this way I'm sure that the verification phase is run only after the action completed the execution.
 
 This is one of the most common problem when testing asynchronous components, you need to be sure to begin the verification phase only when all the asynchronous operations of the sut are completed. Standard unit testing follows the [Four Phase Test pattern](http://xunitpatterns.com/Four%20Phase%20Test.html).
 

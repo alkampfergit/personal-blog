@@ -14,7 +14,7 @@ The utility function is the following one
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image17.png)
 
-Really simple isnâ€™t it? :). Now you need to insert this custom action inside a standard tfs build definition file, to make this happens I need to remind you that you need to include the xaml build definition file in a project included in a solution where your custom action is defined, if not you cannot use the designer and you need to manually edit xaml file.
+Really simple isn't it? :). Now you need to insert this custom action inside a standard tfs build definition file, to make this happens I need to remind you that you need to include the xaml build definition file in a project included in a solution where your custom action is defined, if not you cannot use the designer and you need to manually edit xaml file.
 
 To easy this process I branched directly the build definition file, with this simple trick, I edit the definition file in my test project, do a check-in and when I want to update the real build definition I do a simple merge. Then I insert my action in the build process. So I created a new build definition from the default template, configure it, then branched into my test project.
 

@@ -10,7 +10,7 @@ categories: [Entity Framework,Software Architecture]
 
 Since building a Dto is a mechanical process it is better to use a code generation tool to generate them with little effort. If you work with visual studio 2008 the best choice in Code Generator is T4, because it is included in Visual Studio and is really good. I do not want to cover T4 syntax, because you can find tons of information following [this post links](http://www.hanselman.com/blog/T4TextTemplateTransformationToolkitCodeGenerationBestKeptVisualStudioSecret.aspx).
 
-You can [download here](http://www.codewrecks.com/blog/Storage/DtoFactory.zip) a little project that contains a simple DtoFActory.tt file used to generate basic Dto out from a domain object. It is written with little effort, and it can contain errors, but Iâ€™m quite satisfied by the general result. To use it simply add the DtoFactory.tt file to your solution, then you can use in other tt file. In the [example](http://www.codewrecks.com/blog/Storage/DtoFactory.zip) I simply generate a EntityFramework edmx against northwind database, then I create a CustomerDto.tt file with this content.
+You can [download here](http://www.codewrecks.com/blog/Storage/DtoFactory.zip) a little project that contains a simple DtoFActory.tt file used to generate basic Dto out from a domain object. It is written with little effort, and it can contain errors, but I'm quite satisfied by the general result. To use it simply add the DtoFactory.tt file to your solution, then you can use in other tt file. In the [example](http://www.codewrecks.com/blog/Storage/DtoFactory.zip) I simply generate a EntityFramework edmx against northwind database, then I create a CustomerDto.tt file with this content.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <#@ template language="C#" hostspecific="True" debug="True" #>
@@ -63,7 +63,7 @@ static CustomersDtoAssembler()
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-As you can see my generator generates an * **Expression&lt;Func&lt;Customers, CustomersDto&gt;&gt;,** *and simply initialize it in static constructor with a simple lambda expression. If you are wondering why I need such a strange object letâ€™s see how I use it
+As you can see my generator generates an * **Expression&lt;Func&lt;Customers, CustomersDto&gt;&gt;,** *and simply initialize it in static constructor with a simple lambda expression. If you are wondering why I need such a strange object let's see how I use it
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 using (NorthwindEntities context = new NorthwindEntities())

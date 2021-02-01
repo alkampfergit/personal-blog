@@ -6,7 +6,7 @@ draft: false
 tags: [General]
 categories: [General]
 ---
-This morning I need to install a Windows Server on a VHD and boot from VHD, I do not remember all the steps needed to achieve this, so I know that Iâ€™ve previously bookmarked a page from Scott Hanselmanâ€™s blog that have all links and all information to solve my problem
+This morning I need to install a Windows Server on a VHD and boot from VHD, I do not remember all the steps needed to achieve this, so I know that I've previously bookmarked a page from Scott Hanselman's blog that have all links and all information to solve my problem
 
 I remember that I bookmarked it, probably in delicious, but I have chrome open, and I have no addin that permits me to search delicious, so it is really simpler writing â€œ*Scott hanselman boot from vhd*â€ in the address bar, and the first link is the one I want.
 

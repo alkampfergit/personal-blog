@@ -6,7 +6,7 @@ draft: false
 tags: [TFS Build]
 categories: [Team Foundation Server]
 ---
-Now that Iâ€™m able to deploy to a remote machine a web application thanks to a customized build workflow it is time to move to a real scenario. Iâ€™ve blogged about two distinct tasks
+Now that I'm able to deploy to a remote machine a web application thanks to a customized build workflow it is time to move to a real scenario. I've blogged about two distinct tasks
 
 1. [executing arbitrary code with a tfs build](http://www.codewrecks.com/blog/index.php/2010/07/07/use-tfs-2010-build-to-execute-arbitrary-task/)
 2. [deploy an application to a remote server with a custom tfs workflow](http://www.codewrecks.com/blog/index.php/2010/07/10/deploy-remotely-with-tfs-build/)
@@ -111,7 +111,7 @@ Logger.Debug("Called tfsIdentityXml:\n{0}", tfsIdentityXml);
 }
 {{< / highlight >}}
 
-Since Iâ€™m using castle log4net integration and castle wcf integration Iâ€™m able to declare dependency to a ILogger interface to simply log every information that the server receives. Then I create a simple web application and insert the BuildMachine.Svc file with this content
+Since I'm using castle log4net integration and castle wcf integration I'm able to declare dependency to a ILogger interface to simply log every information that the server receives. Then I create a simple web application and insert the BuildMachine.Svc file with this content
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 <%   1:  @ServiceHost Service="Bisubscribe.Test.Services.BuildMachine"
@@ -119,7 +119,7 @@ Factory="Castle.Facilities.WcfIntegration.DefaultServiceHostFactory, Castle.Faci
 %>
 {{< / highlight >}}
 
-Iâ€™m using the Castle WcfIntegration facility so I need to register the class in the castle config file, and finally, the only really critical step, is creating the right configuration for WCF to expose the service with SOAP 1.2 as described in [this article](http://mskold.blogspot.com/2010/02/upgrading-tfs-event-subscriptions-to.html). Now I changed the build quality of one of the build and check log file to verify if service is called. Here is the result.
+I'm using the Castle WcfIntegration facility so I need to register the class in the castle config file, and finally, the only really critical step, is creating the right configuration for WCF to expose the service with SOAP 1.2 as described in [this article](http://mskold.blogspot.com/2010/02/upgrading-tfs-event-subscriptions-to.html). Now I changed the build quality of one of the build and check log file to verify if service is called. Here is the result.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 2010-08-07 11:14:39,666 [7] DEBUG Bisubscribe.Test.Services.BuildMachine [(null)] - Called eventXML:

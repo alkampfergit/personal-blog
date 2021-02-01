@@ -59,6 +59,3 @@ Now the error seems gone away, but I wonder
 
 alk.
 
-Technorati Tags: [Sql Server](http://technorati.com/tags/Sql%20Server),[named pipes](http://technorati.com/tags/named%20pipes)
-
-Tags: [Sql Server](http://technorati.com/tag/Sql%20Server) [named pipes](http://technorati.com/tag/named%20pipes)

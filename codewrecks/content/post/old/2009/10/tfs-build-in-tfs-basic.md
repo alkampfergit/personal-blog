@@ -28,7 +28,7 @@ Then you are asked to specify the number of build agent, this setting is importa
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image24.png)
 
-In this example I created a TfsBuildAgent account, Iâ€™ve installed tfs outside a domain, so tfsBuildAgent is a simple windows user. If you press â€œTestâ€ the wizard verifies that everything is ok. Now you can press â€œconfigureâ€ and your build server is configured, simple isnâ€™t it?
+In this example I created a TfsBuildAgent account, I've installed tfs outside a domain, so tfsBuildAgent is a simple windows user. If you press â€œTestâ€ the wizard verifies that everything is ok. Now you can press â€œconfigureâ€ and your build server is configured, simple isn't it?
 
 alk.
 

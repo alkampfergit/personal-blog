@@ -12,7 +12,7 @@ I use [AutoMockingContainer](http://www.codewrecks.com/blog/index.php/2010/10/18
 
  ***Figure 1***: *ViewModel under test*
 
-The only aspect Iâ€™m interested in is the SelectedLinkResult public property, that have a lot of logic in the set part, this is needed to react on user selection change in the UI. Now when I use AutoMockingContainer to automock this view model I have a big problem, I need to setup a lot of expectations to make the setter logic to work, this because when I try to resolve with automock, my AutoMockingContainer try to resolve each dependency, even properties. To avoid this I need to be able to tell my container
+The only aspect I'm interested in is the SelectedLinkResult public property, that have a lot of logic in the set part, this is needed to react on user selection change in the UI. Now when I use AutoMockingContainer to automock this view model I have a big problem, I need to setup a lot of expectations to make the setter logic to work, this because when I try to resolve with automock, my AutoMockingContainer try to resolve each dependency, even properties. To avoid this I need to be able to tell my container
 
 1. Avoid to resolve any property
 2. Avoid to resolve dependencies with specific name
@@ -30,7 +30,7 @@ return !DependencyToIgnore.Contains(dependencyKey);
 }
 {{< / highlight >}}
 
-Iâ€™ve added a List of property name to ignore, a property that specify if I want properties to be resolved, and finally a simple function that tells if a specific property needs to be resolved. Thanks to Castle, I can use these properties from the subresolver used by the container.
+I've added a List of property name to ignore, a property that specify if I want properties to be resolved, and finally a simple function that tells if a specific property needs to be resolved. Thanks to Castle, I can use these properties from the subresolver used by the container.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public bool CanResolve(

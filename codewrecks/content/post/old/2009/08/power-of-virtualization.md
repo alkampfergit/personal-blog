@@ -10,13 +10,13 @@ I really do not remember when was the first time I heard of [VmWare](http://info
 
 I was totally AMAZED!!!
 
-Now virtualization has really reach unlimited possibility, Iâ€™ve changed my motherboard yesterday, and I need to remove my RAID system because of hardware failure (I need to check disk with SATA), but I want to be sure to had a full backup of the old system before actually destroy everything. I just searched a way to create a complete image of my system, but since it run on an Adaptech raid system, DOS software completely failed to recognize the drive.
+Now virtualization has really reach unlimited possibility, I've changed my motherboard yesterday, and I need to remove my RAID system because of hardware failure (I need to check disk with SATA), but I want to be sure to had a full backup of the old system before actually destroy everything. I just searched a way to create a complete image of my system, but since it run on an Adaptech raid system, DOS software completely failed to recognize the drive.
 
-Then I heard about vmware [converter](http://www.vmware.com/products/converter/). It is AMAZING, I installed it, told him to create a virtual machine of my  **running system** , wait for a couple of hours, and it created a virtual machine on my external USB disk. Then I install vmware server on my new Windows 7 system, assigned 4 GB of RAM to the virtual machine and Iâ€™m able to fire my old system from a virtual machine.
+Then I heard about vmware [converter](http://www.vmware.com/products/converter/). It is AMAZING, I installed it, told him to create a virtual machine of my  **running system** , wait for a couple of hours, and it created a virtual machine on my external USB disk. Then I install vmware server on my new Windows 7 system, assigned 4 GB of RAM to the virtual machine and I'm able to fire my old system from a virtual machine.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb31.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image31.png)
 
-This is was amazing, moreover I begin to install visual studio and all other tools on my new system, but Iâ€™m able to work on my old system in the meanwhile. Tanks to 10.000 RPM disks and 4gb of phisical memory assigned to it,  the virtual system runs really fine.
+This is was amazing, moreover I begin to install visual studio and all other tools on my new system, but I'm able to work on my old system in the meanwhile. Tanks to 10.000 RPM disks and 4gb of phisical memory assigned to it,  the virtual system runs really fine.
 
 alk.
 

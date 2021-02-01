@@ -10,7 +10,7 @@ One of the best aspect of TFS is that it is customizable: we can interact with A
 
 ![](http://www.gorpal.com/Resources/Images/BridgingGap.jpg)
 
-This capability is fundamental, because permit to adapt TFS to own process, the mantra is â€œ* **do not adapt your process to the tool, but adapt the tool to your process** *â€. The purpose of an ALM tool is to support your own process, not to force the team to shape itself just to conform to the tool. The ability of a tool to adapt itself to the scenario is the key factor in choosing between various alternative. If you need a wrench you can buy the left one, that works only for a couple of bolt dimension, or you can buy the right one that is adaptable to various boltâ€™s dimension.
+This capability is fundamental, because permit to adapt TFS to own process, the mantra is â€œ* **do not adapt your process to the tool, but adapt the tool to your process** *â€. The purpose of an ALM tool is to support your own process, not to force the team to shape itself just to conform to the tool. The ability of a tool to adapt itself to the scenario is the key factor in choosing between various alternative. If you need a wrench you can buy the left one, that works only for a couple of bolt dimension, or you can buy the right one that is adaptable to various bolt's dimension.
 
 ![](http://withfriendship.com/images/d/19200/Wrench-image.jpg)![](http://wiki.teamfortress.com/w/images/thumb/0/0e/Wrench_IMG.png/250px-Wrench_IMG.png)
 
@@ -38,7 +38,7 @@ If you look in download directory, you will see a bunch of XML files that you ca
 
  **Figura 3:** *Aprire il PTE per poter editare il processo scaricato nel passo 2.*
 
-You need to navigate to the folder where you downloaded the process template, open the *processTemplate.xml* file and you can start editing with a GUI tool. Iâ€™ll explain in future post how you use this editor to customize the various part of the template, stay tuned.
+You need to navigate to the folder where you downloaded the process template, open the *processTemplate.xml* file and you can start editing with a GUI tool. I'll explain in future post how you use this editor to customize the various part of the template, stay tuned.
 
 Alk.
 

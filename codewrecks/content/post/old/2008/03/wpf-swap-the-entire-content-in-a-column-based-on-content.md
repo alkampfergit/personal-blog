@@ -52,5 +52,3 @@ Since we want to change the content of the GridViewColumn we simply declare the 
 You can now completely change the template based on object property.
 
 Alk.
-
-Technorati Tags: [WPF](http://technorati.com/tags/WPF),[Triggers](http://technorati.com/tags/Triggers)

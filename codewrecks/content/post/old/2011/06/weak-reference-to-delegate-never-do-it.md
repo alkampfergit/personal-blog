@@ -99,7 +99,7 @@ Interlocked.Increment(ref CallCount);
 }
 {{< / highlight >}}
 
-As you can see Iâ€™m passing to RegisterForMessage both the object (this) and a lambda that calls the method, here is the implementation of this new version of RegisterForMessage.
+As you can see I'm passing to RegisterForMessage both the object (this) and a lambda that calls the method, here is the implementation of this new version of RegisterForMessage.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public void RegisterForMessage<T>(Object target, Expression<Action<Message<T>>> action)

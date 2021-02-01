@@ -30,7 +30,7 @@ Elapsed:274{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Iâ€™m quite happy, because I gain more than 70% performances with my first implementation that is the first think that comes in my mind. Now it is time again to fire [DotTrace](http://www.jetbrains.com/profiler/).
+I'm quite happy, because I gain more than 70% performances with my first implementation that is the first think that comes in my mind. Now it is time again to fire [DotTrace](http://www.jetbrains.com/profiler/).
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image7.png)
 

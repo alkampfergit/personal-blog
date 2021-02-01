@@ -6,7 +6,7 @@ draft: false
 tags: [Testing,Visual Studio]
 categories: [Visual Studio]
 ---
-I must admit that Iâ€™m absolutely not a fan of testing through UI. A good program keeps the business logic separated from the UI, so it is testable without passing for the UI. In the real world we have application written by others, or you can simply have to test UI control interaction. In these scenario interacting with the UI can be a viable option. Letâ€™s see how VS2010 can helps us.
+I must admit that I'm absolutely not a fan of testing through UI. A good program keeps the business logic separated from the UI, so it is testable without passing for the UI. In the real world we have application written by others, or you can simply have to test UI control interaction. In these scenario interacting with the UI can be a viable option. Let's see how VS2010 can helps us.
 
 You have a new type of unit test, called Coded UI test, when you create test the test will ask you how you will write the test
 

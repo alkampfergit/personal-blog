@@ -6,7 +6,7 @@ draft: false
 tags: [Tfs,Tfs Power Tools]
 categories: [Team Foundation Server]
 ---
-Yesterday Iâ€™ve blogged about TFS Power tools Shell Extension, and today my friend [Michele](http://dotnetcampania.org/blogs/michele/) told me that he has a problem, the extension always told him to Reconnect to server and he is not able to use them.
+Yesterday I've blogged about TFS Power tools Shell Extension, and today my friend [Michele](http://dotnetcampania.org/blogs/michele/) told me that he has a problem, the extension always told him to Reconnect to server and he is not able to use them.
 
 [![image_thumb\[2\]](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb2_thumb.png "image_thumb[2]")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb21.png)
 

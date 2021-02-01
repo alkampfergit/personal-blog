@@ -6,7 +6,7 @@ draft: false
 tags: [NET framework,Experiences]
 categories: [NET framework,Experiences]
 ---
-Iâ€™ve just installed Tfs For Workgroup in a small virtual machine to make some experiments. After setting up the machine (Windows 2008) I installed TFS SErvice pack 1 then tfs power toys and finally I opened up visual studio in my desktop machine. I simply connect to the team foundation server and tried to create a new â€œTeam Projectâ€, inserted some values for my test project and then tried to create the project, but here is the result
+I've just installed Tfs For Workgroup in a small virtual machine to make some experiments. After setting up the machine (Windows 2008) I installed TFS SErvice pack 1 then tfs power toys and finally I opened up visual studio in my desktop machine. I simply connect to the team foundation server and tried to create a new â€œTeam Projectâ€, inserted some values for my test project and then tried to create the project, but here is the result
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image9.png)
 
@@ -24,7 +24,7 @@ Uh Oh, it seems that my account does not have any rights on reporting services, 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image12.png)
 
-Since this is a test server and I do not care a lot about security I give to myself full rights, then save changes. Now Iâ€™m able to create team projects.
+Since this is a test server and I do not care a lot about security I give to myself full rights, then save changes. Now I'm able to create team projects.
 
 When you work with a complex system like TFS do not forget to analyze detailed log files in case of errors, it can save you a lot of time.
 

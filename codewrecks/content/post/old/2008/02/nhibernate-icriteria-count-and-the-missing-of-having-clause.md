@@ -78,5 +78,3 @@ WHERE this_0_.Id = this_.Id); @p0 = '1'{{< / highlight >}}
 And the game is done ;)
 
 Alk.
-
-Technorati Tags: [NHibernate](http://technorati.com/tags/NHibernate),[ICriteria](http://technorati.com/tags/ICriteria)

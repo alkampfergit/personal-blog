@@ -21,7 +21,7 @@ I start defining my template once, in a dedicated repository, then I can reuse i
 
  **Lets start with the real build file, that is included in the real repository and lets check how to reference a template stored** [**in another repository**](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops#using-other-repositories) **.** The only limit is that the repository should be in the same organization or in GitHub. Here is full content of the file.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 trigger:

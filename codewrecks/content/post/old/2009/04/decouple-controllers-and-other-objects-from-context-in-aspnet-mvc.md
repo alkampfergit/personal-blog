@@ -20,7 +20,7 @@ public interface IUrlHelper
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This simple interface does not even contains all methods of the standard UrlHelper, but it is enough for me, Iâ€™ll add more methods when Iâ€™ll need them. Now my class can declare a dependency to this interface.
+This simple interface does not even contains all methods of the standard UrlHelper, but it is enough for me, I'll add more methods when I'll need them. Now my class can declare a dependency to this interface.
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
    public class MasterLogic

@@ -6,7 +6,7 @@ draft: false
 tags: [ASPNET]
 categories: [ASPNET]
 ---
-Iâ€™m modifying an ASP.NEt site to achieve better performances, Iâ€™m actually moving some operations client-side with jquery. A typical pattern is to issue requests to a webservice instead of making a postback of the whole page. Here is a typical situation, I have a lot of rows in a grid and the user must be able to change some values.
+I'm modifying an ASP.NEt site to achieve better performances, I'm actually moving some operations client-side with jquery. A typical pattern is to issue requests to a webservice instead of making a postback of the whole page. Here is a typical situation, I have a lot of rows in a grid and the user must be able to change some values.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image4.png)
 
@@ -110,7 +110,7 @@ And these are the two basic css.
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-I have not fully tested it, but it worked well in three different places of the software so Iâ€™m quite happy of it. This code simply fires a timer, if the timer elapsed the extender creates two div and prepend them to the target div. The clearwait simply clears the timer (so if the server answer before elapsed time nothing happens), then remove from the dom the two inserted div and everything is back to the original state.
+I have not fully tested it, but it worked well in three different places of the software so I'm quite happy of it. This code simply fires a timer, if the timer elapsed the extender creates two div and prepend them to the target div. The clearwait simply clears the timer (so if the server answer before elapsed time nothing happens), then remove from the dom the two inserted div and everything is back to the original state.
 
 Jquery is really a powerful tool, and a thanks to my friend [Andrea Balducci](http://dotnetmarche.org/blogs/andreabalducci/) for giving me the original idea of the timer to avoid setting the wait state if the server responds quickly.
 

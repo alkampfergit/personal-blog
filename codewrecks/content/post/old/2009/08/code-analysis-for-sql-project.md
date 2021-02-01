@@ -6,7 +6,7 @@ draft: false
 tags: [CodeAnalysis]
 categories: [Visual Studio]
 ---
-Iâ€™m not a fanatic of Code Analysis, at least I know that it is quite impractical trying to remove all warning of fxcop analysis, but I strongly advice you to run code analysis on your code, and give it a shot from time to time. First of all is a good way to find potential bug, then you will always learn new and more standard way to write your code.
+I'm not a fanatic of Code Analysis, at least I know that it is quite impractical trying to remove all warning of fxcop analysis, but I strongly advice you to run code analysis on your code, and give it a shot from time to time. First of all is a good way to find potential bug, then you will always learn new and more standard way to write your code.
 
 The good stuff about VSTS Db edition is that it contains code analysis even for your DB.
 

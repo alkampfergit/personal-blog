@@ -20,7 +20,7 @@ Now edit the workflow and add all the arguments  needed to deploy the database.
 
  ***Figure 2***: *Add arguments to the new workflow, add all the argument needed to deploy a database project*
 
-Now thanks to Metadata Iâ€™m able to configure those arguments to give a better user experience, assigning a Category and descriptions to Arguments.
+Now thanks to Metadata I'm able to configure those arguments to give a better user experience, assigning a Category and descriptions to Arguments.
 
 [![SNAGHTML1be69f1](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1be69f1_thumb.png "SNAGHTML1be69f1")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1be69f1.png)
 
@@ -32,7 +32,7 @@ Now I drop a DeployDatabase Activity inside the workflow, and use those four arg
 
  ***Figure 4***: *Configure all properties of the Custom Action with the arguments previously declared (Figure 2)*
 
-Now I have a customized workflow, inside that workflow Iâ€™ve deployed a custom Activity, and finally Iâ€™ve declared arguments with metadata used to pass properties to the custom Activity. Now I can create a new Build, choose  DefaultWithDeployDatabase workflow and all the parameters are now exposed directly without the need to edit the workflow.
+Now I have a customized workflow, inside that workflow I've deployed a custom Activity, and finally I've declared arguments with metadata used to pass properties to the custom Activity. Now I can create a new Build, choose  DefaultWithDeployDatabase workflow and all the parameters are now exposed directly without the need to edit the workflow.
 
 [![SNAGHTML1cc0b10](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1cc0b10_thumb.png "SNAGHTML1cc0b10")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1cc0b10.png)
 

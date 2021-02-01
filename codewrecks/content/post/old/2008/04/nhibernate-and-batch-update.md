@@ -21,5 +21,3 @@ uow.Session.CreateSQLQuery("Delete from SchedulerActionLog where aclg_ActionId =
 This does not like me very much since with sqlquery you are actually bypassing the mapping and dialect. Today I’ve no time, but if someone knows a better solution please let me know :D
 
 Alk.
-
-Technorati Tags: [NHibernate](http://technorati.com/tags/NHibernate),[Bulk Operations](http://technorati.com/tags/Bulk%20Operations)

@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 1 â€“ [Customize Tfs Process Template](http://www.codewrecks.com/blog/index.php/2011/06/22/customize-tfs-process-template/)
 
-In the first post I showed how to download the definition of a process template into a local folder and how to open it with the [Process Template Editor](http://msdn.microsoft.com/en-us/vstudio/bb980963); in this post Iâ€™ll show you some of the very basic customizations that you can do with the PTE.
+In the first post I showed how to download the definition of a process template into a local folder and how to open it with the [Process Template Editor](http://msdn.microsoft.com/en-us/vstudio/bb980963); in this post I'll show you some of the very basic customizations that you can do with the PTE.
 
 In the Methodology section you can simply change the name of the Process Template as well as including a textual description. Remember that if you do not change the name, when you upload the modified version you will overwrite the original PT, so if you are planning to create a modified version of some basic template, you need to change the name first.
 
@@ -42,7 +42,7 @@ The *Groups & Permissions*section permits to setup the initial security groups f
 
  ***Figure 5***: *Management of default Security Groups for Team Project*
 
-The Lab and Build sections permit to include in Process Template custom workflow for the standard builds and for Lab Managementâ€™s build. Build customization is a really cool process, you can create build specific for a Team Project, or you can use generic template to [satisfy specific requirements](http://blogs.msdn.com/b/jimlamb/archive/2010/09/14/parallelized-builds-with-tfs2010.aspx).
+The Lab and Build sections permit to include in Process Template custom workflow for the standard builds and for Lab Management's build. Build customization is a really cool process, you can create build specific for a Team Project, or you can use generic template to [satisfy specific requirements](http://blogs.msdn.com/b/jimlamb/archive/2010/09/14/parallelized-builds-with-tfs2010.aspx).
 
 To include a new workflow you should copy the file in the appropriate sub folder of the project template called  **Build\Templates** or  **Lab\Templates** , once you added a file in one of the aforementioned folders, you can simply press the add button, navigate to those folder and add the default template to the process. (Figure 6)
 

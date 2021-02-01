@@ -6,7 +6,7 @@ draft: false
 tags: [Programming]
 categories: [Programming]
 ---
-I start to got this error from my Continuous integration machine, after I setup a project for deploy with clickonce the build begins to fail. Iâ€™m using CC.net with msbuild scripts and in detailed error I see a message like
+I start to got this error from my Continuous integration machine, after I setup a project for deploy with clickonce the build begins to fail. I'm using CC.net with msbuild scripts and in detailed error I see a message like
 
 > The "ResolveKeySource" task failed unexpectedly.
 > 

@@ -18,7 +18,7 @@ public class KeywordService : IKeywordService{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-AutoscanComponent is used by a custom Castle facility, and is used to automatically register a component. For services Iâ€™m sure that there is always only an instance registered for each interface, so I can simply configure castle to use the autoscan facility, and when the code declare a dependency to IKeywordService, Castle resolve it with the concrete class instead of the WCF Proxy.
+AutoscanComponent is used by a custom Castle facility, and is used to automatically register a component. For services I'm sure that there is always only an instance registered for each interface, so I can simply configure castle to use the autoscan facility, and when the code declare a dependency to IKeywordService, Castle resolve it with the concrete class instead of the WCF Proxy.
 
 But this is not enough, I begin to notice that the program is slow, and after a simple inspection I see that there are too many calls to the database. The problem is that the user interact with a WPF UI and there are too many call to the database because the service interfaces are thought for a different usage pattern. This problem could be easily resolved with caching, so I create a simple interceptor.
 
@@ -67,7 +67,7 @@ public class CacheInterceptor : global::Castle.Core.Interceptor.IInterceptor
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This component is really simple, It builds a string key that represent the cache composing *service name + method name + parameterlist*, so Iâ€™m sure that I cache only calls with the same parameters call. Then I simply use [entlib caching application block](http://msdn.microsoft.com/en-us/library/dd203248.aspx) to store data in cache. Now I simply need to configure this interceptor in config file.
+This component is really simple, It builds a string key that represent the cache composing *service name + method name + parameterlist*, so I'm sure that I cache only calls with the same parameters call. Then I simply use [entlib caching application block](http://msdn.microsoft.com/en-us/library/dd203248.aspx) to store data in cache. Now I simply need to configure this interceptor in config file.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <component id="CacheInterceptor"
@@ -88,10 +88,8 @@ Next I need to instruct my facility to add this interceptor to all autoregistere
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-With this configuration Iâ€™m sure that each service is intercepted by the cache component, cache duration is 5 minutes, and the application gains a tremendous speed increase.
+With this configuration I'm sure that each service is intercepted by the cache component, cache duration is 5 minutes, and the application gains a tremendous speed increase.
 
 This is possible because the architecture extensively use IoC to resolve services and components, and is simple to add features with [AOP](http://en.wikipedia.org/wiki/Aspect-oriented_programming).
 
 alk.
-
-Technorati Tags: [Software Architecture](http://technorati.com/tags/Software+Architecture)

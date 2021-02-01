@@ -6,7 +6,7 @@ draft: false
 tags: [General]
 categories: [General]
 ---
-I was reading [this post](http://blogs.microsoft.co.il/blogs/shair/archive/2010/10/31/is-silverlight-over-the-good-the-ok-and-the-bad.aspx) of my dear friend Shai and it brings in my mind some consideration. I never saw silverlight as a replacement for HTML even for HTML4, so Iâ€™m not so surprised by this new direction of SL that emerges from PDC.
+I was reading [this post](http://blogs.microsoft.co.il/blogs/shair/archive/2010/10/31/is-silverlight-over-the-good-the-ok-and-the-bad.aspx) of my dear friend Shai and it brings in my mind some consideration. I never saw silverlight as a replacement for HTML even for HTML4, so I'm not so surprised by this new direction of SL that emerges from PDC.
 
 SL could be useful to build RIA application on the web, but you should explain to your customers that they need to install a plugin, that it will not run on all platforms, etc etc, and I prefer plain HTML and jQuery.
 

@@ -41,5 +41,3 @@ It turned out that the reason of the error is the CompressorModule, and after an
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
 alk.
-
-Technorati Tags: [ASP.NET](http://technorati.com/tags/ASP.NET),[microsoft ajax](http://technorati.com/tags/microsoft%20ajax),[Partial Rendering](http://technorati.com/tags/Partial%20Rendering)

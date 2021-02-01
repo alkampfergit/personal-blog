@@ -50,5 +50,3 @@ As you can see I simply add a Binding object, sets the path to the correct prope
 This can give you a taste of the power of XAML.
 
 Alk.
-
-Technorati Tags: [XAML](http://technorati.com/tags/XAML),[IValueconverter](http://technorati.com/tags/IValueconverter)

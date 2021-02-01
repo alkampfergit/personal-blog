@@ -24,9 +24,9 @@ If you start writing code that makes assertion on data in DB you surely will fin
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image3.png)
 
-The advantage of this approach is clear: first of all I do not modify the behavior of the code, because I did not modify code in the InsertData method, and then with lazy creation Iâ€™m able to get rid of initialization problem, if no one populate the DatabaseInserter property, the object simply creates an instance of the default inserter.
+The advantage of this approach is clear: first of all I do not modify the behavior of the code, because I did not modify code in the InsertData method, and then with lazy creation I'm able to get rid of initialization problem, if no one populate the DatabaseInserter property, the object simply creates an instance of the default inserter.
 
-This modification did not introduce bugs, because I actually did not change the code, but now with this little modification Iâ€™m able to write this function in a fixture.
+This modification did not introduce bugs, because I actually did not change the code, but now with this little modification I'm able to write this function in a fixture.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 private SutClass CreateSut()
@@ -55,7 +55,7 @@ a => a.InsertData(null, null))
 Assert.That(analysisBlockData.ClieId, Is.EqualTo(clieId));
 {{< / highlight >}}
 
-I omitted the setup part, where I mock repository and create parameter to be passed to SUT; the real important stuff is in line 4, where I retrieve the argument passed to the InsertData function of my Mocked ResultDatabaseInserter and make assertion on it. With this little refactoring Iâ€™m able to completely avoid a call to the database, and thanks to Rhino Mock Iâ€™m able to setup assertion on parameter passed to any mock.
+I omitted the setup part, where I mock repository and create parameter to be passed to SUT; the real important stuff is in line 4, where I retrieve the argument passed to the InsertData function of my Mocked ResultDatabaseInserter and make assertion on it. With this little refactoring I'm able to completely avoid a call to the database, and thanks to Rhino Mock I'm able to setup assertion on parameter passed to any mock.
 
 This is a standard example on how to refactor your code and use a [Test Double](http://xunitpatterns.com/Test%20Double.html) to make testing simpler.
 

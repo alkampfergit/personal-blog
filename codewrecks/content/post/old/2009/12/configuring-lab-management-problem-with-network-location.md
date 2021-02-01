@@ -10,7 +10,7 @@ You can check the original post [here](http://blogs.msdn.com/lab_management/arch
 
 [![Capture](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/Capture_thumb.png "Capture")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/Capture.png)
 
-You configure your machine with SCVMM, you test it and everything went ok, but the combo with network location is empty. I manually setup nablasoft.com as network location, but Iâ€™ll end with configuration warnings telling me
+You configure your machine with SCVMM, you test it and everything went ok, but the combo with network location is empty. I manually setup nablasoft.com as network location, but I'll end with configuration warnings telling me
 
 > *The network location for the following host group could not be verified: [host group:All Hosts, host:*[*ltlab.nablasoft.com*](http://ltlab.nablasoft.com)*] TF259210: Team Foundation Server was unable to find the following network location:*[*nablasoft.com*](http://nablasoft.com)*, on a Hyper-V host*[*ltlab.nablasoft.com*](http://ltlab.nablasoft.com)*. Wait several minutes, and then pause or shutdown and start the environment try the operation again. If the problem persists, confirm the Hyper-V host is available on the network and has appropriate permissions configured for Team Foundation Server.*
 

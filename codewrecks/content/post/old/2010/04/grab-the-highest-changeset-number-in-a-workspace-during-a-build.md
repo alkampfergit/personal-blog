@@ -10,7 +10,7 @@ In a [very old post](http://www.codewrecks.com/blog/index.php/2009/09/07/again-o
 
 The ChangesetId is an unique number for all the source control system, so I have two distinct problem.
 
-1) while the build is running, developers do check-in, so when I retrieve the GetLatestChangesetId at a certain point during the buil, I do not get the real changesetId that Iâ€™m building, but an incorrect one. The problem is that a user can lookup the assembly number, see a changesetid and then verify that the changesetId is not related to that project.
+1) while the build is running, developers do check-in, so when I retrieve the GetLatestChangesetId at a certain point during the buil, I do not get the real changesetId that I'm building, but an incorrect one. The problem is that a user can lookup the assembly number, see a changesetid and then verify that the changesetId is not related to that project.
 
 2) If the build is customized to get a specific version during the CoreGet step of the End-To-End interation, I still use the latest changeset number and this is real wrong.
 
@@ -48,7 +48,7 @@ In line 3 thanks to the GetServerItemForLocalItem I can retrieve the server path
 
 The QueryHistory method needs the server path to query, then it is important to specify RecursionType.Full to query all objects of specified path, then there are two params called versionFrom and versionTo, used to specify a range. For this example I used 1 as the From and the workspace spec build in lines 6-11, to maximize performance I ask only for a single changeset (they are ordered from higher to lower).
 
-With this function included in a msbuild custom action Iâ€™m able to grab the highest changeset number actually present in a workspace, and I can use it to number the assembly during the build if Iâ€™m sure that the build issue a getlatest or get specific changeset.
+With this function included in a msbuild custom action I'm able to grab the highest changeset number actually present in a workspace, and I can use it to number the assembly during the build if I'm sure that the build issue a getlatest or get specific changeset.
 
 alk.
 

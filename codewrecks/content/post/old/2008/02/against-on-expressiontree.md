@@ -55,5 +55,3 @@ To really understand how the Expression is executed you need to traverse the tre
 I hope I was quite clear. If you are interested in code you can grab from subversion on [http://nablasoft.googlecode.com/svn/trunk/Linq/ExpressionTree](http://nablasoft.googlecode.com/svn/trunk/Linq/ExpressionTree "http://nablasoft.googlecode.com/svn/trunk/Linq/ExpressionTree") and the revision of this example is 10.
 
 Alk.
-
-Technorati Tags: [expression Tree](http://technorati.com/tags/expression%20Tree),[c# 3.0](http://technorati.com/tags/c#%203.0)

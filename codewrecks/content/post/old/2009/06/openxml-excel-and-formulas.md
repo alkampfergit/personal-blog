@@ -8,7 +8,7 @@ categories: [Office]
 ---
 In an [old post](http://www.codewrecks.com/blog/index.php/2008/11/28/create-a-report-in-excel-2007-with-open-xml-sdk-10/), I deal with a simple way to create excel report using openXml format. The trick is a simple manipulation of the document with Linq to Xml.
 
-Now I need to add another feature, I need to open an excel document with formulas, fill some cells, leaving formulas intact. My first version does not work as expected, I simply created an excel with simple formulas, then fire my function and when I open the resulting excel I see all zero on formula column, but the formula is there, and if I change some cell referenced by the formula Iâ€™ll obtain the right value.
+Now I need to add another feature, I need to open an excel document with formulas, fill some cells, leaving formulas intact. My first version does not work as expected, I simply created an excel with simple formulas, then fire my function and when I open the resulting excel I see all zero on formula column, but the formula is there, and if I change some cell referenced by the formula I'll obtain the right value.
 
 This problem arise because formula are stored in original sheet with such a xml
 

@@ -8,7 +8,7 @@ categories: [JQuery]
 ---
 One of the most interesting feature of JQuery is its extendibility. Writing a plugin is a breeze, and here an example of your first [JQuery](http://jquery.com/) plugin, a logger to the [firebug](http://getfirebug.com/) console.
 
-Firebug is â€œde factoâ€ the best developer tool for web developer Iâ€™ve ever used, and its console logging features are really amazing. Letâ€™s see how it can help [JQuery](http://jquery.com/) progammers.
+Firebug is â€œde factoâ€ the best developer tool for web developer I've ever used, and its console logging features are really amazing. Let's see how it can help [JQuery](http://jquery.com/) progammers.
 
 {{< highlight javascript "linenos=table,linenostart=1" >}}
 (function($) {
@@ -26,7 +26,7 @@ Firebug is â€œde factoâ€ the best developer tool for web developer Iâ�
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This code can look strange, and this is due to preserve the [no conflict mode](http://docs.jquery.com/Using_jQuery_with_Other_Libraries). Since we like to use the $ you can simply create a function that accepts a single argument called $, then inside that function you can use $ as usual, and finally you immediately invoke the function passing jQuery as argument.  This technique is described in â€œ[JQuery in action](http://www.manning.com/bibeault/)â€, one of the best book Iâ€™ve read.
+This code can look strange, and this is due to preserve the [no conflict mode](http://docs.jquery.com/Using_jQuery_with_Other_Libraries). Since we like to use the $ you can simply create a function that accepts a single argument called $, then inside that function you can use $ as usual, and finally you immediately invoke the function passing jQuery as argument.  This technique is described in â€œ[JQuery in action](http://www.manning.com/bibeault/)â€, one of the best book I've read.
 
 This extension is really simple, first of all I check if console object is defined, if not I create a console object with a simple log function that does nothing. This is needed to avoid javascript errors in IE or in other browser that have no firebug console.
 
@@ -40,7 +40,7 @@ Then I simply call the log function of firebug console, passing a message and th
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-As you can see I simply select all div with an id that begins with â€œphotoâ€, then I call log and since this is a plugin that does not modify the wrapped-set I can continue to use the wrapped-set as if the log call was not present, in this example Iâ€™m using some drag and drop. Here is what I see in the firebug console.
+As you can see I simply select all div with an id that begins with â€œphotoâ€, then I call log and since this is a plugin that does not modify the wrapped-set I can continue to use the wrapped-set as if the log call was not present, in this example I'm using some drag and drop. Here is what I see in the firebug console.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image-thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/03/image7.png)
 

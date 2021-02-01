@@ -14,7 +14,7 @@ If you have a Stream and want to create a simple GDI+ Bitmap you can write this 
 
 Bitmap object has a static method called FromStream, that is used to take a stream as input and creates an System.Drawing.Image as result, is easy and simple to use. In WPF you have a different object to represent images, the BitmapImage, and you can be really surprised to notice that it has no FromStream static method.
 
-To solve this inconsistency of API (Iâ€™m expecting to have a FromStream method to keep the Windows.Media API similar to GDI+), you can write a simple extension method.
+To solve this inconsistency of API (I'm expecting to have a FromStream method to keep the Windows.Media API similar to GDI+), you can write a simple extension method.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public static BitmapImage FromStream(this BitmapImage image, Stream stream)

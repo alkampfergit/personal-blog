@@ -128,7 +128,7 @@ w.ElementAfterSelf().Select(e => e.Id)
 }
 {{< / highlight >}}
 
-The only disadvantage of this technique, is that Iâ€™m not able to write something like this.
+The only disadvantage of this technique, is that I'm not able to write something like this.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 w.Descendants().Single(e => e.Id == 5)

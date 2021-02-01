@@ -47,7 +47,7 @@ Basically a Nunit addin is a class that implements IAddin, here is my addin
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-As you can see Iâ€™m inheriting from NunitTestFixtureBuilder class from NUnit framework, and simply add the IAddin interface. The CanBuildFrom is the method that tells to nunit if we can handle a class, I simply search for a custom attribute. To customize the suite you can override the MakeSuite method returning a TestSuite Object. HEre is mine
+As you can see I'm inheriting from NunitTestFixtureBuilder class from NUnit framework, and simply add the IAddin interface. The CanBuildFrom is the method that tells to nunit if we can handle a class, I simply search for a custom attribute. To customize the suite you can override the MakeSuite method returning a TestSuite Object. HEre is mine
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 class RandomizerTestFixture : TestFixture

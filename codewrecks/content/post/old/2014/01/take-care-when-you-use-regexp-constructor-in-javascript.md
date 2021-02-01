@@ -8,7 +8,7 @@ categories: [Programming]
 ---
 I’m not a javascript guru when it is time to write regular expressions, but this morning I have a bug on a piece of code, and the bug was related to a regex declared in this way.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 var noMatchRegex = new RegExp("[\r\n\s;,$]+");
@@ -23,7 +23,7 @@ This regex basically should match a carriage return or a space or ; char, etc, b
 
 This suggested me that the regular expression has something strange and quickly realized that the problem happens because *the person who wrote the code, used a regex taken from the literal notation, but passed inside RegExp constructor, that accepts a string*. There is a subtle difference in using the literal notation or passing the regex as string to RegExp constructor. The second alternative requires you to escape the \ character. If you declare the regex with new RegExp(“[\s]”), you are creating a regex that has a \s charater in it and is not valid. You should declare the above regex in this way
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 var noMatchRegex = new RegExp("[\\r\\n\\s;,$]+");

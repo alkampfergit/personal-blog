@@ -6,9 +6,9 @@ draft: false
 tags: [Sql Server]
 categories: [Tools and library]
 ---
-I must admit that I really loves tools from [RedGate](http://www.red-gate.com) and recently Iâ€™ve discovered the [Sql Dependency Tracker](http://www.red-gate.com/products/SQL_Dependency_Tracker/index.htm), an exceptional tool to manage dependencies between objects in a database.
+I must admit that I really loves tools from [RedGate](http://www.red-gate.com) and recently I've discovered the [Sql Dependency Tracker](http://www.red-gate.com/products/SQL_Dependency_Tracker/index.htm), an exceptional tool to manage dependencies between objects in a database.
 
-This tool is really great because with a few click you can have different graphs that represents dependency relation between objects in the database. Iâ€™m working on a legacy database, and I have two very old view that were replaced by another indexed view, that performs better and has better column names. We ported almost everything, but I need to know if some stored procedure or object still uses the old views. I simply open the Sql Dependency Tracker and immediately I found this graph
+This tool is really great because with a few click you can have different graphs that represents dependency relation between objects in the database. I'm working on a legacy database, and I have two very old view that were replaced by another indexed view, that performs better and has better column names. We ported almost everything, but I need to know if some stored procedure or object still uses the old views. I simply open the Sql Dependency Tracker and immediately I found this graph
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb30.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image30.png)
 

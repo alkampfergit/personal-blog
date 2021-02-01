@@ -28,7 +28,7 @@ clearly the D:\osdevelop\horn\_src is my physical path where git extracted horn 
 horn -install:castle.facilities.nhibernateintegration
 {{< / highlight >}}
 
-with this command horn try to build everything needed for castle facilities nhibernate integration, so horn contacts all various repositories of all the needed libraries, it downloads the latest source and compiles everything. IF everything is gone good, you can simply go to the directory.horn\result and find all the dllâ€™s :) without worrying about order of compilation, source repositories etc etc.
+with this command horn try to build everything needed for castle facilities nhibernate integration, so horn contacts all various repositories of all the needed libraries, it downloads the latest source and compiles everything. IF everything is gone good, you can simply go to the directory.horn\result and find all the dll's :) without worrying about order of compilation, source repositories etc etc.
 
 Alk.
 

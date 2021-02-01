@@ -8,7 +8,7 @@ categories: [NET framework,Software Architecture]
 ---
 In [this post](http://www.codewrecks.com/blog/index.php/2009/06/24/a-dto-factory-code-generator-with-visual-studio-t4/) I dealt with a primitive version of a T4 template to generate dto starting from domain objects. In these days I had little time to improve it a little bit, and I created a simple test project to verify some of the basic functionality.
 
-Usage of the T4 template is really simple, Iâ€™ve created in the test project an Entity Factory model to the ubiquitous northwind database, then I added a OrderDto.tt file to the project with this content.
+Usage of the T4 template is really simple, I've created in the test project an Entity Factory model to the ubiquitous northwind database, then I added a OrderDto.tt file to the project with this content.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <#@ template language="C#" hostspecific="True" debug="True" #>
@@ -87,13 +87,13 @@ Another interesting stuff is this one, you can link various Dto objects between 
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Iâ€™m asking to generate an OrdersTestDto object that contains the â€œCustomersâ€ property, but I specify that I do not want full Customers object, but simply a CustomersDto, so you will end in two dto connected together
+I'm asking to generate an OrdersTestDto object that contains the â€œCustomersâ€ property, but I specify that I do not want full Customers object, but simply a CustomersDto, so you will end in two dto connected together
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image15.png)
 
 This facility permits me to reuse dto but actually the ExpressionSelector of this dto cannot be directly used with LINQ, it needs still more work ;).
 
-All the project is still in a very rought form, but Iâ€™m quite satisfied on it, if you like it you can download [here](http://www.codewrecks.com/blog/storage/dtofactoryblog.zip). The code is provided as-is :) do not blame the author.
+All the project is still in a very rought form, but I'm quite satisfied on it, if you like it you can download [here](http://www.codewrecks.com/blog/storage/dtofactoryblog.zip). The code is provided as-is :) do not blame the author.
 
 alk.
 

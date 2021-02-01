@@ -21,7 +21,7 @@ tfx build tasks create
 
 This command will ask you several information, at the end you will have a new folder, with the same name of the task you choose, containing a bunch of files.  **The most important file is called task.json , because it contains all the information needed by the build system to run your task**. Here is my json.file after modification.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 {
@@ -84,7 +84,7 @@ param(
 
 Now I copy GitVersion.exe and all dll in the very same directory of the script, so I do not need to include GitVersion.exe in my source code to calculate semantic versioning. The final step is **adding a package.json with npm to declare all the dependencies that are needed by the task to run**.
 
-{{< highlight jscript "linenos=table,linenostart=1" >}}
+{{< highlight js "linenos=table,linenostart=1" >}}
 
 
 {

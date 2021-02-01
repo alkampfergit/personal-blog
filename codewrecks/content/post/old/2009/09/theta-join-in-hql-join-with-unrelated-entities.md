@@ -21,7 +21,7 @@ Select L, A from ActionLog L, Action A  where L.ActionId = A.id and L.IsSuccess 
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-As you can see i select L and A from ActionLog and Action, then in where condition Iâ€™ll insert the join condition L.ActionId with A.id, where *id*is a special property name in HQL that gets translated to the name of the property used as identifier for the Action class.
+As you can see i select L and A from ActionLog and Action, then in where condition I'll insert the join condition L.ActionId with A.id, where *id*is a special property name in HQL that gets translated to the name of the property used as identifier for the Action class.
 
 The result of this query is an arraylist, where each element is an array of objects, an instance of ActionLog and the corresponding instance of Action. Then I proceed creating this object
 

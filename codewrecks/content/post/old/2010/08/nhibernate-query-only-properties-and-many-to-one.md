@@ -10,7 +10,7 @@ categories: [Nhibernate]
  
 {{< / highlight >}}
 
-If you does not know Query only properties of NHibernate you better take a look to [this post](http://ayende.com/Blog/archive/2009/06/10/nhibernate-ndash-query-only-properties.aspx), I must admit that they are really useful to make simpler query without changing the object model. Iâ€™ve this object model
+If you does not know Query only properties of NHibernate you better take a look to [this post](http://ayende.com/Blog/archive/2009/06/10/nhibernate-ndash-query-only-properties.aspx), I must admit that they are really useful to make simpler query without changing the object model. I've this object model
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image2.png)
 
@@ -38,7 +38,7 @@ Now all of my tests passes again, and I look at generated query with [NHProfiler
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image3.png "image")](http://nhprof.com/)
 
-Iâ€™m still having problem, because it issue a inner join on table BuzzNickName (the table that contains the NickName entity) that is unnecessary, because no field of NickName is nor needed nor used in the filter. To obtain a real good query you need to add another query only property with this definition.
+I'm still having problem, because it issue a inner join on table BuzzNickName (the table that contains the NickName entity) that is unnecessary, because no field of NickName is nor needed nor used in the filter. To obtain a real good query you need to add another query only property with this definition.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 <property name="NickNameId" access="none" column="budr_buniId" type="System.Guid"

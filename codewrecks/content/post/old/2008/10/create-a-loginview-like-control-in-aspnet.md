@@ -6,7 +6,7 @@ draft: false
 tags: [ASPNET]
 categories: [ASPNET]
 ---
-The LoginView control is a very interesting one, it permits you to specify different content templates in the page depending on the role of the current user. Sometimes this scheme is not enough, in a project Iâ€™m working in, we have five roles, and the software is subdivided in areas, each role can have  read, write or none permission on each area (an access matrix), and the permissions can be set through an administration page.
+The LoginView control is a very interesting one, it permits you to specify different content templates in the page depending on the role of the current user. Sometimes this scheme is not enough, in a project I'm working in, we have five roles, and the software is subdivided in areas, each role can have  read, write or none permission on each area (an access matrix), and the permissions can be set through an administration page.
 
 I want to create a control similar to loginView but with only two template, the first used when the user has no access to a particular area, and another used when the user has at least read access level for that area. This is the code of the control
 

@@ -6,7 +6,7 @@ draft: false
 tags: [Uncategorized]
 categories: [General]
 ---
-Iâ€™m not a javascript fan, but sometimes I have the need to write some client script code, to make the application more responsive.
+I'm not a javascript fan, but sometimes I have the need to write some client script code, to make the application more responsive.
 
 In a project I was working on, we have the main page with a gridview that shows 15 components at time, each component has really a lot of information to show to the user, so the first version uses the ModalPopupExtender from AjaxControlToolkit to move in a popup the extended informations. We set a column in the gridview with a div with basic data, when you click on the div the modal popup opens up and shows extended data on the element clicked.
 

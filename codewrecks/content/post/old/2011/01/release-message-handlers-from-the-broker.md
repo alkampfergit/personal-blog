@@ -8,7 +8,7 @@ categories: [WPF]
 ---
 Some time ago I blogged about a [primitive Broker class](http://www.codewrecks.com/blog/index.php/2010/07/26/primitive-broker-class/) to manage messaging between View Models in a simple custom MVVM infrastructure. Since my Broker basically accepts delegates and manage calling them with the right message, it is quite important for ViewModels to remove all registered handler. This is especially important because Broker is a singleton, and if some ViewModel forgets to unregister some messages, the Broker will keep reference to member functions, thus keeping the ViewModel alive forever.
 
-To manage this problem in a single place, Iâ€™ve done a little modification to the IBrocker interface
+To manage this problem in a single place, I've done a little modification to the IBrocker interface
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image9.png)
 
@@ -39,7 +39,7 @@ Broker.RegisterForMessage(dispatchMessage, this);
 }
 {{< / highlight >}}
 
-BaseViewModel is IDisposable, and during dispose it unregister all handler from the Broker, using * **this** *as token, thus freeing all the reference to this specific ViewModel. With this simple modification Iâ€™m sure that whenever a ViewModel is disposed all reference to it from the Broker are removed and I do not relay on people that will write the ViewModel to remember to unregister message handlers from Broker.
+BaseViewModel is IDisposable, and during dispose it unregister all handler from the Broker, using * **this** *as token, thus freeing all the reference to this specific ViewModel. With this simple modification I'm sure that whenever a ViewModel is disposed all reference to it from the Broker are removed and I do not relay on people that will write the ViewModel to remember to unregister message handlers from Broker.
 
 Since I use castle, I only need to remember to release the view when it will be closed. I have a navigator class that actually manage Views
 
