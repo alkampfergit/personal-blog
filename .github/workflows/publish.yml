@@ -23,15 +23,21 @@ jobs:
       - name: Build
         working-directory: ./codewrecks
         run: hugo --minify
-        
+
+      - name: Install lftp
+        run: sudo apt-get install lftp -y
+
       - name: Upload ftp
-        uses: sebastianpopp/ftp-action@releases/v2
-        with:
-          host: ${{ secrets.FtpHostName }}
-          user: ${{ secrets.FtpUserName }}
-          password: ${{ secrets.ftpPassword }}
-          localDir: "codewrecks/public"
-          remoteDir: "codewrecks.com/wwwroot"
+        run: lftp -e "set ftp:ssl-allow no; mirror --parallel=100 -R codewrecks/public /codewrecks.com/wwwroot/temp" -u ${{ secrets.FtpUserName }},${{ secrets.ftpPassword }} ${{ secrets.FtpHostName }}
+
+      # - name: Upload ftp
+      #   uses: sebastianpopp/ftp-action@releases/v2
+      #   with:
+      #     host: ${{ secrets.FtpHostName }}
+      #     user: ${{ secrets.FtpUserName }}
+      #     password: ${{ secrets.ftpPassword }}
+      #     localDir: "codewrecks/public"
+      #     remoteDir: "codewrecks.com/wwwroot"
           
 #      - name: 'Ping search engines'
 #        uses: atymic/sitemap-ping-action@master
