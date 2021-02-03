@@ -28,7 +28,7 @@ jobs:
         run: sudo apt-get install lftp -y
 
       - name: Upload ftp
-        run: lftp -e "set ftp:ssl-allow no; mirror --parallel=100 -R codewrecks/public /codewrecks.com/wwwroot/temp" -u ${{ secrets.FtpUserName }},${{ secrets.ftpPassword }} ${{ secrets.FtpHostName }}
+        run: lftp -e "set ftp:ssl-allow no; mirror --parallel=100 -R codewrecks/public /codewrecks.com/wwwroot" -u ${{ secrets.FtpUserName }},${{ secrets.ftpPassword }} ${{ secrets.FtpHostName }}
 
       # - name: Upload ftp
       #   uses: sebastianpopp/ftp-action@releases/v2
