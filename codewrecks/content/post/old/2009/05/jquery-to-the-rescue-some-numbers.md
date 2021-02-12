@@ -1,5 +1,5 @@
 ﻿---
-title: "jQuery to the rescue ndash some numbers"
+title: "jQuery to the rescue - some numbers"
 description: ""
 date: 2009-05-15T07:00:37+02:00
 draft: false

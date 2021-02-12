@@ -1,5 +1,5 @@
 ﻿---
-title: "Validate Business Entities with WPF ndash Take 2"
+title: "Validate Business Entities with WPF - Take 2"
 description: ""
 date: 2009-08-17T10:00:37+02:00
 draft: false

@@ -1,5 +1,5 @@
 ﻿---
-title: "Power of HQL ndash Condition on a collection"
+title: "Power of HQL - Condition on a collection"
 description: ""
 date: 2010-03-09T11:00:37+02:00
 draft: false

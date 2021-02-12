@@ -1,5 +1,5 @@
 ﻿---
-title: "Codeplex is upgradedndashhow to map to the new server"
+title: "Codeplex is upgraded-how to map to the new server"
 description: ""
 date: 2010-07-27T09:00:37+02:00
 draft: false

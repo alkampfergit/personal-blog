@@ -1,5 +1,5 @@
 ﻿---
-title: "Entity Framework 5 First StepsndashMapping"
+title: "Entity Framework 5 First Steps-Mapping"
 description: ""
 date: 2012-09-27T09:00:37+02:00
 draft: false

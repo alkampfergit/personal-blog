@@ -45,7 +45,7 @@ Administering
 Reporting
 
 [Deep Dive Into TFS Reporting](http://blogs.msdn.com/b/bryang/archive/2011/06/08/deep-dive-into-tfs-reporting.aspx)  
-[Customizing the Burndown Dashboard Report in team portal](http://codesmartnothard.com/CustomizingTheBurndownDashboardReportInTheTFS2010TeamPortal.aspx)  
+[Customizing the Burndown Dashboard Report in team portal](http://codesmartnothard.com/CustomizingTheBurndow-boardReportInTheTFS2010TeamPortal.aspx)  
 [Quality report](http://download.microsoft.com/download/A/B/5/AB5B5163-4A69-49D9-BCF4-D514CE12BF36/Making_Real-Time_Decisions.pdf)  
 [http://msdn.microsoft.com/en-us/library/dd380683(VS.100).aspx](http://msdn.microsoft.com/en-us/library/dd380683%28VS.100%29.aspx)
 
@@ -59,7 +59,7 @@ API
 [Programmatically change a query](http://blogs.msdn.com/b/jongallant/archive/2011/07/18/how-to-programmatically-modify-a-tfs-query-with-c.aspx)  
 [Compare changeset programmatically with API](http://geekswithblogs.net/TarunArora/archive/2011/07/23/tfs-sdk-compare-changesets-programmatically.aspx)  
 [TFS SDK: Workspace Explorer And Statistics](http://geekswithblogs.net/TarunArora/archive/2011/08/30/tfs-sdk-workspace-explorer.aspx)  
-[Get Exploratory testing and Feedback Manager Session in TFS 2011 API](http://geekswithblogs.net/TarunArora/archive/2011/12/12/tfs-2011-apindashhow-to-get-exploratory-testing-and-feedback-manager.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+geekswithblogs+%28Geekswithblogs.net%29&amp;utm_content=Google+Reader)
+[Get Exploratory testing and Feedback Manager Session in TFS 2011 API](http://geekswithblogs.net/TarunArora/archive/2011/12/12/tfs-2011-api-how-to-get-exploratory-testing-and-feedback-manager.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+geekswithblogs+%28Geekswithblogs.net%29&amp;utm_content=Google+Reader)
 
 Tfs Build
 

@@ -1,5 +1,5 @@
 ﻿---
-title: "T-SQL ndash selecting top X element for each group"
+title: "T-SQL - selecting top X element for each group"
 description: ""
 date: 2009-01-02T08:00:37+02:00
 draft: false

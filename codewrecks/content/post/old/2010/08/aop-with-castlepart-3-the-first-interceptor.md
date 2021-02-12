@@ -1,5 +1,5 @@
 ﻿---
-title: "AOP With castlendashPart 3-The first interceptor"
+title: "AOP With castle-Part 3-The first interceptor"
 description: ""
 date: 2010-08-09T06:00:37+02:00
 draft: false

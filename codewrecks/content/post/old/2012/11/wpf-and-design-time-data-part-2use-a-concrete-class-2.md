@@ -1,5 +1,5 @@
 ﻿---
-title: "Wpf And design time data part 2ndashUse a concrete class"
+title: "Wpf And design time data part 2-Use a concrete class"
 description: ""
 date: 2012-11-07T14:00:37+02:00
 draft: false

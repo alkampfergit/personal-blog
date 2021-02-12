@@ -1,5 +1,5 @@
 ﻿---
-title: "Visual Studio ALM LinksndashWeek 6 2013"
+title: "Visual Studio ALM Links-Week 6 2013"
 description: ""
 date: 2013-02-09T10:00:37+02:00
 draft: false

@@ -1,5 +1,5 @@
 ﻿---
-title: "Portfolio managementndashintegrate TFS with Project Server"
+title: "Portfolio management-integrate TFS with Project Server"
 description: ""
 date: 2010-12-09T09:00:37+02:00
 draft: false

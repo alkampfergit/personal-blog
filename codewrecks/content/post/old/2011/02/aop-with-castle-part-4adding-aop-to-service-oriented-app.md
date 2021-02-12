@@ -1,5 +1,5 @@
 ﻿---
-title: "AoP with castle part 4ndashAdding AoP to service oriented App"
+title: "AoP with castle part 4-Adding AoP to service oriented App"
 description: ""
 date: 2011-02-19T09:00:37+02:00
 draft: false

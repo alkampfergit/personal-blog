@@ -1,5 +1,5 @@
 ﻿---
-title: "Customization of TFS process template ndash adding field to a Work Item Definition"
+title: "Customization of TFS process template - adding field to a Work Item Definition"
 description: ""
 date: 2011-06-24T15:00:37+02:00
 draft: false

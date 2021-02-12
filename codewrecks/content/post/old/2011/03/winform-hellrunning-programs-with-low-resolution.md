@@ -1,5 +1,5 @@
 ﻿---
-title: "Winform hellndashrunning programs with low resolution"
+title: "Winform hell-running programs with low resolution"
 description: ""
 date: 2011-03-30T16:00:37+02:00
 draft: false

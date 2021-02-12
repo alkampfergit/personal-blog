@@ -1,5 +1,5 @@
 ﻿---
-title: "Tfs build 2010ndashcreate a personalized build"
+title: "Tfs build 2010-create a personalized build"
 description: ""
 date: 2010-11-26T17:00:37+02:00
 draft: false

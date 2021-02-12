@@ -1,5 +1,5 @@
 ﻿---
-title: "Use SQLite to test NHndashDateAdd function"
+title: "Use SQLite to test NH-DateAdd function"
 description: ""
 date: 2011-08-29T14:00:37+02:00
 draft: false

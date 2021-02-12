@@ -1,5 +1,5 @@
 ﻿---
-title: "Getting started with LuceneNETndashSearching"
+title: "Getting started with LuceneNET-Searching"
 description: ""
 date: 2012-06-21T16:00:37+02:00
 draft: false

@@ -1,5 +1,5 @@
 ﻿---
-title: "Theta join in HQL ndash join with unrelated entities"
+title: "Theta join in HQL - join with unrelated entities"
 description: ""
 date: 2009-09-04T04:00:37+02:00
 draft: false

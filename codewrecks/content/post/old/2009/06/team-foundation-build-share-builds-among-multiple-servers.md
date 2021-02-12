@@ -1,5 +1,5 @@
 ﻿---
-title: "Team foundation Build ndash Share Builds among multiple servers"
+title: "Team foundation Build - Share Builds among multiple servers"
 description: ""
 date: 2009-06-25T12:00:37+02:00
 draft: false

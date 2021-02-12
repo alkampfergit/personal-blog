@@ -1,5 +1,5 @@
 ﻿---
-title: "Entity Framework 41ndashCollection Relations"
+title: "Entity Framework 41-Collection Relations"
 description: ""
 date: 2011-07-13T06:00:37+02:00
 draft: false

@@ -10,7 +10,7 @@ categories: [Nhibernate]
  
 {{< / highlight >}}
 
-If you does not know Query only properties of NHibernate you better take a look to [this post](http://ayende.com/Blog/archive/2009/06/10/nhibernate-ndash-query-only-properties.aspx), I must admit that they are really useful to make simpler query without changing the object model. I've this object model
+If you does not know Query only properties of NHibernate you better take a look to [this post](http://ayende.com/Blog/archive/2009/06/10/nhibernate---query-only-properties.aspx), I must admit that they are really useful to make simpler query without changing the object model. I've this object model
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image2.png)
 

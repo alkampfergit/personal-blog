@@ -1,5 +1,5 @@
 ﻿---
-title: "Extending Visual Studio 2010 Web TestndashRegex extraction"
+title: "Extending Visual Studio 2010 Web Test-Regex extraction"
 description: ""
 date: 2010-11-08T08:00:37+02:00
 draft: false

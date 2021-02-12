@@ -1,5 +1,5 @@
 ﻿---
-title: "Aop With castle ndash Part 2 ndash Selecting methods to intercept"
+title: "Aop With castle - Part 2 - Selecting methods to intercept"
 description: ""
 date: 2010-06-08T13:00:37+02:00
 draft: false

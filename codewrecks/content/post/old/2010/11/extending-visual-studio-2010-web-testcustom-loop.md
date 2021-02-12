@@ -1,5 +1,5 @@
 ﻿---
-title: "Extending Visual Studio 2010 web testndashCustom loop"
+title: "Extending Visual Studio 2010 web test-Custom loop"
 description: ""
 date: 2010-11-02T14:00:37+02:00
 draft: false
