@@ -8,7 +8,7 @@ categories: [Testing]
 ---
 For a Unit Test the most important concept, and probably the most difficult to manage is the concept of [Fixture](http://xunitpatterns.com/test%20fixture%20-%20xUnit.html). Quite often part of the Fixture is composed by an external File. In a little project that I use as example for jQuery I have a really simple class that parses an XML file to create a menu for Asp.Net MVC enabled site.
 
-In such a situation the fixture of the test is using different source files to test the class with different input. In a classic NUNIT unit testing you can solve this problem including the file in the project with â€œCopy if newerâ€. With such a setting Visual Studio at each build check if the file is changed, and eventually copies the file into the appropriate directory (bin/debug/pathofthefile in standard debug configuration)
+In such a situation the fixture of the test is using different source files to test the class with different input. In a classic NUNIT unit testing you can solve this problem including the file in the project with *Copy if newer*. With such a setting Visual Studio at each build check if the file is changed, and eventually copies the file into the appropriate directory (bin/debug/pathofthefile in standard debug configuration)
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image1.png)
 
@@ -28,7 +28,7 @@ public void GrabMenuWithActionUrl()
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The same test can be written in msTest, but this time I have the DeploymentItem attribute, that can be used to specfy to mstest engine, that my test really need the file â€œSampleFiles\MenuType1.xmlâ€.
+The same test can be written in msTest, but this time I have the DeploymentItem attribute, that can be used to specfy to mstest engine, that my test really need the file *SampleFiles\MenuType1.xml*.
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 [TestMethod()]

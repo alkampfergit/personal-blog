@@ -18,13 +18,13 @@ WOW, this is really a beautiful and useful web page :), now I want to register a
 
  ***Figure 2***: *recorded web performance test with two simple pages.*
 
-Now execute the test in Visual Studio, then go to request tab, localize the txtB parameter and press right click and then Quick Find. Now in the Quick find windows press â€œfind nextâ€  to quickly localize the position of the input textbox in the response of the second request. This permits you to immediately localize where the page render the text.
+Now execute the test in Visual Studio, then go to request tab, localize the txtB parameter and press right click and then Quick Find. Now in the Quick find windows press *find next*  to quickly localize the position of the input textbox in the response of the second request. This permits you to immediately localize where the page render the text.
 
 [![SNAGHTML1e8ee2e](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1e8ee2e_thumb.png "SNAGHTML1e8ee2e")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1e8ee2e.png)
 
  ***Figure 3***: *With quick find I can localize with easy values of the request*
 
-Now select the value â€œ2â€ in the response text, right click and then select Add Extraction Rule, repeat the same with the value 3 of the lblResult label. Now the test contains two extraction parameters called param0 and param1, just rename them to give them more meaningful names.
+Now select the value *2* in the response text, right click and then select Add Extraction Rule, repeat the same with the value 3 of the lblResult label. Now the test contains two extraction parameters called param0 and param1, just rename them to give them more meaningful names.
 
 [![SNAGHTML1ec858d](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1ec858d_thumb.png "SNAGHTML1ec858d")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1ec858d.png)
 
@@ -36,7 +36,7 @@ Now select the second request in the test and copy with CTRL+C and CTRL+V, now e
 
  ***Figure 5***: *copy the second request and use the context parameter extracted in the previous request*
 
-Now right click the request, and choose â€œInsert Loopâ€, simply select a For Loop and setup the loop to do 10 iterations.
+Now right click the request, and choose *Insert Loop*, simply select a For Loop and setup the loop to do 10 iterations.
 
 [![SNAGHTML1f37bfc](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1f37bfc_thumb.png "SNAGHTML1f37bfc")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML1f37bfc.png)
 

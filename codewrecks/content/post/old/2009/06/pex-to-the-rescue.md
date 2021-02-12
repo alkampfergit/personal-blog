@@ -12,7 +12,7 @@ Those exceptions I received this morning told me that my unit tests for that cla
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image13.png)
 
-It seems that there are really a lot of paths that makes my routine to fail. If you look at the Text column you see that some of the input strings that makes my routine fails are composed by string termination (\0) inside the string, or are null etc etc. Pex can find those specific input values because it analyzes the code of the Class under test, for this reason it is a tool of â€œWhite Boxâ€ testing. Another great feature of Pex is the â€œSuggestions Windowsâ€, since Pex found errors because he really analyze written code he can also give you suggestion on how to avoid a specific error.
+It seems that there are really a lot of paths that makes my routine to fail. If you look at the Text column you see that some of the input strings that makes my routine fails are composed by string termination (\0) inside the string, or are null etc etc. Pex can find those specific input values because it analyzes the code of the Class under test, for this reason it is a tool of *White Box* testing. Another great feature of Pex is the *Suggestions Windows*, since Pex found errors because he really analyze written code he can also give you suggestion on how to avoid a specific error.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image14.png)
 
@@ -45,13 +45,13 @@ Once the test project is created you can find a test file named in the same way 
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-As you can see I changed the MaxConstraintSolverTime to 2 so Pex can spend more time to analyze my function, now I can simply right click Pex generated class, and select â€œRun Pex explorationâ€ to explore again the method with this new setting. Now Pex can do a more deep analysis (this does not means that will always find more errors).
+As you can see I changed the MaxConstraintSolverTime to 2 so Pex can spend more time to analyze my function, now I can simply right click Pex generated class, and select *Run Pex exploration* to explore again the method with this new setting. Now Pex can do a more deep analysis (this does not means that will always find more errors).
 
 Pex is really good to find input pattern that makes your code fail:
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image17.png)
 
-I'm sure I never think to pass 1\*\*\*\*\0 to my routine :D. After some correction you usually find that inputs that makes your code fail are really strange, and you can tell â€œOk, it is enoughâ€, if someone passes â€œ1\*\*\*\*\*\0â€ he should really got an exception as result, but in the end Pex is exceptional in finding obvious failing path in your code.
+I'm sure I never think to pass 1\*\*\*\*\0 to my routine :D. After some correction you usually find that inputs that makes your code fail are really strange, and you can tell *Ok, it is enough*, if someone passes *1\*\*\*\*\*\0* he should really got an exception as result, but in the end Pex is exceptional in finding obvious failing path in your code.
 
 alk.
 

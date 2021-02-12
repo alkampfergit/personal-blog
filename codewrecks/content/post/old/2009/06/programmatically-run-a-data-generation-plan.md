@@ -61,7 +61,7 @@ public static void RunDataGenerationPlan(
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The solution is really simple, it is true that I have no way to invoke that protected method (Except reflection), but msbuild can be invoked programmatically, so I create an Engine class, load the main project file, then set some properties for the project such as ConnectionString, Verbose etc. With properties  you can specify the **â€œSourceFileâ€** that is the data generation file that you want to run. I've found a sample [here](http://social.msdn.microsoft.com/Forums/en-US/vstsdb/thread/5e750da2-24a0-4e4e-8eae-761f56c27b2c) that explain the xml syntax for msbuild, so I simply translate it into C# code using the Engine of msbuild directly from code. You need to imports Microsoft.Build.Engine to make this code compile. Now I can use that function in this way.
+The solution is really simple, it is true that I have no way to invoke that protected method (Except reflection), but msbuild can be invoked programmatically, so I create an Engine class, load the main project file, then set some properties for the project such as ConnectionString, Verbose etc. With properties  you can specify the ***SourceFile*** that is the data generation file that you want to run. I've found a sample [here](http://social.msdn.microsoft.com/Forums/en-US/vstsdb/thread/5e750da2-24a0-4e4e-8eae-761f56c27b2c) that explain the xml syntax for msbuild, so I simply translate it into C# code using the Engine of msbuild directly from code. You need to imports Microsoft.Build.Engine to make this code compile. Now I can use that function in this way.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 [TestMethod]

@@ -25,7 +25,7 @@ The script is really simple, it simply compose the drop folder [\\10.0.0.220\dro
 
 Now you can store this script in source control, and use it with a tfs build, to deploy on a remote server, you can for example run from a command prompt:
 
-* **beyondexecv2 \\10.0.0.220 -p "pa$$wordâ€ -c Deploy\DeployWeb.bat demo\_20100607.3** *
+* **beyondexecv2 \\10.0.0.220 -p "pa$$word* -c Deploy\DeployWeb.bat demo\_20100607.3** *
 
 This will copy the script on the 10.0.0.220 server, and launch the script with the argument demo\_20100607.3 (the build number), here is the result.
 

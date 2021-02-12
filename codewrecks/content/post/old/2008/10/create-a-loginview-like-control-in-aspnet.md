@@ -94,12 +94,12 @@ It is a simple class that have a String property an a property of type ITemplate
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-In this situation if the user has at least read access for area RIL\_ACC I showed the string â€œSei Permessoâ€ if the user has no access to that area I show â€œunpermittedâ€.
+In this situation if the user has at least read access for area RIL\_ACC I showed the string *Sei Permesso* if the user has no access to that area I show *unpermitted*.
 
 alk.
 
 Tags: [Asp.net](http://technorati.com/tag/Asp.net) [Security](http://technorati.com/tag/Security) [LoginView](http://technorati.com/tag/LoginView)
 
-<script type="text/javascript">var dzone_url = 'http://www.codewrecks.com/blog/index.php/2008/10/17/create-a-loginview-like-control-in-aspnet/';</script><script type="text/javascript">var dzone_title = 'Create a â€œLoginView likeâ€ control in asp.net';</script><script type="text/javascript">var dzone_blurb = 'Create a â€œLoginView likeâ€ control in asp.net';</script><script type="text/javascript">var dzone_style = '2';</script><script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script> 
+<script type="text/javascript">var dzone_url = 'http://www.codewrecks.com/blog/index.php/2008/10/17/create-a-loginview-like-control-in-aspnet/';</script><script type="text/javascript">var dzone_title = 'Create a *LoginView like* control in asp.net';</script><script type="text/javascript">var dzone_blurb = 'Create a *LoginView like* control in asp.net';</script><script type="text/javascript">var dzone_style = '2';</script><script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script> 
 
 [![DotNetKicks Image](http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http://www.codewrecks.com/blog/index.php/2008/10/17/create-a-loginview-like-control-in-aspnet/&amp;bgcolor=0080C0&amp;fgcolor=FFFFFF&amp;border=000000&amp;cbgcolor=D4E1ED&amp;cfgcolor=000000)](http://www.dotnetkicks.com/kick/?url=http://www.codewrecks.com/blog/index.php/2008/10/17/create-a-loginview-like-control-in-aspnet/)

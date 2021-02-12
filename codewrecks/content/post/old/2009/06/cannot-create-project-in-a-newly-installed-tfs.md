@@ -6,15 +6,15 @@ draft: false
 tags: [NET framework,Experiences]
 categories: [NET framework,Experiences]
 ---
-I've just installed Tfs For Workgroup in a small virtual machine to make some experiments. After setting up the machine (Windows 2008) I installed TFS SErvice pack 1 then tfs power toys and finally I opened up visual studio in my desktop machine. I simply connect to the team foundation server and tried to create a new â€œTeam Projectâ€, inserted some values for my test project and then tried to create the project, but here is the result
+I've just installed Tfs For Workgroup in a small virtual machine to make some experiments. After setting up the machine (Windows 2008) I installed TFS SErvice pack 1 then tfs power toys and finally I opened up visual studio in my desktop machine. I simply connect to the team foundation server and tried to create a new *Team Project*, inserted some values for my test project and then tried to create the project, but here is the result
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image9.png)
 
-Following the link â€œFor More information.. â€œ you can read detailed log, in the end of the file there is an exception
+Following the link *For More information.. * you can read detailed log, in the end of the file there is an exception
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image10.png)
 
-To avoid being lost in error simply look at the last operation that it tried to do, in this case it was â€œCreating reports on the Sql Server reporting" Servicesâ€ and the cause of the exception is â€œThe permission granted to user â€œTFSALKAMPFER\Alkampfer are insufficientâ€. To solve this problem install on the server the [Team Foundation Server Administration Tool](http://tfsadmin.codeplex.com/)
+To avoid being lost in error simply look at the last operation that it tried to do, in this case it was *Creating reports on the Sql Server reporting" Services* and the cause of the exception is *The permission granted to user *TFSALKAMPFER\Alkampfer are insufficient*. To solve this problem install on the server the [Team Foundation Server Administration Tool](http://tfsadmin.codeplex.com/)
 
 Then you can launch that tool with administrative privileges, connect to the server and verify permissions. Here are permissions on my newly installed server.
 

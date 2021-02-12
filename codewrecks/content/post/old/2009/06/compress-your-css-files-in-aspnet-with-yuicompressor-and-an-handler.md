@@ -118,7 +118,7 @@ It is a simple text file, but now I'm able to write an handler that use this fil
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This is the very first version of the handler, it basically compress all original files into one, it checks if the previously compressed file is out-of-date because one of the original css is changed. If nothing is changed it returns the compressed file to the caller. It has even a simple check, if the site has debug=â€falseâ€ and is in release mode, I honor cache of the browser, using appropriate headers.
+This is the very first version of the handler, it basically compress all original files into one, it checks if the previously compressed file is out-of-date because one of the original css is changed. If nothing is changed it returns the compressed file to the caller. It has even a simple check, if the site has debug=*false* and is in release mode, I honor cache of the browser, using appropriate headers.
 
 It works really well, now even in test site deployed by CC.net I can have compression and I can enable/disable simply from the IIS control panel, if I send css request to asp.net engine I'll have compression, if I do not map css extension to asp.net I have standard IIS behaviour.
 

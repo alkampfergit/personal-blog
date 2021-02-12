@@ -6,9 +6,9 @@ draft: false
 tags: [Winforms]
 categories: [NET framework]
 ---
-I have a winform application where the user can select an element into a grid, edit its properties, and then decide if the modification should be saved or rejected. Thanks to binding, IEditableObject and INotifyPropertyChanged, writing such feature is a breeze, but the user signaled me that something was wrong. He told me: â€œsuppose you choose an element, then change a value in the combo, nothing happens. When I press tab or move the â€œSaveâ€ and â€œCancelâ€ button become visible, but I wanto them to be visible as soon as I press a char into textbox or change a value in the combo.
+I have a winform application where the user can select an element into a grid, edit its properties, and then decide if the modification should be saved or rejected. Thanks to binding, IEditableObject and INotifyPropertyChanged, writing such feature is a breeze, but the user signaled me that something was wrong. He told me: *suppose you choose an element, then change a value in the combo, nothing happens. When I press tab or move the *Save* and *Cancel* button become visible, but I wanto them to be visible as soon as I press a char into textbox or change a value in the combo.
 
-The user does not like this approach, he explicitly asked me to show â€œSaveâ€ and â€œCancelâ€ button when someone change a value and keep them hidden otherwise, but he does not like the need to focus change to make them visible. The solution was really simple, you need to intercept some events to force binding update whenever you want.
+The user does not like this approach, he explicitly asked me to show *Save* and *Cancel* button when someone change a value and keep them hidden otherwise, but he does not like the need to focus change to make them visible. The solution was really simple, you need to intercept some events to force binding update whenever you want.
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 private void txtAction_TextChanged(object sender, EventArgs e)

@@ -16,7 +16,7 @@ The full path on the process can be seen in the following one
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image6.png)
 
-For this example *I want to tweet a message when one of the test fails*, and since failure in running test, raise an exception in the workflow, I simply added a new msbuild task to the exception part of the â€œTry Run testâ€ activity, and proceeded to fully configure it. We have a series of problems here, first of all, we need to write a.proj file that will import my custom task and execute it, and we need also to include the dll containing custom task into the source control. This last point is simplier, just drop the dll with custom tasks with source code.
+For this example *I want to tweet a message when one of the test fails*, and since failure in running test, raise an exception in the workflow, I simply added a new msbuild task to the exception part of the *Try Run test* activity, and proceeded to fully configure it. We have a series of problems here, first of all, we need to write a.proj file that will import my custom task and execute it, and we need also to include the dll containing custom task into the source control. This last point is simplier, just drop the dll with custom tasks with source code.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image7.png)
 
@@ -24,7 +24,7 @@ As you can verify I simply created a BuildTools directory, that contains a Msbui
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image8.png)
 
-As you can see I've simply created a subdirectory of the â€œBuildProcessTemplatesâ€ called CustomBuild where I put my TweetResult.proj file. Now what I need to write into my project file? Here is a possible example
+As you can see I've simply created a subdirectory of the *BuildProcessTemplates* called CustomBuild where I put my TweetResult.proj file. Now what I need to write into my project file? Here is a possible example
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <Project
@@ -48,7 +48,7 @@ Ok, this is a very simple project file, the path to the dotnetmarche.msbuildexte
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image9.png)
 
-When you press the â€œeditâ€ button you can insert data in the â€œExpression Editorâ€ that seems to use Visual Basic Syntax by default. To locate the project you need to use the BuildAgent class that has GetExpandedBuildDirectory that in turns needs the BuildDetail.BuildDefinition variable. Luckily you have intellisense into the Expression Editor ;) so it is quite simple process. At this base directory you will add the full path of the project as you see in Source tree, you need to use *\source* to identify source, then *\experiments* that represents the name of the project, and finally the remaining part of the directory. The only difficult part is to know how the build agent creates directory to build the project.
+When you press the *edit* button you can insert data in the *Expression Editor* that seems to use Visual Basic Syntax by default. To locate the project you need to use the BuildAgent class that has GetExpandedBuildDirectory that in turns needs the BuildDetail.BuildDefinition variable. Luckily you have intellisense into the Expression Editor ;) so it is quite simple process. At this base directory you will add the full path of the project as you see in Source tree, you need to use *\source* to identify source, then *\experiments* that represents the name of the project, and finally the remaining part of the directory. The only difficult part is to know how the build agent creates directory to build the project.
 
 Since this MsBuild task is executed in the context of the tweetResult.proj file, it has no access to the standard properties of the build workflow, to assign value to properties you need to use CommandLineArguments
 

@@ -16,7 +16,7 @@ Supporting this scenario with Integration Platform is not difficult, first of al
 
  **Figure 1 â€“** *How to store credentials to tfs in the server where Integration Platform is running. Note: to avoid problem, use the owner of the project as the user to connect to codeplex and to local TFS.*
 
-Now you can install Integration platform, create a new project and choose â€œVersionControlâ€ as type of synchronization; then simply configure the two servers, the codeplex one and the local tfs one. In  **Figure 2** I show the configuration with two-way manual synchronization, a configuration that you should use to test if everything work ok (in the final version you should use the Custom Workflow type to use automatic synchronization.
+Now you can install Integration platform, create a new project and choose *VersionControl* as type of synchronization; then simply configure the two servers, the codeplex one and the local tfs one. In  **Figure 2** I show the configuration with two-way manual synchronization, a configuration that you should use to test if everything work ok (in the final version you should use the Custom Workflow type to use automatic synchronization.
 
 [![Untitled3](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled3_thumb.png "Untitled3")](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled3.png)
 

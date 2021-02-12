@@ -70,7 +70,7 @@ Now you need to instruct WCF to use certificate and membership. Here is the endp
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The value for the &lt;dns value=â€xxxâ€ /&gt; must be the same of the certificate. In this simple example I simply used localhost, but do not forget to use the real name that you will use to expose the service. The bindingConfiguration is named â€œmbâ€ and is the one that instruct wcf that we are expecting username/password in the header of the messages.
+The value for the &lt;dns value=*xxx* /&gt; must be the same of the certificate. In this simple example I simply used localhost, but do not forget to use the real name that you will use to expose the service. The bindingConfiguration is named *mb* and is the one that instruct wcf that we are expecting username/password in the header of the messages.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <bindings>
@@ -129,7 +129,7 @@ This is not enough, because this certificate was issued by a not trusted tempora
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image8.png)
 
-By clicking â€œImportâ€ you need to browse where you created the two pvk and cer file (the very first step of this tutorial), and you need to import the file AlkCa.cer, the certificate file for the temporary certification authority. Clearly you need to send those two files to each client computer, but keep secret the pck file. Now you should see the CA in the list of trusted root certification authorities. Now create a windows form application, set a reference to the service and goes to app.config. In the behaviors section you need to configure certificates.
+By clicking *Import* you need to browse where you created the two pvk and cer file (the very first step of this tutorial), and you need to import the file AlkCa.cer, the certificate file for the temporary certification authority. Clearly you need to send those two files to each client computer, but keep secret the pck file. Now you should see the CA in the list of trusted root certification authorities. Now create a windows form application, set a reference to the service and goes to app.config. In the behaviors section you need to configure certificates.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <behaviors>
@@ -171,7 +171,7 @@ using (HelloWorld.HelloWorldClient client = new WindowsFormsApplication1.HelloWo
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-I created in asp.net authentication database a user named Dev, that belongs to the role â€œDevelopersâ€.
+I created in asp.net authentication database a user named Dev, that belongs to the role *Developers*.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image9.png)
 
@@ -187,7 +187,7 @@ int IHelloWorld.HelloWorld()
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The PrincipalPermission attribute requires that to call this method you need to belong to role â€œDevelopersâ€. You can start the client and verify that it is able to call the server correctly. Now it is possible that you gets the exception.
+The PrincipalPermission attribute requires that to call this method you need to belong to role *Developers*. You can start the client and verify that it is able to call the server correctly. Now it is possible that you gets the exception.
 
 > The X.509 certificate CN=localhost chain building failed. The certificate that was used has a trust chain that cannot be verified. Replace the certificate or change the certificateValidationMode. The revocation function was unable to check revocation for the certificate
 
@@ -210,7 +210,7 @@ There are a lot of posts dealing with this problem around in the internet, but i
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-As you can see  **I set revocationMode to â€œNoCheckâ€** this is usually enough to solve the problem. After everything works you can verify what is happening with a user that does not belongs to Developers role..
+As you can see  **I set revocationMode to *NoCheck*** this is usually enough to solve the problem. After everything works you can verify what is happening with a user that does not belongs to Developers role..
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 using (HelloWorld.HelloWorldClient client = new WindowsFormsApplication1.HelloWorld.HelloWorldClient())
@@ -222,13 +222,13 @@ using (HelloWorld.HelloWorldClient client = new WindowsFormsApplication1.HelloWo
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-I've created a valid user Test, that belongs only to role â€œTestersâ€, and when you try to call the HelloWorld method you will get an exception â€œaccess deniedâ€ because the user does not belongs to requested role.
+I've created a valid user Test, that belongs only to role *Testers*, and when you try to call the HelloWorld method you will get an exception *access denied* because the user does not belongs to requested role.
 
 Sometimes you can encounter the following exception.
 
 > An unsecured or incorrectly secured fault was received from the other party
 
-This happens when there is some error in the server, the most common one is a wrong configuration of the authentication database, or authentication. Verify with the appropriate web management that everything is ok in the web.config, verify connection string to the auth database, and verify that authentication mode=â€Formsâ€ and not â€œWindowsâ€.
+This happens when there is some error in the server, the most common one is a wrong configuration of the authentication database, or authentication. Verify with the appropriate web management that everything is ok in the web.config, verify connection string to the auth database, and verify that authentication mode=*Forms* and not *Windows*.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image10.png)
 

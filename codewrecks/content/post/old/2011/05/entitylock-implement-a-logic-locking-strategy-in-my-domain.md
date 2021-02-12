@@ -22,7 +22,7 @@ I introduced in the domain the concept of EntityLock and LockedEntity
 
  ***Figure 1***: *Schema of EntityLock and LockedEntity*
 
-I simply need some mechanism to tell â€œI want to modify this entity and I want to be sure that no other machine or process is actually using itâ€. The class has three properties, one is EntityCode and is the logical Id of the entity being modified, Locker field contains a code that identify the process that settled the lock (actually is machineName + full path of the executable) and finally the timestamp identify the date and time when the lock was imposed.
+I simply need some mechanism to tell *I want to modify this entity and I want to be sure that no other machine or process is actually using it*. The class has three properties, one is EntityCode and is the logical Id of the entity being modified, Locker field contains a code that identify the process that settled the lock (actually is machineName + full path of the executable) and finally the timestamp identify the date and time when the lock was imposed.
 
 Since I need to share the lock between multiple machines I can simplify the design using the Database as the backing storage for the locks.
 

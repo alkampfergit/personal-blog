@@ -15,9 +15,9 @@ lcv.SortDescriptions.Add(new SortDescription(â€¦));
 
 I do not like very much this approach, are you sure that a valid default view exists during a UnitTest? So lets examine another possible solution.
 
-Suppose you have a view that has a ListView currently bound to a property of ViewModel called  **Links** , and this property is an *ObservableCollection&lt;T&gt;,* suppose also that you need to filter content based on a property called  **Status**. What I want is â€œno codeâ€ on the View, and minimum impact on the already existing view, I want also the ability to test the filter function with a unit test.
+Suppose you have a view that has a ListView currently bound to a property of ViewModel called  **Links** , and this property is an *ObservableCollection&lt;T&gt;,* suppose also that you need to filter content based on a property called  **Status**. What I want is *no code* on the View, and minimum impact on the already existing view, I want also the ability to test the filter function with a unit test.
 
-For the first requirements, it is enough to expose to the view â€œsomethingâ€ bindable in the same property name ( **Links)** , since my ViewModel has an ObservableCollection&lt;SingleAnalysisLink&gt; called Links, I changed the viewmodel in this way.
+For the first requirements, it is enough to expose to the view *something* bindable in the same property name ( **Links)** , since my ViewModel has an ObservableCollection&lt;SingleAnalysisLink&gt; called Links, I changed the viewmodel in this way.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 internal ObservableCollection<SingleAnalysisLink> InnerLinks { get; set; };

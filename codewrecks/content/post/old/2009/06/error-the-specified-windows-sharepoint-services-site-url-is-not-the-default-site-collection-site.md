@@ -6,7 +6,7 @@ draft: false
 tags: [Experiences]
 categories: [Experiences]
 ---
-I'm installing Tfs 2008 on a Virtual machine. Following the guide I saw that I need first to install Share Point Services 3.0 SP2 before installing team foundation server. You can find those part in the [guide](http://www.microsoft.com/downloads/details.aspx?familyid=FF12844F-398C-4FE9-8B0D-9E84181D9923&amp;displaylang=en) with the title â€œHow to: Install SharePoint Products and Technologies on Windows Serverâ€.
+I'm installing Tfs 2008 on a Virtual machine. Following the guide I saw that I need first to install Share Point Services 3.0 SP2 before installing team foundation server. You can find those part in the [guide](http://www.microsoft.com/downloads/details.aspx?familyid=FF12844F-398C-4FE9-8B0D-9E84181D9923&amp;displaylang=en) with the title *How to: Install SharePoint Products and Technologies on Windows Server*.
 
 I followed all the instruction, but when team foundation server installer asked me the address of sharepoint site I tried some url but I got the infamous error
 
@@ -20,11 +20,11 @@ Ok now verify that you can browse the site collection at site [http://tfsalkampf
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image5.png)
 
-You need to click â€œapplication managementâ€ and then â€œCreate site collectionâ€. Now you should see the page to create another site collection
+You need to click *application management* and then *Create site collection*. Now you should see the page to create another site collection
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image6.png)
 
-Please be sure that you are working on the Web application you have created for Tfs, then simply use the /sites/ option in the combo and specify whathever name you want for the web site address, i've chosen â€œBaseâ€. Now press ok and verify that the site collection is ok browsing [http://tfsalkampfer/sites/base/default.aspx](http://tfsalkampfer/sites/base/default.aspx "http://tfsalkampfer/sites/base/default.aspx"), now you can set the value [http://tfsalkampfer/sites/](http://tfsalkampfer/sites/) as share point site during Tfs installation, and now everything went ok.
+Please be sure that you are working on the Web application you have created for Tfs, then simply use the /sites/ option in the combo and specify whathever name you want for the web site address, i've chosen *Base*. Now press ok and verify that the site collection is ok browsing [http://tfsalkampfer/sites/base/default.aspx](http://tfsalkampfer/sites/base/default.aspx "http://tfsalkampfer/sites/base/default.aspx"), now you can set the value [http://tfsalkampfer/sites/](http://tfsalkampfer/sites/) as share point site during Tfs installation, and now everything went ok.
 
 alk.
 

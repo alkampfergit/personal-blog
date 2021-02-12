@@ -6,7 +6,7 @@ draft: false
 tags: [Nhibernate]
 categories: [Nhibernate]
 ---
-Some time ago I posted a link about a [user type](http://www.codewrecks.com/blog/index.php/2008/10/21/some-details-on-older-post-about-usertype/) to store list of strings in a single database field. In a project of mine I have another usertype very similar, that stores list of integers into a single string database field in a # separated value, like #1#8#23# (note that the character # appears at the begin and the end of the string). Now Suppose you need to made some query on it like â€œselect all Domains where activeCustomerList is not empty and contains at least one id:
+Some time ago I posted a link about a [user type](http://www.codewrecks.com/blog/index.php/2008/10/21/some-details-on-older-post-about-usertype/) to store list of strings in a single database field. In a project of mine I have another usertype very similar, that stores list of integers into a single string database field in a # separated value, like #1#8#23# (note that the character # appears at the begin and the end of the string). Now Suppose you need to made some query on it like *select all Domains where activeCustomerList is not empty and contains at least one id:
 
 {{< highlight sql "linenos=table,linenostart=1" >}}
 IList<Domain> res = session
@@ -25,7 +25,7 @@ IList<Domain> res = session.CreateCriteria(typeof(Domain))
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-With criteria API you need to specify that you want the field not to be equal to a real empty string of IntegerList. This happens because the Criteria API works on the model on the entity, so if the property is of type List&lt;Int32&gt; for an equality operator it need to compare it with the result of applying the UserType to the Empty Integer List. In HQL you can also express some interesting query, as for example â€œAll domains that contains and active customer with ID 9â€
+With criteria API you need to specify that you want the field not to be equal to a real empty string of IntegerList. This happens because the Criteria API works on the model on the entity, so if the property is of type List&lt;Int32&gt; for an equality operator it need to compare it with the result of applying the UserType to the Empty Integer List. In HQL you can also express some interesting query, as for example *All domains that contains and active customer with ID 9*
 
 {{< highlight sql "linenos=table,linenostart=1" >}}
 IList<Domain> res = session

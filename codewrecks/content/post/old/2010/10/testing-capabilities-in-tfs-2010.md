@@ -16,19 +16,19 @@ Thanks to MTM you can leverage the power of TFS for managing testing suites; as 
 
 * ***Figure 1***: * *A simple user story.*
 
-Now the testing team begin to create test suite for this User Story, and thanks to MTM they can simply press the â€œadd requirementsâ€ button, choose that User Story and create a test suite linked to that user story.
+Now the testing team begin to create test suite for this User Story, and thanks to MTM they can simply press the *add requirements* button, choose that User Story and create a test suite linked to that user story.
 
 [![SNAGHTML64bbc1](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML64bbc1_thumb.png "SNAGHTML64bbc1")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML64bbc1.png)
 
-* **Figure 2** *: *a Test case called â€œGestione Utentiâ€ linked to the User Story â€œGestione Utentiâ€*
+* **Figure 2** *: *a Test case called *Gestione Utenti* linked to the User Story *Gestione Utenti**
 
 The main advantage is that the association is managed by TFS, that automatically list each test case of this test suite as belonging to the corresponding User Story. The tester team add two Test Case to the Suite, and then all developers can look at them in Visual Studio.
 
 [![SNAGHTML660ff9](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML660ff9_thumb.png "SNAGHTML660ff9")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML660ff9.png)
 
-* ***Figure 3***: In visual studio you can see all test case that are â€œtestingâ€ this user story*
+* ***Figure 3***: In visual studio you can see all test case that are *testing* this user story*
 
-This is the key in ALM:  **traceability**. Now you can easily understand what are the test cases related to the user story, and technical project manager can verify that all the tasks of the User Story are enough to satisfy test cases. Sometimes this helps a lot in discovering â€œhidden requirementsâ€, suppose that the technical lead see a test case that states
+This is the key in ALM:  **traceability**. Now you can easily understand what are the test cases related to the user story, and technical project manager can verify that all the tasks of the User Story are enough to satisfy test cases. Sometimes this helps a lot in discovering *hidden requirements*, suppose that the technical lead see a test case that states
 
 1) open the web page
 
@@ -60,7 +60,7 @@ If you are the Test Plan Manager, you should also allocate resources to the test
 
 [![SNAGHTML6c144c](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6c144c_thumb.png "SNAGHTML6c144c")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6c144c.png)
 
-* ***Figure 5***: How to assign a resource to a test case, in this example I'm assigning the Administrator to the â€œEsempio test case chiusoâ€ test case*
+* ***Figure 5***: How to assign a resource to a test case, in this example I'm assigning the Administrator to the *Esempio test case chiuso* test case*
 
 Clearly you can use your GANTT chart to plan the execution.
 
@@ -72,7 +72,7 @@ Publishing the modifications to TFS results in reallocation of the testing resou
 
 [![SNAGHTML6e699d](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6e699d_thumb.png "SNAGHTML6e699d")](https://www.codewrecks.com/blog/wp-content/uploads/2010/10/SNAGHTML6e699d.png)
 
-* ***Figure 7***: The test case 63 was assigned to Administrator with the â€œassign resourcesâ€ of Microsoft Project and the changes are published back to TFS, so they are visible everywhere.*
+* ***Figure 7***: The test case 63 was assigned to Administrator with the *assign resources* of Microsoft Project and the changes are published back to TFS, so they are visible everywhere.*
 
 In Microsoft Project you can use Task Inspector to verify if some resource is overallocated because they have to work on other tasks. In Figure 8 we can see that project complains about the assignment of Administrator to a test case, because he is also assigned to other tasks. Clearly gantt planning for single test cases could be a little bit too granular, but this is only an example on how flexible is test case management thanks to TFS and MTM.
 

@@ -12,7 +12,7 @@ Suppose you need to programmatically analyze some web pages that are protected b
 
 This sometimes happens: you do a postback with your credentials, then a page is rendered where a javascript code automatically do another postback to another page, and finally another javascript finally takes you to the landing page for successful login. Other example happens when the login procedure involves some javascript code that needs to be executed before a postback.
 
-A possible solution is using the [WebBrowser](http://msdn.microsoft.com/en-us/library/system.windows.forms.webbrowser.aspx) control to navigate to login page, then locate the texboxes controls for UserName and password, locate the â€œsubmitâ€ button, wait for all redirect and finally grab the cookie from the webbrowser control. This solution is simple, because login procedure is executed inside a real Browser and we only need to grab the cookies when the whole procedure ends.
+A possible solution is using the [WebBrowser](http://msdn.microsoft.com/en-us/library/system.windows.forms.webbrowser.aspx) control to navigate to login page, then locate the texboxes controls for UserName and password, locate the *submit* button, wait for all redirect and finally grab the cookie from the webbrowser control. This solution is simple, because login procedure is executed inside a real Browser and we only need to grab the cookies when the whole procedure ends.
 
 This is a sample of possible code.
 
@@ -35,7 +35,7 @@ HtmlElement elementByName = GetInputElementByName("name_of_the_input_control_for
 elementByName.SetAttribute("value", "****** **");
 HtmlElement htmlElement = GetInputElementByName("name_of_submit_button", theBrowser);
 htmlElement.InvokeMember("click");
-{{< / highlight >}}** Step 2:***Locate the two input controls for username and password, fill them with right values, then locate the submit button and finally invoke the â€œclickâ€ method*
+{{< / highlight >}}** Step 2:***Locate the two input controls for username and password, fill them with right values, then locate the submit button and finally invoke the *click* method*
 
 As you can see the code is really simple, input control can be located by name, by id, or by classes, for this simple example I locate them by name with this simple function.
 
@@ -59,7 +59,7 @@ return null;
 
  **Step 3:** *Function to locate an input control by name.*
 
-This function is really simple, it iterates on all [HTMLElement](http://msdn.microsoft.com/en-us/library/204hxbb2%28v=VS.100%29.aspx) of type â€œinputâ€ present in the page, for each of them check if the name is equal to desidered one, and simply returns the element.
+This function is really simple, it iterates on all [HTMLElement](http://msdn.microsoft.com/en-us/library/204hxbb2%28v=VS.100%29.aspx) of type *input* present in the page, for each of them check if the name is equal to desidered one, and simply returns the element.
 
 Ok, now we simplylet the WebBrowser control navigates to the login page, wait for every possible redirect, and finally grab the cookie. One of the problem you face when you try to get cookie is due to [HttpOnly](http://www.codinghorror.com/blog/2008/08/protecting-your-cookies-httponly.html) cookies. HttpOnly cookes lives only inside the browser, and cannot be managed by javascript or other browser code, but we really need to grab them to be able to use a WebRequest to download pages protected by login. Huston, we have a cookie problem
 

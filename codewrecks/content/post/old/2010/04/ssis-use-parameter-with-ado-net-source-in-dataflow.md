@@ -29,7 +29,7 @@ In this approach I can take advantage to the fact that Execute Sql Task support 
 
 As you can verify I simply create a T-Sql query with the parameter @clieId, then assign the value of a variable to the parameter, but in a Data Flow you cannot use parameter on ADO Net Source, and this can be a problem, because I need to filter the source data by customer and date range, then doing transformation etc etc.
 
-The solution is using Expression, you can see that he Move Data for ExcelAnalysis has a little pink triangle in the upper left, to specify that some properties are set with expression. If you click on the whole dataflow in the â€œcontrol Flowâ€ tab you can setup expression for the Data Flow Block
+The solution is using Expression, you can see that he Move Data for ExcelAnalysis has a little pink triangle in the upper left, to specify that some properties are set with expression. If you click on the whole dataflow in the *control Flow* tab you can setup expression for the Data Flow Block
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image10.png)
 

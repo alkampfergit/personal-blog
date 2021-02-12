@@ -15,7 +15,7 @@ XElement element = XElement.Load(wholeContent);
 foreach (var xElement in element.Elements())
 {{< / highlight >}}
 
-Using an XElement is really better than using the Raw [XmlReader](http://msdn.microsoft.com/en-us/library/b8a5e1s5%28v=VS.90%29.aspx) interface. I wrote a couple of tests to verify that everything work, then I use this class in a DataContract and sent over the wire with WCF. When I call the WCF function I got a strange error â€œ **The XmlReader state should be EndOfFile after this operation**.â€ error. This happens because the serialized XML content sent by WCF is somewhat manipulated and when the XElement read the content of the XmlReader after he finished reading the content the reader is not at the end. This check is somewhat annoying but you can do a dirty trick to avoid this problem.
+Using an XElement is really better than using the Raw [XmlReader](http://msdn.microsoft.com/en-us/library/b8a5e1s5%28v=VS.90%29.aspx) interface. I wrote a couple of tests to verify that everything work, then I use this class in a DataContract and sent over the wire with WCF. When I call the WCF function I got a strange error * **The XmlReader state should be EndOfFile after this operation**.* error. This happens because the serialized XML content sent by WCF is somewhat manipulated and when the XElement read the content of the XmlReader after he finished reading the content the reader is not at the end. This check is somewhat annoying but you can do a dirty trick to avoid this problem.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 String wholeContent = reader.ReadInnerXml();

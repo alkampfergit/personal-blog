@@ -16,7 +16,7 @@ The checkbox can be, selected, not selected, or not used and when it is not used
 <asp:CheckBox ID="chkCCSignaled" CssClass="threestate" runat="server" />
 {{< / highlight >}}
 
-The only stuff you need is that you need to assign the â€œthreestateâ€ style to the checkbox. (this satisfy the need of the minimuym impact, other developers that want to use that checkbox can simply add that css to a standard checkbox). The dirty work is done by an unobtrusive jquery javascript that gets injected with the masterpage.
+The only stuff you need is that you need to assign the *threestate* style to the checkbox. (this satisfy the need of the minimuym impact, other developers that want to use that checkbox can simply add that css to a standard checkbox). The dirty work is done by an unobtrusive jquery javascript that gets injected with the masterpage.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 $(function() {
@@ -61,7 +61,7 @@ thespan.prepend(innerslide);
 });
 {{< / highlight >}}
 
-The solution is quite simple, I create a new div with a specific class to overlay the checkbox and create the blue layer when the checkbox is in state â€œundefinedâ€. the tricky part is that I need to manage three possible value for the checkbox and I need to pass that value to the server during a postback, so I create dynamically an hidden input with the same id of the checkbox and the â€œ\_hfâ€ string at the end. In that hidden field I store the actual value of the checkbox, 0 not selected, 1 selected and 2 undefined. The rest of the script is needed to manage the transition between states reacting to the click event of the checkbox.
+The solution is quite simple, I create a new div with a specific class to overlay the checkbox and create the blue layer when the checkbox is in state *undefined*. the tricky part is that I need to manage three possible value for the checkbox and I need to pass that value to the server during a postback, so I create dynamically an hidden input with the same id of the checkbox and the *\_hf* string at the end. In that hidden field I store the actual value of the checkbox, 0 not selected, 1 selected and 2 undefined. The rest of the script is needed to manage the transition between states reacting to the click event of the checkbox.
 
 In the server code I need to grab the three state value, so I created a simple extension method.
 
@@ -84,7 +84,7 @@ End Module
 End Namespace
 {{< / highlight >}}
 
-This simple method is an extension method for the checkbox control, it simply grab the value of the dynamically generated hidden field from the Request.Form collection. After taking actual value, he add the attribute â€œthreestatevalueâ€ to the checkbox, because the client script should be able to restore the state of the checkbox after a postback. Now you can simply get the value with this code.
+This simple method is an extension method for the checkbox control, it simply grab the value of the dynamically generated hidden field from the Request.Form collection. After taking actual value, he add the attribute *threestatevalue* to the checkbox, because the client script should be able to restore the state of the checkbox after a postback. Now you can simply get the value with this code.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 Public ReadOnly Property IsCCChecked() As Nullable(Of Boolean)

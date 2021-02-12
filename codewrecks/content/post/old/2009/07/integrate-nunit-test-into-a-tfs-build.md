@@ -69,7 +69,7 @@ This is a simple Exec towards the  **mstest.exe** executable, that is able to ta
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image19.png)
 
-As you can verify nunit tests are executed correctly, and results are correctly published in the TFS build result window. Thanks to BuildStep we created a step that states â€œRunning Nunit Testsâ€, and thanks to mstest.exe and xslt transformation we transformed the result from nunit output to mstest output, so we can publish them into the tfs build.
+As you can verify nunit tests are executed correctly, and results are correctly published in the TFS build result window. Thanks to BuildStep we created a step that states *Running Nunit Tests*, and thanks to mstest.exe and xslt transformation we transformed the result from nunit output to mstest output, so we can publish them into the tfs build.
 
 alk.
 

@@ -34,7 +34,7 @@ In figure 3 you can see that if you *clear the query plan cache* and execute aga
 
 [![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/Untitled_thumb.jpg "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/Untitled.jpg)
 
-The only solution to this approach is using the [OPTION (NORECOMPILE)](http://sqltutorials.blogspot.com/2008/03/with-recompile-re-compile-execution.html) for all queries that present this problem, or you can instruct the query governor to prefer some join option (using [OPTION (HASH JOIN)](http://msdn.microsoft.com/en-us/library/ms181714%28v=SQL.90%29.aspx) for example) if you already know that this is the right execution plan for all data distribution. All these techniques are called** **[** *â€œquery hintâ€* **](http://msdn.microsoft.com/en-us/library/ms181714%28v=SQL.90%29.aspx) and are the only way to solve bad performance problem of parameterized query when you have non uniform data distribution.
+The only solution to this approach is using the [OPTION (NORECOMPILE)](http://sqltutorials.blogspot.com/2008/03/with-recompile-re-compile-execution.html) for all queries that present this problem, or you can instruct the query governor to prefer some join option (using [OPTION (HASH JOIN)](http://msdn.microsoft.com/en-us/library/ms181714%28v=SQL.90%29.aspx) for example) if you already know that this is the right execution plan for all data distribution. All these techniques are called** **[** **query hint** **](http://msdn.microsoft.com/en-us/library/ms181714%28v=SQL.90%29.aspx) and are the only way to solve bad performance problem of parameterized query when you have non uniform data distribution.
 
 Now the problem seems solved, but, wait!!!!!,** *most of the queries are issued by nhibernate* **, and I need to find a way to add query hints to nhibernate query, a task that is not supported natively by NH. Solving this problem is a two phase process, first of all you need to find a way to insert text into nhibernate generated SQL, a task that can easily solved by an interceptor.
 
@@ -62,7 +62,7 @@ return base.OnPrepareStatement(sql);
 
 As you can see the code is really simple, the interceptor inherits from EmptyInterceptor and override the OnPrepareStatement(),** adding the right Query Hint to the end of the query **. This is probably not 100% production ready code, because I'm not 100% sure that for complex query, inserting the hint at the end of the query is the right choice, but for my specific problem is enough and it is a good starting point.
 
-If you look at the code you can verify that I'm checking for certain string in query text to add the appropriate hint, but how can you add these strings to the query to enable query hint to be generated? The answer is â€œcommentsâ€. First of all I add this interceptor to NH configuration, so it got attached to every session.
+If you look at the code you can verify that I'm checking for certain string in query text to add the appropriate hint, but how can you add these strings to the query to enable query hint to be generated? The answer is *comments*. First of all I add this interceptor to NH configuration, so it got attached to every session.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 cfg.SetInterceptor(new QueryHintInterceptor());

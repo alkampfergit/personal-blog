@@ -12,7 +12,7 @@ But a problem arise when I use the browser in a 64 bit environment, because when
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image2.png)
 
-An exception is raised because he could not cast elem to type HTMLHEadElementClass. Now I have 2 problems, the first is why in 64 it environment the MSHTML interop is changing the way it works returning me an object that implements a different set of COM interfaces, but I need also to know what kind of element I got in return asking for TagName (â€œHEADâ€).
+An exception is raised because he could not cast elem to type HTMLHEadElementClass. Now I have 2 problems, the first is why in 64 it environment the MSHTML interop is changing the way it works returning me an object that implements a different set of COM interfaces, but I need also to know what kind of element I got in return asking for TagName (*HEAD*).
 
 Unfortunately the elem variable is of type  **\_\_ComObject** , and you could not query it for interfaces with reflection, to know what interface it implements. To accomplish this you need to know a little bit of COM and [read this article](http://fernandof.wordpress.com/2008/02/05/how-to-check-the-type-of-a-com-object-system__comobject-with-visual-c-net/). Basically you need to pass from IUnknown, and try to query it for every interface in MSHTML to find all COM interfaces implemented by that object. The first step is writing this code and running everything in 64 bit environment.
 
@@ -34,7 +34,7 @@ Debug.WriteLine("Support interface " + type.FullName);
 }
 {{< / highlight >}}
 
-The above code dumps to debug console all interfaces belonging to MSHTML that are implemented by the object returned from the GetElementsByTagName/(â€œHEADâ€), here is the result.
+The above code dumps to debug console all interfaces belonging to MSHTML that are implemented by the object returned from the GetElementsByTagName/(*HEAD*), here is the result.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 Support interface mshtml.IHTMLElement

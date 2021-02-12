@@ -6,7 +6,7 @@ draft: false
 tags: [ASPNET]
 categories: [ASPNET]
 ---
-The problem is described in [this post](http://forums.asp.net/p/1402608/3040712.aspx), basically it can be summarized in â€œyou have a user control with validators, you put more than one instance of the user control in a page, all validators are fired togetherâ€
+The problem is described in [this post](http://forums.asp.net/p/1402608/3040712.aspx), basically it can be summarized in *you have a user control with validators, you put more than one instance of the user control in a page, all validators are fired together*
 
 The above post already gives a solution, but is not a general one. I want to avoid the need to go into the user control and tweak with validators, so I came up with this little solution
 

@@ -23,7 +23,7 @@ foreach (Type type in asm.GetTypes())
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This test is simple, it load the assembly with actions, then iterate trough all types, and if the type belong to a specific namespace, it verify the presence of a static public method called â€œCreateCommandâ€, then call that method and verify that the return object is of correct type.
+This test is simple, it load the assembly with actions, then iterate trough all types, and if the type belong to a specific namespace, it verify the presence of a static public method called *CreateCommand*, then call that method and verify that the return object is of correct type.
 
 This test is flawed, because if you mistype the name of the namespace as I did (typed Myproject instead of MyProject) the test will succeed because no type is inspected. This is the typical situation where the test have complex code (reflection) and the test passed, not because it verifies the correct expectations, but because the test itself is bugged :). The solution is simple.
 

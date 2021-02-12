@@ -14,7 +14,7 @@ This is probably due to an authentication request, so you can try to open Team E
 
 [![image_thumb\[5\]](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb5_thumb.png "image_thumb[5]")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb5.png)
 
-Credential manager permits you to specify credential to use with computer around the network, so you can simply choose to â€œAdd a Windows Credentialâ€
+Credential manager permits you to specify credential to use with computer around the network, so you can simply choose to *Add a Windows Credential*
 
 [![image_thumb\[8\]](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb8_thumb.png "image_thumb[8]")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb8.png)
 

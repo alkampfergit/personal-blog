@@ -8,11 +8,11 @@ categories: [General]
 ---
 A good option to customize TFS2010 build workflow is creating a Custom Activity, an operation that is quite different from creating a Custom  **Code** Activity. A custom activity does not contain any code at all and it is only composed by sub activities. This kind of customization is really useful to create pieces of workflow that will be inserted in main build workflow. As an example I created a simple custom activity to deploy a database project on a custom Database Server.
 
-The overall operation was already covered [in this post](http://www.codewrecks.com/blog/index.php/2010/01/04/deploy-a-database-project-with-tfs-build-2010/), but as you can see that technique involved a MsBuild Activity and you needed to specify values with a really bad â€œcommand line parameterâ€ syntax.
+The overall operation was already covered [in this post](http://www.codewrecks.com/blog/index.php/2010/01/04/deploy-a-database-project-with-tfs-build-2010/), but as you can see that technique involved a MsBuild Activity and you needed to specify values with a really bad *command line parameter* syntax.
 
 [![Immagine1](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine1_thumb.png "Immagine1")](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine1.png)
 
-Specifying parameter with this technique is awkward and error prone. To solve this situation you can simply create a custom activity. Once you created it, you need to go to â€œArgumentsâ€ tab and insert all the input and output parameters you need.
+Specifying parameter with this technique is awkward and error prone. To solve this situation you can simply create a custom activity. Once you created it, you need to go to *Arguments* tab and insert all the input and output parameters you need.
 
 [![Immagine2](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine2_thumb.png "Immagine2")](https://www.codewrecks.com/blog/wp-content/uploads/2010/02/Immagine2.png)
 

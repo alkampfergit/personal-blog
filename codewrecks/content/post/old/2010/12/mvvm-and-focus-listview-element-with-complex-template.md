@@ -27,7 +27,7 @@ Now the problem is the following one: when I use that ListView at runtime and I 
 
 * ***Figure 1***: The problem: focusing a textbox of the usercontrol does not select the item of the ListView.*
 
-I could solve this problem with a little bit of Code Behind, but this is not MVVM style, and moreover is not maintainable because I want that logic to be declared only in one part of my project and reused in multiple views and I want a way to tell declaratively with XAML â€œHey, when this textbox got focus, select the listviewItem that contains itâ€. I absolutely need to know selected element because I have logic on it to be done on the ViewModel and I want to keep at minimum the Code behind.
+I could solve this problem with a little bit of Code Behind, but this is not MVVM style, and moreover is not maintainable because I want that logic to be declared only in one part of my project and reused in multiple views and I want a way to tell declaratively with XAML *Hey, when this textbox got focus, select the listviewItem that contains it*. I absolutely need to know selected element because I have logic on it to be done on the ViewModel and I want to keep at minimum the Code behind.
 
 The solution is AttachedBehaviors; after a little browsing on the internet I find some hint to solve my problem. The solution is in this class.
 

@@ -14,7 +14,7 @@ new NetworkCredential("dorikr", "P2ssw0rd"));
 tfs.EnsureAuthenticated();
 {{< / highlight >}}
 
-The problem is originated by the new [architecture](http://blogs.msdn.com/bharry/archive/2009/04/19/team-foundation-server-2010-key-concepts.aspx) of tfs2010, and the presence of â€œProject collectionsâ€. Project collections are containers for Team Project, and they are the analogue of a TFS2008 server. The above code cannot work, because you are trying to connect with a TeamFoundationServer object to a tfs that contains a certain number of project collection. To make it work you need to change the server string passed to the constructor in this way
+The problem is originated by the new [architecture](http://blogs.msdn.com/bharry/archive/2009/04/19/team-foundation-server-2010-key-concepts.aspx) of tfs2010, and the presence of *Project collections*. Project collections are containers for Team Project, and they are the analogue of a TFS2008 server. The above code cannot work, because you are trying to connect with a TeamFoundationServer object to a tfs that contains a certain number of project collection. To make it work you need to change the server string passed to the constructor in this way
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 TeamFoundationServer tfs = new TeamFoundationServer("http://vs2010beta2:8080/tfs/DefaultCollection",

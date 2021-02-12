@@ -6,7 +6,7 @@ draft: false
 tags: [General]
 categories: [General]
 ---
-Brian Harry has just announced a new release for TFS Power [toys here](http://blogs.msdn.com/b/bharry/archive/2010/09/09/sept-2010-tfs-power-tools-release-available.aspx). One of the most important news is the new â€œadmin Console Backup/Restore Wizardâ€, that will simplify a lot the administration of tfs server.
+Brian Harry has just announced a new release for TFS Power [toys here](http://blogs.msdn.com/b/bharry/archive/2010/09/09/sept-2010-tfs-power-tools-release-available.aspx). One of the most important news is the new *admin Console Backup/Restore Wizard*, that will simplify a lot the administration of tfs server.
 
 Other important new feature is the ability to copy Build Definition and Work Item. Thanks to Power Tools we have the possibility to have new feature of TFS without the need to wait for a Major Release. If you use Tfs and still does not have installed Power Toys, here are the links.
 

@@ -22,7 +22,7 @@ and L.Id.SearchUnit.Id = :suid)
 
 The first condition (the equality with o.LinkId) is that one that relates the SEarchUnitToAnalysisLink to the main object I'm selecting, note how I'm navigating in the objectModel, passing through the Id, the LinkResult object, the relation with the Link and finally the property mId that is the Id of the Link object.
 
-The second condition is that one that verify that a SearchUnitToAnalysisLink related to a specific search unit id exists. When I launch that query I got a sql error, an "*incorrect syntax near ,â€*
+The second condition is that one that verify that a SearchUnitToAnalysisLink related to a specific search unit id exists. When I launch that query I got a sql error, an "*incorrect syntax near ,**
 
 looking at generated sql I found immediately the error, the subselect was issued in this way
 

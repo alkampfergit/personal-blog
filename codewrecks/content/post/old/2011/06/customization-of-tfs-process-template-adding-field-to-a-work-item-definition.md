@@ -33,7 +33,7 @@ You should choose the project collection, then the Team Project and finally the 
 
  ***Figure 2***: *Simply choose the Team Project and the WI type you want to customize.*
 
-Now I want to add a field to Bug WI type called â€œNote di revisioneâ€ (revision note) that will be used to add note to a bug during the bug revision process. I can simply select the tab  **Fields** and press the *New*button.
+Now I want to add a field to Bug WI type called *Note di revisione* (revision note) that will be used to add note to a bug during the bug revision process. I can simply select the tab  **Fields** and press the *New*button.
 
 [![image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Customizzazione-del-process_99E2/image_thumb_2.png "image")](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Customizzazione-del-process_99E2/image_6.png)
 

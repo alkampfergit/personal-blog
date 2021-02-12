@@ -6,7 +6,7 @@ draft: false
 tags: [Castle]
 categories: [Castle]
 ---
-I have a little application that has a custom MVP pattern implemented in Winform. Instead of using configuration file to register all the View (implemented by windows Forms) I decided to move towards fluent configuration to use a â€œconvention over configurationâ€. My convention is that all View lives in a specific namespace, and you can simply use this registration (I have a IoC static wrapper class that exposes fluent registration).
+I have a little application that has a custom MVP pattern implemented in Winform. Instead of using configuration file to register all the View (implemented by windows Forms) I decided to move towards fluent configuration to use a *convention over configuration*. My convention is that all View lives in a specific namespace, and you can simply use this registration (I have a IoC static wrapper class that exposes fluent registration).
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 IoC.FluentRegistration(

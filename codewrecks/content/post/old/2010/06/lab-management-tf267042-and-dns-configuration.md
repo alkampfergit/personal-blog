@@ -6,7 +6,7 @@ draft: false
 tags: [Lab Management]
 categories: [Lab Management]
 ---
-Today I configured an environment in lab management, when it finishes the deploy phase I see that the machine has testing capabilities â€œErrorâ€ and the details of the error is
+Today I configured an environment in lab management, when it finishes the deploy phase I see that the machine has testing capabilities *Error* and the details of the error is
 
 [![Capture](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/Capture_thumb.png "Capture")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/Capture.png)
 
@@ -24,7 +24,7 @@ If I connect to the lab Machine and did a ping labrtmhost  I got a correct answ
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb31.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image31.png)
 
-Then I verified that from all machine in the network if I try to resolve labrtmhost with nslookup it gives me only the address 10.10.1.3. Now I reopened the â€œTEst Controller Configuration Toolâ€ and configured again the test controller from the labrtmhost machine, this time it got registered in tfs with the correct Ip. Now I repair testing capabilities on the lab management deployed machine and everything is now ok.
+Then I verified that from all machine in the network if I try to resolve labrtmhost with nslookup it gives me only the address 10.10.1.3. Now I reopened the *TEst Controller Configuration Tool* and configured again the test controller from the labrtmhost machine, this time it got registered in tfs with the correct Ip. Now I repair testing capabilities on the lab management deployed machine and everything is now ok.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb32.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image32.png)
 

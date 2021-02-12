@@ -20,10 +20,10 @@ DateDiff(dd, T.AnalysisFrequence, :refdate)
 
 In this query with the DateAdd function I want to obtain a date that is calculated adding an amount of days from a reference date. Running this query against a SQLite database gave me an error, clearly because there is no DateAdd function in SQLite.
 
-The solution is simple, you can use the julianday if you are using the â€œddâ€ constant in the DateAdd function (you are subtracting days and not seconds or other time value). You can add this function to your custom dialect to create a DateAdd function in the SQLite dialect.
+The solution is simple, you can use the julianday if you are using the *dd* constant in the DateAdd function (you are subtracting days and not seconds or other time value). You can add this function to your custom dialect to create a DateAdd function in the SQLite dialect.
 
 RegisterFunction("DateAdd", new SQLFunctionTemplate(NHibernateUtil.Date, "julianday(?3) + ?2"));
 
-This is valid only if you use the DateAdd(â€œddâ€, xxx, yy) but since this is my situation, this solves my problems.
+This is valid only if you use the DateAdd(*dd*, xxx, yy) but since this is my situation, this solves my problems.
 
 Alk.

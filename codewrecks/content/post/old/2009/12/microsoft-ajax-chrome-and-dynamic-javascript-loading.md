@@ -27,7 +27,7 @@ Now my problem is the following, one of the dynamically loaded script is made wi
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Ok, this is quite old code that is still in production, I really do not like using javascript this way, but at the time this code was written, this was the solution of choiche. The problem is that everything works fine, except in Chrome, where I have an error of type â€œNSRilevazioni is undefinedâ€.
+Ok, this is quite old code that is still in production, I really do not like using javascript this way, but at the time this code was written, this was the solution of choiche. The problem is that everything works fine, except in Chrome, where I have an error of type *NSRilevazioni is undefined*.
 
 This is due to the fact that when this piece of script gets loaded, the NSRilevazioni script is loaded with the above function, but it still not executed, so the namespace is not registered. Too bad.
 

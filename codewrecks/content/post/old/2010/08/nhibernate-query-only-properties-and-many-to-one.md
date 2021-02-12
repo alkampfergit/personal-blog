@@ -23,9 +23,9 @@ The obvious solution is, Load the NickName fetching NickNameDomainRegistration, 
  
 {{< / highlight >}}
 
-Thanks to the access=â€noneâ€ I can tell nhibernate that NickNameDomainRegistration has a property of type NickName even if the POCO object does not have it. Now I can issue a query for NickNameDomainRegistration with a  condition of â€œNickName.Id == idâ€. Everything works fine, but running the whole set of unit test I noticed that some other test has failed.
+Thanks to the access=*none* I can tell nhibernate that NickNameDomainRegistration has a property of type NickName even if the POCO object does not have it. Now I can issue a query for NickNameDomainRegistration with a  condition of *NickName.Id == id*. Everything works fine, but running the whole set of unit test I noticed that some other test has failed.
 
-Examining the tests, I found that association to NickNameDomainRegistration is no more saved into the database. This is due to the fact, that now nhibernate think that the relation should be managed from the &lt;many-to-one&gt; part, even if the &lt;set&gt; in NickName is mapped as Inverse=â€trueâ€
+Examining the tests, I found that association to NickNameDomainRegistration is no more saved into the database. This is due to the fact, that now nhibernate think that the relation should be managed from the &lt;many-to-one&gt; part, even if the &lt;set&gt; in NickName is mapped as Inverse=*true*
 
 The solution is changing the mapping, telling nhibernate that we really do not want the query only property to be used in insertion and update of the relation.
 
@@ -45,7 +45,7 @@ I'm still having problem, because it issue a inner join on table BuzzNickName (t
 insert="false" update="false" />
 {{< / highlight >}}
 
-Now I can use the NickName property if I need to filter for some property of NickName (ES, NickName.Name == â€œxxxâ€) but I use the NickNameId property to filter for owner NickName. This will produce the query.
+Now I can use the NickName property if I need to filter for some property of NickName (ES, NickName.Name == *xxx*) but I use the NickNameId property to filter for owner NickName. This will produce the query.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image4.png "image")](http://nhprof.com/)
 

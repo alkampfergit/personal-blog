@@ -14,7 +14,7 @@ Maybe I'm wrong but in my opinion it is difficult to explain DDD with classic ex
 
 ![](http://www.adobe.com/newsletters/edge/october2008/articles/article2/images/fig02.jpg)
 
-Sadly enough I see people in the audience ends up telling â€œI do not need DDD in my work, it seems complex, I need an ORM, with CQRS everything became much more complicated, I'll keep to use dataset or maybe Entity Framework or NHibernate to avoid writing query in SQL and saving.NET objects.â€
+Sadly enough I see people in the audience ends up telling *I do not need DDD in my work, it seems complex, I need an ORM, with CQRS everything became much more complicated, I'll keep to use dataset or maybe Entity Framework or NHibernate to avoid writing query in SQL and saving.NET objects.*
 
 I and Mauro ended our brainstorming with the conviction that part of the problem is in the sample used during the talk, DDD should be explained with a complex domain and it would be useful if the audience never engaged in the past with that domain, so their mind is free from old concepts and they are forced to think to a new approach to a new problem. I must admit that I never engaged me in real complex projects solved with full DDD approach, mostly because you need a full team that agree with DDD principles and approach.
 

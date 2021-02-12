@@ -20,7 +20,7 @@ RegisterFunction("date", new SQLFunctionTemplate(NHibernateUtil.Date, "date(?1)"
 }
 {{< / highlight >}}
 
-Since SqlLite already have a [date function](http://www.sqlite.org/cvstrac/wiki?p=DateAndTimeFunctions) that extract the date part of a date, I simply need to instruct NHibernate dialect that such function exists registering the function â€œdateâ€ with a SqlFunctionTemplate, this means that whenever the HQL parser will find a call to date() function it will substitute the date(?1) string, where ?1 will be substituted with the real parameter of the function.
+Since SqlLite already have a [date function](http://www.sqlite.org/cvstrac/wiki?p=DateAndTimeFunctions) that extract the date part of a date, I simply need to instruct NHibernate dialect that such function exists registering the function *date* with a SqlFunctionTemplate, this means that whenever the HQL parser will find a call to date() function it will substitute the date(?1) string, where ?1 will be substituted with the real parameter of the function.
 
 In production, the code will run against a sql server 2008, and we have already defined a function called dbo.trunc that will truncate the time part of the date in our databases, so I create a similar dialect for sql server.
 

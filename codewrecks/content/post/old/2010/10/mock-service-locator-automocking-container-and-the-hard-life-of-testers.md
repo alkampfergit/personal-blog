@@ -78,7 +78,7 @@ The bad point is in the constructor, when the class asks to Service Locator for 
 var xxx = new ObjAnInterface()
 {{< / highlight >}}
 
-it could be feasible to keep the service locator, and get rid of it during some later refactoring. I do not want to question on â€œit worth spending time to get rid of Service Locator?â€, I want only to solve the scenario when you have no choice, the Service Locator is there and you cannot remove it.
+it could be feasible to keep the service locator, and get rid of it during some later refactoring. I do not want to question on *it worth spending time to get rid of Service Locator?*, I want only to solve the scenario when you have no choice, the Service Locator is there and you cannot remove it.
 
 In my test I want to be able to verify that the ILogger.Debug method is called when I call the DoTest() method of the class. First of all we need our AutoMockingContainer to be able to pass this test.
 

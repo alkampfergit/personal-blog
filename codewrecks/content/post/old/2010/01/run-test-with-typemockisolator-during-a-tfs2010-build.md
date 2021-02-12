@@ -114,7 +114,7 @@ If you look at the details you can verify how tests were run.
 
 Thanks to logging I can see all details in the build log. As you can verify I logged all the output of the TMockRunner.exe, so I can verify details of execution.
 
-This example needs more work to be used in production, this because some value like â€œany CPUâ€ and â€œDebugâ€ are hardcoded in the action, moreover the custom action does not permits to use a test configuration file, but it can be used as starting point :)
+This example needs more work to be used in production, this because some value like *any CPU* and *Debug* are hardcoded in the action, moreover the custom action does not permits to use a test configuration file, but it can be used as starting point :)
 
 Alk.
 

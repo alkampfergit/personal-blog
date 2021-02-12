@@ -17,7 +17,7 @@ This happens because I used the  **sp\_executesql** in my stored procedures, and
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image16.png)
 
-This kind of reference is not a simple one, but is a â€œDatabase referenceâ€. You can find a reference of the master db in directory %program files%/Microsoft Visual STudio 9.0/VSTSDB/Extensions/SqlServer/SqlVersion/DBSchemas
+This kind of reference is not a simple one, but is a *Database reference*. You can find a reference of the master db in directory %program files%/Microsoft Visual STudio 9.0/VSTSDB/Extensions/SqlServer/SqlVersion/DBSchemas
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image17.png)
 

@@ -8,7 +8,7 @@ categories: [General]
 ---
 I'm not a tests fanatic, but I use a lot of unit tests in during my development days. I do not aim to 100% coverage, and I do not believe that TDD can be used in every moment, and I use unit testing when it is necessary for me.
 
-Sometimes it happens that someone calls me to solve a problem in code, and quite often i say â€œWrite a unit test that reproduce the problem, then begin to investigateâ€. Quite often one I got a reply of
+Sometimes it happens that someone calls me to solve a problem in code, and quite often i say *Write a unit test that reproduce the problem, then begin to investigate*. Quite often one I got a reply of
 
 > I'm in a hurry, I do not have time to write test, I must correct that bug as soon as possible
 > 
@@ -18,7 +18,7 @@ I'm aware that writing a test consume time, but quite often in the end a test sa
 
 The problem is that we are testing a function that use some stored procedures and some.net code, so if the problem is still there, we need to return to Management Studio, change the procedure or change the code. If we must change the code, we need to recompile, fire the app again (and wait for the app to reinitialize) bla bla bla.
 
-For big application the startup time of the whole application is just too big to think that F5 approach is a feasible solution to verify if a bug is corrected. One day, for a very difficult bug, after a couple of hours I realized that more than half of the time was spent waiting the app to start and insert data to exercise the functionâ€¦â€¦. too bad. This means that we are developing slowly, and moreover it is frustrating to: â€œdo a modification and wait for one minute to see if it corrects the problemâ€
+For big application the startup time of the whole application is just too big to think that F5 approach is a feasible solution to verify if a bug is corrected. One day, for a very difficult bug, after a couple of hours I realized that more than half of the time was spent waiting the app to start and insert data to exercise the functionâ€¦â€¦. too bad. This means that we are developing slowly, and moreover it is frustrating to: *do a modification and wait for one minute to see if it corrects the problem*
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb40.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image40.png)
 

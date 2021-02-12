@@ -32,7 +32,7 @@ public class TweetTask : Task
 
 As you can see, creating a custom task is really simple, you should inherit from the Task base class and override the Execute() method. In this example everything is done in the TwitterService class that I [took from this post](http://www.dreamincode.net/code/snippet2556.htm). To pass parameters to this task you can simply create public properties in the task class, and use the [Required] attribute to specify that the caller absolutely needs to specify these properties to use the task.
 
-Now you only need to compile this class into a dll, and *make it avaliable to the build process*. This is probably the most interesting part, because  **the build engine must be able to locate this dll in order to execute your custom action**. Another requirement I want, is that you must be able to use your custom task without the need to physically go to tfs server and copy the dll into some directory. This because you must be able to fully configure the build with the same set of permission you have in tfs. I do not want to ask someone â€œHey copy this dll into the tfs serverâ€, I simply want to configure everything in visual studio.
+Now you only need to compile this class into a dll, and *make it avaliable to the build process*. This is probably the most interesting part, because  **the build engine must be able to locate this dll in order to execute your custom action**. Another requirement I want, is that you must be able to use your custom task without the need to physically go to tfs server and copy the dll into some directory. This because you must be able to fully configure the build with the same set of permission you have in tfs. I do not want to ask someone *Hey copy this dll into the tfs server*, I simply want to configure everything in visual studio.
 
 This is a well known problem for everyone that works with Continuous integration machines, and the solution I like is  **inserting everything is needed for the build in a specific folder into the source control system of the project**.
 
@@ -47,7 +47,7 @@ As you can see I created a folder called BuildTools, inside it another folder ca
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-to import the custom task you simply need to specify the task name and the assemblyFile in a  **&lt;UsingTask&gt;** directive, as you can see the path of the dll is..\sources\xxx where xxx is the path of the dll relative to the root of the source control system. Now if you do a check-in the next build will comprehend your custom task. This technique is useful, because you can be sure that each build always do a â€œGet Latestâ€ to build the latest version of the source, thus getting also every tool it need to do the build.
+to import the custom task you simply need to specify the task name and the assemblyFile in a  **&lt;UsingTask&gt;** directive, as you can see the path of the dll is..\sources\xxx where xxx is the path of the dll relative to the root of the source control system. Now if you do a check-in the next build will comprehend your custom task. This technique is useful, because you can be sure that each build always do a *Get Latest* to build the latest version of the source, thus getting also every tool it need to do the build.
 
 Now you can use this task wherever you want:
 

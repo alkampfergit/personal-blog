@@ -6,9 +6,9 @@ draft: false
 tags: [ASPNET,JQuery]
 categories: [ASPNET,JQuery]
 ---
-I'm porting a sample application from asp.net to MVC, I used this app to make my session during last DotNetMarche event dedicated to JQuery. Now I'm writing the same sample pages in asp.net mvc to compare both technologies. In an Asp.Net page I showed how to use jQuery to do â€œEdit in placeâ€ of some Photo Description in an application that manages photo album. At a certain point my jQuery script will communicate with the server through an asmx webservice exposed with a ScriptManager.
+I'm porting a sample application from asp.net to MVC, I used this app to make my session during last DotNetMarche event dedicated to JQuery. Now I'm writing the same sample pages in asp.net mvc to compare both technologies. In an Asp.Net page I showed how to use jQuery to do *Edit in place* of some Photo Description in an application that manages photo album. At a certain point my jQuery script will communicate with the server through an asmx webservice exposed with a ScriptManager.
 
-Now that I'm working in asp.net MVC I'm asking if the same approach is valid, so the question is â€œI really need the ScriptManager to dialogate with the server?â€ and clearly the answer is â€œNOâ€. I'm not happy of the Script manager, because it generates a lot of Javascript code to create the infrastructure to make the SOAP request to the webserver. If it is possible I really prefer to avoid these external scripts and thanks to ASP.Net mvc this is possible. Here is the original call to the web service.
+Now that I'm working in asp.net MVC I'm asking if the same approach is valid, so the question is *I really need the ScriptManager to dialogate with the server?* and clearly the answer is *NO*. I'm not happy of the Script manager, because it generates a lot of Javascript code to create the infrastructure to make the SOAP request to the webserver. If it is possible I really prefer to avoid these external scripts and thanks to ASP.Net mvc this is possible. Here is the original call to the web service.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
  DotNetMarche.PhotoAlbum.Ui.AspNet.Services.PhotoManager

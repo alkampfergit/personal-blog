@@ -41,7 +41,7 @@ public void VerifyThatBlaBla()
 
 MySut is the class I need to test, it internally calls IoC.Resolve&lt;IParamTransformer&gt;(), to take a parameter transformer. Thanks to [AAA syntax of Rhino Mocks](http://ayende.com/Blog/archive/2008/05/16/Rhino-Mocks--Arrange-Act-Assert-Syntax.aspx) I simply create a mock, use an internal override function to instruct the IoC component to return my mock when asked to resolve a IParamTransformer, then invoke sut method. Since I know that the test calls the DAL with transformed parameter I simply ask in the test to catch every DbException, ignore it and then assert that the TransformParam is called. The test is quick because I used SqlLite to have a Db in memory, the sut resolve the IParamTransformer, calls for parameter transformation, then calls the db; the db call failed because the test db is empty so a DbException is thrown. Now the exception is ignored and I finally verify that function TransformParam was called.
 
-This test is less than half length respect to the first version that fully mimics the DAL with mock objects. I think that it is really clearer, because it is focused on â€œwhat I want to testâ€ without distracting the reader with greedy details.
+This test is less than half length respect to the first version that fully mimics the DAL with mock objects. I think that it is really clearer, because it is focused on *what I want to test* without distracting the reader with greedy details.
 
 A still better solution could be a refactoring of the original class, making it more testable, but I think that this is enough.
 

@@ -40,7 +40,7 @@ My technique is quite simple, I created a page called AttachmentAjaxAction.aspx,
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The code is really simple, all parameters are passed in post variables, when the action is â€œaddâ€ I need to check the request.Files collection because this indicates that a file was uploaded to the server, when the action is â€œdelâ€ I simply delegate to the service the task to delete the attach. Finally after all operations are completed the page renders the whole grid. Files are stored in its binary form directly in the database (to use full text search). Now in the main page, I simply place a div where I want this grid to be shown.
+The code is really simple, all parameters are passed in post variables, when the action is *add* I need to check the request.Files collection because this indicates that a file was uploaded to the server, when the action is *del* I simply delegate to the service the task to delete the attach. Finally after all operations are completed the page renders the whole grid. Files are stored in its binary form directly in the database (to use full text search). Now in the main page, I simply place a div where I want this grid to be shown.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
  <asp:Panel ID="pnlAttachments" runat="server">

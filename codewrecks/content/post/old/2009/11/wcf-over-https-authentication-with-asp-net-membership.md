@@ -62,7 +62,7 @@ Finally you need to configure binding
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The important part is the &lt;[security](http://msdn.microsoft.com/en-us/library/ms789011.aspx)&gt; tag, where you need to specify witch security [mode](http://msdn.microsoft.com/en-us/library/system.servicemodel.wshttpsecurity.mode.aspx) you want to use, in my situation is TransportWithMessageCredential. This specify that the security is given by transport (https) and there are credentials in the message. Then you need to configure &lt;transport&gt; and &lt;message&gt;, since I want to transfer my credentials in message and not in transport, I specify clientCredentialType to â€œnoneâ€ for &lt;transport&gt;, and to â€œuserNameâ€ in &lt;message&gt; node.
+The important part is the &lt;[security](http://msdn.microsoft.com/en-us/library/ms789011.aspx)&gt; tag, where you need to specify witch security [mode](http://msdn.microsoft.com/en-us/library/system.servicemodel.wshttpsecurity.mode.aspx) you want to use, in my situation is TransportWithMessageCredential. This specify that the security is given by transport (https) and there are credentials in the message. Then you need to configure &lt;transport&gt; and &lt;message&gt;, since I want to transfer my credentials in message and not in transport, I specify clientCredentialType to *none* for &lt;transport&gt;, and to *userName* in &lt;message&gt; node.
 
 Transport credential is used for  windows login, and if you want to specify custom user name and password to validate against asp.net membership, you need to pass them into message part.
 
@@ -90,7 +90,7 @@ Now goes for the client configuration, first of all the binding
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The important stuff is the &lt;security&gt; mode that is set again to â€œTransportWithMessageCredentialâ€, and you need to specify in the trasport part that you have no credential and in message part you have UserName credential. Once you gets the server up and running you can simply use svcutil.exe to generate this one, so it is quite an automated task to do and does not worth further explanation. Now I can use the client in this way.
+The important stuff is the &lt;security&gt; mode that is set again to *TransportWithMessageCredential*, and you need to specify in the trasport part that you have no credential and in message part you have UserName credential. Once you gets the server up and running you can simply use svcutil.exe to generate this one, so it is quite an automated task to do and does not worth further explanation. Now I can use the client in this way.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 using (DoSomethingServiceClient client = new DoSomethingServiceClient())

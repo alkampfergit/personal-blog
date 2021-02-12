@@ -10,7 +10,7 @@ I have a windows service that is used as a scheduler to launch actions in a plug
 
 I begin to investigate on the various actions that gets executed, because since they download data, and perform a lot of operations I suspect that one of them is the cause of the leak, but after some investigation I realize that no one of the action is the real cause of this leak.
 
-I go into production server and I decided to debug the process live, to see what is happening and trying to better identify the root cause, but since it is â€œproduction stuffâ€ I cannot use profiler or some other tools, so I and [Guardian](http://www.primordialcode.com/) decided to use [WinDbg with Sos](http://blogs.msdn.com/joaol/archive/2008/09/03/how-to-use-windbg-to-debug-a-dump-of-a-32bit-net-app-running-on-a-x64-machine.aspx).
+I go into production server and I decided to debug the process live, to see what is happening and trying to better identify the root cause, but since it is *production stuff* I cannot use profiler or some other tools, so I and [Guardian](http://www.primordialcode.com/) decided to use [WinDbg with Sos](http://blogs.msdn.com/joaol/archive/2008/09/03/how-to-use-windbg-to-debug-a-dump-of-a-32bit-net-app-running-on-a-x64-machine.aspx).
 
 For those like us, quite used to unmanaged development with C++, using windbg is not a pain (but I must admit that I never used for months :) ). I'm convinced that WinDbg with SOS, is a hardcore tool, but once you gets used with it, it is the key one to find leak in managed code, especially when you are on production machines. For those not used to windbg+sos here is the path we follow to find the leak.
 

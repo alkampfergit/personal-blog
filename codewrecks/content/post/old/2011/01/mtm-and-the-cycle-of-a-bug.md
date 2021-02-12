@@ -22,7 +22,7 @@ A tester now executes the test, the first time he enables the recording asking M
 
 In the video I show how the tester can use existing action recording to speedup test execution, the tester find an error, creates a bug, and now it is time for developer to fix it.
 
-The developer begins working with the bug and he need first of all to be able to reproduce the bug before starting to understand how to fix it. Thanks to the recording of test execution, he can create a new CodedUI test based on MTM recording just choosing â€œuse Existing action recordingâ€  to create the CUIT; Visual Studio now opens a form to select the Test Case that contains the action recording
+The developer begins working with the bug and he need first of all to be able to reproduce the bug before starting to understand how to fix it. Thanks to the recording of test execution, he can create a new CodedUI test based on MTM recording just choosing *use Existing action recording*  to create the CUIT; Visual Studio now opens a form to select the Test Case that contains the action recording
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image12.png)
 
@@ -55,13 +55,13 @@ First of all the dev executes manually all the steps of the test, until he reach
 
  ***Figure 3***: *Editing the UIMap*
 
-Now it is really easy to create an assertion. As you can see in  **Figure 4** you can simply drag and drop the Crosshair to the quantity textbox control, CUIT Builder shows all properties of the control, now find and select the *Text* property and press the â€œAdd Assertionâ€ button to create an assertion.
+Now it is really easy to create an assertion. As you can see in  **Figure 4** you can simply drag and drop the Crosshair to the quantity textbox control, CUIT Builder shows all properties of the control, now find and select the *Text* property and press the *Add Assertion* button to create an assertion.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image14.png)
 
  ***Figure 4***: *Adding an assertion thanks to Coded UI Test Builder.*
 
-Now that the assertion is added, since this is the only condition we want to assert, we can: press the â€œGenerate Codeâ€, give a name to the assertion and press the button â€œAdd and Generateâ€, as visible in  **Figure 5.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image15.png)
+Now that the assertion is added, since this is the only condition we want to assert, we can: press the *Generate Code*, give a name to the assertion and press the button *Add and Generate*, as visible in  **Figure 5.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image15.png)
 
  ***Figure 5***: *How to add the assertion to coded UI map.*
 
@@ -109,7 +109,7 @@ Usually this line is removed once the bug is fixed so the test will point to the
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image17.png)
 
- ***Figure 7***: *The CUIT just created is added to the Test Case as â€œassociated automationâ€*
+ ***Figure 7***: *The CUIT just created is added to the Test Case as *associated automation**
 
 After some time, test manager decides to test a new build.  He deployed the new build in all test environments, then testers looks at test impact or at the list of closed bug to see what is changed and what to test. When a tester verifies that the bug related to test case 45 is marked as resolved, he needs to verify that the bug is really fixed running test again and if everything is ok close it. When he opens MTM and looks at the the test case he see that now this test is automated.
 

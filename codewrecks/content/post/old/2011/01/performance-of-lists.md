@@ -6,7 +6,7 @@ draft: false
 tags: [Performance]
 categories: [NET framework]
 ---
-In a [previous post](http://www.codewrecks.com/blog/index.php/2011/01/18/linq-distinct-with-lambda/) I explained how to create a simple LINQ extension method to use the Distinct() method with a lambda and not an IEqualityComparer. That solution uses a simple List&lt;T&gt; as temporary storage to implement the concept of â€œdistinct elementsâ€. To verify if an object was already returned I simply searched into the temp List&lt;T&gt; looking if an element that satisfy the Predicate, this will permit me to return only distinct elements.
+In a [previous post](http://www.codewrecks.com/blog/index.php/2011/01/18/linq-distinct-with-lambda/) I explained how to create a simple LINQ extension method to use the Distinct() method with a lambda and not an IEqualityComparer. That solution uses a simple List&lt;T&gt; as temporary storage to implement the concept of *distinct elements*. To verify if an object was already returned I simply searched into the temp List&lt;T&gt; looking if an element that satisfy the Predicate, this will permit me to return only distinct elements.
 
 The question is, it is slow? The answer is yes, because List&lt;T&gt; performs really bad when you search elements in it, because it needs to scan all the elements until it find an element that satisfy the predicate or you finish all the elements.
 

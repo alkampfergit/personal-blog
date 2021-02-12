@@ -16,7 +16,7 @@ In the Methodology section you can simply change the name of the Process Templat
 
  ***Figure 1***: *How to change name and description of the Template*
 
-The WorkItem section needs a more accurate series of post, so we can move on the â€œarea and Iterationsâ€ where you can setup the default areas and iterations that will be created when you create a Team Project based on this Template.
+The WorkItem section needs a more accurate series of post, so we can move on the *area and Iterations* where you can setup the default areas and iterations that will be created when you create a Team Project based on this Template.
 
 [![image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/75be622fbf8f_7CC1/image_thumb_2.png "image")](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/75be622fbf8f_7CC1/image_6.png)
 
@@ -36,7 +36,7 @@ Here is a brief explanation. The first column contains the reference name of a W
 
 You can see from Figure 4 that all three fields related to Work Item estimation have the value * **pjHour** *to instruct project that the value contained in those field represent hours. In you select a row and press the Edit button you can edit the row and you have an additional checkbox to set the field in *Publish Only*mode; this will make Project never update the value from TFS.
 
-The *Groups & Permissions*section permits to setup the initial security groups for Team Projects. You can create how many groups you need, and for each one you can define the access right. Each groups has a series of â€œallowâ€ or â€œdenyâ€ related to various area of a Team Project. This section is really important, because quite often you need to adjust security based on already established rules or names in your organization. It is highly probable that you want custom groups like â€œdevelopersâ€, â€œExternal Consultantâ€ and so on and doing customization for each Team Project is really annoying, it is really better to configure once for all in your customized process template.
+The *Groups & Permissions*section permits to setup the initial security groups for Team Projects. You can create how many groups you need, and for each one you can define the access right. Each groups has a series of *allow* or *deny* related to various area of a Team Project. This section is really important, because quite often you need to adjust security based on already established rules or names in your organization. It is highly probable that you want custom groups like *developers*, *External Consultant* and so on and doing customization for each Team Project is really annoying, it is really better to configure once for all in your customized process template.
 
 [![image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/75be622fbf8f_7CC1/image_thumb_1.png "image")](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/75be622fbf8f_7CC1/image_4.png)
 

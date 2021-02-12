@@ -6,7 +6,7 @@ draft: false
 tags: [General]
 categories: [General]
 ---
-One [dear friend of mine](http://blogs.ugidotnet.org/janky/Default.aspx) just makes me discovered a [great site](http://icanhascheezburger.com/2009/10/15/funny-pictures-whassup-george/) :D I could not resist so I decided to post a couple of shot of my cat called â€œSgrinfioâ€
+One [dear friend of mine](http://blogs.ugidotnet.org/janky/Default.aspx) just makes me discovered a [great site](http://icanhascheezburger.com/2009/10/15/funny-pictures-whassup-george/) :D I could not resist so I decided to post a couple of shot of my cat called *Sgrinfio*
 
 [http://cheezburger.com/View.aspx?aid=2757172224](http://cheezburger.com/View.aspx?aid=2757172224 "http://cheezburger.com/View.aspx?aid=2757172224")
 

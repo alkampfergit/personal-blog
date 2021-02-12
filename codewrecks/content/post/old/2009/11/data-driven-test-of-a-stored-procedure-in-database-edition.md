@@ -46,7 +46,7 @@ RETURN 0{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Absolutely simple, and I've already generated a DataGenerationPlan and already verified that searching with â€˜da' will return only one column, with â€˜e' it will return 18 columns etc etc. To save Time I simply right click and â€œDeployâ€ the test database only when the test data changes, clearly this database is readonly, because tests use it only to data drive the test. Then I create a very simple Stored proceudre Test, and modify in this way
+Absolutely simple, and I've already generated a DataGenerationPlan and already verified that searching with â€˜da' will return only one column, with â€˜e' it will return 18 columns etc etc. To save Time I simply right click and *Deploy* the test database only when the test data changes, clearly this database is readonly, because tests use it only to data drive the test. Then I create a very simple Stored proceudre Test, and modify in this way
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image16.png)
 
@@ -76,7 +76,7 @@ And then the section parameter
 
 I'm telling that I want to create a new data source to data drive my stored procedure test, this data source will be called SqlClientDataSource, it uses the SqlClientConn connection string, it will use the TestDataSet1 table and the access method is sequential, it means that it will run the test for each row in the table.
 
-Now the fun part begins, because you will need to instruct the test to use this data, so you will need to â€œRight clickâ€ the database test and choose â€œView Codeâ€. For those not used to database testing, a database test is composed by a simple C# or VB *wrapper* test that permits you to use a designer, but in the background there is the usual test structure. The first step is to choose the data source
+Now the fun part begins, because you will need to instruct the test to use this data, so you will need to *Right click* the database test and choose *View Code*. For those not used to database testing, a database test is composed by a simple C# or VB *wrapper* test that permits you to use a designer, but in the background there is the usual test structure. The first step is to choose the data source
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 [DataSource("SqlClientDataSource")]
@@ -114,7 +114,7 @@ rowCountcontidion.RowCount = ExpectedResultCount;
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-IF this code seems an Hack, you should consider how the designer will code the test under the hood. First of all I store in the ExpectedResultCount the number of rows that I'm expecting to be returned from the stored, then, with a simple LINQ query, I take the condition named â€œNumberOfRowReturnedâ€, that is the name I gave to the condition into the designer. Since I already know that it is a row count condition I can cast it to the right type RowCountCondition, and finally change the RowCount property. The final step is passing the parameter array to the test
+IF this code seems an Hack, you should consider how the designer will code the test under the hood. First of all I store in the ExpectedResultCount the number of rows that I'm expecting to be returned from the stored, then, with a simple LINQ query, I take the condition named *NumberOfRowReturned*, that is the name I gave to the condition into the designer. Since I already know that it is a row count condition I can cast it to the right type RowCountCondition, and finally change the RowCount property. The final step is passing the parameter array to the test
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 System.Diagnostics.Trace.WriteLineIf((testActions.TestAction != null), "Executing test script...");

@@ -27,7 +27,7 @@ Console.WriteLine("Found warrior:" + warrior.Name);
 }
 {{< / highlight >}}
 
-Ad you can see you are expressing the query against the object model, you are in fact asking for all warriors whose name Contains the string (â€œamâ€). If you analyze the LINQ query you can notice that I used the method System.String::Contains but [Entity Framework Profiler](http://efprof.com/) shows the real query issued to the database.
+Ad you can see you are expressing the query against the object model, you are in fact asking for all warriors whose name Contains the string (*am*). If you analyze the LINQ query you can notice that I used the method System.String::Contains but [Entity Framework Profiler](http://efprof.com/) shows the real query issued to the database.
 
 [![19-07-2011 16-37-29](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-16-37-29_thumb.png "19-07-2011 16-37-29")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-16-37-29.png)
 
@@ -68,7 +68,7 @@ Console.WriteLine("Found warrior:" + warrior.Id);
 }
 {{< / highlight >}}
 
-This piece of code creates a IQueryable&lt;T&gt; that filters all warrior whose name contains the â€œamâ€ string, then print the number of warriors that satisfy that criteria (line 6), and then iterate through all records to print details. This piece of code actually creates two queries to the database.
+This piece of code creates a IQueryable&lt;T&gt; that filters all warrior whose name contains the *am* string, then print the number of warriors that satisfy that criteria (line 6), and then iterate through all records to print details. This piece of code actually creates two queries to the database.
 
 [![19-07-2011 17-12-24](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-12-24_thumb.png "19-07-2011 17-12-24")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/19-07-2011-17-12-24.png)
 

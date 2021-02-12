@@ -15,7 +15,7 @@ In fourth chapter we familiarized with Rules and how you can customize a Work It
 
 Since you already know the  **ALLOWEDVALUES** you should know the  **ALLOWEXISTINGVALUE** a rule without parameter and is used to specify that we want to maintain a value even if it is not in the list of allowed values. This rule is useful if you change the list of available values (called [PickingList](http://msdn.microsoft.com/en-us/library/ms194947.aspx)) but you want to maintain old values, even if they are no more in the picking list. If you change the PickingList and you edit a work item that has an invalid value in a field, you are forced to specify a valid value to save again the element.
 
-Another rule related to the PickingList is the  **PROHIBITEDVALUE** that lists a series of values that are not allowed to be used in a field. As you see in Figure 1 the field is edited with a normal textbox, but if â€œblablaâ€ is a prohibited value an error is shown.
+Another rule related to the PickingList is the  **PROHIBITEDVALUE** that lists a series of values that are not allowed to be used in a field. As you see in Figure 1 the field is edited with a normal textbox, but if *blabla* is a prohibited value an error is shown.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb31.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image31.png)
 
@@ -31,7 +31,7 @@ Another really interesting rule is called  **DEFAULT** that permits to specify t
 
  ***Figure 2***: *Specify a value taken from another field as DEFAULT.*
 
-In  **Figure 2** I showed a very specific situation, I choosed * **field** *in the *from* combo, this specify to TFS that I want to use the value of another field as DEFAULT for the field this rule is applied to. Then I choosed the System.ChangedBy field and saved the rule. Now I create another Bug based on this template, did not write anything in the new field ("Revision noteâ€) and simply press save to save the WI. Since the Revision Note contains the rule DEFAULT that states that the default value is taken from the field ChangedBy the value is updated accordingly as shown in  **Figure 3**.
+In  **Figure 2** I showed a very specific situation, I choosed * **field** *in the *from* combo, this specify to TFS that I want to use the value of another field as DEFAULT for the field this rule is applied to. Then I choosed the System.ChangedBy field and saved the rule. Now I create another Bug based on this template, did not write anything in the new field ("Revision note*) and simply press save to save the WI. Since the Revision Note contains the rule DEFAULT that states that the default value is taken from the field ChangedBy the value is updated accordingly as shown in  **Figure 3**.
 
 [![image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Personalizzare-i-Work-Item-di-TFS_AFA7/image_thumb_2.png "image")](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Personalizzare-i-Work-Item-di-TFS_AFA7/image_6.png)
 
@@ -41,7 +41,7 @@ Clearly you can specify a constant for DEFAULT, you should choose *value*for the
 
 [![image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Personalizzare-i-Work-Item-di-TFS_AFA7/image_thumb_3.png "image")](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Personalizzare-i-Work-Item-di-TFS_AFA7/image_8.png)
 
- ***Figure 4***: *This is a â€œclassicâ€ default value, when the user creates another WI based on this template, the field contains this constant value.*
+ ***Figure 4***: *This is a *classic* default value, when the user creates another WI based on this template, the field contains this constant value.*
 
 You can use *currentuser*and *clock* as source of the default value.
 

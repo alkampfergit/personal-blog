@@ -8,7 +8,7 @@ categories: [Entity Framework]
 ---
 I use NHibernate since its first versions and I really love it :), but after Entity Framework 4.1 is out, I started to consider using EF for people that actually does know anything of ORM and still work with dataset or use handwritten SQL CRUD, but could not use open source project or prefer using MS technologies.
 
-I tend not to agree with this path, but sometimes it is easier to tell people, â€œhey, just install this update of Microsoft and you can use EF code first, or if you want a designer you can simple add a new EF Model to the projectâ€. People tend to consider less work using something that is already included in the framework, instead of going toward some external open source library. I must also admit that using EF 4.1 is quite fun (I used in really little projects, but 4.1 version gave me a good impression).
+I tend not to agree with this path, but sometimes it is easier to tell people, *hey, just install this update of Microsoft and you can use EF code first, or if you want a designer you can simple add a new EF Model to the project*. People tend to consider less work using something that is already included in the framework, instead of going toward some external open source library. I must also admit that using EF 4.1 is quite fun (I used in really little projects, but 4.1 version gave me a good impression).
 
 If you want to use EF4.1 in your application you need to do very little steps, suppose you have this class to persist.
 

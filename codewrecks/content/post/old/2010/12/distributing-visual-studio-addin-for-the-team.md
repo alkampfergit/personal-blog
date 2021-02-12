@@ -12,7 +12,7 @@ I found that some people are not aware that such a feature is already there, but
 
 [![SNAGHTML6e50cf](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML6e50cf_thumb.png "SNAGHTML6e50cf")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML6e50cf.png)
 
-From there you can see all the options for the collaboration features and one interesting option is called â€œInstall downloaded custom componentsâ€¦. but how it works?
+From there you can see all the options for the collaboration features and one interesting option is called *Install downloaded custom componentsâ€¦. but how it works?
 
 [![SNAGHTML6f800a](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML6f800a_thumb.png "SNAGHTML6f800a")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML6f800a.png)
 

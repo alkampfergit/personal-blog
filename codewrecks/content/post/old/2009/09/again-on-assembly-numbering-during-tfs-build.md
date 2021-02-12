@@ -6,7 +6,7 @@ draft: false
 tags: [TeamFoundationServer]
 categories: [Team Foundation Server]
 ---
-If you read [this post](http://www.codewrecks.com/blog/index.php/2009/08/21/take-control-of-assembly-numbering-during-a-tfs-build/), you can see how to customize a tfs build to modify versioning of the assembly. During that process to find the latest changeset of the repository, to use as â€œrevision Numberâ€ , I used a direct call to tf.exe tool and a custom Regex msbuild task to parse the result to find desired number. This approach have some weak points, first of all you need to know the location of tf.exe tool, moreover we are bound to the format output of the tool, now I want to show you a different way to obtain the same result.
+If you read [this post](http://www.codewrecks.com/blog/index.php/2009/08/21/take-control-of-assembly-numbering-during-a-tfs-build/), you can see how to customize a tfs build to modify versioning of the assembly. During that process to find the latest changeset of the repository, to use as *revision Number* , I used a direct call to tf.exe tool and a custom Regex msbuild task to parse the result to find desired number. This approach have some weak points, first of all you need to know the location of tf.exe tool, moreover we are bound to the format output of the tool, now I want to show you a different way to obtain the same result.
 
 To access functionality of Team Foundation Server you can also use API, and I must admit that I really like this approach instead of relying on calling an external exe tool and parse its output. Here is the full code of a custom task that accomplish the same operation with the use of tfs API.
 

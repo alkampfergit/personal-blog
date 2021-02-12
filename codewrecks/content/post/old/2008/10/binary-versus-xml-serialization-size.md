@@ -6,9 +6,9 @@ draft: false
 tags: [NET framework]
 categories: [NET framework]
 ---
-Yesterday a [friend](http://dotnetmarche.org/members/Roberto-Sileoni.aspx) of [DotNetMarche](http://dotnetmarche.org/) asked me this question: â€œI have the need to store serialized objects into database , I can choose between binary or xml format, which is smaller in size?â€
+Yesterday a [friend](http://dotnetmarche.org/members/Roberto-Sileoni.aspx) of [DotNetMarche](http://dotnetmarche.org/) asked me this question: *I have the need to store serialized objects into database , I can choose between binary or xml format, which is smaller in size?*
 
-My first answer was â€œBinary should occupy less space because it is more compactâ€ but he told me that DBA checked that xml entities actually uses less space than binary ones.
+My first answer was *Binary should occupy less space because it is more compact* but he told me that DBA checked that xml entities actually uses less space than binary ones.
 
 This morning I did some test with a simple class
 

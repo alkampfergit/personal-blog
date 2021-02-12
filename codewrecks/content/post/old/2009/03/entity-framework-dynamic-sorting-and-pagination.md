@@ -37,7 +37,7 @@ query.Dump();{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-After all you simply revert the order of methods, but there is a general rule that states â€œ*when you use a LINQ operator you cannot use e-SQL operator anymore*â€, this is why this second snippet does not work. All the methods that accepts entity property name with the syntax â€œit.propertynameâ€ belongs to the E-SQL syntax, they are used to dynamically build  an ESQL query. Now suppose you want to specify a condition. You can try this
+After all you simply revert the order of methods, but there is a general rule that states **when you use a LINQ operator you cannot use e-SQL operator anymore**, this is why this second snippet does not work. All the methods that accepts entity property name with the syntax *it.propertyname* belongs to the E-SQL syntax, they are used to dynamically build  an ESQL query. Now suppose you want to specify a condition. You can try this
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 var query = context.Customers

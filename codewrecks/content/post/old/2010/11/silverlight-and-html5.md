@@ -14,7 +14,7 @@ SL streaming is really awesome, so this is really a point where having SL in you
 
 Reading Bob [Muglia thoughts](http://www.zdnet.com/blog/microsoft/microsoft-our-strategy-with-silverlight-has-shifted/7834) about SL makes me happy, because it is exactly the conception I had of SL during the years.
 
-> â€œ[Silverlight is our development platform for Windows Phone](http://www.zdnet.com/blog/microsoft/microsofts-new-pitch-every-net-developer-just-became-a-windows-phone-developer/5316),â€ he said. Silverlight also has some â€œsweet spotsâ€ in media and line-of-business applications, he said.
+> *[Silverlight is our development platform for Windows Phone](http://www.zdnet.com/blog/microsoft/microsofts-new-pitch-every-net-developer-just-became-a-windows-phone-developer/5316),* he said. Silverlight also has some *sweet spots* in media and line-of-business applications, he said.
 
 SL for Windows Phone is great, I was able to build application for a mobile device without the need to learn a complete new technology, and I can leverage my knowledge of WPF and use the fantastic VS debugger, but when it is time of web site, HTML is the answer.
 

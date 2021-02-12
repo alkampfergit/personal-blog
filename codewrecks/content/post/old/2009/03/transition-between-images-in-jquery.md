@@ -35,7 +35,7 @@ Sometimes it is needed to change an image into another image, if possible with a
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-the code is really simple, first of all if the image is not contained in a div I wrap it into a div. This can change a little the layout of the page, so I suggest for every image that need to be swapped with another image to be originally enclosed in a div to make the transition happens. Next I set the new image as the div background, set the background-repeat to â€œno repeatâ€, then fade out the original image. When the original image fades out it slowly merge with the new image into the background. Finally when the fading out is completed I change the source of the image and finally show the image again.
+the code is really simple, first of all if the image is not contained in a div I wrap it into a div. This can change a little the layout of the page, so I suggest for every image that need to be swapped with another image to be originally enclosed in a div to make the transition happens. Next I set the new image as the div background, set the background-repeat to *no repeat*, then fade out the original image. When the original image fades out it slowly merge with the new image into the background. Finally when the fading out is completed I change the source of the image and finally show the image again.
 
 You can use this plugin with great easy.
 

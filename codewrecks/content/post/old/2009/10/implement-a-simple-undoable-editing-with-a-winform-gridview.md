@@ -8,9 +8,9 @@ categories: [NET framework]
 ---
 I need to implement a very simple interface, the user loads from a service a certain amount of objects displayed into a gridview. Then selecting an object in the gridview the user can edit object properties in a detail panel situated under the grid. Specification ask me to
 
-1) avoid that the user update some property of the object, then forget to press â€œSaveâ€ button and move to another object forgetting to update data calling the service update function.
+1) avoid that the user update some property of the object, then forget to press *Save* button and move to another object forgetting to update data calling the service update function.
 
-2) the system must support an â€œundoâ€ button that restore the object properties if the user decides not to save changes.
+2) the system must support an *undo* button that restore the object properties if the user decides not to save changes.
 
 Since the service return Dto objects that supports INotifyPropertyChanged and IEditableObject everything is a breeze. I used a custom MVC structure in winform, where the view use BindingSource objects to bind control to data, and pass BindingObjects to the controller to interact with current object. The first step is intercepting when the users begins editing of an object.
 

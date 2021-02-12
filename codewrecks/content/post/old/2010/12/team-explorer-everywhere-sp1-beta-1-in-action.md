@@ -6,11 +6,11 @@ draft: false
 tags: [Team Foundation Server]
 categories: [Team Foundation Server]
 ---
-You can download [Team Explorer Everywhere SP1 Beta](http://blogs.msdn.com/b/bharry/archive/2010/11/03/team-explorer-everywhere-2010-sp1-beta-is-available-for-download.aspx) to integrate all TFS functionality in your â€œnon Visual Studioâ€ environment, like eclipse. One of the most interesting addition made in SP1 is the support for gated Check In in Eclipse environment.
+You can download [Team Explorer Everywhere SP1 Beta](http://blogs.msdn.com/b/bharry/archive/2010/11/03/team-explorer-everywhere-2010-sp1-beta-is-available-for-download.aspx) to integrate all TFS functionality in your *non Visual Studio* environment, like eclipse. One of the most interesting addition made in SP1 is the support for gated Check In in Eclipse environment.
 
 First of all you need to setup a build with ant or maven, and you need to install [Team Foundation Server Build Extensions Power Tool](http://visualstudiogallery.msdn.microsoft.com/en-us/2d7c8577-54b8-47ce-82a5-8649f579dcb6) on the build server in order to be able to run a build based on Ant. Carefully read all requisite in the download page (Java SDK, some environment variables, etc) and now you are able to create a build from eclipse.
 
-First of all you need to create a buildfile with ant for your java project, I'm not going to explain you how to do this, but if you want to experiment, you can read [this guide](http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html) that explain how to create a â€œhelloWorldâ€ build with ant. Once you have a valid ant build file (you can simply copy that one in the tutorial) you can simply go to eclipse, go into TFS perspective and you should view the â€œbuildsâ€ node.
+First of all you need to create a buildfile with ant for your java project, I'm not going to explain you how to do this, but if you want to experiment, you can read [this guide](http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html) that explain how to create a *helloWorld* build with ant. Once you have a valid ant build file (you can simply copy that one in the tutorial) you can simply go to eclipse, go into TFS perspective and you should view the *builds* node.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image5.png)
 

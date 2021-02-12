@@ -6,7 +6,7 @@ draft: false
 tags: [JQuery]
 categories: [JQuery]
 ---
-I like the [AjaxControlToolkit](http://www.asp.net/ajax/ajaxcontroltoolkit/samples/), but using those controls without a real knowledge of what is happening behind the scenes can be dangerous. We have a simple page that shows a list of objects of type A; for each line there is a button called â€œAssociateâ€, that opens a modal-like dialog where the user can search objects of type B. Each result of this search show a button call â€œSelectâ€ to associate that object to the A object. The page was written with ModalPopupExtender; for each line a User Control (that implements search and association) was included and managed by a ModalPopupExtender, a few lines of code behind, an updatePanel and the game is done, whoa, success
+I like the [AjaxControlToolkit](http://www.asp.net/ajax/ajaxcontroltoolkit/samples/), but using those controls without a real knowledge of what is happening behind the scenes can be dangerous. We have a simple page that shows a list of objects of type A; for each line there is a button called *Associate*, that opens a modal-like dialog where the user can search objects of type B. Each result of this search show a button call *Select* to associate that object to the A object. The page was written with ModalPopupExtender; for each line a User Control (that implements search and association) was included and managed by a ModalPopupExtender, a few lines of code behind, an updatePanel and the game is done, whoa, success
 
 ![](http://t0.gstatic.com/images?q=tbn:ANd9GcQibTJAPeCu_zm5Joz_TOvY7ahk9uPQMqeTVC06u63QXTNJ5UsZ)
 
@@ -42,7 +42,7 @@ When the user press the Associate Button the page issue a GET request to the oth
 
 This big improvement in performance was paid by more time needed to develop the solution, by the gain in performance and scalability is tremendous, and since this is one of the most common operation the user to with this web application, the overall improvement worth the time spent on it and the slightly more complicated code on the UI.
 
-This kind of problems happen because using the Update Panel or other similar control (like the ModalPopupExtender) gave the programmer the sense of creating a real Ajax application, quite often I heard people telling me that the concept of ajax is only â€œ*avoid refreshing the whole page*â€ so an update panel is the only control they need.
+This kind of problems happen because using the Update Panel or other similar control (like the ModalPopupExtender) gave the programmer the sense of creating a real Ajax application, quite often I heard people telling me that the concept of ajax is only **avoid refreshing the whole page** so an update panel is the only control they need.
 
 Such kind of problems arise because developers are used to test application locally, where size of the page does not impact on perceived performance. I strongly suggest you to constantly test your web application with tools capable of simulating various Bandwidth scenario, just to avoid to find problems only when you deploy the application on the production server just to verify that your server bandwidth is completely saturated by the app.
 

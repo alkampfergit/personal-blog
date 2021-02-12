@@ -8,7 +8,7 @@ categories: [General]
 ---
 I hope I can help others because it took me about a couple of hour to find a solution to this problem.
 
-I have a mini DV camera SONY DCR CH51E and windows 7 rc 1. When I connect the camera to the pc the first time I see a baloon in the systray area that tells me â€œnew hardware found, installing driversâ€ drivers install is OK, I can now see my camera in the list of available hardware.
+I have a mini DV camera SONY DCR CH51E and windows 7 rc 1. When I connect the camera to the pc the first time I see a baloon in the systray area that tells me *new hardware found, installing drivers* drivers install is OK, I can now see my camera in the list of available hardware.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image-thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image3.png)
 

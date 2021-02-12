@@ -33,7 +33,7 @@ entity called  **fictiousEntity** is used only to join data from two base tables
 
 This is a snapshot of the TransformTuple of my DistinctResultTransformer object, that simply takes the object whose index was specified in constructor. So when I wrote  **SetResultTransformer(new DistinctResultTransformer(0))** I'm asking to return only the first element, that was my fictiousEntity used to aggregate the result.
 
-Since I specified to NH that all data is included in the original recordset, entities are fully hydrated without N+1 Select problem. With this simple trick I'm able to retrieve data from a stored in a really high efficient way, while maintaining full power of NHibernate, because except the fictiousEntity that is mutable=â€falseâ€, and is used only for aggregation, all related classes can be used as usual with full persistence power.
+Since I specified to NH that all data is included in the original recordset, entities are fully hydrated without N+1 Select problem. With this simple trick I'm able to retrieve data from a stored in a really high efficient way, while maintaining full power of NHibernate, because except the fictiousEntity that is mutable=*false*, and is used only for aggregation, all related classes can be used as usual with full persistence power.
 
 alk.
 

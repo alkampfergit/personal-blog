@@ -23,7 +23,7 @@ Testing multithreaded objects are quite complex. I have an object that keeps car
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This class inherits from AsyncOperationBase, it makes a simple iteration, raises 10 progress event and returns â€œOOKâ€. What I want to test is OperationManager Object that have a similar function
+This class inherits from AsyncOperationBase, it makes a simple iteration, raises 10 progress event and returns *OOK*. What I want to test is OperationManager Object that have a similar function
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
       public static OperationData Start(
@@ -70,7 +70,7 @@ When the sut executes its operation asynchronously this pattern needs to be chan
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image-thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/04/image2.png)
 
-To make this possible you should structure the sut in such a way that it is possible for the test to know when all the asynchronous operations are completed. In my example this is straightforward, because the sut signals to the caller the return value of the action, when you have â€œfire and forget actionsâ€ where there is no notification sent to the caller, implementing this pattern can be a little more complicated.
+To make this possible you should structure the sut in such a way that it is possible for the test to know when all the asynchronous operations are completed. In my example this is straightforward, because the sut signals to the caller the return value of the action, when you have *fire and forget actions* where there is no notification sent to the caller, implementing this pattern can be a little more complicated.
 
 Alk.
 

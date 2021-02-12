@@ -16,11 +16,11 @@ Simply choose to record action, a recording toolbar will shows up
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image32.png)
 
-Now simply press record, then press â€œStart without Debuggingâ€ on my project. My program opens (a simple form to divide two integers), and I begin interact with the form. Here is the result.
+Now simply press record, then press *Start without Debugging* on my project. My program opens (a simple form to divide two integers), and I begin interact with the form. Here is the result.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image33.png)
 
-As you can see the recorded intercept the launch of my application, and the interaction with the form. When you finished recording, you can simply press the â€œGenerate Code buttonâ€ and have a new test generated.
+As you can see the recorded intercept the launch of my application, and the interaction with the form. When you finished recording, you can simply press the *Generate Code button* and have a new test generated.
 
 Now I suggest you to rename the test (VS calls it CodedUITestMethod1), and when you run it, you can look at the program open again and all of your actions replayed :).
 

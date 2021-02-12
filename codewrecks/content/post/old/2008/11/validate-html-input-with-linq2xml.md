@@ -6,7 +6,7 @@ draft: false
 tags: [LINQ]
 categories: [LINQ]
 ---
-Suppose you have a very simple page where user can add comments to an issue, user can enter plain text and also they can use th HTML tag &lt;b&gt; to render in bold some text. In the [example code](http://www.codewrecks.com/blog/storage/validatesample.zip) you can see a very simple implementation (default.aspx). It use a xml file for back end storage (so you can run the example without a database) and in Default.aspx all the text that was entered by the user was stored in a CData section of the XML STorage file. When the comments are rendered on the page we simply output all the content. The result is good but have some problems. First of all you can use every html tag, such as &lt;i&gt; moreover, if some hacker enter the text â€œyou were &lt;script&gt;alert(‘hacked’);&lt;/script&gt;â€ into the textbox, all the user that read the page will execute that script, this is a  simple sample of cross site scripting attack.
+Suppose you have a very simple page where user can add comments to an issue, user can enter plain text and also they can use th HTML tag &lt;b&gt; to render in bold some text. In the [example code](http://www.codewrecks.com/blog/storage/validatesample.zip) you can see a very simple implementation (default.aspx). It use a xml file for back end storage (so you can run the example without a database) and in Default.aspx all the text that was entered by the user was stored in a CData section of the XML STorage file. When the comments are rendered on the page we simply output all the content. The result is good but have some problems. First of all you can use every html tag, such as &lt;i&gt; moreover, if some hacker enter the text *you were &lt;script&gt;alert(‘hacked’);&lt;/script&gt;* into the textbox, all the user that read the page will execute that script, this is a  simple sample of cross site scripting attack.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image-thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2008/11/image8.png)
 
@@ -23,7 +23,7 @@ Here is the content of the storage file
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-In Default2.Aspx there is a simple solution to mitigate this problem, trying to remove all node that are not &lt;b&gt;, but with this solution if a user enter â€œthis is a &lt;b&gt;good comment&lt;/b&gt; with &lt;i&gt;italic text&lt;/i&gt;â€œ, we have a big problem, the part in the &lt;i&gt;&lt;/i&gt; tag gets completely removed. Moreover if some hacker gets a way to change your storage file, or can insert some data in database you still have problem. A better solution was showed in Default3.aspx. Since I consider data in the file as *untrusted input* because it is under direct control of the user I need to sanitize the comment before I can render text to the user. The goal is having a SanitizeComment function that gets a html fragment as input and return a new fragment with all tags removed, except those that are permitted.
+In Default2.Aspx there is a simple solution to mitigate this problem, trying to remove all node that are not &lt;b&gt;, but with this solution if a user enter *this is a &lt;b&gt;good comment&lt;/b&gt; with &lt;i&gt;italic text&lt;/i&gt;*, we have a big problem, the part in the &lt;i&gt;&lt;/i&gt; tag gets completely removed. Moreover if some hacker gets a way to change your storage file, or can insert some data in database you still have problem. A better solution was showed in Default3.aspx. Since I consider data in the file as *untrusted input* because it is under direct control of the user I need to sanitize the comment before I can render text to the user. The goal is having a SanitizeComment function that gets a html fragment as input and return a new fragment with all tags removed, except those that are permitted.
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
  1 private String SanitizeComment(String commentText)
@@ -49,7 +49,7 @@ In Default2.Aspx there is a simple solution to mitigate this problem, trying to 
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This code use Linq2Xml; first of all in line 5 I create a XElement with a concatenation of a &lt;span&gt; tag and the original content of the comment. Then I select in line 6 all the XML nodes that have a name different from â€œbâ€,(the only permitted tag in the output). Then for each of the unpermitted nodes I simply add a new XML node of type XText after the node, and then remove the original node.
+This code use Linq2Xml; first of all in line 5 I create a XElement with a concatenation of a &lt;span&gt; tag and the original content of the comment. Then I select in line 6 all the XML nodes that have a name different from *b*,(the only permitted tag in the output). Then for each of the unpermitted nodes I simply add a new XML node of type XText after the node, and then remove the original node.
 
 If some XMLException occurs, it means that the input is not a well formed XML fragment, so I default to use the AntiXss HtmlEncode function that avoid any cross site scripting risk.
 

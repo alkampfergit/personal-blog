@@ -8,7 +8,7 @@ categories: [General]
 ---
 I was reading [this post](http://www.codinghorror.com/blog/archives/001315.html), and I really agree with Jeff, every day is international Backup Awareness Day.
 
-People usually learn the importance of a good backup the first time they have a great data loss, or when you see others having greats data loss. I remember, loong time ago, when I worked in a computer shop in my city, one day a person came with his computer and told us â€œit does not power upâ€. I checked the machine and the Hard Disk was completely gone, it did not even spin the disk so I told him, â€œthe HD is gone, all data are lostâ€. I remember this 50 years old man almost crying to me â€œI have 5 years of work inside the HD, tons of autocad project, I need those dataâ€
+People usually learn the importance of a good backup the first time they have a great data loss, or when you see others having greats data loss. I remember, loong time ago, when I worked in a computer shop in my city, one day a person came with his computer and told us *it does not power up*. I checked the machine and the Hard Disk was completely gone, it did not even spin the disk so I told him, *the HD is gone, all data are lost*. I remember this 50 years old man almost crying to me *I have 5 years of work inside the HD, tons of autocad project, I need those data*
 
 That episode makes me understand the importance of your data, so every day I begin to think, what will happen if my internal HD will fry for catastrophic power supply peak voltage? What happens if a supermagnet will erase all the data of all my HD in home, etc etc.
 

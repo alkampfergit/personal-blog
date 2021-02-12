@@ -22,7 +22,7 @@ The error and warning are reported in the detailed report with their right icons
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image25.png)
 
-And they are also reported in the â€œView Summaryâ€ of the build
+And they are also reported in the *View Summary* of the build
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image26.png)
 

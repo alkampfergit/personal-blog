@@ -31,7 +31,7 @@ Let's start with the first configuration, first of all I configure IIS7 to use b
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-In this configuration there are several thing to notice, first of all the endpoint address begins with https, then I use  **[basicHttpBinding](http://msdn.microsoft.com/en-us/library/system.servicemodel.basichttpbinding.aspx)** , because I do not need credentials to be sent, and finally to have metadataExchange I need to specify [mexHttpsBinding](http://msdn.microsoft.com/en-us/library/aa967391.aspx). This last option is needed, because if you use the standard mexHttpBinding you will end with the error  **â€œCould not find a base address that matches scheme http for the endpoint with binding MetadataExchangeHttpBinding. Registered base address schemes are [https]â€** Now here is the BindingConfiguration for this service:
+In this configuration there are several thing to notice, first of all the endpoint address begins with https, then I use  **[basicHttpBinding](http://msdn.microsoft.com/en-us/library/system.servicemodel.basichttpbinding.aspx)** , because I do not need credentials to be sent, and finally to have metadataExchange I need to specify [mexHttpsBinding](http://msdn.microsoft.com/en-us/library/aa967391.aspx). This last option is needed, because if you use the standard mexHttpBinding you will end with the error  ***Could not find a base address that matches scheme http for the endpoint with binding MetadataExchangeHttpBinding. Registered base address schemes are [https]*** Now here is the BindingConfiguration for this service:
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <basicHttpBinding>
@@ -44,7 +44,7 @@ In this configuration there are several thing to notice, first of all the endpoi
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-I've simply specified that the security has the mode=â€Transportâ€ and the transport does not use clientCredentialType. If you do not specify â€œnoneâ€ in this value, the service will expect that IIS site is configured to use windows credential as default.
+I've simply specified that the security has the mode=*Transport* and the transport does not use clientCredentialType. If you do not specify *none* in this value, the service will expect that IIS site is configured to use windows credential as default.
 
 The client should be configured in this way.
 
@@ -58,7 +58,7 @@ useDefaultWebProxy="true">		<readerQuotas maxDepth="32" maxStringContentLength="
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This is quite complicated configuration, but the relevant part is that the security is mode=â€Transportâ€, thus specifying that https will be used. Then each endpoint that will does not need credentials can be specified in this way
+This is quite complicated configuration, but the relevant part is that the security is mode=*Transport*, thus specifying that https will be used. Then each endpoint that will does not need credentials can be specified in this way
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <endpointaddress="https://mydomain.com/CustomerService.svc"binding="basicHttpBinding"bindingConfiguration="HttpsWithNoCredentials"contract="MyProject.DataService.ICustomerService"name="CustomerServiceIoC" />{{< / highlight >}}

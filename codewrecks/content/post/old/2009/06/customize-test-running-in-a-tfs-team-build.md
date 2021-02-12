@@ -12,7 +12,7 @@ This kind of option is not present in the wizard, and it is time to make your ha
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb46.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image46.png)
 
-In order to edit that file, you first need to grab a copy from the source control to your local folder, simply right click in the teamBuildTypes folder to â€œGet the latest versionâ€
+In order to edit that file, you first need to grab a copy from the source control to your local folder, simply right click in the teamBuildTypes folder to *Get the latest version*
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb47.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image47.png)
 

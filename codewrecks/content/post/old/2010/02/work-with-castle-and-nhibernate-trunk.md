@@ -10,7 +10,7 @@ Working with open source software is fun, but sometimes can be difficult. Take a
 
 A good way to survive this chaos, is working with the trunk, as I usually do, but compiling everything can be quite complex, but we are lucky because we have a project called [Horn](http://github.com/dagda1/horn_src) that does everything for you.
 
-First of all you need to install [nsysgit](http://code.google.com/p/msysgit/downloads/list) first of all you need to grab the latest source of horn with the comand â€œgit clone [git://github.com/dagda1/horn\_src.git](git://github.com/dagda1/horn_src.git "git://github.com/dagda1/horn_src.git")â€. Once you get the source, you need to modify a source file called /src/horn.console/program.cs, in this file there is a function called GetRootFolderPath that ends with a line like
+First of all you need to install [nsysgit](http://code.google.com/p/msysgit/downloads/list) first of all you need to grab the latest source of horn with the comand *git clone [git://github.com/dagda1/horn\_src.git](git://github.com/dagda1/horn_src.git "git://github.com/dagda1/horn_src.git")*. Once you get the source, you need to modify a source file called /src/horn.console/program.cs, in this file there is a function called GetRootFolderPath that ends with a line like
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 var ret = new DirectoryInfo(rootFolder);

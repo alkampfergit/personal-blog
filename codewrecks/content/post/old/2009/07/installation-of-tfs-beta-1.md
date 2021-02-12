@@ -10,7 +10,7 @@ Today I installed Tfs 2010 beta to look at new features; installation process of
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image.png)
 
-If you select â€œcustom Configurationâ€ you can fine tuning the configuration, you can choose as example the database you want to use.
+If you select *custom Configuration* you can fine tuning the configuration, you can choose as example the database you want to use.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image1.png)
 

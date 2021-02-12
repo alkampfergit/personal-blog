@@ -27,7 +27,7 @@ order by CustomerId, Freight desc{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-the ROW\_NUMBER creates a column with an incremental number over some order clause and optionally partitioned over some columns. In this example I partition by CustomerId, this means that for each CustomerId the RowNumber starts again with number 1 then I order for â€œFreight descâ€. I put everything in an inner Select and from the outer query I select only the rows whose RowNumber is less than 4, the result is the list of the three order with higher Freight for each customer, really simple ;)
+the ROW\_NUMBER creates a column with an incremental number over some order clause and optionally partitioned over some columns. In this example I partition by CustomerId, this means that for each CustomerId the RowNumber starts again with number 1 then I order for *Freight desc*. I put everything in an inner Select and from the outer query I select only the rows whose RowNumber is less than 4, the result is the list of the three order with higher Freight for each customer, really simple ;)
 
 10835    ALFKI    69.53  
   

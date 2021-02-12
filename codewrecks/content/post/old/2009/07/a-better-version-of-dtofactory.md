@@ -32,7 +32,7 @@ Usage of the T4 template is really simple, I've created in the test project an E
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-It is quite the same of the previous version, but now I inserted some enhancements. If you look at the property list you can see that I inserted properties like â€œCustomers.CustomerIDâ€ and â€œCustomers.ContactNameâ€, that belongs to the customers object. When you use a domain model you are working with a graph of object, but dto must be plain. My generator will generate this class:
+It is quite the same of the previous version, but now I inserted some enhancements. If you look at the property list you can see that I inserted properties like *Customers.CustomerID* and *Customers.ContactName*, that belongs to the customers object. When you use a domain model you are working with a graph of object, but dto must be plain. My generator will generate this class:
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image14.png)
 
@@ -87,7 +87,7 @@ Another interesting stuff is this one, you can link various Dto objects between 
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-I'm asking to generate an OrdersTestDto object that contains the â€œCustomersâ€ property, but I specify that I do not want full Customers object, but simply a CustomersDto, so you will end in two dto connected together
+I'm asking to generate an OrdersTestDto object that contains the *Customers* property, but I specify that I do not want full Customers object, but simply a CustomersDto, so you will end in two dto connected together
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image-thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/07/image15.png)
 

@@ -8,7 +8,7 @@ categories: [Experiences]
 ---
 I need in a simple project the ability to communicate various type of messages through different View Model in a WPF application, some VM raise some message about something that is happened in the system, and other VM can listen for messages and doing something with them.
 
-I know that there are a lot of framework out of there, but sometimes you need a quick implementation that you can share with the team, without the need to tell to others â€œHey you need to master xxx framework for understanding what is happeningâ€. The result is a really 30 minutes implementation of a primitive broker. I want a central component where every View Model can register/unregister for a specific kind of a message, and send messages.
+I know that there are a lot of framework out of there, but sometimes you need a quick implementation that you can share with the team, without the need to tell to others *Hey you need to master xxx framework for understanding what is happening*. The result is a really 30 minutes implementation of a primitive broker. I want a central component where every View Model can register/unregister for a specific kind of a message, and send messages.
 
 I decided to discriminate messages based on the type of data contained in the message, the message itself is a simple class with a message string and a payload.
 

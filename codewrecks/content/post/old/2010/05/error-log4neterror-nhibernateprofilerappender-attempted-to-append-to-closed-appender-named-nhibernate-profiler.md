@@ -6,7 +6,7 @@ draft: false
 tags: [Nhibernate]
 categories: [Nhibernate]
 ---
-[NHprofiler](http://nhprof.com/) de facto is â€œTHE TOOLâ€ to work with NHibernate, :)
+[NHprofiler](http://nhprof.com/) de facto is *THE TOOL* to work with NHibernate, :)
 
 If you work with NHibernate you must have NHProf, if you use it for 1 minute you can never work without it in the future, period. :)
 

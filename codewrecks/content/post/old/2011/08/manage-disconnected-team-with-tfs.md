@@ -14,7 +14,7 @@ If no local person will access the team project during the period in witch the t
 
 If people from central office should being able to access the Team Project from central office, while the team is working on code on customer's remote site, [Integration Platform](http://tfsintegration.codeplex.com/) could be the solution.
 
-You starting creating another installation of TFS (usually on a virtual machine), and create a Team Project with the same name of the original Team Project or a similar name like * **original name portable** *, then install the Integration Platform on this Virtual Machine and configure an integration between the two Team Projects. First of all open the Integration Platform interface, choose â€œCreate Newâ€ and then choose Version Control if you want to keep in sync only source code, or VersionControlAndWorkItem if you want to keep in sync both WI and Source.
+You starting creating another installation of TFS (usually on a virtual machine), and create a Team Project with the same name of the original Team Project or a similar name like * **original name portable** *, then install the Integration Platform on this Virtual Machine and configure an integration between the two Team Projects. First of all open the Integration Platform interface, choose *Create New* and then choose Version Control if you want to keep in sync only source code, or VersionControlAndWorkItem if you want to keep in sync both WI and Source.
 
 [![asdfasdf](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/asdfasdf_thumb.jpg "asdfasdf")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/asdfasdf.jpg)
 
@@ -26,7 +26,7 @@ Now you need to specify the two Team Projects that you want to keep in sync, you
 
  ***Figure 2***: *Configuration of Integration platform to keep in sync TailSpin toys and another Team project on a portable Virtual Machine.*
 
-Now you can press â€œsave to databaseâ€ and the configuration is ready to be executed simply pressing the start button. When the integration runs, you can be presented with conflicts, this is an example.
+Now you can press *save to database* and the configuration is ready to be executed simply pressing the start button. When the integration runs, you can be presented with conflicts, this is an example.
 
 > A namespace conflict has been detected between the source and the target system for the following item: $/TailSpinToysPortable/BuildProcessTemplates/UpgradeTemplate.xaml;39
 
@@ -44,7 +44,7 @@ If you do not create a user mapping between the two machines, you will end up wi
 
 The comment contains the original comment (modification to the interface) as well as complete note from Integration Platform on the original check in date, and the original user that issued the check-in.
 
-To minimize the chance of conflicts during the integration, I strongly suggest to the remote team to create a branch in the original TFS before the synchronization starts, then during remote work they will work on that branch against the *REMOTE TFS*, no one from the central office should touch that branch. Finally when the team returns to the central office you start again synchronization from the Integration Platform and you are sure that no conflict will occour. When the sync is complete, that remote branch is now the â€œreleaseâ€ branch, because it contains the code that is actually running in the customer factory.
+To minimize the chance of conflicts during the integration, I strongly suggest to the remote team to create a branch in the original TFS before the synchronization starts, then during remote work they will work on that branch against the *REMOTE TFS*, no one from the central office should touch that branch. Finally when the team returns to the central office you start again synchronization from the Integration Platform and you are sure that no conflict will occour. When the sync is complete, that remote branch is now the *release* branch, because it contains the code that is actually running in the customer factory.
 
 If you choose a sync configuration that will keep in sync even the Work Items, the remote team is able to create bug, issue to keep tracks of what is happened during remote development :).
 

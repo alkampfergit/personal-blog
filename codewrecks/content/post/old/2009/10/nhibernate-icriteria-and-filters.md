@@ -6,7 +6,7 @@ draft: false
 tags: [ICriteria,Nhibernate]
 categories: [Nhibernate]
 ---
-I have a project where I need to access tables with millions of rows, the project was born without nhibernate so the database was not designed with ORM in mind. I decided to improve performances with an Indexed view that materialized a join between five tables, wrapped with another view that does a left outer joins with other 3 tables. Then I created an entity called XXXDto, and mapped with nhibernate, with update=â€falseâ€ to prevent updating and pointed it to this view.
+I have a project where I need to access tables with millions of rows, the project was born without nhibernate so the database was not designed with ORM in mind. I decided to improve performances with an Indexed view that materialized a join between five tables, wrapped with another view that does a left outer joins with other 3 tables. Then I created an entity called XXXDto, and mapped with nhibernate, with update=*false* to prevent updating and pointed it to this view.
 
 Everything runs fine, but now I have a little new feature to implement; that entity needs another property called Bookmark, and the value is specific of each user. In the software the user can search the aforementioned entity with some criteria, then he bookmarks the ones he likes most, and the software must signal bookmarked ones with a different image in the web ui. The problem is that bookmark table was already present in the database and has this schema.
 

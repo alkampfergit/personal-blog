@@ -6,7 +6,7 @@ draft: false
 tags: [Tfs]
 categories: [Team Foundation Server]
 ---
-I begin working on a open source project, hosted on codeplex. The first thing I need to do is to modify configuration files to make it work on my machine (in my situation I need only to change the sql connection string). In this scenario a big problem arise, if every developer has a different configuration file, there is the possibility that someone will do a wrong checkin, and send to the server his configuration file. This is a â€œconfiguration hellâ€ when at each check-in you grab modification to configuration file of other developers.
+I begin working on a open source project, hosted on codeplex. The first thing I need to do is to modify configuration files to make it work on my machine (in my situation I need only to change the sql connection string). In this scenario a big problem arise, if every developer has a different configuration file, there is the possibility that someone will do a wrong checkin, and send to the server his configuration file. This is a *configuration hell* when at each check-in you grab modification to configuration file of other developers.
 
 A possible solution in this scenario is to use branches. Suppose you have your standard web.config file that needs to be modified, the first thing I do is to branch it to a different location.
 

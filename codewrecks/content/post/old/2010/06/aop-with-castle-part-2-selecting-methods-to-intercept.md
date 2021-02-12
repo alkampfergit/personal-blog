@@ -10,7 +10,7 @@ Previous Part of the series
 
 [Part 1 â€“ The basic of interception](http://www.codewrecks.com/blog/index.php/2010/06/01/aop-with-castle-part-1/)
 
-Some people, after looking at interceptor concept, are not fully convinced that castle can support all concepts of AOP and the first question usually is: â€œHow can I choose witch method intercept, instead of intercepting calls to all methods, and how can I configure this with XML file or fluent configuration?â€. This answer can have various solutions, but in my opinion the simplest one is doing a little manual logic on interceptor.
+Some people, after looking at interceptor concept, are not fully convinced that castle can support all concepts of AOP and the first question usually is: *How can I choose witch method intercept, instead of intercepting calls to all methods, and how can I configure this with XML file or fluent configuration?*. This answer can have various solutions, but in my opinion the simplest one is doing a little manual logic on interceptor.
 
 Since the interceptor is resolved by castle it is possible to add a list of valid regular expressions used to select methods to intercept, and simply check the method name to decide if it needs to be intercepted. This approach is the most simple one because it is based only on the basic structure of castle, and it has the advantages of change the list of methods to intercept simply changing the configuration of the interceptor. You can put this code on an interceptor or create a base interceptor class that contains the base logic.
 
@@ -155,7 +155,7 @@ RegexSelector.Add(typeof(LogInterceptor), new List<string>() { "Augment" });
 InterceptorSelector selector = new InterceptorSelector(RegexSelector);
 {{< / highlight >}}
 
-I created a selector that permits to select a couple of interceptors, one is the DumpInterceptor, and I want it to intercept the â€œDoSomethingâ€ method, while the LogInterceptor should intercept only the â€œAugmentâ€ method. Once the selector is configured you can simply use it in fluent configuration.
+I created a selector that permits to select a couple of interceptors, one is the DumpInterceptor, and I want it to intercept the *DoSomething* method, while the LogInterceptor should intercept only the *Augment* method. Once the selector is configured you can simply use it in fluent configuration.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 container.Register(

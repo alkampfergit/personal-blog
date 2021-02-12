@@ -34,7 +34,7 @@ Html.ActionLink(
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-But generated link is [PhotoManager/ManageAlbum/00000000-0000-0000-0000-000000000000?pageid=0](http://localhost:13164/PhotoManager/ManageAlbum/00000000-0000-0000-0000-000000000000?pageid=0 "http://localhost:13164/PhotoManager/ManageAlbum/00000000-0000-0000-0000-000000000000?pageid=0") that is wrong. The page id was put in querystring and not in the path as I want. The problem is derived from the order of routes, because the ActionLink function scans route from the first to the last. Since the first route match with the parameter the ActionLink method decides to use the â€œDefaultâ€ route, appending the pageid parameter to the querystring.
+But generated link is [PhotoManager/ManageAlbum/00000000-0000-0000-0000-000000000000?pageid=0](http://localhost:13164/PhotoManager/ManageAlbum/00000000-0000-0000-0000-000000000000?pageid=0 "http://localhost:13164/PhotoManager/ManageAlbum/00000000-0000-0000-0000-000000000000?pageid=0") that is wrong. The page id was put in querystring and not in the path as I want. The problem is derived from the order of routes, because the ActionLink function scans route from the first to the last. Since the first route match with the parameter the ActionLink method decides to use the *Default* route, appending the pageid parameter to the querystring.
 
 If you need to manually choose the route you need to generate your link you can use a different method of the Html helper object.
 

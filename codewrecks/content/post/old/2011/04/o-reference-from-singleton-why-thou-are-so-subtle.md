@@ -12,7 +12,7 @@ One of the most common risk is having a Singleton reference other objects and th
 
 ![](http://ricchezza-fotovoltaico.jujol.com/wp-content/uploads/2008/03/broker.jpg)
 
-Each VM correctly deregister all registered handler from the broker, but I wish to be able to improve the design, avoding the broker to keep hard reference to called object using a WeakReference. The broker have a couple of way to register message, the first one accepts a token and a Action&lt;Message&lt;T&gt;&gt; delegate and the token is used to deregister all messages associated with the token. With this interface I can pass the instance of the ViewModel as token, and since the ViewModelBase implements the IDisposable interface, I deregister all messages related to â€œthisâ€, thus avoiding hard reference problem.
+Each VM correctly deregister all registered handler from the broker, but I wish to be able to improve the design, avoding the broker to keep hard reference to called object using a WeakReference. The broker have a couple of way to register message, the first one accepts a token and a Action&lt;Message&lt;T&gt;&gt; delegate and the token is used to deregister all messages associated with the token. With this interface I can pass the instance of the ViewModel as token, and since the ViewModelBase implements the IDisposable interface, I deregister all messages related to *this*, thus avoiding hard reference problem.
 
 This is quite good, but I want to prevent the broker from keeping hard references to objects, so I created a test class to verify that the broker prevents objects from being disposed.
 

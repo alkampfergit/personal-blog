@@ -14,7 +14,7 @@ Leveraging the power of a Continuos Integration machine with open source tool is
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image20.png)
 
-The â€œNew Build Definitionâ€ shows you a wizard that helps you in creating the build, the first time you run it tells you that it does not find any build file in the source code, so it suggest you to use a wizard to create one.
+The *New Build Definition* shows you a wizard that helps you in creating the build, the first time you run it tells you that it does not find any build file in the source code, so it suggest you to use a wizard to create one.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image21.png)
 

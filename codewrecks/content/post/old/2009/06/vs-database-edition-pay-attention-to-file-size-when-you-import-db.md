@@ -10,7 +10,7 @@ I use Database Edition on a legacy database that is very big, when I created the
 
 Now with VS DB edition I write test more easily using the data generation plan, but usually I run both the old tests and the new ones, and I noticed that the deploy of my DB project is incredibly slow when the db does not exists.
 
-when I look at the database folder I saw that my test database is 40 GB big, I was astonished by this fact, since it is deleted at each test run and have small preload set. This problem was caused by the fact that VS DB edition imported the whole structure of the DB as well as file dimension. If you go to â€œSchema Objectsâ€, then â€œStorageâ€ then â€œFilesâ€ you can find several.sql files that contain definitions of the physical files of the database. Examining the files I found entries like this.
+when I look at the database folder I saw that my test database is 40 GB big, I was astonished by this fact, since it is deleted at each test run and have small preload set. This problem was caused by the fact that VS DB edition imported the whole structure of the DB as well as file dimension. If you go to *Schema Objects*, then *Storage* then *Files* you can find several.sql files that contain definitions of the physical files of the database. Examining the files I found entries like this.
 
 {{< highlight sql "linenos=table,linenostart=1" >}}
 ALTER DATABASE [$(DatabaseName)]

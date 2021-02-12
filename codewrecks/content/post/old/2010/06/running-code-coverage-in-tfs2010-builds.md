@@ -6,7 +6,7 @@ draft: false
 tags: [TFS Build]
 categories: [Team Foundation Server]
 ---
-To have Code Coverage collection for test execution during a build, you first need to create a.testsettings file in the solution with code coverage enabled. To enable code coverage simply open the testsetting file, go to â€œData And Diagnosticsâ€ and check the â€œCode coverageâ€ option. This is not enough, because when you check the code coverage option, the â€œConfigureâ€ link highlighted in the picture become enabled.
+To have Code Coverage collection for test execution during a build, you first need to create a.testsettings file in the solution with code coverage enabled. To enable code coverage simply open the testsetting file, go to *Data And Diagnostics* and check the *Code coverage* option. This is not enough, because when you check the code coverage option, the *Configure* link highlighted in the picture become enabled.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image21.png)
 
@@ -26,7 +26,7 @@ If you see this message it means that tests were executed in a machine that has 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb25.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image25.png)
 
-To look at code coverage details, you need to click on â€œView Test Resultsâ€ and view code coverage output as if it were executed locally.
+To look at code coverage details, you need to click on *View Test Results* and view code coverage output as if it were executed locally.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image_thumb26.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/06/image26.png)
 

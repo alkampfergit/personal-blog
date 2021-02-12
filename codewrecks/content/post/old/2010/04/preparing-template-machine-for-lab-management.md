@@ -20,11 +20,11 @@ the tool ask me for password (I was logged as local administrator) and then it p
 
 Now I join the machine to the domain, then configure the test agent to run under the identity of labuser domain user, [I change domain policy as described here](http://www.codewrecks.com/blog/index.php/2010/03/18/scvmm-could-not-reset-local-administrator-password-during-template-creation/) and now the machine with IE6 is ready. Now my machine is ready to be converted into a template, but since I need also a IE7 and a IE8 machine with windows XP, I simply go to the SCVMM and clone this machine a couple of times, then boot the other two machine and change machine name, install IE7 E8 etc etc.
 
-Now I go to SCVMM, in the â€œVMs and Templateâ€ and choose to create a new template from an existing virtual machine.
+Now I go to SCVMM, in the *VMs and Template* and choose to create a new template from an existing virtual machine.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb5.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image5.png)
 
-then I choose my windows xp machine that I have already configured, I choose â€œWinXPIE6â€ as template name and proceed to configure the hardware and finally I reach the â€œGuest operating Systemâ€ tab where I configure the domain the virtual machine should join.
+then I choose my windows xp machine that I have already configured, I choose *WinXPIE6* as template name and proceed to configure the hardware and finally I reach the *Guest operating System* tab where I configure the domain the virtual machine should join.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb6.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image6.png)
 

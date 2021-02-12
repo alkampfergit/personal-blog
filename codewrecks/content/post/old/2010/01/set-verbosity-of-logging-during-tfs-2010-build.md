@@ -24,7 +24,7 @@ I highlighted the two important facts: 1) the file is included in the project Do
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image19.png)
 
-As you can verify, only the message with BuildMessageImportance.High is showed, this because the entire build process has an argument that determines the level of log verbosity. Now try to change this value to Detailed. You should click the â€œArgumentsâ€ and locate the Verbosity argument.
+As you can verify, only the message with BuildMessageImportance.High is showed, this because the entire build process has an argument that determines the level of log verbosity. Now try to change this value to Detailed. You should click the *Arguments* and locate the Verbosity argument.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image20.png)
 
@@ -32,7 +32,7 @@ Now change it to Detailed, check-in, merge ;) and launch the build again to veri
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image21.png)
 
-Now you can see that in â€œDetailedâ€ level of verbosity, the workflow logs even the Normal level. The morale is that in your custom activity you should use BuildMessageImportance with great care. Really important messages must be showed with High importance, detailed with Normal, and you should use Low for really verbose messages. But remember, always do a verbose log, because if something gets wrong in the build, you can always change the BuildVerbosity level and verify in detail what is really gone wrong in your custom action.
+Now you can see that in *Detailed* level of verbosity, the workflow logs even the Normal level. The morale is that in your custom activity you should use BuildMessageImportance with great care. Really important messages must be showed with High importance, detailed with Normal, and you should use Low for really verbose messages. But remember, always do a verbose log, because if something gets wrong in the build, you can always change the BuildVerbosity level and verify in detail what is really gone wrong in your custom action.
 
 Alk.
 

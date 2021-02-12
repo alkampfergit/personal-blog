@@ -112,7 +112,7 @@ Now I can modify the test presented in the old post to insert an inner loop that
 
  ***Figure 1***: *Insert a loop based on a regular expression thanks to RegexLoop plugin*
 
-I inserted another loop inside the first one, after the search request, and insert a regular expression that is able to find all â€œselectâ€ button of the gridview, I asked the regexloop to insert the value in the CurrentCustomer context variable to use in the subsequent request
+I inserted another loop inside the first one, after the search request, and insert a regular expression that is able to find all *select* button of the gridview, I asked the regexloop to insert the value in the CurrentCustomer context variable to use in the subsequent request
 
 [![SNAGHTML583c07](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML583c07_thumb.png "SNAGHTML583c07")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML583c07.png)
 

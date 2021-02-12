@@ -10,7 +10,7 @@ categories: [Visual Studio]
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image18.png)
 
-Choosing the Visual Studio Add-in a Wizard helps you to decide the type of the addin.The wizard asks for the language to use, and some information, like if the addin should be loaded at startup and if it must be listed under the tools menu. After you created the project you can go to project properties and verify that, in the debug pane, the project is setup to start devenv.exe as â€œstart External Programâ€
+Choosing the Visual Studio Add-in a Wizard helps you to decide the type of the addin.The wizard asks for the language to use, and some information, like if the addin should be loaded at startup and if it must be listed under the tools menu. After you created the project you can go to project properties and verify that, in the debug pane, the project is setup to start devenv.exe as *start External Program*
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image19.png)
 
@@ -26,7 +26,7 @@ The code for doing this is really simple, you need to locate the connect.cs clas
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image21.png)
 
-As you can see it is really simple to interact with VS IDE; thanks to \_applicationObject I can interact with the solution and enumerate projects, but I can also obtain a reference to the â€œGeneralâ€ pane of the output windows, to write string to the output console. Now I can simply dump solution name, then iterate into all the projects dumping project name and project Items. The DumpFiles method is a really simple recursive method to iterate into all project contents.
+As you can see it is really simple to interact with VS IDE; thanks to \_applicationObject I can interact with the solution and enumerate projects, but I can also obtain a reference to the *General* pane of the output windows, to write string to the output console. Now I can simply dump solution name, then iterate into all the projects dumping project name and project Items. The DumpFiles method is a really simple recursive method to iterate into all project contents.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image22.png)
 

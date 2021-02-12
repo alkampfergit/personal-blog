@@ -57,7 +57,7 @@ derlying network resource issue. Local socket timeout was '00:05:00'.{{< / highl
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-If you read the messages you could suspect that something on the network does not work properly, at least you read â€œthe socket connection was abortedâ€ but the interesting part of the message is â€œerror: cannot obtain metadata fromâ€¦â€ this is the real error messages. To understand why this error occurred read [this page](http://msdn.microsoft.com/en-us/library/aa751951.aspx), but if you are interested in the solution you can add this to the configuration
+If you read the messages you could suspect that something on the network does not work properly, at least you read *the socket connection was aborted* but the interesting part of the message is *error: cannot obtain metadata fromâ€¦* this is the real error messages. To understand why this error occurred read [this page](http://msdn.microsoft.com/en-us/library/aa751951.aspx), but if you are interested in the solution you can add this to the configuration
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <endpoint

@@ -21,7 +21,7 @@ I've hit a strange behavior of Hidden Field inside a disable asp.net panel, here
 </form>
 {{< / highlight >}}
 
-This is a simple piece of code with two textbox, and two hidden fields, but the important aspect is that two of them are inside an asp:panel that has disabled=â€trueâ€. Then I have a label and a simple Button. Here is the code behind.
+This is a simple piece of code with two textbox, and two hidden fields, but the important aspect is that two of them are inside an asp:panel that has disabled=*true*. Then I have a label and a simple Button. Here is the code behind.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 Public Sub PageLoad(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load

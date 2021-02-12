@@ -10,7 +10,7 @@ Today I was upgrading a Mantis bug tracking system, to avoid problems I backup t
 
 > MySQL server has gone away
 
-My first question is â€œgone away? and where? it is gone in vacation?â€ this is a perfect example of strange error message, fortunately I suspect that the problem was due to a table with BLOB field with great data, and in fact the restore process generated this error during the restore of  a very big row. after some search I found that I can increase the packet size for my server going into the server directory, edit the *my.ini* file adding this line
+My first question is *gone away? and where? it is gone in vacation?* this is a perfect example of strange error message, fortunately I suspect that the problem was due to a table with BLOB field with great data, and in fact the restore process generated this error during the restore of  a very big row. after some search I found that I can increase the packet size for my server going into the server directory, edit the *my.ini* file adding this line
 
 set-variable= **max\_allowed\_packet** =5M
 

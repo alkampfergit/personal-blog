@@ -60,7 +60,7 @@ As you can see I've inserted the ip of my test TFS (10.0.0.101) into the list of
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image27.png)
 
-Just insert the string \*yourtfsservername\* with asterisks, so every address containing the name of the tfs server is excluded from filtering. Do the same with the â€œList of allowed addressesâ€
+Just insert the string \*yourtfsservername\* with asterisks, so every address containing the name of the tfs server is excluded from filtering. Do the same with the *List of allowed addresses*
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb28.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image28.png)
 

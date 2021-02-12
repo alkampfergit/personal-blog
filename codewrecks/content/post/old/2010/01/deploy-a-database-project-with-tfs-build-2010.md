@@ -12,11 +12,11 @@ I decided to deploy the database, only if the tests are ok and the build is ok, 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image.png)
 
-Now I need to know where the dbproj will be located in the disk during the build, and since I know the repository path, I can use a specific TFS build action to convert the source control path into physical path. The source control path is â€œ$/Experiments/NorthwindTest/NorthwindTest.Database/NorthwindTest.Database.dbprojâ€ so I can drop a â€œ **ConvertWorkspaceItem** â€ activity to convert this path to the physical one. First of all I need to declare a variable where to put the result.
+Now I need to know where the dbproj will be located in the disk during the build, and since I know the repository path, I can use a specific TFS build action to convert the source control path into physical path. The source control path is *$/Experiments/NorthwindTest/NorthwindTest.Database/NorthwindTest.Database.dbproj* so I can drop a * **ConvertWorkspaceItem** * activity to convert this path to the physical one. First of all I need to declare a variable where to put the result.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image1.png)
 
-I called this variable â€œdbProjectâ€ (String type). Now I can configure my  **ConvertWorkspaceItem** activity I dropped in the â€œthenâ€ part of my condition activity.
+I called this variable *dbProject* (String type). Now I can configure my  **ConvertWorkspaceItem** activity I dropped in the *then* part of my condition activity.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image2.png)
 
@@ -63,7 +63,7 @@ DspDeploy:
   Creating [dbo].[Customers]…        
   Creating PK\_Customers…*
 
-A really important property is the Target, that is set to  **New String() {â€œDeployâ€}**. A database project supports some different targets, as an example the build, deploy, dataGeneration and StaticCodeAnalysis, each of them will perform a different task.
+A really important property is the Target, that is set to  **New String() {*Deploy*}**. A database project supports some different targets, as an example the build, deploy, dataGeneration and StaticCodeAnalysis, each of them will perform a different task.
 
 The project to deploy is specified in the  **Project** property, and as you can see I use the variable dbProject that was populated with the ConvertWorkspaceItem.
 

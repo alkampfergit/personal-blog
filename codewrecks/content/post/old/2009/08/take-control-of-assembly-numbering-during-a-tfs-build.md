@@ -95,7 +95,7 @@ The BuildVersionNumberManagerTask is responsible of the generation of a sequenti
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-With such a technique, we can immediately find the build label associated with each auto generated number. Now if you have problem with an assembly that have 4 as the build number, I immediately find in the file that it was build by â€œ **Standard build for CI\_20090820.21** â€ Here is how I call this task into TFSBuild.proj file
+With such a technique, we can immediately find the build label associated with each auto generated number. Now if you have problem with an assembly that have 4 as the build number, I immediately find in the file that it was build by * **Standard build for CI\_20090820.21** * Here is how I call this task into TFSBuild.proj file
 
 {{< highlight xml "linenos=table,linenostart=1" >}}
 <PropertyGroup>

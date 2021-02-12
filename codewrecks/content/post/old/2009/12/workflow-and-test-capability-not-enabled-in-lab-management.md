@@ -16,15 +16,15 @@ If the hilighted icons have a red cross instead of the play button you have a pr
 
 Unable to connect to the controller on xxxx permisssion deniedâ€¦ this operation can only be performed by members of TeamTestAgentService.
 
-This problem is related to test controller, to solve it you first need to verify the user that is configured to run the â€œVisual Studio Test Agentâ€ service, usually is network service. Then you need to log on the machine where the test contoller was installed, and manage local groups, you need to verify that in TeamTestAgentService group the name of the computer deployed is in the TeamTestAgentService group.
+This problem is related to test controller, to solve it you first need to verify the user that is configured to run the *Visual Studio Test Agent* service, usually is network service. Then you need to log on the machine where the test contoller was installed, and manage local groups, you need to verify that in TeamTestAgentService group the name of the computer deployed is in the TeamTestAgentService group.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image22.png)
 
-For the build agent the situation is similar, but you need to connect to the machine where the TFS is installed, goes to the project collection, then choose â€œAdminister Group Membershipâ€ and click properties for the â€œProject Collection Build Service Accountsâ€. Now verify that the virtual machine deployed is added to this group.
+For the build agent the situation is similar, but you need to connect to the machine where the TFS is installed, goes to the project collection, then choose *Administer Group Membership* and click properties for the *Project Collection Build Service Accounts*. Now verify that the virtual machine deployed is added to this group.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb23.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image23.png)
 
-When you verified those two security settings, simply restart both the service in the virtual machine, then click on the icon and choose â€œRepair Testing Capabilityâ€ and the same for the workflow.
+When you verified those two security settings, simply restart both the service in the virtual machine, then click on the icon and choose *Repair Testing Capability* and the same for the workflow.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image24.png)
 

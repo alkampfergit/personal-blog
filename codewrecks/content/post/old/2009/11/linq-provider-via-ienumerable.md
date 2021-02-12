@@ -82,7 +82,7 @@ This is a real simple classes, it accepts a DirectoryEntry root used to query th
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb19.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image19.png)
 
-Since I loaded in memory a wrapper for each object, I can issue LINQ queries against the AdUsers, because I can rely on the support of Linq 2 Object, simply making AdUsers implementing IEnumerable. Since everything is in memory we can issue condition like u.UserName.Contains(â€œampâ€) or whatever you like.
+Since I loaded in memory a wrapper for each object, I can issue LINQ queries against the AdUsers, because I can rely on the support of Linq 2 Object, simply making AdUsers implementing IEnumerable. Since everything is in memory we can issue condition like u.UserName.Contains(*amp*) or whatever you like.
 
 Surely this is not the optimal solution, but is quick and works well. The main drawback is that all Users needs to be loaded into memory, so we are using more resources respect a full LINQ provider, that can analyze the expression and retrieve only users that satisfies the query. But since we are not expecting Thousands of users, this can be a viable KISS solution.
 

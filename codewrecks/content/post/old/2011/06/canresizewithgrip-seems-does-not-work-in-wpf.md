@@ -18,11 +18,11 @@ I created another view, use a similar layout from the preceding one, but this ti
 
  ***Figure 2***: *The resize grip of this view is missing*
 
-To understand why the grip is missing you need to understand how the window without border is build, here is the important properties of the windows that determines the â€œno borderâ€ style.
+To understand why the grip is missing you need to understand how the window without border is build, here is the important properties of the windows that determines the *no border* style.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image15.png)
 
-One thing you should be aware of, is that the key of everything is the AllowsTransparency set to True, if you set this property to false, all the background will be rendered in black, because even if Bakground=â€Transparentâ€, transparency is disabled in the Windows. Now here is what I see with AllowTransparency disabled.
+One thing you should be aware of, is that the key of everything is the AllowsTransparency set to True, if you set this property to false, all the background will be rendered in black, because even if Bakground=*Transparent*, transparency is disabled in the Windows. Now here is what I see with AllowTransparency disabled.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image16.png)
 

@@ -12,7 +12,7 @@ One cool feature is that you can move/copy project collections between servers, 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb7.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image7.png)
 
-Once the Project collection was disconnected I simply did a database backup, then moved the backup on the other machine. In the destination machine I detach the original project collection, then restore the database backup from the source machine and reattach the collection again. When you clicked on the â€œAttach Team Project collectionâ€ button a dialog will appear
+Once the Project collection was disconnected I simply did a database backup, then moved the backup on the other machine. In the destination machine I detach the original project collection, then restore the database backup from the source machine and reattach the collection again. When you clicked on the *Attach Team Project collection* button a dialog will appear
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb8.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image8.png)
 

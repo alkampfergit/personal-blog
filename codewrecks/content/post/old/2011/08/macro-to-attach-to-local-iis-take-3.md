@@ -6,9 +6,9 @@ draft: false
 tags: [Macro,Visual Studio]
 categories: [Visual Studio]
 ---
-This is the third post on the [series](http://www.codewrecks.com/blog/index.php/2011/08/10/visual-studio-macroattach-to-local-iis/) â€œcreate a macro to [Attach to Local IIS](http://www.codewrecks.com/blog/index.php/2011/08/16/attach-to-local-iis-macro-evolution/)â€. The last modification I want to implement is the ability to list all the w3wp.exe active processes, if more than one process is present, I want it to show a list of all IIS processes and let the user choose the list of processes to attach to. Clearly if I have no w3wp.exe active processes, or I have only one, there is no need to bother the user to choose the single available process.
+This is the third post on the [series](http://www.codewrecks.com/blog/index.php/2011/08/10/visual-studio-macroattach-to-local-iis/) *create a macro to [Attach to Local IIS](http://www.codewrecks.com/blog/index.php/2011/08/16/attach-to-local-iis-macro-evolution/)*. The last modification I want to implement is the ability to list all the w3wp.exe active processes, if more than one process is present, I want it to show a list of all IIS processes and let the user choose the list of processes to attach to. Clearly if I have no w3wp.exe active processes, or I have only one, there is no need to bother the user to choose the single available process.
 
-Since I need to show a â€œuser interfaceâ€ from a macro and I'm not allowed to insert form into Visual Studio Macros Editor, I should create a Windows Forms programmatically. This is quite annoying, but creating simple interfaces without a designer is quite simple, so it is the right approach to maintain the code in a simple macro. First of all I find all IIS processes and add info about these processes inside a ListView.
+Since I need to show a *user interface* from a macro and I'm not allowed to insert form into Visual Studio Macros Editor, I should create a Windows Forms programmatically. This is quite annoying, but creating simple interfaces without a designer is quite simple, so it is the right approach to maintain the code in a simple macro. First of all I find all IIS processes and add info about these processes inside a ListView.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 Dim dbg2 As EnvDTE80.Debugger2 = DTE.Debugger

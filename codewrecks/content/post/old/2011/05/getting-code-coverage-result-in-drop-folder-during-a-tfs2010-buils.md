@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 In a [very old post](http://www.codewrecks.com/blog/index.php/2010/06/14/running-code-coverage-in-tfs2010-builds/) I explained how to enable code coverage in TFS2010 builds and today I received a mail asking an interesting question.
 
-> The question is: â€œIs it possible to have Code Coverage result to be included in drop folder?â€.
+> The question is: *Is it possible to have Code Coverage result to be included in drop folder?*.
 
 Answering this question is a two phase process, the first one is understanding where MsTest store results of code coverage and verify that is possible to do something useful with them. The answer is simple, you can simply look at the TestResult directory after you execute tests inside visual studio, and you will find a data.coverage file.
 

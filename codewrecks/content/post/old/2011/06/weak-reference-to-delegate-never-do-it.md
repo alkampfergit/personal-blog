@@ -53,7 +53,7 @@ The only difference is that the caller stores a reference to the Registration ob
 
 This is the original desired situation, until *Object* is alive, it takes a reference to the *registration object*, that keeps the delegate and the object alive. When the object is not references by any other root, except from the delegate, the garbage collector verify that the registration/delegate and object could be collected, because Broker has only a WeakReference to the Registration object.
 
-This solution is not perfect, because if â€œobjectâ€ forgot to keep references to Registration object, it will cease to receive message at the first passage of the garbage collector. A possible solution is using reflection to call instance methods.
+This solution is not perfect, because if *object* forgot to keep references to Registration object, it will cease to receive message at the first passage of the garbage collector. A possible solution is using reflection to call instance methods.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public class WeakRegistration : ActionRegistrationBase

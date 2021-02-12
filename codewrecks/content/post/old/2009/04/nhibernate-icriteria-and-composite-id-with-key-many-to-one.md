@@ -32,7 +32,7 @@ ICriteria c = uow.TheSession.CreateCriteria(typeof(ViewOfBaseData ))
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-But this failed with the error: * **no such column: linkresult2\_.keyList** *, if you look at the SQL query issued to the database, you can verify that the query does not contain the join with the table for LinkResult entity. If you change the constant â€œblablaâ€ with the integer 10 you will obtain the error * **Type mismatch in NHibernate.Criterion.SimpleExpression: KeyList expected type System.String, actual type System.Int32** *thus confirming me that the path is specified correctly.
+But this failed with the error: * **no such column: linkresult2\_.keyList** *, if you look at the SQL query issued to the database, you can verify that the query does not contain the join with the table for LinkResult entity. If you change the constant *blabla* with the integer 10 you will obtain the error * **Type mismatch in NHibernate.Criterion.SimpleExpression: KeyList expected type System.String, actual type System.Int32** *thus confirming me that the path is specified correctly.
 
 If you examine the inner metadata of the session you can find that the composite id ViewOfBaseDataId is a ComponentType and probably internally, when the engine that build sql query verify that Id property of ViewOfBaseData is a componentType determines that each column is contained in the base table. I do not know if it is a bug of nhibernate or if there is another way to specify the criteria, but if you absolutely need not to use HQL you can use DetatchedCriteria
 

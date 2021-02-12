@@ -85,7 +85,7 @@ If you compare with the [approach that uses MsBuild Activity](http://www.codewre
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb29.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image29.png)
 
-If you look at the first picture of this post, you can verify that the warning â€œThere is no need to tiny the url because is less than 20 charsâ€ is a warning issued internally by the custom MsBuild task, and you are looking at it thanks to the WorkwlofBuildEngine class that forward MsBuild log calls to workflow environment.
+If you look at the first picture of this post, you can verify that the warning *There is no need to tiny the url because is less than 20 chars* is a warning issued internally by the custom MsBuild task, and you are looking at it thanks to the WorkwlofBuildEngine class that forward MsBuild log calls to workflow environment.
 
 alk.
 

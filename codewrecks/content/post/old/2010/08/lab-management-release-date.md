@@ -8,7 +8,7 @@ categories: [Lab Management]
 ---
 [Lab Management](http://blogs.msdn.com/b/lab_management/) is surely one of the most exiting new feature for TFS 2010 and now we finally have a Release Date.
 
-Since Lab Management is really a complex set of tools, even if it is in the iso images of TFS 2010 is still considered to be in â€œrelease candidateâ€ version. Now we can announce two big news
+Since Lab Management is really a complex set of tools, even if it is in the iso images of TFS 2010 is still considered to be in *release candidate* version. Now we can announce two big news
 
 - RTM Bits will be released at the end of August
 - Lab managements will be avaliable even in MSDN Ultimate or TestProfessional with MSDN

@@ -40,7 +40,7 @@ Just call [Validate()](http://msdn.microsoft.com/en-us/library/microsoft.teamfou
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb9.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image9.png)
 
-As you can see there is an error in the field â€œSystem.Stateâ€ (look at the property ReferenceName), and the error can be found in the field Status that list â€œInvalidListValueâ€. The good stuff is that a list of Allowed Values can be found in this item, thus permitting you to look at the possible values. In my situation the only valid initial state is â€œProposedâ€, so I need to add this line to the preceding snippet.
+As you can see there is an error in the field *System.State* (look at the property ReferenceName), and the error can be found in the field Status that list *InvalidListValue*. The good stuff is that a list of Allowed Values can be found in this item, thus permitting you to look at the possible values. In my situation the only valid initial state is *Proposed*, so I need to add this line to the preceding snippet.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 wi.Fields("System.State").Value = "Proposed"

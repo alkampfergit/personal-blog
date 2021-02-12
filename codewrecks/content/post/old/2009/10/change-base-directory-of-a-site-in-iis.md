@@ -6,7 +6,7 @@ draft: false
 tags: [Programming]
 categories: [Programming]
 ---
-This technique works for IIS6 and IIS7 with the "IIS 6 WMI Compatibilityâ€ installed. The purpose is changing the directory of a web site in a remote server. The purpose of this action will be clear in a future post, for now only assume that you want to be able to create a piece of c# code that changes directory of a web site in windows server. Here is a test site.
+This technique works for IIS6 and IIS7 with the "IIS 6 WMI Compatibility* installed. The purpose is changing the directory of a web site in a remote server. The purpose of this action will be clear in a future post, for now only assume that you want to be able to create a piece of c# code that changes directory of a web site in windows server. Here is a test site.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image3.png)
 
@@ -42,7 +42,7 @@ And if you look at site directory again you will get.
 
 So you have changed the Physical path of the application.
 
-The code is really simple, you need to add reference to System.Management to use WMI, then you create a [ConnectionOptions](http://msdn.microsoft.com/en-us/library/system.management.connectionoptions%28loband%29.aspx) class to specify credentials to use. To access MicrosoftIISv2 object it is really important that you set [AuthenticationLevel](http://msdn.microsoft.com/it-it/library/system.management.authenticationlevel%28loband%29.aspx) to PacketPrivacy. Then you simply need to query for [IIsWebVirtualDirSetting](http://msdn.microsoft.com/en-us/library/ms525005%28loband%29.aspx) using AppPoolId to find the application you want, then simply use a ManagementObjectSearcher to issue the query, and finally use LINQ to grab the only result, change the â€œPathâ€ property and update modification with Put() method.
+The code is really simple, you need to add reference to System.Management to use WMI, then you create a [ConnectionOptions](http://msdn.microsoft.com/en-us/library/system.management.connectionoptions%28loband%29.aspx) class to specify credentials to use. To access MicrosoftIISv2 object it is really important that you set [AuthenticationLevel](http://msdn.microsoft.com/it-it/library/system.management.authenticationlevel%28loband%29.aspx) to PacketPrivacy. Then you simply need to query for [IIsWebVirtualDirSetting](http://msdn.microsoft.com/en-us/library/ms525005%28loband%29.aspx) using AppPoolId to find the application you want, then simply use a ManagementObjectSearcher to issue the query, and finally use LINQ to grab the only result, change the *Path* property and update modification with Put() method.
 
 Alk.
 

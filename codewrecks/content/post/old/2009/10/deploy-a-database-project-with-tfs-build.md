@@ -34,7 +34,7 @@ What you really need is the ability to automatically deploy changes to a specifi
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Wow, it is really simple, all you need is a simple call to a &lt;MSBuild&gt; task inside the AfterDropBuild target. The MSbuild task needs only three properties, the first is the Targets one, that specifies witch action we want to do on the project, in this situation is â€œDeployâ€. Then in the Peojects property we must specify the full path of the database project file, and it is quite simple using the *SolutionRoot* property that points to the root of the source. Finally we need to set *Properties* property, the most important one, used to override project properties.
+Wow, it is really simple, all you need is a simple call to a &lt;MSBuild&gt; task inside the AfterDropBuild target. The MSbuild task needs only three properties, the first is the Targets one, that specifies witch action we want to do on the project, in this situation is *Deploy*. Then in the Peojects property we must specify the full path of the database project file, and it is quite simple using the *SolutionRoot* property that points to the root of the source. Finally we need to set *Properties* property, the most important one, used to override project properties.
 
 In my example I need to deploy in a server with a different instance name and a different Data Path from the original one included in the project. Properties property of msbuild permits you to specify different pair property=value separated with semicolon (;). The properties I need to override are:
 

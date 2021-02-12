@@ -6,7 +6,7 @@ draft: false
 tags: [ASPNET,JQuery]
 categories: [ASPNET,JQuery]
 ---
-In an old project I have a particular user control dedicated to identify data stored in a tree. The user can type some letters, and press â€œSearchâ€ button to find all the elements that match the search, or it can use a series of DropDownList to navigate from the higher element down to the hierarchy. It is used extensively in the site, and is used even to select location, from a table where location are stored in Nations, Region, Province and Location.
+In an old project I have a particular user control dedicated to identify data stored in a tree. The user can type some letters, and press *Search* button to find all the elements that match the search, or it can use a series of DropDownList to navigate from the higher element down to the hierarchy. It is used extensively in the site, and is used even to select location, from a table where location are stored in Nations, Region, Province and Location.
 
 The control was designed as a user control, wrapped in an update panel, it works well, but it is really inefficient for high number of operations, so we decided to make a different version in [jQuery](http://jquery.com/). It tooks me about one day to recreate the control, mainly to maintain all the functionality it has in the past. Since the older version have already a decoupled DAL, I can reuse all server functions to search, manage the tree etc, and I need to write less code.
 

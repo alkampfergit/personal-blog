@@ -8,7 +8,7 @@ categories: [WPF]
 ---
 The problem is really simple, but sometimes I see people tend to forget a little bit how the DataContext works in WPF and being stuck in wandering why a command is not invoked when a button inside a DataTemplate is pressed.
 
-Suppose you have a ListView bounds to a list of items called *SingleResult*, for each SingleResult I have a complex layout and the main ViewModel contains a command that expect a SingleResult parameter called â€œShowDetailsâ€ that simply shows the details of a SingleResult item. I see people do binding in this way.
+Suppose you have a ListView bounds to a list of items called *SingleResult*, for each SingleResult I have a complex layout and the main ViewModel contains a command that expect a SingleResult parameter called *ShowDetails* that simply shows the details of a SingleResult item. I see people do binding in this way.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/06/image18.png)
 

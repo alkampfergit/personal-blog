@@ -6,9 +6,9 @@ draft: false
 tags: [Testing]
 categories: [Testing]
 ---
-One of my italian [Friend](http://dotnetumbria.org/blogs/cruciani/default.aspx) once asked me â€œwhat is the percentage of code coverage that you consider enough for your tests?â€. The answer is that probably there is not one.
+One of my italian [Friend](http://dotnetumbria.org/blogs/cruciani/default.aspx) once asked me *what is the percentage of code coverage that you consider enough for your tests?*. The answer is that probably there is not one.
 
-If you write a project on your own you can set some limit (Es. 80% code coverage) but in my experience, in the real world, quite often you work in a team that does not use unit testing at all. Trying to introduce Unit Testing practices in a team it is a difficult stuff, we are always in a hurry, and the typical objection to testing is â€œI do not have time to write production code, how can I write test too?â€. In my experience you should try to introduce testing in more graceful way, surely not setting some code coverage limit.
+If you write a project on your own you can set some limit (Es. 80% code coverage) but in my experience, in the real world, quite often you work in a team that does not use unit testing at all. Trying to introduce Unit Testing practices in a team it is a difficult stuff, we are always in a hurry, and the typical objection to testing is *I do not have time to write production code, how can I write test too?*. In my experience you should try to introduce testing in more graceful way, surely not setting some code coverage limit.
 
 Another problem is that we often work on legacy code, usually absolutely not written with testability in mind, so it is really difficult to write good unit tests, that are not fragile, or erratic, or interacting, etc..
 

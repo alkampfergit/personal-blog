@@ -28,7 +28,7 @@ Sometimes I see different configuration that uses an evaluator.
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-If you think that this is the same as before you are wrong. This setting is supported by all appenders that inherit from BufferingAppenderSkeleton, basically the above configuration tells the buffered appender to flush the buffer if an error of level â€œERRORâ€ is logged, this is expecially useful to have an immediate log of errors of the application.
+If you think that this is the same as before you are wrong. This setting is supported by all appenders that inherit from BufferingAppenderSkeleton, basically the above configuration tells the buffered appender to flush the buffer if an error of level *ERROR* is logged, this is expecially useful to have an immediate log of errors of the application.
 
 Alk.
 

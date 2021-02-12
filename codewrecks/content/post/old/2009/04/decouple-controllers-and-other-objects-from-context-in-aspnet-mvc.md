@@ -118,7 +118,7 @@ public void GrabMenuWithActionUrl()
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-You can complain that this is not mvc style of decoupling logic from the context, mvc has introduced the [System.Web.Abstractions](http://msdn.microsoft.com/it-it/library/system.web.httpcontextbase.aspx) namespace for doing this, but I still prefer this â€œold styleâ€ solution, because it works perfectly even for webforms. In classic asp.net applications when I need to access Session, or querystring or other context related data, I prefer to abstract everything with interfaces, so I can test outside the pipeline of IIS with little problem. The conclusion is that: if you want your classes to be testable, you should abstract every dependency with an interface, and not declare dependency to any concrete class.
+You can complain that this is not mvc style of decoupling logic from the context, mvc has introduced the [System.Web.Abstractions](http://msdn.microsoft.com/it-it/library/system.web.httpcontextbase.aspx) namespace for doing this, but I still prefer this *old style* solution, because it works perfectly even for webforms. In classic asp.net applications when I need to access Session, or querystring or other context related data, I prefer to abstract everything with interfaces, so I can test outside the pipeline of IIS with little problem. The conclusion is that: if you want your classes to be testable, you should abstract every dependency with an interface, and not declare dependency to any concrete class.
 
 alk.
 

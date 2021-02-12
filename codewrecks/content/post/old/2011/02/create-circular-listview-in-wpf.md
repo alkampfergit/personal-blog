@@ -28,7 +28,7 @@ DataToShowSingleRepetition.Add(DataToShowSingleRepetition.First());
 DataToShowSingleRepetition.Insert(0, temp);
 {{< / highlight >}}
 
-The trick in the last three lines. We need to show five elements, but I place a copy of the last one (the one with value 4) at the beginning of the list and a copy of the first (the one with value 0) to the end of the list. This is needed to â€œsimulateâ€ the fact that we are actually scrolling a circular set of elements.
+The trick in the last three lines. We need to show five elements, but I place a copy of the last one (the one with value 4) at the beginning of the list and a copy of the first (the one with value 0) to the end of the list. This is needed to *simulate* the fact that we are actually scrolling a circular set of elements.
 
 The logic behind this is: when the first logical element (the one with value 0) is shown, we should be able to scroll the list to the right, showing the last logical element (the one with value 4) to the left, and since the original ListView does not support this concept we need to repeat the logical last element as the first element. What it happens is that, when the KineticListView finish to scroll, it check if we are on the physical first element (the one with value 4). If it is true, it immediately moves to the same element at the end of the list.
 

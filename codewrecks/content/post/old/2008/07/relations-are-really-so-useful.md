@@ -61,7 +61,7 @@ NHibernate: UPDATE Orders SET CustomerId = @p0 WHERE id = @p1; @p0 = '4', @p1 = 
 
 First of all, *even if you have the Id of the customer you need to load it entirely from db*, but the worst thing happens when you add the order to the orders collection, because nhibernate does lazy load, loading * **all the orders of the customer in memory** *, finally he generate the insert and update as before.
 
-Think again to it â€œ*To add an order you have to load in memory  **all customer orders** *â€. What happens if the Customer have hundreds of orders??? Sounds bad, isn't it? Moreover you are wasting memory for nothingâ€¦.you never access all the orders, you only want add new one.
+Think again to it **To add an order you have to load in memory  **all customer orders** **. What happens if the Customer have hundreds of orders??? Sounds bad, isn't it? Moreover you are wasting memory for nothingâ€¦.you never access all the orders, you only want add new one.
 
 Similar thing happens whenever you access Orders collection, if you access the first element *all the orders are loaded*, if you call Count *all orders gets loaded*. To avoid this you need to use ISession.CreateFilter() that permits you to issue a Count(\*) query without loading the elements or scan orders with pagination, but you can agree that this is not a good situation.
 
@@ -81,7 +81,7 @@ This means that no relation can be done between two objects that are no root, bu
 
 Is the *root*that have complete control of the objects inside the aggregate, we create repositories only for Roots object limiting the way the user can access the domain.
 
-Another concept that is of key importance is â€œ[Value objects](http://domaindrivendesign.org/discussion/messageboardarchive/ValueObjects.html)â€. Lets first point out that in DDD terminology, the term â€œvalue objectâ€  **has nothing to do with the concept of.NET value object** they are completely different thing. A value object in DDD is an *object that has no identity and cannot live without a Entity object that contains it*. Here is the definition of Evans in Domain Driven Design
+Another concept that is of key importance is *[Value objects](http://domaindrivendesign.org/discussion/messageboardarchive/ValueObjects.html)*. Lets first point out that in DDD terminology, the term *value object*  **has nothing to do with the concept of.NET value object** they are completely different thing. A value object in DDD is an *object that has no identity and cannot live without a Entity object that contains it*. Here is the definition of Evans in Domain Driven Design
 
 > An object that represents a descriptive aspect of the domain with no conceptual identity is called a VALUE OBJECT.
 
@@ -94,7 +94,7 @@ City: Sassoferrato{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-This is my address ;), but it is a value or an entity object? In a software for an E-Commerce we can agree that having an address without a customer, or supplier or some other entity is really not useful, so the address is a good candidate to be a Value Object. The situation can be different for a software that need to calculate ICI (ICI is a tax on house in Italy), in such a software an address can be an entity, because the address identify the entity that has to be taxed. The key question that makes us distinguish between value and entity object is â€œThis object can have a lifecycle of his own?â€.
+This is my address ;), but it is a value or an entity object? In a software for an E-Commerce we can agree that having an address without a customer, or supplier or some other entity is really not useful, so the address is a good candidate to be a Value Object. The situation can be different for a software that need to calculate ICI (ICI is a tax on house in Italy), in such a software an address can be an entity, because the address identify the entity that has to be taxed. The key question that makes us distinguish between value and entity object is *This object can have a lifecycle of his own?*.
 
 *A correct use of Value Objects leads to reduction of relations*, because relations from or to a Value Object is not permitted except from the object that contains it. Quite often the value object is stored in the same table as the owning object, it has no id and he share the lifecycle with containing object, so making a relation to it has really no sense.
 

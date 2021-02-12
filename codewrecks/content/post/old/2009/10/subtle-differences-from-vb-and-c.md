@@ -76,7 +76,7 @@ If you think that this is correct, try to run the code, and find this result.
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-If you wonder why the normalization of a number like 2 is zero you need to think to the meaning of the operator / in both languages. In Visual Basic it means â€œFloating point divisionâ€ while in C# the type of the operation is determined by the operands. so *2 / 20 in vb is 0.1 while 2 / 20 in C# is 0.*To solve this problem you need to write something like this
+If you wonder why the normalization of a number like 2 is zero you need to think to the meaning of the operator / in both languages. In Visual Basic it means *Floating point division* while in C# the type of the operation is determined by the operands. so *2 / 20 in vb is 0.1 while 2 / 20 in C# is 0.*To solve this problem you need to write something like this
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 private static Int32 Normalize(Int32 rank)

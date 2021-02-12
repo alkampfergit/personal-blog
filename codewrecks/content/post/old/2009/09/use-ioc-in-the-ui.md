@@ -14,7 +14,7 @@ I have a UI that uses MVC pattern, and it communicates with the server through a
 4. Validation of some object failed
 5. The server  fail with a specific reason that can be handled by the UI
 
-All these situation lead to different behavior of the UI. As an example point 3 should show a message that suggest the user to check connectivity because the server is unreachable, while for point 2 we could simply show a message like â€œthe server encountered an error, try again and if the error persist contact the supportâ€. For each point I have always the same sets of actions to do, and I want a way to handle this only in one single point.
+All these situation lead to different behavior of the UI. As an example point 3 should show a message that suggest the user to check connectivity because the server is unreachable, while for point 2 we could simply show a message like *the server encountered an error, try again and if the error persist contact the support*. For each point I have always the same sets of actions to do, and I want a way to handle this only in one single point.
 
 The solution is using an interceptor that wraps the instance of the service. If a controller needs to use a service it simply declares a dependency
 

@@ -6,7 +6,7 @@ draft: false
 tags: [LINQ]
 categories: [LINQ]
 ---
-Linq Distinct function accepts an IEqualityComparer&lt;T&gt; used to compare values of the IEnumerable to remove â€œequalâ€ objects to implement the Distinct() function. Sometimes it is more useful to specify a simple Func&lt;T, T, Boolean&gt;, a simple predicate that will implement the concept of Equality between elements. To support such a scenario you can write this simple Extension method.
+Linq Distinct function accepts an IEqualityComparer&lt;T&gt; used to compare values of the IEnumerable to remove *equal* objects to implement the Distinct() function. Sometimes it is more useful to specify a simple Func&lt;T, T, Boolean&gt;, a simple predicate that will implement the concept of Equality between elements. To support such a scenario you can write this simple Extension method.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 public static IEnumerable<T> Distinct<T>(

@@ -27,7 +27,7 @@ function SendDate() {
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-I create a Date object from the text in the textbox, and passed it to the service method. I face two problem, first if I write â€œ1/2/2008â€ the webservice told me that he received â€œJanuary 01 2008â€. This seems to be absurd, because how it is possible that 1/2/2008 can be transferred to the server as January 1. Then if I write â€œ1/207/2008â€ the service told me he received July 24 2008. I decided to shift to the Date.parseLocal of the Microsoft Ajax Library
+I create a Date object from the text in the textbox, and passed it to the service method. I face two problem, first if I write *1/2/2008* the webservice told me that he received *January 01 2008*. This seems to be absurd, because how it is possible that 1/2/2008 can be transferred to the server as January 1. Then if I write *1/207/2008* the service told me he received July 24 2008. I decided to shift to the Date.parseLocal of the Microsoft Ajax Library
 
 {{< highlight CSharp "linenos=table,linenostart=1" >}}
 function SendMsAj() {
@@ -41,7 +41,7 @@ function SendMsAj() {
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The situation is better, if I write 1/207/2008 it told me invalid date, but if I write â€œ1/2/2008â€ the service returned me â€œ 31 january 2008, with Date.parseLocale I was able to detect invalid date, to parse with the locale of the user, but the date that arrived at the server method is wrong. Then I changed server code to return me date and time and I saw that the date passed to the server function was 31/01/2008 23.00.00, since I live in Italy (GMT +1) I begin to realize that I have a GMT problem. The problem arise from the fact that the json serializer used by the ajax.net library pass date as the number of millisecond elapsed since an initial time, since I'm in GMT+1 this value is adjusted to the GMT+0 so an hour is subtracted. When this value arrives at the server, the JSON deserializer does not know that the original request originated from a GTM+1 time zone, so the value is deserialized as GMT+0 and I have a nasty difference of one hour.
+The situation is better, if I write 1/207/2008 it told me invalid date, but if I write *1/2/2008* the service returned me * 31 january 2008, with Date.parseLocale I was able to detect invalid date, to parse with the locale of the user, but the date that arrived at the server method is wrong. Then I changed server code to return me date and time and I saw that the date passed to the server function was 31/01/2008 23.00.00, since I live in Italy (GMT +1) I begin to realize that I have a GMT problem. The problem arise from the fact that the json serializer used by the ajax.net library pass date as the number of millisecond elapsed since an initial time, since I'm in GMT+1 this value is adjusted to the GMT+0 so an hour is subtracted. When this value arrives at the server, the JSON deserializer does not know that the original request originated from a GTM+1 time zone, so the value is deserialized as GMT+0 and I have a nasty difference of one hour.
 
 After some time of test and try I found this patch to overcome this issue.
 
@@ -57,7 +57,7 @@ function SendMsAjGood() {
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-As you can see I use parseLocal to be able to validate the string and to parse with the locale identifier of the user browser, but when I pass to the the service method I use the date.toLocaleString() method. Where is the difference? if you use alert to see at the value, you can check that date output a value like â€œFri Feb 1 00:00:00 UTC+0100 2008â€ so the date contains information about timezone, but date.toLocaleString() output the value â€œFriday, February 01, 2008 12:00:00 AMâ€ so the locale information is dropped. Now the JSON serializer does not make any adjustment to the value before passing to the server and the value is right.
+As you can see I use parseLocal to be able to validate the string and to parse with the locale identifier of the user browser, but when I pass to the the service method I use the date.toLocaleString() method. Where is the difference? if you use alert to see at the value, you can check that date output a value like *Fri Feb 1 00:00:00 UTC+0100 2008* so the date contains information about timezone, but date.toLocaleString() output the value *Friday, February 01, 2008 12:00:00 AM* so the locale information is dropped. Now the JSON serializer does not make any adjustment to the value before passing to the server and the value is right.
 
 alk.
 

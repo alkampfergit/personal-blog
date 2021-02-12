@@ -18,7 +18,7 @@ The wizard is telling you that you should not install TFS Build on the same mach
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb22.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image22.png)
 
-Pressing Browse we are presented with a list of configured TFS, if our server is not listed, press â€œServersâ€ button and add the server that contains the Team Project Collection you want to build. In this dialog remember to specify the machine name of the TFS, and not IP Address, because with IP Address the installer can fail to configure the service.
+Pressing Browse we are presented with a list of configured TFS, if our server is not listed, press *Servers* button and add the server that contains the Team Project Collection you want to build. In this dialog remember to specify the machine name of the TFS, and not IP Address, because with IP Address the installer can fail to configure the service.
 
 Once you have choosed the collection, the wizard tells you how many other build controllers are configured for it.
 
@@ -28,7 +28,7 @@ Then you are asked to specify the number of build agent, this setting is importa
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb24.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image24.png)
 
-In this example I created a TfsBuildAgent account, I've installed tfs outside a domain, so tfsBuildAgent is a simple windows user. If you press â€œTestâ€ the wizard verifies that everything is ok. Now you can press â€œconfigureâ€ and your build server is configured, simple isn't it?
+In this example I created a TfsBuildAgent account, I've installed tfs outside a domain, so tfsBuildAgent is a simple windows user. If you press *Test* the wizard verifies that everything is ok. Now you can press *configure* and your build server is configured, simple isn't it?
 
 alk.
 

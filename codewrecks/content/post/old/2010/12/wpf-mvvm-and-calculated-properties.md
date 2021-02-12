@@ -30,7 +30,7 @@ void OnPropertyChanged(String propertyName);
 }
 {{< / highlight >}}
 
-This is needed to make possible from another object to tell ViewModel: â€œHey raise a property changed for property xâ€. The object that implement this is really simple
+This is needed to make possible from another object to tell ViewModel: *Hey raise a property changed for property x*. The object that implement this is really simple
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 internal class PropertyLinkMonitor<T, O>

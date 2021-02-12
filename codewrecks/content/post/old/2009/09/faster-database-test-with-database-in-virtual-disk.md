@@ -18,7 +18,7 @@ Now create a new variable that points to the virtual disk.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image16.png)
 
-Now goes to â€œSchema Objects"/Storage/Files" and for each file of the target database edit the script changing the value $(defaultDataPath) to the new variable.
+Now goes to *Schema Objects"/Storage/Files" and for each file of the target database edit the script changing the value $(defaultDataPath) to the new variable.
 
 {{< highlight sql "linenos=table,linenostart=1" >}}
 ALTER DATABASE [$(DatabaseName)]
