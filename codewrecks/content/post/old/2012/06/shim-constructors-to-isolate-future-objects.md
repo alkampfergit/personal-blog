@@ -1,5 +1,5 @@
 ﻿---
-title: "Shim constructors to isolate ldquoFuture Objectsrdquo"
+title: "Shim constructors to isolate 'Future Objects'"
 description: ""
 date: 2012-06-14T15:00:37+02:00
 draft: false

@@ -1,5 +1,5 @@
 ﻿---
-title: "Running test in lab management ldquoError adding test case there is no test with specified id"
+title: "Running test in lab management 'Error adding test case there is no test with specified id"
 description: ""
 date: 2010-06-16T15:00:37+02:00
 draft: false

@@ -1,5 +1,5 @@
 ﻿---
-title: "Enable new Work Item Form in TFS ldquo15rdquo"
+title: "Enable new Work Item Form in TFS '15'"
 description: ""
 date: 2016-11-05T09:00:37+02:00
 draft: false

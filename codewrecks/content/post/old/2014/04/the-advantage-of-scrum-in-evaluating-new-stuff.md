@@ -1,5 +1,5 @@
 ﻿---
-title: "The advantage of Scrum in evaluating ldquonew stuffrdquo"
+title: "The advantage of Scrum in evaluating 'new stuff'"
 description: ""
 date: 2014-04-12T08:00:37+02:00
 draft: false

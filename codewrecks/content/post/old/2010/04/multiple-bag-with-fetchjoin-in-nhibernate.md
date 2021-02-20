@@ -1,5 +1,5 @@
 ﻿---
-title: "Multiple bag with Fetchrdquojoinrdquo in nhibernate"
+title: "Multiple bag with Fetch'join' in nhibernate"
 description: ""
 date: 2010-04-03T15:00:37+02:00
 draft: false

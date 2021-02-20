@@ -1,5 +1,5 @@
 ﻿---
-title: "Leverage the concept of ldquostaterdquo of your entities"
+title: "Leverage the concept of 'state' of your entities"
 description: ""
 date: 2011-06-13T07:00:37+02:00
 draft: false

@@ -1,5 +1,5 @@
 ﻿---
-title: "Assign ldquotagrdquo to lucene documents"
+title: "Assign 'tag' to lucene documents"
 description: ""
 date: 2012-08-21T20:00:37+02:00
 draft: false

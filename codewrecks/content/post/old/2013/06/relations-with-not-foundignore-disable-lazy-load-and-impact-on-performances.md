@@ -1,5 +1,5 @@
 ﻿---
-title: "Relations with not-foundrdquoignorerdquo disable lazy load and impact on performances"
+title: "Relations with not-found'ignore' disable lazy load and impact on performances"
 description: ""
 date: 2013-06-18T12:00:37+02:00
 draft: false

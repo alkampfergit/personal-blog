@@ -1,5 +1,5 @@
 ﻿---
-title: "Create a ldquoLoginView likerdquo control in aspnet"
+title: "Create a 'LoginView like' control in aspnet"
 description: ""
 date: 2008-10-17T07:00:37+02:00
 draft: false

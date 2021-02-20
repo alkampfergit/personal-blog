@@ -1,5 +1,5 @@
 ﻿---
-title: "ldquoUnsupported filterrdquo using ContainsAny in Mongo 2x driver"
+title: "'Unsupported filter' using ContainsAny in Mongo 2x driver"
 description: ""
 date: 2016-04-26T16:00:37+02:00
 draft: false

@@ -1,5 +1,5 @@
 ﻿---
-title: "Re-indexing source in TFS ldquo15rdquo preview"
+title: "Re-indexing source in TFS '15' preview"
 description: ""
 date: 2016-10-19T06:00:37+02:00
 draft: false

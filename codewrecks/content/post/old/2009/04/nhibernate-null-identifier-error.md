@@ -1,5 +1,5 @@
 ﻿---
-title: "NHibernate ldquonull identifierrdquo error"
+title: "NHibernate 'null identifier' error"
 description: ""
 date: 2009-04-02T08:00:37+02:00
 draft: false

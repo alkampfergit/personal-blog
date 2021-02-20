@@ -1,5 +1,5 @@
 ﻿---
-title: "Impressions on installing TFS ldquo15rdquo Preview"
+title: "Impressions on installing TFS '15' Preview"
 description: ""
 date: 2016-07-09T08:00:37+02:00
 draft: false
