@@ -8,13 +8,13 @@ categories: [NET framework]
 ---
 I've blogged about this supersimple but amazing feature of NDepend some time ago, but I want to emphasize another time how NDepend is a tool that you must have in your toolset.
 
-I've deployed an application with click-once, but when I try to install it â€¦ I got this error
+I've deployed an application with click-once, but when I try to install it ... I got this error
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image2.png)
 
  ***Figure 1***: *The error during the installation*
 
-the error is strange, the application requires an assembly with a wrong version, because the system.runtime.serialization should be 3.0.0.0. Now in a solution with 55 projectâ€¦â€¦what is the project with the wrong reference?
+the error is strange, the application requires an assembly with a wrong version, because the system.runtime.serialization should be 3.0.0.0. Now in a solution with 55 project......what is the project with the wrong reference?
 
 The answer is: fire NDepend and let him find all error in references.
 

@@ -16,7 +16,7 @@ Notice the use of â€“sstype c parameter that forces the script to create a 
 timeout=“60“  
 allowCustomSqlDatabase=“true“  
 mode=“SQLServer“  
-sqlConnectionString=“Database=EasyCVSessionStore;Server=localhost\SQL2000;â€¦/&gt;
+sqlConnectionString=“Database=EasyCVSessionStore;Server=localhost\SQL2000;.../&gt;
 
 Also avoid to copy session database around, and recreate always with aspnet\_regsql.exe, it avoid you some [headache](http://www.nablasoft.com/Alkampfer/?p=25).
 

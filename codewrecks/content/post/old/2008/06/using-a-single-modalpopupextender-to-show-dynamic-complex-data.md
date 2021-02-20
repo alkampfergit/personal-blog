@@ -10,7 +10,7 @@ I'm not a javascript fan, but sometimes I have the need to write some client scr
 
 In a project I was working on, we have the main page with a gridview that shows 15 components at time, each component has really a lot of information to show to the user, so the first version uses the ModalPopupExtender from AjaxControlToolkit to move in a popup the extended informations. We set a column in the gridview with a div with basic data, when you click on the div the modal popup opens up and shows extended data on the element clicked.
 
-All works fine, until I realized that the page is 412kb too bigâ€¦really too much. Commenting out the extended data in the modal popup the size dropped to 120 kb, still a big page, but really smaller than the original one. So I asked myself, *since the user does not want to see extended data for all the elements, it is possible to ask for these data on demand by client script code?*
+All works fine, until I realized that the page is 412kb too big...really too much. Commenting out the extended data in the modal popup the size dropped to 120 kb, still a big page, but really smaller than the original one. So I asked myself, *since the user does not want to see extended data for all the elements, it is possible to ask for these data on demand by client script code?*
 
 The idea to manipulate complex dom objects makes me feel unconfortable, the panel with extended data contains dropdown, images, and a lot of other control, so I decided to try a quick and dirty approach. I move the code that generates the extended data in a page on his own, I pass the id of the record via querystring, and I put all the content in a div. The result is a page that when called returns a page with all the content I need to show in the popup panel.
 

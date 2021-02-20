@@ -14,7 +14,7 @@ The solution is to create some sort of xml file that associate a numerical id to
 
 [![SNAGHTML898b40](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML898b40_thumb.png "SNAGHTML898b40")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML898b40.png)
 
-that actually tells me that the user id 1 is associated to WIN.Y4â€¦â€¦.. The question is, how I can handle this during a build or during a private build issued by a user? I [blogged some time ago](http://www.codewrecks.com/blog/index.php/2010/09/13/how-to-get-tfs-server-address-from-a-local-folder-mapped-to-a-workspace/) on how to grab information on the workspace with few lines of code, and that strategy could be used to solve this problem. First of all I've created a XmlUtils class that takes care of xml file handling.
+that actually tells me that the user id 1 is associated to WIN.Y4....... The question is, how I can handle this during a build or during a private build issued by a user? I [blogged some time ago](http://www.codewrecks.com/blog/index.php/2010/09/13/how-to-get-tfs-server-address-from-a-local-folder-mapped-to-a-workspace/) on how to grab information on the workspace with few lines of code, and that strategy could be used to solve this problem. First of all I've created a XmlUtils class that takes care of xml file handling.
 
 [![SNAGHTML8c0282](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML8c0282_thumb.png "SNAGHTML8c0282")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/SNAGHTML8c0282.png)
 

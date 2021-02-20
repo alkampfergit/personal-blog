@@ -6,7 +6,7 @@ draft: false
 tags: [NET framework]
 categories: [NET framework]
 ---
-Today I had a strange problem, I needed to host a MSMQ service in IIS7, I followed the instruction on [this post](http://dotnet.dzone.com/news/msmq-wcf-and-iis-getting-them-). Everything worked ok, I pumped some messages on the queue and the service received them with no problemâ€¦.at least initially. After a bit of time of inactivity, the server stopped to read message from the queue and I have no clue of what is happening. Messages are stored in the queue, but they never got processed.
+Today I had a strange problem, I needed to host a MSMQ service in IIS7, I followed the instruction on [this post](http://dotnet.dzone.com/news/msmq-wcf-and-iis-getting-them-). Everything worked ok, I pumped some messages on the queue and the service received them with no problem...at least initially. After a bit of time of inactivity, the server stopped to read message from the queue and I have no clue of what is happening. Messages are stored in the queue, but they never got processed.
 
 Then I try to browse the service, calling the.svc file with Internet explorer, I verified that the service is up and *then the queue gets consumed again*. The problem was due to this specific scenario: after some minutes of inactivity the Worker process gets recycled, and the service gets no started again, until you browse to the.svc file. The act of browsing forces IIS to restart wcf host and service goes up and running again.
 

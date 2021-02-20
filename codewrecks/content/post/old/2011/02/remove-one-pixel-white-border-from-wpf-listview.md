@@ -28,7 +28,7 @@ Just set all paddings to zero and the game is done. Now that you have this new t
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/image3.png)
 
-Now run the program again andâ€¦. voilÃ  ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/wlEmoticon-smile.png) the nasty one pixel white border is gone.
+Now run the program again and... voilÃ  ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/wlEmoticon-smile.png) the nasty one pixel white border is gone.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/image_thumb4.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/02/image4.png)
 

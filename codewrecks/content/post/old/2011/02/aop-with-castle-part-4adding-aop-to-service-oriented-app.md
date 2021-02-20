@@ -70,7 +70,7 @@ includeExceptionDetailInFaults="true"
 
 this is a bad practice, because exceptions should not flow to the caller, but if you set this value to false, when an exception occurs on the server, the client gets
 
-> *The server was unable to process the request due to an internal error. For more information about the error, either turn on IncludeExceptionDetailInFaults â€¦.*
+> *The server was unable to process the request due to an internal error. For more information about the error, either turn on IncludeExceptionDetailInFaults ...*
 
 WCF has a specific technique to send back exception data to the caller in a Service Oriented way, you should specify with an attribute witch object will carry exception data to the caller, so whenever an exception occurs, the caller will receive a valid response object with data.
 

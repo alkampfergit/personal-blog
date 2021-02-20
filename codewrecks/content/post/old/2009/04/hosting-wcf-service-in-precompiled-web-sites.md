@@ -10,7 +10,7 @@ The situation is the following: I have a web site (not a web application) that h
 
 After a search I found that other people have the same problem, and finally I come across [this post](http://social.msdn.microsoft.com/forums/en-US/wcf/thread/8c897f8e-2143-450e-a9f4-97d1f8702da7/) that gives me the solution. It turns out that Web Site, when precompiled, writes the name of the site in the.compiled file. If I go into the bin directory of the deploy directory, I can verify that Myservice.svc.989dc2fb.compiled have the customstring attribute  equal to *NameOfWebSite/Service/MyService.svc*. Since my dev machine I'm working into have IIS5 (windows XP) I mounted the site in a virtual directory called *NameOfWebSite* and everything works, but when I deploy the site on the production server the service stops working because the site is mounted in the root path of the site.
 
-The solution is to change the customstring attribute to */service/MyService.svc||â€¦* to correctly match the real folder in production server.
+The solution is to change the customstring attribute to */service/MyService.svc||...* to correctly match the real folder in production server.
 
 This is not a good thing to do, because I hate to insert manual steps in the build process, so I proceed to create a [nant task](http://nant.sourceforge.net/release/latest/help/tasks/xmlpoke.html) that corrects my problem.
 

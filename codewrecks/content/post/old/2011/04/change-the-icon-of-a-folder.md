@@ -60,6 +60,6 @@ First of all I save the icon file thanks to the Save method of the resource, the
 
 Finally you need to hide and set the System attribute to Destkop.ini file, if you forget to set the system attribute the file  **will be ignored**.
 
-The motto of this story is, when you need to do something related to windows, always read with care MSDN documentation, avoiding to do stupid tentatives. (As I said I lost half an hour because I forgot to set the System bit of the Folder ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/wlEmoticon-smile1.png), this was because I simply change an icon to a folder, then look at generated Desktop.ini file, and replicate in codeâ€¦ but it did not work because the folder was not set to system. )
+The motto of this story is, when you need to do something related to windows, always read with care MSDN documentation, avoiding to do stupid tentatives. (As I said I lost half an hour because I forgot to set the System bit of the Folder ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/wlEmoticon-smile1.png), this was because I simply change an icon to a folder, then look at generated Desktop.ini file, and replicate in code... but it did not work because the folder was not set to system. )
 
 Alk.

@@ -10,7 +10,7 @@ Asp.net is a great environment to quickly develop sites, but if you does not kno
 
 Today I was analyzing a web page of a site because a developer reported to me that it is really really slow (more than 10 seconds to render), here it is how I proceed in similar situation
 
- **1) Check the size of the page** I fired [Fiddler](http://www.fiddlertool.com/fiddler/) and loaded the page with IE, then I look at the size of the page. Developers tends to forget that size of the page is important, to save bandwidth but also avoiding the loss of time needed to build and serve a long HTML stream. The result was a 450kb compressed page with a 1.5 MB of uncompressed HTMLâ€¦this is really unacceptable.
+ **1) Check the size of the page** I fired [Fiddler](http://www.fiddlertool.com/fiddler/) and loaded the page with IE, then I look at the size of the page. Developers tends to forget that size of the page is important, to save bandwidth but also avoiding the loss of time needed to build and serve a long HTML stream. The result was a 450kb compressed page with a 1.5 MB of uncompressed HTML...this is really unacceptable.
 
 The cause was a misuse of the viewstate, the developer loaded a datatable, and stored it entirely into the viewstate to access it again during pagination events. I change the logic so the datatable is retrieved from database when pagination occurred and removed it from the viewstate. Compressed page size dropped to 45k with a 200k uncompressed size.
 

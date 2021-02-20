@@ -18,7 +18,7 @@ public static void IntializeAssembly(TestContext ctx)
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-If something went wrong during this phase you probably will end with this not so much useful error message: *Failed to deploy database project â€¦*
+If something went wrong during this phase you probably will end with this not so much useful error message: *Failed to deploy database project ...*
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image-thumb27.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/08/image27.png)
 

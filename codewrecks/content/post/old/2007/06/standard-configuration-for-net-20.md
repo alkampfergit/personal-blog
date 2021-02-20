@@ -42,7 +42,7 @@ This class inherits from  **ConfigurationElement** and has a simple property mar
         &lt;DataAccessConfiguration&gt;  
               &lt;MainConnectionString  
 name=“MainConnectionString“  
-connectionString=“Database=Northwind;Server=localhost\SQL2000;â€¦  “  
+connectionString=“Database=Northwind;Server=localhost\SQL2000;...  “  
 providerName=“System.Data.SqlClient“/&gt;  
         &lt;/DataAccessConfiguration&gt;  
   &lt;/NablaHelpers&gt;

@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 Installing TFS is an operation that scares most people. With TFS2010 beta 2 the installation process is really more friendly. I installed a new windows server 2008 machine, update everything and begin the installation to verify the new installer.
 
-You start setup.exe, tells what you want to install, and press next, then after some minutes tfs is installedâ€¦ this is amazing respect to the older version. Now that everything needed was installed we need to start configuration. Suppose you want to install basic edition, it basically has source control, build machine and work item tracking, you can simply choose *basic*
+You start setup.exe, tells what you want to install, and press next, then after some minutes tfs is installed... this is amazing respect to the older version. Now that everything needed was installed we need to start configuration. Suppose you want to install basic edition, it basically has source control, build machine and work item tracking, you can simply choose *basic*
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb11.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image11.png)
 
@@ -26,11 +26,11 @@ Wonderful, It is ready to install everything, You can press Verify to have a ful
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb14.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image14.png)
 
-Wow, it finds that I have no istalled IIS (It is a fresh windows 2008 server with service pack 2 just installed), and it does everything is needed for me. I press configure and it begins to configure IIS â€¦ no need to specify any option.
+Wow, it finds that I have no istalled IIS (It is a fresh windows 2008 server with service pack 2 just installed), and it does everything is needed for me. I press configure and it begins to configure IIS ... no need to specify any option.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image15.png)
 
-As you can verify it is configuring not only IIS, but also install sql server express, server database web site and everything he needs to create a working TFS server. It takes a while on my virtual machine because I configured with only 1 GB of ram, but the process requires no interaction. Finallyâ€¦..
+As you can verify it is configuring not only IIS, but also install sql server express, server database web site and everything he needs to create a working TFS server. It takes a while on my virtual machine because I configured with only 1 GB of ram, but the process requires no interaction. Finally....
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image-thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/10/image16.png)
 

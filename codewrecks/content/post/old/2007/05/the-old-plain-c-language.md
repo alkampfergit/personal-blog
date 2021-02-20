@@ -10,7 +10,7 @@ A friend of mine is taking a basic course in computer programming, and actually 
 XXXXXXXXXX  
 XXXXXXXXX  
 XXXXXXXX  
-And so on. He asked me if I could review his solution before he give his program to the teacher, because he is moving from the old house to a new house and actually he do not have access to a computer to try his solution. This morning I decided to refresh my knowledge of C solving this simple exercise, I must admit that I love C/C++â€¦.I cannot explain but they are really fascinating languages (I love assembly language too)
+And so on. He asked me if I could review his solution before he give his program to the teacher, because he is moving from the old house to a new house and actually he do not have access to a computer to try his solution. This morning I decided to refresh my knowledge of C solving this simple exercise, I must admit that I love C/C++...I cannot explain but they are really fascinating languages (I love assembly language too)
 
 #include“stdio.h”  
 #include“memory.h”  

@@ -18,7 +18,7 @@ I'm aware that writing a test consume time, but quite often in the end a test sa
 
 The problem is that we are testing a function that use some stored procedures and some.net code, so if the problem is still there, we need to return to Management Studio, change the procedure or change the code. If we must change the code, we need to recompile, fire the app again (and wait for the app to reinitialize) bla bla bla.
 
-For big application the startup time of the whole application is just too big to think that F5 approach is a feasible solution to verify if a bug is corrected. One day, for a very difficult bug, after a couple of hours I realized that more than half of the time was spent waiting the app to start and insert data to exercise the functionâ€¦â€¦. too bad. This means that we are developing slowly, and moreover it is frustrating to: *do a modification and wait for one minute to see if it corrects the problem*
+For big application the startup time of the whole application is just too big to think that F5 approach is a feasible solution to verify if a bug is corrected. One day, for a very difficult bug, after a couple of hours I realized that more than half of the time was spent waiting the app to start and insert data to exercise the function...... too bad. This means that we are developing slowly, and moreover it is frustrating to: *do a modification and wait for one minute to see if it corrects the problem*
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb40.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image40.png)
 

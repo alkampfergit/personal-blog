@@ -6,13 +6,13 @@ draft: false
 tags: [Experiences]
 categories: [WPF]
 ---
-I'm a very noob Blend user ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile1.png) and I learn it without reading or seeing any tutorial, just opened blend and begin to use itâ€¦ this is no good ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile1.png) because I missed some basic features like for example that the grid can be put in Canvas or Grid modeâ€¦.
+I'm a very noob Blend user ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile1.png) and I learn it without reading or seeing any tutorial, just opened blend and begin to use it... this is no good ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/wlEmoticon-smile1.png) because I missed some basic features like for example that the grid can be put in Canvas or Grid mode...
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/image1.png)
 
  ***Figure 1***: *The grid is in canvas mode, the upper left icon is reflecting this, but I did not know of this feature.. so bad*
 
-Now I want to change Column width, but when I move the cursor of the columnâ€¦here is what happens
+Now I want to change Column width, but when I move the cursor of the column...here is what happens
 
 [![SNAGHTML98e072](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML98e072_thumb.png "SNAGHTML98e072")](https://www.codewrecks.com/blog/wp-content/uploads/2010/12/SNAGHTML98e072.png)
 

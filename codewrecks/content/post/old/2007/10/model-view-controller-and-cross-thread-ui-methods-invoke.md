@@ -6,7 +6,7 @@ draft: false
 tags: [Testing]
 categories: [Testing]
 ---
-If you adopt a MVC pattern for your code in windows forms, each form should implements some Interface to make possible for the controller to communicate with the UI. This is needed so the Controller does not work directly with the form but instead with an interface such as *IShippingUi*. But what happens when the function of the controller are invoked not by the main thread that rules the UIâ€¦the result is an exception.
+If you adopt a MVC pattern for your code in windows forms, each form should implements some Interface to make possible for the controller to communicate with the UI. This is needed so the Controller does not work directly with the form but instead with an interface such as *IShippingUi*. But what happens when the function of the controller are invoked not by the main thread that rules the UI...the result is an exception.
 
 In a recent project of mine the form should receive data read from a RfId reader, so I have a dedicated thread that listen to the hardware to read data from the tags, then when the thread read a bunch of tags it calls a function of the controller that does some lookup into the database and call a specific event on the UI to inform the user on real data read. This is an extracts of the interface of the UI
 

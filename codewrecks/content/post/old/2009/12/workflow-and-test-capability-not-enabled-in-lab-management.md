@@ -14,7 +14,7 @@ If the hilighted icons have a red cross instead of the play button you have a pr
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image21.png)
 
-Unable to connect to the controller on xxxx permisssion deniedâ€¦ this operation can only be performed by members of TeamTestAgentService.
+Unable to connect to the controller on xxxx permisssion denied... this operation can only be performed by members of TeamTestAgentService.
 
 This problem is related to test controller, to solve it you first need to verify the user that is configured to run the *Visual Studio Test Agent* service, usually is network service. Then you need to log on the machine where the test contoller was installed, and manage local groups, you need to verify that in TeamTestAgentService group the name of the computer deployed is in the TeamTestAgentService group.
 

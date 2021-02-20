@@ -10,7 +10,7 @@ Wpf has great filtering capabilities based on [CollectionViewSource](http://msdn
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 ListCollectionView lcv = CollectionViewSource.GetDefaultView(myCollection) as ListCollectionView;
-lcv.SortDescriptions.Add(new SortDescription(â€¦));
+lcv.SortDescriptions.Add(new SortDescription(...));
 {{< / highlight >}}
 
 I do not like very much this approach, are you sure that a valid default view exists during a UnitTest? So lets examine another possible solution.

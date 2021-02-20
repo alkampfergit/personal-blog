@@ -6,8 +6,8 @@ draft: false
 tags: [General]
 categories: [General]
 ---
-Today I open my visual studio, open “Device emulator manager” started an emulator of virtual pc and then “Cradle” the decive to access with WMDC (Windows mobile device center)â€¦the result is nothing, my emulator won’t cradle L
+Today I open my visual studio, open “Device emulator manager” started an emulator of virtual pc and then “Cradle” the decive to access with WMDC (Windows mobile device center)...the result is nothing, my emulator won’t cradle L
 
-After a little search I found that there is a new version for WMDC downloadable [here](http://www.microsoft.com/windowsmobile/devicecenter.mspx), this resolves partially my problem, sometimes my device continue to refuse to cradle, the only way to make it work is close and reopen WMDC. But finally it seems to workâ€¦..
+After a little search I found that there is a new version for WMDC downloadable [here](http://www.microsoft.com/windowsmobile/devicecenter.mspx), this resolves partially my problem, sometimes my device continue to refuse to cradle, the only way to make it work is close and reopen WMDC. But finally it seems to work....
 
 Alk.

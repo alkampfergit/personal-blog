@@ -8,7 +8,7 @@ categories: [Programming,Tools and library]
 ---
 In my experience, one of the most feared problem during the *going in production* phase of an asp.net site or a complex project is configurations. Usually everything works perfectly on developer machines, but when you move the project in production machines all sort of problems appear.
 
-For Asp.Net, one day one of my colleagues called me asking a little help troubleshooting some performance problem of a site in production, the problem was so big that after a couple of hours the application goes into memory overflow exception. After a brief inspection I saw that trace was keep enabled with a request limit of 10000 requestâ€¦the problem was simply due to wrong configuration.
+For Asp.Net, one day one of my colleagues called me asking a little help troubleshooting some performance problem of a site in production, the problem was so big that after a couple of hours the application goes into memory overflow exception. After a brief inspection I saw that trace was keep enabled with a request limit of 10000 request...the problem was simply due to wrong configuration.
 
 The best approach to this sort of problem is to create a script that manipulate the standard developement config file, changing specific part and preparing it for production. To deploy an app the only stuff you need to do is to launch a script, wait for it to complete and test the site.
 

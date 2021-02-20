@@ -48,7 +48,7 @@ Some in C#
   46                      UoW.Detach(f);   
   47                 }   
   
-And at last one image, this is the place where I work, my homeâ€¦quite messy isn’t it?? :D
+And at last one image, this is the place where I work, my home...quite messy isn’t it?? :D
 
 ![](http://76.163.32.29/Alkampfer/wp-content/uploads/2007/04/042707-0905-testofblogp13.jpg)
 

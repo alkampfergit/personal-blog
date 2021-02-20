@@ -16,7 +16,7 @@ Now I need to modify my workspace, making my web.config local file to point to m
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image12.png)
 
-The important line is the one highlighted in yellow. Basically I told to visual studio to map the d:\develop\Dexter\dexterblogengine\trunk\dexter.web.site\web.config to the $/dexterblogengine/branc/â€¦ With this configuration if you edit web.config to modify the connection string you can verify that in the server the default file is not checked out by you.
+The important line is the one highlighted in yellow. Basically I told to visual studio to map the d:\develop\Dexter\dexterblogengine\trunk\dexter.web.site\web.config to the $/dexterblogengine/branc/... With this configuration if you edit web.config to modify the connection string you can verify that in the server the default file is not checked out by you.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb13.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image13.png)
 

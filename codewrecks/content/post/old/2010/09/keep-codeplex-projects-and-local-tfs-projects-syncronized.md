@@ -78,7 +78,7 @@ The lines I changed respect to generated configuration are: 7 and 16, where you 
 
 Now under the &lt;CustomSettings /&gt; replace the UserIdentityMappings with the correct mapping from the users of the left project (Codeplex) and the users in the right one (Local TFS). In this example I used a test project where alkampfer\_cp is the owner in codeplex, and AGiorgetti\_cp is a contributor, the corresponding users in local Tfs are Alkampfer and Guardian. If you use a different user than the owner to access Codeplex ( **Figure 1** ) you could get this error:
 
-*TF14098: Access Denied: User SND\AGiorgetti\_cp needs Checkin, CheckinOther permission(s) for $/TestSync/â€¦â€¦*
+*TF14098: Access Denied: User SND\AGiorgetti\_cp needs Checkin, CheckinOther permission(s) for $/TestSync/......*
 
 This is because the user AGiorgetti\_cp is not the owner of the Codeplex project (Alkampfer was the owner) is only a contributor, so he cannot do a checkin on behalf on other user. If everything is ok, you can try to do a check-in on the local TFS, wait a little bit and then go to codeplex to see what is happened.
 

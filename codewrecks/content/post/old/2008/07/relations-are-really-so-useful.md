@@ -17,7 +17,7 @@ Order.Customer = session.Load<Customer>(customerId);{{< / highlight >}}
 
 This instruction uses ISession.Load(), that actually creates a proxy of the Customer Object, and since NHibernate needs only the Id of an object to set the relation, customer table never gets queried. This is good
 
-Association between objects seems to make life easier, so one of the most frequent error is thinking that if an association is good, bidirectional association is two times good. With an ORM, lazy load, persistence by reachability, add associations between objects is a tempting strategyâ€¦.but pay attention, this is the devil whispering to you hear, because bidirectional associations can be really dangerous.
+Association between objects seems to make life easier, so one of the most frequent error is thinking that if an association is good, bidirectional association is two times good. With an ORM, lazy load, persistence by reachability, add associations between objects is a tempting strategy...but pay attention, this is the devil whispering to you hear, because bidirectional associations can be really dangerous.
 
 To understand what is happening behind the scenes, suppose you decide to create an association from customer to order, with a simple property Orders of type IList&lt;Order&gt; in the Customer object. This is not a bidirectional association yet, but it is already problematic. First example: adding an order and a new Customer.
 
@@ -61,7 +61,7 @@ NHibernate: UPDATE Orders SET CustomerId = @p0 WHERE id = @p1; @p0 = '4', @p1 = 
 
 First of all, *even if you have the Id of the customer you need to load it entirely from db*, but the worst thing happens when you add the order to the orders collection, because nhibernate does lazy load, loading * **all the orders of the customer in memory** *, finally he generate the insert and update as before.
 
-Think again to it **To add an order you have to load in memory  **all customer orders** **. What happens if the Customer have hundreds of orders??? Sounds bad, isn't it? Moreover you are wasting memory for nothingâ€¦.you never access all the orders, you only want add new one.
+Think again to it **To add an order you have to load in memory  **all customer orders** **. What happens if the Customer have hundreds of orders??? Sounds bad, isn't it? Moreover you are wasting memory for nothing...you never access all the orders, you only want add new one.
 
 Similar thing happens whenever you access Orders collection, if you access the first element *all the orders are loaded*, if you call Count *all orders gets loaded*. To avoid this you need to use ISession.CreateFilter() that permits you to issue a Count(\*) query without loading the elements or scan orders with pagination, but you can agree that this is not a good situation.
 

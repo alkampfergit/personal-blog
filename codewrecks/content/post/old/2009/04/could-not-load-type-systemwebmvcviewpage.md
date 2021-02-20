@@ -8,7 +8,7 @@ categories: [AspNet MVC]
 ---
 First of all thanks to [Andrea Balducci](http://dotnetmarche.org/blogs/andreabalducci/) that gave me this solution. I have a asp.net application where I enabled Asp.Net mvc following a link in the web. Everything works well until I try to use Strongly Typed View. When I try to have a page that inherits from ViewPage&lt;T&gt; where T is one of my model the system gave me an error of type
 
-> Could not load type ‘System.Web.Mvc.ViewPage&lt;â€¦&gt;
+> Could not load type ‘System.Web.Mvc.ViewPage&lt;...&gt;
 
 In a asp.net site created with the wizard everything works ok. I check both web.config to be sure that actually I did not forgot anything, then I stumble across [this post](http://blog.benhall.me.uk/2009/01/aspnet-mvc-rc1-removing-code-behind.html). Basically I need to modify Page directive of my web config in this way
 

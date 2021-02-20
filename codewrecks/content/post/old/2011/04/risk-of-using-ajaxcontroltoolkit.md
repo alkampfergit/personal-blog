@@ -20,7 +20,7 @@ The page was cool, thanks to updatepanel and partial rendering the user does not
 | Press Select to associate an object | 136,323 | 196,770 |
 | Press Close Button to close the modal | 136,171 | 446,582 |
 
-WHAT!!!!!! these are pretty big numbers for such a simple operation (search and asosciate), but here is what is happening. First of all we use a custom HttpModule that compress the page before sending back to the caller, but it creates problems with the UpdatePanel, so each request made by an update panel (partial rendering) does not get compressed, and this is the reason why the page size is much bigger on subsequent requests. Then we have a big upload payload due to the huge viewstate of the page (there are a lot of other stuff in the page) and each operation issue a full POST roundrip to the serverâ€¦. a lot of traffic
+WHAT!!!!!! these are pretty big numbers for such a simple operation (search and asosciate), but here is what is happening. First of all we use a custom HttpModule that compress the page before sending back to the caller, but it creates problems with the UpdatePanel, so each request made by an update panel (partial rendering) does not get compressed, and this is the reason why the page size is much bigger on subsequent requests. Then we have a big upload payload due to the huge viewstate of the page (there are a lot of other stuff in the page) and each operation issue a full POST roundrip to the server... a lot of traffic
 
 ![](http://t2.gstatic.com/images?q=tbn:ANd9GcT4gyr8L1UZHBLXvXwUPXJ76KwTG0sdt1gJ53ym9itEiFvllq8h)
 

@@ -53,8 +53,8 @@ the ROW\_NUMBER creates a column with an incremental number over some order clau
 
 10355    AROUT    41.95
 
-â€¦
+...
 
-â€¦
+...
 
 Alk.

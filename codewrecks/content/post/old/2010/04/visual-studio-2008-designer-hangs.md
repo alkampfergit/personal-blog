@@ -8,11 +8,11 @@ categories: [Visual Studio]
 ---
 This morning, while I was playing with uninstalling office 2010 beta and reinstalling office 2010 RTM I was working, as usually, on a web application.
 
-I opened an aspx file, then click the *Designer* button, and Visual Studio 2008 hangsâ€¦.I waited a couple of minutes, then I terminated it. I verified and VS2008 is hanging every time I try to open a webform in design mode, going to Tools-&gt;Options-&gt;HTML Designer-&gt;Css Styling, I have the very same problem, VS2008 completely freezed, and I need to terminate it from task manager.
+I opened an aspx file, then click the *Designer* button, and Visual Studio 2008 hangs...I waited a couple of minutes, then I terminated it. I verified and VS2008 is hanging every time I try to open a webform in design mode, going to Tools-&gt;Options-&gt;HTML Designer-&gt;Css Styling, I have the very same problem, VS2008 completely freezed, and I need to terminate it from task manager.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/04/image17.png)
 
-The problem should be related to office, because the only difference from yesterday is that I've uninstalled and reinstalled office. Moreover when the VS hangs, it does not use processor time, and seems that it is waiting form another external componentâ€¦. guess whatâ€¦
+The problem should be related to office, because the only difference from yesterday is that I've uninstalled and reinstalled office. Moreover when the VS hangs, it does not use processor time, and seems that it is waiting form another external component... guess what...
 
 I begin investigating to see if some other person has the same problem, and I found [this link](http://forums.asp.net/t/1231941.aspx). In the end odlouhy tells that he see a setup.exe program running whenever he tried to opened the designer, so I fired again VS and task manager, goes to CSS Styling menu and I verified that a setup.exe process immediately opens up. This confirms my suspicions, probably VS is launching that setup.exe program and waits for it to finish doing something.
 

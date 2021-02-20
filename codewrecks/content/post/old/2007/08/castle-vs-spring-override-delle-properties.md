@@ -59,7 +59,7 @@ inspectionBehavior=“all“&gt;
   &lt;/parameters&gt;  
 &lt;/component&gt;
 
-I declared that the AlertManager component needs a sender (and optionally a logger) to work properly, and I declared that the sender dependency must be satisfied by a component with id MailSender (not reported here for brevity). During test I often need to override the dependencies written in config file, quite often with live object, for example a mock. It would be nice if I can create a mock of IMessageSender object and then instruct Windsor to inject that object into AlertManager, not the instance of the MailSender component, heyâ€¦.it’s possible :D. First of all I create this simple wrapper function that calls a particular version of the Resolve(IDictionary) method of the container.
+I declared that the AlertManager component needs a sender (and optionally a logger) to work properly, and I declared that the sender dependency must be satisfied by a component with id MailSender (not reported here for brevity). During test I often need to override the dependencies written in config file, quite often with live object, for example a mock. It would be nice if I can create a mock of IMessageSender object and then instruct Windsor to inject that object into AlertManager, not the instance of the MailSender component, hey...it’s possible :D. First of all I create this simple wrapper function that calls a particular version of the Resolve(IDictionary) method of the container.
 
 public  static  T  Resolve&lt;T&gt;(paramsobject[]  values)  {  
   System.Collections.Hashtable  arguments  =  new  System.Collections.Hashtable();  

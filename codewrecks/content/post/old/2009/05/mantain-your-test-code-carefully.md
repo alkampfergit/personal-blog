@@ -10,7 +10,7 @@ I'm working on a project where access to the db is mixed, some data is managed w
 
 For some test I need to clear data from all the table to avoid test interaction, in some situation it is enough doing this only before each test, in other situation I need to clear database after each run. Moreover for some test I need to disable integrity check. Sometimes I need to check logic only for one table, and I know that it does not matter to have related record in related table, I do not want to fill data in tables that I do not need, so I simple disable integrity when it is needed.
 
-My problem is the following: time to refactor test is increasing. Let's make an example, I changed a little thing in the schema, and when I ran the testâ€¦a lot of them failed. This happened because in the setupfixture part I have a lot of instruction like
+My problem is the following: time to refactor test is increasing. Let's make an example, I changed a little thing in the schema, and when I ran the test...a lot of them failed. This happened because in the setupfixture part I have a lot of instruction like
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 DataAccess.ExecuteNonQuery("delete from table1");{{< / highlight >}}

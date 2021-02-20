@@ -14,7 +14,7 @@ Luckily enough, it was really simple to locate the only two files that end with 
 
 C:\Program Files (x86)\Windows Live\Writer\Dictionaries
 
-Wow, it contains the very same kind of files,.dll and.lex so I copied the two IT files from office directory to Dictionaries directory of WLW andâ€¦
+Wow, it contains the very same kind of files,.dll and.lex so I copied the two IT files from office directory to Dictionaries directory of WLW and...
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image_thumb21.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/01/image21.png)
 

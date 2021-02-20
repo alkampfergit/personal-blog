@@ -12,7 +12,7 @@ Today I configured an environment in lab management, when it finishes the deploy
 
 The real error is the [TF267055](http://blogs.msdn.com/b/lab_management/archive/2009/10/26/troubleshooting.aspx#e3_10)
 
-he machine is not ready to run tests because of the following error: Unable to connect to the controller on labrtmhost.tfslab.nablasoft.com:6901′. Reason: A connection attempt failed because the connected party did not properly respond after a period of timeâ€¦â€¦ host has failed to respond 10.0.0.110:6901
+he machine is not ready to run tests because of the following error: Unable to connect to the controller on labrtmhost.tfslab.nablasoft.com:6901′. Reason: A connection attempt failed because the connected party did not properly respond after a period of time...... host has failed to respond 10.0.0.110:6901
 
 This is the configuration of this test machine.
 

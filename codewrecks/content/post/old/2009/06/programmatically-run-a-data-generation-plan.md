@@ -23,7 +23,7 @@ This is run first of every code in the test project, but I really have the need 
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image.png)
 
-As you can see it has a GenerateData method that permits you to specify dgen file name, *but it is protected.*I really wonder why, but it seems that you cannot run database generation file programmaticallyâ€¦or not?
+As you can see it has a GenerateData method that permits you to specify dgen file name, *but it is protected.*I really wonder why, but it seems that you cannot run database generation file programmatically...or not?
 
 Here is the solution
 

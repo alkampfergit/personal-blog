@@ -6,7 +6,7 @@ draft: false
 tags: [Net]
 categories: [NET framework]
 ---
-I've some legacy code where stuff have to be passed with querystring, because we need to issue Get request to the server, and I need to pass various set of parameters for some reporting functions, but those parameters have 20 field, and are somewhat used as a tree. I decided to serialize everything and pass the result with querystring using HttpUtility.UrlEncodingâ€¦ the result was frustrating because the url are simply too long.
+I've some legacy code where stuff have to be passed with querystring, because we need to issue Get request to the server, and I need to pass various set of parameters for some reporting functions, but those parameters have 20 field, and are somewhat used as a tree. I decided to serialize everything and pass the result with querystring using HttpUtility.UrlEncoding... the result was frustrating because the url are simply too long.
 
 So I begin investigating on how to reduce data size of serialized object to be encoded with UrlEncode. This is the first solution
 

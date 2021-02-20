@@ -10,7 +10,7 @@ I have a simple wcf service hosted in IIS6, when I launch serviceutil.exe ( **sv
 
 > Error: Cannot obtain Metadata from http://10.8.50.1:7507/FileReceiver.svc?wsdl
 
-I lost about half an hour triying to figure out what is wrong. First of all I tried to expose metadata, but this is not possible in IIS6 or at least I got some errors, and nothing works. After half an hour of frustration, I made a supposition, *maybe it is a problem of premission?*. I changed the identity of the worker process to administrator, and magically everything works as expectedâ€¦
+I lost about half an hour triying to figure out what is wrong. First of all I tried to expose metadata, but this is not possible in IIS6 or at least I got some errors, and nothing works. After half an hour of frustration, I made a supposition, *maybe it is a problem of premission?*. I changed the identity of the worker process to administrator, and magically everything works as expected...
 
 After some searches I discover that the process tries to access the c:\Windows\Temp directory during metadata generation, It is related to the fact that WCF internally used some code generation, thus requiring permission to write to the temp directory. This is annoying because there is no clue that it can be a matter of permissions.
 

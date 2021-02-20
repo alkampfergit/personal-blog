@@ -6,7 +6,7 @@ draft: false
 tags: [SSD]
 categories: [General]
 ---
-I always love to have fast computer and sadly enough, the slowest part is always the HD. In my desktop computer I reach a good compromise with three 10.000 RPM Raptor disk, but in the laptop, having a single 7.200 RPMâ€¦. it is simply a pain.
+I always love to have fast computer and sadly enough, the slowest part is always the HD. In my desktop computer I reach a good compromise with three 10.000 RPM Raptor disk, but in the laptop, having a single 7.200 RPM... it is simply a pain.
 
 This morning I was reading an [old post of Jeff](http://www.codinghorror.com/blog/2010/09/revisiting-solid-state-hard-drives.html), that reminds me of the existence of Hybrid HD drives :). Basically at very low price you can buy an HD that is surely not fast as an SSD, but is better than a simple 7.200 at [an appealing price](http://www.newegg.com/Product/Product.aspx?Item=N82E16822148591&amp;nm_mc=AFC-C8Junction&amp;cm_mmc=AFC-C8Junction-_-Hard%20Drives%20-%20Notebooks%20/%20Laptops-_-Seagate-_-22148591&amp;AID=10440897&amp;PID=2338938&amp;SID=). Since the price is not so high as an SSD, and the HD is 500 GB, it is perfectly suitable for the laptop, that has only one bay for the HD.
 

@@ -10,7 +10,7 @@ There are a lot of rules for usability of User Interface, and one of the most im
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/08/image5.png)
 
-This windows does not communicate nothing to the user, moreover if you click ok nothing happensâ€¦ skype continue to work with no problem. This design violates some best practice of the UI.
+This windows does not communicate nothing to the user, moreover if you click ok nothing happens... skype continue to work with no problem. This design violates some best practice of the UI.
 
 1. It shows a completely unnecessary and obscure message to the user
 2. It presents only the Ok button, so the user cannot choose any options. A Modal dialog box should be used when the user need to choose an option.

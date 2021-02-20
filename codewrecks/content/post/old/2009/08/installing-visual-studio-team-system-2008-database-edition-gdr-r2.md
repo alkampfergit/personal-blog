@@ -14,7 +14,7 @@ Today I need to install [VSDB edition GDR](http://www.microsoft.com/downloads/de
 
 If you click the link you will be redirect to the download page, but if you look carefully you can find detailed installation instructions scrolling down the page
 
->  **Install** > Localized versions of â€¦â€¦
+>  **Install** > Localized versions of ......
 > 
 > 1. Install Microsoft ® Visual Studio Team System 2008 Database Edition SP1 (English) or Microsoft ® Visual Studio Team System 2008 Suite SP1 (English)
 > 2. <font color="#ff0000"><strong><em>Uninstall the Database Edition Power Tools if installed.</em></strong> </font>To uninstall the Power Tools from the command line, use: msiexec /X {EA016DAB-E08A-46FB-BBF0-ED6EB8FD4671}

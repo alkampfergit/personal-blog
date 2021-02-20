@@ -16,7 +16,7 @@ Jeff's post make me think that probably I need to *always choose a different pas
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image-thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/05/image.png)
 
-WHAT!!!!!! They send to me my password in  **CLEAR TEXT** â€¦â€¦, and this is a password I use to access other services, I immediately changed this password on all system but I was horrified because
+WHAT!!!!!! They send to me my password in  **CLEAR TEXT** ......, and this is a password I use to access other services, I immediately changed this password on all system but I was horrified because
 
 1. They store my password in clear text, I do not want to imagine how is the overall security of the site.
 2. They send my email in CLEAR TEXT via email, without any kind of encryption.

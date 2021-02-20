@@ -6,7 +6,7 @@ draft: false
 tags: [ASPNET,Security]
 categories: [ASPNET]
 ---
-This question is really simple to answerâ€¦ or no? Suppose you need to verify, in a service, if the user belongs to the xxxx group, and then take a different path of execution if the condition is true.
+This question is really simple to answer... or no? Suppose you need to verify, in a service, if the user belongs to the xxxx group, and then take a different path of execution if the condition is true.
 
 {{< highlight csharp "linenos=table,linenostart=1" >}}
 if (Roles.IsUserInRole("xxxx"))

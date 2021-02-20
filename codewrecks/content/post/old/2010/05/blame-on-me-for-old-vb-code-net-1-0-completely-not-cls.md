@@ -30,7 +30,7 @@ Property, indexer, or event 'RowProperty' is not supported by the language; try 
 
 The quickest solution is to do a search and replace, and many thanks to visual studio that supports find and replace with regular expressions.[![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image_thumb17.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/05/image17.png)
 
-This permits to me to change every occurrence of.RowProperty[index] with.get\_RowProperty(index). There are also a lot of failing call to method with default parameter, not supported in C# 3.5â€¦
+This permits to me to change every occurrence of.RowProperty[index] with.get\_RowProperty(index). There are also a lot of failing call to method with default parameter, not supported in C# 3.5...
 
 This remind me that every Assembly MUst always be marked with the [CLSCompliantAttribute](http://msdn.microsoft.com/en-us/library/system.clscompliantattribute.aspx) and make sure that it is CLS compliant to avoid problem using it with different languages :(
 

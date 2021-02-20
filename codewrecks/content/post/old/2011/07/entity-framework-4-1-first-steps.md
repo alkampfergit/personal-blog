@@ -48,7 +48,7 @@ db.SaveChanges();
 }
 {{< / highlight >}}
 
-Run these few lines of code, everything works, but waitâ€¦. you never created the database but no exception occurs. This happens because the current user has administrative rights on the Sql Server, so, after the connection to the database engine was opened, EF41 verified that the Battlefield database did not exists, so he created one to persist the Warrior class.
+Run these few lines of code, everything works, but wait... you never created the database but no exception occurs. This happens because the current user has administrative rights on the Sql Server, so, after the connection to the database engine was opened, EF41 verified that the Battlefield database did not exists, so he created one to persist the Warrior class.
 
 [![SNAGHTML4edfe4](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/SNAGHTML4edfe4_thumb.png "SNAGHTML4edfe4")](https://www.codewrecks.com/blog/wp-content/uploads/2011/07/SNAGHTML4edfe4.png)
 

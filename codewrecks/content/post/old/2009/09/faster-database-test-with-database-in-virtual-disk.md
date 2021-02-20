@@ -8,7 +8,7 @@ categories: [Visual Studio]
 ---
 When you work with Visual Studio Database Edition, you surely love the data generation plans, and the ability to do database unit testing with automatic deploy and automatic preload. There is only one thing that is bad with database testing, they are usually *slow*because they are accessing disks*.*
 
-To speedup database testing the best solution is to test database in memory, but with sql server it can be difficultâ€¦or not? With a simple software that create a RAMDisk, (a disk made of ram like [Dataram](http://www.dataram.com/) one), you are able to create RAMDisk with few clicks and have a disk that actually runs at memory speed. I've created a 256 mb ramdisk called V:\ and now I want to test against a database stored in that disk.
+To speedup database testing the best solution is to test database in memory, but with sql server it can be difficult...or not? With a simple software that create a RAMDisk, (a disk made of ram like [Dataram](http://www.dataram.com/) one), you are able to create RAMDisk with few clicks and have a disk that actually runs at memory speed. I've created a 256 mb ramdisk called V:\ and now I want to test against a database stored in that disk.
 
 If you do not have database edition, it can be tricky, but with the Database Edition, doing this is a joke. First of all expand the properties of the project, and double click on  **database.sqlcmdvars**.
 

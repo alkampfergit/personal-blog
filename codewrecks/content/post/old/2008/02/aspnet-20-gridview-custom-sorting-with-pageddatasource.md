@@ -6,7 +6,7 @@ draft: false
 tags: [ASPNET]
 categories: [ASPNET]
 ---
-ASP.Net Web Form is a great environment, but sometimes make me surprised. Suppose you have this situation, you have a great amount of records that can be returned from the database and you must show them in a gridview. Surely you will enable paging to improve performance, but standard paging consist in retrieving from the database  **all the records** , give them to the grid that will do the paging. This is a tremendous waste of memory, suppose you do not cache the dataset and have 10.000 record, each time the user change page or sorting direction, you retrieve 10.000 record in a datasetâ€¦what a tremendous work for the Garbage Collector.
+ASP.Net Web Form is a great environment, but sometimes make me surprised. Suppose you have this situation, you have a great amount of records that can be returned from the database and you must show them in a gridview. Surely you will enable paging to improve performance, but standard paging consist in retrieving from the database  **all the records** , give them to the grid that will do the paging. This is a tremendous waste of memory, suppose you do not cache the dataset and have 10.000 record, each time the user change page or sorting direction, you retrieve 10.000 record in a dataset...what a tremendous work for the Garbage Collector.
 
 Even if you cache the result you do not scale well, this because probably the user will only check the first two or three pages, and there is no reason to cache all 10.000 records.
 

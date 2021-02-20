@@ -12,7 +12,7 @@ Software architects are similar to civil architects, both of them work to create
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image_thumb10.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/12/image10.png)
 
-I'm sure that the first one is probably the first choice, for many reasons. It is more challenging, it will probably make you famous, it is surely more beautiful. The problem is that those two buildings are really different in use. The first can be a congress center, a museum, but the other one is a simple house for a standard family. The problem arise if a customer ask you for *an house for me and my family* and you will give him the project to build the first oneâ€¦. probably it is not the expected result, from the perspective of the customer.
+I'm sure that the first one is probably the first choice, for many reasons. It is more challenging, it will probably make you famous, it is surely more beautiful. The problem is that those two buildings are really different in use. The first can be a congress center, a museum, but the other one is a simple house for a standard family. The problem arise if a customer ask you for *an house for me and my family* and you will give him the project to build the first one... probably it is not the expected result, from the perspective of the customer.
 
 The first solution is more expensive to build, it is probably more expensive to maintain, in winter you will spend tons of money to keep it warm and bla bla bla. The point is that the first building is a perfect structure for a museum, but absolutely the wrong one for a family, so if you, as an architect, will create the first one for a family, you have failed.
 

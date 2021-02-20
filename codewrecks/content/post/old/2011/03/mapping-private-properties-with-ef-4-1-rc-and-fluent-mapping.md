@@ -50,7 +50,7 @@ As you can see if I specify that CategoryId is mapped to an Identity database co
 
 Property(c =&gt; c.CategoryId)
 
-this technique is known as [static reflection](http://handcraftsman.wordpress.com/2008/11/11/how-to-get-c-property-names-without-magic-strings/) and is really useful in such scenarios, but â€¦ now I could not use the HasMany() methods to map a protected property.
+this technique is known as [static reflection](http://handcraftsman.wordpress.com/2008/11/11/how-to-get-c-property-names-without-magic-strings/) and is really useful in such scenarios, but ... now I could not use the HasMany() methods to map a protected property.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb15.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image11.png)
 

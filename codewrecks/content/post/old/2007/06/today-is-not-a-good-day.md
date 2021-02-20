@@ -10,6 +10,6 @@ Today is not a good day for a couple of reasons, but now my visual studio instan
 
 ![](https://www.codewrecks.com/blog/wp-content/uploads/2007/06/060107-1203-todayisnota1.png)
 
-In every other window ALT+126 works as expected (~), mahâ€¦â€¦â€¦â€¦â€¦
+In every other window ALT+126 works as expected (~), mah...............
 
 Alk.
