@@ -14,7 +14,7 @@ When TFS does not work the first thing you should try is to access it from the w
 
 It is possible that this is caused by authentication problems, you should verify in IIS that the site is running under the right account (in my situation the TfsServiceAccount user), then you should verify that that user does not have an expired password. I've immediately tried to access the system with TfsServiceAccount user, and everything is ok. Then verified that all application pool used by the TFS web site runs under the TfsServiceAccount. Everything was ok so I was a little bit puzzled on the reason why tfs does not work.
 
-After a brief check I verify that the folder *C:\Program Files\Microsoft Team Foundation Server 10.0\Microsoft Team Foundation Server 2010 Beta 1 â€“ ENU*does not grant right access to the TfsServiceAccount user, even if Administrators group has permissions to read and write to the folder. I added TfsServiceAccount with *Full Control*permission, and everything started again.
+After a brief check I verify that the folder *C:\Program Files\Microsoft Team Foundation Server 10.0\Microsoft Team Foundation Server 2010 Beta 1 – ENU*does not grant right access to the TfsServiceAccount user, even if Administrators group has permissions to read and write to the folder. I added TfsServiceAccount with *Full Control*permission, and everything started again.
 
 I do not know exactly why it happened, but if you encounter the same problem this post maybe can help you.
 

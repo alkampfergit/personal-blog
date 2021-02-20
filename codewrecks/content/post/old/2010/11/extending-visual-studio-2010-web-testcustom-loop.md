@@ -152,7 +152,7 @@ This class is based on the classic for Loop with integer values, and it iterate 
 
 * ***Figure 2***: adding a custom rule for a loop in web test.*
 
-With this sample I want to iterate from the letter â€˜a' to letter â€˜z' incrementing each time by 2 chars, so I'll have the sequence a,c,e,g,i... Then I need to specify the Context parameter property, the property that will store the value of the sequence during each iteration, in Figure 3 you will see all the properties specified for our loop.
+With this sample I want to iterate from the letter ‘a' to letter ‘z' incrementing each time by 2 chars, so I'll have the sequence a,c,e,g,i... Then I need to specify the Context parameter property, the property that will store the value of the sequence during each iteration, in Figure 3 you will see all the properties specified for our loop.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/11/image1.png)
 

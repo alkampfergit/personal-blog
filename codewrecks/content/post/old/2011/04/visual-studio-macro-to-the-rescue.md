@@ -48,7 +48,7 @@ End If
 End Sub
 {{< / highlight >}}
 
-You need to paste this code in the Macros editor, opened from Tools â€“&gt; Macros â€“&gt; Macros IDE
+You need to paste this code in the Macros editor, opened from Tools –&gt; Macros –&gt; Macros IDE
 
 [![SNAGHTML1889083](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/SNAGHTML1889083_thumb.png "SNAGHTML1889083")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/SNAGHTML1889083.png)
 

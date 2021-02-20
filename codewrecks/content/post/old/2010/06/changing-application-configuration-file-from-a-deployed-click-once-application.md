@@ -12,7 +12,7 @@ I have a simple scenario, I have an application deployed internally with click o
 
 Probably the exact error is different, but the general problem is that the manifest of your application contains hashes of all the file, and when you change a file you need to update all the mamifests. To accomplish this you need to enter to the directory with the version you want to change (Es. \Application files\applicationname\_1\_2\_0\_0) and issue from a visual studio command prompt the following command
 
-*mage â€“u applicationname.application*
+*mage –u applicationname.application*
 
 then go to the root of the deployed application and issue the command
 

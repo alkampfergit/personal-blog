@@ -22,7 +22,7 @@ Now I open the package in business development studio and right click on an empt
 
  ***Figure 2***: *Changing the protection level to Server Storage*
 
-I changed the protection level to Server Storage then I go in menu * **File â€“&gt; Save copy of xxxxx.dtsx** *as to save a copy of this package to the SSIS Server. You should now see your package inside the new folder I created in Figure 1.
+I changed the protection level to Server Storage then I go in menu * **File –&gt; Save copy of xxxxx.dtsx** *as to save a copy of this package to the SSIS Server. You should now see your package inside the new folder I created in Figure 1.
 
 [![Untitled2](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled2_thumb.jpg "Untitled2")](https://www.codewrecks.com/blog/wp-content/uploads/2011/08/Untitled2.jpg)
 

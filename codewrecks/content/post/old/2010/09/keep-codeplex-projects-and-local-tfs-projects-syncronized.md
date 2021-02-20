@@ -14,7 +14,7 @@ Supporting this scenario with Integration Platform is not difficult, first of al
 
 [![Untitled](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled_thumb.png "Untitled")](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/Untitled.png)
 
- **Figure 1 â€“** *How to store credentials to tfs in the server where Integration Platform is running. Note: to avoid problem, use the owner of the project as the user to connect to codeplex and to local TFS.*
+ **Figure 1 –** *How to store credentials to tfs in the server where Integration Platform is running. Note: to avoid problem, use the owner of the project as the user to connect to codeplex and to local TFS.*
 
 Now you can install Integration platform, create a new project and choose *VersionControl* as type of synchronization; then simply configure the two servers, the codeplex one and the local tfs one. In  **Figure 2** I show the configuration with two-way manual synchronization, a configuration that you should use to test if everything work ok (in the final version you should use the Custom Workflow type to use automatic synchronization.
 
@@ -84,7 +84,7 @@ This is because the user AGiorgetti\_cp is not the owner of the Codeplex project
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/image_thumb1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/09/image1.png)
 
- **Figure 3 â€“** *The result of a check-in in the local tfs by the user AGiorgetti is correctly moved to the Codeplex project.*
+ **Figure 3 –** *The result of a check-in in the local tfs by the user AGiorgetti is correctly moved to the Codeplex project.*
 
 As you can see in  **Figure 3** , latest check-in is done by AGiorgetti user, thus reflecting the fact that in Local Tfs the user guardian did the check-in, and the comment included in parenthesis, specify that the check-in derives from an integration between Codeplex and Debra , and the original id is 670.
 

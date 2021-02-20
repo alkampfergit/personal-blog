@@ -26,7 +26,7 @@ And you can easily verify that the value of the TotalResult is zero. Now I can s
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image_thumb33.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/01/image33.png)
 
-And look for the text â€˜&lt;input name="dbTotalResult" type="hidden" value="0"/&gt;' in the response of the page.
+And look for the text ‘&lt;input name="dbTotalResult" type="hidden" value="0"/&gt;' in the response of the page.
 
 Alk.
 

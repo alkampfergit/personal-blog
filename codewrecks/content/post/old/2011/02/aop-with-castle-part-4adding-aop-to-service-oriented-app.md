@@ -8,9 +8,9 @@ categories: [Castle]
 ---
 Previous Parts of the series
 
-[Part 1 â€“ The basic of interception](http://www.codewrecks.com/blog/index.php/2010/06/01/aop-with-castle-part-1/)  
-[Part 2 â€“ Selecting Methods to intercept](http://www.codewrecks.com/blog/index.php/2010/06/08/aop-with-castle-part-2-selecting-methods-to-intercept/)  
-[Part 3 â€“ The first interceptor](http://www.codewrecks.com/blog/index.php/2010/08/09/aop-with-castlepart-3-the-first-interceptor/)
+[Part 1 – The basic of interception](http://www.codewrecks.com/blog/index.php/2010/06/01/aop-with-castle-part-1/)  
+[Part 2 – Selecting Methods to intercept](http://www.codewrecks.com/blog/index.php/2010/06/08/aop-with-castle-part-2-selecting-methods-to-intercept/)  
+[Part 3 – The first interceptor](http://www.codewrecks.com/blog/index.php/2010/08/09/aop-with-castlepart-3-the-first-interceptor/)
 
 AOP works great if you have clear interfaces where you want to put some standard and shared logic, and a Service Oriented Application falls in this category. A service is just a bunch of methods that will share some common behavior like: Validation, logging, Security etc etc, so it is a good strategy to create interceptors for each one of this behavior and associate them to service classes. The good point is that Castle has a dedicated facility to integrate with WCF, that basically is able to resolve WCF server classes with castle. Setting up such a facility is really simple, and you can follow the instruction f[ound on castle's site](http://stw.castleproject.org/Windsor.WCF-Integration-Facility.ashx).
 

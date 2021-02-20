@@ -8,7 +8,7 @@ categories: [Castle]
 ---
 Previous Part of the series
 
-[Part 1 â€“ The basic of interception](http://www.codewrecks.com/blog/index.php/2010/06/01/aop-with-castle-part-1/)
+[Part 1 – The basic of interception](http://www.codewrecks.com/blog/index.php/2010/06/01/aop-with-castle-part-1/)
 
 Some people, after looking at interceptor concept, are not fully convinced that castle can support all concepts of AOP and the first question usually is: *How can I choose witch method intercept, instead of intercepting calls to all methods, and how can I configure this with XML file or fluent configuration?*. This answer can have various solutions, but in my opinion the simplest one is doing a little manual logic on interceptor.
 

@@ -46,7 +46,7 @@ RETURN 0{{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Absolutely simple, and I've already generated a DataGenerationPlan and already verified that searching with â€˜da' will return only one column, with â€˜e' it will return 18 columns etc etc. To save Time I simply right click and *Deploy* the test database only when the test data changes, clearly this database is readonly, because tests use it only to data drive the test. Then I create a very simple Stored proceudre Test, and modify in this way
+Absolutely simple, and I've already generated a DataGenerationPlan and already verified that searching with ‘da' will return only one column, with ‘e' it will return 18 columns etc etc. To save Time I simply right click and *Deploy* the test database only when the test data changes, clearly this database is readonly, because tests use it only to data drive the test. Then I create a very simple Stored proceudre Test, and modify in this way
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb16.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image16.png)
 
@@ -137,7 +137,7 @@ INSERT [dbo].[TestDataSet1] VALUES('a', 22){{< / highlight >}}
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The last row tells that we expect 22 customers with an â€˜a' in the name, but I already know that my data generation plan generates only 17 records with this condition, now you can run test again and this is the output.
+The last row tells that we expect 22 customers with an ‘a' in the name, but I already know that my data generation plan generates only 17 records with this condition, now you can run test again and this is the output.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image_thumb18.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/11/image18.png)
 

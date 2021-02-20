@@ -8,8 +8,8 @@ categories: [Castle]
 ---
 Previous Parts of the series
 
-[Part 1 â€“ The basic of interception](http://www.codewrecks.com/blog/index.php/2010/06/01/aop-with-castle-part-1/)  
-[Part 2 â€“ Selecting Methods to intercept](http://www.codewrecks.com/blog/index.php/2010/06/08/aop-with-castle-part-2-selecting-methods-to-intercept/)
+[Part 1 – The basic of interception](http://www.codewrecks.com/blog/index.php/2010/06/01/aop-with-castle-part-1/)  
+[Part 2 – Selecting Methods to intercept](http://www.codewrecks.com/blog/index.php/2010/06/08/aop-with-castle-part-2-selecting-methods-to-intercept/)
 
 Usually the very first interceptor you can build with an AOP framework is the *logger Interceptor*, because it is simple and useful, especially when you expose some services with WPF. *Consider this scenario*: you expose some services with WPF, sometimes people tell you that your services have bugs or they encountered an exception, or they get wrong result, etc. In this situation you receive information like:
 

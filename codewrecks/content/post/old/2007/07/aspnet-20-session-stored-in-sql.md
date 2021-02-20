@@ -10,7 +10,7 @@ Sometimes it is preferable to store the session of asp.net in sql, I prefer to u
 
 *aspnet\_regsql.exe -S localhost\isntancename -U sa -P sapwd -d  **databasename** -ssadd -sstype c*
 
-Notice the use of â€“sstype c parameter that forces the script to create a custom database, without that argument the scritp does not permit you to use a custom database name to store the session. In web.config you should also state that you want to use a custom type sql database with allowCustomSqlDatabase=”true”.
+Notice the use of –sstype c parameter that forces the script to create a custom database, without that argument the scritp does not permit you to use a custom database name to store the session. In web.config you should also state that you want to use a custom type sql database with allowCustomSqlDatabase=”true”.
 
 &lt;sessionState  
 timeout=“60“  

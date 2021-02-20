@@ -45,7 +45,7 @@ Since SourcesDirectory is the one used to map the workspace, I can execute the p
 *"\\" + DeployMachine +  " -u " + DeployMachine + "\administrator -p " + DeployMachinePassword +       
 " /accepteula -i -f -h -c " + SourcesDirectory + "\deploy\Deployweb.bat " + BuildToUse*
 
-This is only a combination of Workflow Parameters to create the argument list, the /accepteula parameter is needed because the psexec shows an eula that should be accepted, and clearly there is noone to click on accept when executed on a service ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/wlEmoticonsmile1.png), then the option â€“c force a file to be copied to remote computer and executed. After the Invoke process, in  **Figure 6** I showed the end of the workflow, with a condition that verifies if the PsExec return value is zero (success) or greater than zero (error).
+This is only a combination of Workflow Parameters to create the argument list, the /accepteula parameter is needed because the psexec shows an eula that should be accepted, and clearly there is noone to click on accept when executed on a service ![Smile](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/wlEmoticonsmile1.png), then the option –c force a file to be copied to remote computer and executed. After the Invoke process, in  **Figure 6** I showed the end of the workflow, with a condition that verifies if the PsExec return value is zero (success) or greater than zero (error).
 
 [![Untitledw](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitledw_thumb.png "Untitledw")](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/Untitledw.png)
 

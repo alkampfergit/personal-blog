@@ -6,7 +6,7 @@ draft: false
 tags: [Testing,Visual Studio,Web Test]
 categories: [Testing]
 ---
-In a [previous post](http://www.codewrecks.com/blog/index.php/2010/11/02/extending-visual-studio-2010-web-testcustom-loop/) I showed how to create a custom loop that permits you to create a loop in a web performance test to iterate from the char â€˜a' to char â€˜z', now I want to be able to create an inner loop that
+In a [previous post](http://www.codewrecks.com/blog/index.php/2010/11/02/extending-visual-studio-2010-web-testcustom-loop/) I showed how to create a custom loop that permits you to create a loop in a web performance test to iterate from the char ‘a' to char ‘z', now I want to be able to create an inner loop that
 
 1. for each loop extract all the names of the customers that satisfy the search
 2. for each name ask for detail

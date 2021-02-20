@@ -8,7 +8,7 @@ categories: [Team Foundation Server]
 ---
 Sometimes you need to operate to a Tfs Version Control System with API starting from a local folder. There are a lot of API to work with workspaces, but the main problem is that you need to pass through a [VersionControlServer](http://msdn.microsoft.com/en-us/library/bb171724%28v=VS.100%29.aspx) object, and to obtain such an object you need to know the address of the Tfs server the workspace is mapped to?
 
-The exercise is the following one :) â€“ Write a snippet of code, based on TFS API that, given a local path, retrieve ChangesetId that is currently mapped on the workspace.
+The exercise is the following one :) – Write a snippet of code, based on TFS API that, given a local path, retrieve ChangesetId that is currently mapped on the workspace.
 
 The key part is the [Workstation](http://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.versioncontrol.client.workstation%28v=VS.100%29.aspx) class that permits you to obtain a [WorkspaceInfo](http://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.versioncontrol.client.workspaceinfo.aspx) object from a simple Path, thanks to the [GetLocalWorkspaceInfo](http://msdn.microsoft.com/en-us/library/bb139693.aspx) method.
 

@@ -6,7 +6,7 @@ draft: false
 tags: [ALM,Process Template,Tfs]
 categories: [Team Foundation Server]
 ---
-1 â€“ [Customize Tfs Process Template](http://www.codewrecks.com/blog/index.php/2011/06/22/customize-tfs-process-template/)
+1 – [Customize Tfs Process Template](http://www.codewrecks.com/blog/index.php/2011/06/22/customize-tfs-process-template/)
 
 In the first post I showed how to download the definition of a process template into a local folder and how to open it with the [Process Template Editor](http://msdn.microsoft.com/en-us/vstudio/bb980963); in this post I'll show you some of the very basic customizations that you can do with the PTE.
 

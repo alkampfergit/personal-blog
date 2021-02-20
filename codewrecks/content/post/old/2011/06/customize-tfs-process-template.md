@@ -24,7 +24,7 @@ The very first step is choosing *process Template Manager* from the Team Project
 
 [![image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Tfs-e-customizzazione-del-process-templa_93B5/image_thumb.png "image")](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Tfs-e-customizzazione-del-process-templa_93B5/image_2.png)
 
- ***Figure 1***: *Right click on project collection, then select Team Project Collection Settings â€“&gt; Process Template manager.*
+ ***Figure 1***: *Right click on project collection, then select Team Project Collection Settings –&gt; Process Template manager.*
 
 Now you have the ability to choose one of the installed process templates and download its definition to local machine.
 
@@ -32,7 +32,7 @@ Now you have the ability to choose one of the installed process templates and do
 
  ***Figure 2***: *You can choose a process template, and download its definition to a local directory.*
 
-If you look in download directory, you will see a bunch of XML files that you can edit directly with a XML editor to change the template; if you prefer a graphical editor, power tools has a better editing experience. Just open the Tools â€“&gt; process Editor â€“&gt; Process Templates â€“&gt; Open Process Template to open the *process Template Editor*.
+If you look in download directory, you will see a bunch of XML files that you can edit directly with a XML editor to change the template; if you prefer a graphical editor, power tools has a better editing experience. Just open the Tools –&gt; process Editor –&gt; Process Templates –&gt; Open Process Template to open the *process Template Editor*.
 
 [![image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Tfs-e-customizzazione-del-process-templa_93B5/image_thumb_2.png "image")](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Tfs-e-customizzazione-del-process-templa_93B5/image_6.png)
 

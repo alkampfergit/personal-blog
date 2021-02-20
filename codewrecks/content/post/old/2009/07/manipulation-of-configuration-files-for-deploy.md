@@ -31,7 +31,7 @@ Modifying a configuration file can be a breeze with [xmlpeek](http://tinyurl.com
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-With xmlpoke you can simply change part of the file with xpath syntax, here I change trace enabled attribute to be set as â€˜false', thus disabling tracing entirely ;) just to avoid another problem with the one I described before :D. Xmlpeek and xmlpoke are two of the most missing feature in [Msbuild](http://channel9.msdn.com/wiki/msbuild/equivalenttasks/), so in next posts I'll show you how to extend msbuild with these two actions.
+With xmlpoke you can simply change part of the file with xpath syntax, here I change trace enabled attribute to be set as ‘false', thus disabling tracing entirely ;) just to avoid another problem with the one I described before :D. Xmlpeek and xmlpoke are two of the most missing feature in [Msbuild](http://channel9.msdn.com/wiki/msbuild/equivalenttasks/), so in next posts I'll show you how to extend msbuild with these two actions.
 
 alk.
 

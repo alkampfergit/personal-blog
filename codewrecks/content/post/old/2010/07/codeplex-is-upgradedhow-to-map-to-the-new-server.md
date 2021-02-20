@@ -12,7 +12,7 @@ My frient Guardian [blogged](http://www.primordialcode.com/blog/post/update-tfs-
 
  ***Figure 1***: *Connect to the new codeplex address*
 
-Now, after you are connected to the right project collection, simply open the code from the local workspace that still maps to the old server, and Visual Studio should upgrade everything automatically. To verify if everything is ok, go to menu: *File â€“&gt; Source Control â€“&gt; Workspaces* and verify the server mapped in the workspace as in  **Figure 2**.
+Now, after you are connected to the right project collection, simply open the code from the local workspace that still maps to the old server, and Visual Studio should upgrade everything automatically. To verify if everything is ok, go to menu: *File –&gt; Source Control –&gt; Workspaces* and verify the server mapped in the workspace as in  **Figure 2**.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image_thumb20.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image20.png)
 

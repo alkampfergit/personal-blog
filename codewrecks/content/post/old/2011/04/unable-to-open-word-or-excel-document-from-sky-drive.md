@@ -17,7 +17,7 @@ I created a new user on my system, login with that user, and everything was perf
 - Clearing all password from credential manager.
 - Unlink and relink again my passport from credential manager.
 
-Then open word, create a new document, then go to File-&gt; Save and send â€“&gt; save to web menu
+Then open word, create a new document, then go to File-&gt; Save and send –&gt; save to web menu
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/image.png)
 

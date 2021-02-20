@@ -84,7 +84,7 @@ $(document).ready(function() {
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-Thanks to the [ajax-upload](http://valums.com/ajax-upload/) plugin, uploading a file is a breeze, first of all in the onSubmit I call one of my extension named setwait, that greys out the div containing the list of attachment, command is â€˜add' and when the calls succeded the funcion onComplete clear the waiting gif, parse the result of the page (remember that my AttachAjaxAction.aspx renders the grid after it performed desidered action.), filter to find the div with id â€˜the content' and substitute all html into the div that shows the grid. The rewire function is used to wire up some events. The last line calls a funcion named loadAttachmentAjax to load the grid the first time.
+Thanks to the [ajax-upload](http://valums.com/ajax-upload/) plugin, uploading a file is a breeze, first of all in the onSubmit I call one of my extension named setwait, that greys out the div containing the list of attachment, command is ‘add' and when the calls succeded the funcion onComplete clear the waiting gif, parse the result of the page (remember that my AttachAjaxAction.aspx renders the grid after it performed desidered action.), filter to find the div with id ‘the content' and substitute all html into the div that shows the grid. The rewire function is used to wire up some events. The last line calls a funcion named loadAttachmentAjax to load the grid the first time.
 
 {{< highlight js "linenos=table,linenostart=1" >}}
 

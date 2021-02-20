@@ -6,10 +6,10 @@ draft: false
 tags: [Process Template,Tfs]
 categories: [Team Foundation Server]
 ---
-1 â€“ [Customize Tfs Process Template](http://www.codewrecks.com/blog/index.php/2011/06/22/customize-tfs-process-template/)  
-2 â€“ [Basic of TFS Process Template Customization](http://www.codewrecks.com/blog/index.php/2011/06/23/basic-of-tfs-process-template-customization/)  
-3 â€“ [Adding Field to a Work Item Definition](http://www.codewrecks.com/blog/index.php/2011/06/24/customization-of-tfs-process-template-adding-field-to-a-work-item-definition/)  
-4 â€“ [Customize Work Item Fields with Rules](http://www.codewrecks.com/blog/index.php/2011/06/25/customize-work-items-fields-with-rules/)
+1 – [Customize Tfs Process Template](http://www.codewrecks.com/blog/index.php/2011/06/22/customize-tfs-process-template/)  
+2 – [Basic of TFS Process Template Customization](http://www.codewrecks.com/blog/index.php/2011/06/23/basic-of-tfs-process-template-customization/)  
+3 – [Adding Field to a Work Item Definition](http://www.codewrecks.com/blog/index.php/2011/06/24/customization-of-tfs-process-template-adding-field-to-a-work-item-definition/)  
+4 – [Customize Work Item Fields with Rules](http://www.codewrecks.com/blog/index.php/2011/06/25/customize-work-items-fields-with-rules/)
 
 In fourth chapter we familiarized with Rules and how you can customize a Work Items adding rules to it. You can find a complete list of [Rules at this link](http://msdn.microsoft.com/en-us/library/ms194953%28v=VS.100%29.aspx), but I want to show you the most useful ones (at least in my opinion).
 

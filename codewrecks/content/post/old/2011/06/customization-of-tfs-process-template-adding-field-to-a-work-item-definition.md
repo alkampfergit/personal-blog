@@ -6,8 +6,8 @@ draft: false
 tags: [ALM,Tfs]
 categories: [Team Foundation Server]
 ---
-1 â€“ [Customize Tfs Process Template](http://www.codewrecks.com/blog/index.php/2011/06/22/customize-tfs-process-template/)  
-2 â€“ [Basic of TFS Process Template Customization](http://www.codewrecks.com/blog/index.php/2011/06/23/basic-of-tfs-process-template-customization/?preview=true&amp;preview_id=2549&amp;preview_nonce=3474cce667)
+1 – [Customize Tfs Process Template](http://www.codewrecks.com/blog/index.php/2011/06/22/customize-tfs-process-template/)  
+2 – [Basic of TFS Process Template Customization](http://www.codewrecks.com/blog/index.php/2011/06/23/basic-of-tfs-process-template-customization/?preview=true&amp;preview_id=2549&amp;preview_nonce=3474cce667)
 
 In this third part it is time to configure the definition of a Work Item. This is the most complex and more useful section of the process template that you can modify to adapt to your needs. We can modify a WI definition in two distinct way: on a local process template as explained in the previous articles and directly on a Team Process that exists on the server.
 
@@ -21,7 +21,7 @@ To make all my examples on customization of Work Items I created a Team Project 
 
 To download the definition of a specific Work Item from a Team Project you use the command line tool  **[witadmin](http://msdn.microsoft.com/en-us/library/dd236914.aspx)** * **witadmin exportwitd /collection:** ** **http://localhost:8080/tfs/defaultCollect** ** **ion /p:TestAgile /n:Bug /f:bug.xml** *
 
-To edit a WI with the graphical editor you should open the Process Template Editor from the menu *Tools-&gt;Process Editor â€“&gt; WorkItemTypes-&gt;Open WIT from server* (Figure 1).
+To edit a WI with the graphical editor you should open the Process Template Editor from the menu *Tools-&gt;Process Editor –&gt; WorkItemTypes-&gt;Open WIT from server* (Figure 1).
 
 [![image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Customizzazione-del-process_99E2/image_thumb.png "image")](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Customizzazione-del-process_99E2/image_2.png)
 
