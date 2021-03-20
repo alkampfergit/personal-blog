@@ -1,5 +1,5 @@
 ---
-title: "Avoid IIS to use all of your IP and other amenities"
+title: "Avoid IIS to bind to every IP Address port and other amenities"
 description: "In developers machine, sometimes you need to use the same port from many programs and this can be a problem if you are using IIS"
 date: 2021-03-15T22:00:00+02:00
 draft: false
