@@ -2,7 +2,7 @@
 title: "Continuous integration: PowerShell way"
 description: "While Azure DevOps Pipeline or GitHub actions or whatever CI engine you choose can do most of the job with pre-made tasks, sometime going straight PowerShell can be the solution you need"
 date: 2021-04-17T07:12:42+02:00
-draft: true
+draft: false
 categories: ["AzureDevops"]
 tags: ["AzDo", "Pipeline"]
 ---
