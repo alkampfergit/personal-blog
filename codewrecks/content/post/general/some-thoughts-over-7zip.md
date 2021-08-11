@@ -34,11 +34,13 @@ mx=7-> 37825 ms file size 184362620 global reduction of 21.5% relative increase 
 mx=9-> 74693 ms file size 78668370 global reduction of 09.2% relative increase in compression time 2150.1% vs relative reduction 32.9%
 {{< / highlight >}}
 
-As you can see level 1 need 3.4 seconds to run and produces an archive that is **27.8% of the original space**, increasing the compression level to 7 needs 38 seconds to run but we have not a great reduction in size (21.5 vs 27.8%). We got an increment in running time of 1088% with a relative reduction size of the archive of 77.1%. It is **clear that in my situation using compression level 1 is far better than level 7**.
+As you can see level 1 need 3.4 seconds to run and produces an archive that is **27.8% of the original space**, increasing the compression level to 7 needs 38 seconds to run but we have not a great reduction in size (21.5% vs 27.8%). With an increment in running time of 1088% with a small reduction of size of generated archive, it is **clear that in my situation using compression level 1 is far better than level 7**.
 
 The real gain in size happens at compression level 9, where I have an archive that is 9.2% of the original size, but I need 74.5 seconds to run. So I have a 2150% increase in time with a relative reduction of size of 32.9 comparing to level 1.
 
-This is what developers found, they never have an archive **less than 78 MB in size**. Now I try the very same test with the old 9.2 version of 7za.exe.
+> If you have reduced upload bandwidth usually having reduced size of artifacts is the top one priority.
+
+But I have a real strange report from developer tesam, if they manually create the archive, they are not able to get an archive that is **less than 78 MB in size**. The only difference is that pipeline script uses the really old 9.20 version (7za), so I executed the very same test with that version.
 
 {{< highlight powershell "linenos=table,linenostart=1" >}}
 7za920.exe mx=1-> 28957 ms file size 227614220 global reduction of 26.5% relative increase in compression time 833.5% vs relative reduction 95.2%
@@ -58,7 +60,7 @@ This explain the different in build upload result, my Azure DevOps pipeline uses
 
 I've start to investigate, and since the original folder contains lots of identical files (dll and pdb) the problem **could be related to solid archive type**. A friend of mine suggests me to check for change in default option for solid archive block size, but all blocks are greater than my data, so it is not the problem.
 
-Then I started reading t!he help thoroughfully and here is what I found:
+Then I started reading t!he help thoroughly and here is what I found:
 
 ![Solid option for 7zip change in latest version](../images/solid-options-7zip.png)
 
@@ -76,7 +78,7 @@ mx=9 -mqs=on-> 42668 ms file size 37472502 global reduction of 04.4% relative in
 
 Results were astonishing, **as for 7za.exe version 9.20, I've start looking to an extreme reduction of size at compression level 5 where I got an archive of 42.5 MB size but in 15 seconds**. Even if the old version still generate a smaller archive (37 MB vs 42.5 MB), time of execution is 15 seconds versus 67 seconds. Raising the compression level to 9 I got almost the same size 37472502 vs 36468973 bytes, but in 42 seconds instead 67.
 
-> After all these test I can confirm that newest version of 7zip gives me the best results, 15 seconds of executino and a zip file that is 4.9% of the original size.
+> After all these test I can confirm that newest version of 7zip gives me the best results, 15 seconds of execution and a zip file that is 4.9% of the original size.
 
 These simple tests confirms me that 7zip is an exceptional product, but that sometimes needs some **fine grained tuning to get the maximum out of it**.
 
