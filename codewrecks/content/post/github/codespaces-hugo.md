@@ -3,7 +3,7 @@ title: "Use GitHub codespaces to author blog post"
 description: "Thanks to GitHub codespaces it is super easy to author blog post in hugo"
 date: 2021-08-19T08:00:00+02:00
 draft: false
-tags: ["GitHub"]
+tags: ["GitHub", "Codespaces"]
 categories: ["github"]
 ---
 
