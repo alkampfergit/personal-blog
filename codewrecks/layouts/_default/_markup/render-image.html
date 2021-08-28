@@ -1,0 +1,33 @@
+{{- $img := .Page.Resources.GetMatch .Destination -}}
+{{- if and (not $img) .Page.File -}}
+{{- $path := path.Join .Page.File.Dir .Destination -}}
+{{- $img = resources.Get $path -}}
+{{- end -}}
+{{- with $img -}}
+{{- $tiny := $img.Resize "500x" -}}
+{{- $small := $img.Resize "800x" -}}
+{{- $medium := $img.Resize "1200x" -}}
+{{- $large := $img.Resize "1500x" -}}
+{{- $alt := $.PlainText | safeHTML -}}
+{{- $caption := "" }}
+{{- with .Title -}}
+  {{- $caption = . | safeHTML -}}
+{{- end -}}
+<figure class="image-caption">
+  <a href="{{ $img.RelPermalink }}">
+    <img
+      loading='lazy'
+      height="{{ $img.Height }}" width="{{ $img.Width }}"
+      style="max-width: 100%; height: auto;"
+      srcset='{{ if le $img.Width "500" }}{{ with $img.RelPermalink }}{{.}} 500w, {{ end }}{{ else }}{{ with $tiny.RelPermalink }}{{.}} 500w, {{ end }}{{ if le $img.Width "800" }}{{ with $img.RelPermalink }}{{.}} 800w, {{ end }}{{ else }}{{ with $small.RelPermalink }}{{.}} 800w, {{ end }}{{ if le $img.Width "1200" }}{{ with $img.RelPermalink }}{{.}} 1200w, {{ end }}{{ else }}{{ with $medium.RelPermalink }}{{.}} 1200w, {{ end }}{{ if le $img.Width "1500" }}{{ with $img.RelPermalink }}{{.}} 15000w, {{ end }}{{ else }}{{ with $large.RelPermalink }}{{.}} 1500w, {{ end }}{{ if ge $img.Width "1800" }}{{ with $img.RelPermalink }}{{.}}{{ $img.Width }}w{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}'
+      src="{{ $img.RelPermalink }}"
+      alt="{{ $.Text }}"
+      >
+  </a>
+  {{- with $caption -}}
+    <figcaption>{{ with $.Title | safeHTML }}{{ . | markdownify }}{{ end }}</figcaption>
+  {{- end -}}
+</figure>
+{{- else -}}
+<a target="_blank" href="{{ .Destination }}"> <img src="{{ .Destination | safeURL }}" alt="{{ $.Text }}" /></a>
+{{- end -}}
