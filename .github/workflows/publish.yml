@@ -32,6 +32,7 @@ jobs:
           publish_dir: ./codewrecks/public
           external_repository: alkampfergit/alkampfergit.github.io
           publish_branch: master
+          keep_files: true
           
       - name: Install lftp
         run: sudo apt-get install lftp -y
