@@ -30,6 +30,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./codewrecks/public
+          external_repository: alkampfergit/alkampfergit.github.io
+          publish_branch: master
           
       - name: Install lftp
         run: sudo apt-get install lftp -y
