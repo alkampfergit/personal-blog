@@ -28,7 +28,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.DEPLOYKEY }}
           publish_dir: ./codewrecks/public
           external_repository: alkampfergit/alkampfergit.github.io
           publish_branch: master
