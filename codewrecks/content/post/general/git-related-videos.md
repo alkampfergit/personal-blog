@@ -9,9 +9,10 @@ categories: ["git"]
 
 I've started to create some Git related videos in my YouTube profile, this post will collect all of them for easier access.
 
+- Git Internals
+  - First Command: Hash Object [YouTube video](https://youtu.be/EVOTXpK95nk) 
 - GitHub 
   - [Perform Security Code Analysis in GitHub with CodeQL and GitHub actions](https://youtu.be/NjQ9covhknY)
   - [How to setup a GitHub Action Workflow to run CodeQL analysis on your code](https://youtu.be/9xWW0BwopDk)
-
 
 Gian Maria.
