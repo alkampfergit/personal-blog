@@ -98,4 +98,6 @@ foreach ($package in $upgradeList)
 
 Now I can simply launch this script periodically to automatically update only a selection of my installed application.
 
+[Discussion is here https://github.com/alkampfergit/personal-blog/discussions/11](https://github.com/alkampfergit/personal-blog/discussions/11)
+
 Gian Maria.
