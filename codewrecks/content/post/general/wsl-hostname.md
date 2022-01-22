@@ -7,6 +7,8 @@ tags: ["WSL"]
 categories: ["General"]
 ---
 
+Edit: actually I missed that I can add mshome.net to host name to correctly identify the ip of the host computer, like suggested [here](https://github.com/alkampfergit/personal-blog/discussions/13)
+
 In a WSL2 instance you are running inside a Virtual Environment managed by your Windows Operating system, and the greatest advantage is **the ability to work with a unified filesystem and being able to have a great communication between the two system**. This is perfect but I have a small problem, if I want to use the WSL2 instance to test some software I'm developing I'd like to access services running on my host operating system.
 
 > Lets discuss a typical scenario, I want to access ElasticSearch server running on my host from my WSL2 instance.
