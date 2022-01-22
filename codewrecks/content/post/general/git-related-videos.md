@@ -14,6 +14,7 @@ Code that I've shown in these video available on [GitHub](https://github.com/alk
 - Git Internals
   - First Command: Hash Object. [YouTube Video](https://youtu.be/EVOTXpK95nk) 
   - More on Hash Object and Cat-File command. [YouTube Video](https://youtu.be/5HkJwp5taO8)
+  - First Commit [YouTube Video](https://youtu.be/oovI2CJnxdE)
 - GitHub 
   - Perform Security Code Analysis in GitHub with CodeQL and GitHub actions. [YouTube Video](https://youtu.be/NjQ9covhknY)
   - How to setup a GitHub Action Workflow to run CodeQL analysis on your code. [YouTube Video](https://youtu.be/9xWW0BwopDk)
