@@ -3,7 +3,7 @@ title: "Code scanning in GitHub"
 description: "GitHub code scanning is finally available, I strongly suggest you to have a look at it"
 date: 2020-10-03T08:00:00+02:00
 draft: false
-tags: ["github"]
+tags: ["GitHub"]
 categories: ["github"]
 ---
 

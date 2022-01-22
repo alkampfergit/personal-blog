@@ -3,7 +3,7 @@ title: "CodeQL Scanning in GitHub"
 description: "GitHub code scanning can spot security problem in your code automatically, a really nice feature"
 date: 2021-03-14T08:00:00+02:00
 draft: false
-tags: ["github"]
+tags: ["GitHub"]
 categories: ["security"]
 ---
 

@@ -3,7 +3,7 @@ title: "GitHub Actions permission settings"
 description: "In a GitHub repository you can fine tuning which actions can run in your workflow"
 date: 2021-11-27T06:00:00+00:00
 draft: false
-tags: ["github"]
+tags: ["GitHub"]
 categories: ["security"]
 ---
 

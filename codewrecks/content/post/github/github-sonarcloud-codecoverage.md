@@ -3,7 +3,7 @@ title: "Code coverage in SonarCloud and GitHub Actions"
 description: "How to obtain code coverage for a C# .NET Core 5 project in GitHub with actions"
 date: 2021-07-08T19:00:00+02:00
 draft: false
-tags: ["github"]
+tags: ["GitHub"]
 categories: ["coding"]
 --- 
 

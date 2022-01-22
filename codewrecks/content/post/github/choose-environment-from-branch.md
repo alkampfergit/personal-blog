@@ -3,7 +3,7 @@ title: "Choose environment from branch in GitHub action"
 description: "In a GitHub action you can have the need to choose the environment to use based on current branch, here is how you can do it."
 date: 2021-08-18T08:00:00+02:00
 draft: false
-tags: ["github"]
+tags: ["GitHub"]
 categories: ["security"]
 ---
 
