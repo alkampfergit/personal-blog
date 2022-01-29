@@ -2,7 +2,7 @@
 title: "Git Related Videos"
 description: "List of my git related videos on my Youtube account"
 date: 2022-01-10T06:00:00+02:00
-draft: false
+draft: true
 tags: ["git", "videos"]
 categories: ["git"]
 ---
