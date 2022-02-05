@@ -3,8 +3,8 @@ title: "Using certificate for SSH in Azure Linux VM"
 description: ""
 date: 2015-10-13T17:00:37+02:00
 draft: false
-tags: [linux,ssh]
-categories: [Linux]
+tags: ["Security", "Linux"]
+categories: ["Linux"]
 ---
 If you like [to use certificate to connect via SSH to your Linux machine](http://www.codewrecks.com/blog/index.php/2015/10/10/using-certificate-to-connect-via-ssh-to-your-linux-machine/) you will probably use that technique to access all of your VMs, even those one hosted on Azure.
 

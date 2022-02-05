@@ -19,5 +19,3 @@ I like in C# not to have the open bracket in newline, it is not the default sett
 It is very important that a team agrees to a common layout scheme.
 
 Alk.
-
-Tags: [Coding Layout](http://technorati.com/tag/Coding%20Layout) [Visual Studio Settings](http://technorati.com/tag/Visual%20Studio%20Settings)

@@ -3,8 +3,8 @@ title: "Determine version with GitVersion for a Python project"
 description: "Dotnet based utilities can be used in GitHub actions for projects not based on .NET. As an example Gitversion is really useful to determine versioning"
 date: 2021-09-04T08:00:00+02:00
 draft: false
-tags: ["github", "Gitversion"]
-categories: ["coding"]
+tags: ["Git"]
+categories: ["Programming"]
 --- 
 
 Project used for this example can be found [in GitHub](https://github.com/alkampfergit/GitGraphAutomation).

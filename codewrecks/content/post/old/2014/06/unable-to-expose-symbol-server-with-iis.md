@@ -3,8 +3,8 @@ title: "Unable to expose Symbol Server with IIS"
 description: ""
 date: 2014-06-01T13:00:37+02:00
 draft: false
-tags: [Symbols]
-categories: [Team Foundation Server]
+tags: []
+categories: ["Team Foundation Server"]
 ---
 Sadly enough, I verified in these years that many people using TFS ignore what a symbol server is. For all those readers that does not know what a symbol server is, I suggest to  **read my previous article that explains** [**how to manage a symbol server on Azure or on-premises VM with TFS and IIS**](http://www.codewrecks.com/blog/index.php/2013/07/04/manage-symbol-server-on-azure-or-on-premise-vm-and-tf-service/).
 

@@ -3,8 +3,8 @@ title: "Is it possible to run Coded Ui Test in a Virtual Machine instead that in
 description: ""
 date: 2013-06-10T06:00:37+02:00
 draft: false
-tags: [CUIT,Testing]
-categories: [Visual Studio]
+tags: ["Test", "Visual Studio"]
+categories: ["Programming"]
 ---
 Code UI Test are an effective way to test your UI through automation, they absolutely are not a substitution for Unit Testing, but they can be used effectively to verify the whole application behave as expected. The most annoying part of Coded UI Test is that  **while they are running you cannot do anything else on the computer, because mouse and UI are used to run the test**. This lead to a very common question
 

@@ -3,8 +3,8 @@ title: "Manipulate Expression Tree in DtoGenerator"
 description: ""
 date: 2009-08-12T02:00:37+02:00
 draft: false
-tags: [LINQ,T4 Generator]
-categories: [LINQ,Software Architecture]
+tags: ["Visual Studio", "LINQ"]
+categories: ["Programming"]
 ---
 I'm writing a simple [Dto generator](http://www.codewrecks.com/blog/index.php/2009/07/31/dto-generator-and-repository-integration/), and today I found a challenging problem. I supported dto composition like this:
 
@@ -109,4 +109,3 @@ Then I need to recreate the BindingExpression (line 41-43) and returning in plac
 
 alk.
 
-Tags: [T4 Generator](http://technorati.com/tag/T4%20Generator) [Expression Tree](http://technorati.com/tag/Expression%20Tree) [LINQ](http://technorati.com/tag/LINQ)

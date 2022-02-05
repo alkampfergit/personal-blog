@@ -3,8 +3,8 @@ title: "WebBrowser control and Gecko Browser control in a single UI"
 description: ""
 date: 2010-10-21T16:00:37+02:00
 draft: false
-tags: [Gecko]
-categories: [WPF]
+tags: ["Programming"]
+categories: ["WPF"]
 ---
 I works quite often in last months with WPF programs that need to include a browser control, and the obvious choice is using WebBrowser control. In last days we need to use Gecko Browser, because we like the ability to customize it and to make possible for the user to look at a site with IE rendering or Firefox Rendering.
 

@@ -3,8 +3,8 @@ title: "Using CUIT on Firefox 4X does not works"
 description: ""
 date: 2011-05-31T13:00:37+02:00
 draft: false
-tags: [CUIT,Visual Studio]
-categories: [Visual Studio]
+tags: ["Test", "Visual Studio"]
+categories: ["Programming"]
 ---
 Suppose you have downloaded the Feature Pack 2 of Visual Studio 2010, enabled firefox support but when you run a CUIT on firefox you got this error.
 

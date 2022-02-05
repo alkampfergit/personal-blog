@@ -3,8 +3,8 @@ title: "Grey screen RDP to Ubuntu server VM running on Azure"
 description: ""
 date: 2014-05-28T20:00:37+02:00
 draft: false
-tags: [Ubuntu]
-categories: [Linux]
+tags: ["Linux"]
+categories: ["Linux"]
 ---
 There are a [lot of articles](http://blogs.technet.com/b/uktechnet/archive/2013/11/12/running-a-remote-desktop-on-a-windows-azure-linux-vm.aspx) that explains how to setup a Ubuntu machine on Azure and being able to use xrdp to access it with a standard Remote Desktop session. If you try now and  **use Ubuntu 14 to create your virtual machine you will discover that you are able to RDP to the machine, but after inserting credential you will be prompted with a grey Screen**.
 

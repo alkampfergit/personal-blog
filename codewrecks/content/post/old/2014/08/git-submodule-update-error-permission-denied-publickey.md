@@ -3,8 +3,8 @@ title: "Git submodule update error Permission Denied Publickey"
 description: ""
 date: 2014-08-10T07:00:37+02:00
 draft: false
-tags: [Git,ssh]
-categories: [Git]
+tags: ["Git"]
+categories: ["Git"]
 ---
 It could happens when you clone a Git Repository with submodules, issuing a * **git submodule update** *command, you are prompted with this error error.
 

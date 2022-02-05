@@ -3,8 +3,8 @@ title: "GeckoFX for c strange behavior"
 description: ""
 date: 2011-01-28T14:00:37+02:00
 draft: false
-tags: [Gecko]
-categories: [Experiences]
+tags: ["Programming"]
+categories: ["Programming"]
 ---
 Today I faced a very strange problem with GeckoBrowser, after navigating a page I simply need to grab all the HTML of the page to analyze it. I try to access the * **GeckoBrowser.Document.TextContentv** *property but it is always null.
 
