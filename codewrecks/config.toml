@@ -6,7 +6,7 @@ theme = "minimo"
 rssLimit = 200
 
 # disqusShortname = "codewrecks-1"
-googleAnalytics = "UA-1773115-4"
+# googleAnalytics = "UA-1773115-4"
 
 Paginate = 10
 preserveTaxonomyNames = true
