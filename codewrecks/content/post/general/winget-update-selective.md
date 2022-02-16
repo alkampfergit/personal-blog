@@ -7,6 +7,8 @@ tags: ["Windows"]
 categories: ["General"]
 ---
 
+Edit: I've stored [gist of the script here](https://gist.github.com/alkampfergit/2f662c07df0ca379c8e8e65e588c687b)
+
 Winget is finally [here](https://www.codewrecks.com/post/general/winget-intro/) and we can, at least, using a package manager on windows **to simplify application management**. Everything is good, except that some packages are not ready to be upgraded. **As an example in my system I have python 2.7 and 3.x, winget always try to upgrade 3.x version at each run and messed up my installation**. At the end of the Nth upgrade of python my Visual Studio code was not able anymore to debug and run python.
 
 > One of the problem of winget is that is not "PowerShell ready", it does not output object, it only output standard text.
