@@ -22,9 +22,11 @@ Code that I've shown in these video available on [GitHub](https://github.com/alk
   - Remotes - An introduction [YouTube Video](https://youtu.be/S0LcsBekjeM)
   - Remotes - simple two developers colleaboration workflow [YouTube Video](https://youtu.be/KfJgrid2MzI)
 - **Azure DevOps**
+  - How Git connects to your Azure Repositories [YouTube Video](https://youtu.be/SmadNFAnQf8)
   - Index your .NET code thanks to Azure DevOps symbol server [YouTube Video](https://youtu.be/XDKLDOfdb0k)  
 - **GitHub**
   - Perform Security Code Analysis in GitHub with CodeQL and GitHub actions. [YouTube Video](https://youtu.be/5x0FXK0rUT0)
   - How to setup a GitHub Action Workflow to run CodeQL analysis on your code. [YouTube Video](https://youtu.be/syNCq7h-CNA)
+  - How to use a Yubikey on Windows to secure your SSH key to connect to GitHub with SSH protocol. [YouTube Video](https://youtu.be/vRYkiHBHehI)
 
 Happy watching
