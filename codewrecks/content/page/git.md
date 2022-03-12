@@ -29,5 +29,7 @@ Code that I've shown in these video available on [GitHub](https://github.com/alk
   - Perform Security Code Analysis in GitHub with CodeQL and GitHub actions. [YouTube Video](https://youtu.be/5x0FXK0rUT0)
   - How to setup a GitHub Action Workflow to run CodeQL analysis on your code. [YouTube Video](https://youtu.be/syNCq7h-CNA)
   - How to use a Yubikey on Windows to secure your SSH key to connect to GitHub with SSH protocol. [YouTube Video](https://youtu.be/vRYkiHBHehI)
+- **Miscellaneous tips**
+  - Git Log triple dot syntax to quickly compare different commits between two branches. [YouTube Video](https://youtu.be/FjH2jo70XRg) 
 
 Happy watching
