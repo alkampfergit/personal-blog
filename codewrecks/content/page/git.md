@@ -7,7 +7,7 @@ menu: main
 
 I've started to create some Git related videos in my YouTube profile, this post will collect all of them for easier access.
 
-Code that I've shown in these video available on [GitHub](https://github.com/alkampfergit/GitCoursePublic)
+Code that I've shown in these video available on [GitHub](https://github.com/alkampfergit/GitCoursePublic). I've also some code that is used in these videos available also on [GitHub](https://github.com/alkampfergit/GitCoursePublic) that also contains a small [Wiki](https://github.com/alkampfergit/GitCoursePublic/blob/main/wiki/readme.md) with some recap on the various commands/concepts explained in the videos.
 
 - **Git Internals**
   - First Command: Hash Object. [YouTube Video](https://youtu.be/oSX9XBoZLRk) 
