@@ -32,5 +32,5 @@ Code that I've shown in these video available on [GitHub](https://github.com/alk
   - How to use a Yubikey on Windows to secure your SSH key to connect to GitHub with SSH protocol. [YouTube Video](https://youtu.be/vRYkiHBHehI)
 - **Miscellaneous tips**
   - Git Log triple dot syntax to quickly compare different commits between two branches. [YouTube Video](https://youtu.be/FjH2jo70XRg) 
-
+  - Git log --pretty-format can be used to dump log in a machine parsable format and create visualization tools [YouTube Video](https://youtu.be/fgzINC8pR-A)
 Happy watching
