@@ -24,6 +24,7 @@ Code that I've shown in these video available on [GitHub](https://github.com/alk
 - **Azure DevOps**
   - How Git connects to your Azure Repositories [YouTube Video](https://youtu.be/SmadNFAnQf8)
   - Use SSH to connect to your Azure DevOps Git repositories [YouTube Video](https://youtu.be/kzLJna_aqIM)
+  - Connect from a Linux machine to your Azure DevOps account [YouTube Video](https://youtu.be/NRd27LBZwYI)
   - Index your .NET code thanks to Azure DevOps symbol server [YouTube Video](https://youtu.be/XDKLDOfdb0k)  
 - **GitHub**
   - Perform Security Code Analysis in GitHub with CodeQL and GitHub actions. [YouTube Video](https://youtu.be/5x0FXK0rUT0)
