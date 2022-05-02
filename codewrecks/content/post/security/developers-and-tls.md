@@ -117,7 +117,7 @@ Now a developer can simply get the certificate and the private key from certbot 
 
 The result is that now every developer has a local KeyCloak instance running smoothly with a valid TLS certificate answering to a common name used by all developers.
 
-![Local KeyCloak server running in local docker but with a perfectly valid certificate](../images/keycloak-dns.png)
+![Local KeyCloak server running in local docker but with a perfectly valid certificate](../images/local-keycloak.png)
 ***Figure 2:*** *Local KeyCloak server running in local docker but with a perfectly valid certificate*
 
 Honestly, now that certificates are free, please teach your developers to use real valid certificates even for developing machines, **the long advantage of this approach will pay big in security**.
