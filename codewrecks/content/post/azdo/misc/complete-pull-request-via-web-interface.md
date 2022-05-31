@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps: complete Pull Requests via web interface"
 description: "To speedup closing of Pull Requests you can use the web interface to close them, without any need to use your toolchain"
-date: 2022-05-31T08:00:00+02:00
+date: 2022-05-31T06:00:00+02:00
 draft: false
 tags: ["blogging"]
 categories: ["general"]
