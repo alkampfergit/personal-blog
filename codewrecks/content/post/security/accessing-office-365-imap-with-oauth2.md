@@ -15,9 +15,11 @@ The problem is that I was not able to find a complete example. Microsoft has a [
 
 > I've literally spent more than half a day looking for a complete example, then I decided to reimplement the whole process 
 
-The complete example can be found in [GitHub at this address](https://github.com/alkampfergit/DotNetCoreOauth2)
+Here you have all the resources I've published.
 
-Microsoft has [an article that describe everything](https://docs.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) it is a good article but it lacks a complete example, and some parts need in my opinion a slightly more detailed explanation.
+- The complete example can be found in [GitHub at this address](https://github.com/alkampfergit/DotNetCoreOauth2)
+- I've done a first video for interactive flow [https://youtu.be/Q660AYVZM0Y](https://youtu.be/Q660AYVZM0Y) 
+- I've done a second video for NON INTERACTIVE flow with Client Credential Grant Flow [https://youtu.be/bMYA-146dmM](https://youtu.be/bMYA-146dmM)
 
 # First scenario
 
