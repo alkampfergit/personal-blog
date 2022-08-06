@@ -4,7 +4,7 @@ description: "Microsoft will disable basic auth for IMAP server and will support
 date: 2022-08-01T10:13:30+02:00
 draft: false
 tags: ["security"]
-categories: ["security", "auth2"]
+categories: ["security", "OAuth2"]
 ---
 
 # The situation
@@ -16,6 +16,8 @@ The problem is that I was not able to find a complete example. Microsoft has a [
 > I've literally spent more than half a day looking for a complete example, then I decided to reimplement the whole process 
 
 The complete example can be found in [GitHub at this address](https://github.com/alkampfergit/DotNetCoreOauth2)
+
+Microsoft has [an article that describe everything](https://docs.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) it is a good article but it lacks a complete example, and some parts need in my opinion a slightly more detailed explanation.
 
 # First scenario
 
