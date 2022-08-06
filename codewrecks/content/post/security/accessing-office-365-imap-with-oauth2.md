@@ -2,7 +2,7 @@
 title: "Accessing Office 365 with IMAP and OAuth2"
 description: "Microsoft will disable basic auth for IMAP server and will support only authentication with XOAUTH2 tokens, lets view a complete C# example that will show the entire process"
 date: 2022-08-01T10:13:30+02:00
-draft: true
+draft: false
 tags: ["security"]
 categories: ["security", "auth2"]
 ---
