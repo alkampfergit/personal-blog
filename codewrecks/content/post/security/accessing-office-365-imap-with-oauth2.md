@@ -57,7 +57,7 @@ This part should be simple, and it is the prerequisite to start using OAuth2. Fi
 
 You find client and tenant id **in the detail of applications** as shown in the above picture.
 	
-![Get details for application to copy in the application](../images/azure-app-permissions-imap.png)
+![Get details for application to copy in the application](../images/client-and-tenant-id.png)
 ***Figure 4***: *Get details for application to copy in the application.*
 
 Now, after the application was created, you only need to perform OAuth2 authentication flow to get a valid token. In this first example **I've given the Imap.AccessAsUser.All scope, this imply using a Code flow authentication and a user delegated permission**.
