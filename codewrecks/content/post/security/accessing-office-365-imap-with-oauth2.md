@@ -20,7 +20,7 @@ Here you have all the resources I've published.
 - The complete example can be found in [GitHub at this address](https://github.com/alkampfergit/DotNetCoreOauth2)
 - I've done a first video for interactive flow [https://youtu.be/Q660AYVZM0Y](https://youtu.be/Q660AYVZM0Y) 
 - I've done a second video for NON INTERACTIVE flow with Client Credential Grant Flow [https://youtu.be/bMYA-146dmM](https://youtu.be/bMYA-146dmM)
-
+- I've done a Third video with a recap and added code to access SMTP [https://youtu.be/hOgvTDKKgnY](https://youtu.be/hOgvTDKKgnY)
 # First scenario
 
 In the first scenario I have an ASP.NET application (Client application in OAuth2 terminology) where users can navigate and delegate permission to access their email. **We need the client application being able to access the folder for a long time, even if the user is not logged in**. This is the scenario where users gave application permission to monitor their email to perform some automation, or is the scenario in which an administrator create a special user with a special email, and use that user to grant application right to use the special email. 
