@@ -1,5 +1,5 @@
 ---
-title: "Pills: Visual Studio lost access to authenticate Nuget feed"
+title: "Pills: Visual Studio lost access to authenticated Nuget feed"
 description: "Sometimes Visual Studio seems not to work anymore with authenticated nuget feed, here are some suggestions to avoid being stuck."
 date: 2022-09-26T08:12:42+02:00
 draft: false
