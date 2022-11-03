@@ -1,7 +1,7 @@
 ---
 title: "Configure Data Protection API in .NET Core"
 description: "When you need to encrypt something with .NET Core, probably the best solution is using IDataProtectionProvider interface, already built in in the environment. Lets see how you can simplify configuration and make it simple with Self Signed Certificate"
-date: 2022-11-03T18:50:30+02:00
+date: 2022-11-03T16:00:30+02:00
 draft: false
 tags: ["security", "TLS"]
 categories: ["security"]
