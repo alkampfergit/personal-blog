@@ -2,7 +2,7 @@
 title: "Develop locally with GitHub Codespaces and Hugo"
 description: "Visual Studio Code + GitHub Codespaces + Hugo = a great combination to write blog post"
 date: 2023-01-12T08:00:00+02:00
-draft: true
+draft: false
 tags: ["GitHub", "Codespaces"]
 categories: ["github"]
 ---
