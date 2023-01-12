@@ -8,7 +8,7 @@ categories: [Domain Driven Design]
 ---
 In a typical online web browser role playing game, usually players has *resources*, that are needed to create building, weapon etc etc, and those resources are timed based. In the domain the concepts is something like *the player earn X energy each second*.
 
-![](http://www.thinkgeek.com/images/products/zoom/mana_energy_potion_sixpack.jpg)
+![External Image](http://www.thinkgeek.com/images/products/zoom/mana_energy_potion_sixpack.jpg)
 
 This is a typical situation in a role playing web game and if you try to implement logic at database level you can find a lot of problems. First of all, suppose you have some stored procedure or data related logic to load the correct value of the *energy* (you can store amount and a time and calculate the right value doing a diff with the current value). When you load data you could not store the value in cache, because it get staled quite immediately and can lead to incorrect behavior. You can implement some logic to keep cache data updated, but the whole problem is that logic gets scattered all over the program. The real problem is that you have the risk of not knowing exactly where the logic of *time growing resource* is effectively handled in your code.
 

@@ -10,7 +10,7 @@ The concept of Request-Response service is to have an endpoint with a single fun
 
 The only drawback is that sometimes these architectures are quite complex for the average programmer, at least you can introduce them in a team where everyone is quite familiar with concept of Inversion Of Control, Dependency Injection, etc etc. The risk is that people are scared about the complexity and they start to believe that the benefit of such an architecture does not worth the extra complexity of the code, after all with WCF you can simply create a function on the interface, an implementation on a service class, update service reference and the game is done. On the contrary, some implementations of Request/Response pattern are quite complicated, you need to create a request, then the handler, then configure the IoC engine, etc etc.
 
-![](http://i443.photobucket.com/albums/qq156/JenniferJ_28/PUZZLED-1.gif)
+![External Image](http://i443.photobucket.com/albums/qq156/JenniferJ_28/PUZZLED-1.gif)
 
 Another problem is that *one of the key requirement of an architecture is that it is perfectly understood by the whole team*, if some members use an architecture without fully comprehension, you are in trouble because you are creating a bottleneck because only some person of the team are capable to modify base architecture or solve bugs. This can lead to a fight between programmer and architecture, because everytime the service does not behave correctly people are puzzled on what happened (maybe the IoC engine is badly configured, maybe some interceptor created error, etc etc)
 

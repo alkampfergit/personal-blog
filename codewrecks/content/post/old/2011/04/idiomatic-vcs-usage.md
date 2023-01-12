@@ -8,11 +8,11 @@ categories: [Team Foundation Server]
 ---
 When it is time to compare two [VCS](http://en.wikipedia.org/wiki/Revision_control) there are a lot of features to be taken into account, and in my opinion one of the most important is *the team is already used to some VCS?*. One of the most difficult part of learning a new VCS, is avoiding to use it in the same way you use a different product, because each VCS could potentially have a different way to do the same thing.
 
-![](http://t3.gstatic.com/images?q=tbn:ANd9GcRHoinmgqdfm7X8FYIi1aiC79z62au75CxBo2mxRY7qnDUioSj-Yg)
+![External Image](http://t3.gstatic.com/images?q=tbn:ANd9GcRHoinmgqdfm7X8FYIi1aiC79z62au75CxBo2mxRY7qnDUioSj-Yg)
 
 Take as example moving from SVN to TFS, both of them are quite similar on the surface, but they are really different under the hood. One of the most significant difference is that TFS stores in the server the status of the *local copy* of users, while in Subversion there is no equivalent concept. This lead to subtle differences and a general better offline experience for Subversion user. In SVN you can simply edit a file, then issue an update and the svn client will determines witch file were changed to populate the list of *pending changes*, TFS on the contrary marked files as read-only, and when you need to modify a file it issue an explicit Check-Out to the server to inform the server that the file is being edited by user XXX.
 
-![](http://t3.gstatic.com/images?q=tbn:ANd9GcR2YGUOHQ8UnwsLsToRL78uLkB4kMDPyk5ndlXFuIsAUu5Pacme-g)
+![External Image](http://t3.gstatic.com/images?q=tbn:ANd9GcR2YGUOHQ8UnwsLsToRL78uLkB4kMDPyk5ndlXFuIsAUu5Pacme-g)
 
 This is needed because SVN was originally created to support open source communities, where working with offline server is the standard thus offline experience should be good. TFS was born to serve large amount of users in corporate environment, and explicit check-out help people to understand who is working on a specific file.
 

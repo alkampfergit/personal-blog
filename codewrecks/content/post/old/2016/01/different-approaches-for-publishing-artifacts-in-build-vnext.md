@@ -14,7 +14,7 @@ I believe that  **this is the perfect approach for complex application, where we
 
 If you create a new Build definition today on VSTS this is the default template that is created for a Visual Studio Solution.
 
-[![](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb14.png "Actual template for standard Visual Studio Build")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image14.png)
+[![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image_thumb14.png "Actual template for standard Visual Studio Build")](https://www.codewrecks.com/blog/wp-content/uploads/2016/01/image14.png)
 
  ***Figure 1***: *Actual template for standard Visual Studio Build*
 

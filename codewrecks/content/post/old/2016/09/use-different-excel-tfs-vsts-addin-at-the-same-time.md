@@ -22,7 +22,7 @@ In Italian Visual Studio forum [there is a question](https://social.msdn.microso
 
 The solution to this problem is simple, because you can choose in Excel the addin version you want to use. You just need to go to Excel Settings, then choose Add-ins (1) then manage Com Add-ins (2) and finally press the Go button.
 
-![](https://social.msdn.microsoft.com/Forums/getfile/928586)
+![External Image](https://social.msdn.microsoft.com/Forums/getfile/928586)
 
  ***Figure 1***: *Managing Excel addins from settings pane.*
 
@@ -34,7 +34,7 @@ If you scroll down the addin list,  **you should see several version of the addi
 
 You can understand the version of the addin simply looking at the location, but the cool part is that you can enable more than one addin at the very same time. As a result you have multiple Team ribbon tab in your Excel as shown in Figure 3.
 
-![](https://social.msdn.microsoft.com/Forums/getfile/928591)
+![External Image](https://social.msdn.microsoft.com/Forums/getfile/928591)
 
  ***Figure 3***: *Multiple TFS Addin enabled at the very same time*
 

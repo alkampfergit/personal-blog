@@ -10,7 +10,7 @@ In [previous post](http://www.codewrecks.com/blog/index.php/2011/05/21/new-video
 
 I need two video card because I have three monitors, I used to keep my central and primary monitor attached to primary video card, while the other two (24'' and, 17'' on the secondary video card). I always have Motherboard with two PCI express 16x (physically) slots, and in my old system everything is ok.
 
-![](http://www.dirtymouse.co.uk/wp-content/uploads/ok_regular.jpg)
+![External Image](http://www.dirtymouse.co.uk/wp-content/uploads/ok_regular.jpg)
 
 You should know, that even if your motherboard has two 16X PCI express slot, usually these two are only physically a 16x, because the secondary one is usually [a 4x electrical](http://forums.anandtech.com/showthread.php?t=1976657). This means that the secondary video card runs on a 4X PCI Express bandwidth, and usually this is not a problem for me. Now I should heavily rant against Asus and a little bit on myself for not reading all specification with great care. Here is what asus tells me about P8P67 motherboard.
 

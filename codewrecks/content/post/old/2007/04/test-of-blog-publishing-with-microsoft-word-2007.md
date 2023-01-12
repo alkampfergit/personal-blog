@@ -50,7 +50,7 @@ Some in C#
   
 And at last one image, this is the place where I work, my home...quite messy isn’t it?? :D
 
-![](http://76.163.32.29/Alkampfer/wp-content/uploads/2007/04/042707-0905-testofblogp13.jpg)
+![External Image](http://76.163.32.29/Alkampfer/wp-content/uploads/2007/04/042707-0905-testofblogp13.jpg)
 
 Now let’s see if word can publish all this post in my new wordpress blog. :D :D :D
 

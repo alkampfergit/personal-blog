@@ -14,7 +14,7 @@ That episode makes me understand the importance of your data, so every day I beg
 
 I learned also the importance of verify the restore procedure, nothing is more dangerous of a false security, you think that you have a good backup, and when you need it...
 
-![](http://th01.deviantart.com/fs5/300W/i/2004/284/4/b/fiery_horror_by_sc4mp1.jpg)
+![External Image](http://th01.deviantart.com/fs5/300W/i/2004/284/4/b/fiery_horror_by_sc4mp1.jpg)
 
 You will find that your backup is not so good, and you lost data or you are not able to recover all of your data.
 

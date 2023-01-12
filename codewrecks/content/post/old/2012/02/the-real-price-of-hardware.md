@@ -8,7 +8,7 @@ categories: [General]
 ---
 I bought a Vertex 3 240GB SSD drive for 270€ VAT included and some of my friend told that this is an expensive drive and they do not want to spend so much money for a Drive. The problem is how you use your hardware, in my life I work as a software consultant, and I spent most of the time in front of a computer compiling and programming and if spending 270€ can make my work more productive it worth the money I spent, because I can work faster.
 
-![](http://3.bp.blogspot.com/-ckZM0I2KDMw/Tl58zFrKyAI/AAAAAAAABD4/1EUIAA9t3io/s1600/smart-money-saving.jpg)
+![External Image](http://3.bp.blogspot.com/-ckZM0I2KDMw/Tl58zFrKyAI/AAAAAAAABD4/1EUIAA9t3io/s1600/smart-money-saving.jpg)
 
 The main reason that makes me bough a new SSD is that I work a lot with virtual machine and the difference of performance of a VM machine when run from a SSD or from my RAID of 2 velociraptor was outragous, but with my single 120 GB SSD I have trouble to make enough room to run my VM so I decided to buy a new drive. When it was time to decide what to buy I opted for a 240 GB SSD, so I could remove the RAID, all the fan dedicated to the two velociraptor (they are really hot :)) but to be honest I did not expect a great increase in overall performances. But I was wrong.
 

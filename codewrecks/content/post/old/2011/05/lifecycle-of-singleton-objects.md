@@ -8,7 +8,7 @@ categories: [Software Architecture]
 ---
 Some days ago I blogged about an implementation of persistent cache component based on Managed Esent and [PersistentDictionary](http://managedesent.codeplex.com/wikipage?title=PersistentDictionaryDocumentation). This component is injected into other components thanks to Inversion of Control and it is a *[Singleton](http://en.wikipedia.org/wiki/Singleton_pattern)* object.
 
-![](http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png)
+![External Image](http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png)
 
 Being a singleton is a requisite because it permits to different dependent objects to share the same cache, moreover *PersistentDictionary* does not permit to have multiple instances that insists on the same directory. This will make EsentCache a perfect candidate of Singleton Object Pattern. Now another dilemma arise, *since PersistentDictionary implements IDisposable to flush all resources into disk, who will call Dispose on a Singleton object?*
 

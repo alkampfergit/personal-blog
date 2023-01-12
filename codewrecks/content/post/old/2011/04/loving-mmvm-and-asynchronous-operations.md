@@ -20,7 +20,7 @@ This works but I need to solve a couple of problems.
 
 The first one is that I never remember the syntax :). I find the name *TriggerUsing()* somewhat confusing (it is surely my fault :) ) and moreover I hardly remember *PropertyChangedObserver* name of the class used to monitor the change of a property. This cause me every time I create a new DelegateCommand to search another VM to copy initialization. Since monitoring change of a property to reevaluate if a command can be executed is probably one of the most common logic, I wish for a better syntax to avoid being puzzled on what method to call.
 
-![](http://successbeginstoday.org/wordpress/wp-content/uploads/2008/01/problems.jpg)
+![External Image](http://successbeginstoday.org/wordpress/wp-content/uploads/2008/01/problems.jpg)
 
 The second problem is that some operations are really time consuming (they talk with remote service that does heavy operations), and I need to disable all controls in the UI while showing some indicator that a time consuming operation is running. To achieve this result I want to write as less code as possible and I want to delegate everything to the DelegateCommand. Here is final result
 

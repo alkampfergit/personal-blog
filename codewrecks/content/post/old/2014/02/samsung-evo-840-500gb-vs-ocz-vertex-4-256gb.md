@@ -8,7 +8,7 @@ categories: [EverydayLife]
 ---
 I’ve decided to move to a 500 GB SSD to have plenty of space to store my virtual machines. At the time of the decision, Samsung EVO was the better option. I’ve posted in the past benchmarks for my Vertex4 256 GB
 
-![](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/SNAGHTMLa0b84_thumb.png)
+![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2013/03/SNAGHTMLa0b84_thumb.png)
 
 And I was really curious about performance of Samsung EVO. Vertex 4 has a real impressive write speed, even if after one year of use if you test it again you can find a decrease in performance. Running test on the Evo gave me these results.
 

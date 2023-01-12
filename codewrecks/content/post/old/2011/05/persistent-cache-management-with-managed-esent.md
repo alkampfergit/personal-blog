@@ -14,7 +14,7 @@ I have really different types of cache, for data that needs to be temporary stor
 
 The first and obvious solution was to create a very simple component that stores cache data on application database, this is especially useful because program running from different computer could share the same cache with no problem. (program was born when [Velocity](http://www.hanselman.com/blog/InstallingConfiguringAndUsingWindowsServerAppFabricAndTheVelocityMemoryCacheIn10Minutes.aspx) still not exists, and we decided to keep everything really simple)
 
-![](http://www.sdtimes.com/blog/image.axd?picture=2010%2F12%2Fdatabase1.jpg)
+![External Image](http://www.sdtimes.com/blog/image.axd?picture=2010%2F12%2Fdatabase1.jpg)
 
 The main drawback to this approach is the traffic to the database, and we have some specific part of the application based on windows client that communicates over WCF, and deployed outside our organization.
 

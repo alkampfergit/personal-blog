@@ -18,7 +18,7 @@ Sometimes I need to access small legacy databases to do a small amount of operat
 
 This is a very super simple piece of code, in the first line I grab an instance of Term from the database (actually I grab the first one, in real code I have a complex query that returns a specific term). Then I want to grab all instance of Verbs that are related to this term, so I issue the second query, what will be the result?
 
-![](http://t0.gstatic.com/images?q=tbn:ANd9GcSdyTdE26j7X1A04CUg2PNg9VAWxnxfX6mIRYKgv_6jpdSKN7cCEQ&amp;t=1)
+![External Image](http://t0.gstatic.com/images?q=tbn:ANd9GcSdyTdE26j7X1A04CUg2PNg9VAWxnxfX6mIRYKgv_6jpdSKN7cCEQ&amp;t=1)
 
 This image exceptionally capture my face the first time I ran this query.
 
@@ -52,11 +52,11 @@ Now the query runs fine, but you can have two completely different opinion about
 
 The first opinion is negative, because I need to understand the name of the property/properties used as id by the ORM. I know that by convention you can use a property named  **Id** for every entity, but sometimes, especially with legacy database you can have entities with composite key or identity property named differently. LINQ is great to express query in the object model, but in this situation I need to be aware of details of the ORM Mapping to issue the right query and this is bad.
 
-![](http://www.mydswa.org/wp-content/uploads/2010/09/negative-attitude.gif)
+![External Image](http://www.mydswa.org/wp-content/uploads/2010/09/negative-attitude.gif)
 
 The second type of opinion is positive, because this query does not suffer from mismatch between the LINQ to entities counterpart when someone redefines the equals operator for the entity.
 
-![](http://www.tigweb.org/images/express/panorama/articles/26121.jpg)
+![External Image](http://www.tigweb.org/images/express/panorama/articles/26121.jpg)
 
 ### Conclusion
 

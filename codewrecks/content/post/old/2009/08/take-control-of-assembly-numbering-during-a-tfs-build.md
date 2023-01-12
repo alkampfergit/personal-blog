@@ -10,7 +10,7 @@ One of the most important stuff in a project build, is *the ability to mark the 
 
 First of all I want to change only [AssemblyFileVersion](http://msdn.microsoft.com/en-us/library/system.reflection.assemblyfileversionattribute.aspx) and not the AssemblyVersion, in this way all builds are compatible until someone manually changes AssemblyVersion. A standard technique I like very much is letting the programmers to *manage major and minor number manually*, and *letting my builds generates build and revision ones*. For build number I want to be able to generate a unique number each build, a sequential generator will be fine; but for revision number I want to use the changeset used to generate the build. To accomplish this we need essentially four macro steps.
 
-![](http://yuml.me/45c1d876)
+![External Image](http://yuml.me/45c1d876)
 
 In the first step I need to generate unique integer build number, most of the time sequential generator is ok, then I need also to find a way to correlate this generated number with the build label of the TFS. Step two is used to find latest changeset, then in step three we need to check-in modified files (the one used by the generator), being sure that this check-in does not trigger another build, finally we need to modify a file named ProjectVersion.cs that is used by all projects.
 

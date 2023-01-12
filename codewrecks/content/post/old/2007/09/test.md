@@ -10,6 +10,6 @@ This week I come back from vacation, and I found that word cannot publish anymor
 
 This is to try to post an image, this is my [simpsonization](http://simpsonizeme.com/).
 
-![](https://www.codewrecks.com/blog/wp-content/uploads/2007/09/090307-0903-test1.png)
+![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2007/09/090307-0903-test1.png)
 
 Alk.

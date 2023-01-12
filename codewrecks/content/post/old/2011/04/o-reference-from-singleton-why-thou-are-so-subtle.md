@@ -10,7 +10,7 @@ When an object references another object, he prevent garbage collector to reclai
 
 One of the most common risk is having a Singleton reference other objects and thus keeping them alive until the application consumes all available memory; I have a [primitive](http://www.codewrecks.com/blog/index.php/2010/07/26/primitive-broker-class/) IBroker interface implemented by a ConcreteBroker class that have a singleton lifecycle; since all ViewModels register themselves into the broker to receive messages, we can end with all ViewModels not being released from memory because referenced from the Broker singleton instance.
 
-![](http://ricchezza-fotovoltaico.jujol.com/wp-content/uploads/2008/03/broker.jpg)
+![External Image](http://ricchezza-fotovoltaico.jujol.com/wp-content/uploads/2008/03/broker.jpg)
 
 Each VM correctly deregister all registered handler from the broker, but I wish to be able to improve the design, avoding the broker to keep hard reference to called object using a WeakReference. The broker have a couple of way to register message, the first one accepts a token and a Action&lt;Message&lt;T&gt;&gt; delegate and the token is used to deregister all messages associated with the token. With this interface I can pass the instance of the ViewModel as token, and since the ViewModelBase implements the IDisposable interface, I deregister all messages related to *this*, thus avoiding hard reference problem.
 

@@ -8,6 +8,6 @@ categories: [General]
 ---
 Few clicks, 100$ and in only 4 days from Amazon directly to my desk in Italy J
 
-![](http://www.nablasoft.com/temp/PICT0000.JPG)
+![External Image](http://www.nablasoft.com/temp/PICT0000.JPG)
 
 Alk.

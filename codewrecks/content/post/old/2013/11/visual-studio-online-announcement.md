@@ -22,7 +22,7 @@ Another great news is the [Release Management Tool](http://www.visualstudio.com/
 
 Another important news is the announcement of Prices of Visual Studio Online account, you can find all the information [directly on the site](http://www.visualstudio.com/en-us/products/visual-studio-online-overview-vs). If you already have a xxx.visualstudio.com account, you should see another top level menu called User, that permits you to manage all the user that will have access to the service, with related type of access.
 
-![](http://www.getlatestversion.it/wp-content/uploads/2013/11/image.png)
+![External Image](http://www.getlatestversion.it/wp-content/uploads/2013/11/image.png)
 
 You can add 5 basic users for free, each one that has an MSDN Premium or Ultimate or Test Professional can access your service and you will pay for other user if you need them.
 

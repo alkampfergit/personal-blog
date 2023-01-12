@@ -8,7 +8,7 @@ categories: [Programming]
 ---
 Suppose you need to programmatically analyze some web pages that are protected by a login procedure and you have a valid login to the site. A simple solution is issuing a POST request to the login page with the correct credentials, then continue to use the same cookie container to issue subsequent downloads, but in some situation this is not enough. Suppose the site uses some strange login procedure that uses redirect
 
-![](http://t0.gstatic.com/images?q=tbn:ANd9GcT7_byhJBQvWqRvzdPwFg5Rde08pVFFMESgBThHrOaBYz3f1ol2&amp;t=1)
+![External Image](http://t0.gstatic.com/images?q=tbn:ANd9GcT7_byhJBQvWqRvzdPwFg5Rde08pVFFMESgBThHrOaBYz3f1ol2&amp;t=1)
 
 This sometimes happens: you do a postback with your credentials, then a page is rendered where a javascript code automatically do another postback to another page, and finally another javascript finally takes you to the landing page for successful login. Other example happens when the login procedure involves some javascript code that needs to be executed before a postback.
 
@@ -63,7 +63,7 @@ This function is really simple, it iterates on all [HTMLElement](http://msdn.mic
 
 Ok, now we simplylet the WebBrowser control navigates to the login page, wait for every possible redirect, and finally grab the cookie. One of the problem you face when you try to get cookie is due to [HttpOnly](http://www.codinghorror.com/blog/2008/08/protecting-your-cookies-httponly.html) cookies. HttpOnly cookes lives only inside the browser, and cannot be managed by javascript or other browser code, but we really need to grab them to be able to use a WebRequest to download pages protected by login. Huston, we have a cookie problem
 
-![](http://media.tumblr.com/tumblr_kxd6p1bmi71qaqkpq.jpg)
+![External Image](http://media.tumblr.com/tumblr_kxd6p1bmi71qaqkpq.jpg)
 
 HttpOnly cookie are meant to prevent malicious javascript code to access them, but clearly they are stored somewhere in the system, so we need to resort to windows API to retrieve them.
 

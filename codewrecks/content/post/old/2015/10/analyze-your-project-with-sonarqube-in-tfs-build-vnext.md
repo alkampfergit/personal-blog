@@ -14,7 +14,7 @@ As a prerequisite, you need to install Java on the machine where the agent is ru
 
 Then open the SonarQube.Analysis.xml file, and change configuration.
 
-[![](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb26.png "Configuration of Msbuild SonarQube runner")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image26.png)
+[![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb26.png "Configuration of Msbuild SonarQube runner")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image26.png)
 
  ***Figure 1***: *Configuration of Msbuild SonarQube runner*
 
@@ -57,7 +57,7 @@ If everything is ok, I just suggest tagging the agent with SonarQube tag, to ide
 
 Now the build must be changed to require this specific capability for the agent.
 
-[![](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb28.png "Adding Demands on the build to request specific capabilities")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image28.png)
+[![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb28.png "Adding Demands on the build to request specific capabilities")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image28.png)
 
  ***Figure 3***: *Adding Demands on the build to request specific capabilities*
 
@@ -67,7 +67,7 @@ Using custom capability is a good way to communicate to people that someone did 
 
 Now you can customize the build to launch the above two command line script to do the analysis, as you manually did before. You can do similar steps if you are using XAML Build, just add a script to launch start analysis pre build and the end after tests ran.
 
-But if you are using build vNext you will be happy to know that **SonarQube runner tasks were already present in VSO/TFS vNext.** [![](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb29.png "Configure SonarQube analysis in your build.")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image29.png)
+But if you are using build vNext you will be happy to know that **SonarQube runner tasks were already present in VSO/TFS vNext.** [![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb29.png "Configure SonarQube analysis in your build.")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image29.png)
 
  ***Figure 4***: *Configure SonarQube analysis in your build.*
 
@@ -75,25 +75,25 @@ Only begin analysis task needs configuration, and you needs only to specify the 
 
 I can now schedule a build, and verify the output. First of all the output of the Begin Analysis task should connect correctly to the server and download the profile.
 
-[![](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb30.png "Output of the Start task for SonarQube Analysis")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image30.png)
+[![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb30.png "Output of the Start task for SonarQube Analysis")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image30.png)
 
  ***Figure 5***: *Output of the Start task for SonarQube Analysis*
 
 The output of the end step, should contains a really longer log, because it is when the Real Analysis is done on your code.
 
-[![](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb31.png "Analysis took 45 seconds to complete")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image31.png)
+[![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb31.png "Analysis took 45 seconds to complete")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image31.png)
 
  ***Figure 6***: *Analysis took 45 seconds to complete*
 
 It is important that the end analysis task is the last one, because  **sonar analyzer is capable of understanding code coverage result from your unit testing** , a metric that is controversial, but gives you a nice idea on the amount of Unit Testing that the project contains.
 
-[![](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb32.png "Code coverage result is correctly saved in Sonar Qube")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image32.png)
+[![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb32.png "Code coverage result is correctly saved in Sonar Qube")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image32.png)
 
  ***Figure 7***: *Code coverage result is correctly saved in Sonar Qube*
 
 > Thanks to automatic versioning, you have also a better timeline of the status of your project.
 
-[![](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb33.png "Versioning correctly stored inside Sonar Qube")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image33.png)
+[![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image_thumb33.png "Versioning correctly stored inside Sonar Qube")](https://www.codewrecks.com/blog/wp-content/uploads/2015/10/image33.png)
 
  ***Figure 8***: *Versioning correctly stored inside Sonar Qube*
 

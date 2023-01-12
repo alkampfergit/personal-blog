@@ -33,7 +33,7 @@ The correct answer is: you cannot answer to this question if you do not know the
 
 This code works fine, until requirements changed. A new requirements introduced a new role in the system (called SimpleUser), and users belonging to this role are allowed to see only a subset of all Customers, and this subset is handled from Administrator roles. This functionality was implemented inside the GetAllCustomers() service function. If current user belongs to this new role, the service will issue a query on Customers object with a join to the AllowedCustomers table and the name of current user to show only allowed customers... and this introduced a bug
 
-![](http://www.mspmentor.net/wp-content/uploads/2010/01/symantec-endpoint-security-bug.jpg)
+![External Image](http://www.mspmentor.net/wp-content/uploads/2010/01/symantec-endpoint-security-bug.jpg)
 
 Do you spot the problem???
 

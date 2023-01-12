@@ -18,19 +18,19 @@ The usual question is, we already have Sketchflow, why should we use Powerpoint?
 
 Creating a simple sketch for an UI is really simple, just drag and drop some images from the toolbar to some slides, and you are done.
 
-![](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Power-point-storyboarding_EB0F/image_4.png)
+![External Image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Power-point-storyboarding_EB0F/image_4.png)
 
  ***Figure 1***: *An example of prototype of WP7 UI*
 
 This is an example of a simple sketch for a WP7 interface. Actually we have a little library of basic control , but I’m expecting a good series of images and templates for the final version and you can easily create one of your own. The cool part is that:  **it is PowerPoint** , so you can use all its functionalities you already know.
 
-![](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Power-point-storyboarding_EB0F/image_6.png)
+![External Image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Power-point-storyboarding_EB0F/image_6.png)
 
  ***Figure 2***: *prototype of a Ribbon  based desktop interface.*
 
 After you create the StoryBoard, you can simply save it on Sharepoint and pressing the “Storyboard Links” to attach to a related requirement in TFS as you can see in  **Figure 3**.
 
-![](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Power-point-storyboarding_EB0F/image_10.png)
+![External Image](http://blogs.ugidotnet.org/images/blogs_ugidotnet_org/rgm/Windows-Live-Writer/Power-point-storyboarding_EB0F/image_10.png)
 
  ***Figure 3***: *The storyboard can be attached to User Stories to it becomes part of the requirements*
 

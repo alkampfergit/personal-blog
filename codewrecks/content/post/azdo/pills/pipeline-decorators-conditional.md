@@ -1,13 +1,13 @@
 ---
-title: "Pills: Pipeline decorators"
-description: "Pipeline decorators are not the most known feature of Azure DevOps pipeline, but are a nice tool to know and keep in your toolbox when it can be of use."
+title: "Pills: Conditional Pipeline decorators"
+description: "Pipeline decorators are really powerful, but for some users they are a tool too blunt to use. Learn how to run decorator conditionally for an optimal experience"
 date: 2021-11-20T08:12:42+02:00
 draft: false
 categories: ["AzureDevOps"]
 tags: ["Pills"]
 ---
 
-Pipeline decorators are a really peculiar feature of Azure DevOps, because they allow you to **specify a series of tasks that are run for EVERY pipeline in your organization**, so they are rarely needed, but nevertheless they are a nice tool to know because there are situation when they are useful. Moreover, in latest [Sprint 194 update](https://docs.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-194-update) they are expanded to support new functionalities, like running **before or after specific tasks**.
+[Pipeline decorators](https://www.codewrecks.com/post/azdo/pills/pipeline-decorators/) are a really particula feature of Azure DevOps, because they allow you to **specify a series of tasks that are run for EVERY pipeline in your organization**, so they are rarely needed, but nevertheless they are a nice tool to know because there are situation when they are useful. Moreover, in latest [Sprint 194 update](https://docs.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-194-update) they are expanded to support new functionalities, like running **before or after specific tasks**.
 
 You have also a nice [Msdn Article](https://docs.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops) that explain how you can **build your own decorator**. That article references other tutorial so I wanted to give you a full example to go from **zero to pipeline decorator with very few steps**.
 

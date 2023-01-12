@@ -8,7 +8,7 @@ categories: [Team Foundation Server,Visual Studio ALM]
 ---
 If you use or plan to use Team Foundation Server or Visual Studio Online, **this is the book for you**.
 
-[![](http://media.wiley.com/product_data/coverImage300/88/11188365/1118836588.jpg)](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118836588.html)
+[![External Image](http://media.wiley.com/product_data/coverImage300/88/11188365/1118836588.jpg)](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118836588.html)
 
 [Professional Application Lifecycle Management with Visual Studio 2013](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118836588.html)  **covers all aspects and tools of Microsoft ALM Ecosystem** , giving you all the details on how to implement effectively ALM for your team/s. This book is dedicated to all people involved in a Software Project, from managers who plan work with new Portfolio Management features, to developers that create the product, and finally to testers and end users that could monitor quality with Microsoft Test Manager and Feedback Tool. Everything is explained clearly and with full details, making this book a perfect companion for everyday work.
 

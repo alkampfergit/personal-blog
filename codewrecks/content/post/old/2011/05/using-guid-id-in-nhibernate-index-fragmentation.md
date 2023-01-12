@@ -8,7 +8,7 @@ categories: [Nhibernate]
 ---
 This is a quick consideration about using id of type GUID in nhibernate. If in SQL server the cluster index is on the id (default choiche), if you use a simple guid generator you will end in high index fragmentation. This happens because if you insert a lot of objects into the table, since the physical ordering of the records (the clustered index) is on the Id field, inserting a sequence of objects with random id will insert these object randomly into the physical space of the DB. Remember that the index is a Tree that was kept ordered by its clustered index.
 
-![](http://www.simple-talk.com/iwritefor/articlefiles/735-image014.jpg)
+![External Image](http://www.simple-talk.com/iwritefor/articlefiles/735-image014.jpg)
 
  ***Figure 1***: *A simple picture that shows the index [organization in a database](http://www.simple-talk.com/sql/database-administration/brads-sure-guide-to-indexes/).*
 

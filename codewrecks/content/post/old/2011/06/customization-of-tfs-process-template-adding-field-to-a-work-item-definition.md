@@ -13,7 +13,7 @@ In this third part it is time to configure the definition of a Work Item. This i
 
 This second opportunity is useful if you need to modify the definition of a WI (Bug, Task, User Story) only for a specific Team Project and not for every Team Projects of your organization. Suppose you have a single TP for a software that interact with various types of RFID readers and you want to trace the code of the reader used when someone signal a bug. This is a very specific customization that you need to apply only to that Team Project so you do not create another Process Template, but change the WI definition in place.
 
-![](http://www.adcnordic.com/img/produktnyheter/intermec-ip30.jpg)
+![External Image](http://www.adcnordic.com/img/produktnyheter/intermec-ip30.jpg)
 
 You can also use this technique to validate your customization immediately: open the WI definition, modify it, press save and you can immediately test all the modifications in the Team Project. Compare it to the time needed to: modify the local version, upload the new process template, create a new Team Project based on that template and finally verify that the customization is correct.
 

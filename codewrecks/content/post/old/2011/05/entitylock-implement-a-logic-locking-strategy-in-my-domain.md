@@ -51,7 +51,7 @@ return new LockedEntity<T>(@lock, entity);
 
 The lock function accepts a logical id and the entity that should be locked. I could pass only the entity if I have some base entity, but my domain is on a legacy database, I have entity with GUID id, some other with Int32 IDENTITY, so I need to specify the id with a string. When the entity have guid Id I can use the Id, if it has a Identity ID I use id + entityname, and so on. Since the logical Id is the primary key (generator assigned) of the EntityLock, I simply try to insert a new EntityLock in database and if some other component had already locked that same entity an exception of Primary Key violation will occur (I could even obtain better performance doing a lookup before the insertion, but I need to acquire a lock each several minutes I do not care about performances). When an exception is raised I simply return null, meaning that the entity could not be locked, if the insert operation was successful I return the entity wrapped in a LockedEntity&lt;T&gt; class, that simply implement IDisposable because it release the lock when it got disposed.
 
-![](http://icons.iconseeker.com/png/fullsize/crystal-clear-actions/lock-9.png)
+![External Image](http://icons.iconseeker.com/png/fullsize/crystal-clear-actions/lock-9.png)
 
 With this class each analyzer server ask for the next data to analyze, try to lock it, and if the lock failed, it ask for another data until he find a data object that can lock or there is no data to analyze. All the analysis operation are done inside a using, so the lock on the entity got disposed as soon the analysis finish.
 

@@ -16,7 +16,7 @@ This is a radical shift, because if you really possess “ **[object thinking](h
 
 But after years of ORM the initial enthusiasm is completely passed away and I start believing that I’m forcing a square peg in a round hole.
 
-![](http://internationalhr.files.wordpress.com/2011/07/square-peg-round-hole.jpg)
+![External Image](http://internationalhr.files.wordpress.com/2011/07/square-peg-round-hole.jpg)
 
 Since most programmers started to work in terms of data and relations (after all university taught us to think in this way), using an ORM lead usually to highly anemic domain and tend to lead people of thinking in term of *objects that have state (properties) and relations with other objects* instead of *object that have methods and communicates with other objects (with events)*.
 
@@ -26,7 +26,7 @@ When people start to have problems with Session duration, Lazy Loading, eager fe
 
 This means that if you want to do OOP you should move everything to NoSql?
 
-![](http://4.bp.blogspot.com/-2ZyXXjrz7Cc/TeYFzdkAgHI/AAAAAAAAACg/DM8_jJh8yQk/s400/question-mark.jpg)
+![External Image](http://4.bp.blogspot.com/-2ZyXXjrz7Cc/TeYFzdkAgHI/AAAAAAAAACg/DM8_jJh8yQk/s400/question-mark.jpg)
 
 Absolutely not, because sometimes you will probably find yourself forcing a round peg in a square hole :). I’m starting to think that in a real, big, complex OOP project, you need to have *both type of storage*: Relational and Object based. This will give you  round holes and the square holes, so you can put each peg in the right place.
 

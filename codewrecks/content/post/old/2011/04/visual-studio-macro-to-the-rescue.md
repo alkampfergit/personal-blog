@@ -8,7 +8,7 @@ categories: [Visual Studio]
 ---
 If you heavily work with branches, one of the most frustrating error you can do is modify the wrong branch. I have a project composed by several solution each one containing different UI Projects, each one using WCF as back end but released as separate software. Whenever we do a release of a new version of one of the UI we create a branch, so we can support hotfix, SP, etc.
 
-![](http://farm2.static.flickr.com/1088/3169788471_e372d6b617.jpg)
+![External Image](http://farm2.static.flickr.com/1088/3169788471_e372d6b617.jpg)
 
  ***Figure 1***: *A branching strategy taken from the [branchingguidance](http://tfsbranchingguideiii.codeplex.com/)*
 
@@ -16,7 +16,7 @@ With this scenario I'm prone to this error:
 
 Someone call me telling to create an hotfix for the UI XYZ, I open the solution from Branch\Releases\XYZ\R3\_0 to open the third (is the latest) release of the XYZ UI, I do the hotfix, test it, run all the test etc etc, then other people of the team call me asking for modification in other part, so I open the same solution from a different branch (say the trunk or the Feature BLABLA) and do some modification. Now I have two Visual Studio opened, with the very same solution, sometimes I got confused and I modify the wrong line of code... too bad, because this can cause a really bad problem. The problem arise from having more than one instance of Visual Studio opened with solutions of same name, just from different branch ![Sad smile](https://www.codewrecks.com/blog/wp-content/uploads/2011/04/wlEmoticon-sadsmile.png) and you can become confused.
 
-![](http://www.whimsys-menagerie.com/17066-Orange-Man-Carrying-A-Large-Yellow-Question-Mark-Over-His-Shoulder-Symbolizing-Curiousity-Uncertainty-Or-Confusion-Clipart-Illustration.jpg)
+![External Image](http://www.whimsys-menagerie.com/17066-Orange-Man-Carrying-A-Large-Yellow-Question-Mark-Over-His-Shoulder-Symbolizing-Curiousity-Uncertainty-Or-Confusion-Clipart-Illustration.jpg)
 
 This is expecially true when you use HG or subversion or any other VCS tools that are not integrated in Visual Studio.
 

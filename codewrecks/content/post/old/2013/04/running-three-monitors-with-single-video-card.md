@@ -24,7 +24,7 @@ My Video Cart has four output ports, a DVI-D and a DVI-I (Both Dual Link) and a 
 
 My Configuration is not really an EyeFinity one, because I’ve have three monitor with three different resolution. I’ve a WUXGA (1920×1200 16:10 monitor), another one is a standard FHD (1920×1080 16:9 monitor) and the third is a standard SXGA (1280×1024). This is a standard multi monitor configuration, but if you have monitor with the same resolution you can play game or watch film combining monitor together.
 
-![](http://www.blogcdn.com/www.engadget.com/media/2009/09/090910-ati-eyefinity-02.jpg)
+![External Image](http://www.blogcdn.com/www.engadget.com/media/2009/09/090910-ati-eyefinity-02.jpg)
 
 I’m not interested in this configuration so I’m pretty fine using only standard multi monitor configuration.
 

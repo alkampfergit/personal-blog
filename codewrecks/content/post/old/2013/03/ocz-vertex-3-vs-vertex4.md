@@ -10,7 +10,7 @@ I own both a Vertex3 256GB and a Vertex 4 256, and people usually ask me if the 
 
 This is the Vertex 3
 
-![](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/SNAGHTML69aa9.png)
+![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2012/02/SNAGHTML69aa9.png)
 
 And this is the Vertex 4
 

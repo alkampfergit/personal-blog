@@ -24,7 +24,7 @@ If you have such a problem, please check how you are actually deploying binaries
 
 In such example,  **deployment is done invoking robocopy and xcopy directly from cmd /c and this could cause a problem of timeout**. The bad stuff about this kind of error, is that it does seems to completely ignore timeout value for deployment script that you specify in the build. If you have this kind of deploy, I strongly suggests you to move to a script based solution (PowerShell is the best choice but a simple bat can be enough). I’ve blogged in the past on [how to deploy a Web Project and a Database in a Lab Management virtual environment](http://www.codewrecks.com/blog/index.php/2010/06/29/deploy-a-solution-and-a-database-in-a-lab-management-virtual-environment/). My suggestion is  **creating a script that will be stored inside source control, then reference the build in the solution so it will be copied in drop folder during a build, and finally configure Lab Management Build to run script on the machine**.
 
-![](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image_thumb6.png)
+![External Image](https://www.codewrecks.com/blog/wp-content/uploads/2010/07/image_thumb6.png)
 
  ***Figure 2***: *Deploy the build using scripts in source control that will be copied to drop location*
 

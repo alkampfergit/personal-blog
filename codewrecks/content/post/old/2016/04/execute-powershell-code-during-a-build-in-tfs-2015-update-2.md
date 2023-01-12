@@ -48,7 +48,7 @@ Now you can press Upload button, and the extension is uploaded to TFS and ready 
 
 1.  ***Figure 7***: *Install the extension on one or more collection*
 
-> ![](https://ssl.gstatic.com/ui/v1/icons/mail/images/cleardot.gif)The concept behind “install then activate” is that, once uploaded the extension is available for the TFS Server instance, but then you should install in each Project Collection where you want to use that extension.
+> ![External Image](https://ssl.gstatic.com/ui/v1/icons/mail/images/cleardot.gif)The concept behind “install then activate” is that, once uploaded the extension is available for the TFS Server instance, but then you should install in each Project Collection where you want to use that extension.
 
 [![TFS asks you to choose the collection where you want to use the extension.](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image25_thumb.png "Choose collection")](https://www.codewrecks.com/blog/wp-content/uploads/2016/04/image25.png)
 
