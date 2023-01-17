@@ -1,72 +1,42 @@
 ---
 title: "Pills: Conditional Pipeline decorators"
 description: "Pipeline decorators are really powerful, but for some users they are a tool too blunt to use. Learn how to run decorator conditionally for an optimal experience"
-date: 2021-11-20T08:12:42+02:00
+date: 2023-01-17T00:12:42+02:00
 draft: false
 categories: ["AzureDevOps"]
 tags: ["Pills"]
 ---
 
-[Pipeline decorators](https://www.codewrecks.com/post/azdo/pills/pipeline-decorators/) are a really particula feature of Azure DevOps, because they allow you to **specify a series of tasks that are run for EVERY pipeline in your organization**, so they are rarely needed, but nevertheless they are a nice tool to know because there are situation when they are useful. Moreover, in latest [Sprint 194 update](https://docs.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-194-update) they are expanded to support new functionalities, like running **before or after specific tasks**.
+[Pipeline decorators](https://www.codewrecks.com/post/azdo/pills/pipeline-decorators/) are a really peculiar feature of Azure DevOps, because they allow you to **specify a series of tasks that are run for EVERY pipeline in your organization**, so they are rarely needed, but nevertheless they are a nice tool to know because there are situation when they are useful. Moreover, in latest [Sprint 194 update](https://docs.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-194-update) they are expanded to support new functionalities, like running **before or after specific tasks**.
 
-You have also a nice [Msdn Article](https://docs.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops) that explain how you can **build your own decorator**. That article references other tutorial so I wanted to give you a full example to go from **zero to pipeline decorator with very few steps**.
+The major criticism against a pipeline decorator is **it runs in every pipeline so it is a really impacting technique to use**, but sometimes we forget that we have a **rich syntax in pipeline to specify conditional execution**. This allows you to change the decorator to run **only if you have a specific variable defined, or you can exclude if you have a specific variable defined**. These two scenarios allows you to implement an op-in or opt-out procedure.
 
-Before being able to create an extension you should go to [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/) and look for Publish Extension link [https://marketplace.visualstudio.com/manage](https://marketplace.visualstudio.com/manage) you need to **login with a Microsoft account then request your account to be enabled for extension publishing)**. This step is mandatory because if you do not have an account enabled to publish on marketplace you will not be able to publish your extension.
+> Having a decorator to run in EVERY pipeline without the ability to even opt-out is usually a too risky/impacting decision.
 
-> Even if you are planning to develop a private extension (available only to your orgs) you need to have an account with publish permission on marketplace.
+The solution is really simple, just put a condition in the decorator definition, condition can be positive **if you want to use opt-in or negative if you want to use opt-out**. Let's see an example with the decorator that runs after each build to remove all non source controlled files.
 
-Once you can publish on the marketplace, it is time to author your pipeline decorator. The entire code for the decorator can be found in [this simple github repository](https://github.com/AlkampferOpenSource/AzureDevopsSamplePipelineDecorator). As you can see the entire extension is really trivial, only three files are needed for the decorator to work. Readme.md is trivial, and the **most important file is [vss-extension.json](https://github.com/AlkampferOpenSource/AzureDevopsSamplePipelineDecorator/blob/master/src/vss-extension.json) that contains information about the addin.** In that file there are some part you must change if you wanna reuse for your plugin.
-
-- **id**: should be a unique value, string no space
-- **version**: A Major.minor.build semver number, it is imperative that you always increment that value if you want to upgrade your addin.
-- **name and description**: No need of further explanation
-- **publisher**: Your publisher id as shown in marketplace: [https://marketplace.visualstudio.com/manage/publishers/gianmariaricci](https://marketplace.visualstudio.com/manage/publishers/gianmariaricci)
-- **public**: false if you want this extension to be private and visible only to your orgs
-  
-The rest of the file is trivial, and you can find more detail on official documentation  [Msdn Article](https://docs.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops). The actual decorator you find in my repository simply declare a **single decorator to run a task before all job finishes**. You can change name of the files, change when your task should run and clearly change the content of the decorator. Once the extension is ready you can build with the [tfx-cli utility](https://www.npmjs.com/package/tfx-cli) 
-
-{{< highlight yaml "linenos=table,hl_lines=21-28 45-53,linenostart=1" >}}
-tfx extension create
+{{< highlight yaml "linenos=table,hl_lines=1,linenostart=1" >}}
+steps:
+- ${{ if not(eq(variables['skip-clean-decorator'], 'true'))}}:
+  - task: CmdLine@2
+    displayName: "do a git clean (injected from decorator)"
+    inputs:
+      workingDirectory: $(Build.SourcesDirectory)
+      failOnStderr: false
+      script: |
+        git checkout -- .
+        git clean -xdf
+    continueOnError: true
 {{< / highlight >}}
 
-This will create package file that is ready to be uploaded in marketplace. Once **the extension was built, you need to upload in the marketplace so you can use in your organizations**. Actually there is no simple way to avoid using marketplace, but it is really simple and probably it is the best way, because each time you upload a new version in your marketplace account **every organization where you installed the extension will automatically update**.
+> Pay attention to the indentation, **task section must be indented after condition or it will not run**.
 
-The only caveat is: if you specify public: false in vss-extension.json the **extension is private, thus it is not installable by any organization unless you explicitly invite that organization to your extension**. This is really nice because you can use the marketplace, but at the very same time you are also able not to release your extension publicly.
+As you can see the **very first line of the decorator is a condition**. In this case the condition is **if the variable skip-clean-decorator is not equal to true**. This means that if you define the variable skip-clean-decorator with value true, the decorator will not run. In this example I've used an **opt-out solution, my decorator runs in every build, excepts those one that explicitly disable it**.
 
-First step is creating a new extension in [the marketplace](https://marketplace.visualstudio.com/manage).
+If you change the condition removing the not you will use the **opt-in model, the decorator does not run unless you explicitly enable it defining a specific variable**. 
 
-![Create a new extension in the Marketplace](../images/create-new-extension-marketplace.png)
+> It is a good practice to at least use opt-out mechanism for your decorators so you can always disable them if you need to.
 
-***Figure 1***: *Create a new extension in the Marketplace*
-
-Then you can simply drag and drop extension file generated by tfx utilities in the browser.
-
-![Upload the extension in the Marketplace](../images/upload-extension-to-marketplace.png)
-
-***Figure 2***: *Upload the extension in the Marketplace*
-
-Now your extension will be validated and if everything is ok **it will be published in the marketplace**. If your extension is private, you cannot install in your orgs **unless you explicitly invite them**
-
-> Private extensions can be distributed in the marketplace, but you have full control on organizations that can install them.
-
-Enabling organizations to use your private extension is simple, just **invite them** using the Share/Unshare button in the context menu of the extension.
-
-![Manage extension](../images/manage-extension.png)
-
-***Figure 3***: *Manage extension*
-
-Share/Unshare menu will open a dedicated section where **you start listing all organization that can install your extension**. Remember: if the extension is private, no organization can install it unless it is explicitly invited.
-
-![Sharing the extension](../images/share-unshare-extension.png)
-
-***Figure 4***: *Sharing the extension*
-
-At this point the extension can be installed normally in all enabled organization, and as soon as you installed, decorators are immediately active. To verify that everything is ok just **run any pipeline to verify that indeed at the end of the pipeline your decorator kicks in and append your task**.
-
-![Decorator in action](../images/decorators-in-action.png)
-
-***Figure 5***: *Decorator in action*
-
-With the recent update that allows a decorator to be injected only after specific tasks, **decorators are a really nice and usefult tool to have in your belt when you work with Azure DevOps**.
+If you didn't know that a decorator can **run conditionally you can now use it in a more effective way**. Decorators are a really powerful weapon in your arsenal.
 
 Gian Maria.
