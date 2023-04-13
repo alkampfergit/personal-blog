@@ -35,8 +35,6 @@ When you run the script locally you can immediately verify what the script produ
 
 With this model it is super easy to **load test results in CI engine like Azure DevOps that have a nice interface to show you test results**. If you use GitHub actions that does not have a dedicated interface you can simply publish test results as build attachment. This is the piece of Azure DevOps pipeline that **publishes test results in the build result page**.
 
-{{< highlight powershell "linenos=table,linenostart=1" >}}    
-
 {{< highlight yaml "linenos=table,hl_lines=5,linenostart=1" >}}
 - task: PublishTestResults@2
   displayName: "Publish test results"
