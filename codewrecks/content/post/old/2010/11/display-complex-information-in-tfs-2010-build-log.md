@@ -4,7 +4,7 @@ description: ""
 date: 2010-11-05T11:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you read [this post](http://blogs.msdn.com/b/jpricket/archive/2009/12/21/tfs-2010-displaying-custom-build-information-in-visual-studio.aspx) you learn how to show custom informations in a build, and this is one of the coolest stuff you can do to improve reporting from the buil. In the original example Jason shows how to show informations of a standard object called PlatformConfiguration.
 

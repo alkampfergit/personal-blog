@@ -4,7 +4,7 @@ description: ""
 date: 2017-05-06T07:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Each TFS Build agent uses a local directory to download source, do build, prepare artifacts and if you have really high number of builds, you could run out of space in agent disks.
 

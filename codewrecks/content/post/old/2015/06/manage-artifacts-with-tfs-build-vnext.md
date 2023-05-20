@@ -4,7 +4,7 @@ description: ""
 date: 2015-06-30T18:00:37+02:00
 draft: false
 tags: [build,Continuous Integration,vNext]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 ## Artifacts and Build vNext
 

@@ -4,7 +4,7 @@ description: ""
 date: 2012-04-30T11:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you are using the TfsPreview (Tfs on azure), you can notice that the login page is drastically changed.
 

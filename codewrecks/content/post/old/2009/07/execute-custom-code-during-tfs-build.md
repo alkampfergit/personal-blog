@@ -4,7 +4,7 @@ description: ""
 date: 2009-07-03T07:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 At this point I explained how to setup a build, and how to fully customize it editing the msbuild file to execute some tasks, like open an issue when one or more test fail.
 

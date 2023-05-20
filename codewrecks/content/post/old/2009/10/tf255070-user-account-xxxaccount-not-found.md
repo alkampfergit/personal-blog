@@ -4,7 +4,7 @@ description: ""
 date: 2009-10-25T14:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In tfs 2010 beta2, when you configure the build agent, you start the wizard choosing the team foundation server that contains the project collection you want to build. If you choose tfs with ip address, you will end with an error like
 

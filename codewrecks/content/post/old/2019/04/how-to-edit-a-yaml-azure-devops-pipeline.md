@@ -3,7 +3,7 @@ title: "How to edit a YAML Azure DevOps Pipeline"
 description: ""
 date: 2019-04-14T08:00:37+02:00
 draft: false
-tags: [build,YAML]
+tags: [Continuous Integration, AzureDevops]
 categories: [Azure DevOps]
 ---
 I cannot stress you enough on **how better is the experience of having builds defined in code than having build definition on the server** , so I’m here to convince you to move to the new YAML build system in Azure DevOps :).

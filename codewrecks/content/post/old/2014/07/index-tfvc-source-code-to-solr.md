@@ -4,7 +4,7 @@ description: ""
 date: 2014-07-08T14:00:37+02:00
 draft: false
 tags: [TfsAPI]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you use good comments in your code, sometimes you need to search inside those comment to find a certain part of code associated to a specific comment that contains specific word. The sad part is that you can do it only for the latest version of the code and not for the entire history of all files. Suppose you want to do a simple  **Proof Of Concept to insert all content of all C# source code files in some search server (Es Solr, or Elastic Search) how it can be done with TFVC** ?
 

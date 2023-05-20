@@ -4,7 +4,7 @@ description: ""
 date: 2009-10-26T10:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In [this post](http://www.codewrecks.com/blog/index.php/2009/10/24/installing-tfs2010-beta2-first-try/) I dealt with the easy of installation of tfs basic. But tfs basic is much more than simply source control, if you open the TFS Administration Console, you can configure Team Build (Suppose you have installed it as I showed in previous post).
 

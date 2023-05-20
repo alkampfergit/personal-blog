@@ -3,8 +3,8 @@ title: "Create a safe clone of your TFS environment"
 description: ""
 date: 2015-08-07T08:00:37+02:00
 draft: false
-tags: [TestLab,Tfs]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 ## 
 

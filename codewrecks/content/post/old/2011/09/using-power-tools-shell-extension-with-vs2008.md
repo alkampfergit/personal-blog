@@ -4,7 +4,7 @@ description: ""
 date: 2011-09-01T11:00:37+02:00
 draft: false
 tags: [Tfs,Tfs Power Tools]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I'm a great fan of TFS power tools, and working as a consultant it is normal for me to use TFS2010 as well TFS2008 servers, because some of my customers still uses TFS2008. In my laptop I've installed VS2008, team explorer and the latest power tools ([August 2011](http://visualstudiogallery.msdn.microsoft.com/c255a1e4-04ba-4f68-8f4e-cd473d6b971f)), then I mapped a workspace from VS2008, but when I right click on mapped folder, no *Team Foundation Server* menu appears in contextual menu.
 

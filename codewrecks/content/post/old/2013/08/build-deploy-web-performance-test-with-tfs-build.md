@@ -4,7 +4,7 @@ description: ""
 date: 2013-08-16T07:00:37+02:00
 draft: false
 tags: [Continuous Deployment]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 To fully understand this article you need to read previous articles of the series
 

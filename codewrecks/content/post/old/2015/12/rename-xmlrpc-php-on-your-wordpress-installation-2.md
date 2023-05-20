@@ -4,7 +4,7 @@ description: ""
 date: 2015-12-30T16:00:37+02:00
 draft: false
 tags: [build,ClickOnce,devops]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Thanks to the new build system in TFS / VSTS, publishing an application with Click-once during a build is really simple.
 

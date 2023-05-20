@@ -4,7 +4,7 @@ description: ""
 date: 2011-03-07T19:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the most common operation when you move to another iteration is moving queries to the new one. Here is a sample, this is the Iteration 1 of the TailSpin Toys of the Demo Tfs machine.[![image](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image_thumb.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2011/03/image.png)
 

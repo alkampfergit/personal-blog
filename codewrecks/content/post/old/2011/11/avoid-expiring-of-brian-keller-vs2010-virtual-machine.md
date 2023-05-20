@@ -4,7 +4,7 @@ description: ""
 date: 2011-11-01T10:00:37+02:00
 draft: false
 tags: [Tfs,Virtual Machine]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Brian Keller always does a great work releasing a [Demo Machine with all the goodness of VS2010 and TFS2010](http://blogs.msdn.com/b/briankel/archive/2010/06/25/now-available-visual-studio-2010-rtm-virtual-machine-with-sample-data-and-hands-on-labs.aspx), really useful for making demo and courses. The only drawback is that this machine expires after 6 months, and if you did some customization on it, or prepared some customized hands-on-lab, you usually need to do everything again with the new machine. (Brian release a new machine updated with the latest tool some days before the expiration of the old machine).
 

@@ -4,7 +4,7 @@ description: ""
 date: 2010-08-10T08:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Now that I'm able to deploy to a remote machine a web application thanks to a customized build workflow it is time to move to a real scenario. I've blogged about two distinct tasks
 

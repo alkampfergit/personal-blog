@@ -4,7 +4,7 @@ description: ""
 date: 2011-04-18T14:00:37+02:00
 draft: false
 tags: [Tfs,VCS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When it is time to compare two [VCS](http://en.wikipedia.org/wiki/Revision_control) there are a lot of features to be taken into account, and in my opinion one of the most important is *the team is already used to some VCS?*. One of the most difficult part of learning a new VCS, is avoiding to use it in the same way you use a different product, because each VCS could potentially have a different way to do the same thing.
 

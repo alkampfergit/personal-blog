@@ -3,7 +3,7 @@ title: "How to format code blogging with word 2007"
 description: ""
 date: 2007-05-02T02:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 Today I was trying to blog with word 2007 and I found some difficulties with code. First of all I suggest you to install a [Visual Studio Plugin](http://www.jtleigh.com/people/colin/blog/) that enable a “copy source as HTML” option that permits you to copy the code as HTML and this makes the life easier. The problem is that simply pasting the code into word will produce some strange results

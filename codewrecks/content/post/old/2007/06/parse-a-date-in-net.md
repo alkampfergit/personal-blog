@@ -3,7 +3,7 @@ title: "Parse a date in NET"
 description: ""
 date: 2007-06-28T07:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 Today I had a little bug in an application of mine, I have a routine that accepts a series of parameter through a comma separated string of values, this kind of interface to a function is not a good thing to do, expecially when DateTime variables are transmitted, but this is an old routine and worked well for a while, so I did not refactor.

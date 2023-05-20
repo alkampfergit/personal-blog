@@ -4,7 +4,7 @@ description: ""
 date: 2015-04-25T05:00:37+02:00
 draft: false
 tags: [VSO]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 With yesterday update, one of the most requested feature for TFS/VSO was finally active,  **you can now rename a Team Project.** It can be done directly from collection administration page, in the same place where you can delete a Team Project
 

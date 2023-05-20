@@ -3,8 +3,8 @@ title: "Connect your TFS Release Management to Azure subscription with Update 3"
 description: ""
 date: 2014-07-31T04:00:37+02:00
 draft: false
-tags: [ReleaseManagement]
-categories: [Team Foundation Server]
+tags: ["ContinuousDeployment"]
+categories: [Tfs]
 ---
 In the Update 3, now in RC, you have the ability to configure your Release Management to directly access your Azure Subscription to have a list of all of your environment. The operation is really simple, you need to  **go to Administration tab and then choose to Manage Azure**.
 

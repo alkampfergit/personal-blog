@@ -4,7 +4,7 @@ description: ""
 date: 2010-03-29T09:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you want to try VS2010 RC and TFS2010 with a virtual machine that has already everything preconfigured, and also have some nice hands on lab covering ALM:
 

@@ -4,7 +4,7 @@ description: ""
 date: 2010-05-10T16:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you look at the [previous post,](http://www.codewrecks.com/blog/index.php/2010/05/10/create-a-work-item-by-code-in-tfs-returns-tf237124-work-item-is-not-ready-to-save/) I answered a little problem that can occur when saving a Work Item in TFS with API. A common question that arise from people when they begin to work with the WIT api is *how can I make possible for users of my application to edit a WIT?* A Work Item has a lot of fields and building an UI to permit editing capabilities to the user would be really difficult, but clearly Microsoft has made the standard one available to use within your program.
 

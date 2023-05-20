@@ -4,7 +4,7 @@ description: ""
 date: 2012-11-23T23:00:37+02:00
 draft: false
 tags: [Visual Studio ALM]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Team Foundation Service Update – Nov 19th](http://blogs.msdn.com/b/bharry/archive/2012/11/19/team-foundation-service-update-nov-19th.aspx)
 - [Candidate Changes with local workspaces](http://mattvsts.blogspot.it/2012/11/candidate-changes-with-local-workspaces.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+MattsAlmSpace+%28Matt's+ALM+space%29)

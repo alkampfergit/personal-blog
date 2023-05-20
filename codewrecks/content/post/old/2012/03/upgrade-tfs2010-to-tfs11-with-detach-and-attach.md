@@ -3,8 +3,8 @@ title: "Upgrade TFS2010 to TFS11 with Detach and Attach"
 description: ""
 date: 2012-03-20T20:00:37+02:00
 draft: false
-tags: [Tfs,Upgrade]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 One of the simplest way to *upgrade with minimum risk* a  **Project Collection** from  **TFS 2010** to  **TFS11 Beta** is using the detach/attach feature of TFS, introduced with version 2010.  Basically all you need to do is Detach the project collection from the old TFS 2010 server and reattach to a brand new TFS11 server, you can read about the whole procedure in an old post that explain how to [**Move a Team Project Collection from one server to another one**](http://www.codewrecks.com/blog/index.php/2010/01/13/moving-a-teamprojectcollection-from-one-server-to-another/).
 

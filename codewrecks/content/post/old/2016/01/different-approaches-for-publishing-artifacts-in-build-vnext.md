@@ -4,7 +4,7 @@ description: ""
 date: 2016-01-30T10:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve wrote an old post that explain how you can [manage your artifacts with Build vNext](http://www.codewrecks.com/blog/index.php/2015/06/30/manage-artifacts-with-tfs-build-vnext/), in that post I suggested to use a custom PowerShell script that identify all of your files that needs to be published as artifacts, and move everything inside the Staging Directory.
 

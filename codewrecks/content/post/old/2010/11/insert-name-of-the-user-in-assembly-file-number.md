@@ -4,7 +4,7 @@ description: ""
 date: 2010-11-29T11:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Assembly file numbering during a Continuous integration build is one of the most interesting feature in a project, but sometimes we need also to generate numbers even for local build, especially if the user can launch some script to do a local compile and use it to deploy somewhere.
 

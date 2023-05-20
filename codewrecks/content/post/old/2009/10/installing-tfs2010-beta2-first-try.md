@@ -4,7 +4,7 @@ description: ""
 date: 2009-10-24T13:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Installing TFS is an operation that scares most people. With TFS2010 beta 2 the installation process is really more friendly. I installed a new windows server 2008 machine, update everything and begin the installation to verify the new installer.
 

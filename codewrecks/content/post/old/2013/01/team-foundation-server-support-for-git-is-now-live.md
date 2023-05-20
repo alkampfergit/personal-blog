@@ -4,7 +4,7 @@ description: ""
 date: 2013-01-30T17:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 You can read everything on the Visual Studio Alm Blog: [Getting Started With Git in Visual Studio and TFS](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/30/getting-started-with-git-in-visual-studio-and-team-foundation-service.aspx), but the great news is that  **TF Service is supporting Git as source control system for TFS Team Projects**. Now that TF Service suports git, clearly we have a Visual Studio 2012 CTP addin called “[visual Studio Tools for Git”](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c) that brings support for git inside Visual Studio, and it works not only with TF Service but with every git hosting like GitHub.
 

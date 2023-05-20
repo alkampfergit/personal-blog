@@ -4,7 +4,7 @@ description: ""
 date: 2017-07-14T19:00:37+02:00
 draft: false
 tags: [build,VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In VSTS / TFS Build there are a couple of tasks that are really useful to execute UAT or Functional tests during a build.  **The first one deploy the test agent remotely on a target machine while the second one runs a set of tests on that machine using the agent.** If you use multiple Run Functional Test task, please  **be sure that before each task there is a corresponding Deploy test agent tasks or you will get an error.** Actually I have a build that run some functional tests, then I’ve added another Run Functional Test task to run a second sets of functional tests. The result is that the first run does not have a problem, while the secondo one fails with a strange error
 

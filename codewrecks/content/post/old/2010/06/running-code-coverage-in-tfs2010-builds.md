@@ -4,7 +4,7 @@ description: ""
 date: 2010-06-14T07:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 To have Code Coverage collection for test execution during a build, you first need to create a.testsettings file in the solution with code coverage enabled. To enable code coverage simply open the testsetting file, go to *Data And Diagnostics* and check the *Code coverage* option. This is not enough, because when you check the code coverage option, the *Configure* link highlighted in the picture become enabled.
 

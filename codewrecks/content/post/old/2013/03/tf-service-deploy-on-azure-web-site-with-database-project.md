@@ -4,7 +4,7 @@ description: ""
 date: 2013-03-15T20:00:37+02:00
 draft: false
 tags: [Continuos Integration,DataDude,TfsBuild]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 The ability to automatically deploy a site on Azure Web Site from TFService is really interesting, but sadly enough there is no out-of-the-box solution to  **update the structure of an Azure Database with a VS2012 Database Project**. In this post I’ll show  **how to modify the standard build template to deploy a Database Project during Azure Web Site Deployment**. I’ve blogged in the past to explain how to [Deploy a Database Project with TFS Build](http://www.codewrecks.com/blog/index.php/2010/01/04/deploy-a-database-project-with-tfs-build-2010/), but that post refers to the old type of Database Project (VS2010) and now I want to explain how to customize the AzureContinuousDeployment build to deploy on azure a database project of VS2012.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2017-04-01T06:00:37+02:00
 draft: false
 tags: [Process Template,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve dealt on [How to enable the new work Item in TFS 2017](http://www.codewrecks.com/blog/index.php/2016/11/05/enable-new-work-item-form-in-tfs-15/), and you could have noticed some  **differences from Visual Studio Team Service Work Item layout, or even with new Team Projects created after the upgrade**. In  **Figure 1** you can see in the left the detail of a PBI on a Team Project that exists before the upgrade to TFS 2017, in the right the PBI on a Team Project created after the upgrade.
 

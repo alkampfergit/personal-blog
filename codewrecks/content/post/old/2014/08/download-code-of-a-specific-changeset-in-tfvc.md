@@ -4,7 +4,7 @@ description: ""
 date: 2014-08-20T05:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Some time ago a friend asked me the easiest way to  **get code from a specific folder and a specific version in TFVC**. The goal is avoiding using Get Specific Version because he do not want to overwrite the Workspace folder he is using, he want also to avoid creating another workspace only to do a one-shot get of a folder.
 

@@ -3,8 +3,8 @@ title: "TFS 2015 Update 2 is released"
 description: ""
 date: 2016-04-02T09:00:37+02:00
 draft: false
-tags: [Tfs,Upgrade]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 You can find all the details directly in [Visual Studio Site](https://www.visualstudio.com/news/tfs2015-update2-vs), but I want to emphasize that  **TFS and VS Updates are much more than Service Packs** , because they also intrdoduce a lot of new features. Here is a list of my personal favorites features of TFS Update 2
 

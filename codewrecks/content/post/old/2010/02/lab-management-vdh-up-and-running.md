@@ -4,7 +4,7 @@ description: ""
 date: 2010-02-27T08:00:37+02:00
 draft: false
 tags: [Lab Management,Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 With VS2010 RC MS had released a [vhd to evaluate Lab Management](http://www.microsoft.com/downloads/details.aspx?FamilyID=592e874d-8fcd-4665-8e55-7da0d44b0dee&amp;displaylang=en). This is a very good news, and since I already have a Beta2 Lab Management Up and running I want to try the VHD to see what is improved on RC.
 

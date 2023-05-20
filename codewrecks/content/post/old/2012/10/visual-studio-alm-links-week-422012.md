@@ -4,7 +4,7 @@ description: ""
 date: 2012-10-20T01:00:37+02:00
 draft: false
 tags: [Tfs,Visual Studio ALM]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [MSDN subscribers worldwide get Pluralsight Starter Subscription](http://blogs.msdn.com/b/bharry/archive/2012/10/11/msdn-subscribers-worldwide-get-pluralsight-starter-subscription.aspx)
 - [Network considerations for TFS Proxy Servers](http://blogs.msdn.com/b/visualstudioalm/archive/2012/10/10/network-considerations-for-tfs-proxy-servers.aspx)

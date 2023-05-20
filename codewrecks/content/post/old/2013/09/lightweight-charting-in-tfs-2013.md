@@ -3,8 +3,8 @@ title: "LightWeight Charting in TFS 2013"
 description: ""
 date: 2013-09-11T06:00:37+02:00
 draft: false
-tags: [TF Service]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 One of the most interesting aspect of TFS is the great ability to give you all the statistics you need about your project thanks to the integration with SQL Analysis Services. The ability to do  **complex report based on TFS Cube is really exceptional, but it somewhat complicated for small teams** , that needs much more simpler data.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2014-07-21T16:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Sometimes, even if you are logged in as a domain user that has all the rights to access TFS,  **when you navigate to TFS you are prompted for password every time**. You simply re-enter your credentials and you access TFS, but each time you close and reopen the browser you need to manually reenter credentials. This problem happens because the browser does not understand that the url of TFS belongs to Intranet Sites and it does not send AD credentials for authenticating. Before resorting to manually handle authentication with Credential Manager to each client computer, consider fixing this once for all with Group Policy.
 

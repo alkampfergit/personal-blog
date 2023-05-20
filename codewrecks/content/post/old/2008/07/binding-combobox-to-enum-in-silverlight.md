@@ -4,7 +4,7 @@ description: ""
 date: 2008-07-29T09:00:37+02:00
 draft: false
 tags: [Silverlight]
-categories: [Silverlight]
+categories: []
 ---
 These days I’m playing a bit with Silverlight, to realize a little piece of backoffice of an ASP.NEt classic application. We decided to give a chance to silverligth because the backoffice is used only internally and so we can make experience with a noncritical piece of software.
 

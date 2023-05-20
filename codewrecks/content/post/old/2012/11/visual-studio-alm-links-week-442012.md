@@ -4,7 +4,7 @@ description: ""
 date: 2012-11-03T05:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Heterogeneous dependencies: what’s a development team to do? Migrate or integrate!](http://blogs.msdn.com/b/visualstudioalm/archive/2012/10/24/heterogeneous-dependencies-what-s-a-development-team-to-do-migrate-or-integrate.aspx)
 - [Introducing Code Map in Visual Studio 2012 Update 1 CTP.](http://blogs.msdn.com/b/visualstudioalm/archive/2012/10/26/introducing-code-map-in-visual-studio-2012-update-1-ctp.aspx)

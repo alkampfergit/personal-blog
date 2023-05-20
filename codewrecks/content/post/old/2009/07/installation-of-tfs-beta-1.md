@@ -4,7 +4,7 @@ description: ""
 date: 2009-07-01T09:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Today I installed Tfs 2010 beta to look at new features; installation process of Tfs can be a complex operation but I must admit that in the 2010 version, the installer is more friendly. I installed sharepoint and sql server 2008 then I fired the installation of tfs. The main difference from the 2008 version is that it does not ask you anything, it just install, postponing the configuration after the installation is ok. When you access the Team Foundation Administration console, it presents you a configuration wizard.
 

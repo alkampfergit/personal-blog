@@ -4,7 +4,7 @@ description: ""
 date: 2015-05-13T06:00:37+02:00
 draft: false
 tags: [Performance,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you are a small shop using on-premise TFS, probably you’ll have a single machine installation for Data and App tier for your TFS. While installing a Build server on App or Data tier is highly discouraged,  **using a single machine for Data and App tier is a viable solution for small and medium team** , and with virtualization is quite easy to move machine to a more powerful hardware or give it more RAM if the usage or TFS increase performances starts to degrade.
 

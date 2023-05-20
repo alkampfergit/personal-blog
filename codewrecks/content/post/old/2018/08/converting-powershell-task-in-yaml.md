@@ -3,7 +3,7 @@ title: "Converting PowerShell Task in YAML"
 description: ""
 date: 2018-08-07T17:00:37+02:00
 draft: false
-tags: [build,VSTS,YAML]
+tags: [Continuous Integration, AzureDevops]
 categories: [Azure DevOps]
 ---
 YAML Builds have many advantages over traditional build definitions, especially because  **YAML build definitions follows branching of code** , a killer feature that is fantastic if you use GitFlow.

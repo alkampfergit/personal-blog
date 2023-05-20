@@ -3,8 +3,8 @@ title: "Detect Client-side reconnection with SignalR"
 description: ""
 date: 2014-06-11T05:00:37+02:00
 draft: false
-tags: [signalr]
-categories: [NET framework]
+tags: []
+categories: [AspNet]
 ---
  **Signalr is really good on keeping alive the connection between server and the client** and make sure that the client automatically reconnect if there are connection issue. To verify this you can write a simple test with a simple hub that each second broadcasts to all clients current server timestamp with a simple timer.
 

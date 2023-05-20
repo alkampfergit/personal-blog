@@ -4,7 +4,7 @@ description: ""
 date: 2016-10-19T06:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you installed TFS “15” preview you should give a try to code search, because it is surely one of the coolest feature introduced in this new release.
 

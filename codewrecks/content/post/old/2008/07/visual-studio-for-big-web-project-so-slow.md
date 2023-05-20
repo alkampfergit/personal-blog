@@ -4,7 +4,7 @@ description: ""
 date: 2008-07-29T09:00:37+02:00
 draft: false
 tags: [Silverlight]
-categories: [Silverlight]
+categories: []
 ---
 Yesterday I moved my first steps on silverlight, I’m working on a big solution with a big Web site, and the solution build time is really increased when I add silverlight project to the solution.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2014-07-22T06:00:37+02:00
 draft: false
 tags: [Security,TfsBuild]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve blogged some days ago on [Securing the password in build definition](http://www.codewrecks.com/blog/index.php/2014/07/12/store-secure-password-in-tfs-build-definition/). I want to make a disclaimer on this subject. The technique described in that article permits you to use encrypted password in a build definition, but this password cannot be decrypted only if you have no access to the build machine. If you are a malicious user and you can schedule a build, you can simply * **schedule a new build that launch a custom script that decrypts the password and sends clear password by email or dump to the build output.** *
 

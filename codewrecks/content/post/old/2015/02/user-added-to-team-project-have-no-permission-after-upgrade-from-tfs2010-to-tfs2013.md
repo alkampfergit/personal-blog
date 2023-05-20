@@ -3,8 +3,8 @@ title: "User added to Team Project have no permission after upgrade from TFS2010
 description: ""
 date: 2015-02-24T07:00:37+02:00
 draft: false
-tags: [Tfs,Upgrade]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 I’ve performed an upgrade from TFS2010 to TFS2013 at a customer site last week. The upgrade consisted in  **moving to a different machine and from a Workstation to an Active Directory Domain**. The operation was simple, because the customer uses only Source Control and they want to spent minimal time in the operation, so we decided for this strategy
 

@@ -4,7 +4,7 @@ description: ""
 date: 2017-05-10T20:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When you use Build to generate artifact for installation or whenever you need a build to validate code with tasks that are not easily runnable on client machine you  **can have delay to install patches to your production system**.
 

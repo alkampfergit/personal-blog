@@ -3,7 +3,7 @@ title: "Interesting links for Visual Studio 11 and TFS 11"
 description: ""
 date: 2012-03-01T10:00:37+02:00
 draft: false
-tags: [VS11]
+tags: [Tfs]
 categories: [Team Foundation Server,Visual Studio]
 ---
 Yesterday Microsoft released a really huge wave of tools as well as the consumer preview of the upcoming operating system  **Windows 8**. For Developers there are a lots of news to learn, especially on the new version of  **Visual Studio** called  **VS11** , so I decided to create a blog post where I’ll try to list all interesting links related to  **VS11 Beta**. I’ll try to keep this post updated

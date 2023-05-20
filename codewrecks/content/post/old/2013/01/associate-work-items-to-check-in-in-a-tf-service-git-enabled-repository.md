@@ -3,8 +3,8 @@ title: "Associate Work Items to check-in in a TF Service Git enabled repository"
 description: ""
 date: 2013-01-31T20:00:37+02:00
 draft: false
-tags: [Git,TF Service]
-categories: [Team Foundation Server]
+tags: [Git,Tfs]
+categories: [Tfs]
 ---
 Even if we are still in preview,  **Git support in TF Service already has some nice integration between git and all the rest of the world of TFS**. As an example suppose you have a Work Item you are working to.
 

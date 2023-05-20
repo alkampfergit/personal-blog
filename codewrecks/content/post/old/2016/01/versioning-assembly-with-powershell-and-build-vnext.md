@@ -4,7 +4,7 @@ description: ""
 date: 2016-01-29T16:00:37+02:00
 draft: false
 tags: [build,VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In an old blog post I explained how to [version  assembly  during TFS 2013 build with Powershell Scripts](http://www.codewrecks.com/blog/index.php/2014/01/11/customize-tfs-2013-build-with-powershell-scripts/). The goal is  **modifying assemblyinfo.cs and assemblyinfo.vb with PowerShell in a TFS 2013 build** for a project based on TFVC. If you are interested in Git I’ve [other post on the subject](http://www.codewrecks.com/blog/index.php/2015/10/17/integrating-gitversion-and-gitflow-in-your-vnext-build/).
 

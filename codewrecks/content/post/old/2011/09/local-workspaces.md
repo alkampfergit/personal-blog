@@ -4,7 +4,7 @@ description: ""
 date: 2011-09-29T16:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In Tfs11 one of the most important change in source control system is the introduction of the “local workspaces”. A Workspace is a mapping between the server source control system and a local folder of a computer and until Tfs11 its state is managed by the server. One advantage of this approach is: when I ask for a “Get Latest”, the server knows the status of my workspace and can send me only the files that are changed. This has some disadvantage, all the files are readonly on disk, because you should explicitly do a “Check-Out” operation to begin editing a file, but there are also some annoying behavior: if you delete a file from the Windows explorer and you issue a Get Latest file, nothings get downloaded, because the server still believes that you have that file on your folder.
 

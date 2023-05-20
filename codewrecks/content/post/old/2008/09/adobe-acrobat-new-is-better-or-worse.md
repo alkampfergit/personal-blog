@@ -3,7 +3,7 @@ title: "Adobe Acrobat new is better or worse"
 description: ""
 date: 2008-09-01T05:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 I’m working with OpenXml format of office 2007, so I keep the reference document open because I constantly need to search information into the document. The reference document is a 5200 huge 37 mb pdf, when I open it in Adobe reader 8 the acrobat process uses 60MB of ram, when I start a search of a text the search is incredibly slow, acrobat begin to use more memory. To make a comparison I try to search the text youcannotfoundThis and after 30 seconds acrobat is still at page 500, and the memory consumption is 125 mb.

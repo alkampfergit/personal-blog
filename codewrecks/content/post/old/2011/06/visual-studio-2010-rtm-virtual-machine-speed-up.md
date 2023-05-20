@@ -4,7 +4,7 @@ description: ""
 date: 2011-06-28T07:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I usually use the [Brian Keller's RTM Virtual Machine](http://blogs.msdn.com/b/briankel/archive/2011/05/12/may-2011-refresh-of-visual-studio-2010-rtm-virtual-machine-with-sample-data-and-hands-on-labs.aspx) to do TFS demo in talk or to customers. It comes on two flavors, a Virtual PC version and an Hyper-V version. If you use the Virtual PC version, is is originally configured to use 2 GB of ram and if you give it the maximum amount (3.6 GB) you can notice that the gain in speed is not so big.
 

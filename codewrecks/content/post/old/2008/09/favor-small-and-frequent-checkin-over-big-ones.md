@@ -3,7 +3,7 @@ title: "Favor small and frequent checkin over big ones"
 description: ""
 date: 2008-09-05T07:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 This is a rule that I try to adopt since long time in the past, and few days ago Jeff Atwood [enforces this concept in his blog](http://www.codinghorror.com/blog/archives/001165.html). I completely agree with him, code should be checked in often, especially when you have continuous integration server. Checking in often reduce the risk of conflicts, makes tests run often (you should have setup your continuous server to run all tests for each checkin) and makes integration simplier. Benefit of frequent checkins are

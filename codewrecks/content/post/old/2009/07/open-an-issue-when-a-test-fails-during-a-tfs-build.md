@@ -4,7 +4,7 @@ description: ""
 date: 2009-07-02T08:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In last post I show how to configure test run in a team foundation build, simply editing the msbuild file. The aim of the post was showing how to make the entire build fail when a single test fails. To achieve this result I simply override a target and set some properties values.
 

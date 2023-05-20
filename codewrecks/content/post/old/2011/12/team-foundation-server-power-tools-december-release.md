@@ -4,7 +4,7 @@ description: ""
 date: 2011-12-17T11:00:37+02:00
 draft: false
 tags: [Power Tools,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 You can read [all the details Here](http://blogs.msdn.com/b/bharry/archive/2011/12/16/december-2011-tfs-power-tools-release.aspx), but basically it is a release mainly focused for “non visual studio developers”. This new release has a MSSCCI provider for 64 bit, and a version of Power Tools for eclipse, and it is available from the Eclipse update site.
 

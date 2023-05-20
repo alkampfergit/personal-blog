@@ -4,7 +4,7 @@ description: ""
 date: 2014-02-21T08:00:37+02:00
 draft: false
 tags: [PowerShell,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve done some blog post on customizing TFS Build with PowerShell scripts and the very first question I got from this approach is
 

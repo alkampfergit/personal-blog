@@ -4,7 +4,7 @@ description: ""
 date: 2013-02-02T09:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In my post “[Associate Work Items to check-in in a TF Service Git Enabled repository](http://www.codewrecks.com/blog/index.php/2013/01/31/associate-work-items-to-check-in-in-a-tf-service-git-enabled-repository/)” I explained how simple is to  **associate a commit in git to a Work Item simply inserting an hashtag followed by the id of the work item**. Some of my friend and colleagues told me that it would be nice to have such kind of integration even in standard TFS VCS. This feature can be extremely useful for people not using Visual Studio, or people that are lovers of command line (TFS has the tf.exe command that permits you do do everything you need to do).
 

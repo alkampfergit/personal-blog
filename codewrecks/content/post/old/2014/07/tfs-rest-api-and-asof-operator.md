@@ -4,7 +4,7 @@ description: ""
 date: 2014-07-05T08:00:37+02:00
 draft: false
 tags: [Rest APIs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
  **TFS** [**Rest Api**](http://www.visualstudio.com/en-us/integrate/explore/explore-vso-vsi) **are one of the most exiting new feature introduced in Visual Studio Online**. One of the most important aspect of TFS is the ability to gather data about our team and having full access to that data for custom reporting is the primary need for most people. While you can query TFS Warehouse database for on-premise TFS to gather all the data you need, you have no access to databases for VSO In such scenario Rest APIs are the best way to interact to your account to quickly grab data to consume from your application.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2009-08-13T09:00:37+02:00
 draft: false
 tags: [Continuos Integration,Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 For large projects, the time needed to run a build can grow considerably large, until it eventually pass the famous barrier of [10 minutes](http://www.think-box.co.uk/blog/2006/02/ten-minute-build-continuous.html). To speedup build time you can try to use some features of TFS,
 

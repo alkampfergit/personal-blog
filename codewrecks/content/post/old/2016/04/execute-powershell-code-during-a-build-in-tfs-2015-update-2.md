@@ -4,7 +4,7 @@ description: ""
 date: 2016-04-16T08:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In TFS 2015 build system, running a PowerShell script stored in source code is simple because there is a dedicated action to accomplish this task, but  **if you want to run a PowerShell script that is not in source control, you have no option out of the Box**.
 

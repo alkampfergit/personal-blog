@@ -3,7 +3,7 @@ title: "Create a release in TFS 2015  VSTS Release Management"
 description: ""
 date: 2016-06-18T08:00:37+02:00
 draft: false
-tags: [ReleaseManagement,Tfs,VSTS]
+tags: ["ContinuousDeployment",Tfs]
 categories: [DevOps]
 ---
 This is the end of the journey of the last serie of posts. I’m now at the situation where I have a build that produces a single zip file with everything I need to deploy the software and a bunch of PowerShell scripts that relase the software using that zip as a source artifact.

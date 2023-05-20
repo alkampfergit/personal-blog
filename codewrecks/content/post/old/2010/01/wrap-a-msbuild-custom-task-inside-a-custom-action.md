@@ -4,7 +4,7 @@ description: ""
 date: 2010-01-19T21:00:37+02:00
 draft: false
 tags: [Continuous Integration,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you have an MSBuild custom task that you want to reuse in a TFS 2010 build workflow, you have two solution. The first is using the MsBuild activity as I described in [this post](http://www.codewrecks.com/blog/index.php/2009/11/09/use-msbuild-custom-action-in-tfs2010-build-with-a-custom-project/), but this approach has a lot of limitations.
 

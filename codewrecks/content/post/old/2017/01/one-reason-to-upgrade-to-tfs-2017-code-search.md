@@ -3,8 +3,8 @@ title: "One reason to upgrade to TFS 2017 Code search"
 description: ""
 date: 2017-01-17T17:00:37+02:00
 draft: false
-tags: [Upgrade]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 I always suggest teams to use VSTS instead of on-premise TFS. The main reason is avoiding any issue with administration or upgrades. In these years,  **one of the main risk of having TFS on-premise is not planning for upgrade and keeping the first version installed for years**. As a result, it is not uncommon to have teams that still uses TFS 2013 even if version 2017 is out.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2012-10-12T22:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Design Patterns UML Toolbox extension for Visual Studio 2012](http://blogs.msdn.com/b/visualstudiouk/archive/2012/10/07/design-patterns-uml-toolbox-extension-for-visual-studio-2012.aspx)
 - [VS/TFS 2012 Tidbits: TFS Feedback Management Behind the Scenes](http://blogs.msdn.com/b/slange/archive/2012/10/04/vs-tfs-2012-tidbits-tfs-feedback-management-behind-the-scenes.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+SteveLange+%28Steve+Lange%27s+MSDN+Blog%29)

@@ -4,7 +4,7 @@ description: ""
 date: 2010-09-13T16:00:37+02:00
 draft: false
 tags: [Team Foundation Server,TfsAPI]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Sometimes you need to operate to a Tfs Version Control System with API starting from a local folder. There are a lot of API to work with workspaces, but the main problem is that you need to pass through a [VersionControlServer](http://msdn.microsoft.com/en-us/library/bb171724%28v=VS.100%29.aspx) object, and to obtain such an object you need to know the address of the Tfs server the workspace is mapped to?
 

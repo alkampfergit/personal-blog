@@ -4,7 +4,7 @@ description: ""
 date: 2014-05-31T17:00:37+02:00
 draft: false
 tags: [Books]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If the book “[Professional Application Lifecycle Management With Visual Studio 2013](http://www.codewrecks.com/blog/index.php/2014/05/17/professional-application-lifecycle-management-with-visual-studio-2013/)” is the perfect companion for all members of a software project team using Visual Studio ALM ecosystem, [Professional Team Foundation Server 2013](http://www.wrox.com/WileyCDA/WroxTitle/Professional-Team-Foundation-Server-2013.productCd-1118836340.html) is aimed mainly to “TFS Administrators”.
 

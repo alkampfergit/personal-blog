@@ -4,7 +4,7 @@ description: ""
 date: 2009-08-07T10:00:37+02:00
 draft: false
 tags: [Excel,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the greatest features of Tfs is that it is a single product that is able to manage the whole ALM of an application, but another strength point is high level of integration with other tools. One of the coolest feature is the ability to use Excel to manage workitems, without the need to even open visual studio.
 

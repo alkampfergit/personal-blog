@@ -4,7 +4,7 @@ description: ""
 date: 2010-06-07T14:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Web projects in VS2010 has a great flexibility when it is time to deploy to the server, and it has a great option to generate a Deploy Package with a single click
 

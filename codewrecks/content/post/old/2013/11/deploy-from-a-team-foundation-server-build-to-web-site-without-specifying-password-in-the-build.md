@@ -4,7 +4,7 @@ description: ""
 date: 2013-11-29T18:00:37+02:00
 draft: false
 tags: [Continuous Deployment,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In a previous article I explained how [to deploy an ASP.NET Web Site from a TFS Build](http://www.codewrecks.com/blog/index.php/2013/08/01/deploy-asp-net-web-site-on-iis-from-tfs-build/) thanks to MSDeploy engine. One of the **great complain you can have with this solution is the need to specify UserName and password in build configuration** and the need to use the AllowUntrustedCertificate=true.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2009-07-06T07:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In the [last post](http://www.codewrecks.com/blog/index.php/2009/07/03/execute-custom-code-during-tfs-build/) of Tfs series, I showed how  to build a msbuild custom action to tweet when build test run fails. Using [twitter](http://twitter.com/) can seem strange at first, and probably not so professional to associate to a project build, but this is not true. Twitter is a free service that can be consumed from many devices, you can use tool such as [twitterDeck](http://tweetdeck.com/beta/) to manage all of your tweets in your desktop environment and to categorize them, but you can also use any mobile phone, so it is probably the most serious way to signal build problems to everyone is interested in the build process of a certain project.
 

@@ -3,14 +3,14 @@ title: "Signalr Error the connection id is the incorrect format"
 description: ""
 date: 2013-08-27T19:00:37+02:00
 draft: false
-tags: [signalr]
-categories: [ASPNET]
+tags: []
+categories: [AspNet]
 ---
 I’m working with Signalr in a real project and I found a problem with authentication. This is the Repro Steps for the bug:
 
 *1) the user open a browser tab to a public page that uses SignalR  
-2) he opens another tab in the browser and navigate to a private page that requires authentication  
-3) he logins into the system and Signalr in the first tab stops working.*
+1) he opens another tab in the browser and navigate to a private page that requires authentication  
+2) he logins into the system and Signalr in the first tab stops working.*
 
 The page stops to receive server calls and if I call some Hub function from javascript I got no javascript error in Developer Console, but done function is never called. To troubleshoot connection error you should handle  **$.connection.hub.error** function that gets called whenever a communication error happens. Now I was able to find that the error is a status 500 with a page that tells * **“the connection id is the incorrect format”** *
 

@@ -4,7 +4,7 @@ description: ""
 date: 2012-03-10T09:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server,Tools and library]
+categories: [Team Foundation Server]
 ---
 Some times ago I blogged a series of links of [useful tools for TFS](http://www.codewrecks.com/blog/index.php/2011/06/27/a-bunch-of-links-for-tfs-ecosystem/). Today I want to give you a series of Codeplex Project of useful tools. These tools are not only useful to use, but they are invaluable example of using TFS API, so they deserves a special list of their own. It is not a comprehensive list, but it contains some of the most interesting project that you can find on Codeplex.
 

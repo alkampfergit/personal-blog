@@ -3,7 +3,7 @@ title: "Using a single ModalPopupExtender to show Dynamic Complex Data"
 description: ""
 date: 2008-06-06T09:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 I'm not a javascript fan, but sometimes I have the need to write some client script code, to make the application more responsive.

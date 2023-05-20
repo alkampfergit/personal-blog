@@ -4,7 +4,7 @@ description: ""
 date: 2010-04-23T17:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I've installed a little test tfs with full MOSS 2007 integration in a virtual machine, now I want to move and rename a project collection from another test tfs (RC) to this new one (RTM), and recreate the project portal on MOSS for one of the team project.
 

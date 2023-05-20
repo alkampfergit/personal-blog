@@ -3,8 +3,8 @@ title: "Install and configure a TFS Release Manager Deployer Agent in Azure VM"
 description: ""
 date: 2014-06-11T07:00:37+02:00
 draft: false
-tags: [Azure,ReleaseManagement]
-categories: [Team Foundation Server]
+tags: [Azure,"ContinuousDeployment"]
+categories: ["Tfs"]
 ---
 ## The Problem
 

@@ -4,7 +4,7 @@ description: ""
 date: 2009-09-07T03:00:37+02:00
 draft: false
 tags: [TeamFoundationServer]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you read [this post](http://www.codewrecks.com/blog/index.php/2009/08/21/take-control-of-assembly-numbering-during-a-tfs-build/), you can see how to customize a tfs build to modify versioning of the assembly. During that process to find the latest changeset of the repository, to use as *revision Number* , I used a direct call to tf.exe tool and a custom Regex msbuild task to parse the result to find desired number. This approach have some weak points, first of all you need to know the location of tf.exe tool, moreover we are bound to the format output of the tool, now I want to show you a different way to obtain the same result.
 

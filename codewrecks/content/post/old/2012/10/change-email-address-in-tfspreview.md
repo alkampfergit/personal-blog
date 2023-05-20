@@ -4,7 +4,7 @@ description: ""
 date: 2012-10-19T21:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Actually TFSservice only accepts live id as a login mechanism, but if you start to use it in your company probably you want it to use another email address for E-Mail communication (alert, Feedback, etc), this is possible through the My Profile link
 

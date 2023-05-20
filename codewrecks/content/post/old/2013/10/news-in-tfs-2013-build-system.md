@@ -4,7 +4,7 @@ description: ""
 date: 2013-10-21T06:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 [Team Foundation Server 2013 is finally RTM](http://blogs.msdn.com/b/bharry/archive/2013/10/17/visual-studio-2013-rtm-available.aspx) and it is time to explore some of its new functionalities and see what is changed between previous version. In the Build Area there are a lots of improvements especially because we now have Git Support and TFS presents a unified build experience between standard TFVC and Git.
 

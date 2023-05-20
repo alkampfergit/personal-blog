@@ -4,7 +4,7 @@ description: ""
 date: 2013-08-22T04:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In [this post](http://blogs.msdn.com/b/visualstudioalm/archive/2013/08/20/tfs-internal-usage-statistics-1st-half-cy-2013.aspx) you can read about some numbers of TFS usage by Microsoft itself. While the number are impressive,  **I’m really interested in trends for various numbers** , you can read from the first table. Microsoft is a really big company and it is really interesting to see where they are investing time in their projects.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2012-06-06T06:00:37+02:00
 draft: false
 tags: [VS2012]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I heard many different reactions on the new Team Explorer in Visual Studio 2012, some people really likes it, some other still need to familiarize with it,  **but most of them complained that they find difficult to associate a Work Item to a check in because the drop down list in VS 11 beta only permits you to specify the id of the work item**. The only way in VS2012 to associate a WI to the Chec-in is dragging a Work Item from a Query result to the *Related Work Items area of Pending Changes*
 

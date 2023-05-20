@@ -4,7 +4,7 @@ description: ""
 date: 2015-09-23T16:00:37+02:00
 draft: false
 tags: [TFVC]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
  **If you work with TFVC when you Check-in your code, the default action is close associate Work Item**. VS2015 has an option for you in Settings pane of the Visual Studio Team Foundation Server Source Control to change this default behavior to associate.
 

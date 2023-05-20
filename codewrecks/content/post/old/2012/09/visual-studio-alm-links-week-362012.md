@@ -4,7 +4,7 @@ description: ""
 date: 2012-09-07T19:00:37+02:00
 draft: false
 tags: [ALM,Tfs,Visual Studio ALM]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Remote UAC with Standard Environment and Workgroup Machines](http://mattvsts.blogspot.it/2012/09/remote-uac-with-standard-environment.html)
 - [Convert VB.NET to C# from Visual Studio 2012](https://msmvps.com/blogs/deborahk/archive/2012/08/28/convert-c-to-vb-or-vice-versa-with-visual-studio-2012.aspx)

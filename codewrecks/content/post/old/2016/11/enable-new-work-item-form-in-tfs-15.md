@@ -4,7 +4,7 @@ description: ""
 date: 2016-11-05T09:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you installed TFS 15 Preview, one  **of the news you expected to see is the new Work Item Layout (already available in VSTS).** You could get disappointed that actually your existing Work Items still are shown with the old interface, as you can see in Figure 1
 

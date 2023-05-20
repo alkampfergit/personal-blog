@@ -3,8 +3,8 @@ title: "Release to Azure with Azure ARM templates"
 description: ""
 date: 2016-08-16T08:00:37+02:00
 draft: false
-tags: [ReleaseManagement,VSTS]
-categories: [Team Foundation Server]
+tags: ["ContinuousDeployment"]
+categories: [Tfs]
 ---
 Thanks to new Release Management system in VSTS / TFS creating a release to your on-premise environment is really simple ([I’ve described the process here](http://www.codewrecks.com/blog/index.php/2016/06/18/create-a-release-in-tfs-2015-vsts-release-management/)). Another option is creating a test environment in Windows Azure, and if you choose this option life can be even easier.
 

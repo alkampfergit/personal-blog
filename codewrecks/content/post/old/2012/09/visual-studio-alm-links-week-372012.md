@@ -4,7 +4,7 @@ description: ""
 date: 2012-09-15T05:00:37+02:00
 draft: false
 tags: [Tfs,Visual Studio ALM]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Requirement management in the modern application lifecycle.](http://blog.hinshelwood.com/requirement-management-in-the-modern-application-lifecycle/)
 - [Rangers Flash – August 2012](http://blogs.msdn.com/b/willy-peter_schaub/archive/2012/09/07/rangers-flash-august-2012.aspx)

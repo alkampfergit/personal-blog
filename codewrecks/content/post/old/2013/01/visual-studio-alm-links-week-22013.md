@@ -4,7 +4,7 @@ description: ""
 date: 2013-01-12T07:00:37+02:00
 draft: false
 tags: [Visual Studio ALM]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Monitoring TFS 2012 using SCLM (System Center Operation Manager 2012)](http://dotnet.dzone.com/articles/monitoring-tfs-2012-using-scom?mz=57923-dotnet)
 - [Changing The product Backlog In TFS 2012](http://osnabrugge.wordpress.com/2013/01/04/changing-the-product-backlog-in-tfs-2012/)

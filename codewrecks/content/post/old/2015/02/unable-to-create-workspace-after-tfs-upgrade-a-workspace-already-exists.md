@@ -4,7 +4,7 @@ description: ""
 date: 2015-02-26T18:00:37+02:00
 draft: false
 tags: [TFVC]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 At a customer site we performed an upgrade from TFS 2010 to TFS 2013,  **moving from a computer in Workspace to a computer in Domain**. With this operation we finally  **defined a DNS name for tfs so all user can access it from tfs.company.local name, instead of using machine name**. After we performed the upgrade, all the user were warned of this change and we simply told them to recreate workspaces pointing to the new server.
 

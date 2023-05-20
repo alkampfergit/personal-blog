@@ -4,7 +4,7 @@ description: ""
 date: 2013-07-10T20:00:37+02:00
 draft: false
 tags: [Process Template]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Customizing process template is a real cool part of Team Foundation Server, because it permits you to follow the “ **do not adapt your process to the tool but adapt the tool to your process** ” scenario. There are a lot of best practices and a [really good guide published by TFS Rangers](http://vsartfsptguide.codeplex.com/), in this post I want to show how you can use a PowerShell script in a Tfs2013 Build to automatically update your Template at each push of a new definition.
 

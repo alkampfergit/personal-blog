@@ -4,7 +4,7 @@ description: ""
 date: 2012-01-27T09:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 This is a super basic and easy question, but I found quite often people asking me how to add an existing project to a TFS Team Project. It turns out that there are more than one way of doing this, but I usually suggests this simple path that is quite simple and is understandable from people that comes from the subversion world.
 

@@ -3,7 +3,7 @@ title: "Remove comment moderation"
 description: ""
 date: 2008-08-27T04:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 I decided to remove comment moderation for the blog. I used it mainly to be sure that no spam pass the filter, but after some months of testing I verify that Akismet really does a good work, intercepting all the spam comments.

@@ -3,8 +3,8 @@ title: "Scale out deployment error when migrating Reporting Services"
 description: ""
 date: 2016-07-27T18:00:37+02:00
 draft: false
-tags: [Upgrade]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
  **Part of moving your TFS Server on new hardware, or** [**creating a Pre-Production environment**](http://www.codewrecks.com/blog/index.php/2016/07/16/create-a-pre-production-test-environment-for-your-tfs/) **is restoring Reporting Server database**. Since Datatbase are encrypted, if you simply restore the database then configure Reporting Services on new machine to use restored database, this operation will fail, because the new server cannot read encrypted data.
 

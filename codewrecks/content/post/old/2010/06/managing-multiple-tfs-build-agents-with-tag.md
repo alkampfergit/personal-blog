@@ -4,7 +4,7 @@ description: ""
 date: 2010-06-14T16:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In last post I explain [how to run code coverage during a Tfs Build](http://www.codewrecks.com/blog/index.php/2010/06/14/running-code-coverage-in-tfs2010-builds/) and I mentioned the fact that to run code coverage you need to have Visual Studio premium or ultimate in the build machine. But what happens when you have multiple configured test agent, and only some of them have VS installed?
 

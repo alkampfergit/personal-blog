@@ -4,7 +4,7 @@ description: ""
 date: 2017-03-23T07:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 It could happen that you received an Email from VSTS telling you that one of the extension needs some action.
 

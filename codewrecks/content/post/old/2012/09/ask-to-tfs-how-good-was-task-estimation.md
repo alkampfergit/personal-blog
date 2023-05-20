@@ -4,7 +4,7 @@ description: ""
 date: 2012-09-08T05:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the information requested by Project Managers is knowing  **how good was task estimation in the past** , and thanks to TFS gathering this data is really simple. If you look at the sample data in [Brian Keller’s virtual machine](http://blogs.msdn.com/b/briankel/archive/2011/09/16/visual-studio-11-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx) for Project Tailspin Toys you have three field related to estimation of task, as visible in Figure 1.
 

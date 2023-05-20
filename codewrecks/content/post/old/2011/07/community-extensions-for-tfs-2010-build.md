@@ -4,7 +4,7 @@ description: ""
 date: 2011-07-05T06:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [News,Team Foundation Server]
+categories: [Team Foundation Server]
 ---
 I'm happy to announce that on 4 of July 2010 the community [TFS Build extensions](http://tfsbuildextensions.codeplex.com/) project on codeplex published its [first stable release](http://tfsbuildextensions.codeplex.com/releases/view/67138).
 

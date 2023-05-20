@@ -3,7 +3,7 @@ title: "XamlReader quotMissing XmlNamespace Assembly or ClrNamespace in Mapping 
 description: ""
 date: 2008-05-18T02:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 This post is a clarification of the [preceding post](http://www.codewrecks.com/blog/?p=257).

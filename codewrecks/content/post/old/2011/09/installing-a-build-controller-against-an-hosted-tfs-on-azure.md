@@ -4,7 +4,7 @@ description: ""
 date: 2011-09-15T13:00:37+02:00
 draft: false
 tags: [Tfs,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the greatest [news of yesterday was the availability of the TEam Foundation Server on Windows Azure.](http://channel9.msdn.com/posts/Team-Foundation-Service-Preview-Team-Build) I can assure you that there is a huge hunting for invitation code (mine 5 are terminated after few minutes ;) ) and this demonstrates the high interest that people have against TFS on Azure.
 

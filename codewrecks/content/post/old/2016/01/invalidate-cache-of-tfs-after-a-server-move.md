@@ -3,8 +3,8 @@ title: "Invalidate cache of TFS after a Server Move"
 description: ""
 date: 2016-01-15T17:00:37+02:00
 draft: false
-tags: [Tfs,Upgrade]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 > If you move your TFS server in a new hardware be sure to follow the instructions in MSDN: [Move or clone Team Foundation Server (hardware move)](https://msdn.microsoft.com/en-us/library/ms404869%28v=vs.120%29.aspx "https://msdn.microsoft.com/en-us/library/ms404869(v=vs.120).aspx").
 

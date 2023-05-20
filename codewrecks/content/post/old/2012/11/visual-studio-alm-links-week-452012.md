@@ -4,7 +4,7 @@ description: ""
 date: 2012-11-09T17:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Git-TF 2.0 update available](http://blogs.msdn.com/b/bharry/archive/2012/11/02/git-tf-2-0-update-available.aspx)
 - [Upgrading your build definitions from TFS2010 to TFS2012](http://blogs.msdn.com/b/jpricket/archive/2012/10/24/upgrading-your-build-definitions-from-tfs2010-to-tfs2012.aspx)

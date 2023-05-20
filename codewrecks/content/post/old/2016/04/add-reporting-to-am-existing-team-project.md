@@ -4,7 +4,7 @@ description: ""
 date: 2016-04-07T15:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In previous post I demonstrated [how you can create a Team Project from Web Interface thanks to TFS 2015 Update 2](http://www.codewrecks.com/blog/index.php/2016/04/03/create-a-team-project-from-web-ui-in-tfs-2015-update-2/). The only drawback of this approach is that  **no Sharepoint Site and no Reporting Services portal are created**.
 

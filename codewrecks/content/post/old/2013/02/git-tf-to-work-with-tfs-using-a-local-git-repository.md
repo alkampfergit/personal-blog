@@ -4,7 +4,7 @@ description: ""
 date: 2013-02-05T19:00:37+02:00
 draft: false
 tags: [git-tf]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Now that TF Service officially supports Git, many people ask themselves if  **standard TFS VCS is dead?. The answer is clearly no** , because a distributed source control is not suitable for all teams / scenario. Anoter reason why standard TFS VCS is not dead is the presence of git-tf ([http://gittf.codeplex.com/](http://gittf.codeplex.com/ "http://gittf.codeplex.com/")), a java based tool by Microsoft that permits you to use a TFS VCS but work with Git locally.
 

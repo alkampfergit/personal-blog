@@ -4,7 +4,7 @@ description: ""
 date: 2017-06-03T08:00:37+02:00
 draft: false
 tags: [build,PowerShell]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
  **Many VSTS build and deploy tasks are based on Winrm to operate on a remote machine** , one of the most common is the “Deploy Test Agent on” that will install a test agent on a remote machine.
 

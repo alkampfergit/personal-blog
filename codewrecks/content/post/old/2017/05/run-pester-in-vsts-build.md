@@ -4,7 +4,7 @@ description: ""
 date: 2017-05-28T08:00:37+02:00
 draft: false
 tags: [build,PowerShell]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’m not a great expert of PowerShell, but during last years I’ve written some custom utilities I’m using for various projects. The main problem is that I’ve scattered all these scripts on multiple projects and usually I need time to find the latest version of a script that does X.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2017-06-17T09:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When you start using Continuous Integration extensively,  **some builds become complex and sometimes a simple sequence of task is not what you want.** Previous build system, based on XAML and Workflow Foundation allows you to specify really complex path of execution, but the side effect is that builds become really complex, they are painful to edit and also, you need to use Visual Studio to edit. Final drawback is that writing and maintaining custom build activities was not so easy, because you need to keep the compiled version in line with build engine version.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2017-07-19T16:00:37+02:00
 draft: false
 tags: [Tfs,VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 A build usually produces artifacts and thanks to the extreme flexibility of VSTS / TFS Build system, you have complete freedom on what to include as artifacts and where you should locate them.
 

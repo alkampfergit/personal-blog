@@ -4,7 +4,7 @@ description: ""
 date: 2015-08-05T19:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Today I needed to move a bunch of Work Items from a TFS 2010  to TFS 2013, but I needed also to move from a TP based on Agile Template on a Project based on CMMI Template.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2014-05-01T06:00:37+02:00
 draft: false
 tags: [VSO]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve dealt with BisSubscribe.exe in the past when I described how to do [automatic deploy of TFS Build when the quality changes](http://www.codewrecks.com/blog/index.php/2010/08/10/moving-to-a-deploy-system-based-on-tfs-build/). Those article explain how you can  **build a WebService that listens for notification from TFS and react accordingly. If you are curious if this technique works also for Visual Studio Online, the answer is obviously YES** !.
 

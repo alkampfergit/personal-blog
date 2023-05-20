@@ -4,7 +4,7 @@ description: ""
 date: 2011-05-09T06:00:37+02:00
 draft: false
 tags: [CodeAnalysis,Tfs,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In a [very old post](http://www.codewrecks.com/blog/index.php/2010/06/14/running-code-coverage-in-tfs2010-builds/) I explained how to enable code coverage in TFS2010 builds and today I received a mail asking an interesting question.
 

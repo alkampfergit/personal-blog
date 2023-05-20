@@ -4,7 +4,7 @@ description: ""
 date: 2012-08-24T20:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Tailor-made Visual Studio 2012 installations (aka unattended, the new way)](http://mattvsts.blogspot.it/2012/08/tailor-made-visual-studio-2012.html)
 - [Announcing git-tf: Combining the local repository of Git with the integrated ALM of TFS](http://channel9.msdn.com/Blogs/VisualStudio/Announcing-git-tf-Combining-the-local-repository-of-Git-with-the-integrated-ALM-of-TFS) (interview on channel9)

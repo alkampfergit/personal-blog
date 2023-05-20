@@ -4,7 +4,7 @@ description: ""
 date: 2018-01-06T10:00:37+02:00
 draft: false
 tags: [searching,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When it is time to design topology of a TFS installation, for small team the  **single server is usually the best choice in term of licensing (one one Windows Server license is  needed) and simplicity of maintenance.** Traditionally the only problem that can occur is: some component (especially the Analysis and Reporting services) starts to slow down the machine if the amount of data starts to become consistent.
 

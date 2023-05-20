@@ -3,7 +3,7 @@ title: "SSIS use parameter with ADO Net source in DataFlow"
 description: ""
 date: 2010-04-13T13:00:37+02:00
 draft: false
-tags: [Sql Server,SSIS]
+tags: [Sql Server]
 categories: [General]
 ---
 I have a database where reports are done with stored procedure over the OLTP database, and we begin to suffer poor performance because we have a lot of data and sometimes reports are locked by transaction issued from components that does bulk data insertion.

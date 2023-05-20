@@ -4,7 +4,7 @@ description: ""
 date: 2017-05-20T07:00:37+02:00
 draft: false
 tags: [build,Git]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 With TFS / VSTS Build system it is possible to configure Git to require that a  **specific branch is protected, and you need to use Pull Requests to push code into it, and the pull request can be accepted only if a specific build is green**. Here is the typical configuration you can do in admin page for your Git repositories.
 

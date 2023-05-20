@@ -4,7 +4,7 @@ description: ""
 date: 2014-10-13T18:00:37+02:00
 draft: false
 tags: [Rest APIs,VSO]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the most interesting news of VSO in last months  **are** [**service hooks**](http://www.visualstudio.com/integrating-with-service-hooks-vs) **and REST API to integrate VSO with** [**third party tools**](http://www.visualstudio.com/integrating-with-service-hooks-vs). This capability is a key for success because ALM is really a complicated subject and rarely you can manage all of your applications with a single tools.
 

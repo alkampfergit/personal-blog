@@ -4,7 +4,7 @@ description: ""
 date: 2009-12-07T11:00:37+02:00
 draft: false
 tags: [Tfs,TFS Build,workflow]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 There is a good post on [Jim Lamb's blog](http://blogs.msdn.com/jimlamb/archive/2009/11/18/how-to-create-a-custom-workflow-activity-for-tfs-build-2010.aspx) on how to customize tfs2010 build, but I decided to blog my experience because I need some more time to make it work.
 

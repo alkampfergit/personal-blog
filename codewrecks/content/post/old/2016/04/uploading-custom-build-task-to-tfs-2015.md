@@ -4,7 +4,7 @@ description: ""
 date: 2016-04-27T19:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In a previous article I wrote on [how to write a custom Task For Visual Studio Team Services](http://www.codewrecks.com/blog/index.php/2016/03/17/writing-a-custom-task-for-build-vnext/), but a usual question is:  **can I use the same technique to write a task to TFS 2015 on-premise?** The answer is yes, and it is really simple, thanks to this fantastic article by Jesse,  **that** [**explain how to use Fiddler to being able to authenticate to on-premise TFS without the hassle of enabling basic authentication**](http://blog.jessehouwing.nl/2016/01/publish-build-tasks-to-tfs-2015-without.html). Thanks to that article and Fiddler, you can simply login from tfx-cli to your TFS 2015 without any problem.
 

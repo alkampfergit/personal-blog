@@ -3,7 +3,7 @@ title: "Is Manual Release in Azure DevOps useful"
 description: ""
 date: 2019-02-08T18:00:37+02:00
 draft: false
-tags: [ReleaseManagement]
+tags: ["ContinuousDeployment"]
 categories: [Azure DevOps]
 ---
 When people creates a release in AzureDevOps, they  **primarily focus on how to make the release automatic** , but to be 100% honest, automation in only one side of the release, and probably not the more useful.

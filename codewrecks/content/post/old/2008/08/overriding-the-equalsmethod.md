@@ -3,7 +3,7 @@ title: "Overriding the Equals Method for object used as a key in hashtable"
 description: ""
 date: 2008-08-14T06:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 Overriding the Equals method is not a stuff for the fainted-hearts; it could seems absolutely a simple thing to do, but there are a lot of subtleties that had to be keep in mind.

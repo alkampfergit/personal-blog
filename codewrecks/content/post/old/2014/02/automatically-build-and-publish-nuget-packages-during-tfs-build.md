@@ -3,8 +3,8 @@ title: "Automatically build and publish nuget packages during TFS Build"
 description: ""
 date: 2014-02-01T11:00:37+02:00
 draft: false
-tags: [TfsBuild]
-categories: [Team Foundation Server]
+tags: [Continuous Integration]
+categories: [Tfs]
 ---
 Previous post on the series
 

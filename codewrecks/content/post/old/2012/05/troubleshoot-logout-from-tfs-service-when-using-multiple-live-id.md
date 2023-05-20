@@ -4,7 +4,7 @@ description: ""
 date: 2012-05-28T17:00:37+02:00
 draft: false
 tags: [Tfs service]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you are using * **multiple live id to connect to the same instance of** *[* **TFS Preview** *](http://www.tfspreview.com/)* **(I’m, using a couple of different ID to demo authentication feature), you can find difficulties to logout from inside Visual Studio** *. In  **Figure 1** you can visualize the standard Connect to Team Project page, and in the bottom left corner you find information about the user currently logged to TFS.
 

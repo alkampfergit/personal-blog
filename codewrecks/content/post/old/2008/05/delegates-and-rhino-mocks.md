@@ -3,7 +3,7 @@ title: "Delegates and Rhino Mocks"
 description: ""
 date: 2008-05-20T09:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 I love delegates, with c# 2.0 anonymous delegates and with C# 3.0 lambda, working with delegates is simply wonderful. Anonymous delegates makes possible to create [closure](http://en.wikipedia.org/wiki/Closure_%28computer_science%29), and I like to use delegate in a lot of places. When you have to test objects that accepts external delegates Rhino Mock is simply exceptional, here is a test I write this afternoon

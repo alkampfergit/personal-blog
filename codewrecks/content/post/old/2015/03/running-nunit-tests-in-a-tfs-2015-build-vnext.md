@@ -4,7 +4,7 @@ description: ""
 date: 2015-03-16T18:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 ## Scenario
 

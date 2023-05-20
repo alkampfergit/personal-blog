@@ -3,7 +3,7 @@ title: "We love our hardware really true"
 description: ""
 date: 2008-08-05T05:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 As [Jeff Atwood says](http://www.codinghorror.com/blog/archives/001157.html) “we love computers”, yes, we are developer, but in the end we choose this profession because is the one that make us possible to work with the object of our love…computer.

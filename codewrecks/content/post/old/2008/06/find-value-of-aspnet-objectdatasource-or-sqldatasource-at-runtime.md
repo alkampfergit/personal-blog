@@ -3,7 +3,7 @@ title: "Find value of ASPNET ObjectDataSource or SqlDataSource at runtime"
 description: ""
 date: 2008-06-16T10:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 I must admit that I do not like very much the XXXDataSource control of ASP.NET 2.0 library, but the ObjectDataSource is sometimes a quick solution to interface the UI with own LogicLayer.

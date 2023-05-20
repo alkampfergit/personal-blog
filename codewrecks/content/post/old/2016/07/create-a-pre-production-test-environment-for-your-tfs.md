@@ -4,7 +4,7 @@ description: ""
 date: 2016-07-16T08:00:37+02:00
 draft: false
 tags: [Upgrade]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 There are a lot of legitmate reasons to create a clone of your TFS installation: verifying an upgrade, testing some customization and so on, but traditionally  **creating a test environment is not an easy task**.
 

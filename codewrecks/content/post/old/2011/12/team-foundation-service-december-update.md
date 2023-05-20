@@ -4,7 +4,7 @@ description: ""
 date: 2011-12-11T07:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the great advantage of using Tfs on Azure, called Team Foundation Service, is that you never should worry for update of the server, because everything is managed by the TFS team. If you already have an account, you probably noticed that the UI is radically changed, as described in [Brian Harry’s post](http://blogs.msdn.com/b/bharry/archive/2011/12/08/december-refresh-of-the-team-foundation-service.aspx), new features were added, a new UI is available and everything was done without any need for you intervention.
 

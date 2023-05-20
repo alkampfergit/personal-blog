@@ -4,7 +4,7 @@ description: ""
 date: 2011-08-03T06:00:37+02:00
 draft: false
 tags: [Team Foundation Server,VCS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In [this post of Mr. Brian Harry](http://blogs.msdn.com/b/bharry/archive/2011/08/02/version-control-model-enhancements-in-tfs-11.aspx) some of the news regarding TFS 11 VCS are unveiled. While there is still no DVCS, there are a lot of improvements with the introduction of *local workspaces*.
 

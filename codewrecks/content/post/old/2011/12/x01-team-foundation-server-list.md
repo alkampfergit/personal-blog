@@ -4,7 +4,7 @@ description: ""
 date: 2011-12-20T09:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve not a 101 Team Foundation Server link lists :), but quite often I got question from people on TFS, and I clearly remember that I read the answer in some blog post, but I could not remember exactly where. Since there are a lot of blogs and sites that deal with TFS, I decided to keep a list of all links that I found useful during time in a blog post, so, whenever I need to look for a link that was useful in the past, I can simply scan this list hoping to find what I’m searching :).
 

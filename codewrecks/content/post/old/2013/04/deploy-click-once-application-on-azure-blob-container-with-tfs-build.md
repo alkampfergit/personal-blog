@@ -3,8 +3,8 @@ title: "Deploy Click Once application on Azure Blob Container with TFS Build"
 description: ""
 date: 2013-04-20T07:00:37+02:00
 draft: false
-tags: [Continuous Deployment,Visual Studio ALM]
-categories: [Team Foundation Server,Visual Studio ALM]
+tags: [Continuous Deployment,Tfs]
+categories: [Team Foundation Server]
 ---
 Windows Azure Web sites has a lot of options to automatically deploy web sites, but if you have desktop application deployed with click-once  **you have nothing out of the box to do continuous deployment in Windows Azure**. Lets see how solve this problem.
 

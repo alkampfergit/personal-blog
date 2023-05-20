@@ -4,7 +4,7 @@ description: ""
 date: 2010-04-09T10:00:37+02:00
 draft: false
 tags: [Team Foundation Server,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In a [very old post](http://www.codewrecks.com/blog/index.php/2009/09/07/again-on-assembly-numbering-during-tfs-build/) I explained how to grab (with API) the latest changeset number during a build to use for assembly numbering, but I need to do a correction, after a comment on the post.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2010-04-24T13:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I have a strange issue that happens not only to me, but also to another guy that like me runs NOD32 antivirus. You can find [more detail here](http://social.msdn.microsoft.com/Forums/en-US/tfsadmin/thread/97c28590-d9cd-467c-a6f8-664d3ea051fd?prof=required).
 

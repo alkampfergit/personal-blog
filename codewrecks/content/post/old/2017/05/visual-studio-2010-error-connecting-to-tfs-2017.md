@@ -4,7 +4,7 @@ description: ""
 date: 2017-05-22T15:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the reason why I always suggest of keeping TFS upgraded is the compatibility matrix.  **Microsoft ensure that old tools (like VS 2010) always can connect to latest version of TFS, but the opposite is not true.** This means that new version of Visual Studio could have problem connecting to older instances of TFS.
 

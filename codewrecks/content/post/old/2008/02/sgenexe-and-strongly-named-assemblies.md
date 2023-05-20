@@ -3,7 +3,7 @@ title: "sgenexe and strongly named assemblies"
 description: ""
 date: 2008-02-13T03:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 Today I was facing a strange exception with a XmlSerializer, it gives to me FileNotFoundException NHibernate.XmlSerializers, it turns out that the debug settings are set to “break to all exceptions” and so the visual studio Ide warn me even for handled exception.

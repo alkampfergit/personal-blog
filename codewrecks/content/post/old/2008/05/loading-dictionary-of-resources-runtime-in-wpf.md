@@ -3,7 +3,7 @@ title: "Loading dictionary of resources runtime in WPF"
 description: ""
 date: 2008-05-18T02:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 This morning I had a little task, I’going to a Customer to install a simple WPF application in a touch screen. The problem is: I do not know how the customer want to format the form: font, color and so on. The problem is that I do not want to setup a procedural code to change these setting runtime, I only want to change the first time, then all goes on forever with that settings.

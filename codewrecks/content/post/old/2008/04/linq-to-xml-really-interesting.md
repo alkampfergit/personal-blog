@@ -3,7 +3,7 @@ title: "LINQ to XML 8211 really interesting"
 description: ""
 date: 2008-04-09T08:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 A lot of people tend to consider linq2sql the most important provider for linq, this is not true for me. First of all I tend to prefer NHibernate over Entity Framework and LINQ2SQL, and moreover I think that Linq 2 XML really rocks.

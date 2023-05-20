@@ -3,7 +3,7 @@ title: "C 30 Expression Trees"
 description: ""
 date: 2008-02-16T00:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 

@@ -4,7 +4,7 @@ description: ""
 date: 2018-01-09T12:00:37+02:00
 draft: false
 tags: [searching]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In previous post I’ve explained how to move searches component in a different machine in a TFS 2018 installation, now it is time to  **understand how to monitor that instance.** First of all you should monitor the folder that physically contains data, in my installation is C:\tfs\ESDATA (it is a parameter you choose when you configure the Search Server with  **Configure-TFSSearch.ps1 -Operation install** PowerShell script).  **Data folder should be placed on a fast disk, usually SSD are the best choice**. If the SSD will ever fail, you can always restart ES with empty data folder and use scripts to force TFS to reindex everything.
 

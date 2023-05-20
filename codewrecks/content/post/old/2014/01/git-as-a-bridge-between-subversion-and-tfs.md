@@ -4,7 +4,7 @@ description: ""
 date: 2014-01-01T07:00:37+02:00
 draft: false
 tags: [Git,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 This is the scenario: *Nablasoft company uses TFS with standard TFVC (TFS Version Control System) and needs to assign some of the work to some external Company (lets call it Acme), as an example developing for Android or iOs*. The simplest solution is giving Acme developers access to TFS server, but then Nablasoft should pay the CAL for Acme developers, moreover, Acme uses subversion and they do not want to use another VCS unless it is strictly necessary.
 

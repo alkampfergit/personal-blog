@@ -3,7 +3,7 @@ title: "Unable to build on TFS with a project managed with Nuget and automatic r
 description: ""
 date: 2013-03-08T18:00:37+02:00
 draft: false
-tags: [VSAlm]
+tags: [Tfs]
 categories: [Team Foundation Server,Visual Studio]
 ---
 To reduce the size of the repository and to easy dependencies management, nuget is a good solution, and when is time to create a build in TFS you can simply [Enable Nuget Package Restore](http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages) and let the build machine download the dependency for you. This works perfectly even on TF Service (tfs.visualstudio.com) because the  **Elastic Build is configured to restore packages during build.** This is really cool, until your build start to fail for missing references. If you look at detailed build log you can find error like this one.

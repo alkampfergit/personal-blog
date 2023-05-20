@@ -4,7 +4,7 @@ description: ""
 date: 2009-11-02T09:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When you create a new build in tfs2010, you can immediately notice some changes during the definition. In the basic configuration there are more options devoted to testing.
 

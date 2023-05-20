@@ -3,7 +3,7 @@ title: "Use Kali linux in Windows Subsystem for Linux "
 description: "Now that WSL2 has a real full Linux Kernel using Kali Linux in WSL2 is a nice option to have."
 date: 2020-06-26T10:00:37+02:00
 draft: false
-tags: ["security", "kali"]
+tags: ["security"]
 categories: ["security"]
 ---
 

@@ -4,7 +4,7 @@ description: ""
 date: 2012-02-04T07:00:37+02:00
 draft: false
 tags: [RavenDB]
-categories: [NoSql,RavenDB]
+categories: ["NoSql"]
 ---
 NoSql is not a replacemente for SQL databases, but it is a valid alternative for a lot of situations where standard SQL is not the best approach to store your data. Since we were taught that whenever you need to store data on a “data store” and you need to query that data for retrieval, SQL is the best solution, you have only to decide what Sql Engine to use and the game is done.
 

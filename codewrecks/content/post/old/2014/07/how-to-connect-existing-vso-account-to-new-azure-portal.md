@@ -4,7 +4,7 @@ description: ""
 date: 2014-07-23T10:00:37+02:00
 draft: false
 tags: [Azure,VSO]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 With the [new deploy of Visual Studio Online](http://www.visualstudio.com/news/2014-jul-21-vso) you can link your existing VSO accounts to your azure subscription so they will be available on new Azure portal [http://portal.azure.com](http://portal.azure.com). You just need to  **connect to standard management portal (** [**http://manage.windowsazure.com**](http://manage.windowsazure.com) **) and then add an existing VSO account to the list of available ones**.
 

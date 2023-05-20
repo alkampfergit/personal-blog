@@ -4,7 +4,7 @@ description: ""
 date: 2017-05-29T20:00:37+02:00
 draft: false
 tags: [build,nuget,VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In a previous post I dealt with how to build a [Multitargeted dotnetcore solution in VSTS](http://www.codewrecks.com/blog/index.php/2017/05/24/build-net-standard-multitargeted-solution-in-vsts/), but the build is not really complete unless you are publishing the result somewhere. Since my example was a simple library, the obvious solution is publishing everything to a nuget feed.
 

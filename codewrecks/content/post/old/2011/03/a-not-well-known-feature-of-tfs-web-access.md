@@ -4,7 +4,7 @@ description: ""
 date: 2011-03-19T10:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 For those of you thinking that TFS Web Access is only another interface for TFS, I want to signal a couple of interesting feature that are available only in the web interface. When you open a bug for editing, you have a tools menu with an interesting command called *State Diagram.*
 

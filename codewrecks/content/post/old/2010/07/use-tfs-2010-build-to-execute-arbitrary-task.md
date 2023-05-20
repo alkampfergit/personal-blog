@@ -4,7 +4,7 @@ description: ""
 date: 2010-07-07T07:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When you deal with continuous integration, building source is just one part of the problem, you need to run test, calculate metrics, deploy on test server and so on. To orchestrate the execution of integration scripts you need an infrastructure that is capable of scheduling, logging, distribution of agent and a central point of manteniance, TFS2010 build system has all this characteristics and many other that makes is suitable to run integration script, not only build one.
 

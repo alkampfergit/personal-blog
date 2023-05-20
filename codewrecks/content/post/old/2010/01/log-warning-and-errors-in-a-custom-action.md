@@ -4,7 +4,7 @@ description: ""
 date: 2010-01-18T20:00:37+02:00
 draft: false
 tags: [Continuous Integration,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Some time ago [I blogged about](http://www.codewrecks.com/blog/index.php/2010/01/14/logging-in-custom-build-action-for-tfs-build-2010/) logging in custom action for TFS build 2010, I left out some details. Suppose you want to create a warning or an error and not a simple message, you need to create a specialized version of the LogWarning that logs a real warning.
 

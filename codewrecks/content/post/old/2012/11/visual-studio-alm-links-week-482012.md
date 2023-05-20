@@ -4,7 +4,7 @@ description: ""
 date: 2012-11-30T23:00:37+02:00
 draft: false
 tags: [Visual Studio ALM]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Visual Studio Update 1 is available](http://blogs.msdn.com/b/bharry/archive/2012/11/26/visual-studio-2012-update-1-is-available.aspx)
 - [Visual Studio Update 1 all links.](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/26/visual-studio-and-team-foundation-server-2012-update-1-now-available.aspx)

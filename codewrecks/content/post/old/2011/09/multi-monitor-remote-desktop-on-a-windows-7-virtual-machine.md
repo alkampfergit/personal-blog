@@ -3,7 +3,7 @@ title: "Multi monitor remote desktop on a Windows 7 virtual machine"
 description: ""
 date: 2011-09-27T16:00:37+02:00
 draft: false
-tags: [dev11,Virtual Machine]
+tags: [Virtual Machine]
 categories: [Visual Studio]
 ---
 To test dev 11 preview I’ve setup several virtual machines, just to be sure not to ruin my main installation box, since dev 11 is a *developer preview*and is not a good idea installing pre-beta release on production machine (even if dev 11 preview is really stable).

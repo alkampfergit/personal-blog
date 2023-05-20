@@ -4,7 +4,7 @@ description: ""
 date: 2016-03-16T23:00:37+02:00
 draft: false
 tags: [build,vNext]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I wrote on how to integrate [GitFlow and Semantic Versioning for my nuget packages](http://www.codewrecks.com/blog/index.php/2015/10/17/integrating-gitversion-and-gitflow-in-your-vnext-build/) thanks to GitVersion.exe and a simple powershell script, but still the solution is not perfect. The worst drawback is that you need to remember to include all needed PowerShell scripts and GitVersion.exe executable in project source code. This approach does not give best experience and clutter source code with build related executables.
 

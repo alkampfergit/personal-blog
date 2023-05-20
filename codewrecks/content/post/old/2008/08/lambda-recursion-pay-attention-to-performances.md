@@ -3,7 +3,7 @@ title: "Lambda recursion pay attention to performances"
 description: ""
 date: 2008-08-13T09:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 This morning I stumble across [this old post](http://blogs.msdn.com/wesdyer/archive/2007/02/02/anonymous-recursion-in-c.aspx), that shows how to create a recursive function with lambda. The article is very interesting and has a [second part](http://blogs.msdn.com/wesdyer/archive/2007/02/05/memoization-and-anonymous-recursion.aspx) that deal with [memoization](http://en.wikipedia.org/wiki/Memoization). These two articles are really great ones, but I want to point out that you need really pay attention to performance each time you speak about recursion. This piece of code shows an interesting thing

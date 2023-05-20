@@ -4,7 +4,7 @@ description: ""
 date: 2014-02-04T08:00:37+02:00
 draft: false
 tags: [Git]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In an old post I’ve already demonstrated how you can  **move a project from a standard TFS Version Control System to a Git repository hosted on TF Service (or wherever else)**. This is especially useful if you are working with TFS but you really need features of a Distributed Version Control System. The original post is here: m[ove source from a TFVCS based Team Project to a TF Service Git Based Team Project](http://www.codewrecks.com/blog/index.php/2013/01/31/move-a-tfservice-source-control-to-tf-service-git-based-team-project/).
 

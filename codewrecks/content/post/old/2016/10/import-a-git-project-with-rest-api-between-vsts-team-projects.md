@@ -4,7 +4,7 @@ description: ""
 date: 2016-10-08T09:00:37+02:00
 draft: false
 tags: [Git,Rest APIs,VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve got an interesting question about the possibility to import via REST API a Git Repository between Team Projects of VSTS. Actually the problem is: **you want to import a private git repository from a *Source repository*(in this situation is another VSTS git repository but it could be hosted everywhere) to a VSTS *Target  repository* using only REST API. **The operation is quite simple thanks to the new api described here ([https://www.visualstudio.com/en-us/docs/integrate/api/git/import-requests#create-a-request-to-import-a-repository](https://www.visualstudio.com/en-us/docs/integrate/api/git/import-requests#create-a-request-to-import-a-repository "https://www.visualstudio.com/en-us/docs/integrate/api/git/import-requests#create-a-request-to-import-a-repository")) and in this post I’ll give you all the details.
 

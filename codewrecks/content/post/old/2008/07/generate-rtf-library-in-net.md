@@ -3,7 +3,7 @@ title: "Generate RTF library in NET"
 description: ""
 date: 2008-07-09T07:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 This rtf generator is one of my first projects in.net, it started in Visual studio 2002 :D, then it was converted to visual studio 2003 and.net 1.1. Some time ago one of the developer of my team ask me if I know a quick way to generate an rtf file from asp.net, so I simply say

@@ -4,7 +4,7 @@ description: ""
 date: 2011-12-02T15:00:37+02:00
 draft: false
 tags: [Power Tools,Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Shelvesets are a really useful concept in TFS, and you should be aware that thanks to Power Tools you can even do a Merge during an Unshelve in case of conflicts. As an example suppose this simple and stupid scenario, you have this code.
 

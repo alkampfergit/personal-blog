@@ -3,7 +3,7 @@ title: "Really strange error in production server a tale of named pipes"
 description: ""
 date: 2008-08-27T06:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 I have a production server with an asp.net application, it run for months without errors. 10 days ago the elmah page begins to shows an error that occurred in a lot of pages.

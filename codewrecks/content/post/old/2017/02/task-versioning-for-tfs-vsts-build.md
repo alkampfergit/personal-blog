@@ -4,7 +4,7 @@ description: ""
 date: 2017-02-04T13:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 The build system of TFS / VSTS, introduced with TFS 2015, is evolving quite fast and release after release is always full of interesting new features. One of my favorites is the  **simple extention point to write a custom task to perform custom operation**. The whole process is really simple and is [described in this post.](http://www.codewrecks.com/blog/index.php/2016/03/17/writing-a-custom-task-for-build-vnext/)
 

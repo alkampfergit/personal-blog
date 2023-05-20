@@ -4,7 +4,7 @@ description: ""
 date: 2015-06-03T16:00:37+02:00
 draft: false
 tags: [build,Continuos Integration,vNext]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
  **With the latest Visual Studio Online update, the new build system is now online for all users**. As I said in old post, it is completely rewritten and covering all new features really requires lots of time. Since I’m a great fan of Continuous Integration and Continuous Deploy procedures I’d like to do some post to introduce you this new build system, along with the reason why it is really superior to the old one.
 

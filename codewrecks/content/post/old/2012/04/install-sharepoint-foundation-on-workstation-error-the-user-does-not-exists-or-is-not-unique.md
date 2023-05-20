@@ -4,7 +4,7 @@ description: ""
 date: 2012-04-17T19:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I wish to install  **Sharepoint Foundation 2010 on a Single Workstation machine** (Windows Server 2008 R2) to use with TFS11 Beta and I followed the [really good guide](http://www.dev4side.com/community/blog/2010/5/2/how-to-install-sharepoint-2010-with-a-local-account.aspx) of my friend [Giuseppe Marchi](http://www.peppedotnet.it/) to accomplish this task, but I got a really strange error when I tried to configure the database with powershell
 

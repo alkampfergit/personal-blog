@@ -4,7 +4,7 @@ description: ""
 date: 2013-07-10T15:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you use the Agile process template, you have three columns related to planning and tracking task duration, they are called:
 

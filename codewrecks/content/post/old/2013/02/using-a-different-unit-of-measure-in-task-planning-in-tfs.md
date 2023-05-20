@@ -4,7 +4,7 @@ description: ""
 date: 2013-02-26T14:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 With TFS 2012 you can do work planning with the new agile board, where work is decomposed from PBI to task and  **task are usually estimated in hours**.
 

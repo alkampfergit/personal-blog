@@ -4,7 +4,7 @@ description: ""
 date: 2016-05-07T07:00:37+02:00
 draft: false
 tags: [build,sonarqube]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In TFS 2015 / VSTS new build system **each task contains a series of requirements that needs to be matched by agents capabilities for the task to run**. Usually you install Visual Studio in the machine with the build agent and you can schedule standard.NET builds without problem, but what happens when the build starts to evolve?
 

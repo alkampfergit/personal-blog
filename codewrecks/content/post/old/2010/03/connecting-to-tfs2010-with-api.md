@@ -4,7 +4,7 @@ description: ""
 date: 2010-03-26T07:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you know TFS 2008 API and try to connect to a tfs 2010 you could probably start with this snippet, but you will get a 404 exception, telling you that the tfs is not available.
 

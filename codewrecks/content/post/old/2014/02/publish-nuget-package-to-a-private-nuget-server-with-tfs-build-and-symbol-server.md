@@ -4,7 +4,7 @@ description: ""
 date: 2014-02-13T21:00:37+02:00
 draft: false
 tags: [Continuous Deployment,nuget,TfsBuild]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Previous post on the series
 

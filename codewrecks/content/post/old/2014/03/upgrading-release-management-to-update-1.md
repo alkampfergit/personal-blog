@@ -3,8 +3,8 @@ title: "Upgrading Release Management to Update 1"
 description: ""
 date: 2014-03-15T10:00:37+02:00
 draft: false
-tags: [ReleaseManagement,Tfs]
-categories: [Team Foundation Server]
+tags: ["ContinuousDeployment", Tfs]
+categories: [Tfs]
 ---
 If you want to upgrade Release Management for TFS 2013 to Update 1 you surely noticed that there is no Update 1 upgrade package, but you should first uninstall the old version of Release Management and the install again the version with Update 1.
 

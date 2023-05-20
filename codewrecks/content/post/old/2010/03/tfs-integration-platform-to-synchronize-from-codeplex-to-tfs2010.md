@@ -4,7 +4,7 @@ description: ""
 date: 2010-03-19T17:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the most exiting stuff of TFS is the ability to use API to access it, that gave possibilities to people outside MSFT to create tools. One tool to keep at look at is the [TFS integration platform](http://tfsintegration.codeplex.com/), still in very alpha version, but that promises a lot of exiting stuff.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2015-09-04T15:00:37+02:00
 draft: false
 tags: [Lab Management]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you want to  **completely remove Lab Management configuration from your TFS instance, you probably know** [**TfsConfig lab /Delete**](https://msdn.microsoft.com/en-us/library/Ee712732.aspx) **command, used to remove association between one Project Collection and SCVMM**. The reasons behind the need to completely remove Lab Management configuration could be various, one of the most common is: you created a cloned copy of your TFS environment for testing purpose, and you want to be 100% sure that your cloned instance does not contact SCVMM, or you can simply have multiple Test TFS Instance and you need to move lab management from one instance to another.
 

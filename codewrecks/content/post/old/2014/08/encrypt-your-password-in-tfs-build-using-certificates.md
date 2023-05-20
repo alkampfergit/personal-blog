@@ -4,7 +4,7 @@ description: ""
 date: 2014-08-09T05:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Using [DPAPI to encrypt password in builds](http://www.codewrecks.com/blog/index.php/2014/07/22/make-easy-storing-secure-password-in-tfs-build-with-dpapi/) suffers from a serious drawback,  **the password can be decrypted only by code that runs on the very same computer used to encrypt the password**. You can overcome this limitation using roaming profiles, but it is not a option in many scenario. Another technique to enable multiple build servers to decrypt a password is using certificates. In PowerShell is really easy to use a certificate to encrypt/decrypt string and this article will show you how to secure a password in TFS Build definition using Certificates.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2010-09-30T07:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 [Codeplex](http://www.codeplex.com/) is Microsoft hosting site for open source projects, based on TFS or mercurial. Now suppose you have this scenario: an open source project, with a  core team that work actively on it, and some occasional contributors that do little work. Since Codeplex does not support every feature of tfs, (especially you lack the build machine), sharepoint integration and other stuff you loose many useful feature if you use only Codeplex for the project. You wish the core team to use an internal TFS to have the full power of TFS, while using Codeplex to make the project available to everyone. Thanks to [Integration Platform](http://tfsintegration.codeplex.com/) you can try to keep them synchronized and use the best of both of them.
 

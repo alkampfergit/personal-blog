@@ -4,7 +4,7 @@ description: ""
 date: 2011-06-27T07:00:37+02:00
 draft: false
 tags: [ALM,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 TFS is not a tool, but a *platform/ecosystem* and if you miss to install / consider to use all of the free or commercial tools based on Tfs, you are actually missing the most part of it. Surely TFS comes with a very huge amount of features out of the box, but there are also an extremely high number of useful tools developed by third party developers.
 

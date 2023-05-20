@@ -3,7 +3,7 @@ title: "Entity Framework span and eager fetch"
 description: ""
 date: 2008-04-06T00:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 Some minutes ago I [posted about the Entity Framework](http://www.nablasoft.com/Alkampfer/?p=191) and fetching strategy. After a little search in the documentation, I finally found how to prefetch using a concept called * **span** *. Here is a LINQ query that load a department eagerly fetching the courses collection

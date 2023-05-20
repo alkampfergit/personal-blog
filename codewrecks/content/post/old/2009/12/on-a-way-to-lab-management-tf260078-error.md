@@ -4,7 +4,7 @@ description: ""
 date: 2009-12-13T08:00:37+02:00
 draft: false
 tags: [Lab Management]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I'm configuring Lab Management in the virtual machine with the test contrller and TFS, but when it ask me for credentials to connect to System Center Virtual Machine Manager, I specify the credentials of Domain Admin and it gives me this error.
 

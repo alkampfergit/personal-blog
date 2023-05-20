@@ -4,7 +4,7 @@ description: ""
 date: 2009-08-05T01:00:37+02:00
 draft: false
 tags: [TeamFoundationServer]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I just received a question in a [old post](http://www.codewrecks.com/blog/index.php/2009/06/22/creating-a-build-with-tfs/), the question is if we can generate builds against any applied label on source code in TFS. Tfs build are configured to always retrieve by default the latest code from source control, but you can configure it with no problem.
 

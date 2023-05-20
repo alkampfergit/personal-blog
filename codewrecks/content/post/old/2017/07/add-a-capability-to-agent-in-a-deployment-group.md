@@ -3,8 +3,8 @@ title: "Add a capability to agent in a Deployment Group"
 description: ""
 date: 2017-07-14T09:00:37+02:00
 draft: false
-tags: [ReleaseManagement,VSTS]
-categories: [Team Foundation Server]
+tags: ["ContinuousDeployment"]
+categories: [Tfs]
 ---
 When you deploy a Build agent in VSTS / TFS, in the administration page you have the ability to add custom Capabilities to the agent, as you can see in Figure 1.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2015-09-26T09:00:37+02:00
 draft: false
 tags: [build,vNext]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Publishing a package to myget or nuget with a TFS/VSO vNext build is a breeze. First of all you should  **create a** [**.nuspec file**](https://docs.nuget.org/create/nuspec-reference) **that specify everything about your package and include it in your source control**. Then Add a variable to the build called NugetVersion as shown in  **Figure 1.** [![Adding NugetVersion variable to the list of variables for this build.](https://www.codewrecks.com/blog/wp-content/uploads/2015/09/image_thumb6.png "Adding NugetVersion variable")](https://www.codewrecks.com/blog/wp-content/uploads/2015/09/image6.png)
 

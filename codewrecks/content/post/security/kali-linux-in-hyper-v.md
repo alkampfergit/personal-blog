@@ -3,7 +3,7 @@ title: "Kali Linux in Hyper-V system"
 description: "With little effort you can have a pleasant experience using Desktop Linux in Hyper-V environment."
 date: 2020-12-30T10:00:37+02:00
 draft: false
-tags: ["security", "kali"]
+tags: ["security"]
 categories: ["security"]
 ---
 

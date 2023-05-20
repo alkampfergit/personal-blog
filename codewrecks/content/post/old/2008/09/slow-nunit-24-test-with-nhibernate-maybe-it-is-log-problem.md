@@ -3,7 +3,7 @@ title: "Slow tests with nunit 24 and nhibernate"
 description: ""
 date: 2008-09-05T10:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [Testing]
 ---
 I noticed that when I used nunit 2.4 test runner it is really slower than 2.2. The reason is that in 2.4 the nunit test runner will use log4net as default logger, and if you do not disable logging, you will see in log tab an enormous amount of text.

@@ -3,7 +3,7 @@ title: "Some interesting links for SQL Server 2012 data tools"
 description: ""
 date: 2011-11-28T08:00:37+02:00
 draft: false
-tags: [SQLite]
+tags: []
 categories: [Sql Server]
 ---
 I love Database Project, introduced with Visual Studio 2008, and with SQL server 2012 they will be replaced by the Data Tools (codename Juneau), so I have a couple of links to share about this argument.

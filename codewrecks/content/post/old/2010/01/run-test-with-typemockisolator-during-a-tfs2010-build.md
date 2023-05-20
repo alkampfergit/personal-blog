@@ -4,7 +4,7 @@ description: ""
 date: 2010-01-27T10:00:37+02:00
 draft: false
 tags: [Testing,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 [TypeMock Isolator](http://site.typemock.com/) is a good library to inject mock objects without the need of interfaces, but what happens when you try to run test that uses typemock isolator inside a tfs 2010 build? Clearly the tests will not succeed
 

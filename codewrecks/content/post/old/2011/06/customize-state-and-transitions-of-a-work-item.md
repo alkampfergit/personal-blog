@@ -4,7 +4,7 @@ description: ""
 date: 2011-06-30T06:00:37+02:00
 draft: false
 tags: [Process Template,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 1 – [Customize Tfs Process Template](http://www.codewrecks.com/blog/index.php/2011/06/22/customize-tfs-process-template/)  
 2 – [Basic of TFS Process Template Customization](http://www.codewrecks.com/blog/index.php/2011/06/23/basic-of-tfs-process-template-customization/)  

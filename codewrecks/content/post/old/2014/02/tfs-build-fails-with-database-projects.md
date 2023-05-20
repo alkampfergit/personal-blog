@@ -4,7 +4,7 @@ description: ""
 date: 2014-02-28T11:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you have a TFS Builds that fails with an error like this one, even if you have installed Visual Studio 2013 on your build server.
 

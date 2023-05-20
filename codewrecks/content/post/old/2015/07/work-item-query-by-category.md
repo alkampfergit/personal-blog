@@ -4,7 +4,7 @@ description: ""
 date: 2015-07-21T21:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 This is a really old functionality of TFS, but it turns out that sometimes some people missed it. When you create a query, you can add a condition on Work Item Type.
 

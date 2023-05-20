@@ -3,8 +3,8 @@ title: "Move a TFService source control to TF Service Git based Team Project"
 description: ""
 date: 2013-01-31T09:00:37+02:00
 draft: false
-tags: [Git,TF Service]
-categories: [Team Foundation Server]
+tags: [Git,Tfs]
+categories: [Tfs]
 ---
 Now that with Update 2 we have Git support on TF Service a standard question arise: “how can I move all source from a TF Service standard project to a TF Service Git based Team Project?” The answer is quite simple
 

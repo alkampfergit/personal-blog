@@ -4,7 +4,7 @@ description: ""
 date: 2017-07-18T19:00:37+02:00
 draft: false
 tags: [VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When you configure build agents and especially when you configure Release Agents for VSTS, it is quite normal to have some installations where you want to use AutoLogon.  **This is needed whenever you want to run integration tests that needs to interact with the UI.** Having autologon enabled avoid the need to manually login and start the agent when the machine is rebooted, because you always have a user session opened that runs the agent.
 

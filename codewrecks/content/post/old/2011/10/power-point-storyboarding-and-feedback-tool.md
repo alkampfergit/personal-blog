@@ -3,8 +3,8 @@ title: "Power point storyboarding and Feedback Tool"
 description: ""
 date: 2011-10-14T15:00:37+02:00
 draft: false
-tags: [dev11,Tfs]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 In TFS 11 there are some cool new tools to easy the communication with customers, since the main reason for building software is to satisfy customers and users, at least in agile world, these kind of tools are really valuable in the process. A key point is being able to communicate easily with Stakeholders and have rapid feedback during each sprint to avoid the risk of “implementing the wrong stuff”.
 

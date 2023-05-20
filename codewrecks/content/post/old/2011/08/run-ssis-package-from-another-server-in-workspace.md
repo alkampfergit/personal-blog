@@ -3,7 +3,7 @@ title: "Run SSIS package from another server in workspace"
 description: ""
 date: 2011-08-05T12:00:37+02:00
 draft: false
-tags: [Sql Server,SSIS]
+tags: [Sql Server]
 categories: [Sql Server]
 ---
 Today I needed to move some SSIS packages that actually runs on the same server where the database resides, to another server dedicated to run SSIS packages. I do not have a domain and the second server is simply in the same network as the first server. I simply reconfigured a Job to run the Package from File system (as originally configured in the original server), but now I could not use Integrated Security because I'm running the SSIS package from another PC. So I changed the connection string to include user and pwd (SQL authentication), but when I saved the job step the password simply disappeared from the connection string.

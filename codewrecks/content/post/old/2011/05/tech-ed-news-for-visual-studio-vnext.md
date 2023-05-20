@@ -4,7 +4,7 @@ description: ""
 date: 2011-05-16T15:00:37+02:00
 draft: false
 tags: [Visual Studio]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Today at Tech Ed Usa [some of the news](http://blogs.msdn.com/b/jasonz/archive/2011/05/16/announcing-alm-roadmap-in-visual-studio-vnext-at-teched.aspx) about Visual Studio vNext [were revealed](http://www.microsoft.com/visualstudio/en-us/roadmap?sf1468488=1), I do not want to give you detailed information in my blog, because there are a lot of resources around there and especially you can download a [nice pdf with all the public news](http://go.microsoft.com/?linkid=9772730).
 

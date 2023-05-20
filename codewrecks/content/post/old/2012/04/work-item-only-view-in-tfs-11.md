@@ -4,7 +4,7 @@ description: ""
 date: 2012-04-18T16:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 ## What is WIOV in TFS 2010
 

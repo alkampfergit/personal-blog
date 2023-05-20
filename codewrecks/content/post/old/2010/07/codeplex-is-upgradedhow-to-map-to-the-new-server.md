@@ -4,7 +4,7 @@ description: ""
 date: 2010-07-27T09:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 My frient Guardian [blogged](http://www.primordialcode.com/blog/post/update-tfs-workspace-codeplex-upgrade-tfs2010) some minutes ago explaining how you can change the mapping of your codeplex project now that codeplex is migrated to TFS2010. There is even a simpler solution, first of all open Visual Studio, then connect to the new tfs server. As you can see in  **Figure 1** I have projects in three project collection, I select to connect to the TFS08 project collection where I'm contributor to two project
 

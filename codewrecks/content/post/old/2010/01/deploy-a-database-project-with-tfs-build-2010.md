@@ -4,7 +4,7 @@ description: ""
 date: 2010-01-04T15:00:37+02:00
 draft: false
 tags: [DataDude,TFS Build,workflow]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you want to deploy a database project into a target sql server instance during a tfs 2010 build, you can use with success the basic MsBuildTask, [similar to tfs2008](http://www.codewrecks.com/blog/index.php/2009/10/23/automatic-deployment-of-a-web-application-with-tfs-build/).
 
@@ -75,4 +75,4 @@ From here you can verify project directory, and all the options that are passed 
 
 alk.
 
-Tags: [TfsBuild](http://technorati.com/tag/TfsBuild)
+tags: [Continuous Integration](http://technorati.com/tag/TfsBuild)

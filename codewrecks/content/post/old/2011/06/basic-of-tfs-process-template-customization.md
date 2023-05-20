@@ -4,7 +4,7 @@ description: ""
 date: 2011-06-23T16:00:37+02:00
 draft: false
 tags: [ALM,Process Template,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 1 – [Customize Tfs Process Template](http://www.codewrecks.com/blog/index.php/2011/06/22/customize-tfs-process-template/)
 

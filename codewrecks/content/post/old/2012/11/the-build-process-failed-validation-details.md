@@ -4,7 +4,7 @@ description: ""
 date: 2012-11-16T13:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When it is time to customize TFS build you need to deal with Workflow Foundation, and  **you need to double check warning in the workflow if you want to have a successful build**. As an example after a configuration of a new process template I got this during build run
 

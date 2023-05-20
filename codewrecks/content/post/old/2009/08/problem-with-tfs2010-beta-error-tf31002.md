@@ -4,7 +4,7 @@ description: ""
 date: 2009-08-18T02:00:37+02:00
 draft: false
 tags: [TeamFoundationServer]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I'have a virtual machine with TFS2010 Beta, everything was ok, I've not worked with it for the last month, this morning I fire the virtual machine again, open visual studio and found that the TFS is not working. It gave me error TF31002, so I begin to investigate the reason for failure.
 

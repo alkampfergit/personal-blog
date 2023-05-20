@@ -3,7 +3,7 @@ title: "Converting Existing pipeline to YAML how to avoid double builds"
 description: ""
 date: 2019-05-04T05:00:37+02:00
 draft: false
-tags: [build,YAML]
+tags: [Continuous Integration, AzureDevops]
 categories: [Azure DevOps]
 ---
 Actually YAML build is the preferred way to create Azure DevOps Build Pipeline and  **converting existing build is really simple thanks to the “View YAML” button that can simply convert every existing pipeline in a YAML definition.** [![image](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image_thumb-12.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2019/04/image-12.png)

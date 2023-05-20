@@ -3,8 +3,8 @@ title: "Visual Studio Tools for Git a primer"
 description: ""
 date: 2013-03-17T17:00:37+02:00
 draft: false
-tags: [Git,TF Service]
-categories: [Team Foundation Server]
+tags: [Git,Tfs]
+categories: [Tfs]
 ---
 If you installed Update 2 CTP 4 (now it has go-live and supports upgrade to RTM) you should also  **install the** [**Visual Studio Tools for Git**](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c) **that permits to work with Git repository directly from a Team Explorer extension**. You can work with GitHub or whatever Git hosting you like and surely you can work with TF Service Git based Team Project. Once you have a Team Project based on Git you can simply to to the Source tab, and grab the url of the repository.
 

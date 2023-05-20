@@ -3,7 +3,7 @@ title: "WCF services and silverlight"
 description: ""
 date: 2008-07-28T10:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 I’m doing the first steps with silverlight, and today I incurred in a very strange behavior. First of all I see that in my web project I can add WCF service or Silverlight-enabled WCF services. My first thought was…”why a wcf service should be different for silverlight”?

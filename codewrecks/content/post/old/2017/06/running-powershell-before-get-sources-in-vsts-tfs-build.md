@@ -4,7 +4,7 @@ description: ""
 date: 2017-06-10T13:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I have a VSTS build where I need to  **run a PowerShell scripts at the very beginning of the build, before the agent starts downloading the sources** , and it seems that this cannot be done with a simple task, because there is no way to place a task before the Get Sources default task of VSTS Build.
 

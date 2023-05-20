@@ -3,7 +3,7 @@ title: "Correct use of a Source Control System branching for long time task"
 description: ""
 date: 2009-09-30T00:00:37+02:00
 draft: false
-tags: [Branch,Tfs]
+tags: [Source control]
 categories: [Team Foundation Server,Visual Studio]
 ---
 Source control system is probably developer's best friend, but quite often people use only a small percentage of its functionalities. One of the most missed feature is a correct use of a branch. Let's make a concrete example. Suppose that developer A needs to implement a big feature, it estimates a week to complete it, and while he is working at this feature he needs also to modify some basic part of the system. The problem is: *until the developer has finished the new feature the code is in not in stable condition, and it can even not compile correctly.*

@@ -4,7 +4,7 @@ description: ""
 date: 2010-07-14T15:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the coolest news of TFS 2010 is the presence of Team Explorer Everywhere, a plugin for eclipse and a command line cross platform tool to access TFS. I do not work with Java, but I want to have a look at it, just to understand the level of integration with TFs.
 

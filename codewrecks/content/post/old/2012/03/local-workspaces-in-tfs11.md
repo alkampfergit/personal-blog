@@ -4,7 +4,7 @@ description: ""
 date: 2012-03-12T08:00:37+02:00
 draft: false
 tags: [TFS11]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 The concept of Workspace is a key point in Team Foundation Server, it represents the mapping between a local version and server version of source control of a Team Project. The Workspace model of TFS was somewhat criticized in the past, because it is logically *Server Side*, because TFS Server, in each moment, knows the situation of each workspace.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2012-02-13T11:00:37+02:00
 draft: false
 tags: [RavenDB]
-categories: [NoSql,RavenDB]
+categories: ["NoSql"]
 ---
 Previous posts on the NoSql and Raven Series
 

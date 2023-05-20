@@ -4,7 +4,7 @@ description: ""
 date: 2010-05-04T07:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Some [days ago](http://www.codewrecks.com/blog/index.php/2010/03/19/tfs-integration-platform-to-synchronize-from-codeplex-to-tfs2010/) I tried [TFS Integration Platform](http://tfsintegration.codeplex.com/) to sync a project ([Dexter](http://dexterblogengine.codeplex.com/)) from codeplex to a local test TFS with Lab Management capabilities enabled. At that time the sync process did not work very well, the server take a long time before raising an exception and I did not have time to investigate further.
 

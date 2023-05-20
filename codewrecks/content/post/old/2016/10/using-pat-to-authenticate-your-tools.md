@@ -4,7 +4,7 @@ description: ""
 date: 2016-10-15T08:00:37+02:00
 draft: false
 tags: [Security,VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
  **One of the strength point of VSTS / TFS is the extensibility through API** , and now that we have a really nice set of REST API, it is quite normal to write little tools that interacts with your VSTS / TFS instances.
 

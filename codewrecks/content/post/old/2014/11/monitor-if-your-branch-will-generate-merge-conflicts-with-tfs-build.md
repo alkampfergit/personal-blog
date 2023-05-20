@@ -4,7 +4,7 @@ description: ""
 date: 2014-11-15T15:00:37+02:00
 draft: false
 tags: [Git,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the  **greatest advantage in using Git over a centralized Version Control System is branching system**. It is quite common for developers to start branching whenever they need to add a new feature, work on that branch and finally merge back to mainline when the feature is finished. One of the most famous workflow is called [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/), a way to work in Git that is implemented even in some GUI tool like [SourceTree](https://www.atlassian.com/software/sourcetree/overview?_mid=2fbd5293e6446891fb55a371fd05daeb&amp;gclid=Cj0KEQiAkJyjBRClorTki_7Zx8QBEiQAcqwGMVF9nzHt6HSZgIswbcYiWI4InUXsU_25Nq8vajSR7mIaAofw8P8HAQ).
 

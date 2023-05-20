@@ -4,7 +4,7 @@ description: ""
 date: 2013-06-08T05:00:37+02:00
 draft: false
 tags: [Testing,TfsBuild]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 > A common question about TFS 2012 build is: *how can I ask for code coverage?*
 

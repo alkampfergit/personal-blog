@@ -3,8 +3,8 @@ title: "Remove git-tf tracked branch after a move from standard TF Service proje
 description: ""
 date: 2013-02-01T21:00:37+02:00
 draft: false
-tags: [Git,TF Service]
-categories: [Team Foundation Server]
+tags: [Git,Tfs]
+categories: [Tfs]
 ---
 In a previous post called “[Move a TFService source contorl to TF Service Git based Team Project](http://www.codewrecks.com/blog/index.php/2013/01/31/move-a-tfservice-source-control-to-tf-service-git-based-team-project/)” I explained how to simple move sources from a standard TF Service project to another one based on Git. Now after a push if I issue a log I got this.
 

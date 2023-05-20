@@ -4,7 +4,7 @@ description: ""
 date: 2010-11-26T17:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In several posts of the past I dealt with customization of TFS 2010 build, but I never pointed out how to create a personalized build that can be used without always resorting to edit the workflow directly. Suppose you work heavily with database projects, and you need to deploy database project to different server in most of your builds. In this scenario each time you need to deploy a DB project you [can create a new build process](http://www.codewrecks.com/blog/index.php/2010/02/25/writing-a-custom-activity-for-tfs-2010-build-workflow/), edit it, add some customization and finally save and use it for the build.
 

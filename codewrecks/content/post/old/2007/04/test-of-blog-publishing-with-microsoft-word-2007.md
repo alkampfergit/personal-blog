@@ -3,7 +3,7 @@ title: "Test of blog publishing with Microsoft word 2007"
 description: ""
 date: 2007-04-27T02:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 This post is created using Microsoft word 2007. Let’s see if this makes blogging simpler. First of all some formatting  **bold** *italic*.

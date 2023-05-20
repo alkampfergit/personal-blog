@@ -4,7 +4,7 @@ description: ""
 date: 2011-06-22T06:00:37+02:00
 draft: false
 tags: [ALM,Process Template,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the best aspect of TFS is that it is customizable: we can interact with API, customize builds, handle events and many other interaction, but one of the most important is the ability to customize the [process template.](http://msdn.microsoft.com/en-us/vstudio/aa718795)
 

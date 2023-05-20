@@ -4,7 +4,7 @@ description: ""
 date: 2011-12-21T11:00:37+02:00
 draft: false
 tags: [Power Tools,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 The search box functionality was introduced with the August release, but I see that some people still does not know it. This question arose during a talk about how to handle the lifecycle of a bug, and when it was time to deal with the “avoid duplication” issue, people told me that they want a simple way to search work item by text, because this is the fastest way to verify if a bug has some duplicate.
 

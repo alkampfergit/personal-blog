@@ -4,7 +4,7 @@ description: ""
 date: 2011-09-17T09:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 As usual Brian Keller has produced a test VM with all sort of goodness regarding TFS 11 and VS 11, [you can find details here](http://blogs.msdn.com/b/briankel/archive/2011/09/16/visual-studio-11-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx). The machine is full of useful staff, as described in Brian Keller’s post:
 

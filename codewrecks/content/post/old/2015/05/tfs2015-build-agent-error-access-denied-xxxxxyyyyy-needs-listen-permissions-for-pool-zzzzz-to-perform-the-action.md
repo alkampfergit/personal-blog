@@ -4,7 +4,7 @@ description: ""
 date: 2015-05-09T08:00:37+02:00
 draft: false
 tags: [build,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Tfs 2015 introduces a completely new and redesigned build system and one of the most important change is  **new lightweight agent system**. Instead of installing TFS and then configure Build,  **to create a new agent you only need to download a zip file, uncompress and launch a PowerShell script.** Another great advantage is the ability to run the agent as a service, or running it interactively in a simple console application.
 

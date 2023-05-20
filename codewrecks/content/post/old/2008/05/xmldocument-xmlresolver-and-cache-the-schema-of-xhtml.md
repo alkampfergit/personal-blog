@@ -3,7 +3,7 @@ title: "XmlDocument XmlResolver and cache the schema of XHTML"
 description: ""
 date: 2008-05-19T23:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 I’m working with a class created by my colleague, this class has a function that accept a uri, a string (that represent the content of a page) and tells me if in that string there are some links to an RssFeed. I have a full page content store in files, so I simply load files one by one and then pass to this function.

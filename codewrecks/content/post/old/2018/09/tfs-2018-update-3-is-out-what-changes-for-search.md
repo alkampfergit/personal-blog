@@ -4,7 +4,7 @@ description: ""
 date: 2018-09-18T19:00:37+02:00
 draft: false
 tags: [searching,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 [TFS 2018 Update 3 is finally out](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-update3) and in release notes there is a nice news for Search functionality, **basic security now enforced through a custom plugin**. Here is what you can read in release notes
 

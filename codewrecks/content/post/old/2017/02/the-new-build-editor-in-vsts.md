@@ -4,7 +4,7 @@ description: ""
 date: 2017-02-18T09:00:37+02:00
 draft: false
 tags: [VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In the latest update of VSTS a new build editor was rolled out and it is now available in your account. This is a preview of the new build editor and this imply that it is not immediately available, but  **you need to activate it for your user**. You can find the button to enable it in the build hub
 

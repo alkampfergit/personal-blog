@@ -4,7 +4,7 @@ description: ""
 date: 2017-01-16T17:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I had a build that runs fine on some agents, then I try running the build on a different agent but the build failed with the error.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2016-02-12T14:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the cool feature of Visual Studio Team Services is extendibility, you can also find lots of addin in official [Marketplace](https://marketplace.visualstudio.com/). One of the coolest addin you can find there is an official addin by Microsoft and allows you to **host a private Nuget Packages inside your VSTS account**. You can find the Addin here: [https://marketplace.visualstudio.com/items?itemName=ms.feed](https://marketplace.visualstudio.com/items?itemName=ms.feed "https://marketplace.visualstudio.com/items?itemName=ms.feed") it is free and can be installed with a couple of simple clicks.
 

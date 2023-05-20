@@ -3,8 +3,8 @@ title: "Visual Studio ALM Links- Week 42013"
 description: ""
 date: 2013-01-26T10:00:37+02:00
 draft: false
-tags: [Visual Studio ALM]
-categories: [Team Foundation Server,Visual Studio ALM]
+tags: [Tfs]
+categories: [Team Foundation Server]
 ---
 - [Other enhancements in Microsoft Test Manager in Update 1](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/23/other-enhancements-in-microsoft-test-manager-in-update-1.aspx)
 - [Add additional States onto the Agile Task Board in TFS2012](http://blogs.msdn.com/b/visualstudiouk/archive/2013/01/19/adding-additional-states-onto-the-agile-task-board-in-tfs2012.aspx)

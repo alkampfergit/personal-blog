@@ -4,7 +4,7 @@ description: ""
 date: 2010-07-10T05:00:37+02:00
 draft: false
 tags: [Continuous Integration,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 It is time to connect together a couple of posts of mine, [in the first](http://www.codewrecks.com/blog/index.php/2010/07/06/deploy-on-remote-machine-during-builds/) I simply explained how to deploy a web application to a remote machine with the use of Beyondexec2, [in another one](http://www.codewrecks.com/blog/index.php/2010/07/07/use-tfs-2010-build-to-execute-arbitrary-task/) I explained how to create a simple tfs build, that actually does not build anything, but execute a simple workflow.
 

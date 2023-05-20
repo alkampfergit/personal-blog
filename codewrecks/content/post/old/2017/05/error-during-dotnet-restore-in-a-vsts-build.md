@@ -4,7 +4,7 @@ description: ""
 date: 2017-05-27T09:00:37+02:00
 draft: false
 tags: [build,VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve a build that runs perfectly on some agents, but fails in others, and the error is in the  **dotnet restore** action. Here is the log of the failure:
 

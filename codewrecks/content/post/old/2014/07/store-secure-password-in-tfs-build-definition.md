@@ -3,8 +3,8 @@ title: "Store secure password in TFS Build Definition"
 description: ""
 date: 2014-07-12T08:00:37+02:00
 draft: false
-tags: [TfsBuild]
-categories: [Team Foundation Server]
+tags: [Continuous Integration]
+categories: [Tfs]
 ---
 Some days ago I had some tweet exchange with [Giulio](https://twitter.com/giulio_vian) about a post of [Gordon](https://twitter.com/GordonBeeming) on  **storing security info in TFS Build Definition**. The question is: * **how can I store password in build definition without people being able to view them simply editing the build definition itself?** *
 

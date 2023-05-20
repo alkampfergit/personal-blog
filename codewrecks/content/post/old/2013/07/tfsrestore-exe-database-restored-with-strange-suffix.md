@@ -3,8 +3,8 @@ title: "TFSRestoreexe database restored with strange suffix"
 description: ""
 date: 2013-07-01T18:00:37+02:00
 draft: false
-tags: [Tfs,Upgrade]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 This problem happens if you mix Team Foundation Server backup tools, the symptom is: you launch TfsRestore.exe and point to a local folder where a TFS backup is located, and when the database are restored they have strange suffix.
 

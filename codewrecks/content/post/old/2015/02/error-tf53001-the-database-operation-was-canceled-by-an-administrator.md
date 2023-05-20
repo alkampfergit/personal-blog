@@ -4,7 +4,7 @@ description: ""
 date: 2015-02-19T18:00:37+02:00
 draft: false
 tags: [Sql Server,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 #### A customer updated his TFS 2010 to 2013 in a new machine running Windows Server 2012 R2 and Sql Server 2014. Everything went fine, until after few days they started having an error whenever he tried to do a GetLatest or a Check-in or Check-out operation. 
 

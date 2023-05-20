@@ -3,7 +3,7 @@ title: "error MSB3323 Unable to find manifest signing certificate in the certifi
 description: ""
 date: 2008-06-26T04:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 This morning I did some modification to a project that is deployed with click once, I checked in and the build was broken. I go to CC.NET dashboard and I see that the error is

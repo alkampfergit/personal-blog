@@ -4,7 +4,7 @@ description: ""
 date: 2010-12-15T16:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Microsoft releases a Virtual Machine with TFS and VS 2010 with some test data and hands on labs, that are really useful for demo or just to try out the new functionalities.
 

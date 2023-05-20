@@ -3,8 +3,8 @@ title: "Isolate your TFS Pre-Production environment for maximum security"
 description: ""
 date: 2016-07-23T08:00:37+02:00
 draft: false
-tags: [Upgrade]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 In previous post I’ve explained how to create a [clone of your TFS Production environment](http://www.codewrecks.com/blog/index.php/2016/07/16/create-a-pre-production-test-environment-for-your-tfs/) thanks to the new TFS “15” wizard. With this post I want to share you a simple solution I have in my Bags of Tricks to  **avoid your TFS Cloned environment to interfere with production environment**.
 

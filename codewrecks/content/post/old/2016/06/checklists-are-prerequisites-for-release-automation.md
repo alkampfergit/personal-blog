@@ -3,7 +3,7 @@ title: "Checklists are prerequisites for Release Automation"
 description: ""
 date: 2016-06-09T19:00:37+02:00
 draft: false
-tags: [devops,ReleaseManagement]
+tags: ["ContinuousDeployment"]
 categories: [DevOps]
 ---
 I’ve dealt in some posts on how to  **deploy an application with a PowerShell script** that uses an archive produced by a build. Automating a release could be simple or complex, depending on the nature of the software to be deployed, but there is a single suggestion that I always keep in my mind:
@@ -19,9 +19,9 @@ Since the devil is in the details, deploying a software manually without a chekl
 The correct process to create automated script is:
 
 *1) Generate PreRequisite, Installation, PostInstallation CheckList.  
-2) Run them manually until they are complete and correct, write down the time needed for each step  
-3) Start automating the most time consuming steps.  
-4) Proceed until every step is automated.*
+1) Run them manually until they are complete and correct, write down the time needed for each step  
+2) Start automating the most time consuming steps.  
+3) Proceed until every step is automated.*
 
  **Usually it is not necessary to immediately try to automate everything** , as an example, if you use virtual machine, you can use golden images to use machines with all prerequisites already installed. This simply the deployment process because you can avoid writing PowerShell DSC, Puppet or Chef scripts to install Prerequisites.
 

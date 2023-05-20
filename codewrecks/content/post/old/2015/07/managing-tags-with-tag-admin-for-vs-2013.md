@@ -4,7 +4,7 @@ description: ""
 date: 2015-07-21T19:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Tags management in Team Foundation Server is a really good way to add custom information to Work Items without the need to customize process template. The downside of this approach, is that  **every person is able to add whatever tag to work items with the risk of misspelling and duplication**.
 

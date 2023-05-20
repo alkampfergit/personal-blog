@@ -4,7 +4,7 @@ description: ""
 date: 2009-12-24T09:00:37+02:00
 draft: false
 tags: [Lab Management]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I deployed my first machine with lab management, but when the deploy finished I verify that workflow capability and test capability are not enabled in the machine. This is how you should see deployed machine
 

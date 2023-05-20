@@ -4,7 +4,7 @@ description: ""
 date: 2009-12-23T16:00:37+02:00
 draft: false
 tags: [Lab Management]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 You can check the original post [here](http://blogs.msdn.com/lab_management/archive/2009/06/08/networking-basics-for-lab-management-part-i.aspx), but I want to explain again how you can solve problem with network location during setup of Lab Management (because it happened to me both time I configured labmanagement, in desktop machine and in laptop machine), the problem manifests itself with this symptom
 

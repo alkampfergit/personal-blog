@@ -4,7 +4,7 @@ description: ""
 date: 2016-01-14T18:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When installing TFS one of the most important and often most forgotten step is  **using DNS to give TFS Friendly names**. The procedure is described in this [old post](http://www.edsquared.com/2011/01/03/Using+Friendly+DNS+Names+In+Your+TFS+Environment.aspx) by Ed Blankenship and details all the operations you need to do to use friendly DNS entries for all of machines included in a standard TFS Installation.
 

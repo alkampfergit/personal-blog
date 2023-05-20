@@ -4,7 +4,7 @@ description: ""
 date: 2011-08-12T16:00:37+02:00
 draft: false
 tags: [ALM,Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Suppose you have this scenario, a team is working on company office to create some software that communicate with some complex hardware that will be deployed to a foreign country. When is time to set up everything in production the team goes physically to that foreign country and they will modify the software on the field doing final adjustments but usually they have no connection to the central office. How could you manage to keep your source code aligned when the team is on remote site not being able to access the central TFS?
 

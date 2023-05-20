@@ -4,7 +4,7 @@ description: ""
 date: 2010-06-03T06:00:37+02:00
 draft: false
 tags: [Team Foundation Server,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 With Tfs Build you have a great flexibility on how to execute your unit tests. First of all you can decide to execute only tests of a certain category, or with a certain priority, but one of the most interesting feature is the ability to execute them in another machine with the helps of a test Agent. First of all you need to install a test controller and configure it in one of the machine:
 

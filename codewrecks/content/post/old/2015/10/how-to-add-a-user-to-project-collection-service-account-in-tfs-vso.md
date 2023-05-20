@@ -4,7 +4,7 @@ description: ""
 date: 2015-10-07T15:00:37+02:00
 draft: false
 tags: [Security]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 VSO and TFS have a special group called:  **Project Collection Service Account that has really powerful permission, and usually no user should be part of that group.** There are specific circumstances, like running TFS Integration platform to move code to TFS, where the account used to access VSO needs to be part of this group to temporary have special permission.
 

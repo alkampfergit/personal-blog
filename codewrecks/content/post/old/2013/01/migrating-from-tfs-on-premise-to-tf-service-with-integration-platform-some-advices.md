@@ -4,7 +4,7 @@ description: ""
 date: 2013-01-21T20:00:37+02:00
 draft: false
 tags: [Visual Studio ALM]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When it is time to migrate from an On Premise version of TFS to TF Service ( [http://tfs.visualstudio.com](http://tfs.visualstudio.com) )  **actually** [**Integration Platform**](http://visualstudiogallery.msdn.microsoft.com/eb77e739-c98c-4e36-9ead-fa115b27fefe) **is the only viable solution**. I just want to give you a couple of hint to avoid problem in the migration. The account you are using to perform the migration should be in the Team Project Collection Service account because it need special permissions. Suppose you are using the Brian Keller’s Virtual Machine, you decide to perform the migration with Adam Barr,  **you need to be sure that the user is part of the Team Project Collection Service account** Unfortunately when is time to add a user in that group, you will find that the UI does not allow you to do this, so you need to add the group to the user, not the user to the group, here is the sequence of operations that accomplish this operation.
 

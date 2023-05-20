@@ -3,7 +3,7 @@ title: "WordPress and permalink make your url case sensitive"
 description: ""
 date: 2008-08-15T02:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 This morning I browse some stats that google made on my blog, and saw that there are some 404 (Not Found) page. After some inspection I see that all the 404 have the form

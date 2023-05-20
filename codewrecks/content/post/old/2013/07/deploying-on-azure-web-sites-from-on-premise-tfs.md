@@ -4,7 +4,7 @@ description: ""
 date: 2013-07-05T15:00:37+02:00
 draft: false
 tags: [Azure,TfsBuild]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Many people asked me during course if the ability to automatically deploy to Windows Azure Web Sites is restricted only to those people that are using TF Service (TFS on the cloud), or if they can  **deploy with an on-premise installation of TFS**.
 

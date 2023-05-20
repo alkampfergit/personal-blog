@@ -4,7 +4,7 @@ description: ""
 date: 2009-06-26T10:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 The term *Build* is a complex one that does not only means *compile source files into final assemblies*, but it comprehends many other operations that are vital for the project. One of these operation is running unit tests during Tfs build. The reason to have unit tests run at each build is to continuously keep track of the quality of the project.
 

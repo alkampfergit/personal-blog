@@ -4,7 +4,7 @@ description: ""
 date: 2010-05-10T09:00:37+02:00
 draft: false
 tags: [Team Foundation Server,TfsAPI]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Today my dear friend [Matteo](http://blogs.ugidotnet.org/j3r/Default.aspx) asked me some help with a snippet of code to insert a WIT into a TFS. The snippet was the following one.
 

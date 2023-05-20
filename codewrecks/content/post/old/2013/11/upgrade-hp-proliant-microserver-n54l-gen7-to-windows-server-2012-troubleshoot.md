@@ -3,7 +3,7 @@ title: "Upgrade HP Proliant Microserver N54L Gen7 to Windows Server 2012 trouble
 description: ""
 date: 2013-11-27T08:00:37+02:00
 draft: false
-tags: [TestLab]
+tags: [HomeLab]
 categories: [EverydayLife]
 ---
 Sadly enough if you try to upgrade your Proliant Microserver N54L (or N40L) to Windows Server 2012 R2 **you probably got stuck after the third reboot at 84% when it is time to install computer devices**. The problem is caused by the NIC firmare that is not compatible with Server 2012 R2. Luckly enough, HP just released a patch of the firmware to address this problem, you can find more info in [the last post of this thread](http://h30499.www3.hp.com/t5/ProLiant-Servers-Netservers/Windows-Server-2012-R2-on-HP-Microserver-N36L-N40L-N54L/td-p/6237457#.UpWhUHl3taR).

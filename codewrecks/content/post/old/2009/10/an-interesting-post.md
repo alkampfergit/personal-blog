@@ -4,7 +4,7 @@ description: ""
 date: 2009-10-05T02:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 As you can read in [this post](http://blogs.msdn.com/bharry/archive/2009/10/01/tfs-2010-for-sourcesafe-users.aspx), there are a lot of new stuff around TFS 2010. The good news is that Standard TFS is a TFS so you can have not only version control, as Source safe does, but the Issue tracker and most important the build automation (how can you lived without :) ).
 

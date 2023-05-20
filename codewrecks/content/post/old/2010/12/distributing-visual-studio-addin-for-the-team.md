@@ -4,7 +4,7 @@ description: ""
 date: 2010-12-04T09:00:37+02:00
 draft: false
 tags: [Power Tools,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the most requested feature for TFS is the ability to distribute automatically Visual Studio adding to team member. This needs is especially important for addin like Custom Check-in policies, because if developers do not install check-in policies they would not be run during a Check-in. Every time you show check-in policies to a customer, it immediately ask you how to distribute them to all developers pc automatically.
 

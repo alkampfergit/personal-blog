@@ -4,7 +4,7 @@ description: ""
 date: 2014-03-31T12:00:37+02:00
 draft: false
 tags: [ApplicationInsights]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve already covered installation of Monitoring Agent for Visual Studio Online Application Insights. Actually the service is in preview and the setup experience is changed from the first one. At date of Today, during installation phase, setup asks you the type of agent you need, but  **it does not asks you if you want to automatically monitor all of your web application**. After the installation you can configure Microsoft Monitoring Agent from Control Panel
 

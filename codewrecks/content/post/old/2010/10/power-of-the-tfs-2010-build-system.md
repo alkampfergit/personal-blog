@@ -4,7 +4,7 @@ description: ""
 date: 2010-10-04T15:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Tfs 2010 introduces a lot of news for the Build System, and now Tfs Build it is probably the best choice when you need to setup a Continuous Integration environment for your applications.
 

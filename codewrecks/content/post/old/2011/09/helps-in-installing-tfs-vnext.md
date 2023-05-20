@@ -4,7 +4,7 @@ description: ""
 date: 2011-09-17T10:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 For those one that needs help on how to install the TFS vNext preview from the BUILD conference in Anaheim here is three link that will explain you how to install Basic, Standard and advanced configuration.
 

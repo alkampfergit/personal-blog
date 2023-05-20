@@ -4,7 +4,7 @@ description: ""
 date: 2012-04-02T15:00:37+02:00
 draft: false
 tags: [Tfs,Tfs service,TfsBuild]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 [Tfs on azure](http://tfspreview.com/) is a a perfectly valid solution to have your  **TFS hosted by Microsoft** , no worries about upgrading, maintaining, backup and most important, *it is available from every computer that has an internet connection*. This last factor can be really interesting for companies where people sometimes works from home, or from an hotel during transfers because the only solution with an On-Premise server is exposing the server as Https, or using a VPN, but with TFS on Azure all that you need is a simple internet connection.
 

@@ -3,7 +3,7 @@ title: "WatiN looking for content in GridView"
 description: ""
 date: 2007-06-19T04:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 Quite often I need to automate test page and check that the contents of a GridView contains exactly some strings. First of all I have an [helper class](http://www.nablasoft.com/Alkampfer/?p=53) that helps me to cope with the name that asp.net give to controls contained in another controls, then I write some helper methods to assert that the content of a grid is what I expected to be.

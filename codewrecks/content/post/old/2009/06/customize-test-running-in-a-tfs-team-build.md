@@ -4,7 +4,7 @@ description: ""
 date: 2009-06-29T10:00:37+02:00
 draft: false
 tags: [NET framework,Team Foundation Server]
-categories: [NET framework,Team Foundation Server]
+categories: [Team Foundation Server]
 ---
 In [previous post](http://www.codewrecks.com/blog/index.php/2009/06/26/running-tests-during-a-build-in-tfs/) I showed how to setup a build in tfs that not only builds the solution, but also runs all the tests. The next step is to configure how tests are run and reacting to test result. The first thing I want is the ability to make the entire build fail if one of the test fails. As you see in the previous post, the default behavior of the build, is to partially fail if one or more tests fail.
 

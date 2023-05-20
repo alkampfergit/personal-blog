@@ -4,7 +4,7 @@ description: ""
 date: 2010-12-31T08:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 You can download [Team Explorer Everywhere SP1 Beta](http://blogs.msdn.com/b/bharry/archive/2010/11/03/team-explorer-everywhere-2010-sp1-beta-is-available-for-download.aspx) to integrate all TFS functionality in your *non Visual Studio* environment, like eclipse. One of the most interesting addition made in SP1 is the support for gated Check In in Eclipse environment.
 

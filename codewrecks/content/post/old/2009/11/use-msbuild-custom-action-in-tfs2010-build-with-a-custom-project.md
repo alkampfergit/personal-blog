@@ -4,7 +4,7 @@ description: ""
 date: 2009-11-09T13:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Since TFS Build 2010 is ruled by workflow foundation, what happens if you want to use a custom msbuild task that you already have used in the past? I agree with the fact that the right approach to use, is writing a custom activity, but you need to write more code, and if you already have a tested MsBuild custom task, probably the best approach is to reuse it in the build workflow.
 

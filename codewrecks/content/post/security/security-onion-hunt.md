@@ -3,7 +3,7 @@ title: "Security Onion 2020 - The hunt"
 description: "Thanks to security onion The Hunt, searching for anomalies in network traffic is really easy and intuitive"
 date: 2021-01-03T10:13:30+02:00
 draft: false
-tags: ["security", "securityonion"]
+tags: ["security"]
 categories: ["security"]
 ---
 

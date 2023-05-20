@@ -4,7 +4,7 @@ description: ""
 date: 2014-06-12T06:00:37+02:00
 draft: false
 tags: [devops]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In the first part on “[how to deploy a web site with Powershell DSC](http://www.codewrecks.com/blog/index.php/2014/06/11/how-to-deploy-web-site-with-powershell-dsc/)” I’ve explained the basic of a PowerShell DSC based script to install IIS and the required version of.NET Framework on target environment; **now it is time to deploy a Web Site**. In my scenario I want to use a port different from 80, because in test servers is a common practice installing multiple version of sites in different ports to distinguish between various deploy (Dev, Test, QA, etc). Here are the sequence of resources I use to deploy my site.
 

@@ -3,8 +3,8 @@ title: "Logging in Custom Build action for Tfs Build 2010"
 description: ""
 date: 2010-01-14T17:00:37+02:00
 draft: false
-tags: [TfsBuild]
-categories: [Team Foundation Server]
+tags: [Continuous Integration]
+categories: [Tfs]
 ---
 In a [previous post](http://www.codewrecks.com/blog/index.php/2009/12/07/custom-activities-in-tfs2010/) I dealt with the creation of a Custom Activity to use in TFS2010 builds, in that example I did not dealt about logging. Logging is a vital task to do in custom action, because it is quite difficult to attach a debugger to the Build Agent, and if a build fails, it is really important to be able to understand what is gone wrong.
 

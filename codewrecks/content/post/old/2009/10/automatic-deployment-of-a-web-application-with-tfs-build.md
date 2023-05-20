@@ -3,7 +3,7 @@ title: "Automatic deployment of a web application with TFS Build"
 description: ""
 date: 2009-10-23T09:00:37+02:00
 draft: false
-tags: [Tfs,TfsBuild]
+tags: [Tfs]
 categories: [Software Architecture,Team Foundation Server]
 ---
 When you develop web applications you usually have X developers solving bugs and implementing features, and a series of testers that test application during developing process. A must to have requirement is that

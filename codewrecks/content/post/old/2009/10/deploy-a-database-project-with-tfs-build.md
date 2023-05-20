@@ -4,7 +4,7 @@ description: ""
 date: 2009-10-06T09:00:37+02:00
 draft: false
 tags: [Tfs,TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 When you develop web application you often have this scenario. Some people are testers, they are testing the application in dev all day, and they want always to test latest version. Moreover testers usually fills data into web application, so they want their data to be preserved between various deploy. If you simply clear all data in test database you will end with a lot of furious tester :) so do not even think to do this.
 

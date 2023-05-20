@@ -3,7 +3,7 @@ title: "Linq to Sqlworking with detached object 82308230"
 description: ""
 date: 2008-03-01T01:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [NET framework]
 ---
 Linq to Sql is beautiful, but for people using NHibernate sometimes there are surprises. Suppose you load an entity, then you keep a reference in memory, dispose the original DataContext, and after some time you want to propagate to the database the value of the modified entity.

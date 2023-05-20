@@ -4,7 +4,7 @@ description: ""
 date: 2018-02-26T18:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Yesterday I’ve started an old virtual machine with an old version of TFS and when I try to access the instance I got a “Service Unavailable” error.
 

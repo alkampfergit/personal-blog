@@ -4,7 +4,7 @@ description: ""
 date: 2015-06-06T09:00:37+02:00
 draft: false
 tags: [build,devops]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the major benefit of the new build infrastructure of TFS and Visual Studio Online is the  **easy deployment of build agents**. The downside of this approach is that your infrastructure become full of agents, and you should have some way to  **determine which agent(s) to use for a specific build.** The problem is:
 

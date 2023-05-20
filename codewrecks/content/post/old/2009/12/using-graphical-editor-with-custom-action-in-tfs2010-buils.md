@@ -4,7 +4,7 @@ description: ""
 date: 2009-12-08T17:00:37+02:00
 draft: false
 tags: [Tfs,TFS Build,workflow]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In [last post I](http://www.codewrecks.com/blog/index.php/2009/12/07/custom-activities-in-tfs2010/) showed how to build a custom code activity to customize tfsbuild for beta2 of tfs2010. In that post I inserted custom action manually in the xaml file of the build definition, and I know that this can be a pain, if you want to insert a custom action in a specific part of the workflow.
 

@@ -3,7 +3,7 @@ title: "Simple skinnable and Theme management in WPF user interface"
 description: ""
 date: 2008-05-22T03:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 A skinnable interface is the gotha of the user interface, the developer use standard control and set the behaviour, the designer skin it with some tool and creates a beautiful user interface. In WPF this is possible thanks to XAML and styles, but it is possible to simple include in an application a series of skin and load at runtime??. The answer is Yes, it is possible.

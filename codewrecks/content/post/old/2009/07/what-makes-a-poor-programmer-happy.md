@@ -3,7 +3,7 @@ title: "What makes a poor programmer happy"
 description: ""
 date: 2009-07-10T06:00:37+02:00
 draft: false
-tags: [VSDBEdition]
+tags: []
 categories: [NET framework,Tools and library]
 ---
 I must create a duplicate of a database in another server, I need to duplicate only the structure of actual production database to use with a test web application to check how the webapp works with an empty database. I simply fired a command prompt, went to output directory of my database project, and typed

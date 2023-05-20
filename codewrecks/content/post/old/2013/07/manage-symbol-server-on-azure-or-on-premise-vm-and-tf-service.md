@@ -3,8 +3,8 @@ title: "Manage Symbol server on Azure or on-premise VM and TF Service"
 description: ""
 date: 2013-07-04T05:00:37+02:00
 draft: false
-tags: [TF Service]
-categories: [Team Foundation Server]
+tags: [Tfs]
+categories: [Tfs]
 ---
 One of the coolest capabilities of  **Team Foundation Server Build is the ability to automatically manage a** [**symbol server**.](http://www.edsquared.com/2011/02/12/Source+Server+And+Symbol+Server+Support+In+TFS+2010.aspx) Suppose this scenario: you have a library and you want to distribute to all people in your organization, with the ability to being able to debug code in the dll and to identify the code that build each version of this dll. If you have TF Service you can use a VM in azure, but the overall process is really similar if you want to have a build on-premise.
 

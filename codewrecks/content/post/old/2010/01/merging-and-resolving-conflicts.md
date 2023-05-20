@@ -4,7 +4,7 @@ description: ""
 date: 2010-01-16T09:00:37+02:00
 draft: false
 tags: [Branch,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Sometimes I hear people that does not like the way TFS manages merge conflicts, and quite all of the time the problem is that they does not like the Visual Studio Integrated tool to merge two files. I must admit that I do not like that tool too, but this is not related to TFS, because conflicts resolution is an operation that must be done by people locally.
 

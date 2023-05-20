@@ -4,7 +4,7 @@ description: ""
 date: 2014-02-14T08:00:37+02:00
 draft: false
 tags: [ApplicationInsights,VSO]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Continuous deploy on Test and PreProduction server was always an argument that fascinates me a lot.  **The ability to have latest version of the code up and Running in a Test environment is a must for every developing team**. I’ve wrote some articles in the past on how to obtain such result for Web Sites and TFS.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2009-08-21T06:00:37+02:00
 draft: false
 tags: [Msbuild,TeamFoundationServer,TfsBuild]
-categories: [Team Foundation Server,Tools and library]
+categories: [Team Foundation Server]
 ---
 One of the most important stuff in a project build, is *the ability to mark the assemblies with unique numbers that permits us to reproduce the build*. Tfs does not have a standard way of doing this, but with a couple of MsBuild actions it is really simple to overcome this limitation. This is a good example that shows how you can extend build script to do complex task.
 

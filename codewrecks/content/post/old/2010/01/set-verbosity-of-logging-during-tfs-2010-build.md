@@ -4,7 +4,7 @@ description: ""
 date: 2010-01-18T10:00:37+02:00
 draft: false
 tags: [TFS Build,workflow]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 To test a little bit how you can log information during a TFS 2010 build you can create a simple activity , this activity simply has a Message property and log three messages, at different BuildMessageImportance level
 

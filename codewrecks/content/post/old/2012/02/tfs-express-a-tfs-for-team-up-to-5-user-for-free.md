@@ -3,8 +3,8 @@ title: "TFS Express a TFS for team up to 5 user for FREE"
 description: ""
 date: 2012-02-23T17:00:37+02:00
 draft: false
-tags: [Team Foundation Server,Visual Studio ALM]
-categories: [Team Foundation Server,Visual Studio ALM]
+tags: [Team Foundation Server]
+categories: [Team Foundation Server]
 ---
 As you can read [from Brian Harry’s blog post](http://blogs.msdn.com/b/bharry/archive/2012/02/23/coming-soon-tfs-express.aspx)
 

@@ -4,7 +4,7 @@ description: ""
 date: 2016-04-03T07:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Creation of a new Team Project is a feature that traditionally was available only from Visual Studio in TFS on-premises. You do not need to have a full Visual Studio installation, you can only install the Team Explorer component,  **but in 2015, unfortunately, the stand alone installer for Team Explorer is Gone**.
 

@@ -3,7 +3,7 @@ title: "Running NUnit and xUnit tests in TFS11 build"
 description: ""
 date: 2012-03-05T06:00:37+02:00
 draft: false
-tags: [Nunit,Testing,TFS11,Unit Testing]
+tags: [Nunit,Testing]
 categories: [Team Foundation Server,Testing]
 ---
 I’ve blogged in the past various solution to run NUnit tests during a TFS build, and now it is time to make it again for TFS11, but this time it is incredibly simple, because the new Test Runner supports multiple frameworks, so it works *almost* automatically.

@@ -4,7 +4,7 @@ description: ""
 date: 2015-12-01T16:00:37+02:00
 draft: false
 tags: [build,vNext]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 There are a lots of interesting new features in TFS / VSTS Build vNext, but surely, one of the coolest one is the  **ability to edit a build and save as a draft**. Actually available only in the online version (Visual Studio Team Services)
 

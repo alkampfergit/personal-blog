@@ -4,7 +4,7 @@ description: ""
 date: 2010-06-12T07:00:37+02:00
 draft: false
 tags: [TFS Build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Even if you are in workgroup environment, without a domain, you can distribute your build agent in different machines. The key to achieve this is shadow accounts. I've installed as an example a build controller in the tfs machine, then I created an agent, and everything runs as BuildAgent account, created in the Tfs Server and added to the *Project collection Build Service account*.
 

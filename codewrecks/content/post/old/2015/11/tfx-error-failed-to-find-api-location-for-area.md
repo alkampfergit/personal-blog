@@ -4,7 +4,7 @@ description: ""
 date: 2015-11-30T21:00:37+02:00
 draft: false
 tags: [Team Foundation Server]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 [Tfx-cli](https://github.com/Microsoft/tfs-cli) is a  **cross platform command line for TFS / VSTS** that can be used to accomplish various tasks. To connect to your favorite instance all you have to do is generate a Personal Access Token and use the command
 

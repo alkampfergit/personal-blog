@@ -4,7 +4,7 @@ description: ""
 date: 2013-08-01T05:00:37+02:00
 draft: false
 tags: [Continuous Deployment,Symbols,TfsBuild]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In the last article of the series, I dealt with [Deploying on Azure Web Sites from on-premise TFS](http://www.codewrecks.com/blog/index.php/2013/07/05/deploying-on-azure-web-sites-from-on-premise-tfs/), but the very same technique can be used to **automatically deploy from a standard TFS Build to a standard Web Site hosted in IIS and not in Azure**. For this demo I’ve prepared a VM on azure, but the configuration is the very same if the VM is on-premise or if you use a physical machine to run IIS. The only difference between deploy on Azure Web Site is that we are deploying on a Web site hosted on IIS.
 

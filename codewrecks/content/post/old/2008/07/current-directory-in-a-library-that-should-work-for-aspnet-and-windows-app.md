@@ -3,7 +3,7 @@ title: "Current directory in a library that should work for aspnet and windows a
 description: ""
 date: 2008-07-15T05:00:37+02:00
 draft: false
-tags: [Uncategorized]
+tags: []
 categories: [General]
 ---
 Suppose you created a library that needs to scan the “current directory” looking for some files, first solution that came in my mind was to use Enviroment.CurrentDirectory, but this is not correct. In a web.application or windows service you will find that CurrentDirectory is c:\windows\system32.

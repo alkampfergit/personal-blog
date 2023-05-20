@@ -4,7 +4,7 @@ description: ""
 date: 2014-05-31T10:00:37+02:00
 draft: false
 tags: [Msbuild,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I got this error from a powershell script when I call MsBuild.exe to publish a ClickOnce project in a TFS Build, the exact error is.
 

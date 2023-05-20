@@ -4,7 +4,7 @@ description: ""
 date: 2012-10-05T19:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 - [Team Alerts as an automated notification tool](http://mattvsts.blogspot.it/2012/09/team-alerts-as-automated-notification.html)
 - [Planning and Tracking – Flat TOC](http://blogs.msdn.com/b/visualstudioalm/archive/2012/09/28/planning-and-tracking-flat-toc.aspx)

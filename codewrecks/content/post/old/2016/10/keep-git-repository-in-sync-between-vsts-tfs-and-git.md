@@ -4,7 +4,7 @@ description: ""
 date: 2016-10-22T08:00:37+02:00
 draft: false
 tags: [Git,VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 > Scenario: you have a repository in Git, both open source or in private repository and you want to keep a synchronized mirror in VSTS / TFS.
 

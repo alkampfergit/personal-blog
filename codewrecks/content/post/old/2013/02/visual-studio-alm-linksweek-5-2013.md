@@ -4,7 +4,7 @@ description: ""
 date: 2013-02-02T17:00:37+02:00
 draft: false
 tags: [Visual Studio ALM]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 This is the week of the ALM Summit, so we have really tons of news about VSAlm products.
 

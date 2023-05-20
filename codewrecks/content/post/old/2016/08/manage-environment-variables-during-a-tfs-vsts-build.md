@@ -4,7 +4,7 @@ description: ""
 date: 2016-08-06T07:00:37+02:00
 draft: false
 tags: [build,Testing]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 To avoid creating unnecessary build definition, it is  **a best practice to allow for parameter overriding in every task that can be executed from a build**. I’ve dealt on how to [parametrize tests](http://www.codewrecks.com/blog/index.php/2016/06/25/create-parametrized-test-to-allow-for-simpler-builds/) to use a different connection string when tests are executed during the build and I’ve used Environment variables for a lot of reasons.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2016-02-06T18:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the nice new feature of the new build system (vNext) introduced in VSTS is the  **ability to view result summary for deleted builds**.
 

@@ -4,7 +4,7 @@ description: ""
 date: 2015-06-08T16:00:37+02:00
 draft: false
 tags: [build,vNext,VSO]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 One of the great  **news of build vNext is the ability to create a build that targets source on GitHub project** , not only on Git or TFVC repositories that are in current TFS or VSO instance. Given this, plus the fact that VSO has a 5 basic user license for Free, and you can use VSO as Continuous integration Engine for your GitHub projects.
 

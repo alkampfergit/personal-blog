@@ -4,7 +4,7 @@ description: ""
 date: 2017-07-03T16:00:37+02:00
 draft: false
 tags: [build,PowerShell,VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I have several builds that publish some web projects using standard msbuild task. Here is a sample configuration.
 

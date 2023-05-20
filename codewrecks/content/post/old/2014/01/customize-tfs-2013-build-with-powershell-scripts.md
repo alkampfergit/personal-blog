@@ -3,7 +3,7 @@ title: "Versioning assembly during TFS 2013 build with Powershell Scripts"
 description: ""
 date: 2014-01-11T15:00:37+02:00
 draft: false
-tags: [TfsBuild]
+tags: [Continuous Integration]
 categories: [Team Foundation Server,Visual Studio ALM]
 ---
 One of the most important  **news in TFS Build 2010 is the introduction of Workflow Foundation** that replaced standard MSBuild scripts used in TFS 2008. Workflow foundation can be really powerful, but indeed it is somewhat scaring and quite often  **customizing a build can be complex**.

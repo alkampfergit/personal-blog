@@ -3,7 +3,7 @@ title: "SQLite performance in production code"
 description: ""
 date: 2011-04-22T11:00:37+02:00
 draft: false
-tags: [SQLite]
+tags: []
 categories: [Programming]
 ---
 [SQLite](http://SQLite.phxsoftware.com/) is a cool relational database engine that runs embedded in code, without the need to use a server. It is usually used for unit testing, but it could be used in production code if we need to maintain a small database and we do not need the full power of a SQL Server or similar RDBMS.

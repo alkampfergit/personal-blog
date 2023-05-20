@@ -4,7 +4,7 @@ description: ""
 date: 2011-09-16T06:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve blogged yesterday about the video on channel 9 that explains how to configure a build server against a TfsPreview account and this morning Brian Harry made a [post that explains this process in great detail](http://blogs.msdn.com/b/bharry/archive/2011/09/15/configuring-a-build-server-against-your-shiny-new-hosted-tfs-account.aspx).
 

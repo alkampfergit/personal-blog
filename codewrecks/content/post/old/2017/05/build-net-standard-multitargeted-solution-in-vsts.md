@@ -4,7 +4,7 @@ description: ""
 date: 2017-05-24T17:00:37+02:00
 draft: false
 tags: [build]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I have a solution with multitargeting enabled to compile for full framework 4.5.2 and.NetStandard 1.6; it works quite well in Visual Studio, but when it is time to create a VSTS / TFS Build, if you using the standard Visual Studio template you got lots of errors.
 

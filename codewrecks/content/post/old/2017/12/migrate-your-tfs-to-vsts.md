@@ -4,7 +4,7 @@ description: ""
 date: 2017-12-16T09:00:37+02:00
 draft: false
 tags: [VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I’ve discussed a lot with many customers over the benefit of VSTS over TFS, especially for small companies, where there is no budget for a dedicated TFS administrator. The usual risk is not updating TFS, loosing the update train and then have a problem doing upgrades like TFS 2008 to TFS 2017.
 

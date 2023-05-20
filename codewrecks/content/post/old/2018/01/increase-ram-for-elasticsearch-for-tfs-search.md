@@ -4,7 +4,7 @@ description: ""
 date: 2018-01-20T11:00:37+02:00
 draft: false
 tags: [searching,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 If you are experiencing slow search in TFS with the new Search functionality based on ElasticSearch a typical suggestion is to give more RAM to the machine where ES is installed. Clearly you should use HQ or other tools to really pin down the root cause but  **most of the time the problem is not enough RAM, or slow disks**. The second cause can be easily solved moving data to an SSD disk, but giving more RAM to the machine, usually gives more space for OS File cache and can solve even the problem of slow disk.
 

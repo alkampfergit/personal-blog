@@ -4,7 +4,7 @@ description: ""
 date: 2015-12-12T08:00:37+02:00
 draft: false
 tags: [VSTS]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Just a quick post to make you know that, with update of 10 December 2015,  **VSTS now support a basic form of Work Item customization**.
 

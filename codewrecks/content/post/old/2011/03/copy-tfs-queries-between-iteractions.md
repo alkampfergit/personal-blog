@@ -4,7 +4,7 @@ description: ""
 date: 2011-03-17T11:00:37+02:00
 draft: false
 tags: [TfsAPI]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 In an [old post](http://www.codewrecks.com/blog/index.php/2011/03/07/duplicate-queries-in-tfs-between-iterations/) I spoke about a simple routine to copy queries between iterations in TFS, now it is time to show the code, behind this simple command.
 

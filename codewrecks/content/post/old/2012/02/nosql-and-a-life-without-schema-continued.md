@@ -4,7 +4,7 @@ description: ""
 date: 2012-02-06T08:00:37+02:00
 draft: false
 tags: [RavenDB]
-categories: [NoSql,RavenDB]
+categories: ["NoSql"]
 ---
 In the first part I showed how simple is to store object inside a NoSql database like RavenDb, today I want to point out how cool is having no schema when it is time to add properties to your documents.
 

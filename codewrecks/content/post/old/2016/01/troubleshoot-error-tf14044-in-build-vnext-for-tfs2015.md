@@ -4,7 +4,7 @@ description: ""
 date: 2016-01-15T17:00:37+02:00
 draft: false
 tags: [build,Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 I upgraded a TFS2012 to TFS2015 Update 1 at a customer site and  **one of the reason why the customer want to upgrade is the new build system introduced in TFS 2015**. Sadly enough, after the upgrade we created a simple build but it failed returning a permission error.
 

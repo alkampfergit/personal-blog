@@ -4,7 +4,7 @@ description: ""
 date: 2016-07-09T08:00:37+02:00
 draft: false
 tags: [Tfs]
-categories: [Team Foundation Server]
+categories: [Tfs]
 ---
 Microsoft released a [preview of the new version of Team Foundation Server](https://www.visualstudio.com/en-us/news/releasenotes/tfs15-relnotes), codename TFS “15” and as usual I immediately downloaded and installed on some of my test server. I’m not going to show you full steps of installation or upgrade, because installing TFS is now a Next/Next/Next experience, but  **I want to highlight a couple of really interesting aspect of the new installer**.
 
