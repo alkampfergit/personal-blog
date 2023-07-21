@@ -11,7 +11,7 @@ Have you ever found yourself being asked to **select a GitHub account every time
 
 The Git Credential Manager can become confused when it doesn't know which account to use. It's only option in these situations is to ask you which of the stored credentials it should utilize.
 
-![Command line interface suddenly opens a window asking you to select accounts](../images/command-line-interface.png)
+![Command line interface suddenly opens a window asking you to select accounts](../images/select-account.png) 
 
 ***Figure 1:*** *Command line interface suddenly opens a window asking you to select accounts.*
 
