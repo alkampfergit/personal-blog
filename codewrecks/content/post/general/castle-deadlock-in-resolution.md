@@ -2,7 +2,7 @@
 title: "When Castle Windsor fail in some really strange way"
 description: "Yesterday I'm starting to experience a complete application hung in startup when executed inside WSL subsistem for linux, it turns out it seems to have a big problem with a lock"
 date: 2023-08-17T08:00:00Z
-draft: false
+draft: true
 tags: ["castle"]
 categories: ["programming"]
 ---
