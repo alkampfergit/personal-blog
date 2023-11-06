@@ -12,5 +12,6 @@ Code that I've shown in these video available on [GitHub](https://github.com/alk
 - **RAG**
   - Extract and index document. [YouTube Video](https://www.youtube.com/watch?v=8fDdVnVR5qE) 
   - Search and answer query with an LLM. [YouTube Video](https://youtu.be/LNXSV00V5Nc)
+  - Use GPT to extract keyword from a user question [YouTube Video](https://youtu.be/vz52z8Q1FTk)
   
 Happy watching
