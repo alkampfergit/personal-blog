@@ -50,7 +50,7 @@ From https://xxxx.visualstudio.com/Jarvis/_git/Jarvis.AI
 * branch fe0b4ca5fc65e6ec3779b7ddabf9ca290028059b -> FETCH_HEAD 
 git checkout --progress --force refs/remotes/origin/fe0b4ca5fc65e6ec3779b7ddabf9ca290028059b 
 Note: switching to 'refs/remotes/origin/fe0b4ca5fc65e6ec3779b7ddabf9ca290028059b'. 
- {< / highlight >}}
+{{< / highlight >}}
 
 The preceding code snippet displays the **result of executing the checkout command**. It reveals that the process does not switch to a particular branch, but instead checks out a specific commit. In cases where you require tools like GitVersion or others that **necessitate verifying the checkout of your original branch, you can adapt the pipeline as follows.**
 
