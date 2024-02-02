@@ -1,7 +1,7 @@
 ---
 title: "Pills: Exploring Agent Options in Azure DevOps Pipelines: Managed vs. Self-Hosted"
 description: "Knowing when to use Microsoft-managed agents and when to use self-hosted agents in Azure DevOps pipelines is critical for optimizing build and deployment processes. Lets explore pro and cons of each option."
-date: 2024-02-02-T08:10:42+02:00
+date: 2024-02-01-T08:10:42+02:00
 draft: false
 categories: ["AzureDevOps"]
 tags: ["Pills", "Pipelines"]
