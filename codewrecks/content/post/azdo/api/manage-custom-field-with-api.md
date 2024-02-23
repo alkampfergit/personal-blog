@@ -29,7 +29,7 @@ A simple tool that simplify this phase is [Postman](https://www.postman.com/), i
 
 To authenticate to the service the simplest thing to do is create a Personal Access Token (PAT) and use it to authenticate to the service. **To use the token you can use Basic Authentication using a null user and the token as a password**. To avoid leaking of the PAT 
 
-![How to configure a secret in environment](environments-postman.png)
+![How to configure a secret in environment](../images/environments-postman.png)
 
 ***Figure 2***: *How to configure a secret in environment*
 
@@ -45,7 +45,7 @@ Now you can right click the environment and then **activate the environment** an
 
 Now you can create another collection **that is a simple container for a series of REST calls**. Once you select the new collection you can set the authentication
 
-!["Setting authentication for the entire collection](collection-authentication.png)
+!["Setting authentication for the entire collection](../images/collection-authentication.png)
 
 ***Figure 3***: *Setting authentication for the entire collection*
 
