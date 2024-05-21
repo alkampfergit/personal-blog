@@ -16,7 +16,7 @@ During the definition of the build, I can simply ask to automatically detect tes
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image-thumb43.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/06/image43.png)
 
-Now we have a problem, because the task *running tests* is failed, but we also check that we have a *No test result*, something went wrong and weare in trouble :). The most important thing to avoid when you work with Tfs is having panic :) you will always get detailed error of a failing build. To look at these details, you need to look in the file *BuildLog.txt*located in the shared folder used by the build (in my situation is [\\10.0.0.200\Builds\FluentMsTest\BuildWithTests\_20090625.3](file://\\10.0.0.200\Builds\FluentMsTest\BuildWithTests_20090625.3)). Since the failure is due to a Test failure, I need to look for string  **testtoolstask** (the task related to running test) to find problem related to unit testing.
+Now we have a problem, because the task *running tests* is failed, but we also check that we have a *No test result*, something went wrong and weare in trouble :). The most important thing to avoid when you work with Tfs is having panic :) you will always get detailed error of a failing build. To look at these details, you need to look in the file *BuildLog.txt*located in the shared folder used by the build (in my situation is \\10.0.0.200\Builds\FluentMsTest\BuildWithTests\_20090625.3. Since the failure is due to a Test failure, I need to look for string  **testtoolstask** (the task related to running test) to find problem related to unit testing.
 
 Here is what I found
 

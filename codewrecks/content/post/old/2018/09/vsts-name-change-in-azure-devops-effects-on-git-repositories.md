@@ -12,13 +12,13 @@ As I blogged in the past, it is super easy to build a VSTS Build (Now Azure DevO
 
 > Due to rebranding of VSTS into Azure DevOps and change of Url you need to pay attention if some extension or build broke due to usage of the old url.
 
-The solution is Super Simple, you need to go to the Repository page of your account using new dev.azure.com address and find the new address of the repository, something like: [https://accountname@dev.azure.com/accountname/teamproject/\_git/repositoryName.](https://accountname@dev.azure.com/accountname/teamproject/_git/repositoryName.)  **You just need to change adding a semicolon and valid auth token after the accountname** , so it is now like this: [https://organization:$(Token)/dev.azure](https://organization:$%28Token%29/dev.azure)…..
+The solution is Super Simple, you need to go to the Repository page of your account using new dev.azure.com address and find the new address of the repository, something like: [https://accountname@dev.azure.com/accountname/teamproject/\_git/repositoryName.](https://accountname@dev.azure.com/accountname/teamproject/_git/repositoryName.)  **You just need to change adding a semicolon and valid auth token after the accountname** , so it is now like this: https://organization:$(Token)/dev.azure.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/09/image_thumb-1.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/09/image-1.png)
 
  ***Figure 1***: *New string format to push force to a destination repository*
 
-Since I have many mirror build, I want a centralized way to securely store thetoken value to have all the build take this value from a centralized location; the obvious solution is a variable group linked to this build.
+Since I have many mirror build, I want a centralized way to securely store the token value to have all the build take this value from a centralized location; the obvious solution is a variable group linked to this build.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2018/09/image_thumb-2.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2018/09/image-2.png)
 

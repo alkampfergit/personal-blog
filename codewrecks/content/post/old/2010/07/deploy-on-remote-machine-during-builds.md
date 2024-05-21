@@ -21,7 +21,7 @@ Clearly Lab Management is really good to [manage virtual environment](http://www
 
 *<font size="2">:Error       <br>echo Unable to Copy Demo Scripts        <br>exit /b 1</font>*
 
-The script is really simple, it simply compose the drop folder [\\10.0.0.220\drops\demo](file://\\10.0.0.220\drops\demo) with the single argument of the batch to find the path where the build had dropped the packages, then it creates a local directory where to copy all deploy plackage and run it.
+The script is really simple, it simply compose the drop folder 10.0.0.220\drops\demo with the single argument of the batch to find the path where the build had dropped the packages, then it creates a local directory where to copy all deploy plackage and run it.
 
 Now you can store this script in source control, and use it with a tfs build, to deploy on a remote server, you can for example run from a command prompt:
 

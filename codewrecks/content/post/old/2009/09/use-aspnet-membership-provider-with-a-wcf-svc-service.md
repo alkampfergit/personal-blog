@@ -22,7 +22,7 @@ makecert -sk SignedByCA -iv AlkCa.pvk -n "CN=localhost" -ic AlkCa.cer -sr LocalM
 
 <!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com -->
 
-The  **CN=localhost** must be the address you use to expose the service. If the service will go on a server called ServerXXX you need to create the certificate with CN=ServerXXX. Just to be clear, if you will access your service with the address [http://servername:port/servicename.svc](http://servername:port/servicename.svc) you must create with CN=servername. moreover does not forget to create with –sky exchange. Now that you have the certificate open the mmc console, typing mmc at command prompt. The mmc opens, then goes to*File-&gt;add/remove snap in*, choose certificate, then choose computer account, then local computer. Now verify that the new certificate is in place.
+The  **CN=localhost** must be the address you use to expose the service. If the service will go on a server called ServerXXX you need to create the certificate with CN=ServerXXX. Just to be clear, if you will access your service with the address http://servername:port/servicename.svc you must create with CN=servername. moreover does not forget to create with –sky exchange. Now that you have the certificate open the mmc console, typing mmc at command prompt. The mmc opens, then goes to*File-&gt;add/remove snap in*, choose certificate, then choose computer account, then local computer. Now verify that the new certificate is in place.
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image-thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2009/09/image3.png)
 

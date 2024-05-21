@@ -105,7 +105,7 @@ This is quite complicated code, and it works by replacing part of the original e
 
 The first step is to regenerate all MemberBinding expression part, with the original parameter (line 34-38) and storing them into a collection (line 39). The operation is the following, I need a MemberExpression that extract from the parameter the object needed to generate the Dto. In the above example accessing the Customers property of Orders to gets a Customer object. Then another MemberExpression to take the corresponding field from the Customers object, and finally a MemberBinding.
 
-Then I need to recreate the BindingExpression (line 41-43) and returning in place of the original one. All the code is based on the [original Tree Visitor by microsoft](class%20DtoExpressionVisitor%20:%20ExpressionVisitor). With this quite complex trick I'm able to change the expression at runtime, thus keeping the generator simple.
+Then I need to recreate the BindingExpression (line 41-43) and returning in place of the original one. All the code is based on the original Tree Visitor by microsoft. With this quite complex trick I'm able to change the expression at runtime, thus keeping the generator simple.
 
 alk.
 

@@ -12,7 +12,7 @@ One of the coolest capabilities of  **Team Foundation Server Build is the abilit
 - Enable the Web server role
 - Install Team Foundation Server express Update 3
 
-Once everything is in place you can simply  **create a local folder and share in read / write** , my machine is called TfsSymbolServer so the folder will be [\\tfssymbolserver\symbols](file://\\tfssymbolserver\symbols)
+Once everything is in place you can simply  **create a local folder and share in read / write** , my machine is called TfsSymbolServer so the folder will be \\tfssymbolserver\symbols
 
 [![image](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image_thumb3.png "image")](https://www.codewrecks.com/blog/wp-content/uploads/2013/07/image3.png)
 

@@ -6,7 +6,7 @@ theme = "minimo"
 rssLimit = 200
 
 # disqusShortname = "codewrecks-1"
-googleAnalytics = "G-JNG3CSWEQT"
+# googleAnalytics = "G-JNG3CSWEQT"
 
 Paginate = 10
 preserveTaxonomyNames = true
@@ -139,7 +139,7 @@ hrefTargetBlank = true
 
 [languages]
 # edit this block for your own language
-[languages.en]
+[languages.en.params]
 lang = "en"
 languageName = "English"
 weight = 1

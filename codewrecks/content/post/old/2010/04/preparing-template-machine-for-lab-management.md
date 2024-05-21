@@ -12,7 +12,7 @@ First of all I created a simple virtual machine in hyper-v, install WindowsXP SP
 
 Now I need to install test agent and everything is needed for the machine to participate in a LabManagement Environment. To automate this task you can check the [VM Prep Tool](http://code.msdn.microsoft.com/vslabmgmt), a tool that automates this step to avoid losing time executing manually all the process. Once you downloaded the tool you need only to uncompress a couple of ISO file and the vmprep tool in a network share ([you can find all instruction here](mhtml:http://code.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=vslabmgmt&amp;DownloadId=9075)). Once everything is ready, in my windows xp machine I open the network share, enter the credential and finally open a prompt and type the command
 
-> [\\labrc\HyperVM\_RCLibrary\VMPrepTool.exe](file://\\labrc\HyperVM_RCLibrary\VMPrepTool.exe) SelfService
+> labrc\HyperVM\_RCLibrary\VMPrepTool.exe SelfService
 
 the tool ask me for password (I was logged as local administrator) and then it proceeded with the installation. After some reboot I got this
 
