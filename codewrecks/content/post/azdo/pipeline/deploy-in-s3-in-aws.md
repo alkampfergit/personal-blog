@@ -108,7 +108,7 @@ As you can see we simply **be sure to delete old artifacts cleaning the Pipeline
 
 Now here is how the pipeline looks like in Azure DevOps.
 
-![Bastion release summary](../images/bastion-release-summary.png.png)
+![Bastion release summary](../images/bastion-release-summary.png)
 
 ***Figure 1:*** *Bastion release summary*
 
