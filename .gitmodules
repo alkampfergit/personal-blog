@@ -3,4 +3,4 @@
 	url = https://github.com/avianto/hugo-kiera.git
 [submodule "codewrecks/themes/minimo"]
 	path = codewrecks/themes/minimo
-	url = https://github.com/MunifTanjim/minimo.git
+	url = https://github.com/alkampfergit/minimo.git
