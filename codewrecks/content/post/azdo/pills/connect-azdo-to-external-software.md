@@ -60,19 +60,19 @@ Latest two steps are easy in our software thanks to Elsa Workflow and the abilit
 
 Here is the detailed api used to perform this process.
 
-> Execute a WIQL query 
+### Execute a WIQL query 
 
 Reference url is https://dev.azure.com/org/teamproject/_apis/wit/wiql?api-version=6.0 you can simply post a WIQL query and it will return a list of all the Work Item Id that satisfy the query. You need to perform another query to obtain the detail.
 
-> Get Work Item Detail from Id list
+### Get Work Item Detail from Id list
 
 Call the api https://dev.azure.com/org/teamproject/_apis/wit/workitemsbatch?api-version=7.1 specifying the [list of the Work Item ids](https://learn.microsoft.com/en-gb/rest/api/azure/devops/wit/work-items/get-work-items-batch?view=azure-devops-rest-7.2&tabs=HTTP) you need to retrieve. Pay attention to the $expand parameters that allows you to ask to retrieve not only the base field **but also relations and other informations**. If you are not worried about bandwidth you can specify ALL so you can retrieve everything.
 
 I found useful to ask for all fields and expand everything, then check all the information you need and finally **if you need you can use fields parameter to limit fields returned and save bandwidth, but usually is not a huge problem.
 
-> Find pull requests in Work Item Detail
+### Find pull requests in Work Item Detail
 
-Elsa has nice integration with Jint, so you can execute custom javascript on your data, this allows me to examine **all the relations to find that one that points to a Pull Request and find base information.
+Elsa has nice integration with Jint, so you can execute custom javascript on your data, this allows me to examine **all the relations to find that one that points to a Pull Request and find base information.**
 
 {{< highlight javascript "linenos=table,linenostart=1" >}}
    if (workItem.relations != null) {
@@ -84,5 +84,19 @@ Elsa has nice integration with Jint, so you can execute custom javascript on you
                 let repositoryId = pullRequestIdSegment[pullRequestIdSegment.length - 2];
                 let pullRequestId = pullRequestIdSegment[pullRequestIdSegment.length - 1];
 {{< / highlight >}}
+
+As you can see to find the id of the pull request and the corresponding repository id I've used a simple regex, this allows me to grab both the **repositoryid and the pull requestid**. These are necessary informations needed to iterate for each pull request and grab details.
+
+### Retrieving detail of a pull request
+
+Retrieving the detail of a pull request is simple, because you can simply call this url
+
+{{< highlight javascript >}}
+https://dev.azure.com/{{organization}}/{{project}}/_apis/git/repositories/${pullRequest.repositoryId}/pullrequests/${pullRequest.pullRequestId}?api-version=7.1-preview.1`
+{{< / highlight >}}
+
+This allows me to grab details for each pull requests, then I simply enhance the original work item with details of the pull Requests.
+
+The result is that we can have (Figure 4) a nice **tab in our software that links in real time, with the most up to date informations all Work Item in Azure DevOps that are related to our element**.
 
 Gian Maria.
