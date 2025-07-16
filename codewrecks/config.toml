@@ -8,7 +8,16 @@ rssLimit = 200
 # disqusShortname = "codewrecks-1"
 # googleAnalytics = "G-JNG3CSWEQT"
 
-Paginate = 10
+[renderer]
+unsafe = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+pagerSize = 10
 preserveTaxonomyNames = true
 
 enableRobotsTXT = true # generate robots.txt
