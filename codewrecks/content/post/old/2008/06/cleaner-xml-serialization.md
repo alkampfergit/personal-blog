@@ -93,4 +93,3 @@ alk.
 
 Tags: [XmlSerialization](http://technorati.com/tag/XmlSerialization)
 
-<!--dotnetkickit-->

@@ -25,10 +25,3 @@ In the end I want also to point out that it is better to do small check-in. Quit
 Alk.
 
 Tags: [Distributed Team](http://technorati.com/tag/Distributed%20Team)
-
-<!--dotnetkickit-->
-
- <script type="text/javascript"><!--
-digg_bodytext = 'Source control management is the key to work on a team, but to work with it effectively there is the need of experience. In a project I work on actually, I'm working with some windows services that gather some data that is to be showed in a web application. I'm not supposed to work with the web application, that is developed by other two people of the team.';
-digg_skin = 'compact';
-//--></script> <script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script> 

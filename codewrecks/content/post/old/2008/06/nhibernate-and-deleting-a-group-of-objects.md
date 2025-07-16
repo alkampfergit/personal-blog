@@ -38,6 +38,5 @@ Object result = theSession.CreateSQLQuery("DELETE from SchedulerAction where act
 
 alk.
 
-<!--dotnetkickit-->
 
 Tags: [NHibernate, Bulk Operation](http://technorati.com/tag/NHibernate,%20Bulk%20Operation)

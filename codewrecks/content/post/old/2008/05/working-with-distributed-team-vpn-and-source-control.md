@@ -18,9 +18,3 @@ Alk.
 
 Tags: [Distributed team](http://technorati.com/tag/Distributed%20team)
 
- <script type="text/javascript"><!--
-digg_url = 'http://www.codewrecks.com/blog/?p=273';
-digg_title = 'Working with distributed team - VPN and source control';
-digg_bodytext = 'The importance of a vpn an a scs in distributed environment';
-digg_topic = 'programming';
-//--></script> <script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script> 

@@ -47,11 +47,3 @@ You get the IConversionManager by Kernel.GetSubSystem, and then add your new con
 alk.
 
 Tags: [Castle Windsor](http://technorati.com/tag/Castle%20Windsor) [Converters](http://technorati.com/tag/Converters)
-
-<!--dotnetkickit-->
-
-<script type="text/javascript"><!--
-digg_bodytext = 'If you have an object that has a property of some type that is not known by windsor (as example Regex), if you try to configure it with xml the error "No converter registered to handle the type" will occurs. This happens because the container read configuration as string, and then it has to convert to a type it does not know. The solution is to write few line of code to create a converter';
-digg_skin = 'compact';
-//--></script>  
-<script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script>

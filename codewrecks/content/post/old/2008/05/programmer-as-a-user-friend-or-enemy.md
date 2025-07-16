@@ -30,9 +30,3 @@ alk.
 
 Tags: [Agile programming](http://technorati.com/tag/Agile%20programming)
 
-<!--dotnetkickit-->
-
- <script type="text/javascript"><!--
-digg_bodytext = 'In a project I'm working to, there is&nbsp;a point where the user is supposed to enter a series of word separated by space. A user call you telling that the routine does not work, you check the data and see that the object contains such a string';
-digg_skin = 'compact';
-//--></script> <script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script> 

@@ -90,10 +90,4 @@ alk.
 
 Tags: [nunit](http://technorati.com/tag/nunit) [TraceListener](http://technorati.com/tag/TraceListener)
 
-<!--dotnetkickit-->
 
-<script type="text/javascript"><!--
-digg_bodytext = 'If you use Nunit and use standard System.Diagnostics.Debug.Assert in your code, you can get tired of the messagebox that is raised when a standard assertion fail. To avoid this, you can use app.config to completely remove all listener during the test.';
-digg_skin = 'compact';
-//--></script>  
-<script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script>

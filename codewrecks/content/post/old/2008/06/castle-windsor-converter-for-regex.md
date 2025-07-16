@@ -42,10 +42,3 @@ alk.
 
 Tags: [Castle Windsor](http://technorati.com/tag/Castle%20Windsor)
 
-<!--dotnetkickit-->
-
-<script type="text/javascript"><!--
-digg_bodytext = 'In previous post I explained how to build a Converter for castle, to make possibile specify regular expression in configuration file. The example is simplicistic, let's see how to extend to create a better converter for Regular Expression.';
-digg_skin = 'compact';
-//--></script>  
-<script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script>

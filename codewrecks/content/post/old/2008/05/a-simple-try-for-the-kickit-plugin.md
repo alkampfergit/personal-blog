@@ -10,6 +10,4 @@ The [DotNetKicks](http://www.dotnetkicks.com/) community is really new for me, B
 
 Tags: [DotNetKicks](http://technorati.com/tag/DotNetKicks)
 
-<!--dotnetkickit-->
-
 Alk.

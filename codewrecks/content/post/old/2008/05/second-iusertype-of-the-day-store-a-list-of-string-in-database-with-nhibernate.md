@@ -82,9 +82,3 @@ alk.
 
 Tags: [NHibernate](http://technorati.com/tag/NHibernate) [IUserType](http://technorati.com/tag/IUserType)
 
-<!--dotnetkickit-->
-
-<script type="text/javascript"><!--
-digg_bodytext = 'I have an object that has 4 properties of IList&lt;String&gt; type. You can natively map these properties in a separate table with this simple mapping';
-//--></script>  
-<script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script>
