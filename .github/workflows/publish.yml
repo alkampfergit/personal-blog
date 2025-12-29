@@ -35,7 +35,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
         with:
           deploy_key: ${{ secrets.DEPLOYKEY }}
           publish_dir: ./codewrecks/public
