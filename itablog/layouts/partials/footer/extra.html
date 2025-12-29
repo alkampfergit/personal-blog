@@ -1,0 +1,17 @@
+<script>
+    console.log("this is cookie law");    
+    $(document).euCookieLawPopup().init({
+      cookiePolicyUrl : '/privacy/',
+      popupPosition : 'top',
+      colorStyle : 'default',
+      compactStyle : false,
+      popupTitle : 'This website is using cookies',
+      popupText : 'By continuing I assume your permission to deploy cookies, as detailed in the Privacy &amp; Cookies Policy.',
+      buttonContinueTitle : 'Continue',
+      buttonLearnmoreTitle : 'Learn more about this site Privacy &amp; Cookies Policy',
+      buttonLearnmoreOpenInNewWindow : true,
+      agreementExpiresInDays : 30,
+      autoAcceptCookiePolicy : false,
+      htmlMarkup : null
+    }); 
+    </script>

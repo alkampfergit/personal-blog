@@ -3,6 +3,12 @@ languageCode = "it-it"
 title = "Codewrecks Italia"
 theme = "minimo"
 
+googleAnalytics = "G-JNG3CSWEQT"
+
+[params]
+  EUcookies = true
+  googleAnalytics = "G-JNG3CSWEQT"
+
 rssLimit = 200
 
 [renderer]
@@ -141,3 +147,9 @@ hrefTargetBlank = true
 lang = "it"
 languageName = "Italiano"
 weight = 1
+
+[languages.en]
+languageName = "English"
+weight = 2
+[languages.en.params]
+lang = "en"

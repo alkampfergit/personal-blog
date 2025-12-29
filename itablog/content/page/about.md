@@ -7,12 +7,7 @@ date: 2025-12-29
 
 Ciao! Sono Gian Maria Ricci, sviluppatore software e appassionato di tecnologia.
 
-Questo è il mio blog italiano dove condivido:
-
-- Articoli tecnici su sviluppo software
-- Guide su DevOps e Azure DevOps
-- Riflessioni su architettura software
-- Tutorial e best practices
+Questo è il mio blog italiano dove condivido pensieri in libertà, quasi sempre legati alla tecnologia.
 
 ## Contatti
 
