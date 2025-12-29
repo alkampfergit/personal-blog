@@ -1,0 +1,143 @@
+baseURL = "https://www.codewrecks.com/itablog/"
+languageCode = "it-it"
+title = "Codewrecks Italia"
+theme = "minimo"
+
+rssLimit = 200
+
+[renderer]
+unsafe = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+pagerSize = 10
+preserveTaxonomyNames = true
+
+enableRobotsTXT = true # generate robots.txt
+
+# Syntax Highlighting
+pygmentsCodefences = true
+
+enableEmoji = true
+
+# Missing translations will default to this content language
+defaultContentLanguage = "it"
+
+[params.info]
+description = "Articoli tecnici in italiano su sviluppo software e tecnologia"
+title404 = "Niente qui!"
+
+[params.assets]
+favicon = "favicon.ico"
+gopher = ""
+
+[params.copyright]
+prefix = ""
+holder = "Ricci Gian Maria"
+startYear = "2020"
+suffix = ""
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "02 Jan 2006"
+listDateFormat = "02 Jan 2006"
+archiveDateFormat = "02 Jan"
+hideEntryNavigation = ["page"]
+hideEntryMeta = ["page"]
+showReadingTime = true
+showLastmod = true
+taxonomyCloudShuffle = true
+accentColor = "#00b5ad"
+hideMainMenu = false
+rtl = false
+
+[params.sidebar]
+enable = true
+
+[params.widgets]
+header = ["breadcrumbs"]
+homepage = ["recent_posts"]
+sidebar = ["about","sidebar_menu","taxonomy_cloud"]
+footer = ["social_menu"]
+
+[params.opengraph.facebook]
+admins = []
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = ""
+
+[params.seo]
+titleSeparator = "•"
+
+[params.social]
+email = "alkampfer@nablasoft.com"
+github = "alkampfergit"
+linkedin = "gianmariaricci"
+twitter = "alkampfer"
+
+[params.comments]
+enable = true
+
+[params.comments.isso]
+enable = false
+scriptSrc = ""
+dataAttrs = ""
+
+[params.comments.staticman]
+enable = false
+apiEndpoint = "https://api.staticman.net/v2/entry"
+maxDepth = 2
+username = ""
+repository = "minimo"
+
+[params.comments.utterances]
+enable = false
+issueTerm = "pathname"
+
+[params.comments.utterances.github]
+username = ""
+repository = "minimo"
+
+[params.search]
+client = "fuse"
+
+[params.search.algolia]
+appId = ""
+indexName = ""
+searchApiKey = ""
+
+[taxonomies]
+author = "authors"
+category = "categories"
+series = "series"
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
+[[menu.main]]
+name = "Categorie"
+weight = -10
+identifier = "Categories"
+url = "/itablog/categories/"
+
+[[menu.main]]
+name = "Home English"
+weight = -20
+identifier = "english"
+url = "/"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[languages]
+[languages.it.params]
+lang = "it"
+languageName = "Italiano"
+weight = 1

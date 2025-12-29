@@ -4,3 +4,6 @@
 [submodule "codewrecks/themes/minimo"]
 	path = codewrecks/themes/minimo
 	url = https://github.com/alkampfergit/minimo.git
+[submodule "itablog/themes/minimo"]
+	path = itablog/themes/minimo
+	url = https://github.com/alkampfergit/minimo.git

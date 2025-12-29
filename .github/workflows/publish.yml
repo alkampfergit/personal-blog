@@ -20,9 +20,18 @@ jobs:
           hugo-version: '0.148.1'
           extended: true
 
-      - name: Build
+      - name: Build English Blog
         working-directory: ./codewrecks
         run: hugo --minify
+
+      - name: Build Italian Blog
+        working-directory: ./itablog
+        run: hugo --minify
+
+      - name: Copy Italian Blog to English public
+        run: |
+          mkdir -p ./codewrecks/public/itablog
+          cp -r ./itablog/public/* ./codewrecks/public/itablog/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
