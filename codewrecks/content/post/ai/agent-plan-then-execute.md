@@ -2,7 +2,7 @@
 title: "GitHub Copilot Plan-Then-Execute: Leveraging Background Agents and Git Worktrees"
 description: "Explore how GitHub Copilot's plan-then-execute workflow with git worktrees enables true parallel development, allowing developers to delegate tasks to autonomous AI agents while maintaining productivity on other work."
 date: 2026-01-03T10:00:00+00:00
-draft: true
+draft: false
 tags: ["GitHub Copilot", "Git", "AI", ]
 categories: ["AI", "Development Tools"]
 ---
@@ -122,6 +122,10 @@ As you can see from the picture git status does not show any changes in the main
 
 ![isual Studio Code can easily show diffs in the isolated worktree letting you review changes](../images/vs-code-worktree.png)
 
+Thanks to Visual Studio Code integration you can quickly view diffs (even if your files in default working folder are unchanged), and if you need to run test, or compile or whatever you need to do **you can open a new instance of Visual Studio Code in worktree folder, to quickly test the proposed changes**.
+
+Proposed changes are always in a separated branch, so you can publish the branch for review, and using whathever workflow you have while **keeping your primary working folder clean**. This is a real gamechanger in working with agents.
+
 ***Figure 6:*** *Visual Studio Code can easily show diffs in the isolated worktree letting you review changes*
 
 
@@ -158,31 +162,6 @@ Here's a concrete example of how it works for your everyday development:
 
 Git worktrees offer significant benefits, especially when combined with AI coding agents.
 
-### 1. True Parallel Development
-
-**Traditional scenario** (without worktrees):
-```bash
-# Working on feature-A
-# Urgent request arrives for hotfix-B
-git stash              # Stash your changes
-git checkout -b hotfix-B
-# Work on hotfix
-git checkout feature-A
-git stash pop          # Restore changes
-```
-
-**With worktrees**:
-```bash
-# Continue working on feature-A in /projects/app
-# In parallel:
-git worktree add ../app-hotfix -b hotfix-B
-cd ../app-hotfix
-# Work on hotfix in a separate directory
-# feature-A remains intact and accessible
-```
-
-You can literally open two VS Code windows side-by-side and see both branches simultaneously.
-
 ### 2. Change Isolation
 
 Each worktree has:
@@ -195,7 +174,7 @@ This is **crucial for background agents** because:
 - You can test the agent's results without having to merge
 - If something goes wrong, just delete the worktree
 
-### 3. Optimal Performance
+### 2. Better Performance
 
 This is really better than having your solution cloned multiple times in different folders, because everything is managed by Git. Performances are really better also because switching between worktrees is instant (different folders), no need to re-index the project or reload dependencies. Actually you can have multiple VS Code windows open, each one pointing to a different worktree, and everything works smoothly while **git is managing all the branches and references behind the scenes**.
 
@@ -223,112 +202,11 @@ git worktree remove ../myapp-feature-1
 ```
 If there are uncommitted changes, you can simply go in workspace folder, then simply commit manually. Then you **can merge or rebase the changes in the worktree back to main workspace** and finally you can delete the worktree.
 
-
 ### Complete Workflow for Background Agents
 
-When working with GitHub Copilot background agents:
+When working with GitHub Copilot background agents after the agent tells you that the work is completed you **have the usual keep button to keep the work but also you have an apply button that concludes the session**. Usually I prefer doing that manually, I open another instance of Visual Studio Code or any other IDE I'm using in the worktree folder, then make some manual modification if needed, and finally commit. After I've done this I can merge the modification on the worktree with my main branch, then I can remove the temp branch and the worktree.
 
-**1. Agent completes work**
-```
-✓ Background agent completed
-  - 3 files changed
-  - 5 commits created
-  - All tests passing
-```
-
-**2. Review in worktree**
-```bash
-# Option A: From VS Code
-# - Click on session in Chat view
-# - View changes in Source Control view
-# - Review modified files
-
-# Option B: From terminal
-cd /path/to/worktree
-git log --oneline
-git diff main
-npm test  # Verify everything works
-```
-
-**3. Apply changes**
-
-In VS Code:
-```
-Chat view → Session details → "Keep" → "Apply"
-```
-
-This command:
-- Applies changes to main workspace
-- Automatically removes the worktree
-- Allows you to continue working
-
-Alternatively, create a PR:
-```bash
-git push origin copilot/feature-branch
-# Then create PR on GitHub for code review
-```
-
-**4. Worktree cleanup**
-
-After merging or applying changes:
-```bash
-git worktree remove /path/to/worktree
-```
-
-If the worktree was already manually deleted:
-```bash
-git worktree prune
-```
-
-This cleans up metadata for worktrees that no longer exist.
-
-### Best Practices for Management
-
-**1. Consistent Naming Convention**
-```bash
-# For background agents
-git worktree add ../copilot-issue-123 -b copilot/feature-name
-
-# For PR review
-git worktree add ../review-pr-456 -b pr-456
-
-# For hotfix
-git worktree add ../hotfix-security -b hotfix/security-patch
-```
-
-**2. Directory Organization**
-```
-/projects/
-  ├── myapp/                    # Main workspace
-  ├── myapp-worktrees/          # Dedicated directory for worktrees
-  │   ├── feature-1/
-  │   ├── feature-2/
-  │   └── hotfix-1/
-```
-
-
-### VS Code Integration
-
-When using background agents in VS Code:
-
-**Viewing worktree changes**:
-- The Chat view shows active background sessions
-- Source Control view displays the worktree when selected
-- You can open the worktree in a new window for side-by-side comparison
-
-**Applying changes**:
-When a background agent completes:
-1. Click on the completed session in Chat view
-2. Review the changes in the session details
-3. Choose "Keep" to accept the changes
-4. Select "Apply" to merge changes into your main workspace
-
-**Direct worktree actions**:
-```
-Command Palette → "Git: Create Worktree"
-Command Palette → "Git: Open Worktree"
-Command Palette → "Git: Delete Worktree"
-```
+The advantage of learning to do this operation manually is that **you become accustomed to git worktree, you can use on your everyday workflow (not only with ai), and you feel comfortable with the overall workflow**
 
 ## Conclusion
 

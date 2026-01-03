@@ -5,7 +5,8 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick a Node version: 12, 14, 16, 18, 20
-		"args": { "VARIANT": "20" }
+		// Use the '-bookworm' suffix to select Debian Bookworm base with newer glibc
+		"args": { "VARIANT": "20-bookworm" }
 	},
 
 	// Set *default* container specific settings.json values on container create.
