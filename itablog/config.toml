@@ -30,6 +30,9 @@ defaultContentLanguage = "it"
 description = "Articoli tecnici in italiano su sviluppo software e tecnologia"
 title404 = "Niente qui!"
 
+[params.appearance]
+defaultTheme = "gunmetal"
+
 [params.assets]
 favicon = "favicon.ico"
 gopher = ""

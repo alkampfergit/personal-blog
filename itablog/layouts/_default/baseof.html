@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <script>window.ITABLOG_DEFAULT_THEME = "{{ .Site.Params.appearance.defaultTheme | default "gunmetal" }}";</script>
+  <script src="{{ "js/theme-switcher.js" | relURL }}"></script>
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
   {{ partial "head/extra.html" . }}
 </head>
@@ -35,6 +37,7 @@
         {{ with .Site.Params.social.linkedin }}<a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
         {{ with .Site.Params.social.email }}<a href="mailto:{{ . }}">Email</a>{{ end }}
       </div>
+      <a id="theme-reset-link" class="theme-reset-link" href="{{ .RelPermalink }}?theme=reset" hidden>Ripristina tema predefinito</a>
       <p>&copy; {{ .Site.Params.copyright.startYear }}-{{ now.Format "2006" }} {{ .Site.Params.copyright.holder }}</p>
     </div>
   </footer>

@@ -1,4 +1,40 @@
 :root {
+  --navy: #353e43;
+  --navy-light: #465158;
+  --accent: #7a8f87;
+  --accent-hover: #667972;
+  --cta-accent: #7a8f87;
+  --cta-hover: #667972;
+  --bg: #eef2f0;
+  --bg-white: #ffffff;
+  --text: #20272b;
+  --text-secondary: #56635d;
+  --text-light: #78857f;
+  --border: #ccd5d1;
+  --border-light: #e0e7e4;
+  --code-bg: #e7edeb;
+  --hero-surface: linear-gradient(135deg, #2f363a 0%, #43504d 58%, #6d8179 145%);
+  --hero-radial: radial-gradient(circle at top right, rgba(255, 255, 255, 0.14), transparent 30%);
+  --hero-shadow: 0 24px 60px rgba(15, 24, 29, 0.26);
+  --executive-summary-bg: linear-gradient(135deg, #e9efec, #dde6e1);
+  --taxonomy-muted-border: rgba(53, 62, 67, 0.14);
+  --taxonomy-muted-bg: rgba(53, 62, 67, 0.06);
+  --taxonomy-muted-bg-hover: rgba(53, 62, 67, 0.1);
+  --section-panel-bg: rgba(255, 255, 255, 0.88);
+  --section-panel-border: rgba(200, 209, 213, 0.9);
+  --panel-shadow: 0 18px 40px rgba(15, 24, 29, 0.12);
+  --soft-tint: rgba(122, 143, 135, 0.09);
+  --soft-tint-strong: rgba(122, 143, 135, 0.13);
+  --card-gradient-end: rgba(233, 239, 236, 0.96);
+  --cookie-bg: #353e43;
+  --max-width: 860px;
+  --max-width-wide: 1100px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius: 8px;
+}
+
+html[data-theme="bronze"] {
   --navy: #46362b;
   --navy-light: #6a5443;
   --accent: #9f7650;
@@ -13,11 +49,20 @@
   --border: #dccfc4;
   --border-light: #eee4da;
   --code-bg: #f3ece5;
-  --max-width: 860px;
-  --max-width-wide: 1100px;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --radius: 8px;
+  --hero-surface: linear-gradient(135deg, #3c2e24 0%, #5e4a3b 58%, #9f7650 145%);
+  --hero-radial: radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent 30%);
+  --hero-shadow: 0 24px 60px rgba(26, 39, 68, 0.2);
+  --executive-summary-bg: linear-gradient(135deg, #f4ece4, #eee2d6);
+  --taxonomy-muted-border: rgba(77, 54, 39, 0.1);
+  --taxonomy-muted-bg: rgba(77, 54, 39, 0.05);
+  --taxonomy-muted-bg-hover: rgba(77, 54, 39, 0.09);
+  --section-panel-bg: rgba(255, 255, 255, 0.88);
+  --section-panel-border: rgba(220, 207, 196, 0.92);
+  --panel-shadow: 0 18px 40px rgba(26, 39, 68, 0.08);
+  --soft-tint: rgba(159, 118, 80, 0.07);
+  --soft-tint-strong: rgba(159, 118, 80, 0.1);
+  --card-gradient-end: rgba(247, 241, 234, 0.92);
+  --cookie-bg: #46362b;
 }
 
 * {
@@ -191,7 +236,7 @@ article header h1 {
 }
 
 .executive-summary {
-  background: linear-gradient(135deg, #f4ece4, #eee2d6);
+  background: var(--executive-summary-bg);
   border-left: 4px solid var(--accent);
   border-radius: 0 var(--radius) var(--radius) 0;
   padding: 1.2rem 1.5rem;
@@ -208,11 +253,9 @@ article header h1 {
   margin-bottom: 2rem;
   padding: 2.4rem;
   border-radius: 28px;
-  background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.22), transparent 28%),
-    linear-gradient(135deg, #3c2e24 0%, #5e4a3b 58%, #9f7650 140%);
+  background: var(--hero-radial), var(--hero-surface);
   color: #fff;
-  box-shadow: 0 24px 60px rgba(26, 39, 68, 0.22);
+  box-shadow: var(--hero-shadow);
 }
 
 .article-hero-copy {
@@ -248,14 +291,14 @@ article header h1 {
 }
 
 .taxonomy-pill-muted {
-  border-color: rgba(77, 54, 39, 0.1);
-  background: rgba(77, 54, 39, 0.05);
+  border-color: var(--taxonomy-muted-border);
+  background: var(--taxonomy-muted-bg);
   color: var(--navy);
 }
 
 .taxonomy-pill-muted:hover {
   color: var(--navy);
-  background: rgba(77, 54, 39, 0.09);
+  background: var(--taxonomy-muted-bg-hover);
 }
 
 .article-hero h1 {
@@ -272,11 +315,9 @@ article header h1 {
   align-items: end;
   padding: 2.4rem;
   border-radius: 30px;
-  background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent 30%),
-    linear-gradient(135deg, #3c2e24 0%, #5e4a3b 58%, #9f7650 145%);
+  background: var(--hero-radial), var(--hero-surface);
   color: #fff;
-  box-shadow: 0 24px 60px rgba(26, 39, 68, 0.2);
+  box-shadow: var(--hero-shadow);
 }
 
 .home-hero-copy h1 {
@@ -356,14 +397,13 @@ article header h1 {
 .home-section-panel {
   padding: 1.7rem;
   border-radius: 28px;
-  background: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(226, 232, 240, 0.92);
-  box-shadow: 0 18px 40px rgba(26, 39, 68, 0.08);
+  background: var(--section-panel-bg);
+  border: 1px solid var(--section-panel-border);
+  box-shadow: var(--panel-shadow);
 }
 
 .home-section-panel-soft {
-  background:
-    linear-gradient(180deg, rgba(159, 118, 80, 0.07), rgba(255, 255, 255, 0.94));
+  background: linear-gradient(180deg, var(--soft-tint), rgba(255, 255, 255, 0.94));
 }
 
 .home-section-header {
@@ -386,9 +426,9 @@ article header h1 {
 
 .article-panel {
   background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(226, 232, 240, 0.95);
+  border: 1px solid var(--section-panel-border);
   border-radius: 24px;
-  box-shadow: 0 18px 40px rgba(26, 39, 68, 0.08);
+  box-shadow: var(--panel-shadow);
 }
 
 .article-body {
@@ -428,14 +468,13 @@ article header h1 {
 .article-sidebar-card {
   padding: 1.25rem 1.25rem 1.35rem;
   background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(226, 232, 240, 0.95);
+  border: 1px solid var(--section-panel-border);
   border-radius: 22px;
-  box-shadow: 0 18px 40px rgba(26, 39, 68, 0.08);
+  box-shadow: var(--panel-shadow);
 }
 
 .article-sidebar-card-accent {
-  background:
-    linear-gradient(180deg, rgba(159, 118, 80, 0.1), rgba(255, 255, 255, 0.96));
+  background: linear-gradient(180deg, var(--soft-tint-strong), rgba(255, 255, 255, 0.96));
 }
 
 .sidebar-eyebrow {
@@ -685,15 +724,15 @@ article header h1 {
   min-height: 100%;
   padding: 1.3rem 1.35rem;
   border-radius: 24px;
-  border: 1px solid rgba(226, 232, 240, 0.95);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 241, 234, 0.92));
-  box-shadow: 0 18px 38px rgba(26, 39, 68, 0.08);
+  border: 1px solid var(--section-panel-border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), var(--card-gradient-end));
+  box-shadow: 0 18px 38px rgba(15, 24, 29, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .home-post-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 24px 44px rgba(26, 39, 68, 0.12);
+  box-shadow: 0 24px 44px rgba(15, 24, 29, 0.14);
 }
 
 .home-card-taxonomy {
@@ -895,13 +934,23 @@ article header h1 {
 
 .home-expertise-card {
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 241, 234, 0.92));
-  box-shadow: 0 18px 38px rgba(26, 39, 68, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), var(--card-gradient-end));
+  box-shadow: 0 18px 38px rgba(15, 24, 29, 0.1);
 }
 
 .expertise-icon {
   font-size: 2rem;
   margin-bottom: 0.8rem;
+}
+
+.expertise-icon svg {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
+.expertise-icon-guitar {
+  color: var(--text);
 }
 
 .expertise-card h3 {
@@ -972,7 +1021,7 @@ article header h1 {
   border-radius: 20px;
   border: 1px solid var(--border-light);
   background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 18px 40px rgba(26, 39, 68, 0.08);
+  box-shadow: var(--panel-shadow);
 }
 
 .entry-nav .prev,
@@ -1025,6 +1074,24 @@ article header h1 {
   text-decoration: none;
 }
 
+.theme-reset-link {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.theme-reset-link:hover {
+  color: var(--accent);
+}
+
+.theme-reset-link[hidden] {
+  display: none !important;
+}
+
 .site-footer p {
   font-size: 0.82rem;
 }
@@ -1035,7 +1102,7 @@ article header h1 {
   left: 50%;
   width: min(calc(100% - 2rem), var(--max-width-wide));
   z-index: 99999;
-  background: #46362b;
+  background: var(--cookie-bg);
   color: rgba(255, 255, 255, 0.9);
   padding: 1rem 1.5rem;
   display: flex;
@@ -1078,12 +1145,12 @@ article header h1 {
 }
 
 #cookie-accept {
-  background: #9f7650;
+  background: var(--cta-accent);
   color: #fff;
 }
 
 #cookie-accept:hover {
-  background: #896344;
+  background: var(--cta-hover);
 }
 
 #cookie-decline {
