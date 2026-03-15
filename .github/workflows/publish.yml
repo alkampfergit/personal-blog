@@ -5,28 +5,30 @@ on:
     branches:
       - master
   workflow_dispatch:
-    
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
         with:
           submodules: true
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@16361eb4acea8698b220b76c0d4e84e1fd22c61d
-        with:
-          hugo-version: '0.148.1'
-          extended: true
+      - name: Install Hugo
+        run: |
+          ./scripts/install-hugo.sh
+          ./bin/hugo version
 
       - name: Build English Blog
         working-directory: ./codewrecks
-        run: hugo --minify
+        run: ../bin/hugo --minify
 
       - name: Build Italian Blog
         working-directory: ./itablog
-        run: hugo --minify
+        run: ../bin/hugo --minify
 
       - name: Copy Italian Blog to English public
         run: |
@@ -34,14 +36,34 @@ jobs:
           cp -r ./itablog/public/* ./codewrecks/public/itablog/
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
-        with:
-          deploy_key: ${{ secrets.DEPLOYKEY }}
-          publish_dir: ./codewrecks/public
-          external_repository: alkampfergit/alkampfergit.github.io
-          publish_branch: master
-          keep_files: true
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOYKEY }}
+        run: |
+          eval "$(ssh-agent -s)"
+          trap 'ssh-agent -k' EXIT
+
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" | tr -d '\r' | ssh-add -
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+          DEPLOY_DIR="$(mktemp -d)"
+          git clone git@github.com:alkampfergit/alkampfergit.github.io.git "$DEPLOY_DIR"
+          rsync -a --exclude='.git/' ./codewrecks/public/ "$DEPLOY_DIR/"
+
+          cd "$DEPLOY_DIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git status --short | grep .; then
+            git add -A
+            git commit -m "Deploy from ${GITHUB_REPOSITORY}@${GITHUB_SHA}"
+            git push origin HEAD:master
+          else
+            echo "No changes to deploy"
+          fi
           
       # - name: Install lftp
       #   run: sudo apt-get install lftp -y
