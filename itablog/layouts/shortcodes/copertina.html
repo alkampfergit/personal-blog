@@ -1,0 +1,37 @@
+{{- $title := .Get "titolo" -}}
+{{- $detail := or (.Get "dettaglio") (.Get "sottotitolo") -}}
+{{- $image := .Get "immagine" -}}
+{{- $alt := .Get "alt" | default $title -}}
+{{- $resource := or (.Page.Resources.GetMatch $image) (.Page.Resources.GetMatch (printf "images/%s" $image)) -}}
+
+{{- if not $title -}}
+  {{- errorf "Shortcode 'copertina' richiede il parametro 'titolo' in %s" .Page.File.Path -}}
+{{- end -}}
+{{- if not $detail -}}
+  {{- errorf "Shortcode 'copertina' richiede il parametro 'dettaglio' (o 'sottotitolo') in %s" .Page.File.Path -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- errorf "Shortcode 'copertina' richiede il parametro 'immagine' in %s" .Page.File.Path -}}
+{{- end -}}
+{{- if not $resource -}}
+  {{- errorf "Shortcode 'copertina' non trova l'immagine '%s' in %s. Mettila nella cartella del bundle o in images/." $image .Page.File.Path -}}
+{{- end -}}
+
+<section class="cover-widget" data-testid="cover-widget">
+  <h2 class="cover-widget-title">{{ $title }}</h2>
+  <div class="cover-widget-body">
+    <div class="cover-widget-media">
+      <figure class="cover-widget-photo-frame">
+        <img
+          src="{{ $resource.RelPermalink }}"
+          alt="{{ $alt }}"
+          loading="lazy"
+          data-testid="cover-widget-image"
+        >
+      </figure>
+    </div>
+    <div class="cover-widget-copy">
+      <p class="cover-widget-detail">{{ $detail }}</p>
+    </div>
+  </div>
+</section>

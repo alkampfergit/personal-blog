@@ -5,3 +5,4 @@
 node_modules/**
 itablog/node_modules/**
 itablog/public/**
+itablog/test-results/**

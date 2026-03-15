@@ -65,4 +65,6 @@ cd itablog
 npm test
 ```
 
+When browser verification is needed, use Playwright with **WebKit**. The local `playwright.config.js` is already configured that way; keep new checks and screenshots aligned with WebKit unless the task explicitly requires another engine.
+
 If a local Hugo server is already running, be aware it can rewrite `public/` with `localhost` URLs and live-reload scripts. Prefer validating production output with `../bin/hugo --minify`.

@@ -1287,3 +1287,113 @@ article header h1 {
     justify-content: center;
   }
 }
+
+.cover-widget {
+  margin: 2.5rem 0;
+  padding: clamp(0.4rem, 1vw, 0.85rem) clamp(1.5rem, 3vw, 2.75rem) clamp(1.5rem, 3vw, 2.75rem);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.92)),
+    repeating-linear-gradient(
+      180deg,
+      rgba(32, 39, 43, 0.025) 0,
+      rgba(32, 39, 43, 0.025) 3px,
+      rgba(255, 255, 255, 0.12) 3px,
+      rgba(255, 255, 255, 0.12) 11px
+    );
+  border: 1px solid rgba(53, 62, 67, 0.14);
+  border-radius: 20px;
+  box-shadow: 0 22px 46px rgba(15, 24, 29, 0.12);
+}
+
+.cover-widget-title {
+  margin: 0;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid rgba(53, 62, 67, 0.28);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.15rem, 5.2vw, 3.85rem);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #171717;
+  text-wrap: balance;
+}
+
+.cover-widget-body {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.2fr) minmax(0, 0.9fr);
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.cover-widget-media {
+  display: flex;
+  justify-content: center;
+}
+
+.cover-widget-photo-frame {
+  width: min(100%, 410px);
+  padding: 0.5rem 0.5rem 0.9rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f4f1 100%);
+  border: 8px solid #ffffff;
+  border-bottom-width: 16px;
+  box-shadow: 0 26px 38px rgba(15, 24, 29, 0.18);
+  transform: rotate(-4deg);
+}
+
+.cover-widget-photo-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.cover-widget-copy {
+  display: flex;
+  align-items: center;
+}
+
+.cover-widget-detail {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.15rem, 1.9vw, 1.7rem);
+  line-height: 1.2;
+  font-style: italic;
+  color: rgba(23, 23, 23, 0.94);
+  text-wrap: balance;
+}
+
+.cover-widget-detail::before,
+.cover-widget-detail::after {
+  content: "\"";
+  color: rgba(53, 62, 67, 0.55);
+}
+
+@media (max-width: 768px) {
+  .cover-widget {
+    margin: 2rem 0;
+    padding: 0.45rem 1.25rem 1.25rem;
+    border-radius: 18px;
+  }
+
+  .cover-widget-title {
+    font-size: clamp(1.9rem, 9vw, 2.8rem);
+    line-height: 1.12;
+  }
+
+  .cover-widget-body {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .cover-widget-copy {
+    text-align: center;
+  }
+
+  .cover-widget-photo-frame {
+    width: min(88vw, 320px);
+    transform: rotate(-3deg);
+  }
+}
