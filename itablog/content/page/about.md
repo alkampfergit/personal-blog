@@ -11,4 +11,4 @@ Questo è il mio blog italiano dove condivido pensieri in libertà, quasi sempre
 
 ## Contatti
 
-Puoi trovare i miei contatti nella sidebar o nel footer del blog.
+Puoi trovare i miei contatti nel menu e nel footer del blog.

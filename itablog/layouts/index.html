@@ -1,0 +1,79 @@
+{{ define "main" }}
+<div class="container home-page">
+  <section class="home-hero-card">
+    <div class="home-hero-copy">
+      <span class="home-eyebrow">Gian Maria Ricci</span>
+      <h1>Pensieri sparsi su tecnologia e innovazione</h1>
+      <p>Come è cambiato il mondo da quando ho scritto le mie prime righe di codice su un Vic 20, forse non scriveremo piu codice, ma mi piace pensare che non smetterò veramente mai.</p>
+    </div>
+    <div class="home-hero-stats">
+      <div class="home-stat">
+        <strong>{{ len (where .Site.RegularPages "Section" "post") }}</strong>
+        <span>articoli pubblicati</span>
+      </div>
+      <div class="home-stat">
+        <strong>{{ len .Site.Taxonomies.categories }}</strong>
+        <span>categorie tematiche</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section-panel">
+    <div class="home-section-header">
+      <div>
+        <span class="home-eyebrow">Articoli</span>
+        <h2 class="section-title">Ultimi Contenuti</h2>
+      </div>
+      <p class="section-subtitle">Pensieri sparsi di un appassionato di tecnologia e innovazione.</p>
+    </div>
+    <ul class="post-list home-post-list">
+      {{ range first 6 (where .Site.RegularPages "Section" "post") }}
+      <li class="home-post-card">
+        {{ with .Params.categories }}
+        <div class="article-taxonomy-row home-card-taxonomy">
+          {{ range first 1 . }}
+          <a class="taxonomy-pill taxonomy-pill-muted" href="{{ "categories/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+        <div class="meta">{{ .Date.Format ($.Site.Params.settings.dateFormat | default "02 Jan 2006") }}{{ if $.Site.Params.settings.showReadingTime }} &middot; {{ .ReadingTime }} min di lettura{{ end }}</div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Description }}<p class="summary">{{ . }}</p>{{ end }}
+        {{ with .Params.tags }}
+        <div class="post-tags">
+          {{ range first 3 . }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a> {{ end }}
+        </div>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="home-section-panel home-section-panel-soft">
+    <div class="home-section-header">
+      <div>
+        <span class="home-eyebrow">Aree</span>
+        <h2 class="section-title">Di cosa mi occupo</h2>
+      </div>
+      <p class="section-subtitle">Gli argomenti che probabilmente troverete trattati in questo sito.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card expertise-card home-expertise-card">
+        <div class="expertise-icon">&#9881;</div>
+        <h3>DevOps &amp; CI/CD</h3>
+        <p>Pipeline di build e deploy, Azure DevOps, GitHub Actions, automazione e qualit&agrave; del rilascio.</p>
+      </div>
+      <div class="card expertise-card home-expertise-card">
+        <div class="expertise-icon">&#9729;</div>
+        <h3>Cloud &amp; Azure</h3>
+        <p>Migrazione al cloud, architetture scalabili, ottimizzazione dei costi e sicurezza infrastrutturale.</p>
+      </div>
+      <div class="card expertise-card home-expertise-card">
+        <div class="expertise-icon">&#10047;</div>
+        <h3>AI generativa e AI nello sviluppo</h3>
+        <p>Come la AI sta cambiando il mondo di noi programmatori</p>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

@@ -1,13 +1,8 @@
 baseURL = "https://www.codewrecks.com/itablog/"
-languageCode = "it-it"
-title = "Codewrecks Italia"
-theme = "minimo"
+languageCode = "it"
+title = "Gian Maria Ricci"
 
 googleAnalytics = "G-JNG3CSWEQT"
-
-[params]
-  EUcookies = true
-  googleAnalytics = "G-JNG3CSWEQT"
 
 rssLimit = 200
 
@@ -29,8 +24,6 @@ enableRobotsTXT = true # generate robots.txt
 pygmentsCodefences = true
 
 enableEmoji = true
-
-# Missing translations will default to this content language
 defaultContentLanguage = "it"
 
 [params.info]
@@ -48,27 +41,12 @@ startYear = "2020"
 suffix = ""
 
 [params.settings]
-# date & time format: https://golang.org/pkg/time/
 dateFormat = "02 Jan 2006"
 listDateFormat = "02 Jan 2006"
 archiveDateFormat = "02 Jan"
-hideEntryNavigation = ["page"]
-hideEntryMeta = ["page"]
 showReadingTime = true
 showLastmod = true
-taxonomyCloudShuffle = true
-accentColor = "#00b5ad"
-hideMainMenu = false
-rtl = false
-
-[params.sidebar]
-enable = true
-
-[params.widgets]
-header = ["breadcrumbs"]
-homepage = ["recent_posts"]
-sidebar = ["about","sidebar_menu","taxonomy_cloud"]
-footer = ["social_menu"]
+accentColor = "#0d9488"
 
 [params.opengraph.facebook]
 admins = []
@@ -85,38 +63,7 @@ titleSeparator = "•"
 email = "alkampfer@nablasoft.com"
 github = "alkampfergit"
 linkedin = "gianmariaricci"
-twitter = "alkampfer"
 
-[params.comments]
-enable = true
-
-[params.comments.isso]
-enable = false
-scriptSrc = ""
-dataAttrs = ""
-
-[params.comments.staticman]
-enable = false
-apiEndpoint = "https://api.staticman.net/v2/entry"
-maxDepth = 2
-username = ""
-repository = "minimo"
-
-[params.comments.utterances]
-enable = false
-issueTerm = "pathname"
-
-[params.comments.utterances.github]
-username = ""
-repository = "minimo"
-
-[params.search]
-client = "fuse"
-
-[params.search.algolia]
-appId = ""
-indexName = ""
-searchApiKey = ""
 
 [taxonomies]
 author = "authors"
@@ -128,28 +75,25 @@ tag = "tags"
 page = "/:slug/"
 
 [[menu.main]]
+name = "Articoli"
+weight = -15
+identifier = "posts"
+url = "/post/"
+
+[[menu.main]]
 name = "Categorie"
 weight = -10
 identifier = "Categories"
-url = "/itablog/categories/"
+url = "/categories/"
 
 [[menu.main]]
-name = "Home English"
+name = "Blog inglese"
 weight = -20
 identifier = "english"
-url = "/"
-
-[blackfriday]
-hrefTargetBlank = true
+url = "https://www.codewrecks.com/"
 
 [languages]
-[languages.it.params]
-lang = "it"
-languageName = "Italiano"
-weight = 1
-
-[languages.en]
-languageName = "English"
-weight = 2
-[languages.en.params]
-lang = "en"
+  [languages.it]
+  languageCode = "it"
+  languageName = "Italiano"
+  weight = 1

@@ -1,12 +1,12 @@
 ---
-title: "Benvenuto al Blog Italiano"
+title: "Benvenuto 2 al Blog Italiano"
 date: 2025-12-29
 categories: ["generale"]
 tags: ["benvenuto", "italiano"]
 description: "Primo articolo del blog italiano"
 ---
 
-# Benvenuto!
+# Benvenuto 2!
 
 Questo è il primo articolo del blog italiano di Gian Maria Ricci. 
 

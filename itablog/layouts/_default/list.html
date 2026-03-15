@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container">
+  <h1 style="font-family: 'Montserrat', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--navy); margin-bottom: 0.3rem;">{{ .Title }}</h1>
+  {{ with .Content }}<div class="entry-content" style="margin-bottom: 1.5rem;">{{ . }}</div>{{ end }}
+  <ul class="post-list">
+    {{ range .Pages }}
+    <li class="card">
+      <div class="meta">{{ .Date.Format ($.Site.Params.settings.dateFormat | default "02 Jan 2006") }}{{ if $.Site.Params.settings.showReadingTime }} &middot; {{ .ReadingTime }} min di lettura{{ end }}</div>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ with .Description }}<p class="summary">{{ . }}</p>{{ end }}
+      {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range first 3 . }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a> {{ end }}
+      </div>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

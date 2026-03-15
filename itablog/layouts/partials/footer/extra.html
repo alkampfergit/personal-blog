@@ -1,17 +1,11 @@
-<script>
-    console.log("this is cookie law");    
-    $(document).euCookieLawPopup().init({
-      cookiePolicyUrl : '/privacy/',
-      popupPosition : 'top',
-      colorStyle : 'default',
-      compactStyle : false,
-      popupTitle : 'This website is using cookies',
-      popupText : 'By continuing I assume your permission to deploy cookies, as detailed in the Privacy &amp; Cookies Policy.',
-      buttonContinueTitle : 'Continue',
-      buttonLearnmoreTitle : 'Learn more about this site Privacy &amp; Cookies Policy',
-      buttonLearnmoreOpenInNewWindow : true,
-      agreementExpiresInDays : 30,
-      autoAcceptCookiePolicy : false,
-      htmlMarkup : null
-    }); 
-    </script>
+<div id="cookie-consent-banner" style="display:none" role="dialog" aria-label="Consenso cookie">
+  <div class="consent-text">
+    <strong>Questo sito utilizza i cookie</strong>
+    <span>Utilizziamo cookie tecnici e di terze parti (Google Analytics) per migliorare la tua esperienza. Puoi accettare o rifiutare i cookie non essenziali.</span>
+  </div>
+  <div class="consent-actions">
+    <button id="cookie-accept" onclick="CookieConsent.accept()">Accetta</button>
+    <button id="cookie-decline" onclick="CookieConsent.decline()">Rifiuta</button>
+    <a href="{{ "privacy/" | absURL }}">Informativa Privacy</a>
+  </div>
+</div>

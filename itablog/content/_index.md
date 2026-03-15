@@ -1,6 +1,6 @@
 ---
-title: "Benvenuti a Codewrecks Italia"
+title: "Benvenuti nel blog di Gian Maria Ricci"
 description: "Blog italiano su sviluppo software, DevOps, e tecnologia"
 ---
 
-Benvenuti nella versione italiana di Codewrecks, dove condivido articoli tecnici, guide e riflessioni sullo sviluppo software, DevOps, e le tecnologie moderne.
+Benvenuti nel blog di Gian Maria Ricci, dove condivido articoli tecnici, guide e riflessioni sullo sviluppo software, DevOps e le tecnologie moderne.
