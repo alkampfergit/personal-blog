@@ -22,7 +22,7 @@
     <div class="header-inner">
       <button class="nav-toggle" onclick="document.querySelector('.site-nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
       <nav class="site-nav">
-        <a href="{{ .Site.Home.RelPermalink }}">Inizio</a>
+        <a href="{{ .Site.Home.RelPermalink }}">Home</a>
         {{ range .Site.Menus.main }}
           <a href="{{ .URL | relURL }}">{{ .Name }}</a>
         {{ end }}

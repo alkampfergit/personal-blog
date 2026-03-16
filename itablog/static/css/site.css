@@ -27,8 +27,8 @@
   --soft-tint-strong: rgba(122, 143, 135, 0.13);
   --card-gradient-end: rgba(233, 239, 236, 0.96);
   --cookie-bg: #353e43;
-  --max-width: 860px;
-  --max-width-wide: 1100px;
+  --max-width: 980px;
+  --max-width-wide: 1320px;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
   --radius: 8px;
@@ -261,7 +261,7 @@ article header h1 {
 .article-hero-copy {
   position: relative;
   z-index: 1;
-  max-width: 760px;
+  max-width: 860px;
 }
 
 .article-taxonomy-row {
@@ -381,7 +381,7 @@ article header h1 {
 }
 
 .article-lead {
-  max-width: 60ch;
+  max-width: 68ch;
   font-size: 1.14rem;
   line-height: 1.75;
   color: rgba(255, 255, 255, 0.82);
@@ -389,8 +389,8 @@ article header h1 {
 
 .article-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.72fr);
-  gap: 1.6rem;
+  grid-template-columns: minmax(0, 1.95fr) minmax(300px, 0.75fr);
+  gap: 2rem;
   align-items: start;
 }
 
@@ -432,7 +432,7 @@ article header h1 {
 }
 
 .article-body {
-  padding: 2rem 2.1rem;
+  padding: 2.15rem 2.45rem;
 }
 
 .article-body .entry-content > :first-child {
