@@ -1370,6 +1370,30 @@ article header h1 {
   color: rgba(53, 62, 67, 0.55);
 }
 
+@media (max-width: 1080px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .article-sidebar {
+    position: static;
+    top: auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .cover-widget-body {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .cover-widget-copy {
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .cover-widget {
     margin: 2rem 0;
