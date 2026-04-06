@@ -1,7 +1,7 @@
 ---
 title: "Cos'è l’Harness Engineering e perché sta cambiando il coding con gli agenti AI"
 date: 2026-04-04
-draft: true
+draft: false
 categories: ["ai-coding"]
 tags: ["harness-engineering"]
 description: "L’harness engineering è il sistema di regole, contesto, verifiche e criteri di stop che rende più affidabile il lavoro degli agenti AI sul codice. In questo articolo vediamo perché sta diventando centrale, come si distingue da prompt e context engineering, quali failure mode cerca di prevenire e perché il suo vero problema non è solo tecnico, ma anche economico e organizzativo."
