@@ -1,0 +1,115 @@
+{{ define "main" }}
+{{ $dateFormat := .Site.Params.settings.dateFormat | default "2006, Jan 02" }}
+<div class="container article-page">
+  <article class="article-detail">
+    <header class="article-hero">
+      <div class="article-hero-copy">
+        {{ with .Params.categories }}
+        <div class="article-taxonomy-row">
+          {{ range first 2 . }}
+          <a class="taxonomy-pill" href="{{ "categories/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <h1>{{ .Title }}</h1>
+
+        {{ with .Description }}
+        <p class="article-lead">{{ . }}</p>
+        {{ end }}
+
+        <div class="article-meta article-meta-rich">
+          {{ if not .Date.IsZero }}
+          <span class="meta-pill">{{ .Date.Format $dateFormat }}</span>
+          {{ end }}
+          {{ if and .Site.Params.settings.showLastmod (not .Lastmod.IsZero) }}
+            {{ if ne (.Date.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
+              <span class="meta-pill">Updated {{ .Lastmod.Format $dateFormat }}</span>
+            {{ end }}
+          {{ end }}
+          {{ if and .Site.Params.settings.showReadingTime (gt .ReadingTime 0) }}
+            <span class="meta-pill">{{ .ReadingTime }} min read</span>
+          {{ end }}
+          {{ with .Params.audience }}
+            <span class="audience-badge">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+    </header>
+
+    <div class="article-layout">
+      <div class="article-main-column">
+        {{ with .Params.summary }}
+        <div class="executive-summary article-panel">
+          <h3>Summary</h3>
+          {{ . | markdownify }}
+        </div>
+        {{ end }}
+
+        <div class="article-body article-panel">
+          <div class="entry-content">
+            {{ .Content }}
+          </div>
+        </div>
+
+        {{ with .Params.tags }}
+        <div class="article-tags-panel article-panel">
+          <h3>Tags</h3>
+          <div class="tags">
+            {{ range . }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <aside class="article-sidebar">
+        <div class="article-sidebar-card article-sidebar-card-accent">
+          <span class="sidebar-eyebrow">Article details</span>
+          <ul class="article-facts">
+            {{ if not .Date.IsZero }}<li><strong>Published</strong><span>{{ .Date.Format $dateFormat }}</span></li>{{ end }}
+            {{ if and .Site.Params.settings.showReadingTime (gt .ReadingTime 0) }}<li><strong>Read time</strong><span>{{ .ReadingTime }} min</span></li>{{ end }}
+            {{ with .Params.categories }}<li><strong>Category</strong><span>{{ index . 0 }}</span></li>{{ end }}
+            {{ with .Params.audience }}<li><strong>Audience</strong><span>{{ . }}</span></li>{{ end }}
+          </ul>
+        </div>
+
+        <div class="article-sidebar-card author-strip author-strip-stacked">
+          <div class="author-info">
+            <span class="sidebar-eyebrow">Author</span>
+            <h4>{{ .Site.Params.copyright.holder }}</h4>
+            <p>{{ .Site.Params.info.description }}</p>
+            <div class="author-links">
+              {{ with .Site.Params.social.linkedin }}<a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+              {{ with .Site.Params.social.github }}<a href="https://github.com/{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+            </div>
+          </div>
+        </div>
+
+        {{ if .TableOfContents }}
+        <div class="article-sidebar-card toc-card">
+          <span class="sidebar-eyebrow">On this page</span>
+          <div class="toc-content">
+            {{ .TableOfContents }}
+          </div>
+        </div>
+        {{ end }}
+      </aside>
+    </div>
+
+    <nav class="entry-nav entry-nav-cards">
+      {{ with .PrevInSection }}
+      <div class="prev entry-nav-card">
+        <span class="label">&larr; Previous</span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </div>
+      {{ end }}
+      {{ with .NextInSection }}
+      <div class="next entry-nav-card">
+        <span class="label">Next &rarr;</span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </div>
+      {{ end }}
+    </nav>
+  </article>
+</div>
+{{ end }}

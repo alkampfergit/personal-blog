@@ -1,12 +1,10 @@
 baseURL = "https://www.codewrecks.com/"
 languageCode = "en-us"
 title = "Codewrecks"
-theme = "minimo"
+
+googleAnalytics = "G-JNG3CSWEQT"
 
 rssLimit = 200
-
-# disqusShortname = "codewrecks-1"
-# googleAnalytics = "G-JNG3CSWEQT"
 
 [renderer]
 unsafe = true
@@ -20,25 +18,21 @@ unsafe = true
 pagerSize = 10
 preserveTaxonomyNames = true
 
-enableRobotsTXT = true # generate robots.txt
-
-# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+enableRobotsTXT = true
 pygmentsCodefences = true
-
 enableEmoji = true
-
-# Missing translations will default to this content language
 defaultContentLanguage = "en"
 
 [params.info]
 description = "Wrecks of code floating in the sea of internet"
 title404 = "Nothing's here!"
 
+[params.appearance]
+defaultTheme = "gunmetal"
+
 [params.assets]
-favicon = "favicon.ico"
-# customCSS = ["css/custom.css"]
-# customJS = ["js/custom.js"]
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+favicon = "favicon.svg"
+gopher = ""
 
 [params.copyright]
 prefix = ""
@@ -47,86 +41,31 @@ startYear = "2020"
 suffix = ""
 
 [params.settings]
-# date & time format: https://golang.org/pkg/time/
 dateFormat = "2006, Jan 02"
 listDateFormat = "2006, Jan 02"
 archiveDateFormat = "Jan 02"
-hideEntryNavigation = ["page"] # boolean / array of sections
-hideEntryMeta = ["page"] # boolean / array of sections
 showReadingTime = true
 showLastmod = true
-taxonomyCloudShuffle = true
-accentColor = "#ffcd00"
-hideMainMenu = false
-rtl = false
 
-[params.sidebar]
-enable = true
-
-[params.widgets]
-header = ["breadcrumbs"]
-homepage = ["recent_posts"]
-sidebar = ["about","sidebar_menu","adsense.html", "taxonomy_cloud"]
-# sidebar = ["about","sidebar_menu", "taxonomy_cloud"]
-footer = ["social_menu"]
+[params.services]
+adsenseClient = "ca-pub-6590055118491660"
 
 [params.opengraph.facebook]
-admins = [] # array of Facebook IDs
+admins = []
 appID = ""
 pageID = ""
 
 [params.opengraph.twitter]
-page = "" # Twitter page username
+page = ""
 
 [params.seo]
-# Title Separator: - – — · • * ⋆ | ~ « » < >
 titleSeparator = "•"
 
 [params.social]
-#codepen = "Alkampfer"
 email = "alkampfer@nablasoft.com"
-#facebook = ""
 github = "alkampfergit"
-#gitlab = ""
-#instagram = ""
 linkedin = "gianmariaricci"
 twitter = "alkampfer"
-#telegram = ""
-#google_scholar = "qc6CJjYAAAAJ"
-#youtube = "UCT-U0rNerYxItGcuoPX-WYA"
-
-[params.comments]
-enable = true
-
-# Isso: https://posativ.org/isso/
-[params.comments.isso]
-enable = false
-scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
-dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
-
-[params.comments.staticman]
-enable = false
-apiEndpoint = "https://api.staticman.net/v2/entry"
-maxDepth = 2
-username = ""
-repository = "minimo"
-
-# Utterances: https://utteranc.es
-[params.comments.utterances]
-enable = false
-issueTerm = "pathname" # pathname / url / title
-
-[params.comments.utterances.github]
-username = ""
-repository = "minimo"
-
-[params.search]
-client = "fuse" # algolia / fuse / lunr
-
-[params.search.algolia]
-appId = ""
-indexName = ""
-searchApiKey = ""
 
 [taxonomies]
 author = "authors"
@@ -138,18 +77,29 @@ tag = "tags"
 page = "/:slug/"
 
 [[menu.main]]
+name = "Posts"
+weight = -20
+identifier = "posts"
+url = "/post/"
+
+[[menu.main]]
+name = "Italian Blog"
+weight = -15
+identifier = "italian"
+url = "/itablog/"
+
+[[menu.main]]
 name = "Categories"
 weight = -10
-identifier = "Categories"
+identifier = "categories"
 url = "/categories/"
 
 [blackfriday]
 hrefTargetBlank = true
 
 [languages]
-# edit this block for your own language
-[languages.en.params]
-lang = "en"
-languageName = "English"
-weight = 1
+  [languages.en]
+  languageCode = "en-us"
+  languageName = "English"
+  weight = 1
 

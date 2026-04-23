@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="container">
+  <section class="home-section-panel home-section-panel-soft">
+    <div class="home-section-header">
+      <div>
+        <span class="home-eyebrow">404</span>
+        <h1 class="section-title">{{ .Site.Params.info.title404 | default "Nothing's here!" }}</h1>
+      </div>
+      <p class="section-subtitle">The page you requested could not be found.</p>
+    </div>
+    <div class="entry-content">
+      <p>The link may be outdated, the content may have moved, or the URL may simply be wrong.</p>
+      <p><a href="{{ .Site.Home.RelPermalink }}">Return to the homepage</a>.</p>
+    </div>
+  </section>
+</div>
+{{ end }}

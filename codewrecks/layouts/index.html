@@ -1,0 +1,95 @@
+{{ define "main" }}
+{{ $posts := (where .Site.RegularPages "Section" "post").ByDate.Reverse }}
+<div class="container home-page">
+  <section class="home-hero-card">
+    <div class="home-hero-copy">
+      <span class="home-eyebrow">{{ .Site.Title }}</span>
+      <h1>Engineering notes on software, DevOps, AI, and the strange corners of the stack</h1>
+      <p>{{ .Site.Params.info.description }}</p>
+    </div>
+    <div class="home-hero-stats">
+      <div class="home-stat">
+        <strong>{{ len $posts }}</strong>
+        <span>published posts</span>
+      </div>
+      <div class="home-stat">
+        <strong>{{ len .Site.Taxonomies.categories }}</strong>
+        <span>topic areas</span>
+      </div>
+    </div>
+  </section>
+
+  {{ with .Content }}
+  <section class="home-section-panel home-section-panel-soft">
+    <div class="home-section-header">
+      <div>
+        <span class="home-eyebrow">Welcome</span>
+        <h2 class="section-title">Why This Blog Exists</h2>
+      </div>
+      <p class="section-subtitle">Notes, fixes, and patterns collected from real projects.</p>
+    </div>
+    <div class="entry-content">
+      {{ . }}
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="home-section-panel">
+    <div class="home-section-header">
+      <div>
+        <span class="home-eyebrow">Posts</span>
+        <h2 class="section-title">Latest Content</h2>
+      </div>
+      <p class="section-subtitle">Recent articles on development, cloud, GitHub, and practical software delivery.</p>
+    </div>
+    <ul class="post-list home-post-list">
+      {{ range first 6 $posts }}
+      <li class="home-post-card">
+        {{ with .Params.categories }}
+        <div class="article-taxonomy-row home-card-taxonomy">
+          {{ range first 1 . }}
+          <a class="taxonomy-pill taxonomy-pill-muted" href="{{ "categories/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+        <div class="meta">{{ .Date.Format ($.Site.Params.settings.dateFormat | default "2006, Jan 02") }}{{ if $.Site.Params.settings.showReadingTime }} &middot; {{ .ReadingTime }} min read{{ end }}</div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Description }}<p class="summary">{{ . }}</p>{{ end }}
+        {{ with .Params.tags }}
+        <div class="post-tags">
+          {{ range first 3 . }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a> {{ end }}
+        </div>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="home-section-panel home-section-panel-soft">
+    <div class="home-section-header">
+      <div>
+        <span class="home-eyebrow">Focus</span>
+        <h2 class="section-title">What You Will Find Here</h2>
+      </div>
+      <p class="section-subtitle">The recurring themes behind the English blog content.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card expertise-card home-expertise-card">
+        <div class="expertise-icon">&#9881;</div>
+        <h3>DevOps and delivery</h3>
+        <p>Pipelines, release automation, Git workflows, and the friction points that appear once software has to move reliably.</p>
+      </div>
+      <div class="card expertise-card home-expertise-card">
+        <div class="expertise-icon">&#10047;</div>
+        <h3>AI-assisted engineering</h3>
+        <p>How generative AI changes day-to-day development work, from coding tools to the shape of the products we build.</p>
+      </div>
+      <div class="card expertise-card home-expertise-card">
+        <div class="expertise-icon">&#128295;</div>
+        <h3>Debugging and oddities</h3>
+        <p>Real production issues, sharp edges in tools and platforms, and the small fixes that save hours when they are written down.</p>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

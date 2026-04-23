@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ $dateFormat := .Site.Params.settings.dateFormat | default "2006, Jan 02" }}
+{{ $pages := .RegularPages.ByDate.Reverse }}
+{{ if .IsSection }}
+  {{ $pages = .RegularPagesRecursive.ByDate.Reverse }}
+{{ else if eq .Kind "taxonomy" }}
+  {{ $pages = .Pages.ByDate.Reverse }}
+{{ end }}
+{{ $paginator := .Paginate $pages }}
+<div class="container">
+  <h1 style="font-family: 'Montserrat', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--navy); margin-bottom: 0.3rem;">{{ .Title }}</h1>
+  {{ with .Content }}<div class="entry-content" style="margin-bottom: 1.5rem;">{{ . }}</div>{{ end }}
+  {{ if gt (len $paginator.Pages) 0 }}
+  <ul class="post-list">
+    {{ range $paginator.Pages }}
+    <li class="card">
+      <div class="meta">{{ .Date.Format $dateFormat }}{{ if $.Site.Params.settings.showReadingTime }} &middot; {{ .ReadingTime }} min read{{ end }}</div>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ with .Description }}<p class="summary">{{ . }}</p>{{ end }}
+      {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range first 3 . }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a> {{ end }}
+      </div>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }}
+  {{ else }}
+  <p>No entries yet.</p>
+  {{ end }}
+</div>
+{{ end }}
