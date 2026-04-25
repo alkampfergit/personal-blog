@@ -2,7 +2,7 @@
 title: "Conversing With Your Agent Like a Team Member"
 description: "How routing all communication through the GitHub thread lets you ask the agent questions, get precise answers, and treat it as a real collaborator — not just a code generator."
 date: 2026-04-24T09:00:00+00:00
-draft: true
+draft: false
 tags: ["GitHub", "AI", "Agents", "Spec Driven Development"]
 categories: ["AI", "Development Tools"]
 ---
