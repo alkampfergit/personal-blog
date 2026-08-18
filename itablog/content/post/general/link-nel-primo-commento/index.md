@@ -6,8 +6,7 @@ categories: ["generale"]
 tags: ["internet"]
 description: "Come cambia il modo di comunicare nella rete quando l'unico obiettivo sono visualizzazioni, impressioni e click."
 summary: |
-  Ho aggiunto uno shortcode Hugo per creare una copertina con titolo, dettaglio e immagine.
-  In questa versione l'immagine vive nella sottocartella images del post, come risorsa del page bundle.
+  Se i contenuti oramai vengono prodotti principalmente per ottenere visualizzazioni, impressioni e click, ha veramente senso informarsi in internet sui canali generalisti?
 ---
 
 Sono abbastanza vecchio da avere utilizzato realmente NNTP, dove tra l'altro si sentiva una mosturosa differenza tra **canali moderati** e **canali non moderati**. Già dai primi vagiti di internet si capiva che la qualità della comunicazione richiedeva una sforzo, al tempo era la moderazione.
