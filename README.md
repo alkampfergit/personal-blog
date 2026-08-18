@@ -10,7 +10,6 @@ Two Hugo sites live in this repository:
 From a clean clone:
 
 ```bash
-git submodule update --init --recursive
 ./scripts/install-hugo.sh
 ```
 

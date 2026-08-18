@@ -1,7 +1,7 @@
 .hugo_build.lock
 .tools/
-.playwright-mcp/*.log
-.playwright-mcp/*.png
+.playwright-mcp/
+.DS_Store
 node_modules/**
 itablog/node_modules/**
 itablog/public/**

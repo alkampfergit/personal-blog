@@ -17,8 +17,6 @@ GitHub Actions builds both sites, copies `itablog/public` into `codewrecks/publi
 - `codewrecks/layouts/`, `itablog/layouts/`: site-level Hugo overrides and custom partials
 - `codewrecks/static/`, `itablog/static/`: static assets copied as-is
 - `codewrecks/archetypes/`, `itablog/archetypes/`: front matter templates for new content
-- `codewrecks/themes/minimo`, `itablog/themes/minimo`: `minimo` theme submodules
-- `codewrecks/themes/kiera`: additional theme submodule, not the active site theme
 - `.github/workflows/publish.yml`: production build and deploy pipeline
 - `.devcontainer/Dockerfile`: local container setup with Hugo installed
 - `OldStuff/`: legacy material, not part of the active Hugo build
@@ -28,7 +26,10 @@ GitHub Actions builds both sites, copies `itablog/public` into `codewrecks/publi
 - Treat this as a Hugo content repository first, not a generic Node app.
 - When working under `itablog/`, also follow the local instructions in `itablog/AGENTS.md`.
 - Prefer editing site-level files in `content/`, `layouts/`, `static/`, and `config.toml`.
-- Do not edit `themes/minimo` or `themes/kiera` unless the task explicitly requires theme/submodule work.
+- Neither site sets a `theme`. There are no themes and no git submodules; all rendering
+  comes from site-level `layouts/` plus Hugo's embedded templates. If you need to change
+  markup Hugo generates itself (for example the paginator), override the embedded template
+  under `layouts/` rather than looking for a theme to patch.
 - Keep English-site changes in `codewrecks/` and Italian-site changes in `itablog/`.
 - Preserve base URLs and the `/itablog/` publication path; deployment depends on them.
 - Avoid touching `public/`; it is generated output.
@@ -38,7 +39,9 @@ GitHub Actions builds both sites, copies `itablog/public` into `codewrecks/publi
 - Use Hugo Extended.
 - CI pins Hugo to `0.148.1` in [publish.yml](/Users/gianmariaricci/develop/github/personal-blog/.github/workflows/publish.yml).
 - Prefer the repo-local pinned binary via `./scripts/install-hugo.sh` and `./bin/hugo`.
-- A local build with Hugo `0.118.2` fails against the current `minimo` theme with `.Site.Lastmod` errors. If Hugo starts failing in `themes/minimo`, check the Hugo version first before changing templates.
+- Keep the local binary in step with the CI pin. Older Hugo releases fail on templates and
+  config keys this repo relies on, so if a build breaks in a way that looks like a template
+  bug, check `./bin/hugo version` before editing templates.
 
 ## Local Commands
 

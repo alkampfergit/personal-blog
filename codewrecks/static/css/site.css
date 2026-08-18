@@ -833,32 +833,60 @@ article header h1 {
   border: 1px solid var(--border);
 }
 
+/* Hugo's _internal/pagination.html emits ul.pagination > li.page-item > a.page-link */
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.pagination a,
-.pagination span {
-  padding: 0.5rem 1rem;
+.pagination .page-item {
+  display: flex;
+}
+
+.pagination .page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 6px;
   font-size: 0.9rem;
   font-weight: 500;
-}
-
-.pagination a {
+  line-height: 1;
   background: var(--bg-white);
   border: 1px solid var(--border);
   color: var(--text);
 }
 
-.pagination a:hover {
+/* the arrow glyphs are wrapped in a span; keep them from inheriting link padding */
+.pagination .page-link span {
+  padding: 0;
+}
+
+.pagination .page-link[href]:hover {
   background: var(--accent);
   color: #fff;
   border-color: var(--accent);
   text-decoration: none;
+}
+
+.pagination .page-item.active .page-link {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  cursor: default;
+}
+
+.pagination .page-item.disabled .page-link {
+  opacity: 0.45;
+  cursor: default;
 }
 
 .taxonomy-list {

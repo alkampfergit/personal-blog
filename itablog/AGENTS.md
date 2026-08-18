@@ -4,7 +4,7 @@
 
 This directory contains the Italian Hugo site published at `https://www.codewrecks.com/itablog/`.
 
-It is a standalone Hugo site with site-level templates and assets. It does **not** use the `minimo` theme as its active rendering path, even though a `themes/` directory may exist in the tree.
+It is a standalone Hugo site with site-level templates and assets. It sets no `theme` and uses no theme at all: everything renders from `layouts/` plus Hugo's embedded templates.
 
 ## Active Structure
 
