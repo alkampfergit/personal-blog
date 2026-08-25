@@ -67,6 +67,21 @@ email = "alkampfer@nablasoft.com"
 github = "alkampfergit"
 linkedin = "gianmariaricci"
 
+# Giscus comments (GitHub Discussions), configured at https://giscus.app.
+# theme = "custom" points giscus at static/css/giscus-theme.css, a stylesheet
+# matching this site's palette (see that file / comments.html for details).
+[params.giscus]
+repo = "alkampfergit/personal-blog"
+repoId = "MDEwOlJlcG9zaXRvcnkyNTUyOTUyODM="
+category = "Comments"
+categoryId = "DIC_kwDODzd_M84DEJZL"
+mapping = "pathname"
+strict = "1"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "top"
+theme = "custom"
+lang = "it"
 
 [taxonomies]
 author = "authors"
