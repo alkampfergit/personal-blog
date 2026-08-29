@@ -1,12 +1,12 @@
 ---
-title: "Link nel primo commento"
+title: "Memoria, CPU e registri: le basi dell'inferenza LLM"
 date: 2026-08-18
 draft: false
-categories: ["generale"]
-tags: ["internet"]
-description: "Come cambia il modo di comunicare nella rete quando l'unico obiettivo sono visualizzazioni, impressioni e click."
+categories: ["llm-inference"]
+tags: ["llm", "inferenza", "cpu", "memoria"]
+description: "Come registri, cache e memoria principale influenzano le prestazioni di CPU e GPU nell'inferenza dei modelli LLM."
 summary: |
-  Se i contenuti oramai vengono prodotti principalmente per ottenere visualizzazioni, impressioni e click, ha veramente senso informarsi in internet sui canali generalisti?
+  Per capire perché una GPU è più efficiente di una CPU nell'inferenza LLM bisogna partire dalla gerarchia della memoria: registri, cache e RAM hanno capacità, costi e velocità differenti.
 ---
 
 # Memoria CPU e registri
@@ -49,4 +49,4 @@ Ok, stiamo andando troppo nel dettaglio, quello che ci interessa è che le memor
 
 # Conclusioni
 
-La velocità di esecuzione di un algoritmo è quindi influenzata sicuramente dalla velocità della memoria, ma anche e soprattutto dal quantitativo di dati gestiti (meno dati possono entrare in memorie più veloci). Ul algoritmo che esegue molte operazioni su pochi dati potrebbe essere tranquillamente più veloce di un algoritmo che esegue molte meno istruzioni ma su un quantitativo di dati molto più grande.
+La velocità di esecuzione di un algoritmo è quindi influenzata sicuramente dalla velocità della memoria, ma anche e soprattutto dal quantitativo di dati gestiti (meno dati possono entrare in memorie più veloci). Un algoritmo che esegue molte operazioni su pochi dati potrebbe essere tranquillamente più veloce di un algoritmo che esegue molte meno istruzioni ma su un quantitativo di dati molto più grande.
