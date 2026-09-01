@@ -29,7 +29,7 @@ L'aspetto fondamentale però è che noi abbiamo due tipi di transistor, uno chia
 
 Nell'elettronica digitale li usiamo entrambi per questo la tecnologia è chiamata CMOS (Complementary Metal Oxide Semiconductor). Con questi due componenti fondamentali andiamo a creare le nostre CPU. 
 
-**Inserire la figura di un transistor**
+![Schema di un transistor NMOS e PMOS](images/cmos.png)
 
 In binario ragioniamo con 1 e 0, ovvero acceso e spento, ma più in particolare tensione zero o tensione positiva. Non diciamo tensione 1, perchè l'effettivo valore di tensione che identifica il 1 dipende dalla tecnologia utilizzata. 
 
@@ -41,13 +41,15 @@ A questo punto nel nostro computer noi abbiamo una tensione positiva, e la terra
 
 Iniziamo con un circuito basilare chiamato inverter, costituito da due soli transistor, un NMOS ed un PMOS messi in questa configurazione
 
-![schema di un inverter](inverter.png)
+![schema di un inverter](images/inverter.png)
 
-In questo caso leggiamo la figura nel seguente modo, la linea in alto è la tensione positiva, la linea in basso è la terra. Il transistor sopra è un PMOS mentre quello sotto è un NMOS. La linea a sinistra è l'ingresso mentre quella a destra è l'uscita.
+In questo caso leggiamo la figura nel seguente modo, la linea in alto è la tensione positiva (VDD), la linea in basso è la terra ( GND). Il transistor sopra è un PMOS mentre quello sotto è un NMOS. La linea a sinistra è l'ingresso mentre quella a destra è l'uscita.
 
 Il funzionamento è banale, se la tensione in ingresso è positiva, abbiamo il PMOS sopra aperto, l'NMOS sotto chiuso per cui l'uscita è collegata elettricamente alla terra, se l'ingresso è invece è a terra, i due transistor si comportano in modo opposto e l'uscita è collegata alla tensione positiva.
 
-Questa è la ragione per cui questo circuito si chiama inverter, perchè inverte il valore logico dell'ingresso.
+Questa è la ragione per cui questo circuito si chiama inverter, perchè inverte il valore logico dell'ingresso. Abbiamo creato quindi una porta logica NOT. Il riepilogo seguente indca anche il simbolo utilizzato per rappresentarlo.
+
+![Riepilog porta not con simbolo](images/not.png)
 
 ## Due inverter in cascata
 
@@ -59,7 +61,7 @@ Questo circuito è detto bistabile perché può avere solamente due stati stabil
 
 La cosa positiva di questa configurazinoe è che è stabile, ha due stati per cui è un circuito che può memorizzare un bit di informazione. Questa è una caratteristica fondamentale per andare a costruire il nostro registro. 
 
-Il problema è che ora bisogna aggiungere qualche cosa per poter controllare quale dei due stati vogliamo imporre e poter cambiare da uno stato ad un altro.
+Il problema è che ora bisogna aggiungere qualche cosa per poter controllare quale dei due stati vogliamo imporre e poter cambiare da uno stato ad un altro. In questo modo abbiamo realizzato un circuito che può memorizzare un bit di informazione.
 
 ## Transmission gate e Clock
 
@@ -75,23 +77,25 @@ Stiamo andando lunghi ma tenete duro. In questa situazione significa che, una vo
 
 Il clock non è altro che un segnale periodico che alterna 0 e 1, e viene utilizzato per sincronizzare i vari componenti del computer. In questo modo noi andiamo a "leggere" il valore del nostro circuito solo in determinati istanti di tempo, quando il tempo di propagazione è passato e il circuito si è stabilizzato. 
 
-Uff, che fatica, ma ora capiamo perché serve un transmission gate. Il transmission gate è un interruttore controllato elettricamente, ma a differenza di un transistor può essere aperto o chiuso da un segnale positivo o negativo. Questo permette di avere un interruttore che può essere aperto o chiuso da un segnale di clock ed è quindi utilizzato per sincronizzare i componenti.
+Uff, che fatica, ma ora capiamo perché serve un transmission gate. Esso è costituito da un NMOS ed un PMOS in parallelo, e funziona come un interruttore controllato elettricamente. Ora chiaramente ci si chiede, perché due transitor se abbiamo già detto che un solo transistor è assimilabile ad un interruttore? La ragione è che un NMOS trasmette benissimo il segnale 0, ma quando è aperto in realtà il segnale 1 ha una caduta di tensione. Al contrario il PMOS trasmette benissimo il segnale 1, ma non riesce ad arrivare perfettamente alla tensione 0.
 
-Un transmission gate è costituito da un NMOS ed un PMOS in parallelo, e funziona come un interruttore controllato elettricamente. Ora chiaramente ci si chiede, perché due transitor se abbiamo già detto che un transistor solo è assimilabile ad un interruttore? La ragione è che un NMOS trasmette benissimo il segnale 0, ma quando è aperto in realtà il segnale 1 ha una caduta di tensione. Al contrario il PMOS trasmette benissimo il segnale 1, ma non riesce ad arrivare perfettamente alla tensione 0.
+Se io voglio invece trasmettere un segnale 0 o 1 perfettamente, devo utilizzare entrambi i transistor in parallelo, in modo che quando al variare del segnale 0 e 1 siano entrambi chiusi o entrambi aperti. In questo modo il segnale viene trasmesso perfettamente senza cadute di tensione.
 
-Se io voglio invece trasmettere un segnale 0 o 1 perfettamente, devo utilizzare entrambi i transistor in parallelo, in modo che quando il segnale è 0 il PMOS sia aperto e l'NMOS chiuso, mentre quando il segnale è 1 l'NMOS sia aperto e il PMOS chiuso. In questo modo il segnale viene trasmesso perfettamente.
+Questo è il nostro "transmission gate"
 
-Questo è il nostro "transmission gate" spesso rappresentato con questo simbolo:
+![Transmission gate con due transistor](images/transmissiongate.png)
 
-![Il simbolo del trasmission gate](transmissiongate.png)
+Quando il clock è alto, il transistor NMOS sopra è chiuso, quello sotto PMOS riceve il segnale negato del clock per cui è chiuso anche lui. Con clock basso invece il transistor NMOS sopra è aperto, quello sotto PMOS riceve il segnale negato del clock per cui è aperto anche lui. In questo modo il nostro transmission gate funziona come un interruttore controllato elettricamente ma la presenta di entrambi i transistor garantisce uno 0 ed un 1 perfetti senza cali di tensione.
 
-EN indica dove connetto il clock, mentre A e B sono i due terminali dell'interruttore. Quando EN è alto, l'interruttore è chiuso e A e B sono connessi, quando EN è basso l'interruttore è aperto e A e B non sono connessi.
+Il simbolo di questo componente è il seguente:
+
+![Simbolo del transmission gate](images/transmissiongate_symbol.png)
 
 ## Come controllare il valore del nostro doppio inverter
 
 A questo punto possiamo costruire il seguente circuito aggiungendo due transmission gate al nostro doppio inverter, uno per controllare l'ingresso del primo inverter e uno per controllare l'ingresso del secondo inverter.
 
-![Schema del doppio inverter con transmission gate](invertercontrollato.png)
+![Schema del doppio inverter con transmission gate](images/latch_d.png)
 
 Il funzionamento è semplice, il nostro D è il valore che vogliamo memorizzare nel bistabile, 1 o 0. Questo ingresso è connesso al primo transmission gate, che si chiude quando il clock è alto. Il secondo transmission gate invece si chiude quando il clock è basso. Questo significa che quando il clock è alto il valore di D viene trasmesso al primo inverter, ma il secondo transmission gate è aperto e quindi il valore del bistabile non può essere modificato. Quando il clock è basso invece il primo transmission gate è aperto il secondo è chiuso e quindi abbiamo il nostro bistabile che ha assunto il valore richiesto.
 
