@@ -107,7 +107,7 @@ Il problema del latch è questo, durante tutto il fronte alto del clock, il valo
 
 Ecco finalmente lo schema del nostro flip flop D, che è costituito da due latch D, uno controllato dal clock e l'altro controllato dal clock negato.
 
-![Schema del flip flop D](flipflopD.png)
+![Schema del flip flop D](images/flipflopD.png)
 
 Sono due latch D, il primo è controllato dall'inverso del clock, mentre il secondo è controllato dal clock. Consideriamo questa situazione, il clock è basso, il nostro primo latch è chiuso per cui il valore di D viene trasmesso al secondo latch. Questo secondo latch è però aperto, perchè controllato dal clock, quindi il valore del bistabile non cambia. Quando il clock passa da basso ad alto, il primo latch si apre e il secondo si chiude, quindi il valore di D viene catturato e memorizzato nel bistabile. Se D cambia valore durante il fronte alto del clock, il secondo latch è chiuso e quindi il valore memorizzato non cambia.
 
