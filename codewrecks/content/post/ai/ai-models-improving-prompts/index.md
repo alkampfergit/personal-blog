@@ -2,7 +2,7 @@
 title: "How AI Models Are Becoming Better at Improving Prompts"
 description: "A short outline of how increasingly capable AI models can help refine prompts and improve the interaction loop, but, at the same time, they can over engineer if you already have skills and procedures in place that already does that."
 date: 2026-10-15T09:00:00+00:00
-draft: true
+draft: false
 tags: ["AI"]
 categories: ["AI"]
 ---
@@ -72,6 +72,8 @@ The result is overengineering because when the process will continuously refine 
 Consider each Skill each agents everything in your harness as temporary, and something that can evolve with code, over time. Latest model bring me to a change in the SDD process where, for the core part of the project, the approach is much more **incremental with control by a human**. I still benefit from the higher capability of the model in **analyzing my code, understanding where to act, and find edge case**.
 
 Then I ask to produce an impact/touch map telling me the list of files that it think should be added and all that needs to be modified. We have a discussion about that, then we identify the most critical parts. At that point we proceed with a plan-task-implement cycle where we try to work with very small phases. **The model comes out with a plan of no more than 30 lines of info.** It is simple to read and discuss about, then I let it implement with Minimum effort and usually small model. The result is much better.
+
+![Comparison of prompt refinement and human-guided incremental workflows](workflow.png)
 
 ## Conclusion
 
