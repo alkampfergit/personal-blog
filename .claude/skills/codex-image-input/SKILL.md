@@ -1,19 +1,43 @@
 ---
 name: codex-image-input
-description: "Attach screenshots, mockups, diagrams, or image references to Codex CLI. Use when the user asks Codex to analyze an image, implement a UI from a design, compare screenshots, or fix an issue shown in an image."
-argument-hint: "<prompt> <image-path> [additional-image-paths...]"
+description: "Use Codex CLI to generate or edit images, or attach screenshots, mockups, diagrams, and image references for analysis or implementation."
+argument-hint: "<goal> [image-path] [destination-path]"
 ---
 
-# Codex Image Input
+# Codex Image Input and Generation
 
-Use Codex CLI's `--image` (or `-i`) option to provide visual context alongside a clear implementation or analysis prompt. This skill attaches images to Codex; it does not generate bitmap images.
+Use Codex CLI to generate or edit bitmap images with its built-in `$imagegen` capability, and use `--image` (or `-i`) to attach existing images as visual context for analysis or implementation.
 
 ## When to Use
 
+- Generate a new illustration, cover, diagram, or other bitmap image
+- Create a variation or edit based on an existing image
 - Analyze an error or diagram shown in a screenshot
 - Implement or update a UI from a mockup
 - Compare a design reference with the current implementation
 - Review visual differences across desktop and mobile screenshots
+
+## Generate or Edit an Image
+
+Invoke the built-in image-generation capability explicitly with `$imagegen`. State the subject, composition, aspect ratio, style, and any text or details that must appear. Give the full destination path and filename in the prompt, and ask Codex to create the parent directory if needed.
+
+```powershell
+codex exec '$imagegen Generate a 16:9 cyberpunk manga image of a programmer using local AI. Save the final image to C:\Projects\MyBlog\images\cover.png. Create the destination directory if it does not exist.'
+```
+
+```bash
+codex exec '$imagegen Generate a 16:9 cyberpunk manga image of a programmer using local AI. Save the final image to /home/me/Projects/MyBlog/images/cover.png. Create the destination directory if it does not exist.'
+```
+
+For an image revision, attach the source and describe the desired changes. Ask for a new output path unless the user explicitly wants to replace the source:
+
+```bash
+codex exec --image ./images/cover.png '$imagegen Edit the attached image to make the lighting brighter while preserving its composition. Save the revised image to ./images/cover-v2.png.'
+```
+
+The built-in generator creates the image under Codex's generated-images area first. When a destination is specified, ask Codex to copy or move the chosen result there and verify that the file exists. The built-in tool does not use an `--out` argument. Do not overwrite an existing image unless the user explicitly requests replacement.
+
+The separate `scripts/image_gen.py` fallback is API-based, requires `OPENAI_API_KEY`, and supports `--out`; use it only when the user asks for that CLI/API workflow or needs its specific controls. See the [image-generation CLI reference](https://github.com/openai/codex/blob/main/codex-rs/skills/src/assets/samples/imagegen/references/cli.md).
 
 ## Inputs
 
