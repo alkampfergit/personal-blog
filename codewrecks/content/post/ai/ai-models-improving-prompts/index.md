@@ -73,7 +73,7 @@ Consider each Skill each agents everything in your harness as temporary, and som
 
 Then I ask to produce an impact/touch map telling me the list of files that it think should be added and all that needs to be modified. We have a discussion about that, then we identify the most critical parts. At that point we proceed with a plan-task-implement cycle where we try to work with very small phases. **The model comes out with a plan of no more than 30 lines of info.** It is simple to read and discuss about, then I let it implement with Minimum effort and usually small model. The result is much better.
 
-![Comparison of prompt refinement and human-guided incremental workflows](workflow.png)
+![Comparison of prompt refinement and human-guided incremental workflows](images/workflow.png)
 
 ## Conclusion
 
