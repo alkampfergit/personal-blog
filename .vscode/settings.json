@@ -12,5 +12,11 @@
     "plaintext": false,
     "markdown": true,
     "scminput": false
+  },
+  "chat.tools.terminal.autoApprove": {
+    "/^pwd && git status --short && git check-ignore -v content/post/ai/ai-models-improving-prompts/images/workflow\\.png \\|\\| true && git ls-files content/post/ai/ai-models-improving-prompts/images/workflow\\.png && ls -l content/post/ai/ai-models-improving-prompts/images/workflow\\.png$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
   }
 }
