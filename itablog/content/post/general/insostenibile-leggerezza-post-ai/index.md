@@ -1,38 +1,39 @@
 ---
 title: "L'insostenibile leggerezza dei post AI"
 date: 2026-10-29T00:00:00Z
-draft: true
+draft: false
 categories: ["generale"]
 tags: ["AI", "internet"]
-description: "Quando un post scritto con l'AI sembra dire tutto, ma non racconta niente di chi lo pubblica."
+description: "Se non hai nulla da dire, meglio tacere che confermare il fatto che tu non abbia realmente nulla da dire."
 summary: |
-  L'AI può aiutare a scrivere, ma un testo scorrevole non è automaticamente un'idea interessante. Nei social professionali, il rischio è riempire il feed di parole ben confezionate che non portano con sé esperienza, dubbi o responsabilità.
+  L'AI può aiutare a scrivere, ma il contenuto?
 ---
 
-## Quando la forma prende il posto dell'idea
+## Perché scrivo un post, o un contenuto?
 
-Scorrendo il feed capita sempre più spesso di incontrare post costruiti con la stessa ricetta: un'apertura che promette una rivelazione, qualche frase breve, una lista di punti e una conclusione che invita a commentare. Tutto è ordinato, leggibile, pronto per essere pubblicato. Eppure, una volta finito di leggere, resta una domanda semplice: che cosa ho imparato?
+In teoria dovremmo scrivere qualcosa quando abbiamo qualche cosa da dire, che pensiamo sia interessante. Che lo sia o no, noi ne siamo convinti, in questo caso usare l'AI, specialmente se vogliamo scriverlo bene in una lingua che non sia la nostra madrelingua, può essere un valido aiuto. Questo è un uso perfettamente lecito dell'AI e non mi dispiace.
 
-Non è un problema di grammatica. Anzi, spesso la grammatica è impeccabile. Il problema è che la forma sembra arrivare prima dell'idea: il post ha già il ritmo, il tono e la morale di una storia interessante, ma dentro manca qualcosa che appartenga davvero a chi lo ha firmato.
+Poi ci sono persone che magari scrivono post non perché hanno veramente qualcosa da dire, ma debbono fare engagement in un social, come Linkedin. Ora visto che Linkedin *dovrebbe* essere un social per professionisti, il postare contenuti tecnici dovrebbe portare valore alla propria rete, e se non abbiamo nulla da dire, allora qualcuno posta contenuti ripresi e rimanipolati da altri.
 
-L'AI rende facile produrre testi che sembrano completi. Basta descrivere un argomento e in pochi secondi compaiono introduzione, tre punti chiave e una frase finale memorabile. Ma la facilità con cui si ottiene un testo non misura la qualità del pensiero che contiene. Un testo può essere corretto e non aggiungere nulla; può sembrare profondo senza essersi mai confrontato con un problema concreto.
+## Si può davvero scrivere contenuti rimanipolati ed essere interessanti?
 
-## Lo strumento non è il punto
+Non è impossibile, talvolta hai magari letto un tot di materiale vario in giro, lo hai studiato e quindi poi fai semplicemente una ripubblicazione in cui magari però fornisci una versione unificata. In questo caso il valore che dai è quello di avere fatto tu una sintesi ponderata e di aver organizzato le informazioni in modo coerente, aggiungendo eventualmente il tuo punto di vista.
 
-Usare l'AI per correggere una frase, riordinare appunti o trovare un titolo non rende un post meno autentico. Sono attività di supporto, come rileggere una bozza o chiedere a qualcuno un parere. La differenza sta in ciò che rimane sotto la superficie: c'è un'esperienza, una scelta, un dubbio di cui l'autore si assume la responsabilità?
+Ora, se in questa seconda situazione tu il contenuto lo fai scrivere alla AI, allora diciamo che inizia a perdere di interesse. Non tanto perché sia più interessante se fatto da un umano, quanto il fatto che, un lettore si accorge che non è presente un vero punto di vista personale, per cui rimane molto più indifferente. L'unico valore qui è avere fatto la cernita degli articoli da dare in pasto al modello AI.
 
-Un buon post tecnico, per esempio, non deve per forza presentare una scoperta rivoluzionaria. Può raccontare una prova andata male, una libreria che ha risolto un problema particolare o una decisione che oggi prenderemmo diversamente. Sono dettagli piccoli, ma verificabili e situati. Dicono: "Ecco cosa ho fatto, ecco cosa ho osservato, questa è la mia interpretazione".
+## Quando invece il contenuto è "leggero"
 
-Un testo generato in automatico tende invece a levigare proprio le parti più utili: le condizioni specifiche, gli inciampi, le eccezioni. Rimane una spiegazione generale, facile da condividere e difficile da contestare, perché non si espone abbastanza da poter essere messa alla prova.
+Purtroppo sempre più spesso capitano contenuti che, sembrano fatti da AI, ma che soprattutto sono semplici repost sensazionalistici senza una vera verifica, senza nessun giudizio critico.
 
-## Pubblicare significa metterci la faccia
+Questo perché se scrivi: attenzione è stato dimostrato che il modello cinese XYZ ha tentato di mandare documenti in Cina durante un test, tu crei alert e sicurametne generi engagement. Purtroppo poi approfondendo scopri che la realtà è molto molto differente, e quindi alla fine, l'articolo originale è servito solamente a costringerti ad approfondire per verificare una notiziza che già a naso puzzava molto.
 
-Un post non è soltanto un contenuto da distribuire. È anche una promessa implicita: se firmo queste parole, sono disposto a parlarne. Se qualcuno mi chiede come ho verificato un'affermazione, perché ho scelto una soluzione o che cosa è successo dopo, dovrei poter rispondere senza passare la palla allo strumento che ha scritto il testo.
+Questa è l'insostenibile leggerezza della AI, quando qualcuno prende e fa generare articoli sensazionalitstici, non propriamente corretti e soprattutto incompleti, con l'unico scopo di generare engagement. E debbo dire che Linkedin ultimamente abbonda di contenuti un po meh, soprattutto fatti da chi cerca visibilità più che valore reale.
 
-Questo non significa che ogni frase debba essere originale o che si debba scrivere tutto da zero. Significa che la responsabilità della pubblicazione resta nostra. L'AI può proporre, sintetizzare e riscrivere; non può sostituire l'esperienza che non abbiamo fatto né decidere quali dettagli meritino di essere raccontati.
+È sempre più difficile trovare buoni contenuti in rete, l'unica soluzione è avere canali molto selezionati, oppure di rimando usare AI per filtrare e per verificare e per fare ground checking di qualsiasi contenuto che comunque ci sembra interessante.
 
-Forse è per questo che certi post, pur essendo leggeri da produrre e facili da leggere, lasciano una sensazione di vuoto. Non manca un'altra lista di consigli: manca una persona dietro alle parole. Preferisco un racconto imperfetto ma vissuto a un testo lucidissimo che avrebbe potuto pubblicare chiunque.
+Mala tempora currunt.
 
-L'AI può aiutarci a dire meglio quello che pensiamo. Ma prima dobbiamo avere qualcosa da dire.
+Gian Maria. 
+  
 
-Gian Maria
+
